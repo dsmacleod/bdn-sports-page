@@ -1,0 +1,514 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head><title>Maine Principal's Association</title><meta name='description' content='The Maine Principals’ Association is a nonprofit serving Maine schools through high school interscholastic athletics governance and professional support for K–12 administrators.'/><link href="/_Styles/2010/Config.css?3?x=2" rel="stylesheet" type="text/css" /><link href="/_Styles/2010/Controls.css?x=2" rel="stylesheet" type="text/css" /><link href="/_Styles/2010/Dashboard.css?2?x=2" rel="stylesheet" type="text/css" /><link href="/_Styles/2010/TournamentCentral.css?2?x=2" rel="stylesheet" type="text/css" /><meta charset="utf-8" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta id="Viewport" name="viewport" content="width=device-width, initial-scale=1, minimal-ui" /><meta name="mobile-web-app-capable" content="yes" /><meta name="apple-mobile-web-app-capable" content="yes" /><meta http-equiv="Cache-control" content="max-age=300" /><link rel="stylesheet" type="text/css" href="_Styles/Site.css?2" /><link rel="stylesheet" type="text/css" href="/_Styles/parsley.css" /><link rel="stylesheet" type="text/css" href="/_Styles/jquery-ui.css" /><link rel="stylesheet" type="text/css" href="/_Fonts/Awesome/css/fontawesome.css" /><link rel="stylesheet" type="text/css" href="/_Fonts/Awesome/css/regular.css" /><link rel="stylesheet" type="text/css" href="/_Fonts/Awesome/css/solid.css" /><link rel="stylesheet" type="text/css" href="_Fonts/Awesome/css/duotone.css" /><link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+
+    <script type="text/javascript" src="/_Scripts/Application.js"></script>
+    <script type="text/javascript" src="/_Scripts/Controls.js"></script>
+    <script type="text/javascript" src="https://cdn.fpsports.org/3rdParty/Parsley/v2.0.7/parsley.js"></script>
+    <script type="text/javascript" src="https://cdn.fpsports.org/3rdParty//JLoadImage/js/load-image.all.min.js"></script>
+    <script src="https://cdn.fpsports.org/3rdParty/slick/slick.js"></script>
+    <link rel="stylesheet" href="https://cdn.fpsports.org/3rdParty/slick/slick.css" /><link rel="stylesheet" href="https://cdn.fpsports.org/3rdParty//slick/slick-theme.css" /><link rel="icon" sizes="196x196" href="/_Images/Logos/196x196.png" /><link rel="manifest" href="/manifest.json" /><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" /><meta name="theme-color" content="#ffffff" />
+
+    <!--jstree References-->
+    <script type="text/javascript" src="https://cdn.fpsports.org/3rdParty/jsTree/V3.1/jstree.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.fpsports.org/3rdParty/jsTree/jstree.css" /><link href="_Styles/fancy.css" rel="stylesheet" />
+    <script src="https://cdn.fpsports.org/3rdParty/fancygrid/fp/fancy_v7.full.min.js"></script>
+
+    <script type="text/javascript">
+        //Prevent Links in Standalone Web Apps Opening Mobile Safari
+        if (("standalone" in window.navigator) && window.navigator.standalone) {
+            var noddy, remotes = false;
+            document.addEventListener('click', function (event) {
+                noddy = event.target;
+                while (noddy.nodeName !== "A" && noddy.nodeName !== "HTML") {
+                    noddy = noddy.parentNode;
+                }
+                if ('href' in noddy && noddy.href.indexOf('http') !== -1 && (noddy.href.indexOf(document.location.host) !== -1 || remotes)) {
+                    event.preventDefault();
+                    document.location.href = noddy.href;
+                }
+            }, false);
+        }
+
+        $(document).ready(function () {
+            Fancy.MODULESDIR = 'https://cdn.fpsports.org/3rdParty/fancygrid/modules/';
+            FancyGrid.LICENSE = ['f3e1cd90dfb49ba1b9d16d7c5abe7260'];
+
+            FixCSS();
+
+            bindToolbarMenuFunctions('SchoolMenu_');
+
+
+        });
+
+        $(window).on('load', function () { ProcessesLinkTracking(); });
+
+        $(window).on("resize", function () {
+            FixCSS();
+        });
+
+        function FixCSS() {
+            $(":root").css("--toolbarheight", ($("#ToolbarPanel").outerHeight() ?? 0) + 'px');
+        }
+
+
+        function ProcessesLinkTracking() {
+            var Items = [];
+
+            $('.CarouselTracker:visible').each(function () {
+                var CarouselTracker = $(this);
+                Items.push({ CarouselID: $(this).attr('carouselid'), Carousel: $(this).attr('carousel'), CarouselEntryID: $(this).attr('carouselentryid'), CarouselEntry: $(this).attr('carouselentry') });
+                $(this).find('a').each(function () { $(this).on('click', function () { ProcessLinkClick(CarouselTracker.attr('carouselid'), CarouselTracker.attr('carousel'), CarouselTracker.attr('carouselentryid'), CarouselTracker.attr('carouselentry')) }); });
+            });
+
+            var dto = {
+                'Links': Items
+            };
+
+            $.ajax({
+                type: 'post',
+                contentType: 'application/json; charset-utf-8',
+                dataType: 'json',
+                url: '/Services/CoreServices.asmx/LogLinkImpression',
+                data: JSON.stringify(dto),
+                success: function (result) {
+                }
+            });
+        }
+
+        function ProcessLinkClick(CarouselID, Carousel, CarouselEntryID, CarouselEntry) {
+            var dto = {
+                'CarouselID': CarouselID,
+                'Carousel': Carousel,
+                'CarouselEntryID': CarouselEntryID,
+                'CarouselEntry': CarouselEntry,
+            };
+
+            $.ajax({
+                type: 'post',
+                contentType: 'application/json; charset-utf-8',
+                dataType: 'json',
+                url: '/Services/CoreServices.asmx/LogLinkClick',
+                data: JSON.stringify(dto),
+                success: function (result) {
+                }
+            });
+        }
+
+
+
+    </script>
+
+    <style>
+        .LegacyItem {
+            font-size: 9px;
+            color: red;
+        }
+
+        .NewItem {
+            font-size: 9px;
+            color: red;
+        }
+
+        .dsNavigationMenuHidden {
+            display: none;
+        }
+
+        #mnuTournamentCentralButton {
+            background-color: #b12e34;
+            color: white;
+        }
+
+        .dsMiddlePanelWrapperNoNav .dsFormPanelFSwTB {
+            height: Calc(var(--vh) - 20px) !important;
+        }
+    </style>
+
+
+
+    
+    <meta name="robots" content="noindex,nofollow">
+
+    <style>
+ 
+
+        #HeaderWrapper {
+            padding: 10px;
+            margin-bottom: 0;
+        }
+
+        .HeaderText h1 {
+            color: black;
+            margin: 20px 0 10px 10px;
+        }
+
+        .HeaderText h2 {
+            color: black;
+            margin: 20px 0 10px 10px;
+        }
+
+        .dsDashPagePanel {
+            margin: 0 auto;
+            max-width: 1100px;
+            overflow: visible;
+        }
+
+        .dsMiddlePanelWrapper {
+            background-color: #edf3f8;
+        }
+
+        .dashboard-content {
+            padding: 0 20px 20px 20px;
+            white-space: nowrap;
+            width: Calc(100% - 40px);
+        }
+
+        #Dates {
+            background-color: #bcc6d4;
+        }
+
+        .RowEven {
+            background: #FFFFFF !important;
+        }
+
+        .RowOdd {
+            background: #F5F5F5 !important;
+        }
+
+        .dsTable {
+            width: 300px;
+            margin-left: 10px;
+            margin-right: 10px;
+            background-color: white;
+        }
+    </style>
+
+    <style>
+        .HeaderText {
+            margin-top: 20px;
+        }
+
+        .TeamHeaderWrapper {
+            color: black;
+            margin: 0 10px 0 0px !important;
+            clear: both;
+            width: 100%;
+            display: inline-block;
+        }
+
+        .TeamHeaderImage {
+            display: block;
+            float: left;
+            margin: 0 10px 0 0 !important;
+            height: 100px;
+        }
+
+        .TeamHeaderTextWrapper {
+            display: block;
+            float: left;
+            max-width: 500px;
+            white-space: normal;
+        }
+
+        .TeamHeaderSchool {
+            display: block;
+            float: left;
+            clear: both;
+            font-size: 20px;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        #School1Wrapper,
+        #School2Wrapper {
+            min-width: 750px;
+            display: inline-block;
+            float: left;
+        }
+
+        .rosterwrapper {
+            display: inline-block;
+            float: left;
+        }
+
+        .tableroster {
+            float: left;
+            display: inline-block;
+            margin-right: 4px;
+        }
+
+        .seasonwrapper {
+            display: inline-block;
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 40px;
+        }
+
+        .tournamentseasonwrapper {
+            margin-bottom: 20px;
+        }
+
+        .tabletournamentseason table,
+        .tableregularseason table,
+        .tableroster table {
+            background-color: white;
+        }
+
+
+        @page {
+            size: landscape; /*landscape; auto is the initial value */
+            margin: 5mm 5mm 5mm 5mm;
+        }
+
+        @media print {
+            .dsFormPanelFSwTB {
+                overflow: visible;
+            }
+
+            .dsPagePanel {
+                padding-top: 0;
+            }
+
+            .dsHeaderPanel,
+            .dsToolbarPanel {
+                display: none !important;
+            }
+
+            h1, h2, HeaderText, .TeamHeaderWrapper, .TeamHeaderTextWrapper, TeamHeaderSchool, .rosterwrapper, td, th {
+                color: #222222 !important;
+            }
+        }
+    </style>
+
+<title>
+
+</title></head>
+<body>
+    <iframe id="hidden-iframe" name="hidden-iframe" style="visibility: hidden; position: absolute;"></iframe>
+    <form method="post" action="./MasterSchedule.aspx?TeamLevelID=5" id="MainForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="D62D6234" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/oSLd9vFrb+itlpyzSt5XTbHxTpwJS9VAkinzaqWhtb4peSAgFZ8+/xzxUpFjj6zRtQ9Th00Ok0uS5s83xvSDC158BDq9970UGBIT0SCUmtdoKuY1/VRlPi4RECaKWdy" />
+
+        <div id="dsLoader"></div>
+
+        <div id="dsNavigation" class="dsNavigationOverlay">
+	
+            <div id="dsNavigationMenu" class="dsNavigationMenu">
+                <a href="javascript:void(0)" class="dsNavigationCloseButton" onclick="closeNav()">×</a>
+                <div id="dsNavigationMenuContent" class="dsNavigationMenuContent">
+		
+                    <ul id="dsNavigationMenuUL" class="dsNavigationMenuUL dsNavigationMenuSubPanel active"><li><a id="mnuDashboard" href="\">Dashboard</a></li><li><a id="mnuSportHS" class=" dsNavigationMenuLink " href="https://www.mpa.cc/MasterSchedule.aspx?TeamLevelID=5#NavigationMenu_mnuSportHS"><div style="float:left;">Sport Info - High School</div><i class="fa fa-chevron-right" style="float:right;"></i><div style="clear:both;"></div></a></li><li><a id="mnuScheduleHS" href="\DashboardSchedule.aspx">Schedules</a></li><li><a id="mnuSchoolPages" href="/SchoolPages/School.aspx">School Pages</a></li><li><a id="mnuSchoolSchedule" href="/DashboardTeamSchedule.aspx">Team Schedule</a></li><li><a id="mnuSchoolRoster" href="/DashboardTeamRoster.aspx?SeasonRoster=1">Team Rosters</a></li><li><a id="mnuMasterSchedule" href="/MasterSchedule.aspx?TeamLevelID=5">Master Schedule</a></li><li><a id="mnuTournamentCentralPastChamps" href="\Reports\PastChampionsBySport.aspx">Past Champions</a></li><li class="dsNavigationMenuGroupSeperator"></li><li><div class="dsNavigationMenuGroupTitle">Tournament Central</div></li><li><a id="mnuTournamentDashboard" href="\DashboardTournamentCentral.aspx">Dashboard</a></li><li><a id="mnuTournamentRankings" href="\TournamentCentralRankings.aspx">Tournament Standings</a></li><li><a id="mnuTournamentRankingDetail" href="\Custom\MPA\MPADetail.aspx">Standings Detail</a></li><li><a id="mnuTournamentBrackets" href="\TournamentCentralBrackets.aspx">Brackets</a></li><li><a id="mnuTournamentTeamStats" href="\DashboardTeamRoster.aspx">Tournament Rosters</a></li><li class="dsNavigationMenuGroupSeperator"></li><li><div class="dsNavigationMenuGroupTitle">MPA Members</div></li><li><a id="mnuDirectory" href="\Directory.aspx">School Directory</a></li><li class="dsNavigationMenuGroupSeperator"></li><li><div class="dsNavigationMenuGroupTitle">Important Links</div></li><li><a id="mnuSubResources_2cef4e71-e3ff-495d-ba7b-5c42288a57f9" href="https://gofan.co/app/school/MPA" target="_blank">GoFan Tickets</a></li><li><a id="mnuSubResources_8609746e-28b9-417d-aee7-b6ad5e86554d" href="https://nwd.ink/s/mpa/" target="_blank">Championship Apparel</a></li><li><a id="mnuSubResources_4993bc3c-600d-4770-b6a5-f9ebab63596e" href="https://www.flipsnack.com/tpg2020/2024-25-maine-state-championships/full-view.html" target="_blank">Championship Programs</a></li><li><a id="mnuSubResources_0e9beffc-a261-4766-9608-fe24c6b5e659" href="https://mpaprof.org" target="_blank">Professional Division</a></li><li class="dsNavigationMenuGroupSeperator"></li><li><div class="dsNavigationMenuGroupTitle">Resources</div></li><li><a id="mnuSubResources_7e7fc2a8-63a9-4b60-ad9e-1105447be555" href="/resources/Resources/Sport%20Season%20Dates%202025-2026.pdf" target="_blank">Sport Season Dates 2025-2026</a></li><li><a id="mnuSubResources_c5472434-2bf3-4fa7-b45d-560245ede543" href="/TenantHTML.aspx?D=Resources&amp;F=Heart of the Arts Awards.html">Heart of the Arts Awards</a></li><li><a id="mnuSubResources_07cc76c1-097a-47b0-af0d-3c462afb23fe" href="/TenantHTML.aspx?D=Resources&amp;F=Larry LaBrie Award.html">Larry LaBrie Award</a></li><li><a id="mnuSubResources_39a3327b-ade3-496d-aa1e-9709d474cb59" href="/TenantHTML.aspx?D=Resources&amp;F=State Coaches of the Year.html">State Coaches of the Year</a></li><li class="dsNavigationMenuGroupSeperator"></li><li><div class="dsNavigationMenuGroupTitle">About Us</div></li><li><a id="mnuSubResources_3ce4cdb6-818b-4aab-89fe-5d7695404429" href="/TenantHTML.aspx?D=About Us&amp;F=Conference and Meeting Center.html">Conference and Meeting Center</a></li><li><a id="mnuSubResources_bb23b3b6-971f-4ab6-912d-f0d9c01f7c64" href="/TenantHTML.aspx?D=About Us&amp;F=Directions.html">Directions</a></li><li><a id="mnuSubResources_da1c8bf6-f887-49b4-94f5-cf75f78113c2" href="/resources/About%20Us/MPA%20Committees%202025-2026.pdf" target="_blank">MPA Committees 2025-2026</a></li><li><a id="mnuSubResources_2391ae1c-eaec-449e-b2a2-43a5750bfeef" href="/resources/About%20Us/Handbook.pdf" target="_blank">Handbook</a></li><li><a id="mnuSubResources_bdc2e563-f429-44aa-9eba-9854f764e796" href="/TenantHTML.aspx?D=About Us&amp;F=Membership and Dues.html">Membership and Dues</a></li><li><a id="mnuSubResources_d02c9edf-b19a-4531-b85c-0d0d1e09f4b8" href="/TenantHTML.aspx?D=About Us&amp;F=MPA Information.html">MPA Information</a></li><li><a id="mnuSubResources_de167478-576f-458b-8c54-89229e6b682d" href="/TenantHTML.aspx?D=About Us&amp;F=MPA Media.html">MPA Media</a></li><li><a id="mnuSubResources_4794fe1c-b391-484f-9001-9d81bd1c2b5d" href="/TenantHTML.aspx?D=About Us&amp;F=Officers and Staff.html">Officers and Staff</a></li><li><a id="mnuSubResources_7d678d8a-e984-4d4b-828f-19feec721a48" href="/resources/About%20Us/Professional%20Membership%20Form.pdf" target="_blank">Professional Membership Form</a></li><li><a id="mnuSubResources_3f1b568a-6c67-4ba6-a76a-8d5db98655a1" href="/CarouselAll.aspx?CarouselID=9" target="_blank">Sponsors</a></li><li><a id="mnuSubResources_1b3c53f4-9626-41c8-9d0f-0953a772ccce" href="/resources/About%20Us/MPA%20Acceptable%20Use%20Policy.pdf" target="_blank">MPA Acceptable Use Policy</a></li><li><a id="mnuSubResources_6b036849-e889-45ac-ab68-164fced22373" href="/resources/About%20Us/MPA%20Third-Party%20For-Profit%20Data%20Access%20Policy.pdf" target="_blank">MPA Third-Party For-Profit Data Access Policy</a></li><li class="dsNavigationMenuGroupSeperator"></li><li><div class="dsNavigationMenuGroupTitle">Account</div></li><li><a id="mnuLogin" href="\Login.aspx">Login</a></li><li><a id="mnuSignUp" href="\SignUp.aspx">Sign-Up</a></li><li><a id="mnuPasswordReset" href="\PasswordReset.aspx">Forgot Password</a></li></ul>
+                    <div style="display: none">
+                        <ul id="dsNavigationMenuHidden" class="dsNavigationMenuUL dsNavigationMenuSubPane"></ul>
+                    </div>
+                <ul id="NavigationMenu_mnuSportHS" class="dsNavigationMenuUL dsNavigationMenuSubPanel"><li><div class="dsNavigationSubMenuTitle">Sport Info - High School</div></li><li><a id="SUB_MAIN_mnuSportHS" class=" dsNavigationMenuLink " onclick="changeToMainMenu();"><i class="fa fa-arrow-left" style="float:left;"></i><div style="float:left;" class="dsNavigationMenuBackButton">MAIN MENU</div><div style="clear:both;"></div></a></li><li class="dsNavigationMenuGroupSeperator"></li><li><div class="dsNavigationMenuGroupTitle">Winter</div></li><li><a id="mnuSportButtonHSAlpine Ski (Boys)" href="\SportPages\SportPageInfo.aspx?TournamentID=403">Alpine Ski (Boys)</a></li><li><a id="mnuSportButtonHSAlpine Ski (Girls)" href="\SportPages\SportPageInfo.aspx?TournamentID=404">Alpine Ski (Girls)</a></li><li><a id="mnuSportButtonHSBasketball (Unified)" href="\SportPages\SportPageInfo.aspx?TournamentID=302">Basketball (Unified)</a></li><li><a id="mnuSportButtonHSBoys Basketball" href="\SportPages\SportPageInfo.aspx?TournamentID=100">Boys Basketball</a></li><li><a id="mnuSportButtonHSGirls Basketball" href="\SportPages\SportPageInfo.aspx?TournamentID=101">Girls Basketball</a></li><li><a id="mnuSportButtonHSDrama (Coed)" href="\SportPages\SportPageInfo.aspx?TournamentID=1010">Drama (Coed)</a></li><li><a id="mnuSportButtonHSIce Hockey (Boys)" href="\SportPages\SportPageInfo.aspx?TournamentID=103">Ice Hockey (Boys)</a></li><li><a id="mnuSportButtonHSIce Hockey (Girls)" href="\SportPages\SportPageInfo.aspx?TournamentID=108">Ice Hockey (Girls)</a></li><li><a id="mnuSportButtonHSIndoor Track (Boys)" href="\SportPages\SportPageInfo.aspx?TournamentID=104">Indoor Track (Boys)</a></li><li><a id="mnuSportButtonHSIndoor Track (Girls)" href="\SportPages\SportPageInfo.aspx?TournamentID=300">Indoor Track (Girls)</a></li><li><a id="mnuSportButtonHSNordic Ski" href="\SportPages\SportPageInfo.aspx?TournamentID=402">Nordic Ski</a></li><li><a id="mnuSportButtonHSSwimming (Boys)" href="\SportPages\SportPageInfo.aspx?TournamentID=105">Swimming (Boys)</a></li><li><a id="mnuSportButtonHSSwimming (Girls)" href="\SportPages\SportPageInfo.aspx?TournamentID=7">Swimming (Girls)</a></li><li><a id="mnuSportButtonHSCheerleading Winter (Coed)" href="\SportPages\SportPageInfo.aspx?TournamentID=1005">Cheerleading Winter (Coed)</a></li><li><a id="mnuSportButtonHSWrestling" href="\SportPages\SportPageInfo.aspx?TournamentID=106">Wrestling</a></li><li class="dsNavigationMenuGroupSeperator"></li><li><div class="dsNavigationMenuGroupTitle">Spring</div></li><li><a id="mnuSportButtonHSBaseball" href="\SportPages\SportPageInfo.aspx?TournamentID=200">Baseball</a></li><li><a id="mnuSportButtonHSBocce (Unified)" href="\SportPages\SportPageInfo.aspx?TournamentID=400">Bocce (Unified)</a></li><li><a id="mnuSportButtonHSESports Spring" href="\SportPages\SportPageInfo.aspx?TournamentID=1003">ESports Spring</a></li><li><a id="mnuSportButtonHSLacrosse (Boys)" href="\SportPages\SportPageInfo.aspx?TournamentID=202">Lacrosse (Boys)</a></li><li><a id="mnuSportButtonHSLacrosse (Girls)" href="\SportPages\SportPageInfo.aspx?TournamentID=203">Lacrosse (Girls)</a></li><li><a id="mnuSportButtonHSOutdoor Track (Boys)" href="\SportPages\SportPageInfo.aspx?TournamentID=204">Outdoor Track (Boys)</a></li><li><a id="mnuSportButtonHSOutdoor Track (Girls)" href="\SportPages\SportPageInfo.aspx?TournamentID=301">Outdoor Track (Girls)</a></li><li><a id="mnuSportButtonHSSoftball" href="\SportPages\SportPageInfo.aspx?TournamentID=205">Softball</a></li><li><a id="mnuSportButtonHSTennis (Boys)" href="\SportPages\SportPageInfo.aspx?TournamentID=206">Tennis (Boys)</a></li><li><a id="mnuSportButtonHSTennis (Girls)" href="\SportPages\SportPageInfo.aspx?TournamentID=207">Tennis (Girls)</a></li><li class="dsNavigationMenuGroupSeperator"></li><li><div class="dsNavigationMenuGroupTitle">Fall</div></li><li><a id="mnuSportButtonHSCross Country (Boys)" href="\SportPages\SportPageInfo.aspx?TournamentID=1">Cross Country (Boys)</a></li><li><a id="mnuSportButtonHSCross Country (Girls)" href="\SportPages\SportPageInfo.aspx?TournamentID=9">Cross Country (Girls)</a></li><li><a id="mnuSportButtonHSESports Fall" href="\SportPages\SportPageInfo.aspx?TournamentID=304">ESports Fall</a></li><li><a id="mnuSportButtonHSField Hockey" href="\SportPages\SportPageInfo.aspx?TournamentID=2">Field Hockey</a></li><li><a id="mnuSportButtonHSFootball" href="\SportPages\SportPageInfo.aspx?TournamentID=3">Football</a></li><li><a id="mnuSportButtonHSGolf (Coed)" href="\SportPages\SportPageInfo.aspx?TournamentID=4">Golf (Coed)</a></li><li><a id="mnuSportButtonHSSoccer (Boys)" href="\SportPages\SportPageInfo.aspx?TournamentID=5">Soccer (Boys)</a></li><li><a id="mnuSportButtonHSSoccer (Girls)" href="\SportPages\SportPageInfo.aspx?TournamentID=6">Soccer (Girls)</a></li><li><a id="mnuSportButtonHSSoccer (Unified)" href="\SportPages\SportPageInfo.aspx?TournamentID=1007">Soccer (Unified)</a></li><li><a id="mnuSportButtonHSVolleyball (Girls)" href="\SportPages\SportPageInfo.aspx?TournamentID=8">Volleyball (Girls)</a></li><li><a id="mnuSportButtonHSVolleyball (Unified)" href="\SportPages\SportPageInfo.aspx?TournamentID=303">Volleyball (Unified)</a></li></ul>
+	</div>
+            </div>
+        
+</div>
+
+        <div id="dsPagePanel" class="dsPagePanel">
+	
+
+            <div id="dsHeaderPanel" class="dsHeaderPanel">
+		
+                <ul id="ToolbarUL" class="dsHeaderMenu">
+                    <li class="dsHeaderLeft dsNavigationMenuClosed" onclick="openNav()"><i class="fa fa-bars"></i></li>
+                    <li class="dsHeaderLeft dsNavigationMenuOpen" onclick="closeNav()"><span style="font-size: 32px !important; font-weight: normal;">×</span></li>
+
+                    <li id="NavBack" class="dsHeaderLeft dsHeaderNavButton">
+                        <a onclick="history.back();return false;"><i class="fa fa-arrow-left"></i></a>
+                    </li>
+
+                    <li id="NavRefresh" class="dsHeaderLeft dsHeaderNavButton">
+                        <a onclick="window.location.reload();return false;"><i class="fa fa-arrow-rotate-right"></i></a>
+                    </li>
+
+                    <li id="Logo" class="dsHeaderLeft">
+                        <a href="/" onclick="changeToMainMenu();">
+                            <img id="LogoImage" class="fpLogoImage" src="/resources/_LogoSmall.png" /></a>
+                        <!--<div class="dsLogoTextDatable">datable</div>-->
+                    </li>
+
+                </ul>
+                <div id="WelcomeText" class="dsWelcomeText">
+                    <a id="Signup" title="Sign-Up" class="dsHeaderButton" href="SignUp.aspx">Sign-Up</a>
+                    <a id="Login" title="Login" class="dsHeaderButton" href="Login.aspx">Login</a>
+                </div>
+            
+	</div>
+
+
+
+            <div class="dsMiddlePanel">
+
+                
+
+    <div id="ToolbarPanel" class="dsToolbarPanel">
+        <ul id="Toolbar" class="dsToolbar">
+            <li class="dsToolbarLeft">
+                <a id="Sport" title="Sport" href="#"><i class="fa fa-solid fa-caret-down"></i>Alpine Ski - Boys</a>
+                <div id="SportPanel" class="dsToolbarDropdown2 dsToolbarDropdownLeft dsToolbarPanelScroll">
+		
+                    <div id="SportMenu_MAIN" class="dsToolbarMenuUL dsToolbarMenuSubPanel active">
+			
+                    
+		</div>
+                <a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=34"><i class="fa-solid fa-person-skiing"></i>Alpine Ski - Boys</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=44"><i class="fa-solid fa-person-skiing"></i>Alpine Ski - Coed</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=35"><i class="fa-solid fa-person-skiing"></i>Alpine Ski - Girls</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=7"><i class="fa-duotone fa-baseball"></i>Baseball - Boys</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=2"><i class="fa-duotone fa-basketball-hoop"></i>Basketball - Boys</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=3"><i class="fa-duotone fa-basketball-hoop"></i>Basketball - Girls</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=40"><i class="fa-duotone fa-basketball-hoop"></i>Basketball - Unified</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=37">Bocce - Coed</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=36">Bocce - Unified</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=39">Coed Basketball (Unified) - Coed</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=18"><i class="fa-solid fa-person-running"></i>Cross Country - Boys</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=50"><i class="fa-solid fa-person-running"></i>Cross Country - Coed</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=19"><i class="fa-solid fa-person-running"></i>Cross Country - Girls</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=52">ESports - Coed</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=48">Event</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=49">Event - Coed</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=26">Fall Cheerleading - Coed</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=32">Fall Cheerleading - Girls</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=20"><i class="fa-solid fa-field-hockey-stick-ball"></i>Field Hockey - Girls</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=15"><i class="fa-duotone fa-football"></i>Football - Boys</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=27"><i class="fa-duotone fa-football"></i>Football - Coed</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=28"><i class="fa-duotone fa-golf-flag-hole"></i>Golf - Coed</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=45"><i class="fa-solid fa-person-falling"></i>Gymnastics - Coed</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=4"><i class="fa-duotone fa-hockey-sticks"></i>Ice Hockey - Boys</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=5"><i class="fa-duotone fa-hockey-sticks"></i>Ice Hockey - Girls</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=24"><i class="fa-solid fa-person-running"></i>Indoor Track - Boys</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=46"><i class="fa-solid fa-person-running"></i>Indoor Track - Coed</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=17"><i class="fa-solid fa-person-running"></i>Indoor Track - Girls</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=8"><i class="fa-duotone fa-lacrosse-stick-ball"></i>Lacrosse - Boys</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=9"><i class="fa-duotone fa-lacrosse-stick-ball"></i>Lacrosse - Girls</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=53"><i class="fa-solid fa-person-skiing"></i>Nordic Ski - Boys</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=47"><i class="fa-solid fa-person-skiing"></i>Nordic Ski - Coed</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=33"><i class="fa-solid fa-person-skiing"></i>Nordic Ski - Girls</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=10"><i class="fa-solid fa-person-running"></i>Outdoor Track - Boys</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=43"><i class="fa-solid fa-person-running"></i>Outdoor Track - Coed</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=11"><i class="fa-solid fa-person-running"></i>Outdoor Track - Girls</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=51"><i class="fa-duotone fa-sailboat"></i>Sailing - Coed</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=21"><i class="fa-duotone fa-futbol"></i>Soccer - Boys</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=16"><i class="fa-duotone fa-futbol"></i>Soccer - Girls</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=12"><i class="fa-duotone fa-baseball-bat-ball"></i>Softball - Girls</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=22"><i class="fa-duotone fa-person-swimming"></i>Swimming - Boys</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=41"><i class="fa-duotone fa-person-swimming"></i>Swimming - Coed</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=23"><i class="fa-duotone fa-person-swimming"></i>Swimming - Girls</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=13"><i class="fa-duotone fa-racquet"></i>Tennis - Boys</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=14"><i class="fa-duotone fa-racquet"></i>Tennis - Girls</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=38">Unified Basketball (Unified) - Unified</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=30"><i class="fa-duotone fa-volleyball"></i>Volleyball - Girls</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=42"><i class="fa-duotone fa-volleyball"></i>Volleyball - Unified</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=31"><i class="fa-solid fa-child-reaching"></i>Winter Cheerleading - Coed</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=25"><i class="fa-solid fa-child-reaching"></i>Winter Cheerleading - Girls</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5&amp;SportGenderListID=29"><i class="fa-duotone fa-hands"></i>Wrestling - Coed</a>
+	</div>
+            </li>
+            <li class="dsToolbarLeft">
+                <a id="TeamLevel" title="Level" href="#"><i class="fa fa-solid fa-caret-down"></i>Varsity</a>
+                <div id="TeamLevelPanel" class="dsToolbarDropdown2 dsToolbarDropdownLeft dsToolbarPanelScroll">
+		
+                <a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=1000">Mixed Levels</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=5">Varsity</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=4">Junior Varsity</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=3">Sophomore</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=1">Freshman</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=100">Middle School</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=101">Club</a><a class=" dsToolbarMenuLink " href="/MasterSchedule.aspx?TeamLevelID=6">Other</a>
+	</div>
+            </li>
+            <li class="dsToolbarLeft dsToolbarButton">
+                <a id="Export" title="Export" CauseValidation="false" href="javascript:__doPostBack(&#39;ctl00$MainContent$Export&#39;,&#39;&#39;)">
+                 <i class="fa fa-file-excel"></i></a>
+            </li>
+            
+        </ul>
+    </div>
+
+    <div id="Panel1" class="dsFormPanelFSwTB ">
+		
+
+        <div id="HeaderWrapper">
+			
+        
+		</div>
+        <div id="BodyWrapper" class="dashboard-content">
+			
+        <div class="regularseasonwrapper">
+				<h2>Alpine Ski - Boys - Varsity</h2><span id="RegularSeason-1" class="tableregularseason"><table id="RegularSeason-1_Table" class="dsTable">
+					<tr>
+						<th style="width:1px;white-space:nowrap;">GameDate</th><th style="width:1px;white-space:nowrap;">Time</th><th style="width:1px;white-space:nowrap;">Type</th><th style="width:1px;white-space:nowrap;">Home School</th><th style="width:1px;white-space:nowrap;">Away School</th><th style="width:1px;white-space:nowrap;">Site</th>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate2" style="width:1px;white-space:nowrap;">01/03/2026</td><td id="RegularSeason-1_Table_Time2" style="width:1px;white-space:nowrap;">9:00 AM</td><td id="RegularSeason-1_Table_Type2" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School2" style="width:1px;white-space:nowrap;">Caribou</td><td id="RegularSeason-1_Table_Away School2" style="width:1px;white-space:nowrap;">Presque Isle, Greenville, Central Aroostook Sr, Fort Kent Community</td><td id="RegularSeason-1_Table_Site2" style="width:1px;white-space:nowrap;">Big Rock Mt.</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate3" style="width:1px;white-space:nowrap;">01/06/2026</td><td id="RegularSeason-1_Table_Time3" style="width:1px;white-space:nowrap;">5:15 PM</td><td id="RegularSeason-1_Table_Type3" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School3" style="width:1px;white-space:nowrap;">Greely</td><td id="RegularSeason-1_Table_Away School3" style="width:1px;white-space:nowrap;">Lake Region, Cape Elizabeth, Gray-New Gloucester, Freeport, Yarmouth, Fryeburg Academy, York, Wells</td><td id="RegularSeason-1_Table_Site3" style="width:1px;white-space:nowrap;">Pleasant Mountain</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate4" style="width:1px;white-space:nowrap;">01/07/2026</td><td id="RegularSeason-1_Table_Time4" style="width:1px;white-space:nowrap;">12:00 PM</td><td id="RegularSeason-1_Table_Type4" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School4" style="width:1px;white-space:nowrap;">KVAC</td><td id="RegularSeason-1_Table_Away School4" style="width:1px;white-space:nowrap;">Mt. Blue </td><td id="RegularSeason-1_Table_Site4" style="width:1px;white-space:nowrap;">Saddleback</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate5" style="width:1px;white-space:nowrap;">01/07/2026</td><td id="RegularSeason-1_Table_Time5" style="width:1px;white-space:nowrap;">Postponed</td><td id="RegularSeason-1_Table_Type5" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School5" style="width:1px;white-space:nowrap;">Marshwood</td><td id="RegularSeason-1_Table_Away School5" style="width:1px;white-space:nowrap;">Falmouth, Windham, Cheverus, Gorham, Kennebunk</td><td id="RegularSeason-1_Table_Site5" style="width:1px;white-space:nowrap;">Pleasant Mountain</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate6" style="width:1px;white-space:nowrap;">01/08/2026</td><td id="RegularSeason-1_Table_Time6" style="width:1px;white-space:nowrap;">5:15 PM</td><td id="RegularSeason-1_Table_Type6" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School6" style="width:1px;white-space:nowrap;">Lake Region</td><td id="RegularSeason-1_Table_Away School6" style="width:1px;white-space:nowrap;">Cape Elizabeth, Greely, Gray-New Gloucester, Yarmouth, York</td><td id="RegularSeason-1_Table_Site6" style="width:1px;white-space:nowrap;">Pleasant Mountain</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate7" style="width:1px;white-space:nowrap;">01/08/2026</td><td id="RegularSeason-1_Table_Time7" style="width:1px;white-space:nowrap;">5:15 PM</td><td id="RegularSeason-1_Table_Type7" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School7" style="width:1px;white-space:nowrap;">Yarmouth</td><td id="RegularSeason-1_Table_Away School7" style="width:1px;white-space:nowrap;">York, Freeport, Greely</td><td id="RegularSeason-1_Table_Site7" style="width:1px;white-space:nowrap;">Pleasant Mountain</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate8" style="width:1px;white-space:nowrap;">01/09/2026</td><td id="RegularSeason-1_Table_Time8" style="width:1px;white-space:nowrap;">4:00 PM</td><td id="RegularSeason-1_Table_Type8" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School8" style="width:1px;white-space:nowrap;">KVAC</td><td id="RegularSeason-1_Table_Away School8" style="width:1px;white-space:nowrap;">Mt. Blue </td><td id="RegularSeason-1_Table_Site8" style="width:1px;white-space:nowrap;">Black Mt. </td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate9" style="width:1px;white-space:nowrap;">01/09/2026</td><td id="RegularSeason-1_Table_Time9" style="width:1px;white-space:nowrap;">5:30 PM</td><td id="RegularSeason-1_Table_Type9" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School9" style="width:1px;white-space:nowrap;">Windham</td><td id="RegularSeason-1_Table_Away School9" style="width:1px;white-space:nowrap;">Kennebunk, Falmouth, Gorham, Cheverus, Marshwood</td><td id="RegularSeason-1_Table_Site9" style="width:1px;white-space:nowrap;">Pleasant Mountain </td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate10" style="width:1px;white-space:nowrap;">01/13/2026</td><td id="RegularSeason-1_Table_Time10" style="width:1px;white-space:nowrap;">2:00 PM</td><td id="RegularSeason-1_Table_Type10" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School10" style="width:1px;white-space:nowrap;">KVAC</td><td id="RegularSeason-1_Table_Away School10" style="width:1px;white-space:nowrap;">Hampden Academy</td><td id="RegularSeason-1_Table_Site10" style="width:1px;white-space:nowrap;">Lost Valley</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate11" style="width:1px;white-space:nowrap;">01/13/2026</td><td id="RegularSeason-1_Table_Time11" style="width:1px;white-space:nowrap;">5:15 PM</td><td id="RegularSeason-1_Table_Type11" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School11" style="width:1px;white-space:nowrap;">Cape Elizabeth</td><td id="RegularSeason-1_Table_Away School11" style="width:1px;white-space:nowrap;">Wells, Fryeburg Academy, Freeport, Gray-New Gloucester</td><td id="RegularSeason-1_Table_Site11" style="width:1px;white-space:nowrap;">Pleasant Mountain</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate12" style="width:1px;white-space:nowrap;">01/13/2026</td><td id="RegularSeason-1_Table_Time12" style="width:1px;white-space:nowrap;">5:15 PM</td><td id="RegularSeason-1_Table_Type12" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School12" style="width:1px;white-space:nowrap;">York</td><td id="RegularSeason-1_Table_Away School12" style="width:1px;white-space:nowrap;">Yarmouth, Greely, Lake Region</td><td id="RegularSeason-1_Table_Site12" style="width:1px;white-space:nowrap;">Pleasant Mountain</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate13" style="width:1px;white-space:nowrap;">01/14/2026</td><td id="RegularSeason-1_Table_Time13" style="width:1px;white-space:nowrap;">3:00 PM</td><td id="RegularSeason-1_Table_Type13" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School13" style="width:1px;white-space:nowrap;">Mt. Blue </td><td id="RegularSeason-1_Table_Away School13" style="width:1px;white-space:nowrap;">KVAC</td><td id="RegularSeason-1_Table_Site13" style="width:1px;white-space:nowrap;">Titcomb</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate14" style="width:1px;white-space:nowrap;">01/14/2026</td><td id="RegularSeason-1_Table_Time14" style="width:1px;white-space:nowrap;">3:00 PM</td><td id="RegularSeason-1_Table_Type14" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School14" style="width:1px;white-space:nowrap;">KVAC</td><td id="RegularSeason-1_Table_Away School14" style="width:1px;white-space:nowrap;">Hampden Academy</td><td id="RegularSeason-1_Table_Site14" style="width:1px;white-space:nowrap;">Titcomb Mtn.</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate15" style="width:1px;white-space:nowrap;">01/14/2026</td><td id="RegularSeason-1_Table_Time15" style="width:1px;white-space:nowrap;">5:30 PM</td><td id="RegularSeason-1_Table_Type15" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School15" style="width:1px;white-space:nowrap;">Cheverus</td><td id="RegularSeason-1_Table_Away School15" style="width:1px;white-space:nowrap;">Marshwood, Falmouth, Windham, Gorham, Kennebunk</td><td id="RegularSeason-1_Table_Site15" style="width:1px;white-space:nowrap;">Pleasant Mountain </td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate16" style="width:1px;white-space:nowrap;">01/15/2026</td><td id="RegularSeason-1_Table_Time16" style="width:1px;white-space:nowrap;">5:15 PM</td><td id="RegularSeason-1_Table_Type16" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School16" style="width:1px;white-space:nowrap;">Wells</td><td id="RegularSeason-1_Table_Away School16" style="width:1px;white-space:nowrap;">Fryeburg Academy, Fryeburg Academy, Gray-New Gloucester, Gray-New Gloucester, Freeport, Freeport, Lake Region, Greely</td><td id="RegularSeason-1_Table_Site16" style="width:1px;white-space:nowrap;">Pleasant Mountain</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate17" style="width:1px;white-space:nowrap;">01/17/2026</td><td id="RegularSeason-1_Table_Time17" style="width:1px;white-space:nowrap;">9:00 AM</td><td id="RegularSeason-1_Table_Type17" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School17" style="width:1px;white-space:nowrap;">Presque Isle</td><td id="RegularSeason-1_Table_Away School17" style="width:1px;white-space:nowrap;">Fort Kent Community, Central Aroostook Sr, Caribou</td><td id="RegularSeason-1_Table_Site17" style="width:1px;white-space:nowrap;">Big Rock - Mars Hill</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate18" style="width:1px;white-space:nowrap;">01/17/2026</td><td id="RegularSeason-1_Table_Time18" style="width:1px;white-space:nowrap;">9:30 AM</td><td id="RegularSeason-1_Table_Type18" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School18" style="width:1px;white-space:nowrap;">KVAC</td><td id="RegularSeason-1_Table_Away School18" style="width:1px;white-space:nowrap;">Hampden Academy, Mt. Blue </td><td id="RegularSeason-1_Table_Site18" style="width:1px;white-space:nowrap;">Kents Hill</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate19" style="width:1px;white-space:nowrap;">01/19/2026</td><td id="RegularSeason-1_Table_Time19" style="width:1px;white-space:nowrap;">10:00 AM</td><td id="RegularSeason-1_Table_Type19" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School19" style="width:1px;white-space:nowrap;">KVAC</td><td id="RegularSeason-1_Table_Away School19" style="width:1px;white-space:nowrap;">Mt. Blue </td><td id="RegularSeason-1_Table_Site19" style="width:1px;white-space:nowrap;">Black Mt. </td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate20" style="width:1px;white-space:nowrap;">01/19/2026</td><td id="RegularSeason-1_Table_Time20" style="width:1px;white-space:nowrap;">10:00 AM</td><td id="RegularSeason-1_Table_Type20" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School20" style="width:1px;white-space:nowrap;">KVAC</td><td id="RegularSeason-1_Table_Away School20" style="width:1px;white-space:nowrap;">Hampden Academy</td><td id="RegularSeason-1_Table_Site20" style="width:1px;white-space:nowrap;">Black Mtn.</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate21" style="width:1px;white-space:nowrap;">01/19/2026</td><td id="RegularSeason-1_Table_Time21" style="width:1px;white-space:nowrap;">2:00 PM</td><td id="RegularSeason-1_Table_Type21" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School21" style="width:1px;white-space:nowrap;">Cape Elizabeth</td><td id="RegularSeason-1_Table_Away School21" style="width:1px;white-space:nowrap;">Edward Little, Kennebunk, Windham, York, Cheverus, Yarmouth</td><td id="RegularSeason-1_Table_Site21" style="width:1px;white-space:nowrap;">Pleasant Mountain </td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate22" style="width:1px;white-space:nowrap;">01/19/2026</td><td id="RegularSeason-1_Table_Time22" style="width:1px;white-space:nowrap;">5:15 PM</td><td id="RegularSeason-1_Table_Type22" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School22" style="width:1px;white-space:nowrap;">Lake Region</td><td id="RegularSeason-1_Table_Away School22" style="width:1px;white-space:nowrap;">Marshwood, Falmouth, Edward Little, Fryeburg Academy, Gorham, Wells</td><td id="RegularSeason-1_Table_Site22" style="width:1px;white-space:nowrap;">Pleasant Mountain</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate23" style="width:1px;white-space:nowrap;">01/21/2026</td><td id="RegularSeason-1_Table_Time23" style="width:1px;white-space:nowrap;">3:00 PM</td><td id="RegularSeason-1_Table_Type23" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School23" style="width:1px;white-space:nowrap;">Mt. Blue </td><td id="RegularSeason-1_Table_Away School23" style="width:1px;white-space:nowrap;">KVAC</td><td id="RegularSeason-1_Table_Site23" style="width:1px;white-space:nowrap;">Titcomb</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate24" style="width:1px;white-space:nowrap;">01/22/2026</td><td id="RegularSeason-1_Table_Time24" style="width:1px;white-space:nowrap;">5:15 PM</td><td id="RegularSeason-1_Table_Type24" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School24" style="width:1px;white-space:nowrap;">Fryeburg Academy</td><td id="RegularSeason-1_Table_Away School24" style="width:1px;white-space:nowrap;">Lake Region, Wells</td><td id="RegularSeason-1_Table_Site24" style="width:1px;white-space:nowrap;">Pleasant Mountain</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate25" style="width:1px;white-space:nowrap;">01/22/2026</td><td id="RegularSeason-1_Table_Time25" style="width:1px;white-space:nowrap;">5:15 PM</td><td id="RegularSeason-1_Table_Type25" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School25" style="width:1px;white-space:nowrap;">Yarmouth</td><td id="RegularSeason-1_Table_Away School25" style="width:1px;white-space:nowrap;">York, York, Cape Elizabeth, Cape Elizabeth</td><td id="RegularSeason-1_Table_Site25" style="width:1px;white-space:nowrap;">Pleasant Mountain</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate26" style="width:1px;white-space:nowrap;">01/23/2026</td><td id="RegularSeason-1_Table_Time26" style="width:1px;white-space:nowrap;">3:00 PM</td><td id="RegularSeason-1_Table_Type26" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School26" style="width:1px;white-space:nowrap;">KVAC</td><td id="RegularSeason-1_Table_Away School26" style="width:1px;white-space:nowrap;">Hampden Academy</td><td id="RegularSeason-1_Table_Site26" style="width:1px;white-space:nowrap;">Titcomb Mtn.</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate27" style="width:1px;white-space:nowrap;">01/23/2026</td><td id="RegularSeason-1_Table_Time27" style="width:1px;white-space:nowrap;">4:00 PM</td><td id="RegularSeason-1_Table_Type27" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School27" style="width:1px;white-space:nowrap;">KVAC</td><td id="RegularSeason-1_Table_Away School27" style="width:1px;white-space:nowrap;">Mt. Blue </td><td id="RegularSeason-1_Table_Site27" style="width:1px;white-space:nowrap;">Black Mt. </td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate28" style="width:1px;white-space:nowrap;">01/23/2026</td><td id="RegularSeason-1_Table_Time28" style="width:1px;white-space:nowrap;">5:30 PM</td><td id="RegularSeason-1_Table_Type28" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School28" style="width:1px;white-space:nowrap;">Falmouth</td><td id="RegularSeason-1_Table_Away School28" style="width:1px;white-space:nowrap;">Kennebunk, Gorham, Cheverus, Windham, Marshwood</td><td id="RegularSeason-1_Table_Site28" style="width:1px;white-space:nowrap;">Pleasant Mountain </td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate29" style="width:1px;white-space:nowrap;">01/26/2026</td><td id="RegularSeason-1_Table_Time29" style="width:1px;white-space:nowrap;">3:00 PM</td><td id="RegularSeason-1_Table_Type29" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School29" style="width:1px;white-space:nowrap;">Mt. Blue </td><td id="RegularSeason-1_Table_Away School29" style="width:1px;white-space:nowrap;">KVAC</td><td id="RegularSeason-1_Table_Site29" style="width:1px;white-space:nowrap;">Titcomb</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate30" style="width:1px;white-space:nowrap;">01/26/2026</td><td id="RegularSeason-1_Table_Time30" style="width:1px;white-space:nowrap;">3:00 PM</td><td id="RegularSeason-1_Table_Type30" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School30" style="width:1px;white-space:nowrap;">KVAC</td><td id="RegularSeason-1_Table_Away School30" style="width:1px;white-space:nowrap;">Hampden Academy</td><td id="RegularSeason-1_Table_Site30" style="width:1px;white-space:nowrap;">Titcomb Mtn.</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate31" style="width:1px;white-space:nowrap;">01/27/2026</td><td id="RegularSeason-1_Table_Time31" style="width:1px;white-space:nowrap;">5:15 PM</td><td id="RegularSeason-1_Table_Type31" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School31" style="width:1px;white-space:nowrap;">Yarmouth</td><td id="RegularSeason-1_Table_Away School31" style="width:1px;white-space:nowrap;">Kennebunk, York, Windham, Gorham, Gray-New Gloucester, Cape Elizabeth</td><td id="RegularSeason-1_Table_Site31" style="width:1px;white-space:nowrap;">Pleasant Mountain</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate32" style="width:1px;white-space:nowrap;">01/27/2026</td><td id="RegularSeason-1_Table_Time32" style="width:1px;white-space:nowrap;">5:30 PM</td><td id="RegularSeason-1_Table_Type32" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School32" style="width:1px;white-space:nowrap;">Yarmouth</td><td id="RegularSeason-1_Table_Away School32" style="width:1px;white-space:nowrap;">Cape Elizabeth, Gray-New Gloucester, Gorham, Windham, York, Kennebunk</td><td id="RegularSeason-1_Table_Site32" style="width:1px;white-space:nowrap;">Pleasant Mountain </td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate33" style="width:1px;white-space:nowrap;">01/28/2026</td><td id="RegularSeason-1_Table_Time33" style="width:1px;white-space:nowrap;">3:00 PM</td><td id="RegularSeason-1_Table_Type33" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School33" style="width:1px;white-space:nowrap;">Mt. Blue </td><td id="RegularSeason-1_Table_Away School33" style="width:1px;white-space:nowrap;">KVAC</td><td id="RegularSeason-1_Table_Site33" style="width:1px;white-space:nowrap;">Titcomb</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate34" style="width:1px;white-space:nowrap;">01/28/2026</td><td id="RegularSeason-1_Table_Time34" style="width:1px;white-space:nowrap;">3:00 PM</td><td id="RegularSeason-1_Table_Type34" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School34" style="width:1px;white-space:nowrap;">KVAC</td><td id="RegularSeason-1_Table_Away School34" style="width:1px;white-space:nowrap;">Hampden Academy</td><td id="RegularSeason-1_Table_Site34" style="width:1px;white-space:nowrap;">Titcomb Mtn.</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate35" style="width:1px;white-space:nowrap;">01/28/2026</td><td id="RegularSeason-1_Table_Time35" style="width:1px;white-space:nowrap;">5:30 PM</td><td id="RegularSeason-1_Table_Type35" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School35" style="width:1px;white-space:nowrap;">Marshwood</td><td id="RegularSeason-1_Table_Away School35" style="width:1px;white-space:nowrap;">Cheverus, Falmouth, Freeport, Wells, Fryeburg Academy, Greely, Lake Region</td><td id="RegularSeason-1_Table_Site35" style="width:1px;white-space:nowrap;">Pleasant Mountain</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate36" style="width:1px;white-space:nowrap;">01/30/2026</td><td id="RegularSeason-1_Table_Time36" style="width:1px;white-space:nowrap;">5:30 PM</td><td id="RegularSeason-1_Table_Type36" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School36" style="width:1px;white-space:nowrap;">Gorham</td><td id="RegularSeason-1_Table_Away School36" style="width:1px;white-space:nowrap;">Falmouth, Windham, Cheverus, Marshwood, Kennebunk</td><td id="RegularSeason-1_Table_Site36" style="width:1px;white-space:nowrap;">Pleasant Mountain </td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate37" style="width:1px;white-space:nowrap;">01/31/2026</td><td id="RegularSeason-1_Table_Time37" style="width:1px;white-space:nowrap;">10:00 AM</td><td id="RegularSeason-1_Table_Type37" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School37" style="width:1px;white-space:nowrap;">KVAC</td><td id="RegularSeason-1_Table_Away School37" style="width:1px;white-space:nowrap;">Hampden Academy</td><td id="RegularSeason-1_Table_Site37" style="width:1px;white-space:nowrap;">Camden Hills</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate38" style="width:1px;white-space:nowrap;">01/31/2026</td><td id="RegularSeason-1_Table_Time38" style="width:1px;white-space:nowrap;">9:00 AM</td><td id="RegularSeason-1_Table_Type38" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School38" style="width:1px;white-space:nowrap;">Presque Isle</td><td id="RegularSeason-1_Table_Away School38" style="width:1px;white-space:nowrap;">Caribou, Central Aroostook Sr, Fort Kent Community</td><td id="RegularSeason-1_Table_Site38" style="width:1px;white-space:nowrap;">Big Rock - Mars Hill</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate39" style="width:1px;white-space:nowrap;">02/03/2026</td><td id="RegularSeason-1_Table_Time39" style="width:1px;white-space:nowrap;">5:15 PM</td><td id="RegularSeason-1_Table_Type39" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School39" style="width:1px;white-space:nowrap;">Greely</td><td id="RegularSeason-1_Table_Away School39" style="width:1px;white-space:nowrap;">Lake Region, Cape Elizabeth, Freeport, Fryeburg Academy</td><td id="RegularSeason-1_Table_Site39" style="width:1px;white-space:nowrap;">Pleasant Mountain</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate40" style="width:1px;white-space:nowrap;">02/03/2026</td><td id="RegularSeason-1_Table_Time40" style="width:1px;white-space:nowrap;">5:15 PM</td><td id="RegularSeason-1_Table_Type40" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School40" style="width:1px;white-space:nowrap;">Wells</td><td id="RegularSeason-1_Table_Away School40" style="width:1px;white-space:nowrap;">Gray-New Gloucester, Yarmouth, York</td><td id="RegularSeason-1_Table_Site40" style="width:1px;white-space:nowrap;">Pleasant Mountain</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate41" style="width:1px;white-space:nowrap;">02/04/2026</td><td id="RegularSeason-1_Table_Time41" style="width:1px;white-space:nowrap;">5:30 PM</td><td id="RegularSeason-1_Table_Type41" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School41" style="width:1px;white-space:nowrap;">Gorham</td><td id="RegularSeason-1_Table_Away School41" style="width:1px;white-space:nowrap;">Kennebunk, Marshwood, Cheverus, Windham, Falmouth</td><td id="RegularSeason-1_Table_Site41" style="width:1px;white-space:nowrap;">Pleasant Mountain </td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate42" style="width:1px;white-space:nowrap;">02/05/2026</td><td id="RegularSeason-1_Table_Time42" style="width:1px;white-space:nowrap;">5:15 PM</td><td id="RegularSeason-1_Table_Type42" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School42" style="width:1px;white-space:nowrap;">Fryeburg Academy</td><td id="RegularSeason-1_Table_Away School42" style="width:1px;white-space:nowrap;">Yarmouth, Cape Elizabeth, Freeport, Greely</td><td id="RegularSeason-1_Table_Site42" style="width:1px;white-space:nowrap;">Pleasant Mountain</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate43" style="width:1px;white-space:nowrap;">02/05/2026</td><td id="RegularSeason-1_Table_Time43" style="width:1px;white-space:nowrap;">5:15 PM</td><td id="RegularSeason-1_Table_Type43" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School43" style="width:1px;white-space:nowrap;">York</td><td id="RegularSeason-1_Table_Away School43" style="width:1px;white-space:nowrap;">Fryeburg Academy, Wells</td><td id="RegularSeason-1_Table_Site43" style="width:1px;white-space:nowrap;">Pleasant Mountain</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate44" style="width:1px;white-space:nowrap;">02/05/2026</td><td id="RegularSeason-1_Table_Time44" style="width:1px;white-space:nowrap;">5:30 PM</td><td id="RegularSeason-1_Table_Type44" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School44" style="width:1px;white-space:nowrap;">Gorham</td><td id="RegularSeason-1_Table_Away School44" style="width:1px;white-space:nowrap;"></td><td id="RegularSeason-1_Table_Site44" style="width:1px;white-space:nowrap;">Pleasant Mountain</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate45" style="width:1px;white-space:nowrap;">02/06/2026</td><td id="RegularSeason-1_Table_Time45" style="width:1px;white-space:nowrap;">5:30 PM</td><td id="RegularSeason-1_Table_Type45" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School45" style="width:1px;white-space:nowrap;">Windham</td><td id="RegularSeason-1_Table_Away School45" style="width:1px;white-space:nowrap;">Gorham, Marshwood, Falmouth, Cheverus, Kennebunk</td><td id="RegularSeason-1_Table_Site45" style="width:1px;white-space:nowrap;">Pleasant Mountain </td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate46" style="width:1px;white-space:nowrap;">02/09/2026</td><td id="RegularSeason-1_Table_Time46" style="width:1px;white-space:nowrap;">5:15 PM</td><td id="RegularSeason-1_Table_Type46" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School46" style="width:1px;white-space:nowrap;">Freeport</td><td id="RegularSeason-1_Table_Away School46" style="width:1px;white-space:nowrap;">Greely, Fryeburg Academy, Yarmouth, York</td><td id="RegularSeason-1_Table_Site46" style="width:1px;white-space:nowrap;">Pleasant Mountain</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate47" style="width:1px;white-space:nowrap;">02/09/2026</td><td id="RegularSeason-1_Table_Time47" style="width:1px;white-space:nowrap;">5:15 PM</td><td id="RegularSeason-1_Table_Type47" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School47" style="width:1px;white-space:nowrap;">Lake Region</td><td id="RegularSeason-1_Table_Away School47" style="width:1px;white-space:nowrap;">Wells, Gray-New Gloucester, Cape Elizabeth</td><td id="RegularSeason-1_Table_Site47" style="width:1px;white-space:nowrap;">Pleasant Mountain</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate48" style="width:1px;white-space:nowrap;">02/10/2026</td><td id="RegularSeason-1_Table_Time48" style="width:1px;white-space:nowrap;">3:00 PM</td><td id="RegularSeason-1_Table_Type48" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School48" style="width:1px;white-space:nowrap;">Hampden Academy</td><td id="RegularSeason-1_Table_Away School48" style="width:1px;white-space:nowrap;">KVAC</td><td id="RegularSeason-1_Table_Site48" style="width:1px;white-space:nowrap;">Herm Mtn.</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate49" style="width:1px;white-space:nowrap;">02/12/2026</td><td id="RegularSeason-1_Table_Time49" style="width:1px;white-space:nowrap;">10:00 AM</td><td id="RegularSeason-1_Table_Type49" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School49" style="width:1px;white-space:nowrap;">Lake Region</td><td id="RegularSeason-1_Table_Away School49" style="width:1px;white-space:nowrap;">Yarmouth, Freeport, Cape Elizabeth, Fryeburg Academy, Gray-New Gloucester, Greely, York, Wells</td><td id="RegularSeason-1_Table_Site49" style="width:1px;white-space:nowrap;">Pleasant Mountain</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate50" style="width:1px;white-space:nowrap;">02/14/2026</td><td id="RegularSeason-1_Table_Time50" style="width:1px;white-space:nowrap;">9:30 AM</td><td id="RegularSeason-1_Table_Type50" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School50" style="width:1px;white-space:nowrap;">KVAC</td><td id="RegularSeason-1_Table_Away School50" style="width:1px;white-space:nowrap;">Hampden Academy</td><td id="RegularSeason-1_Table_Site50" style="width:1px;white-space:nowrap;">Kents Hill</td>
+					</tr><tr>
+						<td id="RegularSeason-1_Table_GameDate51" style="width:1px;white-space:nowrap;">02/18/2026</td><td id="RegularSeason-1_Table_Time51" style="width:1px;white-space:nowrap;">10:00 AM</td><td id="RegularSeason-1_Table_Type51" style="width:1px;white-space:nowrap;">League</td><td id="RegularSeason-1_Table_Home School51" style="width:1px;white-space:nowrap;">KVAC</td><td id="RegularSeason-1_Table_Away School51" style="width:1px;white-space:nowrap;">Hampden Academy</td><td id="RegularSeason-1_Table_Site51" style="width:1px;white-space:nowrap;">Titcomb</td>
+					</tr>
+				</table></span>
+			</div>
+		</div>
+
+    
+	</div>
+
+
+
+            </div>
+        
+</div>
+
+
+    </form>
+</body>
+</html>

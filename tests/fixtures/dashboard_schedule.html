@@ -1,0 +1,1193 @@
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head><title>Maine Principal's Association</title><meta name='description' content='The Maine Principals’ Association is a nonprofit serving Maine schools through high school interscholastic athletics governance and professional support for K–12 administrators.'/><link href="/_Styles/2010/Config.css?3?x=2" rel="stylesheet" type="text/css" /><link href="/_Styles/2010/Controls.css?x=2" rel="stylesheet" type="text/css" /><link href="/_Styles/2010/Dashboard.css?2?x=2" rel="stylesheet" type="text/css" /><link href="/_Styles/2010/TournamentCentral.css?2?x=2" rel="stylesheet" type="text/css" /><meta charset="utf-8" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta id="Viewport" name="viewport" content="width=device-width, initial-scale=1, minimal-ui" /><meta name="mobile-web-app-capable" content="yes" /><meta name="apple-mobile-web-app-capable" content="yes" /><meta http-equiv="Cache-control" content="max-age=300" /><link rel="stylesheet" type="text/css" href="_Styles/Site.css?2" /><link rel="stylesheet" type="text/css" href="/_Styles/parsley.css" /><link rel="stylesheet" type="text/css" href="/_Styles/jquery-ui.css" /><link rel="stylesheet" type="text/css" href="/_Fonts/Awesome/css/fontawesome.css" /><link rel="stylesheet" type="text/css" href="/_Fonts/Awesome/css/regular.css" /><link rel="stylesheet" type="text/css" href="/_Fonts/Awesome/css/solid.css" /><link rel="stylesheet" type="text/css" href="_Fonts/Awesome/css/duotone.css" /><link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+
+
+    <script type="text/javascript" src="/_Scripts/Application.js"></script>
+    <script type="text/javascript" src="/_Scripts/Controls.js"></script>
+    <script type="text/javascript" src="https://cdn.fpsports.org/3rdParty/Parsley/v2.0.7/parsley.js"></script>
+    <script type="text/javascript" src="https://cdn.fpsports.org/3rdParty//JLoadImage/js/load-image.all.min.js"></script>
+    <script src="https://cdn.fpsports.org/3rdParty/slick/slick.js"></script>
+    <link rel="stylesheet" href="https://cdn.fpsports.org/3rdParty/slick/slick.css" /><link rel="stylesheet" href="https://cdn.fpsports.org/3rdParty//slick/slick-theme.css" /><link rel="icon" sizes="196x196" href="/_Images/Logos/196x196.png" /><link rel="manifest" href="/manifest.json" /><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" /><meta name="theme-color" content="#ffffff" />
+
+    <!--jstree References-->
+    <script type="text/javascript" src="https://cdn.fpsports.org/3rdParty/jsTree/V3.1/jstree.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.fpsports.org/3rdParty/jsTree/jstree.css" /><link href="_Styles/fancy.css" rel="stylesheet" />
+    <script src="https://cdn.fpsports.org/3rdParty/fancygrid/fp/fancy_v7.full.min.js"></script>
+
+    <script type="text/javascript">
+        //Prevent Links in Standalone Web Apps Opening Mobile Safari
+        if (("standalone" in window.navigator) && window.navigator.standalone) {
+            var noddy, remotes = false;
+            document.addEventListener('click', function (event) {
+                noddy = event.target;
+                while (noddy.nodeName !== "A" && noddy.nodeName !== "HTML") {
+                    noddy = noddy.parentNode;
+                }
+                if ('href' in noddy && noddy.href.indexOf('http') !== -1 && (noddy.href.indexOf(document.location.host) !== -1 || remotes)) {
+                    event.preventDefault();
+                    document.location.href = noddy.href;
+                }
+            }, false);
+        }
+
+        $(document).ready(function () {
+            Fancy.MODULESDIR = 'https://cdn.fpsports.org/3rdParty/fancygrid/modules/';
+            FancyGrid.LICENSE = ['f3e1cd90dfb49ba1b9d16d7c5abe7260'];
+
+            FixCSS();
+
+            bindToolbarMenuFunctions('SchoolMenu_');
+
+
+        });
+
+        $(window).on('load', function () { ProcessesLinkTracking(); });
+
+        $(window).on("resize", function () {
+            FixCSS();
+        });
+
+        function FixCSS() {
+            $(":root").css("--toolbarheight", ($("#ToolbarPanel").outerHeight() ?? 0) + 'px');
+        }
+
+
+        function ProcessesLinkTracking() {
+            var Items = [];
+
+            $('.CarouselTracker:visible').each(function () {
+                var CarouselTracker = $(this);
+                Items.push({ CarouselID: $(this).attr('carouselid'), Carousel: $(this).attr('carousel'), CarouselEntryID: $(this).attr('carouselentryid'), CarouselEntry: $(this).attr('carouselentry') });
+                $(this).find('a').each(function () { $(this).on('click', function () { ProcessLinkClick(CarouselTracker.attr('carouselid'), CarouselTracker.attr('carousel'), CarouselTracker.attr('carouselentryid'), CarouselTracker.attr('carouselentry')) }); });
+            });
+
+            var dto = {
+                'Links': Items
+            };
+
+            $.ajax({
+                type: 'post',
+                contentType: 'application/json; charset-utf-8',
+                dataType: 'json',
+                url: '/Services/CoreServices.asmx/LogLinkImpression',
+                data: JSON.stringify(dto),
+                success: function (result) {
+                }
+            });
+        }
+
+        function ProcessLinkClick(CarouselID, Carousel, CarouselEntryID, CarouselEntry) {
+            var dto = {
+                'CarouselID': CarouselID,
+                'Carousel': Carousel,
+                'CarouselEntryID': CarouselEntryID,
+                'CarouselEntry': CarouselEntry,
+            };
+
+            $.ajax({
+                type: 'post',
+                contentType: 'application/json; charset-utf-8',
+                dataType: 'json',
+                url: '/Services/CoreServices.asmx/LogLinkClick',
+                data: JSON.stringify(dto),
+                success: function (result) {
+                }
+            });
+        }
+
+
+
+    </script>
+
+    <style>
+        .LegacyItem {
+            font-size: 9px;
+            color: red;
+        }
+
+        .NewItem {
+            font-size: 9px;
+            color: red;
+        }
+
+        .dsNavigationMenuHidden {
+            display: none;
+        }
+
+        #mnuTournamentCentralButton {
+            background-color: #b12e34;
+            color: white;
+        }
+
+        .dsMiddlePanelWrapperNoNav .dsFormPanelFSwTB {
+            height: Calc(var(--vh) - 20px) !important;
+        }
+    </style>
+
+
+
+    
+    <meta name="robots" content="noindex,nofollow">
+
+    <style>
+       
+
+            .dsFormPanelFSwTB h3 {
+                margin-top: 6px;
+                margin-bottom: 12px;
+                color: #003366;
+                font-family: Avalon;
+                font-size: 14px;
+            }
+
+        .DashboardBanner {
+            max-width: 100%;
+            margin: auto;
+            display: block;
+        }
+
+        .gametype {
+            background-color: lightgray;
+            width: 10px;
+            text-align: center;
+            padding: 2px 3px 2px 3px !important;
+            text-align: center;
+            vertical-align: middle !important;
+        }
+
+            .gametype i {
+                display: inline-block;
+                writing-mode: vertical-lr;
+                text-align: center;
+                font-size: 10px;
+                margin-top: auto;
+                margin-bottom: auto;
+            }
+
+        .TileTable {
+            display: block;
+            border-collapse: collapse;
+            font-family: Avalon;
+            font-size: 13px;
+            margin-top: 10px;
+            white-space: nowrap;
+            table-layout: fixed;
+            color: #555555;
+        }
+
+            .TileTable .rowGame {
+                border-top: 1px solid #555555;
+            }
+
+                .TileTable .rowGame td {
+                    padding: 10px 5px 5px 5px;
+                    vertical-align: top;
+                }
+
+                .TileTable .rowGame a, .body-content .rowGame a:hover, .body-content .rowGame a:visited, .body-content .rowGame a:active {
+                    color: inherit;
+                    text-decoration: none;
+                }
+
+            .TileTable td:first-child {
+                text-align: center;
+            }
+
+            .TileTable .rowGameActions {
+                border-bottom: 1px solid #555555;
+            }
+
+                .TileTable .rowGameActions td {
+                    border-bottom: 1px solid #555555;
+                    padding: 0px 7px 10px 5px;
+                    vertical-align: middle;
+                }
+
+            .TileTable tbody td:nth-child(5) {
+                background-color: #F8F8F8;
+                font-size: 11px;
+            }
+
+            .TileTable th {
+                padding-bottom: 10px
+            }
+
+
+
+
+        .date {
+            display: block;
+            font-weight: bold;
+            color: #003366;
+        }
+
+        .time {
+            display: block;
+            font-size: 12px;
+            margin-top: 6px;
+        }
+
+
+
+        .sport {
+            font-weight: bold;
+            color: #003366;
+        }
+
+        .level {
+            display: inline-block;
+            float: right;
+            padding: 0px;
+            font-size: 12px;
+        }
+
+        .teams {
+            display: block;
+            margin-top: 8px;
+            line-height: 1.5;
+            font-size: 12px;
+            width: 260px;
+        }
+
+            .teams .team {
+                display: block;
+                white-space: normal;
+                height: 24px;
+                clear: left;
+                width: 100%;
+                overflow-wrap: break-word;
+            }
+
+            .teams img {
+                display: inline-block;
+                vertical-align: middle;
+                height: 24px;
+                width: 24px;
+                margin: 0 4px 4px 0px;
+            }
+
+            .teams i {
+                color: #888888;
+            }
+
+        .site {
+        }
+
+        .subsite {
+        }
+
+        .gamedetails {
+            font-size: 12px;
+            max-width: 250px;
+            white-space: pre-wrap;
+        }
+
+            .gamedetails details {
+                line-height: 1.3;
+            }
+
+            .gamedetails summary {
+                font-size: 10px;
+                margin-bottom: 6px;
+                color: blue;
+            }
+
+        .transportation {
+            display: block;
+            margin-top: 6px;
+            white-space: pre-wrap;
+            white-space: -moz-pre-wrap;
+            white-space: -pre-wrap;
+            white-space: -o-pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .scoreright {
+            display: block;
+            float: right;
+            color: blue;
+        }
+
+            .scoreright i {
+                font-size: 10px;
+                display: inline-block;
+                margin-right: 4px;
+                vertical-align: middle;
+                color: #666666;
+            }
+
+        .scoreaction {
+            float: right;
+            font-size: 18px;
+            padding: 0 4px 0 4px;
+            color: #00bb00;
+        }
+
+        gameid {
+            text-align: right;
+            font-size: 8px;
+        }
+
+
+        .CalendarTable {
+            display: block;
+            border-collapse: collapse;
+            font-family: Avalon;
+            font-size: 13px;
+            margin-top: 10px;
+            width: 1015px;
+            table-layout: fixed;
+            color: #555555;
+        }
+
+            .CalendarTable thead tr:nth-child(1) th {
+                color: white;
+                background-color: #003366;
+                height: 30px;
+                border: none;
+                font-weight: normal;
+                font-size: 14px;
+            }
+
+            .CalendarTable thead tr:nth-child(2) th {
+                color: white;
+                background-color: #003366;
+                height: 20px;
+                border: none;
+                font-weight: normal;
+                font-size: 12px;
+            }
+
+            .CalendarTable td {
+                height: 100px;
+                border: 1px solid grey;
+                vertical-align: top;
+                padding: 2px;
+                width: 145px;
+                overflow: hidden;
+            }
+
+            .CalendarTable .CalendarBlank {
+                background-color: #eeeeee;
+            }
+
+            .CalendarTable .CalendarDay
+            .CalendarTable .CalendarGame {
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+            .CalendarTable .CalendarGame {
+                font-size: 10px;
+                background-color: #bcc6d4;
+                color: black;
+                padding: 2px;
+                margin-top: 2px;
+                margin-bottom: 2px;
+            }
+
+            .CalendarTable .CalendarGameHome {
+                background-color: #bbded6 !important;
+            }
+
+            .CalendarTable .CalendarGameAway {
+                background-color: #ffb6b9 !important;
+            }
+
+            .CalendarTable .CalendarTransportation {
+                display: block;
+                margin-top: 6px;
+                white-space: pre-wrap;
+                white-space: -moz-pre-wrap;
+                white-space: -pre-wrap;
+                white-space: -o-pre-wrap;
+                word-wrap: break-word;
+                font-style:italic;
+            }
+
+
+        .dsFilterWrapperPanel {
+            display: none;
+            height: calc(100% - 57px);
+            width: 100%;
+            position: fixed;
+            z-index: 9000000;
+            top: 37px;
+            left: 0;
+            background-color: rgba(230,230,230, 0.8);
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        #FilterPanel hr {
+            border-bottom: 1px solid black;
+            margin: 2px 0 10px 0;
+        }
+
+        #dsFilterFrame .dsInputGroupFrame {
+            max-width: 100%;
+        }
+
+        @media(max-width: 800px) {
+            .RightPRCNT50,
+            .LeftPRCNT50 {
+                width: Calc(100% - 12px) !important;
+                border-left: none !important;
+            }
+        }
+
+       
+
+        @page {
+            size: landscape; /*landscape; auto is the initial value */
+            margin: 5mm 5mm 5mm 5mm;
+        }
+
+        @media print {
+
+            body {
+                background-color: white !important;
+                background-image: none !important;
+            }
+
+            table {
+                page-break-inside: avoid;
+            }
+
+            tr {
+                page-break-inside: avoid;
+                page-break-after: auto
+            }
+
+            .dsFormPanelFSwTB {
+                overflow: visible;
+            }
+
+            .dsPagePanel {
+                padding-top: 0;
+            }
+
+            .rowGameActions,
+            .dsHeaderPanel,
+            .dsToolbarPanel,
+            h3 {
+                display: none !important;
+            }
+
+            h1, h2 {
+                color: #222222 !important;
+            }
+
+
+
+            .dsFormPanelFSwTB .rowGame td {
+                padding: 4px 5px 4px 5px;
+            }
+
+            .teams {
+                margin-top: 4px;
+            }
+
+                .teams .team {
+                    height: 20px;
+                }
+
+            .CalendarTable th {
+                color: black !important;
+                background-color: white !important;
+                border: 1px solid black !important;
+            }
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            bindToolbarMenuFunctions('SportMenu_');
+        })
+
+        function FilterOk() {
+            return $('#MainForm').parsley().validate();
+        }
+
+        function FilterCancel() {
+            $('.dsFilterWrapperPanel').css({ 'display': 'none' });
+            $('body').css('overflow', 'auto');
+            return false;
+        };
+
+        function FilterShow() {
+
+            $('body').css('overflow', 'hidden');
+            $('.dsFilterWrapperPanel').css({ 'display': 'block' });
+        }
+
+        function FilterSaved() {
+            $('.dsFilterWrapperPanel').css({ 'display': 'none' });
+            $('body').css('overflow', 'auto');
+            location.reload();
+            $('#FilterID').val(-9999);
+            $('#FilterStatus').val('');
+        };
+
+        function AddNewCustomFilter() {
+            $('#FilterID').val(-9999);
+            $('#FilterStatus').val('New');
+            $('#FilterViewStateModifier').val(Number($('#FilterViewStateModifier').val()) + 1);
+            __doPostBack('FilterUpdatePanel', '');
+        }
+
+        function EditCustomFilter(CustomFilterID) {
+            $('#FilterID').val(CustomFilterID);
+            $('#FilterStatus').val('Edit');
+            $('#FilterViewStateModifier').val(Number($('#FilterViewStateModifier').val()) + 1);
+            __doPostBack('FilterUpdatePanel', '');
+        }
+
+        function DeleteCustomFilter(CustomFilterID) {
+            if (confirm('Are you sure you want to delete this item?')) {
+
+                var dto = {
+                    'ObjectTypeName': 'CustomFilter',
+                    'ObjectID': CustomFilterID
+                };
+
+                $.ajax({
+                    type: 'post',
+                    contentType: 'application/json; charset-utf-8',
+                    dataType: 'json',
+                    url: '/Services/CoreServices.asmx/DeleteDataObject',
+                    data: JSON.stringify(dto),
+                    success: function (result) {
+                        window.location.href = '/DashboardSchedule.aspx';
+                    }
+                });
+            }
+        }
+
+        function DeleteGame(GameID) {
+            if (confirm('Are you sure you want to delete this game?')) {
+
+                var dto = {
+                    'GameID': GameID
+                };
+
+                $.ajax({
+                    type: 'post',
+                    contentType: 'application/json; charset-utf-8',
+                    dataType: 'json',
+                    url: '/DashboardSchedule.aspx/DeleteGame',
+                    data: JSON.stringify(dto),
+                    success: function (result) {
+                        alert('The game was marked for deletion on the next scheduled refresh');
+                    }
+                });
+            }
+        }
+    </script>
+
+<title>
+
+</title></head>
+<body>
+    <iframe id="hidden-iframe" name="hidden-iframe" style="visibility: hidden; position: absolute;"></iframe>
+    <form method="post" action="./DashboardSchedule.aspx" id="MainForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="xD3vWmf7Wajp2372c9Ec+CTTeal7L6bFSaBd2fejNHqGMlYz5lT6NJBzPU40JO67DC5y9p5bd/VCynwwkjZdS8AzvQc1hla+vAala/ePq5NEOOxNNUDMc2nSZAoAaMpgyhK8UBGvLCvz3e6Zg9+6v6GNmYbUkvGgGhVD3oYCAKck/0VuaDm5+7LXxKpWlnUXe+YaNY6EDTfmunrzX+Mj3WllOJDMhirNf+DHlieM5Cr5YjLvN8vrLHJ+a0B7U2RG1Ff2yxD5P3503XaLS5A/I4xPOeLU/J+haOro17ye7XBk/N1a2Tn49Pz4DI13q6dCZLPWKRpGA19qOAjc1e+lljCWtfw2Fs6svzdTEgFZxRTw528763eQU4fdthhslfMueSohtgImZQQ3/YBiOa7E2B8DK1K/qL2WHK0GKBEA2J3/VAPMIyX+YVA0Wa8K5/tqtBum90Tou18UCzEYXd5APIXzgDJBUlrix38mUA8+tws1EFYtxvyaa06ZTm9Dmg8S44NKxPTmGJQqrRrLn4bpuTB8d+YQN0snBky4G4Y+BUU=" />
+
+
+<script src="https://ajax.aspnetcdn.com/ajax/4.6/1/MicrosoftAjax.debug.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+(window.Sys && Sys._Application && Sys.Observer)||document.write('<script type="text/javascript" src="/ScriptResource.axd?d=D9drwtSJ4hBA6O8UhT6CQjCnpHPRSEvo43NVhhzcy8ZBbKnIxZvVDcbqd-IYJJXIELOQvNtDh37aB5VQsAD9xsZXBNZ3wluEUlgMnLEnh3Q096e4zmrl1HsKEw5nxF0ELJggEPQRpukXX2LTkeWtE4vLs7NWyumOKjdRYRjgEJ81&t=5c0e0825"><\/script>');//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="D60719D8" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="gsMPXcca2pJfqRZhK10HdsHxrPVe0KxBvsYpLnZ3YfJ15a4RnO6kqW+9a0+vTgxgrSv0doH3dOW2jKcza8llYsoJpzKDJRMaPxexy4ciIQ0AUyt9d4civRgS3ybv345SR80x6k2T1jcBtSCQi8WH0mpyxOnya2gtLABad8IrBkFEj2LLec77JuT4PSQStnYE+RqpRxqchJKMFHhyO1R4FQ==" />
+
+        <div id="dsLoader"></div>
+
+        <div id="dsNavigation" class="dsNavigationOverlay">
+	
+            <div id="dsNavigationMenu" class="dsNavigationMenu">
+                <a href="javascript:void(0)" class="dsNavigationCloseButton" onclick="closeNav()">×</a>
+                <div id="dsNavigationMenuContent" class="dsNavigationMenuContent">
+		
+                    <ul id="dsNavigationMenuUL" class="dsNavigationMenuUL dsNavigationMenuSubPanel active"><li><a id="mnuDashboard" href="\">Dashboard</a></li><li><a id="mnuSportHS" class=" dsNavigationMenuLink " href="https://www.mpa.cc/DashboardSchedule.aspx#NavigationMenu_mnuSportHS"><div style="float:left;">Sport Info - High School</div><i class="fa fa-chevron-right" style="float:right;"></i><div style="clear:both;"></div></a></li><li><a id="mnuScheduleHS" href="\DashboardSchedule.aspx">Schedules</a></li><li><a id="mnuSchoolPages" href="/SchoolPages/School.aspx">School Pages</a></li><li><a id="mnuSchoolSchedule" href="/DashboardTeamSchedule.aspx">Team Schedule</a></li><li><a id="mnuSchoolRoster" href="/DashboardTeamRoster.aspx?SeasonRoster=1">Team Rosters</a></li><li><a id="mnuMasterSchedule" href="/MasterSchedule.aspx?TeamLevelID=5">Master Schedule</a></li><li><a id="mnuTournamentCentralPastChamps" href="\Reports\PastChampionsBySport.aspx">Past Champions</a></li><li class="dsNavigationMenuGroupSeperator"></li><li><div class="dsNavigationMenuGroupTitle">Tournament Central</div></li><li><a id="mnuTournamentDashboard" href="\DashboardTournamentCentral.aspx">Dashboard</a></li><li><a id="mnuTournamentRankings" href="\TournamentCentralRankings.aspx">Tournament Standings</a></li><li><a id="mnuTournamentRankingDetail" href="\Custom\MPA\MPADetail.aspx">Standings Detail</a></li><li><a id="mnuTournamentBrackets" href="\TournamentCentralBrackets.aspx">Brackets</a></li><li><a id="mnuTournamentTeamStats" href="\DashboardTeamRoster.aspx">Tournament Rosters</a></li><li class="dsNavigationMenuGroupSeperator"></li><li><div class="dsNavigationMenuGroupTitle">MPA Members</div></li><li><a id="mnuDirectory" href="\Directory.aspx">School Directory</a></li><li class="dsNavigationMenuGroupSeperator"></li><li><div class="dsNavigationMenuGroupTitle">Important Links</div></li><li><a id="mnuSubResources_2cef4e71-e3ff-495d-ba7b-5c42288a57f9" href="https://gofan.co/app/school/MPA" target="_blank">GoFan Tickets</a></li><li><a id="mnuSubResources_8609746e-28b9-417d-aee7-b6ad5e86554d" href="https://nwd.ink/s/mpa/" target="_blank">Championship Apparel</a></li><li><a id="mnuSubResources_4993bc3c-600d-4770-b6a5-f9ebab63596e" href="https://www.flipsnack.com/tpg2020/2024-25-maine-state-championships/full-view.html" target="_blank">Championship Programs</a></li><li><a id="mnuSubResources_0e9beffc-a261-4766-9608-fe24c6b5e659" href="https://mpaprof.org" target="_blank">Professional Division</a></li><li class="dsNavigationMenuGroupSeperator"></li><li><div class="dsNavigationMenuGroupTitle">Resources</div></li><li><a id="mnuSubResources_7e7fc2a8-63a9-4b60-ad9e-1105447be555" href="/resources/Resources/Sport%20Season%20Dates%202025-2026.pdf" target="_blank">Sport Season Dates 2025-2026</a></li><li><a id="mnuSubResources_c5472434-2bf3-4fa7-b45d-560245ede543" href="/TenantHTML.aspx?D=Resources&amp;F=Heart of the Arts Awards.html">Heart of the Arts Awards</a></li><li><a id="mnuSubResources_07cc76c1-097a-47b0-af0d-3c462afb23fe" href="/TenantHTML.aspx?D=Resources&amp;F=Larry LaBrie Award.html">Larry LaBrie Award</a></li><li><a id="mnuSubResources_39a3327b-ade3-496d-aa1e-9709d474cb59" href="/TenantHTML.aspx?D=Resources&amp;F=State Coaches of the Year.html">State Coaches of the Year</a></li><li class="dsNavigationMenuGroupSeperator"></li><li><div class="dsNavigationMenuGroupTitle">About Us</div></li><li><a id="mnuSubResources_3ce4cdb6-818b-4aab-89fe-5d7695404429" href="/TenantHTML.aspx?D=About Us&amp;F=Conference and Meeting Center.html">Conference and Meeting Center</a></li><li><a id="mnuSubResources_bb23b3b6-971f-4ab6-912d-f0d9c01f7c64" href="/TenantHTML.aspx?D=About Us&amp;F=Directions.html">Directions</a></li><li><a id="mnuSubResources_da1c8bf6-f887-49b4-94f5-cf75f78113c2" href="/resources/About%20Us/MPA%20Committees%202025-2026.pdf" target="_blank">MPA Committees 2025-2026</a></li><li><a id="mnuSubResources_2391ae1c-eaec-449e-b2a2-43a5750bfeef" href="/resources/About%20Us/Handbook.pdf" target="_blank">Handbook</a></li><li><a id="mnuSubResources_bdc2e563-f429-44aa-9eba-9854f764e796" href="/TenantHTML.aspx?D=About Us&amp;F=Membership and Dues.html">Membership and Dues</a></li><li><a id="mnuSubResources_d02c9edf-b19a-4531-b85c-0d0d1e09f4b8" href="/TenantHTML.aspx?D=About Us&amp;F=MPA Information.html">MPA Information</a></li><li><a id="mnuSubResources_de167478-576f-458b-8c54-89229e6b682d" href="/TenantHTML.aspx?D=About Us&amp;F=MPA Media.html">MPA Media</a></li><li><a id="mnuSubResources_4794fe1c-b391-484f-9001-9d81bd1c2b5d" href="/TenantHTML.aspx?D=About Us&amp;F=Officers and Staff.html">Officers and Staff</a></li><li><a id="mnuSubResources_7d678d8a-e984-4d4b-828f-19feec721a48" href="/resources/About%20Us/Professional%20Membership%20Form.pdf" target="_blank">Professional Membership Form</a></li><li><a id="mnuSubResources_3f1b568a-6c67-4ba6-a76a-8d5db98655a1" href="/CarouselAll.aspx?CarouselID=9" target="_blank">Sponsors</a></li><li><a id="mnuSubResources_1b3c53f4-9626-41c8-9d0f-0953a772ccce" href="/resources/About%20Us/MPA%20Acceptable%20Use%20Policy.pdf" target="_blank">MPA Acceptable Use Policy</a></li><li><a id="mnuSubResources_6b036849-e889-45ac-ab68-164fced22373" href="/resources/About%20Us/MPA%20Third-Party%20For-Profit%20Data%20Access%20Policy.pdf" target="_blank">MPA Third-Party For-Profit Data Access Policy</a></li><li class="dsNavigationMenuGroupSeperator"></li><li><div class="dsNavigationMenuGroupTitle">Account</div></li><li><a id="mnuLogin" href="\Login.aspx">Login</a></li><li><a id="mnuSignUp" href="\SignUp.aspx">Sign-Up</a></li><li><a id="mnuPasswordReset" href="\PasswordReset.aspx">Forgot Password</a></li></ul>
+                    <div style="display: none">
+                        <ul id="dsNavigationMenuHidden" class="dsNavigationMenuUL dsNavigationMenuSubPane"></ul>
+                    </div>
+                <ul id="NavigationMenu_mnuSportHS" class="dsNavigationMenuUL dsNavigationMenuSubPanel"><li><div class="dsNavigationSubMenuTitle">Sport Info - High School</div></li><li><a id="SUB_MAIN_mnuSportHS" class=" dsNavigationMenuLink " onclick="changeToMainMenu();"><i class="fa fa-arrow-left" style="float:left;"></i><div style="float:left;" class="dsNavigationMenuBackButton">MAIN MENU</div><div style="clear:both;"></div></a></li><li class="dsNavigationMenuGroupSeperator"></li><li><div class="dsNavigationMenuGroupTitle">Winter</div></li><li><a id="mnuSportButtonHSAlpine Ski (Boys)" href="\SportPages\SportPageInfo.aspx?TournamentID=403">Alpine Ski (Boys)</a></li><li><a id="mnuSportButtonHSAlpine Ski (Girls)" href="\SportPages\SportPageInfo.aspx?TournamentID=404">Alpine Ski (Girls)</a></li><li><a id="mnuSportButtonHSBasketball (Unified)" href="\SportPages\SportPageInfo.aspx?TournamentID=302">Basketball (Unified)</a></li><li><a id="mnuSportButtonHSBoys Basketball" href="\SportPages\SportPageInfo.aspx?TournamentID=100">Boys Basketball</a></li><li><a id="mnuSportButtonHSGirls Basketball" href="\SportPages\SportPageInfo.aspx?TournamentID=101">Girls Basketball</a></li><li><a id="mnuSportButtonHSDrama (Coed)" href="\SportPages\SportPageInfo.aspx?TournamentID=1010">Drama (Coed)</a></li><li><a id="mnuSportButtonHSIce Hockey (Boys)" href="\SportPages\SportPageInfo.aspx?TournamentID=103">Ice Hockey (Boys)</a></li><li><a id="mnuSportButtonHSIce Hockey (Girls)" href="\SportPages\SportPageInfo.aspx?TournamentID=108">Ice Hockey (Girls)</a></li><li><a id="mnuSportButtonHSIndoor Track (Boys)" href="\SportPages\SportPageInfo.aspx?TournamentID=104">Indoor Track (Boys)</a></li><li><a id="mnuSportButtonHSIndoor Track (Girls)" href="\SportPages\SportPageInfo.aspx?TournamentID=300">Indoor Track (Girls)</a></li><li><a id="mnuSportButtonHSNordic Ski" href="\SportPages\SportPageInfo.aspx?TournamentID=402">Nordic Ski</a></li><li><a id="mnuSportButtonHSSwimming (Boys)" href="\SportPages\SportPageInfo.aspx?TournamentID=105">Swimming (Boys)</a></li><li><a id="mnuSportButtonHSSwimming (Girls)" href="\SportPages\SportPageInfo.aspx?TournamentID=7">Swimming (Girls)</a></li><li><a id="mnuSportButtonHSCheerleading Winter (Coed)" href="\SportPages\SportPageInfo.aspx?TournamentID=1005">Cheerleading Winter (Coed)</a></li><li><a id="mnuSportButtonHSWrestling" href="\SportPages\SportPageInfo.aspx?TournamentID=106">Wrestling</a></li><li class="dsNavigationMenuGroupSeperator"></li><li><div class="dsNavigationMenuGroupTitle">Spring</div></li><li><a id="mnuSportButtonHSBaseball" href="\SportPages\SportPageInfo.aspx?TournamentID=200">Baseball</a></li><li><a id="mnuSportButtonHSBocce (Unified)" href="\SportPages\SportPageInfo.aspx?TournamentID=400">Bocce (Unified)</a></li><li><a id="mnuSportButtonHSESports Spring" href="\SportPages\SportPageInfo.aspx?TournamentID=1003">ESports Spring</a></li><li><a id="mnuSportButtonHSLacrosse (Boys)" href="\SportPages\SportPageInfo.aspx?TournamentID=202">Lacrosse (Boys)</a></li><li><a id="mnuSportButtonHSLacrosse (Girls)" href="\SportPages\SportPageInfo.aspx?TournamentID=203">Lacrosse (Girls)</a></li><li><a id="mnuSportButtonHSOutdoor Track (Boys)" href="\SportPages\SportPageInfo.aspx?TournamentID=204">Outdoor Track (Boys)</a></li><li><a id="mnuSportButtonHSOutdoor Track (Girls)" href="\SportPages\SportPageInfo.aspx?TournamentID=301">Outdoor Track (Girls)</a></li><li><a id="mnuSportButtonHSSoftball" href="\SportPages\SportPageInfo.aspx?TournamentID=205">Softball</a></li><li><a id="mnuSportButtonHSTennis (Boys)" href="\SportPages\SportPageInfo.aspx?TournamentID=206">Tennis (Boys)</a></li><li><a id="mnuSportButtonHSTennis (Girls)" href="\SportPages\SportPageInfo.aspx?TournamentID=207">Tennis (Girls)</a></li><li class="dsNavigationMenuGroupSeperator"></li><li><div class="dsNavigationMenuGroupTitle">Fall</div></li><li><a id="mnuSportButtonHSCross Country (Boys)" href="\SportPages\SportPageInfo.aspx?TournamentID=1">Cross Country (Boys)</a></li><li><a id="mnuSportButtonHSCross Country (Girls)" href="\SportPages\SportPageInfo.aspx?TournamentID=9">Cross Country (Girls)</a></li><li><a id="mnuSportButtonHSESports Fall" href="\SportPages\SportPageInfo.aspx?TournamentID=304">ESports Fall</a></li><li><a id="mnuSportButtonHSField Hockey" href="\SportPages\SportPageInfo.aspx?TournamentID=2">Field Hockey</a></li><li><a id="mnuSportButtonHSFootball" href="\SportPages\SportPageInfo.aspx?TournamentID=3">Football</a></li><li><a id="mnuSportButtonHSGolf (Coed)" href="\SportPages\SportPageInfo.aspx?TournamentID=4">Golf (Coed)</a></li><li><a id="mnuSportButtonHSSoccer (Boys)" href="\SportPages\SportPageInfo.aspx?TournamentID=5">Soccer (Boys)</a></li><li><a id="mnuSportButtonHSSoccer (Girls)" href="\SportPages\SportPageInfo.aspx?TournamentID=6">Soccer (Girls)</a></li><li><a id="mnuSportButtonHSSoccer (Unified)" href="\SportPages\SportPageInfo.aspx?TournamentID=1007">Soccer (Unified)</a></li><li><a id="mnuSportButtonHSVolleyball (Girls)" href="\SportPages\SportPageInfo.aspx?TournamentID=8">Volleyball (Girls)</a></li><li><a id="mnuSportButtonHSVolleyball (Unified)" href="\SportPages\SportPageInfo.aspx?TournamentID=303">Volleyball (Unified)</a></li></ul>
+	</div>
+            </div>
+        
+</div>
+
+        <div id="dsPagePanel" class="dsPagePanel">
+	
+
+            <div id="dsHeaderPanel" class="dsHeaderPanel">
+		
+                <ul id="ToolbarUL" class="dsHeaderMenu">
+                    <li class="dsHeaderLeft dsNavigationMenuClosed" onclick="openNav()"><i class="fa fa-bars"></i></li>
+                    <li class="dsHeaderLeft dsNavigationMenuOpen" onclick="closeNav()"><span style="font-size: 32px !important; font-weight: normal;">×</span></li>
+
+                    <li id="NavBack" class="dsHeaderLeft dsHeaderNavButton">
+                        <a onclick="history.back();return false;"><i class="fa fa-arrow-left"></i></a>
+                    </li>
+
+                    <li id="NavRefresh" class="dsHeaderLeft dsHeaderNavButton">
+                        <a onclick="window.location.reload();return false;"><i class="fa fa-arrow-rotate-right"></i></a>
+                    </li>
+
+                    <li id="Logo" class="dsHeaderLeft">
+                        <a href="/" onclick="changeToMainMenu();">
+                            <img id="LogoImage" class="fpLogoImage" src="/resources/_LogoSmall.png" /></a>
+                        <!--<div class="dsLogoTextDatable">datable</div>-->
+                    </li>
+
+                </ul>
+                <div id="WelcomeText" class="dsWelcomeText">
+                    <a id="Signup" title="Sign-Up" class="dsHeaderButton" href="SignUp.aspx">Sign-Up</a>
+                    <a id="Login" title="Login" class="dsHeaderButton" href="Login.aspx">Login</a>
+                </div>
+            
+	</div>
+
+
+
+            <div class="dsMiddlePanel">
+
+                
+
+    <div id="ToolbarPanel" class="dsToolbarPanel">
+		
+        <ul id="Toolbar" class="dsToolbar">
+
+            <li class="dsToolbarLeft">
+                <a id="Filter" title="Filter" NavigationUrl="#">
+                <i class="fa fa-filter"></i>Filter</a>
+                <div id="FilterPanel" class="dsToolbarDropdown2 dsToolbarDropdownLeft dsToolbarPanelScroll">
+			
+                <a rel='nofollow' class='dsToolbarMenuLink' href='DashboardSchedule.aspx?QuickFilter=1'>Today's Games</a><a rel='nofollow' class='dsToolbarMenuLink' href='DashboardSchedule.aspx?QuickFilter=2'>Games This Week</a><a rel='nofollow' class='dsToolbarMenuLink' href='DashboardSchedule.aspx?QuickFilter=3'>All Games</a><a rel='nofollow' class='dsToolbarMenuLink' href='DashboardSchedule.aspx?QuickFilter=5'>Upcoming Tournament Games</a><a rel='nofollow' class='dsToolbarMenuLink' href='DashboardSchedule.aspx?QuickFilter=6'>All Tournament Games</a><a rel='nofollow' class='dsToolbarMenuLink' href='DashboardSchedule.aspx?QuickFilter=7'>All Practices</a>
+		</div>
+            </li>
+
+            <li class="dsToolbarLeft">
+                <a id="School" title="Year" href="#"><i class="fa fa-solid fa-caret-down"></i>All HS</a>
+                <div id="SchoolPanel" class="dsToolbarDropdown2 dsToolbarDropdownLeft dsToolbarPanelScroll">
+			<div id="SchoolMenu_mnuSchool_1" class="dsToolbarMenuUL dsToolbarMenuSubPanel">
+				<a id="SUB_TOOLBARMENU_mnuSchool_1" class=" dsToolbarMenuLink " onclick="changeToolbarToMainMenu(&#39;#SchoolMenu_MAIN&#39;);"><i class="fa fa-arrow-left" style="float:left;"></i><div style="float:left;" class="dsToolbarMenuBackButton">BACK</div><div style="clear:both;"></div></a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=25">Ashland District</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=27">Bangor</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=26">Bangor Christian</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=28">Belfast Area</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=154">Berwick Academy</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=2">Biddeford</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=300">Blue Hill Harbor</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=3">Bonny Eagle</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=29">Boothbay Region</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=30">Brewer</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=58">Brunswick</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=59">Buckfield HS</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=60">Bucksport</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=61">Calais</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=62">Camden Hills Regional</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=63">Cape Elizabeth</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=64">Caribou</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=70">Carrabec</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=1023">Casco Bay</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=72">Central</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=71">Central Aroostook Sr</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=4">Cheverus</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=301">Chop Point</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=73">Cony HS</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=74">Deer Isle-Stonington </a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=5">Deering</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=75">Dexter Regional</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=76">Dirigo</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=77">East Grand</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=127">Easton Senior</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=86">Edward Little</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=87">Ellsworth</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=88">Erskine Academy</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=18">Falmouth</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=89">Forest Hills Consolidated</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=128">Fort Fairfield HS</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=129">Fort Kent Community</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=130">Foxcroft Academy</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=90">Freeport</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=91">Fryeburg Academy</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=92">Gardiner Area</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=131">George Stevens Academy</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=6">Gorham</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=302">Gould (Arthur R.)</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=303">Gould Academy</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=132">Gray-New Gloucester</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=304">Greater Houlton Christian Academy</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=305">Greater Portland Christian</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=93">Greely</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=94">Greenville</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=95">Hall-Dale HS</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=96">Hampden Academy</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=97">Hebron Academy</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=98">Hermon</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=306">Highview Christian Academy</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=133">Hodgdon HS</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=134">Houlton HS</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=135">Hyde</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=99">Islesboro Central</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=100">John Bapst Memorial</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=101">Jonesport-Beals</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=136">Katahdin HS</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=21">Kennebunk</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=137">Kents Hill</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=102">Lake Region</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=103">Lawrence</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=104">Leavitt Area</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=105">Lee Academy</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=106">Lewiston</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=107">Lincoln Academy</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=108">Lisbon</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=138">Machias Memorial</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=139">Madawaska HS</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=140">Madison High School</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=109">Maine Central Institute</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=307">Maine Coast Waldorf</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=110">Maine School of Science and Math</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=308">Maranacook Community</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=7">Marshwood</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=8">Massabesic</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=111">Mattanawcook Academy</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=112">Medomak Valley</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=113">Messalonskee</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=114">Monmouth Academy</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=115">Morse</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=309">Mount Desert Island</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=117">Mount View</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=118">Mountain Valley</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=119">Mt. Abram</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=120">Mt. Ararat</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=121">Mt. Blue </a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=122">Narraguagus Sr</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=9">Noble</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=39">Nokomis</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=40">North Haven Community</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=41">North Yarmouth Academy</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=42">Oak Hill</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=43">Oceanside</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=44">Old Orchard Beach</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=123">Old Town</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=45">Orono</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=46">Oxford Hills</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=124">Penobscot Christian</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=125">Penobscot Valley</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=126">Penquis Valley HS</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=47">Pine Tree Academy</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=78">Piscataquis Community</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=48">Poland Regional</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=10">Portland</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=49">Presque Isle</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=50">Rangeley Lakes Regional</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=51">Richmond HS</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=52">Sacopee Valley</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=11">Sanford</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=12">Scarborough</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=79">Schenck</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=310">Seacoast Christian</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=53">Searsport HS</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=80">Shead</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=54">Skowhegan Area</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=13">South Portland</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=81">Southern Aroostook</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=55">Spruce Mountain</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=82">Stearns Sr.</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=83">Sumner Memorial</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=84">Telstar Regional</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=24">Temple Academy</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=14">Thornton Academy</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=56">Traip Academy</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=67">Valley HS</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=85">Van Buren District</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=57">Vinalhaven</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=68">Washburn District </a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=69">Washington Academy</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=312">Watershed Community</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=31">Waterville</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=32">Waynflete</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=33">Wells</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=15">Westbrook</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=16">Windham</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=34">Winslow</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=35">Winthrop</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=36">Wiscasset HS</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=65">Wisdom HS</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=66">Woodland Sr.</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=37">Yarmouth</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=38">York</a>
+			</div><div id="SchoolMenu_mnuSchool_2" class="dsToolbarMenuUL dsToolbarMenuSubPanel">
+				<a id="SUB_TOOLBARMENU_mnuSchool_2" class=" dsToolbarMenuLink " onclick="changeToolbarToMainMenu(&#39;#SchoolMenu_MAIN&#39;);"><i class="fa fa-arrow-left" style="float:left;"></i><div style="float:left;" class="dsToolbarMenuBackButton">BACK</div><div style="clear:both;"></div></a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=10139">Bath Middle School</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=1003">Buckfield Jr.High School</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=10125">Gorham Middle School</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=10148">Oxford Hills Middle</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=10123">Whittier Middle School</a><a class=" dsToolbarMenuLink " href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=1000">Woolwich MS</a>
+			</div><div id="SchoolMenu_MAIN" class="dsToolbarMenuUL dsToolbarMenuSubPanel active">
+				<a id="mnuSchool_1" class=" dsToolbarMenuLink " href="#SchoolMenu_mnuSchool_1"><div style="float:left;">High Schools</div><i class="fa fa-chevron-right" style="float:right;"></i><div style="clear:both;"></div></a><a id="mnuSchool_2" class=" dsToolbarMenuLink " href="#SchoolMenu_mnuSchool_2"><div style="float:left;">Middle Schools</div><i class="fa fa-chevron-right" style="float:right;"></i><div style="clear:both;"></div></a>
+			</div><a id="mnuSchool_AllHS" class=" dsToolbarMenuLink " rel="nofollow" href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=-2">All High Schools</a><a id="mnuSchool_AllMS" class=" dsToolbarMenuLink " rel="nofollow" href="/DashboardSchedule.aspx?Status=0&amp;SchoolID=-3">All Middle Schools</a>
+		</div>
+            </li>
+
+            <li class="dsToolbarLeft">
+                <a id="Sport" title="Sport" href="#">
+                <i class="fa fa-solid fa-caret-down"></i>Sport</a>
+                <div id="SportPanel" class="dsToolbarDropdown2 dsToolbarDropdownLeft dsToolbarPanelScroll">
+			
+                    <div id="SportMenu_MAIN" class="dsToolbarMenuUL dsToolbarMenuSubPanel active">
+				
+                    <a id="mnuSport_All" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=All">All Sports</a><a id="mnuSport_Boys" class=" dsToolbarMenuLink " href="#SportMenu_mnuSport_Boys"><div style="float:left;">Boys Sports</div><i class="fa fa-chevron-right" style="float:right;"></i><div style="clear:both;"></div></a><a id="mnuSport_Coed" class=" dsToolbarMenuLink " href="#SportMenu_mnuSport_Coed"><div style="float:left;">Coed Sports</div><i class="fa fa-chevron-right" style="float:right;"></i><div style="clear:both;"></div></a><a id="mnuSport_Girls" class=" dsToolbarMenuLink " href="#SportMenu_mnuSport_Girls"><div style="float:left;">Girls Sports</div><i class="fa fa-chevron-right" style="float:right;"></i><div style="clear:both;"></div></a><a id="mnuSport_Unified" class=" dsToolbarMenuLink " href="#SportMenu_mnuSport_Unified"><div style="float:left;">Unified Sports</div><i class="fa fa-chevron-right" style="float:right;"></i><div style="clear:both;"></div></a>
+			</div>
+                <div id="SportMenu_mnuSport_Boys" class="dsToolbarMenuUL dsToolbarMenuSubPanel">
+				<a id="SUB_TOOLBARMENU_mnuSport_Boys" class=" dsToolbarMenuLink " onclick="changeToolbarToMainMenu(&#39;#SportMenu_MAIN&#39;);"><i class="fa fa-arrow-left" style="float:left;"></i><div style="float:left;" class="dsToolbarMenuBackButton">BACK</div><div style="clear:both;"></div></a><div class="dsToolbarMenuGroupSeperator">
+
+				</div><i class="fa-duotone fa-baseball"></i><div class="dsToolbarMenuGroupTitle">Baseball</div><a id="mnuSport_Boys_Baseball_All" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_1025_-1">All Levels</a><a id="mnuSport_Boys_Baseball_Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_1025_5">Varsity</a><div class="dsToolbarMenuGroupSeperator">
+
+				</div><i class="fa-duotone fa-basketball-hoop"></i><div class="dsToolbarMenuGroupTitle">Basketball</div><a id="mnuSport_Boys_Basketball_All" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_1015_-1">All Levels</a><a id="mnuSport_Boys_Basketball_Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_1015_5">Varsity</a><a id="mnuSport_Boys_Basketball_Junior Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_1015_4">Junior Varsity</a><a id="mnuSport_Boys_Basketball_Freshman" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_1015_1">Freshman</a><a id="mnuSport_Boys_Basketball_Middle School" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_1015_100">Middle School</a><a id="mnuSport_Boys_Basketball_Other" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_1015_6">Other</a><div class="dsToolbarMenuGroupSeperator">
+
+				</div><i class="fa-solid fa-person-running"></i><div class="dsToolbarMenuGroupTitle">Cross Country</div><a id="mnuSport_Boys_Cross Country_All" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_1_-1">All Levels</a><a id="mnuSport_Boys_Cross Country_Mixed Levels" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_1_1000">Mixed Levels</a><a id="mnuSport_Boys_Cross Country_Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_1_5">Varsity</a><a id="mnuSport_Boys_Cross Country_Junior Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_1_4">Junior Varsity</a><a id="mnuSport_Boys_Cross Country_Middle School" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_1_100">Middle School</a><div class="dsToolbarMenuGroupSeperator">
+
+				</div><i class="fa-solid fa-field-hockey-stick-ball"></i><div class="dsToolbarMenuGroupTitle">Field Hockey</div><a id="mnuSport_Boys_Field Hockey_All" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_2_-1">All Levels</a><a id="mnuSport_Boys_Field Hockey_Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_2_5">Varsity</a><div class="dsToolbarMenuGroupSeperator">
+
+				</div><i class="fa-duotone fa-football"></i><div class="dsToolbarMenuGroupTitle">Football</div><a id="mnuSport_Boys_Football_All" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_3_-1">All Levels</a><a id="mnuSport_Boys_Football_Mixed Levels" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_3_1000">Mixed Levels</a><a id="mnuSport_Boys_Football_Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_3_5">Varsity</a><a id="mnuSport_Boys_Football_Junior Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_3_4">Junior Varsity</a><a id="mnuSport_Boys_Football_Freshman" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_3_1">Freshman</a><a id="mnuSport_Boys_Football_Middle School" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_3_100">Middle School</a><div class="dsToolbarMenuGroupSeperator">
+
+				</div><i class="fa-duotone fa-hockey-sticks"></i><div class="dsToolbarMenuGroupTitle">Ice Hockey</div><a id="mnuSport_Boys_Ice Hockey_All" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_1019_-1">All Levels</a><a id="mnuSport_Boys_Ice Hockey_Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_1019_5">Varsity</a><div class="dsToolbarMenuGroupSeperator">
+
+				</div><i class="fa-solid fa-person-running"></i><div class="dsToolbarMenuGroupTitle">Indoor Track</div><a id="mnuSport_Boys_Indoor Track_All" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_1021_-1">All Levels</a><a id="mnuSport_Boys_Indoor Track_Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_1021_5">Varsity</a><div class="dsToolbarMenuGroupSeperator">
+
+				</div><i class="fa-duotone fa-lacrosse-stick-ball"></i><div class="dsToolbarMenuGroupTitle">Lacrosse</div><a id="mnuSport_Boys_Lacrosse_All" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_1027_-1">All Levels</a><a id="mnuSport_Boys_Lacrosse_Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_1027_5">Varsity</a><div class="dsToolbarMenuGroupSeperator">
+
+				</div><i class="fa-solid fa-person-running"></i><div class="dsToolbarMenuGroupTitle">Outdoor Track</div><a id="mnuSport_Boys_Outdoor Track_All" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_1029_-1">All Levels</a><a id="mnuSport_Boys_Outdoor Track_Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_1029_5">Varsity</a><div class="dsToolbarMenuGroupSeperator">
+
+				</div><i class="fa-duotone fa-futbol"></i><div class="dsToolbarMenuGroupTitle">Soccer</div><a id="mnuSport_Boys_Soccer_All" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_5_-1">All Levels</a><a id="mnuSport_Boys_Soccer_Mixed Levels" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_5_1000">Mixed Levels</a><a id="mnuSport_Boys_Soccer_Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_5_5">Varsity</a><a id="mnuSport_Boys_Soccer_Junior Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_5_4">Junior Varsity</a><a id="mnuSport_Boys_Soccer_Freshman" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_5_1">Freshman</a><a id="mnuSport_Boys_Soccer_Middle School" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_5_100">Middle School</a><div class="dsToolbarMenuGroupSeperator">
+
+				</div><i class="fa-duotone fa-baseball-bat-ball"></i><div class="dsToolbarMenuGroupTitle">Softball</div><a id="mnuSport_Boys_Softball_All" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_1031_-1">All Levels</a><a id="mnuSport_Boys_Softball_Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_1031_5">Varsity</a><div class="dsToolbarMenuGroupSeperator">
+
+				</div><i class="fa-duotone fa-person-swimming"></i><div class="dsToolbarMenuGroupTitle">Swimming</div><a id="mnuSport_Boys_Swimming_All" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_6_-1">All Levels</a><a id="mnuSport_Boys_Swimming_Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_6_5">Varsity</a><div class="dsToolbarMenuGroupSeperator">
+
+				</div><i class="fa-duotone fa-racquet"></i><div class="dsToolbarMenuGroupTitle">Tennis</div><a id="mnuSport_Boys_Tennis_All" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_1033_-1">All Levels</a><a id="mnuSport_Boys_Tennis_Middle School" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=2_1033_100">Middle School</a>
+			</div><div id="SportMenu_mnuSport_Coed" class="dsToolbarMenuUL dsToolbarMenuSubPanel">
+				<a id="SUB_TOOLBARMENU_mnuSport_Coed" class=" dsToolbarMenuLink " onclick="changeToolbarToMainMenu(&#39;#SportMenu_MAIN&#39;);"><i class="fa fa-arrow-left" style="float:left;"></i><div style="float:left;" class="dsToolbarMenuBackButton">BACK</div><div style="clear:both;"></div></a><div class="dsToolbarMenuGroupSeperator">
+
+				</div><i class="fa-solid fa-person-running"></i><div class="dsToolbarMenuGroupTitle">Cross Country</div><a id="mnuSport_Coed_Cross Country_All" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=4_1_-1">All Levels</a><a id="mnuSport_Coed_Cross Country_Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=4_1_5">Varsity</a><a id="mnuSport_Coed_Cross Country_Middle School" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=4_1_100">Middle School</a><div class="dsToolbarMenuGroupSeperator">
+
+				</div><div class="dsToolbarMenuGroupTitle">Fall Cheerleading</div><a id="mnuSport_Coed_Fall Cheerleading_All" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=4_1048_-1">All Levels</a><a id="mnuSport_Coed_Fall Cheerleading_Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=4_1048_5">Varsity</a><div class="dsToolbarMenuGroupSeperator">
+
+				</div><i class="fa-duotone fa-football"></i><div class="dsToolbarMenuGroupTitle">Football</div><a id="mnuSport_Coed_Football_All" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=4_3_-1">All Levels</a><a id="mnuSport_Coed_Football_Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=4_3_5">Varsity</a><a id="mnuSport_Coed_Football_Junior Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=4_3_4">Junior Varsity</a><div class="dsToolbarMenuGroupSeperator">
+
+				</div><i class="fa-duotone fa-golf-flag-hole"></i><div class="dsToolbarMenuGroupTitle">Golf</div><a id="mnuSport_Coed_Golf_All" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=4_4_-1">All Levels</a><a id="mnuSport_Coed_Golf_Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=4_4_5">Varsity</a><a id="mnuSport_Coed_Golf_Junior Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=4_4_4">Junior Varsity</a><div class="dsToolbarMenuGroupSeperator">
+
+				</div><i class="fa-duotone fa-futbol"></i><div class="dsToolbarMenuGroupTitle">Soccer</div><a id="mnuSport_Coed_Soccer_All" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=4_5_-1">All Levels</a><a id="mnuSport_Coed_Soccer_Middle School" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=4_5_100">Middle School</a><div class="dsToolbarMenuGroupSeperator">
+
+				</div><i class="fa-duotone fa-racquet"></i><div class="dsToolbarMenuGroupTitle">Tennis</div><a id="mnuSport_Coed_Tennis_All" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=4_1033_-1">All Levels</a><a id="mnuSport_Coed_Tennis_Middle School" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=4_1033_100">Middle School</a><div class="dsToolbarMenuGroupSeperator">
+
+				</div><i class="fa-duotone fa-hands"></i><div class="dsToolbarMenuGroupTitle">Wrestling</div><a id="mnuSport_Coed_Wrestling_All" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=4_7_-1">All Levels</a><a id="mnuSport_Coed_Wrestling_Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=4_7_5">Varsity</a>
+			</div><div id="SportMenu_mnuSport_Girls" class="dsToolbarMenuUL dsToolbarMenuSubPanel">
+				<a id="SUB_TOOLBARMENU_mnuSport_Girls" class=" dsToolbarMenuLink " onclick="changeToolbarToMainMenu(&#39;#SportMenu_MAIN&#39;);"><i class="fa fa-arrow-left" style="float:left;"></i><div style="float:left;" class="dsToolbarMenuBackButton">BACK</div><div style="clear:both;"></div></a><div class="dsToolbarMenuGroupSeperator">
+
+				</div><i class="fa-duotone fa-basketball-hoop"></i><div class="dsToolbarMenuGroupTitle">Basketball</div><a id="mnuSport_Girls_Basketball_All" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_1015_-1">All Levels</a><a id="mnuSport_Girls_Basketball_Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_1015_5">Varsity</a><a id="mnuSport_Girls_Basketball_Junior Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_1015_4">Junior Varsity</a><a id="mnuSport_Girls_Basketball_Middle School" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_1015_100">Middle School</a><div class="dsToolbarMenuGroupSeperator">
+
+				</div><i class="fa-solid fa-person-running"></i><div class="dsToolbarMenuGroupTitle">Cross Country</div><a id="mnuSport_Girls_Cross Country_All" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_1_-1">All Levels</a><a id="mnuSport_Girls_Cross Country_Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_1_5">Varsity</a><a id="mnuSport_Girls_Cross Country_Middle School" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_1_100">Middle School</a><div class="dsToolbarMenuGroupSeperator">
+
+				</div><i class="fa-solid fa-field-hockey-stick-ball"></i><div class="dsToolbarMenuGroupTitle">Field Hockey</div><a id="mnuSport_Girls_Field Hockey_All" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_2_-1">All Levels</a><a id="mnuSport_Girls_Field Hockey_Mixed Levels" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_2_1000">Mixed Levels</a><a id="mnuSport_Girls_Field Hockey_Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_2_5">Varsity</a><a id="mnuSport_Girls_Field Hockey_Junior Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_2_4">Junior Varsity</a><a id="mnuSport_Girls_Field Hockey_Middle School" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_2_100">Middle School</a><div class="dsToolbarMenuGroupSeperator">
+
+				</div><i class="fa-duotone fa-hockey-sticks"></i><div class="dsToolbarMenuGroupTitle">Ice Hockey</div><a id="mnuSport_Girls_Ice Hockey_All" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_1019_-1">All Levels</a><a id="mnuSport_Girls_Ice Hockey_Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_1019_5">Varsity</a><div class="dsToolbarMenuGroupSeperator">
+
+				</div><i class="fa-solid fa-person-running"></i><div class="dsToolbarMenuGroupTitle">Indoor Track</div><a id="mnuSport_Girls_Indoor Track_All" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_1021_-1">All Levels</a><a id="mnuSport_Girls_Indoor Track_Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_1021_5">Varsity</a><div class="dsToolbarMenuGroupSeperator">
+
+				</div><i class="fa-duotone fa-lacrosse-stick-ball"></i><div class="dsToolbarMenuGroupTitle">Lacrosse</div><a id="mnuSport_Girls_Lacrosse_All" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_1027_-1">All Levels</a><a id="mnuSport_Girls_Lacrosse_Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_1027_5">Varsity</a><div class="dsToolbarMenuGroupSeperator">
+
+				</div><i class="fa-solid fa-person-running"></i><div class="dsToolbarMenuGroupTitle">Outdoor Track</div><a id="mnuSport_Girls_Outdoor Track_All" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_1029_-1">All Levels</a><a id="mnuSport_Girls_Outdoor Track_Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_1029_5">Varsity</a><div class="dsToolbarMenuGroupSeperator">
+
+				</div><i class="fa-duotone fa-futbol"></i><div class="dsToolbarMenuGroupTitle">Soccer</div><a id="mnuSport_Girls_Soccer_All" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_5_-1">All Levels</a><a id="mnuSport_Girls_Soccer_Mixed Levels" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_5_1000">Mixed Levels</a><a id="mnuSport_Girls_Soccer_Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_5_5">Varsity</a><a id="mnuSport_Girls_Soccer_Junior Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_5_4">Junior Varsity</a><a id="mnuSport_Girls_Soccer_Freshman" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_5_1">Freshman</a><a id="mnuSport_Girls_Soccer_Middle School" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_5_100">Middle School</a><div class="dsToolbarMenuGroupSeperator">
+
+				</div><i class="fa-duotone fa-baseball-bat-ball"></i><div class="dsToolbarMenuGroupTitle">Softball</div><a id="mnuSport_Girls_Softball_All" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_1031_-1">All Levels</a><a id="mnuSport_Girls_Softball_Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_1031_5">Varsity</a><div class="dsToolbarMenuGroupSeperator">
+
+				</div><i class="fa-duotone fa-person-swimming"></i><div class="dsToolbarMenuGroupTitle">Swimming</div><a id="mnuSport_Girls_Swimming_All" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_6_-1">All Levels</a><a id="mnuSport_Girls_Swimming_Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_6_5">Varsity</a><div class="dsToolbarMenuGroupSeperator">
+
+				</div><i class="fa-duotone fa-volleyball"></i><div class="dsToolbarMenuGroupTitle">Volleyball</div><a id="mnuSport_Girls_Volleyball_All" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_1013_-1">All Levels</a><a id="mnuSport_Girls_Volleyball_Mixed Levels" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_1013_1000">Mixed Levels</a><a id="mnuSport_Girls_Volleyball_Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_1013_5">Varsity</a><a id="mnuSport_Girls_Volleyball_Junior Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_1013_4">Junior Varsity</a><a id="mnuSport_Girls_Volleyball_Freshman" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_1013_1">Freshman</a><a id="mnuSport_Girls_Volleyball_Middle School" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_1013_100">Middle School</a><div class="dsToolbarMenuGroupSeperator">
+
+				</div><i class="fa-duotone fa-hands"></i><div class="dsToolbarMenuGroupTitle">Wrestling</div><a id="mnuSport_Girls_Wrestling_All" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_7_-1">All Levels</a><a id="mnuSport_Girls_Wrestling_Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=3_7_5">Varsity</a>
+			</div><div id="SportMenu_mnuSport_Unified" class="dsToolbarMenuUL dsToolbarMenuSubPanel">
+				<a id="SUB_TOOLBARMENU_mnuSport_Unified" class=" dsToolbarMenuLink " onclick="changeToolbarToMainMenu(&#39;#SportMenu_MAIN&#39;);"><i class="fa fa-arrow-left" style="float:left;"></i><div style="float:left;" class="dsToolbarMenuBackButton">BACK</div><div style="clear:both;"></div></a><div class="dsToolbarMenuGroupSeperator">
+
+				</div><i class="fa-duotone fa-basketball-hoop"></i><div class="dsToolbarMenuGroupTitle">Basketball</div><a id="mnuSport_Unified_Basketball_All" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=1_1015_-1">All Levels</a><a id="mnuSport_Unified_Basketball_Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=1_1015_5">Varsity</a><div class="dsToolbarMenuGroupSeperator">
+
+				</div><i class="fa-solid fa-person-running"></i><div class="dsToolbarMenuGroupTitle">Cross Country</div><a id="mnuSport_Unified_Cross Country_All" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=1_1_-1">All Levels</a><a id="mnuSport_Unified_Cross Country_Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=1_1_5">Varsity</a><div class="dsToolbarMenuGroupSeperator">
+
+				</div><i class="fa-duotone fa-volleyball"></i><div class="dsToolbarMenuGroupTitle">Volleyball</div><a id="mnuSport_Unified_Volleyball_All" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=1_1013_-1">All Levels</a><a id="mnuSport_Unified_Volleyball_Varsity" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?SportID=1_1013_5">Varsity</a>
+			</div>
+		</div>
+            </li>
+
+            <li class="dsToolbarLeft">
+                <a id="View" title="View" href="#"><i class="fa fa-solid fa-caret-down"></i><i class='fa fa-table-list'></i></a>
+                <div id="ViewPanel" class="dsToolbarDropdown1 dsToolbarDropdownLeft">
+			<a id="mnuView1" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?ViewID=1">Tiles<i class='fa fa-table-list'></i></a><a id="mnuView2" class=" dsToolbarMenuLink " rel="nofollow" href="DashboardSchedule.aspx?ViewID=2">Calendar<i class='fa fa-calendar-days'></i></a>
+		</div>
+            </li>
+
+
+            
+        </ul>
+    
+	</div>
+
+    <div id="BodyWrapper" class="dsFormPanelNormal ">
+		
+    <h3>Today&#39;s Games - All HS</h3><div class="dsFlexBlockFill">
+			
+<style>
+
+	
+        #bannerads1 {
+
+	    width: 100% !important;        
+	    max-width: 800px;
+	    margin: 0px auto 40px auto;	
+	    line-height: 1;
+        }
+
+        #bannerads1 img {
+            height: auto;
+	    width: 100%;
+        }
+
+	/* applied in code */
+	.InnerPageAdWrapper {
+	    display: flex;
+	    flex-wrap: wrap;
+    	    padding-top: 20px; 
+	}
+
+
+
+
+ }
+
+    
+</style>
+
+<script>
+    $(document).ready(function () {
+
+        $('span', $('#bannerads1pool')).sort(function () { return (Math.round(Math.random()) - 0.5) }).appendTo($('#bannerads1pool'));
+
+        //for (let i = 0; i < $('#banner1pool').children().length; i += 1) {
+        //    $('#bannerads1').append('<div>' + $('#bannerads1pool').children()[i].outerHTML + '</div>');
+        //}
+
+	$('#bannerads1').append('<div>' + $('#bannerads1pool').children()[0].outerHTML + '</div>');
+
+
+       
+    });
+</script>
+
+<div id="bannerads1">
+
+</div>
+
+<div id="bannerads1pool" style="display:none">
+    <span class='CarouselTracker' CarouselID='1002' Carousel='Banner Ads' CarouselEntryID='1110' CarouselEntry='Measles'><a  target='_blank' href='https://www.maine.gov/dhhs/measles'><img src='\Resources\Carousel\Banner Ads\Images\0000001110.png'></a></span>
+<span class='CarouselTracker' CarouselID='1002' Carousel='Banner Ads' CarouselEntryID='1097' CarouselEntry='UMaine Army ROTC'><a  target='_blank' href='https://www.goarmy.com/info?iom=CQTG-XX_LAP_Exhibit_2932408_C1B_NA_ROTC'><img src='\Resources\Carousel\Banner Ads\Images\0000001097.png'></a></span>
+<span class='CarouselTracker' CarouselID='1002' Carousel='Banner Ads' CarouselEntryID='1073' CarouselEntry='Hammond'><a  class='HighlightedEntry' target='_blank' href='https://www.hammondlumber.com/'><img src='\Resources\Carousel\Banner Ads\Images\0000001073.png'></a></span>
+<span class='CarouselTracker' CarouselID='1002' Carousel='Banner Ads' CarouselEntryID='1091' CarouselEntry='Finance Authority of Maine'><a  target='_blank' href='https://www.famemaine.com/levelup/'><img src='\Resources\Carousel\Banner Ads\Images\0000001091.png'></a></span>
+<span class='CarouselTracker' CarouselID='1002' Carousel='Banner Ads' CarouselEntryID='1077' CarouselEntry='Maine Savings'><a  target='_blank' href='https://mainesavings.com/'><img src='\Resources\Carousel\Banner Ads\Images\0000001077.png'></a></span>
+<span class='CarouselTracker' CarouselID='1002' Carousel='Banner Ads' CarouselEntryID='1071' CarouselEntry='ConvenientMD'><a  target='_blank' href='https://convenientmd.com/'><img src='\Resources\Carousel\Banner Ads\Images\0000001071.png'></a></span>
+
+</div>
+
+
+
+
+
+		</div><table class='TileTable'><colgroup><col style="width: 70px;" /><col style="width: 18px;" /><col style="width: 250px;" /><col style="width: 10px;" /><col style="width: 250px;" /></colgroup><tbody><tr class='rowGame'><td><span class='date'>TUE 3/3</span><span class='time'>1:00 PM</span></td><td></td><td><span class='sport'>Unified Basketball</span> <span class='level'>Varsity</span><br/><div class='teams'><div class='team'>Maranacook Community <i class="fa fa-solid fa-house"></i> </div> <div class='team'>Gardiner Area</div></div></td><td></td><td><span class='site'>Maranacook HS</span><br/><span class='subsite'></span><br/><div class='transportation'></br></div></td></tr><tr class='rowGame'><td><span class='date'>TUE 3/3</span><span class='time'>3:00 PM</span></td><td></td><td><span class='sport'>Unified Basketball</span> <span class='level'>Varsity</span><br/><div class='teams'><div class='team'>Mt. Ararat <i class="fa fa-solid fa-house"></i> </div> <div class='team'>Brunswick</div></div></td><td></td><td><span class='site'>Main Gym</span><br/><span class='subsite'></span><br/><div class='transportation'></br></div></td></tr><tr class='rowGame'><td><span class='date'>TUE 3/3</span><span class='time'>3:30 PM</span></td><td></td><td><span class='sport'>Coed </span> <span class='level'>Varsity</span><br/><div class='teams'><div class='team'>Winslow <i class="fa fa-solid fa-house"></i> </div> <div class='team'>Lawrence</div></div></td><td></td><td><span class='site'>winslow high school</span><br/><span class='subsite'></span><br/><div class='transportation'></br></div></td></tr><tr class='rowGame'><td><span class='date'>TUE 3/3</span><span class='time'>3:30 PM</span></td><td></td><td><a href="/dashboardgame.aspx?tournamentid=8&schoolid=7&school2id=9&SeasonRoster=1""><span class='sport'>Girls Volleyball</span> <span class='level'>Middle School</span><br/><div class='teams'><div class='team'>MS Volleyball</div><div class='team'>Marshwood - A <i class="fa fa-solid fa-house"></i> </div> <div class='team'>Noble - A</div></div></a></td><td></td><td><span class='site'>Marshwood Middle School</span><br/><span class='subsite'></span><br/><div class='transportation'></br></div></td></tr><tr class='rowGame'><td><span class='date'>TUE 3/3</span><span class='time'>3:30 PM</span></td><td></td><td><span class='sport'>Unified Basketball</span> <span class='level'>Varsity</span><br/><div class='teams'><div class='team'>Edward Little <i class="fa fa-solid fa-house"></i> </div> <div class='team'>Oxford Hills</div></div></td><td></td><td><span class='site'>@ EL HS</span><br/><span class='subsite'></span><br/><div class='transportation'></br>Oxford Hills: 2:15 PM - 1 Bus - Unified BB Team to EL</div></td></tr><tr class='rowGame'><td><span class='date'>TUE 3/3</span><span class='time'>3:30 PM</span></td><td></td><td><span class='sport'>Unified Basketball</span> <span class='level'>Varsity</span><br/><div class='teams'><div class='team'>Gorham <i class="fa fa-solid fa-house"></i> </div> <div class='team'>Scarborough</div></div></td><td></td><td><span class='site'>Gorham High School</span><br/><span class='subsite'></span><br/><div class='transportation'></br></div></td></tr><tr class='rowGame'><td><span class='date'>TUE 3/3</span><span class='time'>3:30 PM</span></td><td></td><td><span class='sport'>Unified Basketball</span> <span class='level'>Varsity</span><br/><div class='teams'><div class='team'>Bonny Eagle <i class="fa fa-solid fa-house"></i> </div> <div class='team'>Deering</div> <div class='team'>Portland</div></div></td><td></td><td><span class='site'>Bonny Eagle High School</span><br/><span class='subsite'></span><br/><div class='transportation'></br></br></div></td></tr><tr class='rowGame'><td><span class='date'>TUE 3/3</span><span class='time'>3:30 PM</span></td><td></td><td><span class='sport'>Unified Basketball</span> <span class='level'>Varsity</span><br/><div class='teams'><div class='team'>Waterville <i class="fa fa-solid fa-house"></i> </div> <div class='team'>Skowhegan Area</div></div></td><td></td><td><span class='site'>Waterville High School</span><br/><span class='subsite'></span><br/><div class='transportation'></br></div></td></tr><tr class='rowGame'><td><span class='date'>TUE 3/3</span><span class='time'>3:30 PM</span></td><td></td><td><span class='sport'>Unified Basketball</span> <span class='level'>Varsity</span><br/><div class='teams'><div class='team'>Winslow <i class="fa fa-solid fa-house"></i> </div> <div class='team'>Lawrence</div></div></td><td></td><td><span class='site'>winslow high school</span><br/><span class='subsite'></span><br/><div class='transportation'></br></div></td></tr></tbody></table>
+	</div>
+
+    
+
+    <div class="dsFilterWrapperPanel">
+        <div id="FilterUpdatePanel">
+		
+                <input type="hidden" name="ctl00$MainContent$FilterID" id="FilterID" value="-9999" />
+                <input type="hidden" name="ctl00$MainContent$FilterStatus" id="FilterStatus" value="None" />
+                <input type="hidden" name="ctl00$MainContent$FilterViewStateModifier" id="FilterViewStateModifier" value="1" />
+                <div id="FilterDisplayPanel" class="dsFormPanel1000">
+			
+                    <span id="ValidationStatus" class="dsvalidation"></span>
+                    <span id="dsFilterFrame" class="dsFilterFrame"></span>
+                
+		</div>
+            
+	</div>
+    </div>
+
+    
+
+
+<style>
+    #ScoreDisplayPanel {
+        max-width: 600px;
+        font-family: Avalon;
+        font-weight: normal;
+        color: black;
+    }
+    
+    #RequirementCheck {
+        max-width: 600px;
+        font-family: Avalon;
+        font-weight: normal;
+        color: black;
+    }
+
+    .dsScoreWrapperPanel {
+        display: none;
+        height: calc(100% - 57px);
+        width: 100%;
+        position: fixed;
+        z-index: 9000000;
+        top: 37px;
+        left: 0;
+        background-color: rgba(230,230,230, 0.8);
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    #ScorePanel hr {
+        border-bottom: 1px solid black;
+        margin: 2px 0 10px 0;
+    }
+
+    #ScoreDisplayPanel {
+        padding: 4px 20px 4px 20px;
+    }
+
+        #ScoreDisplayPanel .scoregameid {
+            font-size: 10pt;
+            margin: 20px 0 0px 8px;
+            display: block;
+            color: #999999;
+        }
+
+    #dsScoreFrame .dsInputGroupFrame {
+        max-width: 100%;
+    }
+
+    .TableScore {
+        table-layout: fixed;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+        .TableScore th {
+            text-align: center;
+            padding: 2px 2px 4px 2px;
+            font-size: 12px;
+        }
+
+            .TableScore th:first-of-type {
+                text-align: left;
+            }
+
+        .TableScore td {
+            height: 34px;
+        }
+
+            .TableScore td:first-child {
+                width: 200px;
+            }
+
+            .TableScore td:nth-child(2) {
+                width: 75px;
+                text-align: center;
+            }
+
+            .TableScore td:nth-child(3) {
+                width: 100px;
+            }
+
+        .TableScore input[type="checkbox"] {
+            margin: auto;
+        }
+
+        .TableScore input[type="number"] {
+            display: block;
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            color: black;
+            background: none;
+            border: 1px solid lightgrey;
+            line-height: 24px;
+            padding: 4px;
+            text-align: right;
+            width: 75px;
+            margin: auto;
+        }
+
+
+    .TableIndividual {
+        table-layout: fixed;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+        .TableIndividual th {
+            text-align: center;
+            padding: 2px 2px 4px 2px;
+            font-size: 12px;
+        }
+
+            .TableIndividual th:first-of-type {
+                text-align: left;
+            }
+
+        .TableIndividual td {
+            height: 34px;
+            width: 80px;
+        }
+
+            .TableIndividual td:first-child {
+                width: 200px;
+            }
+
+        .TableIndividual input[type="number"] {
+            display: block;
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            color: black;
+            background: none;
+            border: 1px solid lightgrey;
+            line-height: 24px;
+            padding: 4px;
+            text-align: right;
+            width: 75px;
+        }
+
+    .SchoolName {
+        font-weight: bold;
+    }
+
+    #DP2 .dsInputMultiline {
+        height: 250px;
+    }
+
+    .dsButtonPanelX {
+        margin: 0 auto 0 auto;
+        padding: 20px 20px 8px 0;
+        background-color:white;
+    height: 70px;
+        max-width: 640px;
+        float: none;
+    }
+
+    .displaynone {
+        display:none;
+    }
+
+    @media(max-width: 800px) {
+        .RightPRCNT50,
+        .LeftPRCNT50 {
+            width: Calc(100% - 12px) !important;
+            border-left: none !important;
+        }
+    }
+
+   
+</style>
+
+<script>
+
+
+    function ScoreOk() {
+        return $('#MainForm').parsley().validate();
+    }
+
+    function ScoreCancel() {
+        $('.dsScoreWrapperPanel').css({ 'display': 'none' });
+        $('body').css('overflow', 'auto');
+        return false;
+    };
+
+    function ScoreShow() {
+        $('body').css('overflow', 'hidden');
+        $('.dsScoreWrapperPanel').css({ 'display': 'block' });
+
+
+        bindTabFunctions();
+    }
+
+    function EnterScore(GameID) {
+        $('#ScoreGameID').val(GameID);
+        $('#ScoreViewStateModifier').val(Number($('#ScoreViewStateModifier').val()) + 1);
+        __doPostBack('ScoreUpdatePanel', '');
+    }
+
+    function ScoreSaved() {
+        $('.dsScoreWrapperPanel').css({ 'display': 'none' });
+        $('body').css('overflow', 'auto');
+        location.reload();
+        //$('#EditID').val(-9999);
+        //$('#EditStatus').val('');
+    };
+
+    function ForfeitChecked() {
+        if ($("#ScoreDisplayPanel input:checkbox:checked").length > 0) {
+            $('.ScoreValue').hide();
+        }
+        else {
+            $('.ScoreValue').show();
+        }
+    }
+
+    function ApproveScore(GameID) {
+        if (confirm('Are you sure you want to approve this score?')) {
+
+            var dto = {
+                'GameID': GameID
+            };
+
+            $.ajax({
+                type: 'post',
+                contentType: 'application/json; charset-utf-8',
+                dataType: 'json',
+                url: '/Services/CoreServices.asmx/ApproveScore',
+                data: JSON.stringify(dto),
+                success: function (result) {
+                    location.reload();
+                }
+            });
+        }
+    }
+
+</script>
+
+<div class="dsScoreWrapperPanel">
+    <div id="ScoreUpdatePanel">
+		
+            <input type="hidden" name="ctl00$MainContent$Score$ScoreGameID" id="ScoreGameID" value="0" />
+            <input type="hidden" name="ctl00$MainContent$Score$ScoreViewStateModifier" id="ScoreViewStateModifier" value="1" />
+
+            <div id="RequirementCheck" class="dsFormPanel1000  displaynone">
+			
+                A penalty card report must be entered on behalf of both the home and away team for this game before scores can be entered.
+            
+		</div>
+
+
+            <div id="ScoreDisplayPanel" class="dsFormPanel1000  ">
+			
+                <span id="ValidationStatus" class="dsvalidation"></span>
+
+                <nav class="dsTabs">
+                    <ul>
+                        <li><a id="T1" href="#DP1" class="active">Results</a></li>
+                        <li><a id="T3" href="#DP3">Individual</a></li>
+                        <li><a id="T2" href="#DP2">Details</a></li>
+                    </ul>
+                </nav>
+                <div class="dsTabPanels">
+                    <div id="DP1" class="dsTabPanel active">
+				
+                    
+			</div>
+
+                    <div id="DP3" class="dsTabPanel">
+				
+                    
+			</div>
+
+                    <div id="DP2" class="dsTabPanel">
+				
+                    
+			</div>
+                </div>
+            
+		</div>
+
+         
+
+        
+	</div>
+</div>
+
+
+
+            </div>
+        
+</div>
+
+
+    </form>
+</body>
+</html>
