@@ -1,0 +1,1116 @@
+{
+  "last_updated": "2026-03-03T21:34:49.707536+00:00",
+  "season": "winter",
+  "sports": [
+    {
+      "sport": "Basketball",
+      "gender": "Boys",
+      "tournament_id": 100,
+      "divisions": [
+        {
+          "name": "North-A",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Camden Hills Regional",
+              "record": "17-1-0",
+              "index": 173.457,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Edward Little",
+              "record": "14-4-0",
+              "index": 131.914,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Brunswick",
+              "record": "14-4-0",
+              "index": 109.383,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Bangor",
+              "record": "10-8-0",
+              "index": 87.778,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Lewiston",
+              "record": "10-8-0",
+              "index": 86.42,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Mt. Blue",
+              "record": "10-8-0",
+              "index": 65.679,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "Hampden Academy",
+              "record": "9-9-0",
+              "index": 60.864,
+              "qualifying": true
+            },
+            {
+              "rank": 8,
+              "team": "Skowhegan Area",
+              "record": "8-10-0",
+              "index": 47.16,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
+              "team": "Brewer",
+              "record": "6-12-0",
+              "index": 38.333,
+              "qualifying": false
+            },
+            {
+              "rank": 10,
+              "team": "Oxford Hills",
+              "record": "4-14-0",
+              "index": 32.901,
+              "qualifying": false
+            },
+            {
+              "rank": 11,
+              "team": "Messalonskee",
+              "record": "5-13-0",
+              "index": 31.358,
+              "qualifying": false
+            },
+            {
+              "rank": 12,
+              "team": "Mt. Ararat",
+              "record": "2-16-0",
+              "index": 7.593,
+              "qualifying": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sport": "Basketball",
+      "gender": "Girls",
+      "tournament_id": 101,
+      "divisions": [
+        {
+          "name": "North-A",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Mt. Ararat",
+              "record": "17-1-0",
+              "index": 162.037,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Hampden Academy",
+              "record": "14-4-0",
+              "index": 135.123,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Camden Hills Regional",
+              "record": "15-3-0",
+              "index": 126.975,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Edward Little",
+              "record": "14-4-0",
+              "index": 117.222,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Bangor",
+              "record": "13-5-0",
+              "index": 107.346,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Brunswick",
+              "record": "7-11-0",
+              "index": 47.037,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "Lewiston",
+              "record": "9-9-0",
+              "index": 44.63,
+              "qualifying": true
+            },
+            {
+              "rank": 8,
+              "team": "Skowhegan Area",
+              "record": "8-10-0",
+              "index": 25.679,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
+              "team": "Brewer",
+              "record": "5-13-0",
+              "index": 25.062,
+              "qualifying": false
+            },
+            {
+              "rank": 10,
+              "team": "Messalonskee",
+              "record": "3-15-0",
+              "index": 2.346,
+              "qualifying": false
+            },
+            {
+              "rank": 11,
+              "team": "Oxford Hills",
+              "record": "1-16-0",
+              "index": 0.556,
+              "qualifying": false
+            },
+            {
+              "rank": 12,
+              "team": "Mt. Blue",
+              "record": "0-17-0",
+              "index": 0.0,
+              "qualifying": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sport": "Ice Hockey",
+      "gender": "Boys",
+      "tournament_id": 103,
+      "divisions": [
+        {
+          "name": "A",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Thornton Academy",
+              "record": "17-1-0",
+              "index": 192.562,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Cheverus/Yarmouth Coop",
+              "record": "12-6-0",
+              "index": 136.142,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Blue Devils",
+              "record": "12-5-1",
+              "index": 125.031,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Scarborough",
+              "record": "10-7-1",
+              "index": 119.074,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Falmouth",
+              "record": "12-6-0",
+              "index": 118.827,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Edward Little",
+              "record": "10-8-0",
+              "index": 104.105,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "IceCats",
+              "record": "12-6-0",
+              "index": 74.815,
+              "qualifying": true
+            },
+            {
+              "rank": 8,
+              "team": "BGR-BRW-NARRA-SKOW",
+              "record": "9-8-1",
+              "index": 70.988,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
+              "team": "Trail Blazers",
+              "record": "6-12-0",
+              "index": 33.025,
+              "qualifying": false
+            },
+            {
+              "rank": 10,
+              "team": "Marshwood/Noble/Sanford/Traip Coop",
+              "record": "5-13-0",
+              "index": 24.198,
+              "qualifying": false
+            },
+            {
+              "rank": 11,
+              "team": "Portland COOP",
+              "record": "3-15-0",
+              "index": 7.16,
+              "qualifying": false
+            },
+            {
+              "rank": 12,
+              "team": "Kents Hill/Oceanside",
+              "record": "1-17-0",
+              "index": 3.58,
+              "qualifying": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sport": "Ice Hockey",
+      "gender": "Girls",
+      "tournament_id": 108,
+      "divisions": [
+        {
+          "name": "North",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "\"Red Hornets\"",
+              "record": "17-1-0",
+              "index": 185.802,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Yarmouth/Freeport",
+              "record": "14-2-2",
+              "index": 157.716,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Brunswick",
+              "record": "9-9-0",
+              "index": 65.432,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "PENOBSCOT",
+              "record": "8-9-1",
+              "index": 50.0,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Black Tigers",
+              "record": "6-10-2",
+              "index": 43.21,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Blue Devils",
+              "record": "2-16-0",
+              "index": 4.938,
+              "qualifying": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sport": "Indoor Track",
+      "gender": "Boys",
+      "tournament_id": 104,
+      "divisions": [
+        {
+          "name": "North-A",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Camden Hills Regional",
+              "record": "17-1-0",
+              "index": 173.457,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Edward Little",
+              "record": "14-4-0",
+              "index": 131.914,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Brunswick",
+              "record": "14-4-0",
+              "index": 109.383,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Bangor",
+              "record": "10-8-0",
+              "index": 87.778,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Lewiston",
+              "record": "10-8-0",
+              "index": 86.42,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Mt. Blue",
+              "record": "10-8-0",
+              "index": 65.679,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "Hampden Academy",
+              "record": "9-9-0",
+              "index": 60.864,
+              "qualifying": true
+            },
+            {
+              "rank": 8,
+              "team": "Skowhegan Area",
+              "record": "8-10-0",
+              "index": 47.16,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
+              "team": "Brewer",
+              "record": "6-12-0",
+              "index": 38.333,
+              "qualifying": false
+            },
+            {
+              "rank": 10,
+              "team": "Oxford Hills",
+              "record": "4-14-0",
+              "index": 32.901,
+              "qualifying": false
+            },
+            {
+              "rank": 11,
+              "team": "Messalonskee",
+              "record": "5-13-0",
+              "index": 31.358,
+              "qualifying": false
+            },
+            {
+              "rank": 12,
+              "team": "Mt. Ararat",
+              "record": "2-16-0",
+              "index": 7.593,
+              "qualifying": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sport": "Indoor Track",
+      "gender": "Girls",
+      "tournament_id": 300,
+      "divisions": [
+        {
+          "name": "North-A",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Camden Hills Regional",
+              "record": "17-1-0",
+              "index": 173.457,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Edward Little",
+              "record": "14-4-0",
+              "index": 131.914,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Brunswick",
+              "record": "14-4-0",
+              "index": 109.383,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Bangor",
+              "record": "10-8-0",
+              "index": 87.778,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Lewiston",
+              "record": "10-8-0",
+              "index": 86.42,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Mt. Blue",
+              "record": "10-8-0",
+              "index": 65.679,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "Hampden Academy",
+              "record": "9-9-0",
+              "index": 60.864,
+              "qualifying": true
+            },
+            {
+              "rank": 8,
+              "team": "Skowhegan Area",
+              "record": "8-10-0",
+              "index": 47.16,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
+              "team": "Brewer",
+              "record": "6-12-0",
+              "index": 38.333,
+              "qualifying": false
+            },
+            {
+              "rank": 10,
+              "team": "Oxford Hills",
+              "record": "4-14-0",
+              "index": 32.901,
+              "qualifying": false
+            },
+            {
+              "rank": 11,
+              "team": "Messalonskee",
+              "record": "5-13-0",
+              "index": 31.358,
+              "qualifying": false
+            },
+            {
+              "rank": 12,
+              "team": "Mt. Ararat",
+              "record": "2-16-0",
+              "index": 7.593,
+              "qualifying": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sport": "Swimming",
+      "gender": "Boys",
+      "tournament_id": 105,
+      "divisions": [
+        {
+          "name": "North-A",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Camden Hills Regional",
+              "record": "17-1-0",
+              "index": 173.457,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Edward Little",
+              "record": "14-4-0",
+              "index": 131.914,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Brunswick",
+              "record": "14-4-0",
+              "index": 109.383,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Bangor",
+              "record": "10-8-0",
+              "index": 87.778,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Lewiston",
+              "record": "10-8-0",
+              "index": 86.42,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Mt. Blue",
+              "record": "10-8-0",
+              "index": 65.679,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "Hampden Academy",
+              "record": "9-9-0",
+              "index": 60.864,
+              "qualifying": true
+            },
+            {
+              "rank": 8,
+              "team": "Skowhegan Area",
+              "record": "8-10-0",
+              "index": 47.16,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
+              "team": "Brewer",
+              "record": "6-12-0",
+              "index": 38.333,
+              "qualifying": false
+            },
+            {
+              "rank": 10,
+              "team": "Oxford Hills",
+              "record": "4-14-0",
+              "index": 32.901,
+              "qualifying": false
+            },
+            {
+              "rank": 11,
+              "team": "Messalonskee",
+              "record": "5-13-0",
+              "index": 31.358,
+              "qualifying": false
+            },
+            {
+              "rank": 12,
+              "team": "Mt. Ararat",
+              "record": "2-16-0",
+              "index": 7.593,
+              "qualifying": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sport": "Swimming",
+      "gender": "Girls",
+      "tournament_id": 7,
+      "divisions": [
+        {
+          "name": "North-A",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Camden Hills Regional",
+              "record": "17-1-0",
+              "index": 173.457,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Edward Little",
+              "record": "14-4-0",
+              "index": 131.914,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Brunswick",
+              "record": "14-4-0",
+              "index": 109.383,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Bangor",
+              "record": "10-8-0",
+              "index": 87.778,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Lewiston",
+              "record": "10-8-0",
+              "index": 86.42,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Mt. Blue",
+              "record": "10-8-0",
+              "index": 65.679,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "Hampden Academy",
+              "record": "9-9-0",
+              "index": 60.864,
+              "qualifying": true
+            },
+            {
+              "rank": 8,
+              "team": "Skowhegan Area",
+              "record": "8-10-0",
+              "index": 47.16,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
+              "team": "Brewer",
+              "record": "6-12-0",
+              "index": 38.333,
+              "qualifying": false
+            },
+            {
+              "rank": 10,
+              "team": "Oxford Hills",
+              "record": "4-14-0",
+              "index": 32.901,
+              "qualifying": false
+            },
+            {
+              "rank": 11,
+              "team": "Messalonskee",
+              "record": "5-13-0",
+              "index": 31.358,
+              "qualifying": false
+            },
+            {
+              "rank": 12,
+              "team": "Mt. Ararat",
+              "record": "2-16-0",
+              "index": 7.593,
+              "qualifying": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sport": "Wrestling",
+      "gender": "Coed",
+      "tournament_id": 106,
+      "divisions": [
+        {
+          "name": "North-A",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Camden Hills Regional",
+              "record": "17-1-0",
+              "index": 173.457,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Edward Little",
+              "record": "14-4-0",
+              "index": 131.914,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Brunswick",
+              "record": "14-4-0",
+              "index": 109.383,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Bangor",
+              "record": "10-8-0",
+              "index": 87.778,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Lewiston",
+              "record": "10-8-0",
+              "index": 86.42,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Mt. Blue",
+              "record": "10-8-0",
+              "index": 65.679,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "Hampden Academy",
+              "record": "9-9-0",
+              "index": 60.864,
+              "qualifying": true
+            },
+            {
+              "rank": 8,
+              "team": "Skowhegan Area",
+              "record": "8-10-0",
+              "index": 47.16,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
+              "team": "Brewer",
+              "record": "6-12-0",
+              "index": 38.333,
+              "qualifying": false
+            },
+            {
+              "rank": 10,
+              "team": "Oxford Hills",
+              "record": "4-14-0",
+              "index": 32.901,
+              "qualifying": false
+            },
+            {
+              "rank": 11,
+              "team": "Messalonskee",
+              "record": "5-13-0",
+              "index": 31.358,
+              "qualifying": false
+            },
+            {
+              "rank": 12,
+              "team": "Mt. Ararat",
+              "record": "2-16-0",
+              "index": 7.593,
+              "qualifying": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sport": "Nordic Ski",
+      "gender": "Coed",
+      "tournament_id": 402,
+      "divisions": [
+        {
+          "name": "North-A",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Camden Hills Regional",
+              "record": "17-1-0",
+              "index": 173.457,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Edward Little",
+              "record": "14-4-0",
+              "index": 131.914,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Brunswick",
+              "record": "14-4-0",
+              "index": 109.383,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Bangor",
+              "record": "10-8-0",
+              "index": 87.778,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Lewiston",
+              "record": "10-8-0",
+              "index": 86.42,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Mt. Blue",
+              "record": "10-8-0",
+              "index": 65.679,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "Hampden Academy",
+              "record": "9-9-0",
+              "index": 60.864,
+              "qualifying": true
+            },
+            {
+              "rank": 8,
+              "team": "Skowhegan Area",
+              "record": "8-10-0",
+              "index": 47.16,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
+              "team": "Brewer",
+              "record": "6-12-0",
+              "index": 38.333,
+              "qualifying": false
+            },
+            {
+              "rank": 10,
+              "team": "Oxford Hills",
+              "record": "4-14-0",
+              "index": 32.901,
+              "qualifying": false
+            },
+            {
+              "rank": 11,
+              "team": "Messalonskee",
+              "record": "5-13-0",
+              "index": 31.358,
+              "qualifying": false
+            },
+            {
+              "rank": 12,
+              "team": "Mt. Ararat",
+              "record": "2-16-0",
+              "index": 7.593,
+              "qualifying": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sport": "Alpine Ski",
+      "gender": "Boys",
+      "tournament_id": 403,
+      "divisions": [
+        {
+          "name": "North-A",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Camden Hills Regional",
+              "record": "17-1-0",
+              "index": 173.457,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Edward Little",
+              "record": "14-4-0",
+              "index": 131.914,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Brunswick",
+              "record": "14-4-0",
+              "index": 109.383,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Bangor",
+              "record": "10-8-0",
+              "index": 87.778,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Lewiston",
+              "record": "10-8-0",
+              "index": 86.42,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Mt. Blue",
+              "record": "10-8-0",
+              "index": 65.679,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "Hampden Academy",
+              "record": "9-9-0",
+              "index": 60.864,
+              "qualifying": true
+            },
+            {
+              "rank": 8,
+              "team": "Skowhegan Area",
+              "record": "8-10-0",
+              "index": 47.16,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
+              "team": "Brewer",
+              "record": "6-12-0",
+              "index": 38.333,
+              "qualifying": false
+            },
+            {
+              "rank": 10,
+              "team": "Oxford Hills",
+              "record": "4-14-0",
+              "index": 32.901,
+              "qualifying": false
+            },
+            {
+              "rank": 11,
+              "team": "Messalonskee",
+              "record": "5-13-0",
+              "index": 31.358,
+              "qualifying": false
+            },
+            {
+              "rank": 12,
+              "team": "Mt. Ararat",
+              "record": "2-16-0",
+              "index": 7.593,
+              "qualifying": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sport": "Alpine Ski",
+      "gender": "Girls",
+      "tournament_id": 404,
+      "divisions": [
+        {
+          "name": "North-A",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Camden Hills Regional",
+              "record": "17-1-0",
+              "index": 173.457,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Edward Little",
+              "record": "14-4-0",
+              "index": 131.914,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Brunswick",
+              "record": "14-4-0",
+              "index": 109.383,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Bangor",
+              "record": "10-8-0",
+              "index": 87.778,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Lewiston",
+              "record": "10-8-0",
+              "index": 86.42,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Mt. Blue",
+              "record": "10-8-0",
+              "index": 65.679,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "Hampden Academy",
+              "record": "9-9-0",
+              "index": 60.864,
+              "qualifying": true
+            },
+            {
+              "rank": 8,
+              "team": "Skowhegan Area",
+              "record": "8-10-0",
+              "index": 47.16,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
+              "team": "Brewer",
+              "record": "6-12-0",
+              "index": 38.333,
+              "qualifying": false
+            },
+            {
+              "rank": 10,
+              "team": "Oxford Hills",
+              "record": "4-14-0",
+              "index": 32.901,
+              "qualifying": false
+            },
+            {
+              "rank": 11,
+              "team": "Messalonskee",
+              "record": "5-13-0",
+              "index": 31.358,
+              "qualifying": false
+            },
+            {
+              "rank": 12,
+              "team": "Mt. Ararat",
+              "record": "2-16-0",
+              "index": 7.593,
+              "qualifying": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,713 @@
+{
+  "last_updated": "2026-03-03T21:34:49.707536+00:00",
+  "season": "winter",
+  "sports": [
+    {
+      "sport": "Basketball",
+      "gender": "Boys",
+      "tournament_id": 100,
+      "tournament_active": true,
+      "class_name": "Division A",
+      "brackets": [
+        {
+          "class_name": "Preliminary Round",
+          "matchups": [
+            {
+              "team1": "Scarborough",
+              "team2": "Kennebunk",
+              "seed1": "8",
+              "seed2": "9",
+              "score1": "50",
+              "score2": "44",
+              "header": "TUE 2/10, 6:00 PM @Scarborough HS (Alumni Gym)"
+            },
+            {
+              "team1": "Westbrook",
+              "team2": "Bonny Eagle",
+              "seed1": "7",
+              "seed2": "10",
+              "score1": "36",
+              "score2": "47",
+              "header": "WED 2/11, 7:00 PM @Westbrook HS"
+            },
+            {
+              "team1": "Portland",
+              "team2": "Falmouth",
+              "seed1": "6",
+              "seed2": "11",
+              "score1": "51",
+              "score2": "42",
+              "header": "TUE 2/10, 6:30 PM @Portland Expo"
+            }
+          ]
+        },
+        {
+          "class_name": "Quarterfinal",
+          "matchups": [
+            {
+              "team1": "Camden Hills Regional",
+              "team2": "Skowhegan Area",
+              "seed1": "1",
+              "seed2": "8",
+              "score1": "69",
+              "score2": "44",
+              "header": "SAT 2/14, 8:30 PM @Augusta Civic Center"
+            },
+            {
+              "team1": "Bangor",
+              "team2": "Lewiston",
+              "seed1": "4",
+              "seed2": "5",
+              "score1": "54",
+              "score2": "43",
+              "header": "SAT 2/14, 7:00 PM @Augusta Civic Center"
+            },
+            {
+              "team1": "Brunswick",
+              "team2": "Mt. Blue",
+              "seed1": "3",
+              "seed2": "6",
+              "score1": "66",
+              "score2": "37",
+              "header": "SAT 2/14, 4:00 PM @Augusta Civic Center"
+            },
+            {
+              "team1": "Edward Little",
+              "team2": "Hampden Academy",
+              "seed1": "2",
+              "seed2": "7",
+              "score1": "60",
+              "score2": "46",
+              "header": "SAT 2/14, 5:30 PM @Augusta Civic Center"
+            },
+            {
+              "team1": "Windham",
+              "team2": "Scarborough",
+              "seed1": "1",
+              "seed2": "8",
+              "score1": "62",
+              "score2": "66",
+              "header": "SAT 2/14, 6:45 PM @Portland Expo"
+            },
+            {
+              "team1": "Thornton Academy",
+              "team2": "Cheverus",
+              "seed1": "4",
+              "seed2": "5",
+              "score1": "60",
+              "score2": "61",
+              "header": "SAT 2/14, 5:00 PM @Portland Exposition Building"
+            },
+            {
+              "team1": "South Portland",
+              "team2": "Portland",
+              "seed1": "3",
+              "seed2": "6",
+              "score1": "33",
+              "score2": "34",
+              "header": "SAT 2/14, 1:00 PM @Portland EXPO"
+            },
+            {
+              "team1": "Sanford",
+              "team2": "Bonny Eagle",
+              "seed1": "2",
+              "seed2": "10",
+              "score1": "62",
+              "score2": "48",
+              "header": "SAT 2/14, 2:45 PM @Portland Expo Center"
+            }
+          ]
+        },
+        {
+          "class_name": "Semifinal",
+          "matchups": [
+            {
+              "team1": "Camden Hills Regional",
+              "team2": "Bangor",
+              "seed1": "1",
+              "seed2": "4",
+              "score1": "61",
+              "score2": "52",
+              "header": "WED 2/18, 8:30 PM @Augusta Civic Center"
+            },
+            {
+              "team1": "Brunswick",
+              "team2": "Edward Little",
+              "seed1": "3",
+              "seed2": "2",
+              "score1": "52",
+              "score2": "44",
+              "header": "WED 2/18, 7:00 PM @Augusta Civic Center"
+            },
+            {
+              "team1": "Scarborough",
+              "team2": "Cheverus",
+              "seed1": "8",
+              "seed2": "5",
+              "score1": "59",
+              "score2": "68",
+              "header": "THU 2/19, 7:45 PM @Portland Expo"
+            },
+            {
+              "team1": "Portland",
+              "team2": "Sanford",
+              "seed1": "6",
+              "seed2": "2",
+              "score1": "61",
+              "score2": "51",
+              "header": "THU 2/19, 6:00 PM @Portland Expo"
+            }
+          ]
+        },
+        {
+          "class_name": "Regional Final",
+          "matchups": [
+            {
+              "team1": "Camden Hills Regional",
+              "team2": "Brunswick",
+              "seed1": "1",
+              "seed2": "3",
+              "score1": "60",
+              "score2": "48",
+              "header": "FRI 2/20, 6:45 PM @Augusta Civic Center"
+            },
+            {
+              "team1": "Cheverus",
+              "team2": "Portland",
+              "seed1": "5",
+              "seed2": "6",
+              "score1": "30",
+              "score2": "48",
+              "header": "SAT 2/21, 7:45 PM @Cross Insurance Arena"
+            }
+          ]
+        },
+        {
+          "class_name": "State Final",
+          "matchups": [
+            {
+              "team1": "Camden Hills Regional",
+              "team2": "Portland",
+              "seed1": "1",
+              "seed2": "6",
+              "score1": "60",
+              "score2": "76",
+              "header": "SAT 2/28, 7:45 PM @Cross Insurance Arena"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sport": "Basketball",
+      "gender": "Girls",
+      "tournament_id": 101,
+      "tournament_active": true,
+      "class_name": "Division A",
+      "brackets": [
+        {
+          "class_name": "Preliminary Round",
+          "matchups": [
+            {
+              "team1": "Gorham",
+              "team2": "Scarborough",
+              "seed1": "8",
+              "seed2": "9",
+              "score1": "58",
+              "score2": "47",
+              "header": "THU 2/12, 6:00 PM @Gorham HS"
+            },
+            {
+              "team1": "Thornton Academy",
+              "team2": "Kennebunk",
+              "seed1": "7",
+              "seed2": "10",
+              "score1": "58",
+              "score2": "44",
+              "header": "WED 2/11, 6:00 PM @Thornton Academy - Linnell Gymnasium"
+            },
+            {
+              "team1": "Westbrook",
+              "team2": "Massabesic",
+              "seed1": "6",
+              "seed2": "11",
+              "score1": "50",
+              "score2": "24",
+              "header": "THU 2/12, 6:00 PM @Westbrook HS"
+            }
+          ]
+        },
+        {
+          "class_name": "Quarterfinal",
+          "matchups": [
+            {
+              "team1": "Mt. Ararat",
+              "team2": "Skowhegan Area",
+              "seed1": "1",
+              "seed2": "8",
+              "score1": "62",
+              "score2": "24",
+              "header": "FRI 2/13, 8:30 PM @Augusta Civic Center"
+            },
+            {
+              "team1": "Edward Little",
+              "team2": "Bangor",
+              "seed1": "4",
+              "seed2": "5",
+              "score1": "45",
+              "score2": "36",
+              "header": "FRI 2/13, 7:00 PM @Augusta Civic Center"
+            },
+            {
+              "team1": "Camden Hills Regional",
+              "team2": "Brunswick",
+              "seed1": "3",
+              "seed2": "6",
+              "score1": "59",
+              "score2": "31",
+              "header": "FRI 2/13, 4:00 PM @Augusta Civic Center"
+            },
+            {
+              "team1": "Hampden Academy",
+              "team2": "Lewiston",
+              "seed1": "2",
+              "seed2": "7",
+              "score1": "35",
+              "score2": "18",
+              "header": "FRI 2/13, 5:30 PM @Augusta Civic Center"
+            },
+            {
+              "team1": "Cheverus",
+              "team2": "Gorham",
+              "seed1": "1",
+              "seed2": "8",
+              "score1": "47",
+              "score2": "37",
+              "header": "TUE 2/17, 6:45 PM @Portland Expo"
+            },
+            {
+              "team1": "Biddeford",
+              "team2": "Windham",
+              "seed1": "4",
+              "seed2": "5",
+              "score1": "45",
+              "score2": "42",
+              "header": "TUE 2/17, 5:00 PM @Portland Expo"
+            },
+            {
+              "team1": "South Portland",
+              "team2": "Westbrook",
+              "seed1": "3",
+              "seed2": "6",
+              "score1": "43",
+              "score2": "31",
+              "header": "TUE 2/17, 1:00 PM @Portland Expo"
+            },
+            {
+              "team1": "Sanford",
+              "team2": "Thornton Academy",
+              "seed1": "2",
+              "seed2": "7",
+              "score1": "57",
+              "score2": "35",
+              "header": "TUE 2/17, 2:45 PM @Portland Expo Center"
+            }
+          ]
+        },
+        {
+          "class_name": "Semifinal",
+          "matchups": [
+            {
+              "team1": "Mt. Ararat",
+              "team2": "Edward Little",
+              "seed1": "1",
+              "seed2": "4",
+              "score1": "69",
+              "score2": "48",
+              "header": "WED 2/18, 3:30 PM @Augusta Civic Center"
+            },
+            {
+              "team1": "Camden Hills Regional",
+              "team2": "Hampden Academy",
+              "seed1": "3",
+              "seed2": "2",
+              "score1": "39",
+              "score2": "41",
+              "header": "WED 2/18, 2:00 PM @Augusta Civic Center"
+            },
+            {
+              "team1": "Cheverus",
+              "team2": "Biddeford",
+              "seed1": "1",
+              "seed2": "4",
+              "score1": "45",
+              "score2": "39",
+              "header": "THU 2/19, 2:45 PM @Portland Expo"
+            },
+            {
+              "team1": "South Portland",
+              "team2": "Sanford",
+              "seed1": "3",
+              "seed2": "2",
+              "score1": "43",
+              "score2": "38",
+              "header": "THU 2/19, 1:00 PM @Portland Expo"
+            }
+          ]
+        },
+        {
+          "class_name": "Regional Final",
+          "matchups": [
+            {
+              "team1": "Mt. Ararat",
+              "team2": "Hampden Academy",
+              "seed1": "1",
+              "seed2": "2",
+              "score1": "26",
+              "score2": "33",
+              "header": "FRI 2/20, 5:00 PM @Augusta Civic Center"
+            },
+            {
+              "team1": "Cheverus",
+              "team2": "South Portland",
+              "seed1": "1",
+              "seed2": "3",
+              "score1": "46",
+              "score2": "35",
+              "header": "SAT 2/21, 6:00 PM @Cross Insurance Arena"
+            }
+          ]
+        },
+        {
+          "class_name": "State Final",
+          "matchups": [
+            {
+              "team1": "Hampden Academy",
+              "team2": "Cheverus",
+              "seed1": "2",
+              "seed2": "1",
+              "score1": "61",
+              "score2": "63",
+              "header": "SAT 2/28, 6:05 PM @Cross Insurance Arena"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sport": "Ice Hockey",
+      "gender": "Boys",
+      "tournament_id": 103,
+      "tournament_active": true,
+      "class_name": "Division A",
+      "brackets": [
+        {
+          "class_name": "Quarterfinal",
+          "matchups": [
+            {
+              "team1": "Thornton Academy",
+              "team2": "BGR-BRW-NARRA-SKOW",
+              "seed1": "1",
+              "seed2": "8",
+              "score1": "3",
+              "score2": "0",
+              "header": "SAT 2/28, 5:40 PM @Biddeford Ice Arena"
+            },
+            {
+              "team1": "Scarborough",
+              "team2": "Falmouth",
+              "seed1": "4",
+              "seed2": "5",
+              "score1": "0",
+              "score2": "3",
+              "header": "FRI 2/27, 6:45 PM @USM Ice Arena"
+            },
+            {
+              "team1": "Cheverus/Yarmouth Coop",
+              "team2": "IceCats",
+              "seed1": "2",
+              "seed2": "7",
+              "score1": "13",
+              "score2": "0",
+              "header": "SAT 2/28, 1:00 PM @Travis Roy Arena"
+            },
+            {
+              "team1": "Blue Devils",
+              "team2": "Edward Little",
+              "seed1": "3",
+              "seed2": "6",
+              "score1": "6",
+              "score2": "3",
+              "header": "FRI 2/27, 7:00 PM @Colisee"
+            }
+          ]
+        },
+        {
+          "class_name": "Semifinal",
+          "matchups": [
+            {
+              "team1": "Thornton Academy",
+              "team2": "Falmouth",
+              "seed1": "1",
+              "seed2": "5",
+              "score1": "",
+              "score2": "",
+              "header": "WED 3/4, 8:00 PM @Cross Insurance Arena"
+            },
+            {
+              "team1": "Cheverus/Yarmouth Coop",
+              "team2": "Blue Devils",
+              "seed1": "2",
+              "seed2": "3",
+              "score1": "",
+              "score2": "",
+              "header": "WED 3/4, 6:00 PM @Cross Insurance Arena"
+            }
+          ]
+        },
+        {
+          "class_name": "Final",
+          "matchups": [
+            {
+              "team1": "TBD",
+              "team2": "TBD",
+              "seed1": "",
+              "seed2": "",
+              "score1": "",
+              "score2": "",
+              "header": "3/7/26, 3:30pm @Cross Insurance Arena"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sport": "Ice Hockey",
+      "gender": "Girls",
+      "tournament_id": 108,
+      "tournament_active": true,
+      "class_name": "Division All",
+      "brackets": [
+        {
+          "class_name": "Quarterfinal",
+          "matchups": [
+            {
+              "team1": "\"Red Hornets\"",
+              "team2": "",
+              "seed1": "1",
+              "seed2": "",
+              "score1": "BYE",
+              "score2": "",
+              "header": ""
+            },
+            {
+              "team1": "PENOBSCOT",
+              "team2": "Black Tigers",
+              "seed1": "4",
+              "seed2": "5",
+              "score1": "3",
+              "score2": "1",
+              "header": "WED 2/4,  @"
+            },
+            {
+              "team1": "Brunswick",
+              "team2": "Blue Devils",
+              "seed1": "3",
+              "seed2": "6",
+              "score1": "7",
+              "score2": "3",
+              "header": "TUE 2/3, 8:45 PM @Watson Arena"
+            },
+            {
+              "team1": "Yarmouth/Freeport",
+              "team2": "",
+              "seed1": "2",
+              "seed2": "",
+              "score1": "BYE",
+              "score2": "",
+              "header": ""
+            },
+            {
+              "team1": "Cheverus Coop",
+              "team2": "",
+              "seed1": "1",
+              "seed2": "",
+              "score1": "BYE",
+              "score2": "",
+              "header": ""
+            },
+            {
+              "team1": "Portland COOP",
+              "team2": "Falmouth/Scarborough",
+              "seed1": "4",
+              "seed2": "5",
+              "score1": "1",
+              "score2": "3",
+              "header": "WED 2/4, 5:40 PM @Troubh"
+            },
+            {
+              "team1": "Gorham",
+              "team2": "York COOP Team",
+              "seed1": "3",
+              "seed2": "6",
+              "score1": "7",
+              "score2": "0",
+              "header": "WED 2/4,  @"
+            },
+            {
+              "team1": "Biddeford/TA/Kenn/Wells",
+              "team2": "Greely/GNG",
+              "seed1": "2",
+              "seed2": "7",
+              "score1": "8",
+              "score2": "0",
+              "header": "WED 2/4, 3:45 PM @Biddeford Ice Arena"
+            }
+          ]
+        },
+        {
+          "class_name": "Semifinal",
+          "matchups": [
+            {
+              "team1": "\"Red Hornets\"",
+              "team2": "PENOBSCOT",
+              "seed1": "1",
+              "seed2": "4",
+              "score1": "7",
+              "score2": "0",
+              "header": "SAT 2/7, 6:00 PM @Norway Savings Bank"
+            },
+            {
+              "team1": "Brunswick",
+              "team2": "Yarmouth/Freeport",
+              "seed1": "3",
+              "seed2": "2",
+              "score1": "2",
+              "score2": "6",
+              "header": "SAT 2/7, 2:30 PM @Norway Savings Bank"
+            },
+            {
+              "team1": "Cheverus Coop",
+              "team2": "Falmouth/Scarborough",
+              "seed1": "1",
+              "seed2": "5",
+              "score1": "2",
+              "score2": "0",
+              "header": "SAT 2/7, 7:00 PM @Troubh Ice Arena"
+            },
+            {
+              "team1": "Gorham",
+              "team2": "Biddeford/TA/Kenn/Wells",
+              "seed1": "3",
+              "seed2": "2",
+              "score1": "4",
+              "score2": "5",
+              "header": "SAT 2/7,  @Troubh Ice Arena"
+            }
+          ]
+        },
+        {
+          "class_name": "Regional Final",
+          "matchups": [
+            {
+              "team1": "\"Red Hornets\"",
+              "team2": "Yarmouth/Freeport",
+              "seed1": "1",
+              "seed2": "2",
+              "score1": "1",
+              "score2": "3",
+              "header": "WED 2/11, 6:15 PM @Troubh"
+            },
+            {
+              "team1": "Cheverus Coop",
+              "team2": "Biddeford/TA/Kenn/Wells",
+              "seed1": "1",
+              "seed2": "2",
+              "score1": "3",
+              "score2": "0",
+              "header": "WED 2/11, 7:00 PM @Troubh"
+            }
+          ]
+        },
+        {
+          "class_name": "State Final",
+          "matchups": [
+            {
+              "team1": "Yarmouth/Freeport",
+              "team2": "Cheverus Coop",
+              "seed1": "2",
+              "seed2": "1",
+              "score1": "1",
+              "score2": "0",
+              "header": "SAT 2/14, 6:00 PM @Norway Savings Bank Arena"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sport": "Indoor Track",
+      "gender": "Boys",
+      "tournament_id": 104,
+      "tournament_active": false,
+      "class_name": "",
+      "brackets": []
+    },
+    {
+      "sport": "Indoor Track",
+      "gender": "Girls",
+      "tournament_id": 300,
+      "tournament_active": false,
+      "class_name": "",
+      "brackets": []
+    },
+    {
+      "sport": "Swimming",
+      "gender": "Boys",
+      "tournament_id": 105,
+      "tournament_active": false,
+      "class_name": "",
+      "brackets": []
+    },
+    {
+      "sport": "Swimming",
+      "gender": "Girls",
+      "tournament_id": 7,
+      "tournament_active": false,
+      "class_name": "",
+      "brackets": []
+    },
+    {
+      "sport": "Wrestling",
+      "gender": "Coed",
+      "tournament_id": 106,
+      "tournament_active": false,
+      "class_name": "",
+      "brackets": []
+    },
+    {
+      "sport": "Nordic Ski",
+      "gender": "Coed",
+      "tournament_id": 402,
+      "tournament_active": false,
+      "class_name": "",
+      "brackets": []
+    },
+    {
+      "sport": "Alpine Ski",
+      "gender": "Boys",
+      "tournament_id": 403,
+      "tournament_active": false,
+      "class_name": "",
+      "brackets": []
+    },
+    {
+      "sport": "Alpine Ski",
+      "gender": "Girls",
+      "tournament_id": 404,
+      "tournament_active": false,
+      "class_name": "",
+      "brackets": []
+    }
+  ]
+}
