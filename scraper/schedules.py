@@ -191,29 +191,56 @@ def parse_dashboard(html: str) -> dict:
 def fetch_schedules(
     session,
     base_url: str,
-    sport_ids: list[int] | None = None,
+    sport_configs: list[dict] | None = None,
+    team_level_id: int = 5,
 ) -> list[dict]:
-    """Fetch MasterSchedule pages from MPA for given TeamLevelIDs.
+    """Fetch MasterSchedule pages from MPA for each sport.
+
+    When *sport_configs* is provided (a list of dicts with ``schedule_id``,
+    ``sport``, and ``gender`` keys), each sport's schedule page is fetched
+    individually using ``SportGenderListID``.  The sport name and gender
+    are added to every game dict returned.
+
+    When *sport_configs* is ``None``, the old behaviour is preserved:
+    a single page for the given *team_level_id* is fetched.
 
     Args:
         session: A ``requests.Session`` (or compatible) with headers set.
         base_url: The MPA base URL, e.g. ``https://www.mpa.cc``.
-        sport_ids: List of TeamLevelID values to fetch.  Defaults to ``[5]``
-            (Varsity).
+        sport_configs: List of sport config dicts from ``config.SPORTS``.
+            Each must contain ``schedule_id``, ``sport``, and ``gender``.
+        team_level_id: TeamLevelID value (default ``5`` for Varsity).
 
     Returns:
         Combined list of game dicts from all fetched pages.
     """
-    if sport_ids is None:
-        sport_ids = [5]
-
     all_games: list[dict] = []
 
-    for level_id in sport_ids:
-        url = f"{base_url}/MasterSchedule.aspx?TeamLevelID={level_id}"
+    if sport_configs is None:
+        # Legacy fallback: fetch a single page without SportGenderListID
+        url = f"{base_url}/MasterSchedule.aspx?TeamLevelID={team_level_id}"
+        resp = session.get(url, timeout=30)
+        resp.raise_for_status()
+        all_games.extend(parse_master_schedule(resp.text))
+        return all_games
+
+    for cfg in sport_configs:
+        schedule_id = cfg["schedule_id"]
+        sport_name = cfg["sport"]
+        gender = cfg["gender"]
+        url = (
+            f"{base_url}/MasterSchedule.aspx"
+            f"?TeamLevelID={team_level_id}"
+            f"&SportGenderListID={schedule_id}"
+        )
+        print(f"  Fetching schedule: {sport_name} ({gender}) ...")
         resp = session.get(url, timeout=30)
         resp.raise_for_status()
         games = parse_master_schedule(resp.text)
+        # Override sport with our config name and add gender
+        for game in games:
+            game["sport"] = sport_name
+            game["gender"] = gender
         all_games.extend(games)
 
     return all_games

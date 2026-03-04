@@ -133,16 +133,42 @@ def parse_rankings(html: str) -> list[dict]:
     return [{"name": division_name, "teams": teams}]
 
 
+def _extract_division_links(html: str) -> list[dict]:
+    """Extract division links from the DivisionPanel on a rankings page.
+
+    Each link has the form:
+        TournamentCentralRankings.aspx?TournamentID=100&DivisionID=12&LeagueID=-1
+
+    Returns a list of dicts with ``division_id`` and ``label`` keys.
+    """
+    soup = BeautifulSoup(html, "lxml")
+    panel = soup.find("div", id="DivisionPanel")
+    if not panel:
+        panel = soup.find(id=re.compile(r"DivisionPanel", re.I))
+    if not panel:
+        return []
+
+    links = []
+    for a in panel.find_all("a", href=True):
+        href = a["href"]
+        m = re.search(r"DivisionID=(\d+)", href)
+        if m:
+            links.append({
+                "division_id": int(m.group(1)),
+                "label": a.get_text(strip=True),
+            })
+    return links
+
+
 def fetch_standings(
     session,
     base_url: str,
     tournament_ids: list[int],
 ) -> dict[int, list[dict]]:
-    """Fetch standings for each sport tournament ID.
+    """Fetch standings for each sport tournament ID, including all divisions.
 
-    For each tournament ID, fetches the default rankings page (which
-    shows the first division).  To get all divisions, the caller would
-    need to follow the division links in ``#DivisionPanel``.
+    For each tournament ID, fetches the default rankings page, discovers
+    all division links from ``#DivisionPanel``, and fetches each division.
 
     Args:
         session: A ``requests.Session`` (or compatible) with headers set.
@@ -156,9 +182,42 @@ def fetch_standings(
 
     for tid in tournament_ids:
         url = f"{base_url}/TournamentCentralRankings.aspx?TournamentID={tid}"
+        print(f"  Fetching standings: TournamentID={tid} ...")
         resp = session.get(url, timeout=30)
         resp.raise_for_status()
+
+        # Parse the default (first) division
         divisions = parse_rankings(resp.text)
+
+        # Discover all division links from the page
+        div_links = _extract_division_links(resp.text)
+
+        # Track which divisions we already have
+        seen_ids = set()
+
+        # Fetch each additional division
+        for dlink in div_links:
+            did = dlink["division_id"]
+            if did in seen_ids:
+                continue
+            seen_ids.add(did)
+            div_url = (
+                f"{base_url}/TournamentCentralRankings.aspx"
+                f"?TournamentID={tid}&DivisionID={did}&LeagueID=-1"
+            )
+            try:
+                div_resp = session.get(div_url, timeout=30)
+                div_resp.raise_for_status()
+                extra = parse_rankings(div_resp.text)
+                # Avoid duplicates by division name
+                existing_names = {d["name"] for d in divisions}
+                for d in extra:
+                    if d["name"] not in existing_names:
+                        divisions.append(d)
+                        existing_names.add(d["name"])
+            except Exception as e:
+                print(f"    Warning: failed to fetch DivisionID={did}: {e}")
+
         results[tid] = divisions
 
     return results

@@ -196,17 +196,113 @@ function SportFilter({ sports, value, onChange, label }) {
 }
 
 // ---------------------------------------------------------------------------
+// Team Detail Modal (shown when clicking a game)
+// ---------------------------------------------------------------------------
+
+function TeamDetailModal({ game, standings, onClose }) {
+  if (!game) return null;
+
+  // Find standings entries for home and away teams
+  function findTeamStandings(teamName) {
+    if (!standings || !standings.sports || !teamName) return [];
+    const matches = [];
+    standings.sports.forEach(sportEntry => {
+      sportEntry.divisions.forEach(div => {
+        div.teams.forEach(t => {
+          if (t.team.toLowerCase().includes(teamName.toLowerCase()) ||
+              teamName.toLowerCase().includes(t.team.toLowerCase())) {
+            matches.push({
+              ...t,
+              sport: sportLabel(sportEntry),
+              division: div.name,
+            });
+          }
+        });
+      });
+    });
+    return matches;
+  }
+
+  const homeStandings = findTeamStandings(game.home);
+  const awayStandings = findTeamStandings(game.away);
+
+  function TeamSection({ label, teamName, entries }) {
+    return (
+      <div className="mb-4">
+        <h4 className="font-heading text-sm uppercase tracking-wide text-bdn-green mb-2">
+          {label}: {teamName}
+        </h4>
+        {entries.length === 0 ? (
+          <p className="text-sm text-gray-400 italic">No standings data found</p>
+        ) : (
+          <div className="space-y-2">
+            {entries.map((e, i) => (
+              <div key={i} className="bg-gray-50 rounded-lg p-3 text-sm">
+                <div className="flex justify-between items-center">
+                  <span className="font-semibold">{e.sport} — {e.division}</span>
+                  <span className={`text-xs px-2 py-0.5 rounded ${e.qualifying ? 'bg-bdn-green text-white' : 'bg-gray-200 text-gray-500'}`}>
+                    {e.qualifying ? 'Qualifying' : 'Not qualifying'}
+                  </span>
+                </div>
+                <div className="flex gap-6 mt-2 text-gray-600">
+                  <span>Rank: <strong>#{e.rank}</strong></span>
+                  <span>Record: <strong>{e.record}</strong></span>
+                  <span>Index: <strong>{e.index.toFixed(3)}</strong></span>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+    );
+  }
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4" onClick={onClose}>
+      <div className="absolute inset-0 bg-black bg-opacity-50" />
+      <div
+        className="relative bg-white rounded-xl shadow-2xl max-w-lg w-full max-h-[80vh] overflow-y-auto p-6"
+        onClick={e => e.stopPropagation()}
+      >
+        <button
+          onClick={onClose}
+          className="absolute top-3 right-3 text-gray-400 hover:text-gray-700 text-xl leading-none"
+        >
+          &times;
+        </button>
+        <h3 className="font-heading text-lg uppercase tracking-wide text-bdn-green mb-1">
+          Game Details
+        </h3>
+        <p className="text-xs text-gray-500 mb-4">
+          {formatDate(game.date)} &bull; {game.time} &bull; {game.site}
+        </p>
+        <p className="text-xs text-gray-400 uppercase tracking-wide mb-4">{game.sport}</p>
+
+        <TeamSection label="Home" teamName={game.home} entries={homeStandings} />
+        <TeamSection label="Away" teamName={game.away} entries={awayStandings} />
+      </div>
+    </div>
+  );
+}
+
+// ---------------------------------------------------------------------------
 // Scores & Schedule Tab
 // ---------------------------------------------------------------------------
 
-function ScoresTab({ games, sportFilter }) {
+function ScoresTab({ games, sportFilter, standings, onGameClick }) {
   const today = todayStr();
 
   const filtered = useMemo(() => {
     if (!games) return [];
     let g = [...games];
     if (sportFilter) {
-      g = g.filter(x => x.sport === sportFilter);
+      g = g.filter(x => {
+        // Build label matching filter format: "Sport (Gender)" or just "Sport" for Coed
+        const label = (x.gender && x.gender !== 'Coed')
+          ? `${x.sport} (${x.gender})`
+          : x.sport;
+        return label === sportFilter;
+      });
     }
     return g;
   }, [games, sportFilter]);
@@ -228,7 +324,9 @@ function ScoresTab({ games, sportFilter }) {
     const final = isFinal(game);
     const postponed = isPostponed(game);
     return (
-      <div className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+      <div
+        onClick={() => onGameClick && onGameClick(game)}
+        className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
         <div className="flex justify-between items-start mb-2">
           <span className="text-xs text-gray-400 font-semibold">{formatDate(game.date)}</span>
           <div className="flex gap-1.5">
@@ -391,7 +489,7 @@ function StandingsTab({ standings, sportFilter }) {
                       <ColHeader col="rank" label="Rank" />
                       <ColHeader col="team" label="Team" />
                       <ColHeader col="record" label="Record" />
-                      <ColHeader col="index" label="Index" />
+                      <ColHeader col="index" label="Tournament Index" />
                     </tr>
                   </thead>
                   <tbody>
@@ -423,7 +521,7 @@ function StandingsTab({ standings, sportFilter }) {
 // Team Comparison Tab
 // ---------------------------------------------------------------------------
 
-function TeamCompare({ standings }) {
+function TeamCompare({ standings, sportFilter }) {
   const [teamA, setTeamA] = useState('');
   const [teamB, setTeamB] = useState('');
 
@@ -453,6 +551,18 @@ function TeamCompare({ standings }) {
     return Array.from(map.values()).sort((a, b) => a.team.localeCompare(b.team));
   }, [standings]);
 
+  // Filter teams by sport when sport filter is active
+  const filteredTeams = useMemo(() => {
+    if (!sportFilter) return allTeams;
+    return allTeams.filter(t => t.sport === sportFilter);
+  }, [allTeams, sportFilter]);
+
+  // Clear selections if they're no longer in filtered list
+  useEffect(() => {
+    if (teamA && !filteredTeams.find(t => t.key === teamA)) setTeamA('');
+    if (teamB && !filteredTeams.find(t => t.key === teamB)) setTeamB('');
+  }, [filteredTeams]);
+
   const entryA = allTeams.find(t => t.key === teamA);
   const entryB = allTeams.find(t => t.key === teamB);
 
@@ -477,7 +587,7 @@ function TeamCompare({ standings }) {
         <p className="text-2xl font-heading font-bold mt-3">
           #{entry.rank}
         </p>
-        <p className="text-xs text-gray-500 mt-1 uppercase">Rank</p>
+        <p className="text-xs text-gray-500 mt-1 uppercase">Division Rank</p>
         <p className="text-sm mt-2">
           {entry.qualifying
             ? <span className="text-bdn-green font-semibold">Qualifying</span>
@@ -499,7 +609,7 @@ function TeamCompare({ standings }) {
             className="w-full border border-gray-300 rounded px-3 py-2 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-bdn-green"
           >
             <option value="">-- Select team --</option>
-            {allTeams.map(t => (
+            {filteredTeams.map(t => (
               <option key={t.key} value={t.key}>
                 {t.team} ({t.sport}, {t.division})
               </option>
@@ -517,7 +627,7 @@ function TeamCompare({ standings }) {
             className="w-full border border-gray-300 rounded px-3 py-2 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-bdn-gold"
           >
             <option value="">-- Select team --</option>
-            {allTeams.map(t => (
+            {filteredTeams.map(t => (
               <option key={t.key} value={t.key}>
                 {t.team} ({t.sport}, {t.division})
               </option>
@@ -536,6 +646,7 @@ function TeamCompare({ standings }) {
       {(entryA || entryB) && (
         <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
           <h4 className="font-heading text-sm uppercase tracking-wide text-gray-500 mb-4">Tournament Index Comparison</h4>
+          <p className="text-xs text-gray-400 -mt-3 mb-4">MPA ranking score based on strength of schedule and win percentage</p>
           <div className="space-y-4">
             {entryA && (
               <div>
@@ -719,6 +830,7 @@ function App() {
   const [featured, setFeatured] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [selectedGame, setSelectedGame] = useState(null);
 
   // Fetch all data on mount
   useEffect(() => {
@@ -744,11 +856,18 @@ function App() {
     loadData();
   }, []);
 
-  // Build sport options from schedules + standings
+  // Build sport options from schedules + standings using consistent labels
   const sportOptions = useMemo(() => {
     const set = new Set();
     if (schedules && schedules.games) {
-      schedules.games.forEach(g => set.add(g.sport));
+      schedules.games.forEach(g => {
+        // Build label matching standings format: "Sport (Gender)" or just "Sport" for Coed
+        if (g.gender && g.gender !== 'Coed') {
+          set.add(`${g.sport} (${g.gender})`);
+        } else {
+          set.add(g.sport);
+        }
+      });
     }
     if (standings && standings.sports) {
       standings.sports.forEach(s => set.add(sportLabel(s)));
@@ -801,7 +920,7 @@ function App() {
 
       {/* Tab Content */}
       {activeTab === 'scores' && (
-        <ScoresTab games={schedules?.games || []} sportFilter={sportFilter} />
+        <ScoresTab games={schedules?.games || []} sportFilter={sportFilter} standings={standings} onGameClick={setSelectedGame} />
       )}
       {activeTab === 'standings' && (
         <StandingsTab standings={standings} sportFilter={sportFilter} />
@@ -810,10 +929,14 @@ function App() {
         <BracketsTab bracketsData={brackets} sportFilter={sportFilter} />
       )}
       {activeTab === 'compare' && (
-        <TeamCompare standings={standings} />
+        <TeamCompare standings={standings} sportFilter={sportFilter} />
       )}
 
       <Footer lastUpdated={lastUpdated} />
+
+      {selectedGame && (
+        <TeamDetailModal game={selectedGame} standings={standings} onClose={() => setSelectedGame(null)} />
+      )}
     </div>
   );
 }

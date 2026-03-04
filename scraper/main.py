@@ -30,7 +30,7 @@ def run():
     # 1. Schedules
     print("1. Fetching schedules...")
     try:
-        schedule_data = fetch_schedules(session, MPA_BASE)
+        schedule_data = fetch_schedules(session, MPA_BASE, sport_configs=sport_list)
         _write_json("schedules.json", {
             "last_updated": now.isoformat(),
             "season": season,
