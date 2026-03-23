@@ -6,11 +6,12 @@ from datetime import datetime, timezone
 
 import requests
 
-from scraper.config import MPA_BASE, SPORTS, current_season
+from scraper.config import MPA_BASE, MILESPLIT_MEETS, SPORTS, current_season
 from scraper.schedules import fetch_schedules
 from scraper.standings import fetch_standings
 from scraper.brackets import fetch_brackets
 from scraper.featured import fetch_featured
+from scraper.athletes import fetch_athletes
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
 
@@ -93,6 +94,21 @@ def run():
         })
     except Exception as e:
         print("  ERROR fetching featured: %s" % e)
+
+    # 5. Athlete results (MileSplit meet pages)
+    if MILESPLIT_MEETS:
+        print("5. Fetching athlete results...")
+        try:
+            athletes_data = fetch_athletes(session, MILESPLIT_MEETS)
+            _write_json("athletes.json", {
+                "last_updated": now.isoformat(),
+                "season": season,
+                "athletes": athletes_data,
+            })
+        except Exception as e:
+            print("  ERROR fetching athletes: %s" % e)
+    else:
+        print("5. No MileSplit meet URLs configured, skipping athletes.")
 
     print("Done.")
 

@@ -149,6 +149,7 @@ function TabBar({ activeTab, setActiveTab, showBrackets }) {
   if (showBrackets) {
     tabs.push({ id: 'brackets', label: 'Brackets' });
   }
+  tabs.push({ id: 'athletes', label: 'Athletes' });
   tabs.push({ id: 'compare', label: 'Team Compare' });
 
   return (
@@ -808,10 +809,200 @@ function Footer({ lastUpdated }) {
 
   return (
     <footer className="mt-12 mb-8 text-center text-xs text-gray-400 space-y-1 px-4">
-      <p>Data via Maine Principals' Association.</p>
+      <p>Data via Maine Principals' Association & Maine MileSplit.</p>
       <p>Last updated: {formatted}</p>
     </footer>
   );
+}
+
+// ---------------------------------------------------------------------------
+// Athletes Tab (search-based individual stats)
+// ---------------------------------------------------------------------------
+
+function AthletesTab({ athletes }) {
+  const [query, setQuery] = useState('');
+  const [selectedAthlete, setSelectedAthlete] = useState(null);
+
+  const filtered = useMemo(() => {
+    if (!athletes || !athletes.length) return [];
+    const q = query.toLowerCase().trim();
+    if (!q) return [];
+    return athletes.filter(a =>
+      a.name.toLowerCase().includes(q) ||
+      a.school.toLowerCase().includes(q)
+    ).slice(0, 50);
+  }, [athletes, query]);
+
+  // Get best mark per event for an athlete
+  function bestMarks(athlete) {
+    const bests = {};
+    for (const ev of athlete.events) {
+      if (!bests[ev.event] || _isBetterMark(ev.mark, bests[ev.event].mark, ev.event)) {
+        bests[ev.event] = ev;
+      }
+    }
+    return Object.values(bests);
+  }
+
+  if (selectedAthlete) {
+    return (
+      <div className="max-w-6xl mx-auto px-4 mt-6">
+        <button
+          onClick={() => setSelectedAthlete(null)}
+          className="text-sm text-bdn-green hover:underline mb-4 inline-flex items-center gap-1"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+          </svg>
+          Back to search
+        </button>
+        <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-6">
+          <div className="flex items-start justify-between flex-wrap gap-2">
+            <div>
+              <h2 className="font-heading text-2xl font-bold text-bdn-green">{selectedAthlete.name}</h2>
+              <p className="text-gray-600 mt-1">
+                {selectedAthlete.school}
+                {selectedAthlete.grade && <span className="ml-2 text-gray-400">({selectedAthlete.grade})</span>}
+              </p>
+            </div>
+            <span className="inline-block bg-bdn-gold text-bdn-green text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+              {selectedAthlete.sport || 'Track'}
+            </span>
+          </div>
+
+          {/* Season Bests */}
+          <h3 className="font-heading text-sm uppercase tracking-wider text-gray-500 mt-6 mb-3">Season Bests</h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            {bestMarks(selectedAthlete).map((ev, i) => (
+              <div key={i} className="bg-gray-50 rounded-lg p-3 text-center">
+                <div className="text-xs text-gray-400 uppercase">{ev.event}</div>
+                <div className="text-lg font-bold text-bdn-green mt-1">{ev.mark}</div>
+                <div className="text-xs text-gray-400 mt-1">{ev.meet}</div>
+              </div>
+            ))}
+          </div>
+
+          {/* Full Results */}
+          <h3 className="font-heading text-sm uppercase tracking-wider text-gray-500 mt-6 mb-3">All Results</h3>
+          <div className="overflow-x-auto">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="border-b border-gray-200 text-left text-xs text-gray-400 uppercase">
+                  <th className="py-2 pr-4">Date</th>
+                  <th className="py-2 pr-4">Meet</th>
+                  <th className="py-2 pr-4">Event</th>
+                  <th className="py-2 pr-4">Mark</th>
+                  <th className="py-2">Place</th>
+                </tr>
+              </thead>
+              <tbody>
+                {selectedAthlete.events
+                  .slice()
+                  .sort((a, b) => (b.date || '').localeCompare(a.date || ''))
+                  .map((ev, i) => (
+                    <tr key={i} className="border-b border-gray-100">
+                      <td className="py-2 pr-4 text-gray-500">{ev.date ? formatDate(ev.date) : ''}</td>
+                      <td className="py-2 pr-4">{ev.meet}</td>
+                      <td className="py-2 pr-4 font-medium">{ev.event}</td>
+                      <td className="py-2 pr-4 font-bold text-bdn-green">{ev.mark}</td>
+                      <td className="py-2">{ev.place ? _ordinal(ev.place) : ''}</td>
+                    </tr>
+                  ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="max-w-6xl mx-auto px-4 mt-6">
+      <div className="relative">
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
+        <input
+          type="text"
+          value={query}
+          onChange={e => setQuery(e.target.value)}
+          placeholder="Search athletes or schools..."
+          className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-bdn-green focus:border-transparent"
+        />
+      </div>
+
+      {query && filtered.length === 0 && (
+        <p className="text-gray-500 text-sm mt-6 text-center italic">No athletes found for "{query}"</p>
+      )}
+
+      {!query && (
+        <div className="text-center mt-12 text-gray-400">
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 mx-auto mb-3 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+          </svg>
+          <p className="text-sm">Search for an athlete by name or school</p>
+          <p className="text-xs mt-1">Track & Cross Country results</p>
+        </div>
+      )}
+
+      <div className="mt-4 space-y-2">
+        {filtered.map((a, i) => (
+          <button
+            key={i}
+            onClick={() => setSelectedAthlete(a)}
+            className="w-full text-left bg-white border border-gray-200 rounded-lg p-4 hover:border-bdn-green hover:shadow-sm transition-all group"
+          >
+            <div className="flex items-center justify-between">
+              <div>
+                <span className="font-semibold text-sm group-hover:text-bdn-green transition-colors">{a.name}</span>
+                <span className="text-gray-400 text-sm ml-2">{a.school}</span>
+                {a.grade && <span className="text-gray-300 text-xs ml-2">({a.grade})</span>}
+              </div>
+              <span className="text-xs text-gray-400 uppercase">{a.sport || 'Track'}</span>
+            </div>
+            <div className="flex gap-3 mt-2 flex-wrap">
+              {bestMarks(a).slice(0, 3).map((ev, j) => (
+                <span key={j} className="text-xs bg-gray-100 rounded px-2 py-0.5">
+                  <span className="text-gray-500">{ev.event}:</span>{' '}
+                  <span className="font-medium">{ev.mark}</span>
+                </span>
+              ))}
+              {a.events.length > 3 && (
+                <span className="text-xs text-gray-400">+{a.events.length - 3} more</span>
+              )}
+            </div>
+          </button>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+/** Compare marks — lower is better for times, higher for distances. */
+function _isBetterMark(a, b, event) {
+  // Distance events (contains feet/inches pattern)
+  if (/[-']/.test(a) && /\d/.test(a)) {
+    return _markToNumber(a) > _markToNumber(b);
+  }
+  // Time events — lower is better
+  return _markToNumber(a) < _markToNumber(b);
+}
+
+function _markToNumber(mark) {
+  // Time format: "M:SS.xx" or "SS.xx"
+  const timeParts = mark.match(/^(\d+):(\d+(?:\.\d+)?)$/);
+  if (timeParts) return parseFloat(timeParts[1]) * 60 + parseFloat(timeParts[2]);
+  // Distance format: "XX-YY.ZZ" (feet-inches)
+  const distParts = mark.match(/^(\d+)-(\d+(?:\.\d+)?)$/);
+  if (distParts) return parseFloat(distParts[1]) * 12 + parseFloat(distParts[2]);
+  // Plain number
+  return parseFloat(mark) || 0;
+}
+
+function _ordinal(n) {
+  const s = ['th', 'st', 'nd', 'rd'];
+  const v = n % 100;
+  return n + (s[(v - 20) % 10] || s[v] || s[0]);
 }
 
 // ---------------------------------------------------------------------------
@@ -828,6 +1019,7 @@ function App() {
   const [standings, setStandings] = useState(null);
   const [brackets, setBrackets] = useState(null);
   const [featured, setFeatured] = useState(null);
+  const [athletes, setAthletes] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [selectedGame, setSelectedGame] = useState(null);
@@ -838,16 +1030,18 @@ function App() {
       setLoading(true);
       setError(null);
       try {
-        const [schedRes, standRes, brackRes, featRes] = await Promise.allSettled([
+        const [schedRes, standRes, brackRes, featRes, athRes] = await Promise.allSettled([
           fetch('data/schedules.json').then(r => r.ok ? r.json() : null),
           fetch('data/standings.json').then(r => r.ok ? r.json() : null),
           fetch('data/brackets.json').then(r => r.ok ? r.json() : null),
           fetch('data/featured.json').then(r => r.ok ? r.json() : null),
+          fetch('data/athletes.json').then(r => r.ok ? r.json() : null),
         ]);
         setSchedules(schedRes.status === 'fulfilled' ? schedRes.value : null);
         setStandings(standRes.status === 'fulfilled' ? standRes.value : null);
         setBrackets(brackRes.status === 'fulfilled' ? brackRes.value : null);
         setFeatured(featRes.status === 'fulfilled' ? featRes.value : null);
+        setAthletes(athRes.status === 'fulfilled' ? athRes.value : null);
       } catch (err) {
         setError('Failed to load data. Please try again.');
       }
@@ -927,6 +1121,9 @@ function App() {
       )}
       {activeTab === 'brackets' && (
         <BracketsTab bracketsData={brackets} sportFilter={sportFilter} />
+      )}
+      {activeTab === 'athletes' && (
+        <AthletesTab athletes={athletes?.athletes || []} />
       )}
       {activeTab === 'compare' && (
         <TeamCompare standings={standings} sportFilter={sportFilter} />

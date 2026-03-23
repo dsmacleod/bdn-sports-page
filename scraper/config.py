@@ -1,6 +1,16 @@
 """MPA.cc sport configuration and ID mappings."""
 
 MPA_BASE = "https://www.mpa.cc"
+MILESPLIT_BASE = "https://me.milesplit.com"
+
+# MileSplit meet URLs to scrape for athlete results.
+# These are populated manually or discovered from the MileSplit results page.
+# Format: full URL to meet results page.
+MILESPLIT_MEETS: list[str] = [
+    # Add meet URLs here as they become available, e.g.:
+    # "https://me.milesplit.com/meets/738421-8am-biddeford-freeport-cape-greely-2026/results",
+    # "https://me.milesplit.com/meets/727592-class-a-state-meet-2026/results",
+]
 
 # TournamentIDs for sport info pages
 SPORTS = {

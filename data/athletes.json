@@ -1,0 +1,76 @@
+{
+  "last_updated": "2026-03-23T12:00:00+00:00",
+  "season": "spring",
+  "athletes": [
+    {
+      "name": "Emily Carter",
+      "school": "Bangor",
+      "gender": "Girls",
+      "grade": "Sr",
+      "sport": "Track",
+      "events": [
+        {"event": "800m", "mark": "2:15.30", "meet": "PVC Championship", "date": "2026-03-15", "place": 1},
+        {"event": "1600m", "mark": "5:12.44", "meet": "PVC Championship", "date": "2026-03-15", "place": 2},
+        {"event": "800m", "mark": "2:18.01", "meet": "Bangor Dual Meet", "date": "2026-03-08", "place": 1}
+      ]
+    },
+    {
+      "name": "Jake Morrison",
+      "school": "Camden Hills Regional",
+      "gender": "Boys",
+      "grade": "Jr",
+      "sport": "Track",
+      "events": [
+        {"event": "3200m", "mark": "9:32.10", "meet": "KVAC Championship", "date": "2026-03-15", "place": 1},
+        {"event": "1600m", "mark": "4:22.88", "meet": "KVAC Championship", "date": "2026-03-15", "place": 1},
+        {"event": "3200m", "mark": "9:45.22", "meet": "Camden Hills Invitational", "date": "2026-03-01", "place": 2}
+      ]
+    },
+    {
+      "name": "Sophia Nguyen",
+      "school": "Scarborough",
+      "gender": "Girls",
+      "grade": "So",
+      "sport": "Track",
+      "events": [
+        {"event": "100m Hurdles", "mark": "15.88", "meet": "SMAA Championship", "date": "2026-03-15", "place": 1},
+        {"event": "300m Hurdles", "mark": "47.12", "meet": "SMAA Championship", "date": "2026-03-15", "place": 2},
+        {"event": "High Jump", "mark": "5-02.00", "meet": "SMAA Championship", "date": "2026-03-15", "place": 3}
+      ]
+    },
+    {
+      "name": "Marcus Williams",
+      "school": "Bangor",
+      "gender": "Boys",
+      "grade": "Sr",
+      "sport": "Track",
+      "events": [
+        {"event": "100m", "mark": "11.22", "meet": "PVC Championship", "date": "2026-03-15", "place": 2},
+        {"event": "200m", "mark": "22.88", "meet": "PVC Championship", "date": "2026-03-15", "place": 1},
+        {"event": "Long Jump", "mark": "20-05.50", "meet": "PVC Championship", "date": "2026-03-15", "place": 1}
+      ]
+    },
+    {
+      "name": "Ava Thompson",
+      "school": "Falmouth",
+      "gender": "Girls",
+      "grade": "Fr",
+      "sport": "Cross Country",
+      "events": [
+        {"event": "5K", "mark": "19:45.00", "meet": "WMC Championship", "date": "2026-03-10", "place": 4},
+        {"event": "5K", "mark": "20:02.33", "meet": "Falmouth Invitational", "date": "2026-03-01", "place": 2}
+      ]
+    },
+    {
+      "name": "Liam O'Brien",
+      "school": "Hampden Academy",
+      "gender": "Boys",
+      "grade": "Jr",
+      "sport": "Track",
+      "events": [
+        {"event": "Shot Put", "mark": "48-06.25", "meet": "PVC Championship", "date": "2026-03-15", "place": 1},
+        {"event": "Discus", "mark": "142-08.00", "meet": "PVC Championship", "date": "2026-03-15", "place": 1}
+      ]
+    }
+  ]
+}
