@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-11T03:19:24.112477+00:00",
+  "last_updated": "2026-05-11T12:51:05.553370+00:00",
   "season": "spring",
   "sports": [
     {
@@ -103,28 +103,28 @@
               "rank": 1,
               "team": "Ellsworth",
               "record": "5-0-0",
-              "index": 26.406,
+              "index": 27.891,
               "qualifying": true
             },
             {
               "rank": 2,
-              "team": "Belfast Area",
-              "record": "4-2-0",
-              "index": 17.734,
+              "team": "Old Town",
+              "record": "5-2-0",
+              "index": 19.219,
               "qualifying": true
             },
             {
               "rank": 3,
-              "team": "Old Town",
-              "record": "5-2-0",
-              "index": 17.734,
+              "team": "Mount Desert Island",
+              "record": "4-3-0",
+              "index": 19.141,
               "qualifying": true
             },
             {
               "rank": 4,
-              "team": "Mount Desert Island",
-              "record": "4-3-0",
-              "index": 17.656,
+              "team": "Belfast Area",
+              "record": "4-2-0",
+              "index": 17.734,
               "qualifying": true
             },
             {
@@ -150,37 +150,37 @@
             },
             {
               "rank": 8,
+              "team": "John Bapst Memorial",
+              "record": "4-4-0",
+              "index": 10.0,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
               "team": "Oceanside",
               "record": "2-5-0",
               "index": 9.453,
               "qualifying": true
             },
             {
-              "rank": 9,
+              "rank": 10,
               "team": "Lawrence",
               "record": "5-2-0",
               "index": 9.063,
               "qualifying": true
             },
             {
-              "rank": 10,
-              "team": "John Bapst Memorial",
-              "record": "3-4-0",
-              "index": 8.594,
-              "qualifying": true
-            },
-            {
               "rank": 11,
-              "team": "Foxcroft Academy",
+              "team": "Presque Isle",
               "record": "2-5-0",
-              "index": 7.344,
+              "index": 8.672,
               "qualifying": false
             },
             {
               "rank": 12,
-              "team": "Presque Isle",
+              "team": "Foxcroft Academy",
               "record": "2-5-0",
-              "index": 7.188,
+              "index": 7.344,
               "qualifying": false
             },
             {
@@ -193,7 +193,7 @@
             {
               "rank": 14,
               "team": "Caribou",
-              "record": "1-2-0",
+              "record": "1-3-0",
               "index": 0.625,
               "qualifying": false
             },
@@ -489,14 +489,14 @@
               "rank": 6,
               "team": "Scarborough",
               "record": "5-2-0",
-              "index": 10.625,
+              "index": 12.188,
               "qualifying": true
             },
             {
               "rank": 7,
               "team": "Bonny Eagle",
-              "record": "3-1-0",
-              "index": 10.0,
+              "record": "4-1-0",
+              "index": 10.625,
               "qualifying": true
             },
             {
@@ -558,7 +558,7 @@
             {
               "rank": 16,
               "team": "Marshwood",
-              "record": "0-5-0",
+              "record": "0-6-0",
               "index": 0.0,
               "qualifying": false
             },
@@ -1339,23 +1339,23 @@
           "teams": [
             {
               "rank": 1,
+              "team": "Cheverus",
+              "record": "5-0-0",
+              "index": 26.563,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
               "team": "Scarborough",
               "record": "7-1-0",
               "index": 25.625,
               "qualifying": true
             },
             {
-              "rank": 2,
-              "team": "Cheverus",
-              "record": "5-0-0",
-              "index": 25.0,
-              "qualifying": true
-            },
-            {
               "rank": 3,
               "team": "Gorham",
               "record": "5-1-0",
-              "index": 24.063,
+              "index": 25.625,
               "qualifying": true
             },
             {
@@ -1374,36 +1374,36 @@
             },
             {
               "rank": 6,
-              "team": "South Portland",
-              "record": "4-2-0",
-              "index": 10.0,
-              "qualifying": true
-            },
-            {
-              "rank": 7,
               "team": "Biddeford",
               "record": "3-3-0",
               "index": 10.0,
               "qualifying": true
             },
             {
+              "rank": 7,
+              "team": "Westbrook",
+              "record": "3-2-0",
+              "index": 10.0,
+              "qualifying": true
+            },
+            {
               "rank": 8,
+              "team": "South Portland",
+              "record": "4-2-0",
+              "index": 10.0,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
               "team": "Massabesic",
               "record": "4-3-0",
               "index": 8.438,
               "qualifying": true
             },
             {
-              "rank": 9,
-              "team": "MBAT",
-              "record": "2-4-0",
-              "index": 6.875,
-              "qualifying": true
-            },
-            {
               "rank": 10,
-              "team": "Westbrook",
-              "record": "2-2-0",
+              "team": "MBAT",
+              "record": "2-5-0",
               "index": 6.875,
               "qualifying": true
             },
@@ -1671,7 +1671,7 @@
               "rank": 2,
               "team": "Vinalhaven",
               "record": "5-1-0",
-              "index": 18.239,
+              "index": 20.144,
               "qualifying": true
             },
             {
@@ -1685,7 +1685,7 @@
               "rank": 4,
               "team": "Buckfield HS",
               "record": "4-2-0",
-              "index": 12.667,
+              "index": 13.56,
               "qualifying": true
             },
             {
@@ -1704,36 +1704,36 @@
             },
             {
               "rank": 7,
+              "team": "Greenville",
+              "record": "1-3-0",
+              "index": 0.714,
+              "qualifying": true
+            },
+            {
+              "rank": 8,
               "team": "Searsport HS",
               "record": "1-5-0",
               "index": 0.714,
               "qualifying": true
             },
             {
-              "rank": 8,
+              "rank": 9,
               "team": "Temple Academy",
               "record": "1-2-0",
               "index": 0.625,
-              "qualifying": true
+              "qualifying": false
             },
             {
-              "rank": 9,
+              "rank": 10,
               "team": "Valley HS",
               "record": "0-6-0",
               "index": 0.0,
               "qualifying": false
             },
             {
-              "rank": 10,
-              "team": "Greenville",
-              "record": "0-3-0",
-              "index": 0.0,
-              "qualifying": false
-            },
-            {
               "rank": 11,
               "team": "Wiscasset/ Boothbay",
-              "record": "0-3-0",
+              "record": "0-4-0",
               "index": 0.0,
               "qualifying": false
             },
@@ -2579,28 +2579,28 @@
               "rank": 1,
               "team": "Ellsworth",
               "record": "5-0-0",
-              "index": 26.406,
+              "index": 27.891,
               "qualifying": true
             },
             {
               "rank": 2,
-              "team": "Belfast Area",
-              "record": "4-2-0",
-              "index": 17.734,
+              "team": "Old Town",
+              "record": "5-2-0",
+              "index": 19.219,
               "qualifying": true
             },
             {
               "rank": 3,
-              "team": "Old Town",
-              "record": "5-2-0",
-              "index": 17.734,
+              "team": "Mount Desert Island",
+              "record": "4-3-0",
+              "index": 19.141,
               "qualifying": true
             },
             {
               "rank": 4,
-              "team": "Mount Desert Island",
-              "record": "4-3-0",
-              "index": 17.656,
+              "team": "Belfast Area",
+              "record": "4-2-0",
+              "index": 17.734,
               "qualifying": true
             },
             {
@@ -2626,37 +2626,37 @@
             },
             {
               "rank": 8,
+              "team": "John Bapst Memorial",
+              "record": "4-4-0",
+              "index": 10.0,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
               "team": "Oceanside",
               "record": "2-5-0",
               "index": 9.453,
               "qualifying": true
             },
             {
-              "rank": 9,
+              "rank": 10,
               "team": "Lawrence",
               "record": "5-2-0",
               "index": 9.063,
               "qualifying": true
             },
             {
-              "rank": 10,
-              "team": "John Bapst Memorial",
-              "record": "3-4-0",
-              "index": 8.594,
-              "qualifying": true
-            },
-            {
               "rank": 11,
-              "team": "Foxcroft Academy",
+              "team": "Presque Isle",
               "record": "2-5-0",
-              "index": 7.344,
+              "index": 8.672,
               "qualifying": false
             },
             {
               "rank": 12,
-              "team": "Presque Isle",
+              "team": "Foxcroft Academy",
               "record": "2-5-0",
-              "index": 7.188,
+              "index": 7.344,
               "qualifying": false
             },
             {
@@ -2669,7 +2669,7 @@
             {
               "rank": 14,
               "team": "Caribou",
-              "record": "1-2-0",
+              "record": "1-3-0",
               "index": 0.625,
               "qualifying": false
             },
@@ -2965,14 +2965,14 @@
               "rank": 6,
               "team": "Scarborough",
               "record": "5-2-0",
-              "index": 10.625,
+              "index": 12.188,
               "qualifying": true
             },
             {
               "rank": 7,
               "team": "Bonny Eagle",
-              "record": "3-1-0",
-              "index": 10.0,
+              "record": "4-1-0",
+              "index": 10.625,
               "qualifying": true
             },
             {
@@ -3034,7 +3034,7 @@
             {
               "rank": 16,
               "team": "Marshwood",
-              "record": "0-5-0",
+              "record": "0-6-0",
               "index": 0.0,
               "qualifying": false
             },
@@ -3445,28 +3445,28 @@
               "rank": 1,
               "team": "Ellsworth",
               "record": "5-0-0",
-              "index": 26.406,
+              "index": 27.891,
               "qualifying": true
             },
             {
               "rank": 2,
-              "team": "Belfast Area",
-              "record": "4-2-0",
-              "index": 17.734,
+              "team": "Old Town",
+              "record": "5-2-0",
+              "index": 19.219,
               "qualifying": true
             },
             {
               "rank": 3,
-              "team": "Old Town",
-              "record": "5-2-0",
-              "index": 17.734,
+              "team": "Mount Desert Island",
+              "record": "4-3-0",
+              "index": 19.141,
               "qualifying": true
             },
             {
               "rank": 4,
-              "team": "Mount Desert Island",
-              "record": "4-3-0",
-              "index": 17.656,
+              "team": "Belfast Area",
+              "record": "4-2-0",
+              "index": 17.734,
               "qualifying": true
             },
             {
@@ -3492,37 +3492,37 @@
             },
             {
               "rank": 8,
+              "team": "John Bapst Memorial",
+              "record": "4-4-0",
+              "index": 10.0,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
               "team": "Oceanside",
               "record": "2-5-0",
               "index": 9.453,
               "qualifying": true
             },
             {
-              "rank": 9,
+              "rank": 10,
               "team": "Lawrence",
               "record": "5-2-0",
               "index": 9.063,
               "qualifying": true
             },
             {
-              "rank": 10,
-              "team": "John Bapst Memorial",
-              "record": "3-4-0",
-              "index": 8.594,
-              "qualifying": true
-            },
-            {
               "rank": 11,
-              "team": "Foxcroft Academy",
+              "team": "Presque Isle",
               "record": "2-5-0",
-              "index": 7.344,
+              "index": 8.672,
               "qualifying": false
             },
             {
               "rank": 12,
-              "team": "Presque Isle",
+              "team": "Foxcroft Academy",
               "record": "2-5-0",
-              "index": 7.188,
+              "index": 7.344,
               "qualifying": false
             },
             {
@@ -3535,7 +3535,7 @@
             {
               "rank": 14,
               "team": "Caribou",
-              "record": "1-2-0",
+              "record": "1-3-0",
               "index": 0.625,
               "qualifying": false
             },
@@ -3831,14 +3831,14 @@
               "rank": 6,
               "team": "Scarborough",
               "record": "5-2-0",
-              "index": 10.625,
+              "index": 12.188,
               "qualifying": true
             },
             {
               "rank": 7,
               "team": "Bonny Eagle",
-              "record": "3-1-0",
-              "index": 10.0,
+              "record": "4-1-0",
+              "index": 10.625,
               "qualifying": true
             },
             {
@@ -3900,7 +3900,7 @@
             {
               "rank": 16,
               "team": "Marshwood",
-              "record": "0-5-0",
+              "record": "0-6-0",
               "index": 0.0,
               "qualifying": false
             },
