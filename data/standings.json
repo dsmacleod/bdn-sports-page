@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-21T12:55:48.839307+00:00",
+  "last_updated": "2026-05-22T03:18:58.204364+00:00",
   "season": "spring",
   "sports": [
     {
@@ -12,16 +12,16 @@
           "teams": [
             {
               "rank": 1,
-              "team": "Bangor",
-              "record": "10-2-0",
-              "index": 76.484,
+              "team": "Oxford Hills",
+              "record": "10-1-0",
+              "index": 77.266,
               "qualifying": true
             },
             {
               "rank": 2,
-              "team": "Oxford Hills",
-              "record": "10-1-0",
-              "index": 75.781,
+              "team": "Bangor",
+              "record": "10-2-0",
+              "index": 76.484,
               "qualifying": true
             },
             {
@@ -102,29 +102,29 @@
             {
               "rank": 1,
               "team": "Ellsworth",
-              "record": "9-1-0",
-              "index": 62.969,
+              "record": "10-1-0",
+              "index": 73.359,
               "qualifying": true
             },
             {
               "rank": 2,
               "team": "Cony HS",
-              "record": "9-2-0",
-              "index": 54.198,
+              "record": "10-2-0",
+              "index": 54.823,
               "qualifying": true
             },
             {
               "rank": 3,
-              "team": "Hermon",
-              "record": "6-2-0",
-              "index": 46.875,
+              "team": "Mount Desert Island",
+              "record": "7-4-0",
+              "index": 48.203,
               "qualifying": true
             },
             {
               "rank": 4,
-              "team": "Mount Desert Island",
-              "record": "7-4-0",
-              "index": 45.234,
+              "team": "Hermon",
+              "record": "6-2-0",
+              "index": 46.875,
               "qualifying": true
             },
             {
@@ -157,16 +157,16 @@
             },
             {
               "rank": 9,
-              "team": "Oceanside",
-              "record": "4-7-0",
-              "index": 24.219,
+              "team": "John Bapst Memorial",
+              "record": "5-6-0",
+              "index": 24.531,
               "qualifying": true
             },
             {
               "rank": 10,
-              "team": "John Bapst Memorial",
-              "record": "5-5-0",
-              "index": 21.563,
+              "team": "Oceanside",
+              "record": "4-7-0",
+              "index": 24.219,
               "qualifying": true
             },
             {
@@ -178,30 +178,30 @@
             },
             {
               "rank": 12,
+              "team": "Foxcroft Academy",
+              "record": "2-10-0",
+              "index": 16.172,
+              "qualifying": false
+            },
+            {
+              "rank": 13,
               "team": "Gardiner Area",
               "record": "3-7-0",
               "index": 15.0,
               "qualifying": false
             },
             {
-              "rank": 13,
-              "team": "Foxcroft Academy",
-              "record": "2-9-0",
-              "index": 14.688,
-              "qualifying": false
-            },
-            {
               "rank": 14,
-              "team": "Waterville",
-              "record": "3-8-0",
-              "index": 12.401,
+              "team": "Caribou",
+              "record": "4-7-0",
+              "index": 14.766,
               "qualifying": false
             },
             {
               "rank": 15,
-              "team": "Caribou",
-              "record": "3-7-0",
-              "index": 11.797,
+              "team": "Waterville",
+              "record": "3-8-0",
+              "index": 12.401,
               "qualifying": false
             }
           ]
@@ -213,28 +213,28 @@
               "rank": 1,
               "team": "Washington Academy",
               "record": "11-0-0",
-              "index": 88.438,
+              "index": 92.734,
               "qualifying": true
             },
             {
               "rank": 2,
               "team": "Bucksport",
               "record": "9-3-0",
-              "index": 58.482,
+              "index": 61.295,
               "qualifying": true
             },
             {
               "rank": 3,
               "team": "Mattanawcook Academy",
-              "record": "8-2-0",
-              "index": 56.953,
+              "record": "9-2-0",
+              "index": 61.016,
               "qualifying": true
             },
             {
               "rank": 4,
               "team": "George Stevens Academy",
               "record": "7-3-0",
-              "index": 49.81,
+              "index": 54.029,
               "qualifying": true
             },
             {
@@ -247,15 +247,15 @@
             {
               "rank": 6,
               "team": "Sumner Memorial",
-              "record": "5-6-0",
-              "index": 34.609,
+              "record": "5-7-0",
+              "index": 36.216,
               "qualifying": true
             },
             {
               "rank": 7,
               "team": "Calais",
-              "record": "7-2-0",
-              "index": 26.131,
+              "record": "8-2-0",
+              "index": 29.568,
               "qualifying": true
             },
             {
@@ -267,50 +267,50 @@
             },
             {
               "rank": 9,
+              "team": "Narraguagus Sr",
+              "record": "5-8-0",
+              "index": 13.876,
+              "qualifying": true
+            },
+            {
+              "rank": 10,
               "team": "Orono",
               "record": "3-8-0",
               "index": 13.594,
               "qualifying": true
             },
             {
-              "rank": 10,
+              "rank": 11,
               "team": "Fort Kent Community",
               "record": "4-8-0",
               "index": 11.964,
-              "qualifying": true
+              "qualifying": false
             },
             {
-              "rank": 11,
+              "rank": 12,
               "team": "Maine Central Institute",
               "record": "4-8-0",
               "index": 6.875,
               "qualifying": false
             },
             {
-              "rank": 12,
-              "team": "Narraguagus Sr",
-              "record": "4-8-0",
-              "index": 6.198,
-              "qualifying": false
-            },
-            {
               "rank": 13,
               "team": "Central",
-              "record": "2-6-0",
+              "record": "2-7-0",
               "index": 3.036,
               "qualifying": false
             },
             {
               "rank": 14,
               "team": "Houlton/Greater Houlton",
-              "record": "0-8-0",
+              "record": "0-9-0",
               "index": 0.0,
               "qualifying": false
             },
             {
               "rank": 15,
               "team": "Winslow",
-              "record": "0-9-0",
+              "record": "0-10-0",
               "index": 0.0,
               "qualifying": false
             }
@@ -323,7 +323,7 @@
               "rank": 1,
               "team": "Bangor Christian",
               "record": "9-1-0",
-              "index": 59.721,
+              "index": 64.275,
               "qualifying": true
             },
             {
@@ -342,23 +342,23 @@
             },
             {
               "rank": 4,
-              "team": "Washburn/Easton/Central Aroostook",
-              "record": "5-6-0",
-              "index": 26.735,
+              "team": "Stearns Sr.",
+              "record": "6-3-0",
+              "index": 29.978,
               "qualifying": true
             },
             {
               "rank": 5,
-              "team": "Stearns Sr.",
-              "record": "6-3-0",
-              "index": 25.424,
+              "team": "Penobscot Valley",
+              "record": "7-3-0",
+              "index": 29.273,
               "qualifying": true
             },
             {
               "rank": 6,
-              "team": "Penobscot Valley",
-              "record": "6-3-0",
-              "index": 24.286,
+              "team": "Washburn/Easton/Central Aroostook",
+              "record": "5-6-0",
+              "index": 26.735,
               "qualifying": true
             },
             {
@@ -393,21 +393,21 @@
               "rank": 11,
               "team": "Machias Memorial",
               "record": "7-4-0",
-              "index": 14.583,
+              "index": 16.19,
               "qualifying": true
             },
             {
               "rank": 12,
               "team": "Schenck",
-              "record": "2-6-0",
-              "index": 8.457,
+              "record": "3-6-0",
+              "index": 9.171,
               "qualifying": true
             },
             {
               "rank": 13,
               "team": "Lee Academy",
               "record": "4-5-0",
-              "index": 6.633,
+              "index": 8.367,
               "qualifying": false
             },
             {
@@ -427,14 +427,14 @@
             {
               "rank": 16,
               "team": "Woodland Sr.",
-              "record": "1-6-0",
+              "record": "1-7-0",
               "index": 0.625,
               "qualifying": false
             },
             {
               "rank": 17,
               "team": "Shead",
-              "record": "0-8-0",
+              "record": "0-9-0",
               "index": 0.0,
               "qualifying": false
             },
@@ -453,105 +453,105 @@
             {
               "rank": 1,
               "team": "Gorham",
-              "record": "9-1-0",
-              "index": 79.688,
+              "record": "10-1-0",
+              "index": 93.75,
               "qualifying": true
             },
             {
               "rank": 2,
               "team": "Cheverus",
               "record": "10-1-0",
-              "index": 56.875,
+              "index": 63.125,
               "qualifying": true
             },
             {
               "rank": 3,
               "team": "Thornton Academy",
-              "record": "7-2-0",
-              "index": 49.063,
+              "record": "8-2-0",
+              "index": 53.75,
               "qualifying": true
             },
             {
               "rank": 4,
               "team": "Massabesic",
               "record": "8-2-0",
-              "index": 49.063,
+              "index": 52.188,
               "qualifying": true
             },
             {
               "rank": 5,
-              "team": "South Portland",
-              "record": "9-1-0",
-              "index": 47.5,
+              "team": "Scarborough",
+              "record": "8-3-0",
+              "index": 51.563,
               "qualifying": true
             },
             {
               "rank": 6,
-              "team": "Scarborough",
-              "record": "7-3-0",
-              "index": 39.063,
+              "team": "South Portland",
+              "record": "9-1-0",
+              "index": 50.625,
               "qualifying": true
             },
             {
               "rank": 7,
-              "team": "Bonny Eagle",
-              "record": "7-3-0",
-              "index": 30.313,
+              "team": "Sanford",
+              "record": "6-5-0",
+              "index": 36.563,
               "qualifying": true
             },
             {
               "rank": 8,
-              "team": "Falmouth",
-              "record": "6-4-0",
-              "index": 27.188,
+              "team": "Bonny Eagle",
+              "record": "7-4-0",
+              "index": 30.313,
               "qualifying": true
             },
             {
               "rank": 9,
-              "team": "Sanford",
-              "record": "5-5-0",
-              "index": 27.188,
+              "team": "Falmouth",
+              "record": "6-5-0",
+              "index": 28.75,
               "qualifying": true
             },
             {
               "rank": 10,
               "team": "Noble",
               "record": "5-6-0",
-              "index": 20.313,
+              "index": 23.438,
               "qualifying": true
             },
             {
               "rank": 11,
               "team": "Kennebunk",
-              "record": "5-6-0",
-              "index": 11.563,
+              "record": "5-7-0",
+              "index": 13.125,
               "qualifying": true
             },
             {
               "rank": 12,
-              "team": "Marshwood",
-              "record": "2-8-0",
-              "index": 4.688,
+              "team": "Biddeford",
+              "record": "4-8-0",
+              "index": 6.875,
               "qualifying": true
             },
             {
               "rank": 13,
-              "team": "Biddeford",
-              "record": "3-8-0",
-              "index": 3.75,
+              "team": "Marshwood",
+              "record": "2-8-0",
+              "index": 4.688,
               "qualifying": false
             },
             {
               "rank": 14,
               "team": "Deering",
-              "record": "2-9-0",
+              "record": "2-10-0",
               "index": 3.125,
               "qualifying": false
             },
             {
               "rank": 15,
               "team": "Windham",
-              "record": "1-9-0",
+              "record": "1-10-0",
               "index": 0.625,
               "qualifying": false
             },
@@ -576,37 +576,37 @@
           "teams": [
             {
               "rank": 1,
-              "team": "Leavitt Area",
-              "record": "11-1-0",
-              "index": 73.526,
+              "team": "Fryeburg Academy",
+              "record": "10-2-0",
+              "index": 82.339,
               "qualifying": true
             },
             {
               "rank": 2,
-              "team": "Fryeburg Academy",
-              "record": "9-2-0",
-              "index": 73.354,
+              "team": "Leavitt Area",
+              "record": "11-1-0",
+              "index": 74.932,
               "qualifying": true
             },
             {
               "rank": 3,
-              "team": "Yarmouth",
-              "record": "7-4-0",
-              "index": 61.26,
+              "team": "Lake Region",
+              "record": "7-5-0",
+              "index": 63.943,
               "qualifying": true
             },
             {
               "rank": 4,
-              "team": "Lake Region",
-              "record": "7-5-0",
-              "index": 60.974,
+              "team": "Cape Elizabeth",
+              "record": "8-3-0",
+              "index": 63.083,
               "qualifying": true
             },
             {
               "rank": 5,
-              "team": "Cape Elizabeth",
-              "record": "7-3-0",
-              "index": 55.583,
+              "team": "Yarmouth",
+              "record": "7-4-0",
+              "index": 61.26,
               "qualifying": true
             },
             {
@@ -619,8 +619,8 @@
             {
               "rank": 7,
               "team": "Greely",
-              "record": "5-3-0",
-              "index": 41.797,
+              "record": "5-5-0",
+              "index": 43.281,
               "qualifying": true
             },
             {
@@ -661,7 +661,7 @@
             {
               "rank": 13,
               "team": "Mountain Valley",
-              "record": "5-4-0",
+              "record": "5-5-0",
               "index": 13.828,
               "qualifying": false
             },
@@ -690,7 +690,7 @@
               "rank": 17,
               "team": "Spruce Mountain",
               "record": "2-7-0",
-              "index": 4.49,
+              "index": 4.297,
               "qualifying": false
             }
           ]
@@ -700,23 +700,23 @@
           "teams": [
             {
               "rank": 1,
-              "team": "Old Orchard Beach",
-              "record": "9-1-0",
-              "index": 64.132,
+              "team": "Monmouth Academy",
+              "record": "10-1-0",
+              "index": 64.589,
               "qualifying": true
             },
             {
               "rank": 2,
-              "team": "Maranacook Community",
+              "team": "Old Orchard Beach",
               "record": "9-1-0",
-              "index": 63.622,
+              "index": 64.241,
               "qualifying": true
             },
             {
               "rank": 3,
-              "team": "Monmouth Academy",
+              "team": "Maranacook Community",
               "record": "10-1-0",
-              "index": 60.406,
+              "index": 63.828,
               "qualifying": true
             },
             {
@@ -728,58 +728,58 @@
             },
             {
               "rank": 5,
-              "team": "Lisbon",
-              "record": "6-3-0",
-              "index": 31.635,
+              "team": "Waynflete/NYA Coop",
+              "record": "6-4-0",
+              "index": 32.913,
               "qualifying": true
             },
             {
               "rank": 6,
-              "team": "Waynflete/NYA Coop",
-              "record": "6-4-0",
-              "index": 31.429,
+              "team": "Lisbon",
+              "record": "6-3-0",
+              "index": 32.734,
               "qualifying": true
             },
             {
               "rank": 7,
-              "team": "Winthrop",
-              "record": "5-5-0",
-              "index": 18.474,
+              "team": "Mt. Abram",
+              "record": "5-6-0",
+              "index": 23.906,
               "qualifying": true
             },
             {
               "rank": 8,
+              "team": "Winthrop",
+              "record": "5-5-0",
+              "index": 19.766,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
               "team": "Dirigo",
               "record": "3-7-0",
               "index": 17.969,
               "qualifying": true
             },
             {
-              "rank": 9,
+              "rank": 10,
               "team": "Oak Hill",
               "record": "5-5-0",
               "index": 17.578,
-              "qualifying": true
+              "qualifying": false
             },
             {
-              "rank": 10,
+              "rank": 11,
               "team": "Hall-Dale HS",
               "record": "4-7-0",
               "index": 16.953,
               "qualifying": false
             },
             {
-              "rank": 11,
-              "team": "Mt. Abram",
-              "record": "4-6-0",
-              "index": 16.875,
-              "qualifying": false
-            },
-            {
               "rank": 12,
               "team": "Carrabec",
               "record": "3-9-0",
-              "index": 12.866,
+              "index": 14.283,
               "qualifying": false
             },
             {
@@ -798,21 +798,21 @@
               "rank": 1,
               "team": "Richmond HS",
               "record": "9-0-0",
-              "index": 43.475,
+              "index": 47.72,
               "qualifying": true
             },
             {
               "rank": 2,
               "team": "Buckfield HS",
               "record": "9-4-0",
-              "index": 43.083,
+              "index": 47.062,
               "qualifying": true
             },
             {
               "rank": 3,
               "team": "Telstar Regional",
               "record": "7-2-0",
-              "index": 32.71,
+              "index": 35.272,
               "qualifying": true
             },
             {
@@ -826,42 +826,42 @@
               "rank": 5,
               "team": "Valley HS",
               "record": "4-2-0",
-              "index": 16.389,
+              "index": 17.917,
               "qualifying": true
             },
             {
               "rank": 6,
               "team": "Forest Hills Consolidated",
-              "record": "3-6-0",
-              "index": 15.111,
+              "record": "4-7-0",
+              "index": 17.0,
               "qualifying": true
             },
             {
               "rank": 7,
               "team": "Madison High School",
-              "record": "2-8-0",
-              "index": 13.583,
+              "record": "2-9-0",
+              "index": 12.734,
               "qualifying": true
             },
             {
               "rank": 8,
-              "team": "Boothbay Region",
-              "record": "1-8-0",
-              "index": 5.703,
+              "team": "Temple Academy",
+              "record": "1-7-0",
+              "index": 7.556,
               "qualifying": true
             },
             {
               "rank": 9,
-              "team": "Greenville",
-              "record": "2-6-0",
-              "index": 1.667,
+              "team": "Boothbay Region",
+              "record": "1-8-0",
+              "index": 5.703,
               "qualifying": false
             },
             {
               "rank": 10,
-              "team": "Temple Academy",
-              "record": "0-6-0",
-              "index": 0.0,
+              "team": "Greenville",
+              "record": "2-6-0",
+              "index": 4.722,
               "qualifying": false
             }
           ]
@@ -879,22 +879,22 @@
             {
               "rank": 1,
               "team": "Oxford Hills",
-              "record": "10-1-0",
-              "index": 94.297,
+              "record": "11-1-0",
+              "index": 94.922,
               "qualifying": true
             },
             {
               "rank": 2,
               "team": "Lewiston",
               "record": "10-3-0",
-              "index": 83.047,
+              "index": 84.609,
               "qualifying": true
             },
             {
               "rank": 3,
               "team": "Edward Little",
               "record": "9-3-0",
-              "index": 74.688,
+              "index": 77.656,
               "qualifying": true
             },
             {
@@ -956,7 +956,7 @@
             {
               "rank": 12,
               "team": "Messalonskee",
-              "record": "0-10-0",
+              "record": "0-11-0",
               "index": 0.0,
               "qualifying": false
             }
@@ -969,7 +969,7 @@
               "rank": 1,
               "team": "Gardiner Area",
               "record": "8-2-0",
-              "index": 79.561,
+              "index": 80.25,
               "qualifying": true
             },
             {
@@ -981,23 +981,23 @@
             },
             {
               "rank": 3,
-              "team": "Belfast Area",
-              "record": "7-3-0",
-              "index": 50.917,
+              "team": "Ellsworth",
+              "record": "8-3-0",
+              "index": 53.438,
               "qualifying": true
             },
             {
               "rank": 4,
-              "team": "Ellsworth",
+              "team": "Belfast Area",
               "record": "7-3-0",
-              "index": 43.047,
+              "index": 52.417,
               "qualifying": true
             },
             {
               "rank": 5,
               "team": "Old Town",
               "record": "7-3-0",
-              "index": 39.766,
+              "index": 42.578,
               "qualifying": true
             },
             {
@@ -1010,50 +1010,50 @@
             {
               "rank": 7,
               "team": "Presque Isle",
-              "record": "4-4-0",
-              "index": 27.981,
+              "record": "5-4-0",
+              "index": 32.368,
               "qualifying": true
             },
             {
               "rank": 8,
               "team": "Cony HS",
-              "record": "6-5-0",
-              "index": 25.292,
+              "record": "7-5-0",
+              "index": 30.781,
               "qualifying": true
             },
             {
               "rank": 9,
+              "team": "Mount Desert Island",
+              "record": "5-6-0",
+              "index": 23.359,
+              "qualifying": true
+            },
+            {
+              "rank": 10,
               "team": "Lawrence",
               "record": "6-5-0",
               "index": 19.766,
               "qualifying": true
             },
             {
-              "rank": 10,
-              "team": "Mount Desert Island",
-              "record": "5-6-0",
-              "index": 18.984,
-              "qualifying": true
-            },
-            {
               "rank": 11,
               "team": "John Bapst Memorial",
-              "record": "5-6-0",
-              "index": 13.047,
+              "record": "5-7-0",
+              "index": 17.422,
               "qualifying": false
             },
             {
               "rank": 12,
               "team": "Foxcroft Academy",
-              "record": "2-9-0",
-              "index": 11.797,
+              "record": "2-10-0",
+              "index": 14.766,
               "qualifying": false
             },
             {
               "rank": 13,
               "team": "Caribou",
-              "record": "1-8-0",
-              "index": 2.656,
+              "record": "2-8-0",
+              "index": 5.625,
               "qualifying": false
             },
             {
@@ -1079,49 +1079,49 @@
               "rank": 1,
               "team": "Bucksport",
               "record": "12-1-0",
-              "index": 103.75,
+              "index": 108.449,
               "qualifying": true
             },
             {
               "rank": 2,
               "team": "Washington Academy",
               "record": "10-2-0",
-              "index": 75.012,
+              "index": 78.227,
               "qualifying": true
             },
             {
               "rank": 3,
               "team": "Mattanawcook Academy",
-              "record": "9-1-0",
-              "index": 56.172,
+              "record": "10-1-0",
+              "index": 67.031,
               "qualifying": true
             },
             {
               "rank": 4,
               "team": "Narraguagus Sr",
-              "record": "9-3-0",
-              "index": 51.362,
+              "record": "9-4-0",
+              "index": 52.969,
               "qualifying": true
             },
             {
               "rank": 5,
-              "team": "Central",
-              "record": "8-1-0",
-              "index": 38.281,
+              "team": "Sumner Memorial",
+              "record": "7-3-0",
+              "index": 43.827,
               "qualifying": true
             },
             {
               "rank": 6,
-              "team": "Houlton/Greater Houlton",
-              "record": "6-2-0",
-              "index": 32.5,
+              "team": "Central",
+              "record": "8-2-0",
+              "index": 38.281,
               "qualifying": true
             },
             {
               "rank": 7,
-              "team": "Sumner Memorial",
-              "record": "6-3-0",
-              "index": 29.809,
+              "team": "Houlton/Greater Houlton",
+              "record": "7-2-0",
+              "index": 37.788,
               "qualifying": true
             },
             {
@@ -1134,7 +1134,7 @@
             {
               "rank": 9,
               "team": "Winslow",
-              "record": "4-5-0",
+              "record": "4-6-0",
               "index": 17.833,
               "qualifying": true
             },
@@ -1149,7 +1149,7 @@
               "rank": 11,
               "team": "Mount View",
               "record": "4-8-0",
-              "index": 10.172,
+              "index": 10.078,
               "qualifying": false
             },
             {
@@ -1162,14 +1162,14 @@
             {
               "rank": 13,
               "team": "Fort Kent Community",
-              "record": "2-9-0",
+              "record": "2-10-0",
               "index": 1.25,
               "qualifying": false
             },
             {
               "rank": 14,
               "team": "Calais",
-              "record": "1-8-0",
+              "record": "1-9-0",
               "index": 0.625,
               "qualifying": false
             },
@@ -1188,98 +1188,98 @@
             {
               "rank": 1,
               "team": "Penobscot Valley",
-              "record": "9-0-0",
-              "index": 58.954,
+              "record": "10-0-0",
+              "index": 68.584,
               "qualifying": true
             },
             {
               "rank": 2,
               "team": "Fort Fairfield HS",
               "record": "9-0-0",
-              "index": 42.127,
+              "index": 44.796,
               "qualifying": true
             },
             {
               "rank": 3,
               "team": "Stearns Sr.",
               "record": "8-3-0",
-              "index": 41.618,
+              "index": 43.136,
               "qualifying": true
             },
             {
               "rank": 4,
               "team": "Katahdin HS",
               "record": "7-0-0",
-              "index": 40.769,
+              "index": 41.327,
               "qualifying": true
             },
             {
               "rank": 5,
+              "team": "Wisdom HS",
+              "record": "7-2-0",
+              "index": 39.898,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
               "team": "Machias Memorial",
               "record": "8-3-0",
               "index": 38.418,
               "qualifying": true
             },
             {
-              "rank": 6,
-              "team": "Wisdom HS",
-              "record": "7-2-0",
-              "index": 36.829,
+              "rank": 7,
+              "team": "Schenck",
+              "record": "4-4-0",
+              "index": 25.906,
               "qualifying": true
             },
             {
-              "rank": 7,
+              "rank": 8,
               "team": "Jonesport-Beals",
               "record": "5-5-0",
               "index": 25.0,
               "qualifying": true
             },
             {
-              "rank": 8,
-              "team": "Schenck",
-              "record": "3-4-0",
-              "index": 24.171,
+              "rank": 9,
+              "team": "Bangor Christian",
+              "record": "4-7-0",
+              "index": 24.375,
               "qualifying": true
             },
             {
-              "rank": 9,
+              "rank": 10,
+              "team": "Ashland District",
+              "record": "5-3-0",
+              "index": 24.286,
+              "qualifying": true
+            },
+            {
+              "rank": 11,
               "team": "Penquis Valley HS",
               "record": "4-5-0",
               "index": 23.806,
               "qualifying": true
             },
             {
-              "rank": 10,
-              "team": "Bangor Christian",
-              "record": "4-7-0",
-              "index": 22.857,
-              "qualifying": true
-            },
-            {
-              "rank": 11,
+              "rank": 12,
               "team": "Lee Academy",
               "record": "6-5-0",
               "index": 19.515,
               "qualifying": true
             },
             {
-              "rank": 12,
+              "rank": 13,
               "team": "Southern Aroostook",
               "record": "3-8-0",
-              "index": 14.278,
-              "qualifying": true
-            },
-            {
-              "rank": 13,
-              "team": "Ashland District",
-              "record": "3-3-0",
               "index": 13.878,
               "qualifying": true
             },
             {
               "rank": 14,
               "team": "Woodland Sr.",
-              "record": "4-4-0",
+              "record": "4-5-0",
               "index": 11.272,
               "qualifying": true
             },
@@ -1300,21 +1300,21 @@
             {
               "rank": 17,
               "team": "Central Aroostook Sr",
-              "record": "3-5-0",
-              "index": 8.242,
+              "record": "3-7-0",
+              "index": 7.653,
               "qualifying": false
             },
             {
               "rank": 18,
               "team": "Hodgdon HS",
               "record": "1-7-0",
-              "index": 5.604,
+              "index": 5.204,
               "qualifying": false
             },
             {
               "rank": 19,
               "team": "Shead",
-              "record": "1-7-0",
+              "record": "1-8-0",
               "index": 3.469,
               "qualifying": false
             },
@@ -1341,14 +1341,14 @@
               "rank": 1,
               "team": "Cheverus",
               "record": "9-0-0",
-              "index": 89.063,
+              "index": 90.625,
               "qualifying": true
             },
             {
               "rank": 2,
               "team": "Gorham",
               "record": "9-2-0",
-              "index": 70.938,
+              "index": 72.5,
               "qualifying": true
             },
             {
@@ -1362,14 +1362,14 @@
               "rank": 4,
               "team": "Scarborough",
               "record": "8-4-0",
-              "index": 50.625,
+              "index": 52.188,
               "qualifying": true
             },
             {
               "rank": 5,
               "team": "Bonny Eagle",
               "record": "8-2-0",
-              "index": 50.625,
+              "index": 52.188,
               "qualifying": true
             },
             {
@@ -1383,21 +1383,21 @@
               "rank": 7,
               "team": "Windham",
               "record": "7-4-0",
-              "index": 38.125,
+              "index": 39.688,
               "qualifying": true
             },
             {
               "rank": 8,
               "team": "Massabesic",
               "record": "5-7-0",
-              "index": 24.063,
+              "index": 25.625,
               "qualifying": true
             },
             {
               "rank": 9,
               "team": "Biddeford",
-              "record": "5-6-0",
-              "index": 22.5,
+              "record": "6-6-0",
+              "index": 24.063,
               "qualifying": true
             },
             {
@@ -1431,7 +1431,7 @@
             {
               "rank": 14,
               "team": "Noble",
-              "record": "1-10-0",
+              "record": "1-11-0",
               "index": 0.625,
               "qualifying": false
             },
@@ -1465,91 +1465,91 @@
               "rank": 2,
               "team": "Leavitt Area",
               "record": "8-4-0",
-              "index": 71.458,
+              "index": 72.865,
               "qualifying": true
             },
             {
               "rank": 3,
               "team": "Lake Region",
               "record": "8-4-0",
-              "index": 55.703,
+              "index": 57.188,
               "qualifying": true
             },
             {
               "rank": 4,
               "team": "Poland Regional",
               "record": "7-5-0",
-              "index": 50.938,
+              "index": 52.422,
               "qualifying": true
             },
             {
               "rank": 5,
               "team": "Erskine Academy",
               "record": "9-2-0",
-              "index": 47.391,
+              "index": 48.797,
               "qualifying": true
             },
             {
               "rank": 6,
               "team": "York",
               "record": "8-1-0",
-              "index": 46.094,
+              "index": 47.578,
               "qualifying": true
             },
             {
               "rank": 7,
               "team": "Yarmouth",
               "record": "6-4-0",
-              "index": 21.771,
+              "index": 23.255,
               "qualifying": true
             },
             {
               "rank": 8,
-              "team": "Mountain Valley",
-              "record": "3-4-0",
-              "index": 18.262,
+              "team": "Greely",
+              "record": "5-4-0",
+              "index": 20.703,
               "qualifying": true
             },
             {
               "rank": 9,
-              "team": "Freeport",
-              "record": "5-4-0",
-              "index": 18.203,
+              "team": "Mountain Valley",
+              "record": "4-4-0",
+              "index": 20.271,
               "qualifying": true
             },
             {
               "rank": 10,
-              "team": "Fryeburg Academy",
-              "record": "5-6-0",
-              "index": 15.703,
+              "team": "Freeport",
+              "record": "5-5-0",
+              "index": 18.203,
               "qualifying": true
             },
             {
               "rank": 11,
-              "team": "Spruce Mountain",
-              "record": "4-4-0",
-              "index": 13.524,
+              "team": "Fryeburg Academy",
+              "record": "5-7-0",
+              "index": 17.188,
               "qualifying": true
             },
             {
               "rank": 12,
-              "team": "Greely",
+              "team": "Spruce Mountain",
               "record": "4-4-0",
-              "index": 13.203,
+              "index": 14.167,
               "qualifying": false
             },
             {
               "rank": 13,
-              "team": "Morse",
-              "record": "2-7-0",
-              "index": 5.583,
+              "team": "Gray-New Gloucester",
+              "record": "4-6-0",
+              "index": 12.943,
               "qualifying": false
             },
             {
               "rank": 14,
-              "team": "Gray-New Gloucester",
-              "record": "3-6-0",
-              "index": 5.521,
+              "team": "Morse",
+              "record": "2-7-0",
+              "index": 5.583,
               "qualifying": false
             },
             {
@@ -1575,35 +1575,35 @@
               "rank": 1,
               "team": "Dirigo",
               "record": "10-0-0",
-              "index": 61.151,
+              "index": 64.042,
               "qualifying": true
             },
             {
               "rank": 2,
               "team": "Lisbon",
               "record": "9-1-0",
-              "index": 42.774,
+              "index": 45.292,
               "qualifying": true
             },
             {
               "rank": 3,
               "team": "Telstar/Gould",
               "record": "7-2-0",
-              "index": 38.828,
+              "index": 40.313,
               "qualifying": true
             },
             {
               "rank": 4,
-              "team": "Carrabec",
-              "record": "6-6-0",
-              "index": 33.768,
+              "team": "Old Orchard Beach",
+              "record": "7-3-0",
+              "index": 33.823,
               "qualifying": true
             },
             {
               "rank": 5,
-              "team": "Old Orchard Beach",
-              "record": "7-3-0",
-              "index": 33.314,
+              "team": "Carrabec",
+              "record": "6-6-0",
+              "index": 33.768,
               "qualifying": true
             },
             {
@@ -1617,35 +1617,35 @@
               "rank": 7,
               "team": "Monmouth Academy",
               "record": "8-2-0",
-              "index": 26.433,
+              "index": 27.5,
               "qualifying": true
             },
             {
               "rank": 8,
               "team": "Oak Hill",
               "record": "5-5-0",
-              "index": 21.835,
+              "index": 22.344,
               "qualifying": true
             },
             {
               "rank": 9,
               "team": "Hall-Dale HS",
               "record": "3-6-0",
-              "index": 8.609,
+              "index": 8.516,
               "qualifying": false
             },
             {
               "rank": 10,
               "team": "Maranacook Community",
-              "record": "1-8-0",
-              "index": 6.167,
+              "record": "1-9-0",
+              "index": 5.781,
               "qualifying": false
             },
             {
               "rank": 11,
               "team": "Mt. Abram",
-              "record": "1-7-0",
-              "index": 1.5,
+              "record": "1-8-0",
+              "index": 1.406,
               "qualifying": false
             },
             {
@@ -1664,35 +1664,35 @@
               "rank": 1,
               "team": "Buckfield HS",
               "record": "10-2-0",
-              "index": 76.414,
+              "index": 79.247,
               "qualifying": true
             },
             {
               "rank": 2,
               "team": "North Yarmouth Academy",
               "record": "9-1-0",
-              "index": 52.833,
+              "index": 55.917,
               "qualifying": true
             },
             {
               "rank": 3,
-              "team": "Vinalhaven",
-              "record": "9-1-0",
-              "index": 38.829,
+              "team": "Forest Hills Consolidated",
+              "record": "8-2-0",
+              "index": 42.397,
               "qualifying": true
             },
             {
               "rank": 4,
-              "team": "Forest Hills Consolidated",
-              "record": "6-2-0",
-              "index": 28.23,
+              "team": "Vinalhaven",
+              "record": "9-1-0",
+              "index": 41.851,
               "qualifying": true
             },
             {
               "rank": 5,
               "team": "Madison High School",
-              "record": "4-6-0",
-              "index": 18.321,
+              "record": "5-6-0",
+              "index": 17.344,
               "qualifying": true
             },
             {
@@ -1712,7 +1712,7 @@
             {
               "rank": 8,
               "team": "Temple Academy",
-              "record": "5-4-0",
+              "record": "5-6-0",
               "index": 7.555,
               "qualifying": true
             },
@@ -1767,14 +1767,14 @@
               "rank": 2,
               "team": "Falmouth",
               "record": "9-0-0",
-              "index": 92.551,
+              "index": 96.633,
               "qualifying": true
             },
             {
               "rank": 3,
               "team": "Thornton Academy",
               "record": "10-0-0",
-              "index": 89.082,
+              "index": 93.163,
               "qualifying": true
             },
             {
@@ -1800,23 +1800,23 @@
             },
             {
               "rank": 7,
-              "team": "Noble",
-              "record": "7-3-0",
-              "index": 47.602,
+              "team": "Cape Elizabeth",
+              "record": "4-6-0",
+              "index": 49.286,
               "qualifying": true
             },
             {
               "rank": 8,
-              "team": "Cape Elizabeth",
-              "record": "4-6-0",
-              "index": 47.347,
+              "team": "Noble",
+              "record": "7-3-0",
+              "index": 46.586,
               "qualifying": true
             },
             {
               "rank": 9,
               "team": "Scarborough",
               "record": "7-3-0",
-              "index": 42.449,
+              "index": 46.531,
               "qualifying": true
             },
             {
@@ -1835,44 +1835,44 @@
             },
             {
               "rank": 12,
-              "team": "Hampden/Bangor",
-              "record": "6-2-0",
-              "index": 24.857,
+              "team": "Bonny Eagle",
+              "record": "4-6-0",
+              "index": 25.51,
               "qualifying": true
             },
             {
               "rank": 13,
+              "team": "Hampden/Bangor",
+              "record": "6-2-0",
+              "index": 24.857,
+              "qualifying": false
+            },
+            {
+              "rank": 14,
               "team": "Massabesic",
               "record": "4-6-0",
               "index": 24.796,
               "qualifying": false
             },
             {
-              "rank": 14,
-              "team": "Bonny Eagle",
-              "record": "4-6-0",
-              "index": 21.429,
-              "qualifying": false
-            },
-            {
               "rank": 15,
               "team": "Lewiston",
-              "record": "3-5-0",
+              "record": "3-7-0",
               "index": 19.694,
               "qualifying": false
             },
             {
               "rank": 16,
-              "team": "Chev/Wayn",
-              "record": "2-8-0",
-              "index": 9.592,
+              "team": "Gorham",
+              "record": "4-7-0",
+              "index": 17.245,
               "qualifying": false
             },
             {
               "rank": 17,
-              "team": "Gorham",
-              "record": "2-7-0",
-              "index": 5.816,
+              "team": "Chev/Wayn",
+              "record": "2-8-0",
+              "index": 11.531,
               "qualifying": false
             },
             {
@@ -1889,72 +1889,72 @@
           "teams": [
             {
               "rank": 1,
+              "team": "York",
+              "record": "6-4-0",
+              "index": 58.163,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
               "team": "Messalonskee",
               "record": "8-3-0",
               "index": 57.622,
               "qualifying": true
             },
             {
-              "rank": 2,
-              "team": "York",
-              "record": "6-4-0",
-              "index": 56.224,
-              "qualifying": true
-            },
-            {
               "rank": 3,
               "team": "Mt. Ararat",
               "record": "6-3-0",
-              "index": 56.083,
+              "index": 55.228,
               "qualifying": true
             },
             {
               "rank": 4,
-              "team": "Morse",
+              "team": "Greely",
               "record": "6-3-0",
-              "index": 48.487,
+              "index": 52.449,
               "qualifying": true
             },
             {
               "rank": 5,
-              "team": "Greely",
-              "record": "6-3-0",
-              "index": 48.367,
+              "team": "Marshwood",
+              "record": "9-1-0",
+              "index": 52.017,
               "qualifying": true
             },
             {
               "rank": 6,
-              "team": "Marshwood",
-              "record": "9-1-0",
-              "index": 47.936,
+              "team": "Freeport",
+              "record": "5-5-0",
+              "index": 50.008,
               "qualifying": true
             },
             {
               "rank": 7,
-              "team": "GNG/Poland Coop",
-              "record": "4-4-0",
-              "index": 44.855,
+              "team": "Morse",
+              "record": "6-3-0",
+              "index": 45.024,
               "qualifying": true
             },
             {
               "rank": 8,
-              "team": "Fryeburg Academy",
-              "record": "7-2-0",
-              "index": 41.929,
+              "team": "GNG/Poland Coop",
+              "record": "4-4-0",
+              "index": 43.838,
               "qualifying": true
             },
             {
               "rank": 9,
-              "team": "Brunswick",
-              "record": "4-5-0",
-              "index": 35.479,
+              "team": "Fryeburg Academy",
+              "record": "7-3-0",
+              "index": 40.912,
               "qualifying": true
             },
             {
               "rank": 10,
-              "team": "Freeport",
+              "team": "Brunswick",
               "record": "4-5-0",
-              "index": 33.823,
+              "index": 35.479,
               "qualifying": true
             },
             {
@@ -2022,35 +2022,35 @@
               "rank": 1,
               "team": "North Yarmouth Academy",
               "record": "7-2-0",
-              "index": 41.735,
+              "index": 45.612,
               "qualifying": true
             },
             {
               "rank": 2,
-              "team": "Wells",
-              "record": "6-3-0",
-              "index": 29.929,
-              "qualifying": true
-            },
-            {
-              "rank": 3,
               "team": "Leavitt Area",
               "record": "4-6-0",
               "index": 29.253,
               "qualifying": true
             },
             {
+              "rank": 3,
+              "team": "Wells",
+              "record": "6-3-0",
+              "index": 27.626,
+              "qualifying": true
+            },
+            {
               "rank": 4,
-              "team": "Gardiner Area",
-              "record": "4-5-0",
-              "index": 22.08,
+              "team": "Maranacook/Winthrop",
+              "record": "5-4-0",
+              "index": 21.606,
               "qualifying": true
             },
             {
               "rank": 5,
-              "team": "Maranacook/Winthrop",
-              "record": "5-4-0",
-              "index": 21.606,
+              "team": "Gardiner Area",
+              "record": "4-5-0",
+              "index": 21.224,
               "qualifying": true
             },
             {
@@ -2124,8 +2124,8 @@
             {
               "rank": 1,
               "team": "Kennebunk",
-              "record": "9-1-0",
-              "index": 87.653,
+              "record": "10-1-0",
+              "index": 103.673,
               "qualifying": true
             },
             {
@@ -2139,28 +2139,28 @@
               "rank": 3,
               "team": "Windham",
               "record": "7-2-0",
-              "index": 68.163,
+              "index": 72.041,
               "qualifying": true
             },
             {
               "rank": 4,
               "team": "Falmouth",
-              "record": "7-2-0",
-              "index": 67.959,
+              "record": "7-3-0",
+              "index": 71.735,
               "qualifying": true
             },
             {
               "rank": 5,
               "team": "Cheverus",
               "record": "7-2-0",
-              "index": 59.184,
+              "index": 64.796,
               "qualifying": true
             },
             {
               "rank": 6,
               "team": "Scarborough",
               "record": "5-4-0",
-              "index": 55.51,
+              "index": 57.347,
               "qualifying": true
             },
             {
@@ -2174,14 +2174,14 @@
               "rank": 8,
               "team": "Bonny Eagle",
               "record": "6-3-0",
-              "index": 39.49,
+              "index": 43.265,
               "qualifying": true
             },
             {
               "rank": 9,
               "team": "Bangor/John Bapst/Orono",
               "record": "6-4-0",
-              "index": 37.772,
+              "index": 41.446,
               "qualifying": true
             },
             {
@@ -2214,57 +2214,57 @@
             },
             {
               "rank": 14,
-              "team": "Sanford",
-              "record": "5-4-0",
-              "index": 20.714,
+              "team": "Massabesic",
+              "record": "3-6-0",
+              "index": 21.735,
               "qualifying": true
             },
             {
               "rank": 15,
-              "team": "Massabesic",
-              "record": "3-6-0",
-              "index": 19.898,
+              "team": "Sanford",
+              "record": "5-4-0",
+              "index": 20.714,
               "qualifying": false
             },
             {
               "rank": 16,
+              "team": "Cape Elizabeth",
+              "record": "3-6-0",
+              "index": 19.388,
+              "qualifying": false
+            },
+            {
+              "rank": 17,
               "team": "Edward Little",
               "record": "3-8-0",
               "index": 19.184,
               "qualifying": false
             },
             {
-              "rank": 17,
-              "team": "Cape Elizabeth",
-              "record": "3-6-0",
-              "index": 17.551,
+              "rank": 18,
+              "team": "Oxford Hills",
+              "record": "2-9-0",
+              "index": 19.082,
               "qualifying": false
             },
             {
-              "rank": 18,
+              "rank": 19,
               "team": "Deering",
               "record": "4-6-0",
               "index": 14.388,
               "qualifying": false
             },
             {
-              "rank": 19,
+              "rank": 20,
               "team": "Noble",
               "record": "2-7-0",
               "index": 8.673,
               "qualifying": false
             },
             {
-              "rank": 20,
+              "rank": 21,
               "team": "Portland",
               "record": "1-8-0",
-              "index": 5.612,
-              "qualifying": false
-            },
-            {
-              "rank": 21,
-              "team": "Oxford Hills",
-              "record": "1-9-0",
               "index": 5.612,
               "qualifying": false
             }
@@ -2275,72 +2275,72 @@
           "teams": [
             {
               "rank": 1,
-              "team": "Messalonskee",
-              "record": "8-2-0",
-              "index": 65.918,
+              "team": "Greely",
+              "record": "9-2-0",
+              "index": 76.735,
               "qualifying": true
             },
             {
               "rank": 2,
-              "team": "Greely",
+              "team": "Messalonskee",
               "record": "8-2-0",
-              "index": 63.265,
+              "index": 69.694,
               "qualifying": true
             },
             {
               "rank": 3,
-              "team": "Camden Hills Regional",
-              "record": "6-4-0",
-              "index": 62.347,
+              "team": "Brunswick",
+              "record": "7-4-0",
+              "index": 63.98,
               "qualifying": true
             },
             {
               "rank": 4,
-              "team": "Brunswick",
-              "record": "6-4-0",
-              "index": 54.592,
+              "team": "Camden Hills Regional",
+              "record": "6-5-0",
+              "index": 62.347,
               "qualifying": true
             },
             {
               "rank": 5,
-              "team": "Freeport",
+              "team": "Cony HS",
               "record": "5-5-0",
-              "index": 37.551,
+              "index": 45.0,
               "qualifying": true
             },
             {
               "rank": 6,
-              "team": "Gardiner/Hall-Dale Coop",
-              "record": "5-4-0",
-              "index": 37.363,
+              "team": "Freeport",
+              "record": "5-5-0",
+              "index": 39.388,
               "qualifying": true
             },
             {
               "rank": 7,
-              "team": "Cony HS",
-              "record": "4-5-0",
-              "index": 33.163,
+              "team": "Gardiner/Hall-Dale Coop",
+              "record": "5-5-0",
+              "index": 37.363,
               "qualifying": true
             },
             {
               "rank": 8,
+              "team": "Mt. Ararat",
+              "record": "5-6-0",
+              "index": 31.224,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
               "team": "Westbrook",
               "record": "7-3-0",
               "index": 31.122,
               "qualifying": true
             },
             {
-              "rank": 9,
-              "team": "Mt. Ararat",
-              "record": "5-5-0",
-              "index": 29.388,
-              "qualifying": true
-            },
-            {
               "rank": 10,
               "team": "Fryeburg Academy",
-              "record": "6-4-0",
-              "index": 28.673,
+              "record": "6-5-0",
+              "index": 30.51,
               "qualifying": true
             },
             {
@@ -2359,16 +2359,16 @@
             },
             {
               "rank": 13,
-              "team": "York",
-              "record": "4-4-0",
-              "index": 17.347,
+              "team": "Mt. Blue",
+              "record": "6-4-0",
+              "index": 18.98,
               "qualifying": false
             },
             {
               "rank": 14,
-              "team": "Mt. Blue",
-              "record": "6-4-0",
-              "index": 17.143,
+              "team": "York",
+              "record": "4-4-0",
+              "index": 17.347,
               "qualifying": false
             },
             {
@@ -2380,15 +2380,15 @@
             },
             {
               "rank": 16,
-              "team": "Winslow/Lawrence",
-              "record": "0-8-0",
+              "team": "GNG/Poland Coop",
+              "record": "0-10-0",
               "index": 0.0,
               "qualifying": false
             },
             {
               "rank": 17,
-              "team": "GNG/Poland Coop",
-              "record": "0-10-0",
+              "team": "Winslow/Lawrence",
+              "record": "0-8-0",
               "index": 0.0,
               "qualifying": false
             }
@@ -2400,43 +2400,43 @@
             {
               "rank": 1,
               "team": "Maranacook/Winthrop",
-              "record": "10-0-0",
-              "index": 110.306,
+              "record": "11-0-0",
+              "index": 124.184,
               "qualifying": true
             },
             {
               "rank": 2,
               "team": "Wells",
               "record": "8-2-0",
-              "index": 71.633,
+              "index": 75.408,
               "qualifying": true
             },
             {
               "rank": 3,
               "team": "North Yarmouth Academy",
-              "record": "6-3-0",
-              "index": 60.306,
+              "record": "7-3-0",
+              "index": 71.531,
               "qualifying": true
             },
             {
               "rank": 4,
               "team": "Traip Academy",
               "record": "7-3-0",
-              "index": 54.388,
+              "index": 56.224,
               "qualifying": true
             },
             {
               "rank": 5,
               "team": "Erskine Academy",
-              "record": "7-3-0",
+              "record": "7-4-0",
               "index": 49.303,
               "qualifying": true
             },
             {
               "rank": 6,
               "team": "Waynflete",
-              "record": "3-6-0",
-              "index": 17.449,
+              "record": "4-6-0",
+              "index": 23.367,
               "qualifying": true
             },
             {
@@ -2449,14 +2449,14 @@
             {
               "rank": 8,
               "team": "Lincoln Academy",
-              "record": "3-8-0",
+              "record": "3-9-0",
               "index": 11.037,
               "qualifying": true
             },
             {
               "rank": 9,
               "team": "Lake Region",
-              "record": "3-7-0",
+              "record": "3-8-0",
               "index": 7.041,
               "qualifying": false
             },
@@ -2488,16 +2488,16 @@
           "teams": [
             {
               "rank": 1,
-              "team": "Bangor",
-              "record": "10-2-0",
-              "index": 76.484,
+              "team": "Oxford Hills",
+              "record": "10-1-0",
+              "index": 77.266,
               "qualifying": true
             },
             {
               "rank": 2,
-              "team": "Oxford Hills",
-              "record": "10-1-0",
-              "index": 75.781,
+              "team": "Bangor",
+              "record": "10-2-0",
+              "index": 76.484,
               "qualifying": true
             },
             {
@@ -2578,29 +2578,29 @@
             {
               "rank": 1,
               "team": "Ellsworth",
-              "record": "9-1-0",
-              "index": 62.969,
+              "record": "10-1-0",
+              "index": 73.359,
               "qualifying": true
             },
             {
               "rank": 2,
               "team": "Cony HS",
-              "record": "9-2-0",
-              "index": 54.198,
+              "record": "10-2-0",
+              "index": 54.823,
               "qualifying": true
             },
             {
               "rank": 3,
-              "team": "Hermon",
-              "record": "6-2-0",
-              "index": 46.875,
+              "team": "Mount Desert Island",
+              "record": "7-4-0",
+              "index": 48.203,
               "qualifying": true
             },
             {
               "rank": 4,
-              "team": "Mount Desert Island",
-              "record": "7-4-0",
-              "index": 45.234,
+              "team": "Hermon",
+              "record": "6-2-0",
+              "index": 46.875,
               "qualifying": true
             },
             {
@@ -2633,16 +2633,16 @@
             },
             {
               "rank": 9,
-              "team": "Oceanside",
-              "record": "4-7-0",
-              "index": 24.219,
+              "team": "John Bapst Memorial",
+              "record": "5-6-0",
+              "index": 24.531,
               "qualifying": true
             },
             {
               "rank": 10,
-              "team": "John Bapst Memorial",
-              "record": "5-5-0",
-              "index": 21.563,
+              "team": "Oceanside",
+              "record": "4-7-0",
+              "index": 24.219,
               "qualifying": true
             },
             {
@@ -2654,30 +2654,30 @@
             },
             {
               "rank": 12,
+              "team": "Foxcroft Academy",
+              "record": "2-10-0",
+              "index": 16.172,
+              "qualifying": false
+            },
+            {
+              "rank": 13,
               "team": "Gardiner Area",
               "record": "3-7-0",
               "index": 15.0,
               "qualifying": false
             },
             {
-              "rank": 13,
-              "team": "Foxcroft Academy",
-              "record": "2-9-0",
-              "index": 14.688,
-              "qualifying": false
-            },
-            {
               "rank": 14,
-              "team": "Waterville",
-              "record": "3-8-0",
-              "index": 12.401,
+              "team": "Caribou",
+              "record": "4-7-0",
+              "index": 14.766,
               "qualifying": false
             },
             {
               "rank": 15,
-              "team": "Caribou",
-              "record": "3-7-0",
-              "index": 11.797,
+              "team": "Waterville",
+              "record": "3-8-0",
+              "index": 12.401,
               "qualifying": false
             }
           ]
@@ -2689,28 +2689,28 @@
               "rank": 1,
               "team": "Washington Academy",
               "record": "11-0-0",
-              "index": 88.438,
+              "index": 92.734,
               "qualifying": true
             },
             {
               "rank": 2,
               "team": "Bucksport",
               "record": "9-3-0",
-              "index": 58.482,
+              "index": 61.295,
               "qualifying": true
             },
             {
               "rank": 3,
               "team": "Mattanawcook Academy",
-              "record": "8-2-0",
-              "index": 56.953,
+              "record": "9-2-0",
+              "index": 61.016,
               "qualifying": true
             },
             {
               "rank": 4,
               "team": "George Stevens Academy",
               "record": "7-3-0",
-              "index": 49.81,
+              "index": 54.029,
               "qualifying": true
             },
             {
@@ -2723,15 +2723,15 @@
             {
               "rank": 6,
               "team": "Sumner Memorial",
-              "record": "5-6-0",
-              "index": 34.609,
+              "record": "5-7-0",
+              "index": 36.216,
               "qualifying": true
             },
             {
               "rank": 7,
               "team": "Calais",
-              "record": "7-2-0",
-              "index": 26.131,
+              "record": "8-2-0",
+              "index": 29.568,
               "qualifying": true
             },
             {
@@ -2743,50 +2743,50 @@
             },
             {
               "rank": 9,
+              "team": "Narraguagus Sr",
+              "record": "5-8-0",
+              "index": 13.876,
+              "qualifying": true
+            },
+            {
+              "rank": 10,
               "team": "Orono",
               "record": "3-8-0",
               "index": 13.594,
               "qualifying": true
             },
             {
-              "rank": 10,
+              "rank": 11,
               "team": "Fort Kent Community",
               "record": "4-8-0",
               "index": 11.964,
-              "qualifying": true
+              "qualifying": false
             },
             {
-              "rank": 11,
+              "rank": 12,
               "team": "Maine Central Institute",
               "record": "4-8-0",
               "index": 6.875,
               "qualifying": false
             },
             {
-              "rank": 12,
-              "team": "Narraguagus Sr",
-              "record": "4-8-0",
-              "index": 6.198,
-              "qualifying": false
-            },
-            {
               "rank": 13,
               "team": "Central",
-              "record": "2-6-0",
+              "record": "2-7-0",
               "index": 3.036,
               "qualifying": false
             },
             {
               "rank": 14,
               "team": "Houlton/Greater Houlton",
-              "record": "0-8-0",
+              "record": "0-9-0",
               "index": 0.0,
               "qualifying": false
             },
             {
               "rank": 15,
               "team": "Winslow",
-              "record": "0-9-0",
+              "record": "0-10-0",
               "index": 0.0,
               "qualifying": false
             }
@@ -2799,7 +2799,7 @@
               "rank": 1,
               "team": "Bangor Christian",
               "record": "9-1-0",
-              "index": 59.721,
+              "index": 64.275,
               "qualifying": true
             },
             {
@@ -2818,23 +2818,23 @@
             },
             {
               "rank": 4,
-              "team": "Washburn/Easton/Central Aroostook",
-              "record": "5-6-0",
-              "index": 26.735,
+              "team": "Stearns Sr.",
+              "record": "6-3-0",
+              "index": 29.978,
               "qualifying": true
             },
             {
               "rank": 5,
-              "team": "Stearns Sr.",
-              "record": "6-3-0",
-              "index": 25.424,
+              "team": "Penobscot Valley",
+              "record": "7-3-0",
+              "index": 29.273,
               "qualifying": true
             },
             {
               "rank": 6,
-              "team": "Penobscot Valley",
-              "record": "6-3-0",
-              "index": 24.286,
+              "team": "Washburn/Easton/Central Aroostook",
+              "record": "5-6-0",
+              "index": 26.735,
               "qualifying": true
             },
             {
@@ -2869,21 +2869,21 @@
               "rank": 11,
               "team": "Machias Memorial",
               "record": "7-4-0",
-              "index": 14.583,
+              "index": 16.19,
               "qualifying": true
             },
             {
               "rank": 12,
               "team": "Schenck",
-              "record": "2-6-0",
-              "index": 8.457,
+              "record": "3-6-0",
+              "index": 9.171,
               "qualifying": true
             },
             {
               "rank": 13,
               "team": "Lee Academy",
               "record": "4-5-0",
-              "index": 6.633,
+              "index": 8.367,
               "qualifying": false
             },
             {
@@ -2903,14 +2903,14 @@
             {
               "rank": 16,
               "team": "Woodland Sr.",
-              "record": "1-6-0",
+              "record": "1-7-0",
               "index": 0.625,
               "qualifying": false
             },
             {
               "rank": 17,
               "team": "Shead",
-              "record": "0-8-0",
+              "record": "0-9-0",
               "index": 0.0,
               "qualifying": false
             },
@@ -2929,105 +2929,105 @@
             {
               "rank": 1,
               "team": "Gorham",
-              "record": "9-1-0",
-              "index": 79.688,
+              "record": "10-1-0",
+              "index": 93.75,
               "qualifying": true
             },
             {
               "rank": 2,
               "team": "Cheverus",
               "record": "10-1-0",
-              "index": 56.875,
+              "index": 63.125,
               "qualifying": true
             },
             {
               "rank": 3,
               "team": "Thornton Academy",
-              "record": "7-2-0",
-              "index": 49.063,
+              "record": "8-2-0",
+              "index": 53.75,
               "qualifying": true
             },
             {
               "rank": 4,
               "team": "Massabesic",
               "record": "8-2-0",
-              "index": 49.063,
+              "index": 52.188,
               "qualifying": true
             },
             {
               "rank": 5,
-              "team": "South Portland",
-              "record": "9-1-0",
-              "index": 47.5,
+              "team": "Scarborough",
+              "record": "8-3-0",
+              "index": 51.563,
               "qualifying": true
             },
             {
               "rank": 6,
-              "team": "Scarborough",
-              "record": "7-3-0",
-              "index": 39.063,
+              "team": "South Portland",
+              "record": "9-1-0",
+              "index": 50.625,
               "qualifying": true
             },
             {
               "rank": 7,
-              "team": "Bonny Eagle",
-              "record": "7-3-0",
-              "index": 30.313,
+              "team": "Sanford",
+              "record": "6-5-0",
+              "index": 36.563,
               "qualifying": true
             },
             {
               "rank": 8,
-              "team": "Falmouth",
-              "record": "6-4-0",
-              "index": 27.188,
+              "team": "Bonny Eagle",
+              "record": "7-4-0",
+              "index": 30.313,
               "qualifying": true
             },
             {
               "rank": 9,
-              "team": "Sanford",
-              "record": "5-5-0",
-              "index": 27.188,
+              "team": "Falmouth",
+              "record": "6-5-0",
+              "index": 28.75,
               "qualifying": true
             },
             {
               "rank": 10,
               "team": "Noble",
               "record": "5-6-0",
-              "index": 20.313,
+              "index": 23.438,
               "qualifying": true
             },
             {
               "rank": 11,
               "team": "Kennebunk",
-              "record": "5-6-0",
-              "index": 11.563,
+              "record": "5-7-0",
+              "index": 13.125,
               "qualifying": true
             },
             {
               "rank": 12,
-              "team": "Marshwood",
-              "record": "2-8-0",
-              "index": 4.688,
+              "team": "Biddeford",
+              "record": "4-8-0",
+              "index": 6.875,
               "qualifying": true
             },
             {
               "rank": 13,
-              "team": "Biddeford",
-              "record": "3-8-0",
-              "index": 3.75,
+              "team": "Marshwood",
+              "record": "2-8-0",
+              "index": 4.688,
               "qualifying": false
             },
             {
               "rank": 14,
               "team": "Deering",
-              "record": "2-9-0",
+              "record": "2-10-0",
               "index": 3.125,
               "qualifying": false
             },
             {
               "rank": 15,
               "team": "Windham",
-              "record": "1-9-0",
+              "record": "1-10-0",
               "index": 0.625,
               "qualifying": false
             },
@@ -3052,37 +3052,37 @@
           "teams": [
             {
               "rank": 1,
-              "team": "Leavitt Area",
-              "record": "11-1-0",
-              "index": 73.526,
+              "team": "Fryeburg Academy",
+              "record": "10-2-0",
+              "index": 82.339,
               "qualifying": true
             },
             {
               "rank": 2,
-              "team": "Fryeburg Academy",
-              "record": "9-2-0",
-              "index": 73.354,
+              "team": "Leavitt Area",
+              "record": "11-1-0",
+              "index": 74.932,
               "qualifying": true
             },
             {
               "rank": 3,
-              "team": "Yarmouth",
-              "record": "7-4-0",
-              "index": 61.26,
+              "team": "Lake Region",
+              "record": "7-5-0",
+              "index": 63.943,
               "qualifying": true
             },
             {
               "rank": 4,
-              "team": "Lake Region",
-              "record": "7-5-0",
-              "index": 60.974,
+              "team": "Cape Elizabeth",
+              "record": "8-3-0",
+              "index": 63.083,
               "qualifying": true
             },
             {
               "rank": 5,
-              "team": "Cape Elizabeth",
-              "record": "7-3-0",
-              "index": 55.583,
+              "team": "Yarmouth",
+              "record": "7-4-0",
+              "index": 61.26,
               "qualifying": true
             },
             {
@@ -3095,8 +3095,8 @@
             {
               "rank": 7,
               "team": "Greely",
-              "record": "5-3-0",
-              "index": 41.797,
+              "record": "5-5-0",
+              "index": 43.281,
               "qualifying": true
             },
             {
@@ -3137,7 +3137,7 @@
             {
               "rank": 13,
               "team": "Mountain Valley",
-              "record": "5-4-0",
+              "record": "5-5-0",
               "index": 13.828,
               "qualifying": false
             },
@@ -3166,7 +3166,7 @@
               "rank": 17,
               "team": "Spruce Mountain",
               "record": "2-7-0",
-              "index": 4.49,
+              "index": 4.297,
               "qualifying": false
             }
           ]
@@ -3176,23 +3176,23 @@
           "teams": [
             {
               "rank": 1,
-              "team": "Old Orchard Beach",
-              "record": "9-1-0",
-              "index": 64.132,
+              "team": "Monmouth Academy",
+              "record": "10-1-0",
+              "index": 64.589,
               "qualifying": true
             },
             {
               "rank": 2,
-              "team": "Maranacook Community",
+              "team": "Old Orchard Beach",
               "record": "9-1-0",
-              "index": 63.622,
+              "index": 64.241,
               "qualifying": true
             },
             {
               "rank": 3,
-              "team": "Monmouth Academy",
+              "team": "Maranacook Community",
               "record": "10-1-0",
-              "index": 60.406,
+              "index": 63.828,
               "qualifying": true
             },
             {
@@ -3204,58 +3204,58 @@
             },
             {
               "rank": 5,
-              "team": "Lisbon",
-              "record": "6-3-0",
-              "index": 31.635,
+              "team": "Waynflete/NYA Coop",
+              "record": "6-4-0",
+              "index": 32.913,
               "qualifying": true
             },
             {
               "rank": 6,
-              "team": "Waynflete/NYA Coop",
-              "record": "6-4-0",
-              "index": 31.429,
+              "team": "Lisbon",
+              "record": "6-3-0",
+              "index": 32.734,
               "qualifying": true
             },
             {
               "rank": 7,
-              "team": "Winthrop",
-              "record": "5-5-0",
-              "index": 18.474,
+              "team": "Mt. Abram",
+              "record": "5-6-0",
+              "index": 23.906,
               "qualifying": true
             },
             {
               "rank": 8,
+              "team": "Winthrop",
+              "record": "5-5-0",
+              "index": 19.766,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
               "team": "Dirigo",
               "record": "3-7-0",
               "index": 17.969,
               "qualifying": true
             },
             {
-              "rank": 9,
+              "rank": 10,
               "team": "Oak Hill",
               "record": "5-5-0",
               "index": 17.578,
-              "qualifying": true
+              "qualifying": false
             },
             {
-              "rank": 10,
+              "rank": 11,
               "team": "Hall-Dale HS",
               "record": "4-7-0",
               "index": 16.953,
               "qualifying": false
             },
             {
-              "rank": 11,
-              "team": "Mt. Abram",
-              "record": "4-6-0",
-              "index": 16.875,
-              "qualifying": false
-            },
-            {
               "rank": 12,
               "team": "Carrabec",
               "record": "3-9-0",
-              "index": 12.866,
+              "index": 14.283,
               "qualifying": false
             },
             {
@@ -3274,21 +3274,21 @@
               "rank": 1,
               "team": "Richmond HS",
               "record": "9-0-0",
-              "index": 43.475,
+              "index": 47.72,
               "qualifying": true
             },
             {
               "rank": 2,
               "team": "Buckfield HS",
               "record": "9-4-0",
-              "index": 43.083,
+              "index": 47.062,
               "qualifying": true
             },
             {
               "rank": 3,
               "team": "Telstar Regional",
               "record": "7-2-0",
-              "index": 32.71,
+              "index": 35.272,
               "qualifying": true
             },
             {
@@ -3302,42 +3302,42 @@
               "rank": 5,
               "team": "Valley HS",
               "record": "4-2-0",
-              "index": 16.389,
+              "index": 17.917,
               "qualifying": true
             },
             {
               "rank": 6,
               "team": "Forest Hills Consolidated",
-              "record": "3-6-0",
-              "index": 15.111,
+              "record": "4-7-0",
+              "index": 17.0,
               "qualifying": true
             },
             {
               "rank": 7,
               "team": "Madison High School",
-              "record": "2-8-0",
-              "index": 13.583,
+              "record": "2-9-0",
+              "index": 12.734,
               "qualifying": true
             },
             {
               "rank": 8,
-              "team": "Boothbay Region",
-              "record": "1-8-0",
-              "index": 5.703,
+              "team": "Temple Academy",
+              "record": "1-7-0",
+              "index": 7.556,
               "qualifying": true
             },
             {
               "rank": 9,
-              "team": "Greenville",
-              "record": "2-6-0",
-              "index": 1.667,
+              "team": "Boothbay Region",
+              "record": "1-8-0",
+              "index": 5.703,
               "qualifying": false
             },
             {
               "rank": 10,
-              "team": "Temple Academy",
-              "record": "0-6-0",
-              "index": 0.0,
+              "team": "Greenville",
+              "record": "2-6-0",
+              "index": 4.722,
               "qualifying": false
             }
           ]
@@ -3354,16 +3354,16 @@
           "teams": [
             {
               "rank": 1,
-              "team": "Bangor",
-              "record": "10-2-0",
-              "index": 76.484,
+              "team": "Oxford Hills",
+              "record": "10-1-0",
+              "index": 77.266,
               "qualifying": true
             },
             {
               "rank": 2,
-              "team": "Oxford Hills",
-              "record": "10-1-0",
-              "index": 75.781,
+              "team": "Bangor",
+              "record": "10-2-0",
+              "index": 76.484,
               "qualifying": true
             },
             {
@@ -3444,29 +3444,29 @@
             {
               "rank": 1,
               "team": "Ellsworth",
-              "record": "9-1-0",
-              "index": 62.969,
+              "record": "10-1-0",
+              "index": 73.359,
               "qualifying": true
             },
             {
               "rank": 2,
               "team": "Cony HS",
-              "record": "9-2-0",
-              "index": 54.198,
+              "record": "10-2-0",
+              "index": 54.823,
               "qualifying": true
             },
             {
               "rank": 3,
-              "team": "Hermon",
-              "record": "6-2-0",
-              "index": 46.875,
+              "team": "Mount Desert Island",
+              "record": "7-4-0",
+              "index": 48.203,
               "qualifying": true
             },
             {
               "rank": 4,
-              "team": "Mount Desert Island",
-              "record": "7-4-0",
-              "index": 45.234,
+              "team": "Hermon",
+              "record": "6-2-0",
+              "index": 46.875,
               "qualifying": true
             },
             {
@@ -3499,16 +3499,16 @@
             },
             {
               "rank": 9,
-              "team": "Oceanside",
-              "record": "4-7-0",
-              "index": 24.219,
+              "team": "John Bapst Memorial",
+              "record": "5-6-0",
+              "index": 24.531,
               "qualifying": true
             },
             {
               "rank": 10,
-              "team": "John Bapst Memorial",
-              "record": "5-5-0",
-              "index": 21.563,
+              "team": "Oceanside",
+              "record": "4-7-0",
+              "index": 24.219,
               "qualifying": true
             },
             {
@@ -3520,30 +3520,30 @@
             },
             {
               "rank": 12,
+              "team": "Foxcroft Academy",
+              "record": "2-10-0",
+              "index": 16.172,
+              "qualifying": false
+            },
+            {
+              "rank": 13,
               "team": "Gardiner Area",
               "record": "3-7-0",
               "index": 15.0,
               "qualifying": false
             },
             {
-              "rank": 13,
-              "team": "Foxcroft Academy",
-              "record": "2-9-0",
-              "index": 14.688,
-              "qualifying": false
-            },
-            {
               "rank": 14,
-              "team": "Waterville",
-              "record": "3-8-0",
-              "index": 12.401,
+              "team": "Caribou",
+              "record": "4-7-0",
+              "index": 14.766,
               "qualifying": false
             },
             {
               "rank": 15,
-              "team": "Caribou",
-              "record": "3-7-0",
-              "index": 11.797,
+              "team": "Waterville",
+              "record": "3-8-0",
+              "index": 12.401,
               "qualifying": false
             }
           ]
@@ -3555,28 +3555,28 @@
               "rank": 1,
               "team": "Washington Academy",
               "record": "11-0-0",
-              "index": 88.438,
+              "index": 92.734,
               "qualifying": true
             },
             {
               "rank": 2,
               "team": "Bucksport",
               "record": "9-3-0",
-              "index": 58.482,
+              "index": 61.295,
               "qualifying": true
             },
             {
               "rank": 3,
               "team": "Mattanawcook Academy",
-              "record": "8-2-0",
-              "index": 56.953,
+              "record": "9-2-0",
+              "index": 61.016,
               "qualifying": true
             },
             {
               "rank": 4,
               "team": "George Stevens Academy",
               "record": "7-3-0",
-              "index": 49.81,
+              "index": 54.029,
               "qualifying": true
             },
             {
@@ -3589,15 +3589,15 @@
             {
               "rank": 6,
               "team": "Sumner Memorial",
-              "record": "5-6-0",
-              "index": 34.609,
+              "record": "5-7-0",
+              "index": 36.216,
               "qualifying": true
             },
             {
               "rank": 7,
               "team": "Calais",
-              "record": "7-2-0",
-              "index": 26.131,
+              "record": "8-2-0",
+              "index": 29.568,
               "qualifying": true
             },
             {
@@ -3609,50 +3609,50 @@
             },
             {
               "rank": 9,
+              "team": "Narraguagus Sr",
+              "record": "5-8-0",
+              "index": 13.876,
+              "qualifying": true
+            },
+            {
+              "rank": 10,
               "team": "Orono",
               "record": "3-8-0",
               "index": 13.594,
               "qualifying": true
             },
             {
-              "rank": 10,
+              "rank": 11,
               "team": "Fort Kent Community",
               "record": "4-8-0",
               "index": 11.964,
-              "qualifying": true
+              "qualifying": false
             },
             {
-              "rank": 11,
+              "rank": 12,
               "team": "Maine Central Institute",
               "record": "4-8-0",
               "index": 6.875,
               "qualifying": false
             },
             {
-              "rank": 12,
-              "team": "Narraguagus Sr",
-              "record": "4-8-0",
-              "index": 6.198,
-              "qualifying": false
-            },
-            {
               "rank": 13,
               "team": "Central",
-              "record": "2-6-0",
+              "record": "2-7-0",
               "index": 3.036,
               "qualifying": false
             },
             {
               "rank": 14,
               "team": "Houlton/Greater Houlton",
-              "record": "0-8-0",
+              "record": "0-9-0",
               "index": 0.0,
               "qualifying": false
             },
             {
               "rank": 15,
               "team": "Winslow",
-              "record": "0-9-0",
+              "record": "0-10-0",
               "index": 0.0,
               "qualifying": false
             }
@@ -3665,7 +3665,7 @@
               "rank": 1,
               "team": "Bangor Christian",
               "record": "9-1-0",
-              "index": 59.721,
+              "index": 64.275,
               "qualifying": true
             },
             {
@@ -3684,23 +3684,23 @@
             },
             {
               "rank": 4,
-              "team": "Washburn/Easton/Central Aroostook",
-              "record": "5-6-0",
-              "index": 26.735,
+              "team": "Stearns Sr.",
+              "record": "6-3-0",
+              "index": 29.978,
               "qualifying": true
             },
             {
               "rank": 5,
-              "team": "Stearns Sr.",
-              "record": "6-3-0",
-              "index": 25.424,
+              "team": "Penobscot Valley",
+              "record": "7-3-0",
+              "index": 29.273,
               "qualifying": true
             },
             {
               "rank": 6,
-              "team": "Penobscot Valley",
-              "record": "6-3-0",
-              "index": 24.286,
+              "team": "Washburn/Easton/Central Aroostook",
+              "record": "5-6-0",
+              "index": 26.735,
               "qualifying": true
             },
             {
@@ -3735,21 +3735,21 @@
               "rank": 11,
               "team": "Machias Memorial",
               "record": "7-4-0",
-              "index": 14.583,
+              "index": 16.19,
               "qualifying": true
             },
             {
               "rank": 12,
               "team": "Schenck",
-              "record": "2-6-0",
-              "index": 8.457,
+              "record": "3-6-0",
+              "index": 9.171,
               "qualifying": true
             },
             {
               "rank": 13,
               "team": "Lee Academy",
               "record": "4-5-0",
-              "index": 6.633,
+              "index": 8.367,
               "qualifying": false
             },
             {
@@ -3769,14 +3769,14 @@
             {
               "rank": 16,
               "team": "Woodland Sr.",
-              "record": "1-6-0",
+              "record": "1-7-0",
               "index": 0.625,
               "qualifying": false
             },
             {
               "rank": 17,
               "team": "Shead",
-              "record": "0-8-0",
+              "record": "0-9-0",
               "index": 0.0,
               "qualifying": false
             },
@@ -3795,105 +3795,105 @@
             {
               "rank": 1,
               "team": "Gorham",
-              "record": "9-1-0",
-              "index": 79.688,
+              "record": "10-1-0",
+              "index": 93.75,
               "qualifying": true
             },
             {
               "rank": 2,
               "team": "Cheverus",
               "record": "10-1-0",
-              "index": 56.875,
+              "index": 63.125,
               "qualifying": true
             },
             {
               "rank": 3,
               "team": "Thornton Academy",
-              "record": "7-2-0",
-              "index": 49.063,
+              "record": "8-2-0",
+              "index": 53.75,
               "qualifying": true
             },
             {
               "rank": 4,
               "team": "Massabesic",
               "record": "8-2-0",
-              "index": 49.063,
+              "index": 52.188,
               "qualifying": true
             },
             {
               "rank": 5,
-              "team": "South Portland",
-              "record": "9-1-0",
-              "index": 47.5,
+              "team": "Scarborough",
+              "record": "8-3-0",
+              "index": 51.563,
               "qualifying": true
             },
             {
               "rank": 6,
-              "team": "Scarborough",
-              "record": "7-3-0",
-              "index": 39.063,
+              "team": "South Portland",
+              "record": "9-1-0",
+              "index": 50.625,
               "qualifying": true
             },
             {
               "rank": 7,
-              "team": "Bonny Eagle",
-              "record": "7-3-0",
-              "index": 30.313,
+              "team": "Sanford",
+              "record": "6-5-0",
+              "index": 36.563,
               "qualifying": true
             },
             {
               "rank": 8,
-              "team": "Falmouth",
-              "record": "6-4-0",
-              "index": 27.188,
+              "team": "Bonny Eagle",
+              "record": "7-4-0",
+              "index": 30.313,
               "qualifying": true
             },
             {
               "rank": 9,
-              "team": "Sanford",
-              "record": "5-5-0",
-              "index": 27.188,
+              "team": "Falmouth",
+              "record": "6-5-0",
+              "index": 28.75,
               "qualifying": true
             },
             {
               "rank": 10,
               "team": "Noble",
               "record": "5-6-0",
-              "index": 20.313,
+              "index": 23.438,
               "qualifying": true
             },
             {
               "rank": 11,
               "team": "Kennebunk",
-              "record": "5-6-0",
-              "index": 11.563,
+              "record": "5-7-0",
+              "index": 13.125,
               "qualifying": true
             },
             {
               "rank": 12,
-              "team": "Marshwood",
-              "record": "2-8-0",
-              "index": 4.688,
+              "team": "Biddeford",
+              "record": "4-8-0",
+              "index": 6.875,
               "qualifying": true
             },
             {
               "rank": 13,
-              "team": "Biddeford",
-              "record": "3-8-0",
-              "index": 3.75,
+              "team": "Marshwood",
+              "record": "2-8-0",
+              "index": 4.688,
               "qualifying": false
             },
             {
               "rank": 14,
               "team": "Deering",
-              "record": "2-9-0",
+              "record": "2-10-0",
               "index": 3.125,
               "qualifying": false
             },
             {
               "rank": 15,
               "team": "Windham",
-              "record": "1-9-0",
+              "record": "1-10-0",
               "index": 0.625,
               "qualifying": false
             },
@@ -3918,37 +3918,37 @@
           "teams": [
             {
               "rank": 1,
-              "team": "Leavitt Area",
-              "record": "11-1-0",
-              "index": 73.526,
+              "team": "Fryeburg Academy",
+              "record": "10-2-0",
+              "index": 82.339,
               "qualifying": true
             },
             {
               "rank": 2,
-              "team": "Fryeburg Academy",
-              "record": "9-2-0",
-              "index": 73.354,
+              "team": "Leavitt Area",
+              "record": "11-1-0",
+              "index": 74.932,
               "qualifying": true
             },
             {
               "rank": 3,
-              "team": "Yarmouth",
-              "record": "7-4-0",
-              "index": 61.26,
+              "team": "Lake Region",
+              "record": "7-5-0",
+              "index": 63.943,
               "qualifying": true
             },
             {
               "rank": 4,
-              "team": "Lake Region",
-              "record": "7-5-0",
-              "index": 60.974,
+              "team": "Cape Elizabeth",
+              "record": "8-3-0",
+              "index": 63.083,
               "qualifying": true
             },
             {
               "rank": 5,
-              "team": "Cape Elizabeth",
-              "record": "7-3-0",
-              "index": 55.583,
+              "team": "Yarmouth",
+              "record": "7-4-0",
+              "index": 61.26,
               "qualifying": true
             },
             {
@@ -3961,8 +3961,8 @@
             {
               "rank": 7,
               "team": "Greely",
-              "record": "5-3-0",
-              "index": 41.797,
+              "record": "5-5-0",
+              "index": 43.281,
               "qualifying": true
             },
             {
@@ -4003,7 +4003,7 @@
             {
               "rank": 13,
               "team": "Mountain Valley",
-              "record": "5-4-0",
+              "record": "5-5-0",
               "index": 13.828,
               "qualifying": false
             },
@@ -4032,7 +4032,7 @@
               "rank": 17,
               "team": "Spruce Mountain",
               "record": "2-7-0",
-              "index": 4.49,
+              "index": 4.297,
               "qualifying": false
             }
           ]
@@ -4042,23 +4042,23 @@
           "teams": [
             {
               "rank": 1,
-              "team": "Old Orchard Beach",
-              "record": "9-1-0",
-              "index": 64.132,
+              "team": "Monmouth Academy",
+              "record": "10-1-0",
+              "index": 64.589,
               "qualifying": true
             },
             {
               "rank": 2,
-              "team": "Maranacook Community",
+              "team": "Old Orchard Beach",
               "record": "9-1-0",
-              "index": 63.622,
+              "index": 64.241,
               "qualifying": true
             },
             {
               "rank": 3,
-              "team": "Monmouth Academy",
+              "team": "Maranacook Community",
               "record": "10-1-0",
-              "index": 60.406,
+              "index": 63.828,
               "qualifying": true
             },
             {
@@ -4070,58 +4070,58 @@
             },
             {
               "rank": 5,
-              "team": "Lisbon",
-              "record": "6-3-0",
-              "index": 31.635,
+              "team": "Waynflete/NYA Coop",
+              "record": "6-4-0",
+              "index": 32.913,
               "qualifying": true
             },
             {
               "rank": 6,
-              "team": "Waynflete/NYA Coop",
-              "record": "6-4-0",
-              "index": 31.429,
+              "team": "Lisbon",
+              "record": "6-3-0",
+              "index": 32.734,
               "qualifying": true
             },
             {
               "rank": 7,
-              "team": "Winthrop",
-              "record": "5-5-0",
-              "index": 18.474,
+              "team": "Mt. Abram",
+              "record": "5-6-0",
+              "index": 23.906,
               "qualifying": true
             },
             {
               "rank": 8,
+              "team": "Winthrop",
+              "record": "5-5-0",
+              "index": 19.766,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
               "team": "Dirigo",
               "record": "3-7-0",
               "index": 17.969,
               "qualifying": true
             },
             {
-              "rank": 9,
+              "rank": 10,
               "team": "Oak Hill",
               "record": "5-5-0",
               "index": 17.578,
-              "qualifying": true
+              "qualifying": false
             },
             {
-              "rank": 10,
+              "rank": 11,
               "team": "Hall-Dale HS",
               "record": "4-7-0",
               "index": 16.953,
               "qualifying": false
             },
             {
-              "rank": 11,
-              "team": "Mt. Abram",
-              "record": "4-6-0",
-              "index": 16.875,
-              "qualifying": false
-            },
-            {
               "rank": 12,
               "team": "Carrabec",
               "record": "3-9-0",
-              "index": 12.866,
+              "index": 14.283,
               "qualifying": false
             },
             {
@@ -4140,21 +4140,21 @@
               "rank": 1,
               "team": "Richmond HS",
               "record": "9-0-0",
-              "index": 43.475,
+              "index": 47.72,
               "qualifying": true
             },
             {
               "rank": 2,
               "team": "Buckfield HS",
               "record": "9-4-0",
-              "index": 43.083,
+              "index": 47.062,
               "qualifying": true
             },
             {
               "rank": 3,
               "team": "Telstar Regional",
               "record": "7-2-0",
-              "index": 32.71,
+              "index": 35.272,
               "qualifying": true
             },
             {
@@ -4168,42 +4168,42 @@
               "rank": 5,
               "team": "Valley HS",
               "record": "4-2-0",
-              "index": 16.389,
+              "index": 17.917,
               "qualifying": true
             },
             {
               "rank": 6,
               "team": "Forest Hills Consolidated",
-              "record": "3-6-0",
-              "index": 15.111,
+              "record": "4-7-0",
+              "index": 17.0,
               "qualifying": true
             },
             {
               "rank": 7,
               "team": "Madison High School",
-              "record": "2-8-0",
-              "index": 13.583,
+              "record": "2-9-0",
+              "index": 12.734,
               "qualifying": true
             },
             {
               "rank": 8,
-              "team": "Boothbay Region",
-              "record": "1-8-0",
-              "index": 5.703,
+              "team": "Temple Academy",
+              "record": "1-7-0",
+              "index": 7.556,
               "qualifying": true
             },
             {
               "rank": 9,
-              "team": "Greenville",
-              "record": "2-6-0",
-              "index": 1.667,
+              "team": "Boothbay Region",
+              "record": "1-8-0",
+              "index": 5.703,
               "qualifying": false
             },
             {
               "rank": 10,
-              "team": "Temple Academy",
-              "record": "0-6-0",
-              "index": 0.0,
+              "team": "Greenville",
+              "record": "2-6-0",
+              "index": 4.722,
               "qualifying": false
             }
           ]
@@ -4222,49 +4222,49 @@
               "rank": 1,
               "team": "Camden Hills Regional",
               "record": "8-0-0",
-              "index": 97.083,
+              "index": 99.861,
               "qualifying": true
             },
             {
               "rank": 2,
-              "team": "Mt. Ararat",
-              "record": "7-3-0",
-              "index": 71.944,
+              "team": "Brunswick",
+              "record": "7-2-0",
+              "index": 82.917,
               "qualifying": true
             },
             {
               "rank": 3,
-              "team": "Brunswick",
-              "record": "6-2-0",
-              "index": 71.806,
+              "team": "Mt. Ararat",
+              "record": "7-3-0",
+              "index": 74.583,
               "qualifying": true
             },
             {
               "rank": 4,
               "team": "Bangor",
               "record": "8-1-0",
-              "index": 54.306,
+              "index": 56.944,
               "qualifying": true
             },
             {
               "rank": 5,
               "team": "Mt. Blue",
               "record": "7-4-0",
-              "index": 41.25,
+              "index": 43.889,
               "qualifying": true
             },
             {
               "rank": 6,
               "team": "Messalonskee",
-              "record": "4-5-0",
-              "index": 38.611,
+              "record": "4-6-0",
+              "index": 41.25,
               "qualifying": true
             },
             {
               "rank": 7,
               "team": "Hampden Academy",
-              "record": "4-4-0",
-              "index": 30.278,
+              "record": "5-4-0",
+              "index": 38.194,
               "qualifying": true
             },
             {
@@ -4304,56 +4304,56 @@
               "rank": 1,
               "team": "Caribou",
               "record": "9-0-0",
-              "index": 93.081,
+              "index": 100.581,
               "qualifying": true
             },
             {
               "rank": 2,
-              "team": "Hermon",
+              "team": "Presque Isle",
               "record": "8-1-0",
-              "index": 59.722,
+              "index": 69.192,
               "qualifying": true
             },
             {
               "rank": 3,
-              "team": "Presque Isle",
+              "team": "Hermon",
               "record": "8-1-0",
-              "index": 56.414,
+              "index": 65.0,
               "qualifying": true
             },
             {
               "rank": 4,
               "team": "Foxcroft Academy",
               "record": "6-2-0",
-              "index": 56.111,
+              "index": 64.028,
               "qualifying": true
             },
             {
               "rank": 5,
               "team": "Waterville",
-              "record": "6-4-0",
-              "index": 50.833,
+              "record": "7-4-0",
+              "index": 56.944,
               "qualifying": true
             },
             {
               "rank": 6,
               "team": "Old Town",
               "record": "5-4-0",
-              "index": 40.417,
+              "index": 43.056,
               "qualifying": true
             },
             {
               "rank": 7,
               "team": "Oceanside",
               "record": "2-7-0",
-              "index": 10.417,
+              "index": 13.056,
               "qualifying": true
             },
             {
               "rank": 8,
               "team": "Belfast Area",
-              "record": "1-7-0",
-              "index": 7.778,
+              "record": "2-7-0",
+              "index": 8.611,
               "qualifying": true
             },
             {
@@ -4366,14 +4366,14 @@
             {
               "rank": 10,
               "team": "Mount Desert Island",
-              "record": "1-7-0",
-              "index": 0.833,
+              "record": "2-8-0",
+              "index": 1.667,
               "qualifying": false
             },
             {
               "rank": 11,
               "team": "Ellsworth",
-              "record": "0-10-0",
+              "record": "0-11-0",
               "index": 0.0,
               "qualifying": false
             }
@@ -4386,7 +4386,7 @@
               "rank": 1,
               "team": "Maine Central Institute",
               "record": "10-0-0",
-              "index": 98.422,
+              "index": 103.699,
               "qualifying": true
             },
             {
@@ -4400,62 +4400,62 @@
               "rank": 3,
               "team": "Mattanawcook Academy",
               "record": "6-3-0",
-              "index": 62.5,
+              "index": 67.5,
               "qualifying": true
             },
             {
               "rank": 4,
               "team": "Washington Academy",
               "record": "6-2-0",
-              "index": 51.212,
+              "index": 56.667,
               "qualifying": true
             },
             {
               "rank": 5,
-              "team": "Schenck/Stearns Coop",
-              "record": "5-6-0",
-              "index": 38.5,
+              "team": "Dexter Regional",
+              "record": "7-2-0",
+              "index": 42.121,
               "qualifying": true
             },
             {
               "rank": 6,
-              "team": "Houlton/GHCA/S.Aroostook",
-              "record": "4-5-0",
-              "index": 33.818,
+              "team": "Schenck/Stearns Coop",
+              "record": "6-6-0",
+              "index": 41.833,
               "qualifying": true
             },
             {
               "rank": 7,
-              "team": "Dexter Regional",
-              "record": "6-2-0",
-              "index": 29.621,
+              "team": "Houlton/GHCA/S.Aroostook",
+              "record": "4-5-0",
+              "index": 39.273,
               "qualifying": true
             },
             {
               "rank": 8,
+              "team": "Fort Kent Community",
+              "record": "4-4-0",
+              "index": 26.628,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
               "team": "Calais",
               "record": "5-0-0",
               "index": 26.612,
               "qualifying": true
             },
             {
-              "rank": 9,
-              "team": "Fort Kent Community",
-              "record": "4-4-0",
-              "index": 22.537,
-              "qualifying": true
-            },
-            {
               "rank": 10,
               "team": "Madawaska HS",
-              "record": "1-5-0",
-              "index": 4.5,
+              "record": "2-5-0",
+              "index": 9.0,
               "qualifying": true
             },
             {
               "rank": 11,
               "team": "Penobscot Valley",
-              "record": "4-7-0",
+              "record": "4-8-0",
               "index": 3.333,
               "qualifying": false
             },
@@ -4469,14 +4469,14 @@
             {
               "rank": 13,
               "team": "Van Buren District",
-              "record": "1-8-0",
+              "record": "1-9-0",
               "index": 3.273,
               "qualifying": false
             },
             {
               "rank": 14,
               "team": "Woodland Sr.",
-              "record": "0-7-0",
+              "record": "0-8-0",
               "index": 0.0,
               "qualifying": false
             },
@@ -4517,21 +4517,21 @@
               "rank": 4,
               "team": "Portland",
               "record": "8-2-0",
-              "index": 75.833,
+              "index": 78.611,
               "qualifying": true
             },
             {
               "rank": 5,
               "team": "Gorham",
               "record": "7-3-0",
-              "index": 69.444,
+              "index": 72.222,
               "qualifying": true
             },
             {
               "rank": 6,
               "team": "Marshwood",
               "record": "8-2-0",
-              "index": 48.056,
+              "index": 50.833,
               "qualifying": true
             },
             {
@@ -4545,56 +4545,56 @@
               "rank": 8,
               "team": "South Portland",
               "record": "5-5-0",
-              "index": 20.278,
+              "index": 23.056,
               "qualifying": true
             },
             {
               "rank": 9,
               "team": "Deering",
               "record": "5-5-0",
-              "index": 14.722,
+              "index": 17.5,
               "qualifying": true
             },
             {
               "rank": 10,
+              "team": "Windham",
+              "record": "4-5-0",
+              "index": 14.722,
+              "qualifying": true
+            },
+            {
+              "rank": 11,
               "team": "Kennebunk",
               "record": "1-9-0",
               "index": 13.889,
               "qualifying": true
             },
             {
-              "rank": 11,
-              "team": "Windham",
-              "record": "4-5-0",
-              "index": 11.944,
-              "qualifying": true
-            },
-            {
               "rank": 12,
               "team": "Westbrook",
               "record": "3-7-0",
-              "index": 6.389,
+              "index": 9.167,
               "qualifying": false
             },
             {
               "rank": 13,
-              "team": "Massabesic",
-              "record": "1-7-0",
-              "index": 5.556,
+              "team": "Biddeford",
+              "record": "2-8-0",
+              "index": 6.389,
               "qualifying": false
             },
             {
               "rank": 14,
-              "team": "Biddeford",
-              "record": "2-8-0",
-              "index": 3.611,
+              "team": "Massabesic",
+              "record": "1-8-0",
+              "index": 5.556,
               "qualifying": false
             },
             {
               "rank": 15,
               "team": "Sanford",
-              "record": "1-8-0",
-              "index": 0.833,
+              "record": "2-8-0",
+              "index": 3.611,
               "qualifying": false
             },
             {
@@ -4613,55 +4613,55 @@
               "rank": 1,
               "team": "Yarmouth",
               "record": "9-0-0",
-              "index": 100.833,
+              "index": 106.25,
               "qualifying": true
             },
             {
               "rank": 2,
               "team": "Lincoln Academy",
-              "record": "8-2-0",
-              "index": 79.583,
+              "record": "8-3-0",
+              "index": 92.778,
               "qualifying": true
             },
             {
               "rank": 3,
-              "team": "Cape Elizabeth",
-              "record": "5-4-0",
-              "index": 47.778,
+              "team": "Medomak Valley",
+              "record": "8-3-0",
+              "index": 59.722,
               "qualifying": true
             },
             {
               "rank": 4,
-              "team": "York",
-              "record": "5-3-0",
-              "index": 44.306,
+              "team": "Cape Elizabeth",
+              "record": "6-4-0",
+              "index": 58.194,
               "qualifying": true
             },
             {
               "rank": 5,
-              "team": "Morse",
-              "record": "6-4-0",
-              "index": 38.472,
+              "team": "York",
+              "record": "5-3-0",
+              "index": 46.944,
               "qualifying": true
             },
             {
               "rank": 6,
-              "team": "Medomak Valley",
-              "record": "7-3-0",
-              "index": 33.333,
+              "team": "Morse",
+              "record": "6-4-0",
+              "index": 41.111,
               "qualifying": true
             },
             {
               "rank": 7,
               "team": "Gardiner Area",
               "record": "3-7-0",
-              "index": 25.417,
+              "index": 27.917,
               "qualifying": true
             },
             {
               "rank": 8,
               "team": "Greely",
-              "record": "4-4-0",
+              "record": "4-5-0",
               "index": 24.306,
               "qualifying": true
             },
@@ -4682,7 +4682,7 @@
             {
               "rank": 11,
               "team": "Erskine Academy",
-              "record": "0-8-0",
+              "record": "0-10-0",
               "index": 0.0,
               "qualifying": false
             }
@@ -4695,21 +4695,21 @@
               "rank": 1,
               "team": "Boothbay Region",
               "record": "10-1-0",
-              "index": 99.894,
+              "index": 113.894,
               "qualifying": true
             },
             {
               "rank": 2,
               "team": "Waynflete",
               "record": "8-2-0",
-              "index": 74.722,
+              "index": 79.861,
               "qualifying": true
             },
             {
               "rank": 3,
               "team": "Winthrop",
-              "record": "6-1-0",
-              "index": 50.773,
+              "record": "7-1-0",
+              "index": 61.973,
               "qualifying": true
             },
             {
@@ -4722,35 +4722,35 @@
             {
               "rank": 5,
               "team": "Hall-Dale HS",
-              "record": "3-5-1",
-              "index": 22.311,
+              "record": "4-5-1",
+              "index": 24.644,
               "qualifying": true
             },
             {
               "rank": 6,
               "team": "Mountain Valley",
               "record": "5-4-0",
-              "index": 17.545,
+              "index": 21.145,
               "qualifying": true
             },
             {
               "rank": 7,
               "team": "Spruce Mountain",
-              "record": "2-5-1",
-              "index": 9.523,
+              "record": "3-5-1",
+              "index": 14.295,
               "qualifying": true
             },
             {
               "rank": 8,
               "team": "Madison High School",
-              "record": "1-7-0",
+              "record": "1-8-0",
               "index": 0.909,
               "qualifying": true
             },
             {
               "rank": 9,
               "team": "Dirigo",
-              "record": "0-7-0",
+              "record": "0-9-0",
               "index": 0.0,
               "qualifying": false
             }
@@ -4770,7 +4770,7 @@
               "rank": 1,
               "team": "Brunswick",
               "record": "9-0-0",
-              "index": 128.75,
+              "index": 131.25,
               "qualifying": true
             },
             {
@@ -4803,16 +4803,16 @@
             },
             {
               "rank": 6,
-              "team": "Lewiston",
-              "record": "7-4-0",
-              "index": 30.833,
+              "team": "Hampden Academy",
+              "record": "4-4-0",
+              "index": 33.056,
               "qualifying": true
             },
             {
               "rank": 7,
-              "team": "Hampden Academy",
-              "record": "4-3-0",
-              "index": 30.278,
+              "team": "Lewiston",
+              "record": "7-4-0",
+              "index": 30.833,
               "qualifying": true
             },
             {
@@ -4859,63 +4859,63 @@
               "rank": 1,
               "team": "John Bapst Memorial",
               "record": "6-3-0",
-              "index": 101.389,
+              "index": 104.028,
               "qualifying": true
             },
             {
               "rank": 2,
-              "team": "Ellsworth",
-              "record": "8-2-0",
-              "index": 82.639,
+              "team": "Waterville",
+              "record": "10-1-0",
+              "index": 99.444,
               "qualifying": true
             },
             {
               "rank": 3,
-              "team": "Waterville",
-              "record": "9-1-0",
-              "index": 70.694,
+              "team": "Ellsworth",
+              "record": "9-2-0",
+              "index": 93.472,
               "qualifying": true
             },
             {
               "rank": 4,
               "team": "Presque Isle",
               "record": "9-0-0",
-              "index": 55.071,
+              "index": 63.131,
               "qualifying": true
             },
             {
               "rank": 5,
               "team": "Caribou",
-              "record": "7-1-0",
-              "index": 52.435,
+              "record": "7-2-0",
+              "index": 50.126,
               "qualifying": true
             },
             {
               "rank": 6,
               "team": "Hermon",
               "record": "8-2-0",
-              "index": 44.167,
+              "index": 49.583,
               "qualifying": true
             },
             {
               "rank": 7,
-              "team": "Oceanside",
-              "record": "2-9-0",
-              "index": 15.694,
+              "team": "Mount Desert Island",
+              "record": "3-7-0",
+              "index": 17.083,
               "qualifying": true
             },
             {
               "rank": 8,
-              "team": "Foxcroft Academy",
-              "record": "2-6-0",
-              "index": 6.111,
+              "team": "Oceanside",
+              "record": "2-10-0",
+              "index": 15.694,
               "qualifying": true
             },
             {
               "rank": 9,
-              "team": "Mount Desert Island",
+              "team": "Foxcroft Academy",
               "record": "2-6-0",
-              "index": 6.111,
+              "index": 8.889,
               "qualifying": false
             },
             {
@@ -4941,84 +4941,84 @@
               "rank": 1,
               "team": "Orono",
               "record": "10-1-0",
-              "index": 88.485,
+              "index": 93.485,
               "qualifying": true
             },
             {
               "rank": 2,
               "team": "Van Buren District",
-              "record": "8-1-0",
-              "index": 72.236,
+              "record": "9-1-0",
+              "index": 84.182,
               "qualifying": true
             },
             {
               "rank": 3,
-              "team": "George Stevens Academy",
-              "record": "4-3-0",
-              "index": 40.562,
+              "team": "Houlton/GHCA/S.Aroostook",
+              "record": "4-5-0",
+              "index": 55.096,
               "qualifying": true
             },
             {
               "rank": 4,
-              "team": "Piscataquis Community",
-              "record": "5-2-0",
-              "index": 37.5,
+              "team": "George Stevens Academy",
+              "record": "4-3-0",
+              "index": 43.835,
               "qualifying": true
             },
             {
               "rank": 5,
-              "team": "Mattanawcook Academy",
-              "record": "3-6-0",
-              "index": 34.318,
+              "team": "Piscataquis Community",
+              "record": "5-2-0",
+              "index": 42.5,
               "qualifying": true
             },
             {
               "rank": 6,
-              "team": "Houlton/GHCA/S.Aroostook",
-              "record": "3-5-0",
-              "index": 33.273,
+              "team": "Mattanawcook Academy",
+              "record": "3-6-0",
+              "index": 36.818,
               "qualifying": true
             },
             {
               "rank": 7,
-              "team": "Schenck",
-              "record": "5-6-0",
-              "index": 29.242,
+              "team": "Maine Central Institute",
+              "record": "6-4-0",
+              "index": 31.667,
               "qualifying": true
             },
             {
               "rank": 8,
-              "team": "Maine Central Institute",
-              "record": "5-4-0",
-              "index": 26.389,
+              "team": "Schenck",
+              "record": "6-6-0",
+              "index": 30.076,
               "qualifying": true
             },
             {
               "rank": 9,
               "team": "Penobscot Valley",
-              "record": "5-6-0",
-              "index": 19.848,
+              "record": "6-6-0",
+              "index": 22.348,
               "qualifying": true
             },
             {
               "rank": 10,
               "team": "Washington Academy",
               "record": "4-4-0",
-              "index": 18.182,
+              "index": 20.909,
               "qualifying": true
             },
             {
               "rank": 11,
               "team": "Calais",
               "record": "3-2-0",
-              "index": 15.455,
+              "index": 18.182,
               "qualifying": false
             },
             {
               "rank": 12,
               "team": "Dexter Regional",
-              "record": "1-7-0",
-              "index": 12.5,
+              "record": "1-8-0",
+              "index": 15.0,
               "qualifying": false
             },
             {
@@ -5031,14 +5031,14 @@
             {
               "rank": 14,
               "team": "Madawaska HS",
-              "record": "0-6-0",
+              "record": "0-7-0",
               "index": 0.0,
               "qualifying": false
             },
             {
               "rank": 15,
               "team": "Woodland Sr.",
-              "record": "0-7-0",
+              "record": "0-8-0",
               "index": 0.0,
               "qualifying": false
             }
@@ -5051,7 +5051,7 @@
               "rank": 1,
               "team": "Falmouth",
               "record": "9-0-0",
-              "index": 128.611,
+              "index": 131.389,
               "qualifying": true
             },
             {
@@ -5065,42 +5065,42 @@
               "rank": 3,
               "team": "Scarborough",
               "record": "8-2-0",
-              "index": 89.722,
+              "index": 92.5,
               "qualifying": true
             },
             {
               "rank": 4,
               "team": "Windham",
               "record": "6-3-0",
-              "index": 77.778,
+              "index": 83.333,
               "qualifying": true
             },
             {
               "rank": 5,
               "team": "Bonny Eagle",
-              "record": "6-3-0",
-              "index": 54.444,
+              "record": "7-3-0",
+              "index": 60.0,
               "qualifying": true
             },
             {
               "rank": 6,
               "team": "Marshwood",
               "record": "6-3-0",
-              "index": 43.333,
+              "index": 46.111,
               "qualifying": true
             },
             {
               "rank": 7,
-              "team": "Cheverus",
+              "team": "Sanford",
               "record": "7-3-0",
-              "index": 40.556,
+              "index": 43.333,
               "qualifying": true
             },
             {
               "rank": 8,
-              "team": "Sanford",
-              "record": "6-3-0",
-              "index": 35.0,
+              "team": "Cheverus",
+              "record": "7-3-0",
+              "index": 40.556,
               "qualifying": true
             },
             {
@@ -5127,7 +5127,7 @@
             {
               "rank": 12,
               "team": "Massabesic",
-              "record": "3-5-0",
+              "record": "3-6-0",
               "index": 9.167,
               "qualifying": false
             },
@@ -5141,7 +5141,7 @@
             {
               "rank": 14,
               "team": "South Portland",
-              "record": "1-8-0",
+              "record": "1-9-0",
               "index": 0.833,
               "qualifying": false
             },
@@ -5167,43 +5167,43 @@
             {
               "rank": 1,
               "team": "Cony HS",
-              "record": "10-1-0",
-              "index": 94.167,
+              "record": "10-2-0",
+              "index": 102.083,
               "qualifying": true
             },
             {
               "rank": 2,
               "team": "Yarmouth",
-              "record": "7-2-0",
-              "index": 80.0,
+              "record": "8-2-0",
+              "index": 93.194,
               "qualifying": true
             },
             {
               "rank": 3,
-              "team": "Cape Elizabeth",
-              "record": "8-2-0",
-              "index": 68.889,
+              "team": "Lincoln Academy",
+              "record": "9-2-0",
+              "index": 91.806,
               "qualifying": true
             },
             {
               "rank": 4,
-              "team": "Lincoln Academy",
+              "team": "Cape Elizabeth",
               "record": "8-2-0",
-              "index": 68.333,
+              "index": 79.444,
               "qualifying": true
             },
             {
               "rank": 5,
               "team": "Morse",
-              "record": "7-2-0",
-              "index": 54.583,
+              "record": "7-3-0",
+              "index": 59.861,
               "qualifying": true
             },
             {
               "rank": 6,
               "team": "York",
               "record": "5-2-0",
-              "index": 41.806,
+              "index": 49.722,
               "qualifying": true
             },
             {
@@ -5222,29 +5222,29 @@
             },
             {
               "rank": 9,
+              "team": "Freeport",
+              "record": "3-7-0",
+              "index": 6.944,
+              "qualifying": false
+            },
+            {
+              "rank": 10,
               "team": "Gardiner Area",
               "record": "1-8-0",
               "index": 5.278,
               "qualifying": false
             },
             {
-              "rank": 10,
-              "team": "Freeport",
-              "record": "2-7-0",
-              "index": 3.472,
-              "qualifying": false
-            },
-            {
               "rank": 11,
               "team": "Greely",
-              "record": "1-8-0",
-              "index": 0.833,
+              "record": "2-8-0",
+              "index": 1.667,
               "qualifying": false
             },
             {
               "rank": 12,
               "team": "Lake Region",
-              "record": "0-8-0",
+              "record": "0-10-0",
               "index": 0.0,
               "qualifying": false
             }
@@ -5257,28 +5257,28 @@
               "rank": 1,
               "team": "Maranacook Community",
               "record": "12-0-0",
-              "index": 152.937,
+              "index": 155.437,
               "qualifying": true
             },
             {
               "rank": 2,
               "team": "Hall-Dale HS",
               "record": "9-2-0",
-              "index": 106.937,
+              "index": 109.437,
               "qualifying": true
             },
             {
               "rank": 3,
               "team": "Madison High School",
-              "record": "9-2-0",
-              "index": 83.328,
+              "record": "10-2-0",
+              "index": 92.328,
               "qualifying": true
             },
             {
               "rank": 4,
               "team": "North Yarmouth Academy",
               "record": "8-3-0",
-              "index": 59.028,
+              "index": 66.806,
               "qualifying": true
             },
             {
@@ -5305,22 +5305,22 @@
             {
               "rank": 8,
               "team": "Spruce Mountain",
-              "record": "3-4-0",
+              "record": "3-5-0",
               "index": 18.055,
               "qualifying": true
             },
             {
               "rank": 9,
-              "team": "Oak Hill",
-              "record": "4-6-0",
-              "index": 13.455,
+              "team": "Waynflete",
+              "record": "3-7-0",
+              "index": 14.028,
               "qualifying": true
             },
             {
               "rank": 10,
-              "team": "Waynflete",
-              "record": "3-6-0",
-              "index": 8.75,
+              "team": "Oak Hill",
+              "record": "4-6-0",
+              "index": 13.455,
               "qualifying": false
             },
             {
