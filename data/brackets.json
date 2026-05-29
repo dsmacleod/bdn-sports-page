@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-28T13:02:21.533339+00:00",
+  "last_updated": "2026-05-29T03:19:22.300943+00:00",
   "season": "spring",
   "sports": [
     {
@@ -54,17 +54,393 @@
       "sport": "Tennis",
       "gender": "Boys",
       "tournament_id": 206,
-      "tournament_active": false,
+      "tournament_active": true,
       "class_name": "2025-2026 Class A HS - Tennis (Boys)",
-      "brackets": []
+      "brackets": [
+        {
+          "class_name": "Preliminary Round",
+          "matchups": [
+            {
+              "team1": "Deering",
+              "team2": "South Portland",
+              "seed1": "8",
+              "seed2": "9",
+              "score1": "4",
+              "score2": "1",
+              "header": "THU 5/28, 6:00 PM @Apex Tennis (Portland)"
+            },
+            {
+              "team1": "Scarborough",
+              "team2": "Windham",
+              "seed1": "7",
+              "seed2": "10",
+              "score1": "5",
+              "score2": "0",
+              "header": "THU 5/28,  @High Seed"
+            },
+            {
+              "team1": "Gorham",
+              "team2": "Kennebunk",
+              "seed1": "6",
+              "seed2": "11",
+              "score1": "4",
+              "score2": "1",
+              "header": "THU 5/28, 4:00 PM @Gorham HS"
+            }
+          ]
+        },
+        {
+          "class_name": "Quarterfinal",
+          "matchups": [
+            {
+              "team1": "Camden Hills Regional",
+              "team2": "Edward Little",
+              "seed1": "1",
+              "seed2": "8",
+              "score1": "",
+              "score2": "",
+              "header": "FRI 5/29, 4:00 PM @Camden Hills Regional HS"
+            },
+            {
+              "team1": "Mt. Ararat",
+              "team2": "Hampden Academy",
+              "seed1": "4",
+              "seed2": "5",
+              "score1": "",
+              "score2": "",
+              "header": "SAT 5/30, 4:00 PM @Mt. Ararat HS"
+            },
+            {
+              "team1": "Bangor",
+              "team2": "Messalonskee",
+              "seed1": "3",
+              "seed2": "6",
+              "score1": "",
+              "score2": "",
+              "header": "SAT 5/30, 1:00 PM @Bangor HS"
+            },
+            {
+              "team1": "Brunswick",
+              "team2": "Mt. Blue",
+              "seed1": "2",
+              "seed2": "7",
+              "score1": "5",
+              "score2": "0",
+              "header": "THU 5/28, 3:30 PM @Brunswick HS"
+            },
+            {
+              "team1": "Falmouth",
+              "team2": "Deering",
+              "seed1": "1",
+              "seed2": "8",
+              "score1": "",
+              "score2": "",
+              "header": "5/30/26, Time TBA @Higher seed"
+            },
+            {
+              "team1": "Portland",
+              "team2": "Marshwood",
+              "seed1": "4",
+              "seed2": "5",
+              "score1": "",
+              "score2": "",
+              "header": "FRI 5/29, 4:00 PM @Deering Oaks"
+            },
+            {
+              "team1": "Cheverus",
+              "team2": "Gorham",
+              "seed1": "3",
+              "seed2": "6",
+              "score1": "",
+              "score2": "",
+              "header": "5/30/26, Time TBA @Higher seed"
+            },
+            {
+              "team1": "Thornton Academy",
+              "team2": "Scarborough",
+              "seed1": "2",
+              "seed2": "7",
+              "score1": "",
+              "score2": "",
+              "header": "FRI 5/29, 3:15 PM @Thornton Academy"
+            }
+          ]
+        },
+        {
+          "class_name": "Semifinal",
+          "matchups": [
+            {
+              "team1": "TBD",
+              "team2": "TBD",
+              "seed1": "",
+              "seed2": "",
+              "score1": "",
+              "score2": "",
+              "header": "6/3/26, Time TBA @Higher seed"
+            },
+            {
+              "team1": "TBD",
+              "team2": "Brunswick",
+              "seed1": "",
+              "seed2": "2",
+              "score1": "",
+              "score2": "",
+              "header": "6/3/26, Time TBA @Higher seed"
+            },
+            {
+              "team1": "TBD",
+              "team2": "TBD",
+              "seed1": "",
+              "seed2": "",
+              "score1": "",
+              "score2": "",
+              "header": "6/3/26, Time TBA @Higher seed"
+            },
+            {
+              "team1": "TBD",
+              "team2": "TBD",
+              "seed1": "",
+              "seed2": "",
+              "score1": "",
+              "score2": "",
+              "header": "6/3/26, Time TBA @Higher seed"
+            }
+          ]
+        },
+        {
+          "class_name": "Regional Final",
+          "matchups": [
+            {
+              "team1": "TBD",
+              "team2": "TBD",
+              "seed1": "",
+              "seed2": "",
+              "score1": "",
+              "score2": "",
+              "header": "6/6/26, Time TBA @Colby College"
+            },
+            {
+              "team1": "TBD",
+              "team2": "TBD",
+              "seed1": "",
+              "seed2": "",
+              "score1": "",
+              "score2": "",
+              "header": "6/8/26, Time TBA @Bates College (Wallach Tennis Center)"
+            }
+          ]
+        },
+        {
+          "class_name": "State Final",
+          "matchups": [
+            {
+              "team1": "TBD",
+              "team2": "TBD",
+              "seed1": "",
+              "seed2": "",
+              "score1": "",
+              "score2": "",
+              "header": "6/10/26, Time TBA @Bates College (Wallach Tennis Center)"
+            }
+          ]
+        }
+      ]
     },
     {
       "sport": "Tennis",
       "gender": "Girls",
       "tournament_id": 207,
-      "tournament_active": false,
+      "tournament_active": true,
       "class_name": "2025-2026 Class A HS - Tennis (Girls)",
-      "brackets": []
+      "brackets": [
+        {
+          "class_name": "Preliminary Round",
+          "matchups": [
+            {
+              "team1": "Portland",
+              "team2": "Sanford",
+              "seed1": "8",
+              "seed2": "9",
+              "score1": "4",
+              "score2": "1",
+              "header": "THU 5/28, 6:00 PM @Foreside Fitness"
+            },
+            {
+              "team1": "Marshwood",
+              "team2": "Kennebunk",
+              "seed1": "7",
+              "seed2": "10",
+              "score1": "3",
+              "score2": "2",
+              "header": "THU 5/28,  @High Seed"
+            },
+            {
+              "team1": "Bonny Eagle",
+              "team2": "Gorham",
+              "seed1": "6",
+              "seed2": "11",
+              "score1": "3",
+              "score2": "2",
+              "header": "THU 5/28,  @High Seed"
+            }
+          ]
+        },
+        {
+          "class_name": "Quarterfinal",
+          "matchups": [
+            {
+              "team1": "Brunswick",
+              "team2": "Lewiston",
+              "seed1": "1",
+              "seed2": "8",
+              "score1": "",
+              "score2": "",
+              "header": "FRI 5/29, 4:00 PM @Brunswick HS"
+            },
+            {
+              "team1": "Hampden Academy",
+              "team2": "Bangor",
+              "seed1": "4",
+              "seed2": "5",
+              "score1": "",
+              "score2": "",
+              "header": "SAT 5/30, 1:00 PM @High Seed"
+            },
+            {
+              "team1": "Camden Hills Regional",
+              "team2": "Mt. Ararat",
+              "seed1": "3",
+              "seed2": "6",
+              "score1": "4",
+              "score2": "1",
+              "header": "THU 5/28, 6:00 PM @Camden Hills Regional HS"
+            },
+            {
+              "team1": "Brewer",
+              "team2": "Edward Little",
+              "seed1": "2",
+              "seed2": "7",
+              "score1": "",
+              "score2": "",
+              "header": "FRI 5/29, 4:00 PM @High Seed"
+            },
+            {
+              "team1": "Falmouth",
+              "team2": "Portland",
+              "seed1": "1",
+              "seed2": "8",
+              "score1": "",
+              "score2": "",
+              "header": "5/30/26, Time TBA @Higher seed"
+            },
+            {
+              "team1": "Windham",
+              "team2": "Cheverus",
+              "seed1": "4",
+              "seed2": "5",
+              "score1": "",
+              "score2": "",
+              "header": "SAT 5/30,  @High Seed"
+            },
+            {
+              "team1": "Scarborough",
+              "team2": "Bonny Eagle",
+              "seed1": "3",
+              "seed2": "6",
+              "score1": "",
+              "score2": "",
+              "header": "5/30/26, Time TBA @Higher seed"
+            },
+            {
+              "team1": "Thornton Academy",
+              "team2": "Marshwood",
+              "seed1": "2",
+              "seed2": "7",
+              "score1": "",
+              "score2": "",
+              "header": "MON 6/1, 3:45 PM @Thornton Academy"
+            }
+          ]
+        },
+        {
+          "class_name": "Semifinal",
+          "matchups": [
+            {
+              "team1": "TBD",
+              "team2": "TBD",
+              "seed1": "",
+              "seed2": "",
+              "score1": "",
+              "score2": "",
+              "header": "6/3/26, Time TBA @Higher seed"
+            },
+            {
+              "team1": "Camden Hills Regional",
+              "team2": "TBD",
+              "seed1": "3",
+              "seed2": "",
+              "score1": "",
+              "score2": "",
+              "header": "6/3/26, Time TBA @Higher seed"
+            },
+            {
+              "team1": "TBD",
+              "team2": "TBD",
+              "seed1": "",
+              "seed2": "",
+              "score1": "",
+              "score2": "",
+              "header": "6/3/26, Time TBA @Higher seed"
+            },
+            {
+              "team1": "TBD",
+              "team2": "TBD",
+              "seed1": "",
+              "seed2": "",
+              "score1": "",
+              "score2": "",
+              "header": "6/3/26, Time TBA @Higher seed"
+            }
+          ]
+        },
+        {
+          "class_name": "Regional Final",
+          "matchups": [
+            {
+              "team1": "TBD",
+              "team2": "TBD",
+              "seed1": "",
+              "seed2": "",
+              "score1": "",
+              "score2": "",
+              "header": "6/6/26, Time TBA @Colby College"
+            },
+            {
+              "team1": "TBD",
+              "team2": "TBD",
+              "seed1": "",
+              "seed2": "",
+              "score1": "",
+              "score2": "",
+              "header": "6/8/26, Time TBA @Bates College (Wallach Tennis Center)"
+            }
+          ]
+        },
+        {
+          "class_name": "State Final",
+          "matchups": [
+            {
+              "team1": "TBD",
+              "team2": "TBD",
+              "seed1": "",
+              "seed2": "",
+              "score1": "",
+              "score2": "",
+              "header": "6/10/26, Time TBA @Bates College (Wallach Tennis Center)"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
