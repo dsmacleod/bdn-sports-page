@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-08T13:19:04.992473+00:00",
+  "last_updated": "2026-06-09T03:18:40.977243+00:00",
   "season": "spring",
   "games": [
     {
@@ -9116,16 +9116,6 @@
       "date": "2026-06-09",
       "time": "",
       "type": "Tournament",
-      "home": "Belfast Area",
-      "away": "John Bapst Memorial",
-      "site": "High Seed",
-      "sport": "Baseball",
-      "gender": "Boys"
-    },
-    {
-      "date": "2026-06-09",
-      "time": "",
-      "type": "Tournament",
       "home": "Falmouth",
       "away": "Bonny Eagle",
       "site": "High Seed",
@@ -9138,16 +9128,6 @@
       "type": "Tournament",
       "home": "Lake Region",
       "away": "Mountain Valley",
-      "site": "High Seed",
-      "sport": "Baseball",
-      "gender": "Boys"
-    },
-    {
-      "date": "2026-06-09",
-      "time": "",
-      "type": "Tournament",
-      "home": "Lawrence",
-      "away": "Gardiner Area",
       "site": "High Seed",
       "sport": "Baseball",
       "gender": "Boys"
@@ -9176,8 +9156,28 @@
       "date": "2026-06-09",
       "time": "",
       "type": "Tournament",
+      "home": "Wisdom HS",
+      "away": "Schenck",
+      "site": "High Seed",
+      "sport": "Baseball",
+      "gender": "Boys"
+    },
+    {
+      "date": "2026-06-09",
+      "time": "",
+      "type": "Tournament",
       "home": "York",
       "away": "Wells",
+      "site": "High Seed",
+      "sport": "Baseball",
+      "gender": "Boys"
+    },
+    {
+      "date": "2026-06-09",
+      "time": "3:00 PM",
+      "type": "Tournament",
+      "home": "Belfast Area",
+      "away": "John Bapst Memorial",
       "site": "High Seed",
       "sport": "Baseball",
       "gender": "Boys"
@@ -9199,6 +9199,16 @@
       "home": "Washburn/Easton/Central Aroostook",
       "away": "Machias Memorial",
       "site": "Washburn District High School",
+      "sport": "Baseball",
+      "gender": "Boys"
+    },
+    {
+      "date": "2026-06-09",
+      "time": "4:00 PM",
+      "type": "Tournament",
+      "home": "Lawrence",
+      "away": "Gardiner Area",
+      "site": "Keyes Field - Lawrence HS",
       "sport": "Baseball",
       "gender": "Boys"
     },
@@ -9239,6 +9249,16 @@
       "home": "Yarmouth",
       "away": "Poland Regional",
       "site": "Yarmouth High School",
+      "sport": "Baseball",
+      "gender": "Boys"
+    },
+    {
+      "date": "2026-06-09",
+      "time": "4:30 PM",
+      "type": "Tournament",
+      "home": "Penobscot Valley",
+      "away": "Southern Aroostook",
+      "site": "High Seed",
       "sport": "Baseball",
       "gender": "Boys"
     },
@@ -9316,8 +9336,8 @@
       "date": "2026-06-11",
       "time": "",
       "type": "Tournament",
-      "home": "Mount Desert Island",
-      "away": "Nokomis",
+      "home": "Old Orchard Beach",
+      "away": "Dirigo",
       "site": "High Seed",
       "sport": "Baseball",
       "gender": "Boys"
@@ -9326,8 +9346,8 @@
       "date": "2026-06-11",
       "time": "",
       "type": "Tournament",
-      "home": "Old Orchard Beach",
-      "away": "Dirigo",
+      "home": "Richmond HS",
+      "away": "Temple Academy",
       "site": "High Seed",
       "sport": "Baseball",
       "gender": "Boys"
@@ -9339,6 +9359,16 @@
       "home": "Sacopee Valley",
       "away": "Waynflete/NYA Coop",
       "site": "High Seed",
+      "sport": "Baseball",
+      "gender": "Boys"
+    },
+    {
+      "date": "2026-06-11",
+      "time": "2:00 PM",
+      "type": "Tournament",
+      "home": "Ellsworth",
+      "away": "",
+      "site": "Ellsworth High School",
       "sport": "Baseball",
       "gender": "Boys"
     },
@@ -9374,6 +9404,16 @@
     },
     {
       "date": "2026-06-11",
+      "time": "4:00 PM",
+      "type": "Tournament",
+      "home": "Telstar Regional",
+      "away": "Madison High School",
+      "site": "High Seed",
+      "sport": "Baseball",
+      "gender": "Boys"
+    },
+    {
+      "date": "2026-06-11",
       "time": "4:30 PM",
       "type": "Postseason",
       "home": "George Stevens Academy",
@@ -9386,9 +9426,49 @@
       "date": "2026-06-11",
       "time": "4:30 PM",
       "type": "Tournament",
+      "home": "Fryeburg Academy",
+      "away": "",
+      "site": "Fryeburg Academy",
+      "sport": "Baseball",
+      "gender": "Boys"
+    },
+    {
+      "date": "2026-06-11",
+      "time": "4:30 PM",
+      "type": "Tournament",
+      "home": "Gorham",
+      "away": "",
+      "site": "Gorham High School",
+      "sport": "Baseball",
+      "gender": "Boys"
+    },
+    {
+      "date": "2026-06-11",
+      "time": "4:30 PM",
+      "type": "Tournament",
+      "home": "Mount Desert Island",
+      "away": "Nokomis",
+      "site": "Mount Desert Island",
+      "sport": "Baseball",
+      "gender": "Boys"
+    },
+    {
+      "date": "2026-06-11",
+      "time": "4:30 PM",
+      "type": "Tournament",
       "home": "Mt. Ararat",
       "away": "Edward Little",
       "site": "Mt. Ararat High School",
+      "sport": "Baseball",
+      "gender": "Boys"
+    },
+    {
+      "date": "2026-06-11",
+      "time": "4:30 PM",
+      "type": "Tournament",
+      "home": "Greely",
+      "away": "Poland Community, Yarmouth",
+      "site": "Twin Brook",
       "sport": "Baseball",
       "gender": "Boys"
     },
@@ -18744,6 +18824,96 @@
     },
     {
       "date": "2026-06-09",
+      "time": "",
+      "type": "Tournament",
+      "home": "Houlton/Greater Houlton",
+      "away": "Dexter Regional",
+      "site": "High Seed",
+      "sport": "Softball",
+      "gender": "Girls"
+    },
+    {
+      "date": "2026-06-09",
+      "time": "",
+      "type": "Tournament",
+      "home": "Mountain Valley",
+      "away": "Fryeburg Academy",
+      "site": "High Seed",
+      "sport": "Softball",
+      "gender": "Girls"
+    },
+    {
+      "date": "2026-06-09",
+      "time": "",
+      "type": "Tournament",
+      "home": "Presque Isle",
+      "away": "Mount Desert Island",
+      "site": "High Seed",
+      "sport": "Softball",
+      "gender": "Girls"
+    },
+    {
+      "date": "2026-06-09",
+      "time": "",
+      "type": "Tournament",
+      "home": "South Portland",
+      "away": "MBAT",
+      "site": "High Seed",
+      "sport": "Softball",
+      "gender": "Girls"
+    },
+    {
+      "date": "2026-06-09",
+      "time": "",
+      "type": "Tournament",
+      "home": "Stearns Sr.",
+      "away": "Jonesport-Beals",
+      "site": "High Seed",
+      "sport": "Softball",
+      "gender": "Girls"
+    },
+    {
+      "date": "2026-06-09",
+      "time": "",
+      "type": "Tournament",
+      "home": "Sumner Memorial",
+      "away": "Winslow",
+      "site": "High Seed",
+      "sport": "Softball",
+      "gender": "Girls"
+    },
+    {
+      "date": "2026-06-09",
+      "time": "",
+      "type": "Tournament",
+      "home": "Wisdom HS",
+      "away": "Woodland Sr.",
+      "site": "High Seed",
+      "sport": "Softball",
+      "gender": "Girls"
+    },
+    {
+      "date": "2026-06-09",
+      "time": "4:00 PM",
+      "type": "Tournament",
+      "home": "Erskine Academy",
+      "away": "Spruce Mountain",
+      "site": "Erskine Academy",
+      "sport": "Softball",
+      "gender": "Girls"
+    },
+    {
+      "date": "2026-06-09",
+      "time": "4:00 PM",
+      "type": "Tournament",
+      "home": "Nokomis",
+      "away": "Cony HS",
+      "site": "Nokomis Regional HS",
+      "sport": "Softball",
+      "gender": "Girls"
+    },
+    {
+      "date": "2026-06-09",
       "time": "4:00 PM",
       "type": "Tournament",
       "home": "Machias Memorial",
@@ -18854,11 +19024,81 @@
     },
     {
       "date": "2026-06-11",
+      "time": "",
+      "type": "Tournament",
+      "home": "Dirigo",
+      "away": "Sacopee Valley",
+      "site": "High Seed",
+      "sport": "Softball",
+      "gender": "Girls"
+    },
+    {
+      "date": "2026-06-11",
+      "time": "",
+      "type": "Tournament",
+      "home": "Leavitt Area",
+      "away": "Poland Regional",
+      "site": "High Seed",
+      "sport": "Softball",
+      "gender": "Girls"
+    },
+    {
+      "date": "2026-06-11",
+      "time": "",
+      "type": "Tournament",
+      "home": "Monmouth Academy",
+      "away": "Carrabec",
+      "site": "High Seed",
+      "sport": "Softball",
+      "gender": "Girls"
+    },
+    {
+      "date": "2026-06-11",
+      "time": "",
+      "type": "Tournament",
+      "home": "Narraguagus Sr",
+      "away": "Orono",
+      "site": "High Seed",
+      "sport": "Softball",
+      "gender": "Girls"
+    },
+    {
+      "date": "2026-06-11",
+      "time": "",
+      "type": "Tournament",
+      "home": "Old Town",
+      "away": "Lawrence",
+      "site": "High Seed",
+      "sport": "Softball",
+      "gender": "Girls"
+    },
+    {
+      "date": "2026-06-11",
       "time": "3:00 PM",
       "type": "Tournament",
       "home": "Edward Little",
       "away": "Hampden Academy",
       "site": "EL Softball Field",
+      "sport": "Softball",
+      "gender": "Girls"
+    },
+    {
+      "date": "2026-06-11",
+      "time": "3:00 PM",
+      "type": "Tournament",
+      "home": "Telstar/Gould",
+      "away": "Old Orchard Beach",
+      "site": "High Seed",
+      "sport": "Softball",
+      "gender": "Girls"
+    },
+    {
+      "date": "2026-06-11",
+      "time": "3:00 PM",
+      "type": "Tournament",
+      "home": "Washington Academy",
+      "away": "Central",
+      "site": "Washington Academy",
       "sport": "Softball",
       "gender": "Girls"
     },
@@ -18886,6 +19126,16 @@
       "date": "2026-06-11",
       "time": "4:00 PM",
       "type": "Tournament",
+      "home": "Gardiner Area",
+      "away": "Presque Isle, Mount Desert Island",
+      "site": "Gardiner Area High School",
+      "sport": "Softball",
+      "gender": "Girls"
+    },
+    {
+      "date": "2026-06-11",
+      "time": "4:00 PM",
+      "type": "Tournament",
       "home": "Lisbon",
       "away": "Oak Hill",
       "site": "Lisbon High School",
@@ -18904,11 +19154,31 @@
     },
     {
       "date": "2026-06-11",
+      "time": "4:30 PM",
+      "type": "Tournament",
+      "home": "Lewiston",
+      "away": "Mt. Blue",
+      "site": "High Seed",
+      "sport": "Softball",
+      "gender": "Girls"
+    },
+    {
+      "date": "2026-06-11",
       "time": "5:00 PM",
       "type": "Tournament",
       "home": "Westbrook",
       "away": "",
       "site": "TBA",
+      "sport": "Softball",
+      "gender": "Girls"
+    },
+    {
+      "date": "2026-06-11",
+      "time": "6:00 PM",
+      "type": "Tournament",
+      "home": "Gorham",
+      "away": "Windham",
+      "site": "High Seed - Gorham High School",
       "sport": "Softball",
       "gender": "Girls"
     },
@@ -22315,7 +22585,7 @@
     {
       "date": "2026-06-09",
       "time": "4:00 PM",
-      "type": "Postseason",
+      "type": "Tournament",
       "home": "Freeport",
       "away": "Kennebunk",
       "site": "Freeport High School",
@@ -22374,6 +22644,26 @@
     },
     {
       "date": "2026-06-10",
+      "time": "",
+      "type": "Tournament",
+      "home": "Cape Elizabeth",
+      "away": "Hampden/Bangor",
+      "site": "High Seed",
+      "sport": "Lacrosse",
+      "gender": "Boys"
+    },
+    {
+      "date": "2026-06-10",
+      "time": "",
+      "type": "Tournament",
+      "home": "LAW-WIN-SKOW",
+      "away": "Northern Maine Moose",
+      "site": "High Seed",
+      "sport": "Lacrosse",
+      "gender": "Boys"
+    },
+    {
+      "date": "2026-06-10",
       "time": "6:00 PM",
       "type": "Tournament",
       "home": "GNG/Poland Coop",
@@ -22389,6 +22679,26 @@
       "home": "Scarborough",
       "away": "Windham",
       "site": "University of Southern Maine",
+      "sport": "Lacrosse",
+      "gender": "Boys"
+    },
+    {
+      "date": "2026-06-11",
+      "time": "12:00 AM",
+      "type": "Tournament",
+      "home": "Greely",
+      "away": "Fryeburg Academy, Brunswick",
+      "site": "Greely",
+      "sport": "Lacrosse",
+      "gender": "Boys"
+    },
+    {
+      "date": "2026-06-12",
+      "time": "4:00 PM",
+      "type": "Tournament",
+      "home": "Gardiner Area",
+      "away": "Erskine Academy",
+      "site": "Hoch Field - Gardiner Area High School",
       "sport": "Lacrosse",
       "gender": "Boys"
     },
@@ -22409,6 +22719,16 @@
       "home": "Yarmouth",
       "away": "",
       "site": "Yarmouth High School",
+      "sport": "Lacrosse",
+      "gender": "Boys"
+    },
+    {
+      "date": "2026-06-12",
+      "time": "6:00 PM",
+      "type": "Tournament",
+      "home": "Wells",
+      "away": "Leavitt Area",
+      "site": "Wells High School",
       "sport": "Lacrosse",
       "gender": "Boys"
     },
@@ -25834,6 +26154,26 @@
     },
     {
       "date": "2026-06-09",
+      "time": "4:00 PM",
+      "type": "Tournament",
+      "home": "Gardiner/Hall-Dale Coop",
+      "away": "Fryeburg Academy",
+      "site": "Hoch Field - Gardiner Area High School",
+      "sport": "Lacrosse",
+      "gender": "Girls"
+    },
+    {
+      "date": "2026-06-09",
+      "time": "4:30 PM",
+      "type": "Tournament",
+      "home": "Windham",
+      "away": "South Portland",
+      "site": "High Seed",
+      "sport": "Lacrosse",
+      "gender": "Girls"
+    },
+    {
+      "date": "2026-06-09",
       "time": "5:00 PM",
       "type": "Tournament",
       "home": "Brunswick",
@@ -25855,10 +26195,40 @@
     {
       "date": "2026-06-09",
       "time": "6:00 PM",
-      "type": "Postseason",
+      "type": "Tournament",
+      "home": "Falmouth",
+      "away": "Marshwood",
+      "site": "Falmouth High School",
+      "sport": "Lacrosse",
+      "gender": "Girls"
+    },
+    {
+      "date": "2026-06-09",
+      "time": "6:00 PM",
+      "type": "Tournament",
       "home": "Freeport",
       "away": "Hampden/Brewer/GSA/ Hermon Coop",
       "site": "Freeport High School",
+      "sport": "Lacrosse",
+      "gender": "Girls"
+    },
+    {
+      "date": "2026-06-10",
+      "time": "",
+      "type": "Tournament",
+      "home": "Bangor/John Bapst/Orono",
+      "away": "Bonny Eagle",
+      "site": "High Seed",
+      "sport": "Lacrosse",
+      "gender": "Girls"
+    },
+    {
+      "date": "2026-06-10",
+      "time": "",
+      "type": "Tournament",
+      "home": "Cheverus",
+      "away": "Gorham",
+      "site": "High Seed",
       "sport": "Lacrosse",
       "gender": "Girls"
     },
@@ -25884,6 +26254,16 @@
     },
     {
       "date": "2026-06-12",
+      "time": "12:00 AM",
+      "type": "Tournament",
+      "home": "Greely",
+      "away": "Gardiner/Hall-Dale Coop, Fryeburg Academy",
+      "site": "Greely",
+      "sport": "Lacrosse",
+      "gender": "Girls"
+    },
+    {
+      "date": "2026-06-12",
       "time": "4:00 PM",
       "type": "Tournament",
       "home": "Wells",
@@ -25904,6 +26284,16 @@
     },
     {
       "date": "2026-06-13",
+      "time": "",
+      "type": "Tournament",
+      "home": "Traip Academy",
+      "away": "Erskine Academy",
+      "site": "High Seed",
+      "sport": "Lacrosse",
+      "gender": "Girls"
+    },
+    {
+      "date": "2026-06-13",
       "time": "1:00 PM",
       "type": "Tournament",
       "home": "North Yarmouth Academy",
@@ -25917,7 +26307,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Bucksport",
-      "away": "BC-PC, Searsport HS, Sumner Memorial, George Stevens Academy, Deer Isle-Stonington",
+      "away": "BC-PC, Searsport HS, Sumner Memorial, Deer Isle-Stonington , George Stevens Academy",
       "site": "Bucksport High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -25927,7 +26317,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Messalonskee",
-      "away": "Oceanside, Nokomis, Winslow, Gardiner Area, Medomak Valley",
+      "away": "Medomak Valley, Gardiner Area, Oceanside, Nokomis, Winslow",
       "site": "Messalonskee High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -25937,7 +26327,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Mt. Ararat",
-      "away": "Lincoln Academy, Cony HS, Erskine Academy, Mount View",
+      "away": "Cony HS, Mount View, Erskine Academy, Lincoln Academy",
       "site": "Mt. Ararat High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -25947,7 +26337,7 @@
       "time": "4:00 PM",
       "type": "League",
       "home": "Falmouth",
-      "away": "Thornton Academy, Sanford",
+      "away": "Sanford, Thornton Academy",
       "site": "Falmouth Hs",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -25957,7 +26347,7 @@
       "time": "12:00 PM",
       "type": "League",
       "home": "Yarmouth",
-      "away": "Wells, NYA/MCWS, Seacoast Christian, Greely, Lake Region, Fryeburg Academy, Freeport, Gray-New Gloucester",
+      "away": "Wells, NYA/MCWS, Greely, Gray-New Gloucester, Seacoast Christian, Lake Region, Fryeburg Academy, Freeport",
       "site": "Yarmouth High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -25967,7 +26357,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Mount Desert Island",
-      "away": "Jonesport-Beals, Central, Ellsworth, John Bapst Memorial, Washington Academy",
+      "away": "Central, Jonesport-Beals, John Bapst Memorial, Ellsworth, Washington Academy",
       "site": "ALUMNI FIELD-MDI HIGH SCHOOL",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -25977,7 +26367,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Maranacook Community",
-      "away": "Dirigo, Spruce Mountain, Winthrop, Mt. Abram, Kents Hill, Buckfield HS, Carrabec",
+      "away": "Spruce Mountain, Buckfield HS, Carrabec, Winthrop, Mt. Abram, Dirigo, Kents Hill",
       "site": "Maranacook Community High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -25987,7 +26377,7 @@
       "time": "3:15 PM",
       "type": "League",
       "home": "Lisbon/Oak Hill",
-      "away": "Madison High School, Mountain Valley, Monmouth Academy, Wiscasset HS, Hall-Dale HS, Telstar Regional",
+      "away": "Madison High School, Telstar Regional, Mountain Valley, Wiscasset HS, Monmouth Academy, Hall-Dale HS",
       "site": "Lisbon High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -25997,7 +26387,7 @@
       "time": "10:00 AM",
       "type": "League",
       "home": "Kennebunk",
-      "away": "Presque Isle, Westbrook, Marshwood",
+      "away": "Presque Isle, Marshwood, Westbrook",
       "site": "Kennebunk High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26007,7 +26397,7 @@
       "time": "2:00 PM",
       "type": "League",
       "home": "Brunswick",
-      "away": "Waterville, Edward Little, Maine Central Institute",
+      "away": "Waterville, Maine Central Institute, Edward Little",
       "site": "Brunswick High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26017,7 +26407,7 @@
       "time": "3:00 PM",
       "type": "League",
       "home": "Deering",
-      "away": "Massabesic, Windham",
+      "away": "Windham, Massabesic",
       "site": "Fitzpatrick Stadium",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26027,7 +26417,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Brewer",
-      "away": "Bangor, Hermon, Piscataquis Community, Caribou, Washburn District , Dexter Regional, Foxcroft Academy, Houlton HS",
+      "away": "Bangor, Washburn District , Caribou, Piscataquis Community, Dexter Regional, Hermon, Foxcroft Academy, Houlton HS",
       "site": "Brewer Community School; 92 Pendleton Street",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26037,7 +26427,7 @@
       "time": "11:00 AM",
       "type": "League",
       "home": "Bonny Eagle",
-      "away": "South Portland, Portland, Noble",
+      "away": "Portland, South Portland, Noble",
       "site": "Bonny Eagle High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26047,7 +26437,7 @@
       "time": "3:45 PM",
       "type": "League",
       "home": "Biddeford",
-      "away": "Scarborough, Gorham, Cheverus/Waynflete",
+      "away": "Cheverus/Waynflete, Gorham, Scarborough",
       "site": "Biddeford High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26057,7 +26447,7 @@
       "time": "11:00 AM",
       "type": "League",
       "home": "Lewiston",
-      "away": "Mt. Blue , Leavitt Area, Morse, Oxford Hills",
+      "away": "Oxford Hills, Morse, Mt. Blue , Leavitt Area",
       "site": "Lewiston HS",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26077,7 +26467,7 @@
       "time": "10:00 AM",
       "type": "League",
       "home": "York",
-      "away": "Yarmouth, Poland Regional, Freeport, Gray-New Gloucester",
+      "away": "Poland Regional, Yarmouth, Freeport, Gray-New Gloucester",
       "site": "York High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26087,7 +26477,7 @@
       "time": "12:00 PM",
       "type": "League",
       "home": "Old Town",
-      "away": "Fort Fairfield HS, Narraguagus Sr, Fort Kent Community, Hampden Academy, Greenville, Maine School of Science and Math, Mattanawcook Academy, Penquis Valley HS, Washburn District , Orono, Presque Isle",
+      "away": "Narraguagus Sr, Fort Fairfield HS, Mattanawcook Academy, Penquis Valley HS, Maine School of Science and Math, Hampden Academy, Fort Kent Community, Orono, Washburn District , Greenville, Presque Isle",
       "site": "Victory Field OTHS",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26097,7 +26487,7 @@
       "time": "3:15 PM",
       "type": "League",
       "home": "Hall-Dale HS",
-      "away": "Winthrop, Spruce Mountain, Telstar Regional, Monmouth Academy, Maranacook Community, Mountain Valley",
+      "away": "Spruce Mountain, Winthrop, Telstar Regional, Monmouth Academy, Mountain Valley, Maranacook Community",
       "site": "Hall-Dale HS",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26107,7 +26497,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Waterville",
-      "away": "Leavitt Area, Messalonskee, Camden Hills Regional, Winslow, Belfast Area",
+      "away": "Leavitt Area, Messalonskee, Winslow, Camden Hills Regional, Belfast Area",
       "site": "Waterville High School (One Brooklyn Ave)",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26117,7 +26507,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Boothbay Region",
-      "away": "Buckfield HS, Dirigo, Carrabec, Lisbon/Oak Hill, Madison High School, Mt. Abram",
+      "away": "Dirigo, Buckfield HS, Mt. Abram, Carrabec, Madison High School, Lisbon/Oak Hill",
       "site": "Wiscasset Middle/High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26137,7 +26527,7 @@
       "time": "4:00 PM",
       "type": "League",
       "home": "Sanford",
-      "away": "Windham, Deering",
+      "away": "Deering, Windham",
       "site": "Sanford High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26147,7 +26537,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Mt. Blue",
-      "away": "Gardiner Area, Brunswick, Lewiston, Medomak Valley",
+      "away": "Gardiner Area, Lewiston, Brunswick, Medomak Valley",
       "site": "Mt. Blue High School Track",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26197,7 +26587,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Erskine Academy",
-      "away": "Mount View, Lincoln Academy, Oceanside",
+      "away": "Lincoln Academy, Mount View, Oceanside",
       "site": "TBA",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26207,7 +26597,7 @@
       "time": "4:00 PM",
       "type": "League",
       "home": "Thornton Academy",
-      "away": "Bonny Eagle, Portland",
+      "away": "Portland, Bonny Eagle",
       "site": "Thornton Academy",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26217,7 +26607,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Gray-New Gloucester",
-      "away": "York, Wells, Poland Regional, Traip Academy",
+      "away": "Wells, York, Poland Regional, Traip Academy",
       "site": "Gray-New Gloucester High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26227,7 +26617,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Lake Region",
-      "away": "NYA/MCWS, Freeport, Fryeburg Academy, Cape Elizabeth",
+      "away": "Cape Elizabeth, NYA/MCWS, Freeport, Fryeburg Academy",
       "site": "Lake Region High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26247,7 +26637,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Presque Isle",
-      "away": "Washburn District , Caribou, Houlton HS, Fort Kent Community, Maine School of Science and Math, Fort Fairfield HS",
+      "away": "Washburn District , Caribou, Fort Kent Community, Maine School of Science and Math, Fort Fairfield HS, Houlton HS",
       "site": "PIMS - Gehrig Johnson Athletics Complex",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26267,7 +26657,7 @@
       "time": "10:00 AM",
       "type": "League",
       "home": "Maine Central Institute",
-      "away": "Winthrop, Brewer, Orono, Waterville, Scarborough, Belfast Area, Nokomis, Camden Hills Regional, Mt. Blue , Piscataquis Community, Hermon, Skowhegan Area, Cape Elizabeth, Mt. Ararat, John Bapst Memorial, Leavitt Area, Messalonskee, Central, Lawrence, Erskine Academy, Islesboro Central, Foxcroft Academy, Mount Desert Island, Maranacook Community",
+      "away": "Brewer, Scarborough, Skowhegan Area, Belfast Area, John Bapst Memorial, Orono, Cape Elizabeth, Erskine Academy, Foxcroft Academy, Islesboro Central, Nokomis, Winthrop, Waterville, Camden Hills Regional, Mt. Blue , Mount Desert Island, Maranacook Community, Piscataquis Community, Central, Leavitt Area, Lawrence, Messalonskee, Hermon, Mt. Ararat",
       "site": "Maine Central Institute Alumni Athletic Complex",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26277,7 +26667,7 @@
       "time": "12:00 PM",
       "type": "League",
       "home": "Mount Desert Island",
-      "away": "Narraguagus Sr, Deer Isle-Stonington , Jonesport-Beals, Penquis Valley HS, Searsport HS, BC-PC",
+      "away": "Jonesport-Beals, Deer Isle-Stonington , Penquis Valley HS, Narraguagus Sr, Searsport HS, BC-PC",
       "site": "ALUMNI FIELD-MDI HIGH SCHOOL",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26287,7 +26677,7 @@
       "time": "3:15 PM",
       "type": "League",
       "home": "Lisbon/Oak Hill",
-      "away": "Wiscasset HS, Winthrop, Buckfield HS, Carrabec, Madison High School, Monmouth Academy",
+      "away": "Wiscasset HS, Winthrop, Monmouth Academy, Buckfield HS, Madison High School, Carrabec",
       "site": "Lisbon HS",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26297,7 +26687,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Bangor",
-      "away": "Foxcroft Academy, Dexter Regional, Ellsworth, Hermon",
+      "away": "Hermon, Dexter Regional, Foxcroft Academy, Ellsworth",
       "site": "CAMERON STADIUM",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26307,7 +26697,7 @@
       "time": "3:45 PM",
       "type": "League",
       "home": "Portland",
-      "away": "Falmouth, Westbrook, Gorham",
+      "away": "Gorham, Westbrook, Falmouth",
       "site": "Fitzpatrick Stadium",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26327,7 +26717,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Windham",
-      "away": "South Portland, Scarborough",
+      "away": "Scarborough, South Portland",
       "site": "Windham High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26337,7 +26727,7 @@
       "time": "4:00 PM",
       "type": "League",
       "home": "Thornton Academy",
-      "away": "Marshwood, Noble, Cheverus/Waynflete",
+      "away": "Cheverus/Waynflete, Noble, Marshwood",
       "site": "Thornton Academy",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26347,7 +26737,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Oxford Hills",
-      "away": "Oceanside, Edward Little, Mt. Blue , Lawrence, Messalonskee",
+      "away": "Oceanside, Edward Little, Mt. Blue , Messalonskee, Lawrence",
       "site": "At Oxford Hills - Gouin",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26357,7 +26747,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Morse",
-      "away": "Cony HS, Brunswick, Erskine Academy, Maine Central Institute, Leavitt Area, Belfast Area, Waterville",
+      "away": "Maine Central Institute, Brunswick, Leavitt Area, Erskine Academy, Cony HS, Waterville, Belfast Area",
       "site": "Morse High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26377,7 +26767,7 @@
       "time": "3:45 PM",
       "type": "League",
       "home": "Biddeford",
-      "away": "Massabesic, Kennebunk",
+      "away": "Kennebunk, Massabesic",
       "site": "Biddeford High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26387,7 +26777,7 @@
       "time": "4:00 PM",
       "type": "League",
       "home": "Bonny Eagle",
-      "away": "Sanford, Deering",
+      "away": "Deering, Sanford",
       "site": "Bonny Eagle High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26397,7 +26787,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Freeport",
-      "away": "Sacopee Valley, Poland Regional, Yarmouth, Gray-New Gloucester, Lisbon/Oak Hill",
+      "away": "Sacopee Valley, Yarmouth, Poland Regional, Lisbon/Oak Hill, Gray-New Gloucester",
       "site": "Freeport High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26407,7 +26797,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Mt. Ararat",
-      "away": "Lincoln Academy, Gardiner Area, Messalonskee, Camden Hills Regional",
+      "away": "Lincoln Academy, Messalonskee, Gardiner Area, Camden Hills Regional",
       "site": "Mt. Ararat High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26427,7 +26817,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Wells",
-      "away": "Fryeburg Academy, Cape Elizabeth, Old Orchard Beach, Traip Academy",
+      "away": "Fryeburg Academy, Cape Elizabeth, Traip Academy, Old Orchard Beach",
       "site": "Wells High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26437,7 +26827,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "York",
-      "away": "NYA/MCWS, Greely, Seacoast Christian, Lake Region",
+      "away": "NYA/MCWS, Greely, Lake Region, Seacoast Christian",
       "site": "York High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26447,7 +26837,7 @@
       "time": "1:00 PM",
       "type": "League",
       "home": "Brewer",
-      "away": "John Bapst Memorial, Central, Searsport HS, BC-PC, Washington Academy, Ellsworth, George Stevens Academy",
+      "away": "George Stevens Academy, Central, John Bapst Memorial, Washington Academy, Ellsworth, Searsport HS, BC-PC",
       "site": "Brewer Community School; 92 Pendleton Street",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26457,7 +26847,7 @@
       "time": "10:00 AM",
       "type": "League",
       "home": "Waterville",
-      "away": "Cony HS, Belfast Area, Leavitt Area, Erskine Academy, Mountain Valley, Maranacook Community",
+      "away": "Belfast Area, Leavitt Area, Cony HS, Maranacook Community, Erskine Academy, Mountain Valley",
       "site": "Waterville High School (One Brooklyn Ave)",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26467,7 +26857,7 @@
       "time": "12:00 PM",
       "type": "League",
       "home": "Caribou",
-      "away": "Houlton HS, Fort Kent Community, Maine School of Science and Math, Greenville, Fort Fairfield HS, Bucksport, Presque Isle, Sumner Memorial, Washburn District , Orono",
+      "away": "Fort Fairfield HS, Houlton HS, Fort Kent Community, Maine School of Science and Math, Sumner Memorial, Bucksport, Presque Isle, Orono, Washburn District , Greenville",
       "site": "Caribou High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26477,7 +26867,7 @@
       "time": "12:00 PM",
       "type": "League",
       "home": "Hermon",
-      "away": "Bangor, Penquis Valley HS, Old Town, Dexter Regional, Foxcroft Academy, Mattanawcook Academy",
+      "away": "Foxcroft Academy, Bangor, Dexter Regional, Mattanawcook Academy, Old Town, Penquis Valley HS",
       "site": "Hermon High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26487,7 +26877,7 @@
       "time": "4:00 PM",
       "type": "League",
       "home": "Massabesic",
-      "away": "Portland, Cheverus/Waynflete, Biddeford",
+      "away": "Cheverus/Waynflete, Portland, Biddeford",
       "site": "Massabesic High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26497,7 +26887,7 @@
       "time": "3:15 PM",
       "type": "League",
       "home": "Lisbon/Oak Hill",
-      "away": "Telstar Regional, Dirigo, Monmouth Academy, Madison High School, Mt. Abram, Carrabec",
+      "away": "Carrabec, Monmouth Academy, Madison High School, Dirigo, Telstar Regional, Mt. Abram",
       "site": "Lisbon HS",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26507,7 +26897,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Boothbay Region",
-      "away": "Maranacook Community, Mountain Valley, Buckfield HS, Hall-Dale HS, Spruce Mountain, Winthrop",
+      "away": "Maranacook Community, Mountain Valley, Winthrop, Buckfield HS, Hall-Dale HS, Spruce Mountain",
       "site": "Wiscasset Middle/High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26537,7 +26927,7 @@
       "time": "4:00 PM",
       "type": "League",
       "home": "Westbrook",
-      "away": "Gorham, Marshwood, Sanford",
+      "away": "Sanford, Gorham, Marshwood",
       "site": "Westbrook High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26547,7 +26937,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Ellsworth",
-      "away": "BC-PC, Washington Academy, George Stevens Academy, Presque Isle, Hermon, Piscataquis Community",
+      "away": "Washington Academy, Presque Isle, BC-PC, Piscataquis Community, George Stevens Academy, Hermon",
       "site": "Del Luce Stadium",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26567,7 +26957,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Foxcroft Academy",
-      "away": "Central, Greenville, Houlton HS, Dexter Regional, Maine School of Science and Math, Penquis Valley HS",
+      "away": "Penquis Valley HS, Houlton HS, Dexter Regional, Maine School of Science and Math, Central, Greenville",
       "site": "Foxcroft Academy",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26597,7 +26987,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Mount Desert Island",
-      "away": "Sumner Memorial, Narraguagus Sr, Old Town, Mattanawcook Academy",
+      "away": "Sumner Memorial, Mattanawcook Academy, Old Town, Narraguagus Sr",
       "site": "ALUMNI FIELD-MDI HIGH SCHOOL",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26607,7 +26997,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Cape Elizabeth",
-      "away": "Seacoast Christian, Lake Region, Freeport, NYA/MCWS, Wells, York",
+      "away": "Seacoast Christian, Freeport, Lake Region, Wells, NYA/MCWS, York",
       "site": "Keith R Weatherbie Track/Field",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26617,7 +27007,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Gray-New Gloucester",
-      "away": "Yarmouth, Old Orchard Beach, Sacopee Valley, Poland Regional, Traip Academy, Fryeburg Academy, Greely",
+      "away": "Yarmouth, Old Orchard Beach, Traip Academy, Poland Regional, Sacopee Valley, Fryeburg Academy, Greely",
       "site": "TBA",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26637,7 +27027,7 @@
       "time": "4:00 PM",
       "type": "League",
       "home": "Camden Hills Regional",
-      "away": "Erskine Academy, Medomak Valley, Mt. Ararat, Nokomis",
+      "away": "Mt. Ararat, Nokomis, Medomak Valley, Erskine Academy",
       "site": "Camden Hills Regional High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26727,7 +27117,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Mount View",
-      "away": "Oceanside, Oxford Hills, Belfast Area",
+      "away": "Belfast Area, Oxford Hills, Oceanside",
       "site": "Mount View High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26737,7 +27127,7 @@
       "time": "3:45 PM",
       "type": "League",
       "home": "Maranacook Community",
-      "away": "Winthrop, Dirigo, Buckfield HS, Mt. Abram, Kents Hill, Monmouth Academy",
+      "away": "Monmouth Academy, Buckfield HS, Winthrop, Dirigo, Mt. Abram, Kents Hill",
       "site": "Maranacook Community High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26747,7 +27137,7 @@
       "time": "3:45 PM",
       "type": "League",
       "home": "Marshwood",
-      "away": "Gorham, South Portland, Biddeford",
+      "away": "Biddeford, Gorham, South Portland",
       "site": "Marshwood HS",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26767,7 +27157,7 @@
       "time": "3:00 PM",
       "type": "League",
       "home": "Morse",
-      "away": "Belfast Area, Mt. Ararat, Lincoln Academy, Lisbon/Oak Hill, Brunswick",
+      "away": "Belfast Area, Lisbon/Oak Hill, Lincoln Academy, Brunswick, Mt. Ararat",
       "site": "Morse High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26787,7 +27177,7 @@
       "time": "",
       "type": "League",
       "home": "Caribou",
-      "away": "Presque Isle, Washburn District , Fort Fairfield HS, Maine School of Science and Math, Fort Kent Community, Houlton HS",
+      "away": "Presque Isle, Washburn District , Fort Kent Community, Maine School of Science and Math, Fort Fairfield HS, Houlton HS",
       "site": "Caribou High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26797,7 +27187,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Bucksport",
-      "away": "Mount Desert Island, Ellsworth, George Stevens Academy, Sumner Memorial, Searsport HS",
+      "away": "Sumner Memorial, George Stevens Academy, Mount Desert Island, Ellsworth, Searsport HS",
       "site": "Bucksport High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26807,7 +27197,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Leavitt Area",
-      "away": "Spruce Mountain, Dirigo, Mountain Valley, Oxford Hills, Buckfield HS",
+      "away": "Spruce Mountain, Buckfield HS, Mountain Valley, Dirigo, Oxford Hills",
       "site": "Leavitt Area HS",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26837,7 +27227,7 @@
       "time": "3:00 PM",
       "type": "League",
       "home": "Cony HS",
-      "away": "Nokomis, Buckfield HS, Hall-Dale HS, Mt. Blue , Winthrop, Carrabec, Gardiner Area, Dirigo, Erskine Academy, Mount View, Monmouth Academy, Mt. Abram, Maranacook Community",
+      "away": "Nokomis, Buckfield HS, Gardiner Area, Hall-Dale HS, Winthrop, Monmouth Academy, Mt. Abram, Dirigo, Carrabec, Mount View, Erskine Academy, Mt. Blue , Maranacook Community",
       "site": "Fuller Field - Cony",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26847,7 +27237,7 @@
       "time": "3:00 PM",
       "type": "League",
       "home": "Lawrence",
-      "away": "Maine Central Institute, Messalonskee, Waterville, Skowhegan Area, Winslow",
+      "away": "Messalonskee, Winslow, Maine Central Institute, Waterville, Skowhegan Area",
       "site": "Lawrence High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26867,7 +27257,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Traip Academy",
-      "away": "Seacoast Christian, Old Orchard Beach, York, Wells",
+      "away": "Seacoast Christian, York, Old Orchard Beach, Wells",
       "site": "Shapleigh School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26877,7 +27267,7 @@
       "time": "4:30 PM",
       "type": "League",
       "home": "Yarmouth",
-      "away": "NYA/MCWS, Greely, Cape Elizabeth, Freeport",
+      "away": "NYA/MCWS, Greely, Freeport, Cape Elizabeth",
       "site": "Yarmouth High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26887,7 +27277,7 @@
       "time": "11:00 AM",
       "type": "League",
       "home": "Bangor",
-      "away": "Edward Little, Lewiston, Brewer",
+      "away": "Lewiston, Edward Little, Brewer",
       "site": "CAMERON STADIUM",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26897,7 +27287,7 @@
       "time": "12:00 PM",
       "type": "League",
       "home": "Old Town",
-      "away": "Washington Academy, Hermon, Penquis Valley HS, Piscataquis Community, Mattanawcook Academy, Dexter Regional, Central, Greenville",
+      "away": "Greenville, Washington Academy, Piscataquis Community, Central, Dexter Regional, Hermon, Mattanawcook Academy, Penquis Valley HS",
       "site": "Victory Field OTHS",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26927,7 +27317,7 @@
       "time": "2:00 PM",
       "type": "League",
       "home": "Cony HS",
-      "away": "Oxford Hills, Skowhegan Area, Nokomis, Camden Hills Regional, Mt. Blue , Mt. Ararat, Brunswick, Lewiston, Edward Little, Messalonskee, Morse",
+      "away": "Oxford Hills, Camden Hills Regional, Skowhegan Area, Nokomis, Mt. Ararat, Edward Little, Mt. Blue , Lewiston, Messalonskee, Brunswick, Morse",
       "site": "Fuller Field - Cony",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26937,7 +27327,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Old Town",
-      "away": "Mattanawcook Academy, Dexter Regional, Central, Jonesport-Beals, Houlton HS, Greenville, Fort Kent Community, Narraguagus Sr, Foxcroft Academy, Fort Fairfield HS, Washington Academy, Penquis Valley HS, Deer Isle-Stonington , Piscataquis Community, George Stevens Academy, Sumner Memorial, BC-PC, Searsport HS, Bucksport, Orono",
+      "away": "Fort Kent Community, Jonesport-Beals, Dexter Regional, Central, Foxcroft Academy, Piscataquis Community, Deer Isle-Stonington , Mattanawcook Academy, George Stevens Academy, Penquis Valley HS, Houlton HS, Narraguagus Sr, Fort Fairfield HS, Orono, Sumner Memorial, Greenville, Washington Academy, Bucksport, Searsport HS, BC-PC",
       "site": "Victory Fields at OTHS",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26967,7 +27357,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Southwestern Maine Activities Association",
-      "away": "Deering, Gorham, Scarborough, Thornton Academy, Windham, Bonny Eagle, Portland, South Portland, Westbrook, Cheverus/Waynflete, Sanford, Marshwood, Biddeford, Noble, Falmouth, Massabesic, Kennebunk",
+      "away": "Massabesic, Kennebunk, Scarborough, Westbrook, South Portland, Biddeford, Noble, Cheverus/Waynflete, Sanford, Marshwood, Deering, Gorham, Thornton Academy, Windham, Bonny Eagle, Portland, Falmouth",
       "site": "Windham High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26987,7 +27377,7 @@
       "time": "11:00 AM",
       "type": "League",
       "home": "Hermon",
-      "away": "Bangor, Brewer, Ellsworth, Caribou, Presque Isle, Mount Desert Island, Foxcroft Academy, Old Town, John Bapst Memorial, Hampden Academy",
+      "away": "Caribou, Brewer, Bangor, Presque Isle, Ellsworth, Foxcroft Academy, John Bapst Memorial, Hampden Academy, Mount Desert Island, Old Town",
       "site": "Hermon High School",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -26997,7 +27387,7 @@
       "time": "9:00 AM",
       "type": "League",
       "home": "Western Maine Conference League",
-      "away": "Greely, Cape Elizabeth, Fryeburg Academy, Seacoast Christian, Freeport, Gray-New Gloucester, Lake Region, Traip Academy, Yarmouth, Old Orchard Beach, Poland Regional, Wells, Sacopee Valley, NYA/MCWS, York",
+      "away": "Greely, Freeport, Poland Regional, Fryeburg Academy, Gray-New Gloucester, Seacoast Christian, Lake Region, Cape Elizabeth, NYA/MCWS, Wells, Old Orchard Beach, Yarmouth, Sacopee Valley, Traip Academy, York",
       "site": "Lake Region",
       "sport": "Outdoor Track",
       "gender": "Boys"
@@ -27097,7 +27487,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Bucksport",
-      "away": "BC-PC, Searsport HS, Sumner Memorial, George Stevens Academy, Deer Isle-Stonington",
+      "away": "BC-PC, Searsport HS, Sumner Memorial, Deer Isle-Stonington , George Stevens Academy",
       "site": "Bucksport High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27107,7 +27497,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Messalonskee",
-      "away": "Gardiner Area, Medomak Valley, Oceanside, Nokomis, Winslow",
+      "away": "Medomak Valley, Gardiner Area, Oceanside, Nokomis, Winslow",
       "site": "Messalonskee High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27117,7 +27507,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Mt. Ararat",
-      "away": "Mount View, Lincoln Academy, Cony HS, Erskine Academy",
+      "away": "Cony HS, Erskine Academy, Mount View, Lincoln Academy",
       "site": "Mt. Ararat High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27127,7 +27517,7 @@
       "time": "12:00 PM",
       "type": "League",
       "home": "Yarmouth",
-      "away": "Greely, Lake Region, Freeport, Fryeburg Academy, Gray-New Gloucester, Wells, NYA/MCWS, York",
+      "away": "Fryeburg Academy, Gray-New Gloucester, Lake Region, Freeport, NYA/MCWS, Greely, Wells, York",
       "site": "Yarmouth High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27147,7 +27537,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Mount Desert Island",
-      "away": "Ellsworth, Ellsworth, Washington Academy, Washington Academy, Jonesport-Beals, Jonesport-Beals, John Bapst Memorial, John Bapst Memorial, Central, Central",
+      "away": "Ellsworth, Ellsworth, Washington Academy, Washington Academy, John Bapst Memorial, John Bapst Memorial, Central, Central, Jonesport-Beals, Jonesport-Beals",
       "site": "TBA",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27157,7 +27547,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Maranacook Community",
-      "away": "Mt. Abram, Kents Hill, Buckfield HS, Carrabec, Dirigo, Spruce Mountain, Winthrop",
+      "away": "Dirigo, Mt. Abram, Buckfield HS, Carrabec, Kents Hill, Spruce Mountain, Winthrop",
       "site": "Maranacook Community High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27167,7 +27557,7 @@
       "time": "3:15 PM",
       "type": "League",
       "home": "Lisbon/Oak Hill",
-      "away": "Wiscasset HS, Telstar Regional, Hall-Dale HS, Madison High School, Mountain Valley, Monmouth Academy",
+      "away": "Wiscasset HS, Hall-Dale HS, Monmouth Academy, Madison High School, Telstar Regional, Mountain Valley",
       "site": "Lisbon High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27177,7 +27567,7 @@
       "time": "10:00 AM",
       "type": "League",
       "home": "Kennebunk",
-      "away": "Presque Isle, Westbrook, Marshwood",
+      "away": "Marshwood, Presque Isle, Westbrook",
       "site": "Kennebunk High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27187,7 +27577,7 @@
       "time": "2:00 PM",
       "type": "League",
       "home": "Brunswick",
-      "away": "Waterville, Waterville, Edward Little, Maine Central Institute",
+      "away": "Maine Central Institute, Waterville, Waterville, Edward Little",
       "site": "Brunswick High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27197,7 +27587,7 @@
       "time": "3:00 PM",
       "type": "League",
       "home": "Deering",
-      "away": "Windham, Massabesic",
+      "away": "Massabesic, Windham",
       "site": "Fitzpatrick Stadium",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27207,7 +27597,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Brewer",
-      "away": "Hermon, Caribou, Piscataquis Community, Washburn District , Bangor, Foxcroft Academy, Dexter Regional, Houlton HS",
+      "away": "Bangor, Caribou, Washburn District , Hermon, Piscataquis Community, Dexter Regional, Houlton HS, Foxcroft Academy",
       "site": "Brewer Community School; 92 Pendleton Street",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27217,7 +27607,7 @@
       "time": "11:00 AM",
       "type": "League",
       "home": "Bonny Eagle",
-      "away": "South Portland, Portland, Noble",
+      "away": "Portland, South Portland, Noble",
       "site": "Bonny Eagle High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27227,7 +27617,7 @@
       "time": "3:45 PM",
       "type": "League",
       "home": "Biddeford",
-      "away": "Gorham, Cheverus/Waynflete, Scarborough",
+      "away": "Cheverus/Waynflete, Gorham, Scarborough",
       "site": "Biddeford High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27237,7 +27627,7 @@
       "time": "11:00 AM",
       "type": "League",
       "home": "Lewiston",
-      "away": "Leavitt Area, Morse, Mt. Blue , Oxford Hills",
+      "away": "Morse, Oxford Hills, Leavitt Area, Mt. Blue",
       "site": "Lewiston HS",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27247,7 +27637,7 @@
       "time": "10:00 AM",
       "type": "League",
       "home": "Lawrence",
-      "away": "Belfast Area, Camden Hills Regional, Skowhegan Area",
+      "away": "Camden Hills Regional, Skowhegan Area, Belfast Area",
       "site": "Lawrence High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27257,7 +27647,7 @@
       "time": "10:00 AM",
       "type": "League",
       "home": "York",
-      "away": "Yarmouth, Poland Regional, Freeport, Gray-New Gloucester",
+      "away": "Poland Regional, Yarmouth, Freeport, Gray-New Gloucester",
       "site": "York High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27267,7 +27657,7 @@
       "time": "12:00 PM",
       "type": "League",
       "home": "Old Town/Penobscot Valley",
-      "away": "Fort Fairfield HS, Narraguagus Sr, Mattanawcook Academy, Fort Kent Community, Penquis Valley HS, Greenville, Maine School of Science and Math, Hampden Academy, Hampden Academy, Washburn District , Orono, Presque Isle",
+      "away": "Fort Fairfield HS, Narraguagus Sr, Mattanawcook Academy, Penquis Valley HS, Maine School of Science and Math, Hampden Academy, Hampden Academy, Fort Kent Community, Orono, Washburn District , Greenville, Presque Isle",
       "site": "Victory Field OTHS",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27277,7 +27667,7 @@
       "time": "3:15 PM",
       "type": "League",
       "home": "Hall-Dale HS",
-      "away": "Winthrop, Spruce Mountain, Telstar Regional, Monmouth Academy, Maranacook Community, Mountain Valley",
+      "away": "Spruce Mountain, Winthrop, Telstar Regional, Monmouth Academy, Maranacook Community, Mountain Valley",
       "site": "Hall-Dale HS",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27287,7 +27677,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Waterville",
-      "away": "Leavitt Area, Leavitt Area, Messalonskee, Messalonskee, Camden Hills Regional, Camden Hills Regional, Winslow, Winslow, Belfast Area, Belfast Area",
+      "away": "Leavitt Area, Leavitt Area, Messalonskee, Messalonskee, Winslow, Winslow, Camden Hills Regional, Camden Hills Regional, Belfast Area, Belfast Area",
       "site": "Waterville High School (One Brooklyn Ave)",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27297,7 +27687,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Boothbay Region",
-      "away": "Buckfield HS, Carrabec, Dirigo, Mt. Abram, Lisbon/Oak Hill, Madison High School",
+      "away": "Buckfield HS, Dirigo, Carrabec, Mt. Abram, Lisbon/Oak Hill, Madison High School",
       "site": "Wiscasset Middle/High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27307,7 +27697,7 @@
       "time": "4:00 PM",
       "type": "League",
       "home": "Massabesic",
-      "away": "Falmouth, Gorham, Scarborough",
+      "away": "Falmouth, Scarborough, Gorham",
       "site": "Massabesic High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27317,7 +27707,7 @@
       "time": "4:00 PM",
       "type": "League",
       "home": "Sanford",
-      "away": "Windham, Deering",
+      "away": "Deering, Windham",
       "site": "Sanford High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27337,7 +27727,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Skowhegan Area",
-      "away": "Edward Little, Lawrence, Maine Central Institute, Nokomis",
+      "away": "Maine Central Institute, Lawrence, Edward Little, Nokomis",
       "site": "Skowhegan High School--61 Academy Circle",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27347,7 +27737,7 @@
       "time": "3:45 PM",
       "type": "League",
       "home": "Marshwood",
-      "away": "Cheverus/Waynflete, South Portland, Kennebunk",
+      "away": "Kennebunk, Cheverus/Waynflete, South Portland",
       "site": "Marshwood HS",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27367,7 +27757,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Sacopee Valley",
-      "away": "Old Orchard Beach, Yarmouth, Seacoast Christian, Greely",
+      "away": "Old Orchard Beach, Yarmouth, Greely, Seacoast Christian",
       "site": "Sacopee Valley",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27407,7 +27797,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Lake Region",
-      "away": "Cape Elizabeth, Fryeburg Academy, Freeport, NYA/MCWS",
+      "away": "Cape Elizabeth, NYA/MCWS, Fryeburg Academy, Freeport",
       "site": "Lake Region High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27417,7 +27807,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Oxford Hills",
-      "away": "Cony HS, Mt. Ararat, Morse",
+      "away": "Morse, Mt. Ararat, Cony HS",
       "site": "Oxford Hills",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27427,7 +27817,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Presque Isle",
-      "away": "Houlton HS, Fort Kent Community, Maine School of Science and Math, Fort Fairfield HS, Washburn District , Caribou",
+      "away": "Washburn District , Caribou, Fort Kent Community, Houlton HS, Fort Fairfield HS, Maine School of Science and Math",
       "site": "PIMS - Gehrig Johnson Athletics Complex",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27457,7 +27847,7 @@
       "time": "10:00 AM",
       "type": "League",
       "home": "Maine Central Institute",
-      "away": "Brewer, Orono, Hermon, Nokomis, Skowhegan Area, Piscataquis Community, Mt. Blue , Poland Regional, Belfast Area, Scarborough, Waterville, Waterville, Winthrop, Cony HS, Erskine Academy, Messalonskee, Cape Elizabeth, Central, Lawrence, Leavitt Area, John Bapst Memorial, Mt. Ararat, Lake Region, Maranacook Community, Islesboro Central, Foxcroft Academy, Mount Desert Island, Mount Desert Island",
+      "away": "Brewer, Scarborough, Belfast Area, Orono, Cape Elizabeth, Erskine Academy, Lake Region, John Bapst Memorial, Islesboro Central, Nokomis, Winthrop, Waterville, Waterville, Skowhegan Area, Cony HS, Piscataquis Community, Mt. Ararat, Central, Foxcroft Academy, Poland Regional, Hermon, Lawrence, Messalonskee, Maranacook Community, Leavitt Area, Mt. Blue , Mount Desert Island, Mount Desert Island",
       "site": "Maine Central Institute Alumni Athletic Complex",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27467,7 +27857,7 @@
       "time": "12:00 PM",
       "type": "League",
       "home": "Mount Desert Island",
-      "away": "Narraguagus Sr, Narraguagus Sr, Narraguagus Sr, Narraguagus Sr, Jonesport-Beals, Jonesport-Beals, Jonesport-Beals, Jonesport-Beals, Deer Isle-Stonington , Deer Isle-Stonington , Deer Isle-Stonington , Deer Isle-Stonington , Penquis Valley HS, Penquis Valley HS, Searsport HS, Searsport HS, BC-PC, BC-PC, BC-PC, BC-PC",
+      "away": "Penquis Valley HS, Penquis Valley HS, Narraguagus Sr, Narraguagus Sr, Narraguagus Sr, Narraguagus Sr, Jonesport-Beals, Jonesport-Beals, Jonesport-Beals, Jonesport-Beals, Deer Isle-Stonington , Deer Isle-Stonington , Deer Isle-Stonington , Deer Isle-Stonington , Searsport HS, Searsport HS, BC-PC, BC-PC, BC-PC, BC-PC",
       "site": "ALUMNI FIELD-MDI HIGH SCHOOL",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27477,7 +27867,7 @@
       "time": "3:15 PM",
       "type": "League",
       "home": "Lisbon/Oak Hill",
-      "away": "Winthrop, Wiscasset HS, Carrabec, Buckfield HS, Madison High School, Monmouth Academy",
+      "away": "Wiscasset HS, Winthrop, Monmouth Academy, Buckfield HS, Carrabec, Madison High School",
       "site": "Lisbon HS",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27487,7 +27877,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Bangor",
-      "away": "Foxcroft Academy, Dexter Regional, Hermon, Ellsworth",
+      "away": "Foxcroft Academy, Hermon, Dexter Regional, Ellsworth",
       "site": "CAMERON STADIUM",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27497,7 +27887,7 @@
       "time": "3:45 PM",
       "type": "League",
       "home": "Portland",
-      "away": "Westbrook, Falmouth, Gorham",
+      "away": "Falmouth, Gorham, Westbrook",
       "site": "Fitzpatrick Stadium",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27517,7 +27907,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Windham",
-      "away": "South Portland, Scarborough",
+      "away": "Scarborough, South Portland",
       "site": "Windham High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27527,7 +27917,7 @@
       "time": "4:00 PM",
       "type": "League",
       "home": "Thornton Academy",
-      "away": "Noble, Cheverus/Waynflete, Marshwood",
+      "away": "Cheverus/Waynflete, Noble, Marshwood",
       "site": "Thornton Academy",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27537,7 +27927,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Morse",
-      "away": "Belfast Area, Waterville, Waterville, Leavitt Area, Brunswick, Maine Central Institute, Erskine Academy, Cony HS",
+      "away": "Cony HS, Waterville, Waterville, Belfast Area, Erskine Academy, Brunswick, Leavitt Area, Maine Central Institute",
       "site": "Morse High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27557,7 +27947,7 @@
       "time": "3:45 PM",
       "type": "League",
       "home": "Biddeford",
-      "away": "Massabesic, Kennebunk",
+      "away": "Kennebunk, Massabesic",
       "site": "Biddeford High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27567,7 +27957,7 @@
       "time": "4:00 PM",
       "type": "League",
       "home": "Bonny Eagle",
-      "away": "Sanford, Deering",
+      "away": "Deering, Sanford",
       "site": "Bonny Eagle High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27597,7 +27987,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Nokomis",
-      "away": "Skowhegan Area, Winslow, Mount View, Medomak Valley",
+      "away": "Skowhegan Area, Winslow, Medomak Valley, Mount View",
       "site": "Nokomis Regional High",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27607,7 +27997,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Wells",
-      "away": "Fryeburg Academy, Cape Elizabeth, Traip Academy, Old Orchard Beach",
+      "away": "Fryeburg Academy, Cape Elizabeth, Old Orchard Beach, Traip Academy",
       "site": "Wells High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27627,7 +28017,7 @@
       "time": "1:00 PM",
       "type": "League",
       "home": "Brewer",
-      "away": "Central, George Stevens Academy, John Bapst Memorial, Searsport HS, BC-PC, Washington Academy, Ellsworth",
+      "away": "George Stevens Academy, Central, John Bapst Memorial, Washington Academy, Ellsworth, Searsport HS, BC-PC",
       "site": "Brewer Community School; 92 Pendleton Street",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27637,7 +28027,7 @@
       "time": "10:00 AM",
       "type": "League",
       "home": "Waterville",
-      "away": "Cony HS, Cony HS, Belfast Area, Belfast Area, Erskine Academy, Erskine Academy, Leavitt Area, Leavitt Area, Mountain Valley, Mountain Valley, Maranacook Community, Maranacook Community",
+      "away": "Belfast Area, Belfast Area, Cony HS, Cony HS, Leavitt Area, Leavitt Area, Erskine Academy, Erskine Academy, Maranacook Community, Maranacook Community, Mountain Valley, Mountain Valley",
       "site": "Waterville High School (One Brooklyn Ave)",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27647,7 +28037,7 @@
       "time": "12:00 PM",
       "type": "League",
       "home": "Caribou",
-      "away": "Fort Kent Community, Houlton HS, Maine School of Science and Math, Fort Fairfield HS, Greenville, Bucksport, Sumner Memorial, Washburn District , Presque Isle, Orono",
+      "away": "Fort Kent Community, Houlton HS, Fort Fairfield HS, Maine School of Science and Math, Sumner Memorial, Greenville, Washburn District , Presque Isle, Orono, Bucksport",
       "site": "Caribou High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27657,7 +28047,7 @@
       "time": "12:00 PM",
       "type": "League",
       "home": "Hermon",
-      "away": "Bangor, Old Town/Penobscot Valley, Penquis Valley HS, Foxcroft Academy, Mattanawcook Academy, Dexter Regional",
+      "away": "Bangor, Foxcroft Academy, Old Town/Penobscot Valley, Dexter Regional, Mattanawcook Academy, Penquis Valley HS",
       "site": "Hermon High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27687,7 +28077,7 @@
       "time": "3:15 PM",
       "type": "League",
       "home": "Lisbon/Oak Hill",
-      "away": "Dirigo, Telstar Regional, Mt. Abram, Monmouth Academy, Madison High School, Carrabec",
+      "away": "Monmouth Academy, Madison High School, Telstar Regional, Dirigo, Carrabec, Mt. Abram",
       "site": "Lisbon HS",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27697,7 +28087,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Boothbay Region",
-      "away": "Maranacook Community, Mountain Valley, Hall-Dale HS, Buckfield HS, Spruce Mountain, Winthrop",
+      "away": "Maranacook Community, Mountain Valley, Winthrop, Buckfield HS, Hall-Dale HS, Spruce Mountain",
       "site": "Wiscasset Middle/High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27707,7 +28097,7 @@
       "time": "3:45 PM",
       "type": "League",
       "home": "Deering",
-      "away": "Thornton Academy, Windham",
+      "away": "Windham, Thornton Academy",
       "site": "Fitzpatrick Stadium",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27727,7 +28117,7 @@
       "time": "4:00 PM",
       "type": "League",
       "home": "Westbrook",
-      "away": "Marshwood, Sanford, Gorham",
+      "away": "Sanford, Gorham, Marshwood",
       "site": "Westbrook High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27737,7 +28127,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Ellsworth",
-      "away": "BC-PC, Hermon, Washington Academy, Presque Isle, George Stevens Academy, Piscataquis Community",
+      "away": "Washington Academy, Presque Isle, BC-PC, George Stevens Academy, Piscataquis Community, Hermon",
       "site": "Del Luce Stadium",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27757,7 +28147,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Foxcroft Academy",
-      "away": "Central, Maine School of Science and Math, Dexter Regional, Penquis Valley HS, Greenville, Houlton HS",
+      "away": "Penquis Valley HS, Houlton HS, Dexter Regional, Maine School of Science and Math, Central, Greenville",
       "site": "Foxcroft Academy",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27767,7 +28157,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Skowhegan Area",
-      "away": "Brunswick, Lincoln Academy, Gardiner Area",
+      "away": "Gardiner Area, Brunswick, Lincoln Academy",
       "site": "Skowhegan High School--61 Academy Circle",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27787,7 +28177,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Mount Desert Island",
-      "away": "Sumner Memorial, Sumner Memorial, Mattanawcook Academy, Mattanawcook Academy, Narraguagus Sr, Narraguagus Sr, Old Town/Penobscot Valley, Old Town/Penobscot Valley",
+      "away": "Sumner Memorial, Sumner Memorial, Old Town/Penobscot Valley, Old Town/Penobscot Valley, Narraguagus Sr, Narraguagus Sr, Mattanawcook Academy, Mattanawcook Academy",
       "site": "ALUMNI FIELD-MDI HIGH SCHOOL",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27797,7 +28187,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Gray-New Gloucester",
-      "away": "Greely, Traip Academy, Fryeburg Academy, Sacopee Valley, Old Orchard Beach, Yarmouth, Poland Regional",
+      "away": "Fryeburg Academy, Greely, Old Orchard Beach, Sacopee Valley, Traip Academy, Yarmouth, Poland Regional",
       "site": "Gray-New Gloucester High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27807,7 +28197,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Cape Elizabeth",
-      "away": "NYA/MCWS, Wells, York, Seacoast Christian, Freeport, Lake Region",
+      "away": "Wells, NYA/MCWS, York, Freeport, Lake Region, Seacoast Christian",
       "site": "Keith R Weatherbie Track/Field",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27917,7 +28307,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Mount View",
-      "away": "Oxford Hills, Oceanside, Belfast Area",
+      "away": "Belfast Area, Oxford Hills, Oceanside",
       "site": "Mount View High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27927,7 +28317,7 @@
       "time": "3:45 PM",
       "type": "League",
       "home": "Maranacook Community",
-      "away": "Winthrop, Dirigo, Mt. Abram, Buckfield HS, Monmouth Academy",
+      "away": "Monmouth Academy, Winthrop, Dirigo, Mt. Abram, Buckfield HS",
       "site": "Maranacook Community High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27937,7 +28327,7 @@
       "time": "3:45 PM",
       "type": "League",
       "home": "Marshwood",
-      "away": "Gorham, Biddeford, South Portland",
+      "away": "Biddeford, South Portland, Gorham",
       "site": "Marshwood HS",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27957,7 +28347,7 @@
       "time": "3:00 PM",
       "type": "League",
       "home": "Morse",
-      "away": "Belfast Area, Mt. Ararat, Lincoln Academy, Lisbon/Oak Hill, Brunswick",
+      "away": "Belfast Area, Brunswick, Mt. Ararat, Lincoln Academy, Lisbon/Oak Hill",
       "site": "Morse High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27977,7 +28367,7 @@
       "time": "",
       "type": "League",
       "home": "Caribou",
-      "away": "Washburn District , Presque Isle, Maine School of Science and Math, Fort Fairfield HS, Fort Kent Community, Houlton HS",
+      "away": "Presque Isle, Washburn District , Fort Fairfield HS, Houlton HS, Fort Kent Community, Maine School of Science and Math",
       "site": "Caribou High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27987,7 +28377,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Bucksport",
-      "away": "Mount Desert Island, Mount Desert Island, George Stevens Academy, Ellsworth, Sumner Memorial, Searsport HS",
+      "away": "Sumner Memorial, Mount Desert Island, Mount Desert Island, George Stevens Academy, Ellsworth, Searsport HS",
       "site": "Bucksport High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -27997,7 +28387,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Leavitt Area",
-      "away": "Spruce Mountain, Dirigo, Buckfield HS, Oxford Hills, Mountain Valley",
+      "away": "Spruce Mountain, Mountain Valley, Dirigo, Oxford Hills, Buckfield HS",
       "site": "Leavitt Area High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -28007,7 +28397,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Medomak Valley",
-      "away": "North Haven Community, Oceanside, Camden Hills Regional",
+      "away": "North Haven Community, Camden Hills Regional, Oceanside",
       "site": "Medomak Valley High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -28017,7 +28407,7 @@
       "time": "4:45 PM",
       "type": "League",
       "home": "Westbrook",
-      "away": "Kennebunk, Thornton Academy",
+      "away": "Thornton Academy, Kennebunk",
       "site": "Westbrook High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -28027,7 +28417,7 @@
       "time": "3:00 PM",
       "type": "League",
       "home": "Cony HS",
-      "away": "Winthrop, Buckfield HS, Hall-Dale HS, Mt. Blue , Monmouth Academy, Mt. Abram, Mount View, Maranacook Community, Gardiner Area, Carrabec, Nokomis, Dirigo, Erskine Academy",
+      "away": "Monmouth Academy, Mt. Abram, Dirigo, Carrabec, Mount View, Erskine Academy, Mt. Blue , Maranacook Community, Hall-Dale HS, Winthrop, Buckfield HS, Nokomis, Gardiner Area",
       "site": "Fuller Field - Cony",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -28037,7 +28427,7 @@
       "time": "3:00 PM",
       "type": "League",
       "home": "Lawrence",
-      "away": "Messalonskee, Maine Central Institute, Skowhegan Area, Winslow, Waterville, Waterville",
+      "away": "Maine Central Institute, Winslow, Waterville, Waterville, Skowhegan Area, Messalonskee",
       "site": "Lawrence High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -28047,7 +28437,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Poland Regional",
-      "away": "Sacopee Valley, Fryeburg Academy, Gray-New Gloucester, Lake Region",
+      "away": "Fryeburg Academy, Lake Region, Gray-New Gloucester, Sacopee Valley",
       "site": "Poland Regional High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -28057,7 +28447,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Traip Academy",
-      "away": "Seacoast Christian, Old Orchard Beach, York, Wells",
+      "away": "Wells, York, Old Orchard Beach, Seacoast Christian",
       "site": "Shapleigh School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -28067,7 +28457,7 @@
       "time": "4:30 PM",
       "type": "League",
       "home": "Yarmouth",
-      "away": "NYA/MCWS, Greely, Cape Elizabeth, Freeport",
+      "away": "Freeport, Cape Elizabeth, NYA/MCWS, Greely",
       "site": "Yarmouth High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -28077,7 +28467,7 @@
       "time": "11:00 AM",
       "type": "League",
       "home": "Bangor",
-      "away": "Lewiston, Edward Little, Brewer",
+      "away": "Brewer, Lewiston, Edward Little",
       "site": "CAMERON STADIUM",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -28087,7 +28477,7 @@
       "time": "12:00 PM",
       "type": "League",
       "home": "Old Town/Penobscot Valley",
-      "away": "Washington Academy, Piscataquis Community, Greenville, Hermon, Penquis Valley HS, Central, Dexter Regional, Mattanawcook Academy",
+      "away": "Piscataquis Community, Central, Hermon, Mattanawcook Academy, Penquis Valley HS, Dexter Regional, Greenville, Washington Academy",
       "site": "Victory Field OTHS",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -28107,7 +28497,7 @@
       "time": "2:00 PM",
       "type": "League",
       "home": "Cony HS",
-      "away": "Oxford Hills, Camden Hills Regional, Lewiston, Skowhegan Area, Mt. Blue , Morse, Messalonskee, Edward Little, Nokomis, Brunswick, Mt. Ararat",
+      "away": "Skowhegan Area, Nokomis, Mt. Ararat, Edward Little, Oxford Hills, Camden Hills Regional, Brunswick, Lewiston, Mt. Blue , Messalonskee, Morse",
       "site": "Fuller Field - Cony",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -28117,7 +28507,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Old Town/Penobscot Valley",
-      "away": "Jonesport-Beals, Houlton HS, Greenville, Deer Isle-Stonington , Penquis Valley HS, Central, Mattanawcook Academy, Dexter Regional, Fort Kent Community, Foxcroft Academy, Fort Fairfield HS, Narraguagus Sr, Washington Academy, George Stevens Academy, Piscataquis Community, Sumner Memorial, Orono, Searsport HS, Bucksport, BC-PC",
+      "away": "Fort Kent Community, Jonesport-Beals, Central, Piscataquis Community, Foxcroft Academy, Deer Isle-Stonington , Mattanawcook Academy, Dexter Regional, Penquis Valley HS, Houlton HS, George Stevens Academy, Narraguagus Sr, Fort Fairfield HS, Bucksport, Searsport HS, BC-PC, Sumner Memorial, Orono, Greenville, Washington Academy",
       "site": "Victory Fields at OTHS",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -28147,7 +28537,7 @@
       "time": "3:30 PM",
       "type": "League",
       "home": "Southwestern Maine Activities Association",
-      "away": "Deering, Gorham, Scarborough, Thornton Academy, Windham, Bonny Eagle, Portland, Westbrook, Cheverus/Waynflete, Sanford, Biddeford, Noble, Marshwood, South Portland, Massabesic, Kennebunk, Falmouth",
+      "away": "Massabesic, Kennebunk, Scarborough, South Portland, Westbrook, Thornton Academy, Windham, Bonny Eagle, Portland, Marshwood, Deering, Gorham, Cheverus/Waynflete, Sanford, Biddeford, Noble, Falmouth",
       "site": "Windham High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -28167,7 +28557,7 @@
       "time": "11:00 AM",
       "type": "League",
       "home": "Hermon",
-      "away": "Bangor, Presque Isle, Caribou, Brewer, Ellsworth, Mount Desert Island, Mount Desert Island, Foxcroft Academy, Hampden Academy, Hampden Academy, Old Town/Penobscot Valley, John Bapst Memorial",
+      "away": "Caribou, Bangor, Brewer, Ellsworth, Presque Isle, John Bapst Memorial, Mount Desert Island, Mount Desert Island, Foxcroft Academy, Old Town/Penobscot Valley, Hampden Academy, Hampden Academy",
       "site": "Hermon High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
@@ -28177,7 +28567,7 @@
       "time": "9:00 AM",
       "type": "League",
       "home": "Lake Region",
-      "away": "Greely, Cape Elizabeth, Seacoast Christian, Gray-New Gloucester, Freeport, Fryeburg Academy, Old Orchard Beach, Sacopee Valley, York, NYA/MCWS, Traip Academy, Yarmouth, Poland Regional, Wells",
+      "away": "Freeport, Greely, Fryeburg Academy, Seacoast Christian, Gray-New Gloucester, Cape Elizabeth, Old Orchard Beach, Sacopee Valley, Traip Academy, Poland Regional, Yarmouth, NYA/MCWS, Wells, York",
       "site": "Lake Region High School",
       "sport": "Outdoor Track",
       "gender": "Girls"
