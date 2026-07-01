@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-06-30T12:33:32.140544+00:00",
-  "season": "spring",
+  "last_updated": "2026-07-01T03:19:21.377761+00:00",
+  "season": "fall",
   "sports": [
     {
-      "sport": "Baseball",
+      "sport": "Cross Country",
       "gender": "Boys",
-      "tournament_id": 200,
+      "tournament_id": 1,
       "divisions": [
         {
           "name": "2025-2026 Class North-A HS - Baseball",
@@ -869,1525 +869,1240 @@
       ]
     },
     {
-      "sport": "Softball",
+      "sport": "Cross Country",
       "gender": "Girls",
-      "tournament_id": 205,
+      "tournament_id": 9,
       "divisions": [
         {
-          "name": "2025-2026 Class North-A HS - Softball",
+          "name": "2025-2026 Class North-A HS - Baseball",
           "teams": [
             {
               "rank": 1,
               "team": "Oxford Hills",
-              "record": "14-2-0",
-              "index": 171.484,
+              "record": "15-1-0",
+              "index": 165.078,
               "qualifying": true
             },
             {
               "rank": 2,
+              "team": "Mt. Ararat",
+              "record": "13-3-0",
+              "index": 137.031,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Bangor",
+              "record": "13-3-0",
+              "index": 133.75,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Hampden Academy",
+              "record": "11-5-0",
+              "index": 123.203,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Messalonskee",
+              "record": "9-7-0",
+              "index": 81.797,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Mt. Blue",
+              "record": "10-6-0",
+              "index": 72.031,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "Edward Little",
+              "record": "8-8-0",
+              "index": 56.016,
+              "qualifying": true
+            },
+            {
+              "rank": 8,
+              "team": "Brunswick",
+              "record": "6-10-0",
+              "index": 46.719,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
+              "team": "Camden Hills Regional",
+              "record": "5-11-0",
+              "index": 27.734,
+              "qualifying": false
+            },
+            {
+              "rank": 10,
+              "team": "Brewer",
+              "record": "2-14-0",
+              "index": 17.656,
+              "qualifying": false
+            },
+            {
+              "rank": 11,
+              "team": "Skowhegan Area",
+              "record": "4-12-0",
+              "index": 16.25,
+              "qualifying": false
+            },
+            {
+              "rank": 12,
               "team": "Lewiston",
+              "record": "0-16-0",
+              "index": 0.0,
+              "qualifying": false
+            }
+          ]
+        },
+        {
+          "name": "2025-2026 Class North-B HS - Baseball",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Ellsworth",
+              "record": "15-1-0",
+              "index": 175.781,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Cony HS",
+              "record": "14-2-0",
+              "index": 145.547,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Mount Desert Island",
+              "record": "11-5-0",
+              "index": 122.422,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Hermon",
+              "record": "11-5-0",
+              "index": 120.313,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Old Town",
+              "record": "11-5-0",
+              "index": 97.266,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Nokomis",
+              "record": "12-4-0",
+              "index": 78.984,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "Lawrence",
+              "record": "11-5-0",
+              "index": 78.516,
+              "qualifying": true
+            },
+            {
+              "rank": 8,
+              "team": "Belfast Area",
+              "record": "11-5-0",
+              "index": 68.359,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
+              "team": "John Bapst Memorial",
+              "record": "7-9-0",
+              "index": 45.938,
+              "qualifying": true
+            },
+            {
+              "rank": 10,
+              "team": "Gardiner Area",
+              "record": "6-10-0",
+              "index": 44.844,
+              "qualifying": true
+            },
+            {
+              "rank": 11,
+              "team": "Oceanside",
+              "record": "6-10-0",
+              "index": 38.203,
+              "qualifying": false
+            },
+            {
+              "rank": 12,
+              "team": "Presque Isle",
+              "record": "6-10-0",
+              "index": 31.172,
+              "qualifying": false
+            },
+            {
+              "rank": 13,
+              "team": "Foxcroft Academy",
+              "record": "3-13-0",
+              "index": 30.547,
+              "qualifying": false
+            },
+            {
+              "rank": 14,
+              "team": "Caribou",
+              "record": "6-10-0",
+              "index": 25.156,
+              "qualifying": false
+            },
+            {
+              "rank": 15,
+              "team": "Waterville",
+              "record": "4-12-0",
+              "index": 17.188,
+              "qualifying": false
+            }
+          ]
+        },
+        {
+          "name": "2025-2026 Class North-C HS - Baseball",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Washington Academy",
+              "record": "15-1-0",
+              "index": 158.125,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Mattanawcook Academy",
               "record": "13-3-0",
               "index": 155.469,
               "qualifying": true
             },
             {
               "rank": 3,
-              "team": "Skowhegan Area",
-              "record": "11-5-0",
-              "index": 111.484,
+              "team": "Dexter/PCHS",
+              "record": "13-3-0",
+              "index": 118.594,
               "qualifying": true
             },
             {
               "rank": 4,
-              "team": "Edward Little",
-              "record": "10-6-0",
-              "index": 111.406,
+              "team": "George Stevens Academy",
+              "record": "11-5-0",
+              "index": 110.112,
               "qualifying": true
             },
             {
               "rank": 5,
-              "team": "Hampden Academy",
+              "team": "Bucksport",
               "record": "10-6-0",
-              "index": 96.016,
+              "index": 96.518,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Sumner Memorial",
+              "record": "6-8-0",
+              "index": 61.781,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "Calais",
+              "record": "12-4-0",
+              "index": 60.387,
+              "qualifying": true
+            },
+            {
+              "rank": 8,
+              "team": "Orono",
+              "record": "6-10-0",
+              "index": 55.156,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
+              "team": "Narraguagus Sr",
+              "record": "6-10-0",
+              "index": 40.275,
+              "qualifying": true
+            },
+            {
+              "rank": 10,
+              "team": "Mount View",
+              "record": "5-11-0",
+              "index": 33.984,
+              "qualifying": true
+            },
+            {
+              "rank": 11,
+              "team": "Fort Kent Community",
+              "record": "4-12-0",
+              "index": 15.089,
+              "qualifying": false
+            },
+            {
+              "rank": 12,
+              "team": "Central",
+              "record": "3-13-0",
+              "index": 14.81,
+              "qualifying": false
+            },
+            {
+              "rank": 13,
+              "team": "Maine Central Institute",
+              "record": "4-12-0",
+              "index": 9.688,
+              "qualifying": false
+            },
+            {
+              "rank": 14,
+              "team": "Houlton/Greater Houlton",
+              "record": "0-13-0",
+              "index": 0.0,
+              "qualifying": false
+            },
+            {
+              "rank": 15,
+              "team": "Winslow",
+              "record": "0-16-0",
+              "index": 0.0,
+              "qualifying": false
+            }
+          ]
+        },
+        {
+          "name": "2025-2026 Class North-D HS - Baseball",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Fort Fairfield HS",
+              "record": "14-0-0",
+              "index": 148.367,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Bangor Christian",
+              "record": "13-3-0",
+              "index": 133.103,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Katahdin HS",
+              "record": "12-2-0",
+              "index": 98.776,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Stearns Sr.",
+              "record": "12-4-0",
+              "index": 92.098,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Penobscot Valley",
+              "record": "9-5-0",
+              "index": 76.199,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Washburn/Easton/Central Aroostook",
+              "record": "7-7-0",
+              "index": 46.633,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "Hodgdon HS",
+              "record": "7-7-0",
+              "index": 45.0,
+              "qualifying": true
+            },
+            {
+              "rank": 8,
+              "team": "Wisdom HS",
+              "record": "5-9-0",
+              "index": 40.714,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
+              "team": "Schenck",
+              "record": "7-7-0",
+              "index": 36.977,
+              "qualifying": true
+            },
+            {
+              "rank": 10,
+              "team": "Madawaska HS",
+              "record": "4-10-0",
+              "index": 35.74,
+              "qualifying": true
+            },
+            {
+              "rank": 11,
+              "team": "Machias Memorial",
+              "record": "7-7-0",
+              "index": 33.899,
+              "qualifying": true
+            },
+            {
+              "rank": 12,
+              "team": "Southern Aroostook",
+              "record": "5-9-0",
+              "index": 29.286,
+              "qualifying": true
+            },
+            {
+              "rank": 13,
+              "team": "Lee Academy",
+              "record": "5-9-0",
+              "index": 25.026,
+              "qualifying": false
+            },
+            {
+              "rank": 14,
+              "team": "Woodland Sr.",
+              "record": "5-11-0",
+              "index": 21.994,
+              "qualifying": false
+            },
+            {
+              "rank": 15,
+              "team": "Penquis Valley HS",
+              "record": "3-11-0",
+              "index": 10.204,
+              "qualifying": false
+            },
+            {
+              "rank": 16,
+              "team": "Jonesport-Beals",
+              "record": "2-10-0",
+              "index": 1.667,
+              "qualifying": false
+            },
+            {
+              "rank": 17,
+              "team": "Ashland District",
+              "record": "0-10-0",
+              "index": 0.0,
+              "qualifying": false
+            },
+            {
+              "rank": 18,
+              "team": "Shead",
+              "record": "0-14-0",
+              "index": 0.0,
+              "qualifying": false
+            }
+          ]
+        },
+        {
+          "name": "2025-2026 Class South-A HS - Baseball",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Gorham",
+              "record": "15-1-0",
+              "index": 173.438,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "South Portland",
+              "record": "15-1-0",
+              "index": 165.625,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Cheverus",
+              "record": "13-3-0",
+              "index": 129.688,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Thornton Academy",
+              "record": "12-4-0",
+              "index": 109.375,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Scarborough",
+              "record": "11-4-1",
+              "index": 102.734,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Sanford",
+              "record": "11-5-0",
+              "index": 98.438,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "Massabesic",
+              "record": "10-6-0",
+              "index": 85.156,
+              "qualifying": true
+            },
+            {
+              "rank": 8,
+              "team": "Falmouth",
+              "record": "10-6-0",
+              "index": 80.469,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
+              "team": "Bonny Eagle",
+              "record": "9-7-0",
+              "index": 61.719,
+              "qualifying": true
+            },
+            {
+              "rank": 10,
+              "team": "Noble",
+              "record": "7-8-1",
+              "index": 51.172,
+              "qualifying": true
+            },
+            {
+              "rank": 11,
+              "team": "Kennebunk",
+              "record": "6-10-0",
+              "index": 28.906,
+              "qualifying": true
+            },
+            {
+              "rank": 12,
+              "team": "Marshwood",
+              "record": "5-11-0",
+              "index": 25.0,
+              "qualifying": true
+            },
+            {
+              "rank": 13,
+              "team": "Biddeford",
+              "record": "4-12-0",
+              "index": 10.938,
+              "qualifying": false
+            },
+            {
+              "rank": 14,
+              "team": "Portland",
+              "record": "1-15-0",
+              "index": 7.813,
+              "qualifying": false
+            },
+            {
+              "rank": 15,
+              "team": "Deering",
+              "record": "3-13-0",
+              "index": 6.25,
+              "qualifying": false
+            },
+            {
+              "rank": 16,
+              "team": "Windham",
+              "record": "2-14-0",
+              "index": 3.125,
+              "qualifying": false
+            },
+            {
+              "rank": 17,
+              "team": "Westbrook",
+              "record": "1-15-0",
+              "index": 1.563,
+              "qualifying": false
+            }
+          ]
+        },
+        {
+          "name": "2025-2026 Class South-B HS - Baseball",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Fryeburg Academy",
+              "record": "13-3-0",
+              "index": 164.063,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Leavitt Area",
+              "record": "14-2-0",
+              "index": 139.297,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Greely",
+              "record": "11-5-0",
+              "index": 138.828,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Cape Elizabeth",
+              "record": "11-5-0",
+              "index": 135.781,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Lake Region",
+              "record": "11-5-0",
+              "index": 117.615,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Yarmouth",
+              "record": "9-7-0",
+              "index": 106.797,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "Morse",
+              "record": "12-4-0",
+              "index": 103.281,
+              "qualifying": true
+            },
+            {
+              "rank": 8,
+              "team": "York",
+              "record": "9-7-0",
+              "index": 88.396,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
+              "team": "Wells",
+              "record": "7-9-0",
+              "index": 72.068,
+              "qualifying": true
+            },
+            {
+              "rank": 10,
+              "team": "Freeport",
+              "record": "7-9-0",
+              "index": 62.578,
+              "qualifying": true
+            },
+            {
+              "rank": 11,
+              "team": "Poland Regional",
+              "record": "7-9-0",
+              "index": 61.953,
+              "qualifying": true
+            },
+            {
+              "rank": 12,
+              "team": "Mountain Valley",
+              "record": "7-9-0",
+              "index": 46.406,
+              "qualifying": true
+            },
+            {
+              "rank": 13,
+              "team": "Gray-New Gloucester",
+              "record": "3-13-0",
+              "index": 43.203,
+              "qualifying": false
+            },
+            {
+              "rank": 14,
+              "team": "Medomak Valley",
+              "record": "6-10-0",
+              "index": 38.906,
+              "qualifying": false
+            },
+            {
+              "rank": 15,
+              "team": "Lincoln Academy",
+              "record": "3-13-0",
+              "index": 22.266,
+              "qualifying": false
+            },
+            {
+              "rank": 16,
+              "team": "Erskine Academy",
+              "record": "4-12-0",
+              "index": 19.609,
+              "qualifying": false
+            },
+            {
+              "rank": 17,
+              "team": "Spruce Mountain",
+              "record": "3-13-0",
+              "index": 20.938,
+              "qualifying": false
+            }
+          ]
+        },
+        {
+          "name": "2025-2026 Class South-C HS - Baseball",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Monmouth Academy",
+              "record": "15-1-0",
+              "index": 144.531,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Maranacook Community",
+              "record": "14-2-0",
+              "index": 130.938,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Old Orchard Beach",
+              "record": "12-4-0",
+              "index": 111.714,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Sacopee Valley",
+              "record": "8-8-0",
+              "index": 97.661,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Waynflete/NYA Coop",
+              "record": "10-6-0",
+              "index": 79.682,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Dirigo",
+              "record": "8-8-0",
+              "index": 76.875,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "Lisbon",
+              "record": "9-7-0",
+              "index": 69.141,
+              "qualifying": true
+            },
+            {
+              "rank": 8,
+              "team": "Mt. Abram",
+              "record": "8-8-0",
+              "index": 67.344,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
+              "team": "Winthrop",
+              "record": "8-8-0",
+              "index": 59.063,
+              "qualifying": true
+            },
+            {
+              "rank": 10,
+              "team": "Hall-Dale HS",
+              "record": "8-8-0",
+              "index": 58.984,
+              "qualifying": false
+            },
+            {
+              "rank": 11,
+              "team": "Oak Hill",
+              "record": "7-9-0",
+              "index": 46.797,
+              "qualifying": false
+            },
+            {
+              "rank": 12,
+              "team": "Carrabec",
+              "record": "5-11-0",
+              "index": 30.708,
+              "qualifying": false
+            },
+            {
+              "rank": 13,
+              "team": "Traip Academy",
+              "record": "2-13-0",
+              "index": 11.5,
+              "qualifying": false
+            }
+          ]
+        },
+        {
+          "name": "2025-2026 Class South-D HS - Baseball",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Richmond HS",
+              "record": "14-1-0",
+              "index": 131.433,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Telstar Regional",
+              "record": "13-3-0",
+              "index": 98.25,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Buckfield HS",
+              "record": "10-6-0",
+              "index": 82.208,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Valley HS",
+              "record": "6-6-0",
+              "index": 48.417,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Forest Hills Consolidated",
+              "record": "6-9-0",
+              "index": 42.0,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Vinalhaven/North Haven",
+              "record": "4-8-0",
+              "index": 33.611,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "Madison High School",
+              "record": "4-12-0",
+              "index": 27.031,
+              "qualifying": true
+            },
+            {
+              "rank": 8,
+              "team": "Temple Academy",
+              "record": "2-10-0",
+              "index": 20.778,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
+              "team": "Greenville",
+              "record": "3-9-0",
+              "index": 18.403,
+              "qualifying": false
+            },
+            {
+              "rank": 10,
+              "team": "Boothbay Region",
+              "record": "2-14-0",
+              "index": 15.469,
+              "qualifying": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sport": "Field Hockey",
+      "gender": "Girls",
+      "tournament_id": 2,
+      "divisions": [
+        {
+          "name": "2025-2026 Class North-A HS - Field Hockey",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Skowhegan Area",
+              "record": "12-0-2",
+              "index": 183.265,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Mt. Ararat",
+              "record": "10-2-2",
+              "index": 130.459,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Mt. Blue",
+              "record": "12-2-0",
+              "index": 123.316,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Messalonskee",
+              "record": "10-4-0",
+              "index": 118.827,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Lewiston",
+              "record": "10-3-1",
+              "index": 108.265,
               "qualifying": true
             },
             {
               "rank": 6,
               "team": "Brewer",
-              "record": "8-8-0",
-              "index": 86.641,
-              "qualifying": true
-            },
-            {
-              "rank": 7,
-              "team": "Mt. Blue",
-              "record": "8-8-0",
-              "index": 78.047,
-              "qualifying": true
-            },
-            {
-              "rank": 8,
-              "team": "Bangor",
-              "record": "8-8-0",
-              "index": 65.547,
-              "qualifying": true
-            },
-            {
-              "rank": 9,
-              "team": "Camden Hills Regional",
-              "record": "9-7-0",
-              "index": 57.656,
-              "qualifying": false
-            },
-            {
-              "rank": 10,
-              "team": "Mt. Ararat",
-              "record": "5-11-0",
-              "index": 7.891,
-              "qualifying": false
-            },
-            {
-              "rank": 11,
-              "team": "Messalonskee",
-              "record": "1-15-0",
-              "index": 0.625,
-              "qualifying": false
-            },
-            {
-              "rank": 12,
-              "team": "Brunswick",
-              "record": "0-16-0",
-              "index": 0.0,
-              "qualifying": false
-            }
-          ]
-        },
-        {
-          "name": "2025-2026 Class North-B HS - Softball",
-          "teams": [
-            {
-              "rank": 1,
-              "team": "Hermon",
-              "record": "14-2-0",
-              "index": 156.172,
-              "qualifying": true
-            },
-            {
-              "rank": 2,
-              "team": "Gardiner Area",
-              "record": "13-3-0",
-              "index": 152.266,
-              "qualifying": true
-            },
-            {
-              "rank": 3,
-              "team": "Belfast Area",
-              "record": "13-3-0",
-              "index": 115.0,
-              "qualifying": true
-            },
-            {
-              "rank": 4,
-              "team": "Old Town",
-              "record": "12-4-0",
-              "index": 109.766,
-              "qualifying": true
-            },
-            {
-              "rank": 5,
-              "team": "Lawrence",
-              "record": "11-5-0",
-              "index": 84.844,
-              "qualifying": true
-            },
-            {
-              "rank": 6,
-              "team": "Ellsworth",
-              "record": "8-8-0",
-              "index": 82.891,
-              "qualifying": true
-            },
-            {
-              "rank": 7,
-              "team": "Presque Isle",
-              "record": "8-8-0",
-              "index": 74.147,
-              "qualifying": true
-            },
-            {
-              "rank": 8,
-              "team": "Nokomis",
-              "record": "9-7-0",
-              "index": 71.172,
-              "qualifying": true
-            },
-            {
-              "rank": 9,
-              "team": "Cony HS",
-              "record": "8-8-0",
-              "index": 64.609,
-              "qualifying": true
-            },
-            {
-              "rank": 10,
-              "team": "Mount Desert Island",
-              "record": "8-8-0",
-              "index": 58.828,
-              "qualifying": true
-            },
-            {
-              "rank": 11,
-              "team": "John Bapst Memorial",
-              "record": "6-10-0",
-              "index": 32.109,
-              "qualifying": false
-            },
-            {
-              "rank": 12,
-              "team": "Caribou",
-              "record": "4-12-0",
-              "index": 22.578,
-              "qualifying": false
-            },
-            {
-              "rank": 13,
-              "team": "Foxcroft Academy",
-              "record": "2-14-0",
-              "index": 17.656,
-              "qualifying": false
-            },
-            {
-              "rank": 14,
-              "team": "Waterville",
-              "record": "2-14-0",
-              "index": 9.531,
-              "qualifying": false
-            },
-            {
-              "rank": 15,
-              "team": "Oceanside",
-              "record": "0-16-0",
-              "index": 0.0,
-              "qualifying": false
-            }
-          ]
-        },
-        {
-          "name": "2025-2026 Class North-C HS - Softball",
-          "teams": [
-            {
-              "rank": 1,
-              "team": "Bucksport",
-              "record": "15-1-0",
-              "index": 162.098,
-              "qualifying": true
-            },
-            {
-              "rank": 2,
-              "team": "Mattanawcook Academy",
-              "record": "14-2-0",
-              "index": 155.319,
-              "qualifying": true
-            },
-            {
-              "rank": 3,
-              "team": "Washington Academy",
-              "record": "13-3-0",
-              "index": 131.887,
-              "qualifying": true
-            },
-            {
-              "rank": 4,
-              "team": "Narraguagus Sr",
-              "record": "11-5-0",
-              "index": 98.839,
-              "qualifying": true
-            },
-            {
-              "rank": 5,
-              "team": "Orono",
-              "record": "11-5-0",
-              "index": 93.828,
-              "qualifying": true
-            },
-            {
-              "rank": 6,
-              "team": "Central",
-              "record": "13-3-0",
-              "index": 88.984,
-              "qualifying": true
-            },
-            {
-              "rank": 7,
-              "team": "Houlton/Greater Houlton",
-              "record": "9-4-0",
-              "index": 81.25,
-              "qualifying": true
-            },
-            {
-              "rank": 8,
-              "team": "Sumner Memorial",
-              "record": "9-5-0",
-              "index": 73.941,
-              "qualifying": true
-            },
-            {
-              "rank": 9,
-              "team": "Winslow",
-              "record": "8-8-0",
-              "index": 53.047,
-              "qualifying": true
-            },
-            {
-              "rank": 10,
-              "team": "Dexter Regional",
-              "record": "5-11-0",
-              "index": 35.893,
-              "qualifying": true
-            },
-            {
-              "rank": 11,
-              "team": "Mount View",
-              "record": "5-11-0",
-              "index": 26.953,
-              "qualifying": false
-            },
-            {
-              "rank": 12,
-              "team": "Maine Central Institute",
-              "record": "5-11-0",
-              "index": 26.953,
-              "qualifying": false
-            },
-            {
-              "rank": 13,
-              "team": "Fort Kent Community",
-              "record": "3-13-0",
-              "index": 15.268,
-              "qualifying": false
-            },
-            {
-              "rank": 14,
-              "team": "Calais",
-              "record": "3-13-0",
-              "index": 4.442,
-              "qualifying": false
-            },
-            {
-              "rank": 15,
-              "team": "George Stevens Academy",
-              "record": "1-15-0",
-              "index": 4.063,
-              "qualifying": false
-            }
-          ]
-        },
-        {
-          "name": "2025-2026 Class North-D HS - Softball",
-          "teams": [
-            {
-              "rank": 1,
-              "team": "Penobscot Valley",
-              "record": "14-0-0",
-              "index": 156.556,
-              "qualifying": true
-            },
-            {
-              "rank": 2,
-              "team": "Katahdin HS",
-              "record": "14-0-0",
-              "index": 147.449,
-              "qualifying": true
-            },
-            {
-              "rank": 3,
-              "team": "Wisdom HS",
-              "record": "11-3-0",
-              "index": 93.673,
-              "qualifying": true
-            },
-            {
-              "rank": 4,
-              "team": "Fort Fairfield HS",
-              "record": "11-3-0",
-              "index": 88.469,
-              "qualifying": true
-            },
-            {
-              "rank": 5,
-              "team": "Penquis Valley HS",
-              "record": "9-7-0",
-              "index": 73.694,
-              "qualifying": true
-            },
-            {
-              "rank": 6,
-              "team": "Machias Memorial",
-              "record": "9-5-0",
+              "record": "7-5-2",
               "index": 72.908,
               "qualifying": true
             },
             {
               "rank": 7,
-              "team": "Stearns Sr.",
-              "record": "10-6-0",
-              "index": 70.647,
+              "team": "Camden Hills Regional",
+              "record": "6-8-0",
+              "index": 37.245,
               "qualifying": true
             },
             {
               "rank": 8,
-              "team": "Schenck",
-              "record": "9-5-0",
-              "index": 65.74,
+              "team": "Brunswick",
+              "record": "4-9-1",
+              "index": 26.913,
               "qualifying": true
             },
             {
               "rank": 9,
-              "team": "Ashland District",
-              "record": "8-6-0",
-              "index": 62.449,
-              "qualifying": true
+              "team": "Edward Little",
+              "record": "4-10-0",
+              "index": 26.429,
+              "qualifying": false
             },
             {
               "rank": 10,
-              "team": "Jonesport-Beals",
-              "record": "8-6-0",
-              "index": 62.321,
-              "qualifying": true
+              "team": "Hampden Academy",
+              "record": "3-10-1",
+              "index": 25.918,
+              "qualifying": false
             },
             {
               "rank": 11,
-              "team": "Bangor Christian",
-              "record": "6-10-0",
-              "index": 58.192,
-              "qualifying": true
+              "team": "Oxford Hills",
+              "record": "1-12-1",
+              "index": 8.52,
+              "qualifying": false
             },
             {
               "rank": 12,
-              "team": "Deer Isle-Stonington",
-              "record": "7-9-0",
-              "index": 38.683,
-              "qualifying": true
-            },
-            {
-              "rank": 13,
-              "team": "Washburn/Easton",
-              "record": "7-7-0",
-              "index": 38.163,
-              "qualifying": true
-            },
-            {
-              "rank": 14,
-              "team": "Woodland Sr.",
-              "record": "8-8-0",
-              "index": 37.522,
-              "qualifying": true
-            },
-            {
-              "rank": 15,
-              "team": "Lee Academy",
-              "record": "6-8-0",
-              "index": 25.676,
-              "qualifying": false
-            },
-            {
-              "rank": 16,
-              "team": "Southern Aroostook",
-              "record": "4-10-0",
-              "index": 22.551,
-              "qualifying": false
-            },
-            {
-              "rank": 17,
-              "team": "Central Aroostook Sr",
-              "record": "4-10-0",
-              "index": 15.612,
-              "qualifying": false
-            },
-            {
-              "rank": 18,
-              "team": "Hodgdon HS",
-              "record": "1-13-0",
-              "index": 6.939,
-              "qualifying": false
-            },
-            {
-              "rank": 19,
-              "team": "Shead",
-              "record": "1-13-0",
-              "index": 3.469,
-              "qualifying": false
-            },
-            {
-              "rank": 20,
-              "team": "Madawaska HS",
-              "record": "2-12-0",
-              "index": 3.469,
-              "qualifying": false
-            },
-            {
-              "rank": 21,
-              "team": "Piscataquis Community",
-              "record": "1-15-0",
-              "index": 3.036,
+              "team": "Bangor",
+              "record": "1-12-1",
+              "index": 5.306,
               "qualifying": false
             }
           ]
         },
         {
-          "name": "2025-2026 Class South-A HS - Softball",
+          "name": "2025-2026 Class North-B HS - Field Hockey",
           "teams": [
             {
               "rank": 1,
-              "team": "Cheverus",
-              "record": "16-0-0",
-              "index": 185.938,
+              "team": "Belfast Area",
+              "record": "14-0-0",
+              "index": 180.102,
               "qualifying": true
             },
             {
               "rank": 2,
-              "team": "Bonny Eagle",
-              "record": "13-3-0",
-              "index": 142.188,
+              "team": "Old Town",
+              "record": "11-2-1",
+              "index": 133.138,
               "qualifying": true
             },
             {
               "rank": 3,
-              "team": "Westbrook",
-              "record": "13-3-0",
-              "index": 128.125,
+              "team": "Nokomis",
+              "record": "12-2-0",
+              "index": 121.276,
               "qualifying": true
             },
             {
               "rank": 4,
-              "team": "Gorham",
-              "record": "13-3-0",
-              "index": 123.438,
+              "team": "Leavitt Area",
+              "record": "10-3-1",
+              "index": 109.056,
               "qualifying": true
             },
             {
               "rank": 5,
-              "team": "Windham",
-              "record": "11-5-0",
-              "index": 104.688,
+              "team": "Gardiner Area",
+              "record": "9-4-1",
+              "index": 86.25,
               "qualifying": true
             },
             {
               "rank": 6,
-              "team": "Scarborough",
-              "record": "10-6-0",
-              "index": 75.0,
+              "team": "Lawrence",
+              "record": "8-5-1",
+              "index": 67.526,
               "qualifying": true
             },
             {
               "rank": 7,
-              "team": "South Portland",
-              "record": "10-6-0",
-              "index": 71.875,
+              "team": "Erskine Academy",
+              "record": "7-6-1",
+              "index": 56.76,
               "qualifying": true
             },
             {
               "rank": 8,
-              "team": "Biddeford",
-              "record": "8-8-0",
-              "index": 54.688,
+              "team": "Cony HS",
+              "record": "6-8-0",
+              "index": 39.745,
               "qualifying": true
             },
             {
               "rank": 9,
-              "team": "Massabesic",
-              "record": "7-9-0",
-              "index": 40.625,
-              "qualifying": true
+              "team": "Hermon",
+              "record": "2-12-0",
+              "index": 14.898,
+              "qualifying": false
             },
             {
               "rank": 10,
-              "team": "MBAT",
-              "record": "6-10-0",
-              "index": 26.563,
-              "qualifying": true
+              "team": "John Bapst Memorial",
+              "record": "6-8-0",
+              "index": 13.265,
+              "qualifying": false
             },
             {
               "rank": 11,
-              "team": "Thornton Academy",
-              "record": "4-12-0",
-              "index": 15.625,
-              "qualifying": true
-            },
-            {
-              "rank": 12,
-              "team": "Kennebunk",
-              "record": "5-11-0",
-              "index": 14.063,
-              "qualifying": false
-            },
-            {
-              "rank": 13,
-              "team": "Deering/Portland Coop",
-              "record": "2-14-0",
-              "index": 12.5,
-              "qualifying": false
-            },
-            {
-              "rank": 14,
-              "team": "Sanford",
-              "record": "1-15-0",
-              "index": 3.125,
-              "qualifying": false
-            },
-            {
-              "rank": 15,
-              "team": "Noble",
-              "record": "1-15-0",
-              "index": 1.563,
-              "qualifying": false
-            },
-            {
-              "rank": 16,
-              "team": "Cape/Falmouth",
-              "record": "0-16-0",
+              "team": "Oceanside",
+              "record": "0-14-0",
               "index": 0.0,
               "qualifying": false
             }
           ]
         },
         {
-          "name": "2025-2026 Class South-B HS - Softball",
+          "name": "2025-2026 Class North-C HS - Field Hockey",
           "teams": [
             {
               "rank": 1,
-              "team": "Medomak Valley",
-              "record": "15-1-0",
-              "index": 143.75,
-              "qualifying": true
-            },
-            {
-              "rank": 2,
-              "team": "York",
-              "record": "15-1-0",
-              "index": 141.094,
-              "qualifying": true
-            },
-            {
-              "rank": 3,
-              "team": "Lake Region",
-              "record": "12-4-0",
-              "index": 128.594,
-              "qualifying": true
-            },
-            {
-              "rank": 4,
-              "team": "Leavitt Area",
-              "record": "10-6-0",
-              "index": 122.109,
-              "qualifying": true
-            },
-            {
-              "rank": 5,
-              "team": "Poland Regional",
-              "record": "10-6-0",
-              "index": 93.438,
-              "qualifying": true
-            },
-            {
-              "rank": 6,
-              "team": "Erskine Academy",
-              "record": "10-6-0",
-              "index": 87.891,
-              "qualifying": true
-            },
-            {
-              "rank": 7,
-              "team": "Mountain Valley",
-              "record": "10-6-0",
-              "index": 84.193,
-              "qualifying": true
-            },
-            {
-              "rank": 8,
-              "team": "Greely",
-              "record": "11-5-0",
-              "index": 73.828,
-              "qualifying": true
-            },
-            {
-              "rank": 9,
-              "team": "Yarmouth",
-              "record": "9-7-0",
-              "index": 50.469,
-              "qualifying": true
-            },
-            {
-              "rank": 10,
-              "team": "Fryeburg Academy",
-              "record": "8-8-0",
-              "index": 46.797,
-              "qualifying": true
-            },
-            {
-              "rank": 11,
-              "team": "Spruce Mountain",
-              "record": "7-8-0",
-              "index": 39.0,
-              "qualifying": true
-            },
-            {
-              "rank": 12,
-              "team": "Freeport",
-              "record": "7-9-0",
-              "index": 30.547,
-              "qualifying": false
-            },
-            {
-              "rank": 13,
-              "team": "Morse",
-              "record": "5-11-0",
-              "index": 28.281,
-              "qualifying": false
-            },
-            {
-              "rank": 14,
-              "team": "Gray-New Gloucester",
-              "record": "4-12-0",
-              "index": 20.234,
-              "qualifying": false
-            },
-            {
-              "rank": 15,
-              "team": "Lincoln Academy",
-              "record": "3-13-0",
-              "index": 8.828,
-              "qualifying": false
-            },
-            {
-              "rank": 16,
-              "team": "Wells",
-              "record": "1-15-0",
-              "index": 0.625,
-              "qualifying": false
-            }
-          ]
-        },
-        {
-          "name": "2025-2026 Class South-C HS - Softball",
-          "teams": [
-            {
-              "rank": 1,
-              "team": "Dirigo",
-              "record": "15-1-0",
-              "index": 141.901,
-              "qualifying": true
-            },
-            {
-              "rank": 2,
-              "team": "Monmouth Academy",
-              "record": "14-2-0",
-              "index": 139.661,
-              "qualifying": true
-            },
-            {
-              "rank": 3,
-              "team": "Lisbon",
-              "record": "13-3-0",
-              "index": 100.833,
-              "qualifying": true
-            },
-            {
-              "rank": 4,
-              "team": "Telstar/Gould",
-              "record": "13-3-0",
-              "index": 97.228,
-              "qualifying": true
-            },
-            {
-              "rank": 5,
-              "team": "Old Orchard Beach",
-              "record": "9-7-0",
-              "index": 69.849,
-              "qualifying": true
-            },
-            {
-              "rank": 6,
-              "team": "Oak Hill",
-              "record": "7-9-0",
-              "index": 59.167,
-              "qualifying": true
-            },
-            {
-              "rank": 7,
-              "team": "Carrabec",
-              "record": "8-8-0",
-              "index": 55.88,
-              "qualifying": true
-            },
-            {
-              "rank": 8,
-              "team": "Sacopee Valley",
-              "record": "6-10-0",
-              "index": 54.788,
-              "qualifying": true
-            },
-            {
-              "rank": 9,
-              "team": "Hall-Dale HS",
-              "record": "5-11-0",
-              "index": 24.063,
-              "qualifying": false
-            },
-            {
-              "rank": 10,
-              "team": "Winthrop/Kents Hill Ramblers",
-              "record": "5-11-0",
-              "index": 21.25,
-              "qualifying": false
-            },
-            {
-              "rank": 11,
-              "team": "Maranacook Community",
-              "record": "1-15-0",
-              "index": 7.188,
-              "qualifying": false
-            },
-            {
-              "rank": 12,
-              "team": "Mt. Abram",
-              "record": "2-14-0",
-              "index": 2.813,
-              "qualifying": false
-            }
-          ]
-        },
-        {
-          "name": "2025-2026 Class South-D HS - Softball",
-          "teams": [
-            {
-              "rank": 1,
-              "team": "Buckfield HS",
-              "record": "14-2-0",
-              "index": 147.972,
-              "qualifying": true
-            },
-            {
-              "rank": 2,
-              "team": "North Yarmouth Academy",
-              "record": "14-1-0",
-              "index": 135.833,
-              "qualifying": true
-            },
-            {
-              "rank": 3,
-              "team": "Forest Hills Consolidated",
-              "record": "13-2-0",
-              "index": 81.855,
-              "qualifying": true
-            },
-            {
-              "rank": 4,
-              "team": "Vinalhaven",
-              "record": "12-3-0",
-              "index": 76.785,
-              "qualifying": true
-            },
-            {
-              "rank": 5,
-              "team": "Madison High School",
-              "record": "7-9-0",
-              "index": 39.141,
-              "qualifying": true
-            },
-            {
-              "rank": 6,
-              "team": "Valley HS",
-              "record": "5-11-0",
-              "index": 20.112,
-              "qualifying": true
-            },
-            {
-              "rank": 7,
-              "team": "Richmond HS",
-              "record": "5-9-0",
-              "index": 18.047,
-              "qualifying": true
-            },
-            {
-              "rank": 8,
-              "team": "Temple Academy",
-              "record": "6-10-0",
-              "index": 12.61,
-              "qualifying": true
-            },
-            {
-              "rank": 9,
-              "team": "Rangeley Lakes Regional",
-              "record": "2-11-0",
-              "index": 3.736,
-              "qualifying": false
-            },
-            {
-              "rank": 10,
-              "team": "Searsport HS",
-              "record": "2-12-0",
-              "index": 3.253,
-              "qualifying": false
-            },
-            {
-              "rank": 11,
-              "team": "Greenville",
-              "record": "1-13-0",
-              "index": 1.735,
-              "qualifying": false
-            },
-            {
-              "rank": 12,
-              "team": "Wiscasset/ Boothbay",
-              "record": "1-13-0",
-              "index": 1.735,
-              "qualifying": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "sport": "Lacrosse",
-      "gender": "Boys",
-      "tournament_id": 202,
-      "divisions": [
-        {
-          "name": "2025-2026 Class A HS - Lacrosse (Boys)",
-          "teams": [
-            {
-              "rank": 1,
-              "team": "Falmouth",
+              "team": "Foxcroft Academy",
               "record": "14-0-0",
-              "index": 218.061,
+              "index": 168.98,
               "qualifying": true
             },
             {
               "rank": 2,
-              "team": "Thornton Academy",
-              "record": "13-1-0",
-              "index": 201.939,
+              "team": "Piscataquis Community",
+              "record": "11-2-1",
+              "index": 95.459,
               "qualifying": true
             },
             {
               "rank": 3,
-              "team": "Yarmouth",
-              "record": "11-3-0",
-              "index": 174.592,
+              "team": "Maine Central Institute",
+              "record": "8-6-0",
+              "index": 61.633,
               "qualifying": true
             },
             {
               "rank": 4,
-              "team": "Deering",
-              "record": "10-4-0",
-              "index": 138.469,
+              "team": "Dexter Regional",
+              "record": "7-6-1",
+              "index": 61.122,
               "qualifying": true
             },
             {
               "rank": 5,
-              "team": "Edward Little",
-              "record": "12-2-0",
-              "index": 113.469,
+              "team": "Orono",
+              "record": "9-5-0",
+              "index": 55.714,
               "qualifying": true
             },
             {
               "rank": 6,
-              "team": "Scarborough",
-              "record": "9-5-0",
-              "index": 108.673,
+              "team": "Stearns/Schenck Coop",
+              "record": "8-6-0",
+              "index": 44.49,
               "qualifying": true
             },
             {
               "rank": 7,
-              "team": "Noble",
-              "record": "10-4-0",
-              "index": 102.653,
-              "qualifying": true
-            },
-            {
-              "rank": 8,
-              "team": "Cape Elizabeth",
-              "record": "6-8-0",
-              "index": 93.98,
-              "qualifying": true
-            },
-            {
-              "rank": 9,
-              "team": "Hampden/Bangor",
-              "record": "12-2-0",
-              "index": 93.265,
-              "qualifying": true
-            },
-            {
-              "rank": 10,
-              "team": "Portland",
-              "record": "8-6-0",
-              "index": 92.245,
-              "qualifying": true
-            },
-            {
-              "rank": 11,
-              "team": "Windham",
-              "record": "7-7-0",
-              "index": 80.102,
-              "qualifying": true
-            },
-            {
-              "rank": 12,
-              "team": "Bonny Eagle",
-              "record": "8-6-0",
-              "index": 77.755,
-              "qualifying": true
-            },
-            {
-              "rank": 13,
-              "team": "South Portland",
-              "record": "5-9-0",
-              "index": 67.449,
-              "qualifying": false
-            },
-            {
-              "rank": 14,
-              "team": "Gorham",
-              "record": "6-8-0",
-              "index": 59.796,
-              "qualifying": false
-            },
-            {
-              "rank": 15,
-              "team": "Lewiston",
-              "record": "5-9-0",
-              "index": 53.367,
-              "qualifying": false
-            },
-            {
-              "rank": 16,
-              "team": "Massabesic",
-              "record": "5-9-0",
-              "index": 36.837,
-              "qualifying": false
-            },
-            {
-              "rank": 17,
-              "team": "Chev/Wayn",
-              "record": "3-11-0",
-              "index": 18.98,
-              "qualifying": false
-            },
-            {
-              "rank": 18,
-              "team": "Oxford Hills",
-              "record": "1-13-0",
-              "index": 5.143,
-              "qualifying": false
-            }
-          ]
-        },
-        {
-          "name": "2025-2026 Class B HS - Lacrosse (Boys)",
-          "teams": [
-            {
-              "rank": 1,
-              "team": "Greely",
-              "record": "10-4-0",
-              "index": 148.571,
-              "qualifying": true
-            },
-            {
-              "rank": 2,
-              "team": "Messalonskee",
-              "record": "11-3-0",
-              "index": 142.041,
-              "qualifying": true
-            },
-            {
-              "rank": 3,
-              "team": "York",
-              "record": "9-5-0",
-              "index": 126.531,
-              "qualifying": true
-            },
-            {
-              "rank": 4,
-              "team": "Marshwood",
-              "record": "12-2-0",
-              "index": 124.898,
-              "qualifying": true
-            },
-            {
-              "rank": 5,
-              "team": "Mt. Ararat",
-              "record": "8-6-0",
-              "index": 92.347,
-              "qualifying": true
-            },
-            {
-              "rank": 6,
-              "team": "GNG/Poland Coop",
-              "record": "8-6-0",
-              "index": 91.837,
-              "qualifying": true
-            },
-            {
-              "rank": 7,
-              "team": "Freeport",
-              "record": "6-8-0",
-              "index": 85.714,
-              "qualifying": true
-            },
-            {
-              "rank": 8,
-              "team": "Brunswick",
-              "record": "7-7-0",
-              "index": 82.551,
-              "qualifying": true
-            },
-            {
-              "rank": 9,
-              "team": "Fryeburg Academy",
-              "record": "8-6-0",
-              "index": 73.959,
-              "qualifying": true
-            },
-            {
-              "rank": 10,
-              "team": "Kennebunk",
-              "record": "6-8-0",
-              "index": 66.735,
-              "qualifying": true
-            },
-            {
-              "rank": 11,
-              "team": "Morse",
-              "record": "7-7-0",
-              "index": 64.592,
-              "qualifying": true
-            },
-            {
-              "rank": 12,
-              "team": "John Bapst/Hermon/Old Town/Orono/BC",
-              "record": "8-6-0",
-              "index": 55.102,
-              "qualifying": true
-            },
-            {
-              "rank": 13,
-              "team": "Mt. Blue",
-              "record": "6-8-0",
-              "index": 40.408,
-              "qualifying": false
-            },
-            {
-              "rank": 14,
-              "team": "Cony Co-op",
-              "record": "8-6-0",
-              "index": 36.02,
-              "qualifying": false
-            },
-            {
-              "rank": 15,
-              "team": "Brewer",
-              "record": "4-10-0",
-              "index": 26.02,
-              "qualifying": false
-            },
-            {
-              "rank": 16,
-              "team": "Camden Hills Regional",
-              "record": "3-11-0",
-              "index": 21.429,
-              "qualifying": false
-            },
-            {
-              "rank": 17,
-              "team": "Westbrook",
-              "record": "5-9-0",
-              "index": 20.306,
-              "qualifying": false
-            },
-            {
-              "rank": 18,
-              "team": "Biddeford",
-              "record": "3-11-0",
-              "index": 16.0,
-              "qualifying": false
-            }
-          ]
-        },
-        {
-          "name": "2025-2026 Class C HS - Lacrosse (Boys)",
-          "teams": [
-            {
-              "rank": 1,
-              "team": "North Yarmouth Academy",
-              "record": "11-3-0",
-              "index": 114.735,
-              "qualifying": true
-            },
-            {
-              "rank": 2,
-              "team": "Gardiner Area",
-              "record": "9-5-0",
-              "index": 85.204,
-              "qualifying": true
-            },
-            {
-              "rank": 3,
-              "team": "Maranacook/Winthrop",
-              "record": "8-6-0",
-              "index": 77.755,
-              "qualifying": true
-            },
-            {
-              "rank": 4,
-              "team": "Wells",
-              "record": "8-6-0",
-              "index": 51.612,
-              "qualifying": true
-            },
-            {
-              "rank": 5,
-              "team": "Leavitt Area",
-              "record": "6-8-0",
+              "team": "Dirigo",
+              "record": "5-8-1",
               "index": 44.184,
               "qualifying": true
             },
             {
-              "rank": 6,
-              "team": "Lincoln Academy",
-              "record": "8-6-0",
-              "index": 41.531,
-              "qualifying": true
-            },
-            {
-              "rank": 7,
-              "team": "Erskine Academy",
-              "record": "8-6-0",
-              "index": 37.041,
-              "qualifying": true
-            },
-            {
               "rank": 8,
-              "team": "LAW-WIN-SKOW",
-              "record": "3-11-0",
-              "index": 23.163,
+              "team": "Mountain Valley",
+              "record": "5-9-0",
+              "index": 19.082,
               "qualifying": true
             },
             {
               "rank": 9,
-              "team": "Northern Maine Moose",
-              "record": "2-10-0",
-              "index": 7.5,
-              "qualifying": true
+              "team": "Mount View",
+              "record": "2-11-1",
+              "index": 7.857,
+              "qualifying": false
             },
             {
               "rank": 10,
-              "team": "Oak Hill Raiders",
-              "record": "1-13-0",
-              "index": 5.612,
+              "team": "Winslow",
+              "record": "1-12-1",
+              "index": 3.112,
               "qualifying": false
             },
             {
               "rank": 11,
-              "team": "Lake Region",
-              "record": "2-8-0",
-              "index": 2.0,
+              "team": "Mattanawcook Academy",
+              "record": "2-12-0",
+              "index": 1.429,
               "qualifying": false
             },
             {
               "rank": 12,
-              "team": "Nok/MCI Coop",
-              "record": "0-14-0",
-              "index": 0.0,
-              "qualifying": false
-            },
-            {
-              "rank": 13,
-              "team": "Traip Academy",
+              "team": "Central",
               "record": "0-14-0",
               "index": 0.0,
               "qualifying": false
             }
           ]
-        }
-      ]
-    },
-    {
-      "sport": "Lacrosse",
-      "gender": "Girls",
-      "tournament_id": 203,
-      "divisions": [
+        },
         {
-          "name": "2025-2026 Class A HS - Lacrosse (Girls)",
+          "name": "2025-2026 Class South-A HS - Field Hockey",
           "teams": [
             {
               "rank": 1,
-              "team": "Kennebunk",
-              "record": "13-1-0",
-              "index": 201.837,
+              "team": "Cheverus",
+              "record": "13-0-1",
+              "index": 214.286,
               "qualifying": true
             },
             {
               "rank": 2,
-              "team": "Thornton Academy",
-              "record": "12-2-0",
-              "index": 177.041,
+              "team": "Biddeford",
+              "record": "11-1-2",
+              "index": 175.51,
               "qualifying": true
             },
             {
               "rank": 3,
-              "team": "Windham",
-              "record": "12-2-0",
-              "index": 168.367,
+              "team": "Sanford",
+              "record": "10-3-1",
+              "index": 127.245,
               "qualifying": true
             },
             {
               "rank": 4,
-              "team": "Cheverus",
-              "record": "11-3-0",
-              "index": 142.551,
+              "team": "Scarborough",
+              "record": "9-4-1",
+              "index": 101.224,
               "qualifying": true
             },
             {
               "rank": 5,
-              "team": "Falmouth",
-              "record": "10-4-0",
-              "index": 135.408,
+              "team": "Gorham",
+              "record": "7-7-0",
+              "index": 93.878,
               "qualifying": true
             },
             {
               "rank": 6,
-              "team": "Scarborough",
-              "record": "8-6-0",
-              "index": 117.653,
+              "team": "Falmouth",
+              "record": "9-5-0",
+              "index": 91.531,
               "qualifying": true
             },
             {
               "rank": 7,
-              "team": "Yarmouth",
+              "team": "Thornton Academy",
               "record": "8-6-0",
-              "index": 115.0,
+              "index": 81.327,
               "qualifying": true
             },
             {
               "rank": 8,
-              "team": "Bangor/John Bapst/Orono",
-              "record": "9-5-0",
-              "index": 93.605,
+              "team": "Windham",
+              "record": "7-7-0",
+              "index": 58.878,
               "qualifying": true
             },
             {
               "rank": 9,
-              "team": "Bonny Eagle",
-              "record": "8-6-0",
-              "index": 88.878,
+              "team": "South Portland/Westbrook Coop",
+              "record": "6-7-1",
+              "index": 49.184,
               "qualifying": true
             },
             {
               "rank": 10,
-              "team": "Lewiston-Oak Hill",
-              "record": "8-6-0",
-              "index": 61.327,
+              "team": "Noble",
+              "record": "6-8-0",
+              "index": 47.653,
               "qualifying": true
             },
             {
               "rank": 11,
-              "team": "Cape Elizabeth",
-              "record": "6-8-0",
-              "index": 61.224,
-              "qualifying": true
+              "team": "Kennebunk",
+              "record": "6-7-1",
+              "index": 39.694,
+              "qualifying": false
             },
             {
               "rank": 12,
               "team": "Marshwood",
-              "record": "6-8-0",
-              "index": 57.755,
-              "qualifying": true
-            },
-            {
-              "rank": 13,
-              "team": "Gorham",
               "record": "5-9-0",
-              "index": 54.082,
-              "qualifying": true
-            },
-            {
-              "rank": 14,
-              "team": "South Portland",
-              "record": "4-10-0",
-              "index": 47.959,
-              "qualifying": true
-            },
-            {
-              "rank": 15,
-              "team": "Massabesic",
-              "record": "6-8-0",
-              "index": 41.633,
+              "index": 23.878,
               "qualifying": false
-            },
-            {
-              "rank": 16,
-              "team": "Oxford Hills",
-              "record": "3-11-0",
-              "index": 35.918,
-              "qualifying": false
-            },
-            {
-              "rank": 17,
-              "team": "Edward Little",
-              "record": "4-10-0",
-              "index": 35.918,
-              "qualifying": false
-            },
-            {
-              "rank": 18,
-              "team": "Sanford",
-              "record": "7-7-0",
-              "index": 35.816,
-              "qualifying": false
-            },
-            {
-              "rank": 19,
-              "team": "Deering",
-              "record": "4-10-0",
-              "index": 17.449,
-              "qualifying": false
-            },
-            {
-              "rank": 20,
-              "team": "Noble",
-              "record": "3-11-0",
-              "index": 15.816,
-              "qualifying": false
-            },
-            {
-              "rank": 21,
-              "team": "Portland",
-              "record": "1-13-0",
-              "index": 7.551,
-              "qualifying": false
-            }
-          ]
-        },
-        {
-          "name": "2025-2026 Class B HS - Lacrosse (Girls)",
-          "teams": [
-            {
-              "rank": 1,
-              "team": "Greely",
-              "record": "12-2-0",
-              "index": 145.612,
-              "qualifying": true
-            },
-            {
-              "rank": 2,
-              "team": "Messalonskee",
-              "record": "11-3-0",
-              "index": 132.551,
-              "qualifying": true
-            },
-            {
-              "rank": 3,
-              "team": "Camden Hills Regional",
-              "record": "9-5-0",
-              "index": 120.408,
-              "qualifying": true
-            },
-            {
-              "rank": 4,
-              "team": "Cony HS",
-              "record": "9-5-0",
-              "index": 118.367,
-              "qualifying": true
-            },
-            {
-              "rank": 5,
-              "team": "Brunswick",
-              "record": "8-6-0",
-              "index": 103.061,
-              "qualifying": true
-            },
-            {
-              "rank": 6,
-              "team": "Freeport",
-              "record": "8-6-0",
-              "index": 69.592,
-              "qualifying": true
-            },
-            {
-              "rank": 7,
-              "team": "Westbrook",
-              "record": "10-4-0",
-              "index": 67.857,
-              "qualifying": true
-            },
-            {
-              "rank": 8,
-              "team": "Gardiner/Hall-Dale Coop",
-              "record": "7-7-0",
-              "index": 65.816,
-              "qualifying": true
-            },
-            {
-              "rank": 9,
-              "team": "Fryeburg Academy",
-              "record": "8-6-0",
-              "index": 54.082,
-              "qualifying": true
-            },
-            {
-              "rank": 10,
-              "team": "Mt. Ararat",
-              "record": "6-8-0",
-              "index": 53.878,
-              "qualifying": true
-            },
-            {
-              "rank": 11,
-              "team": "Hampden/Brewer/GSA/ Hermon Coop",
-              "record": "6-8-0",
-              "index": 43.333,
-              "qualifying": true
-            },
-            {
-              "rank": 12,
-              "team": "Mt. Blue",
-              "record": "7-7-0",
-              "index": 40.51,
-              "qualifying": true
             },
             {
               "rank": 13,
-              "team": "Morse",
-              "record": "6-8-0",
-              "index": 40.238,
+              "team": "Bonny Eagle",
+              "record": "3-10-1",
+              "index": 10.102,
               "qualifying": false
             },
             {
               "rank": 14,
-              "team": "Biddeford",
-              "record": "3-11-0",
-              "index": 29.082,
+              "team": "Massabesic",
+              "record": "1-13-0",
+              "index": 0.714,
               "qualifying": false
             },
             {
               "rank": 15,
-              "team": "York",
-              "record": "4-10-0",
-              "index": 23.571,
-              "qualifying": false
-            },
-            {
-              "rank": 16,
-              "team": "GNG/Poland Coop",
-              "record": "1-13-0",
-              "index": 1.939,
-              "qualifying": false
-            },
-            {
-              "rank": 17,
-              "team": "Winslow/Lawrence",
+              "team": "Portland/Deering Coop",
               "record": "0-14-0",
               "index": 0.0,
               "qualifying": false
@@ -2395,83 +2110,165 @@
           ]
         },
         {
-          "name": "2025-2026 Class C HS - Lacrosse (Girls)",
+          "name": "2025-2026 Class South-B HS - Field Hockey",
           "teams": [
             {
               "rank": 1,
-              "team": "Maranacook/Winthrop",
+              "team": "Yarmouth",
               "record": "14-0-0",
-              "index": 208.265,
+              "index": 187.092,
               "qualifying": true
             },
             {
               "rank": 2,
-              "team": "Wells",
+              "team": "Freeport",
               "record": "11-3-0",
-              "index": 144.184,
+              "index": 138.622,
               "qualifying": true
             },
             {
               "rank": 3,
-              "team": "North Yarmouth Academy",
-              "record": "11-3-0",
-              "index": 144.184,
+              "team": "GNG/NYA Coop",
+              "record": "8-5-1",
+              "index": 98.954,
               "qualifying": true
             },
             {
               "rank": 4,
-              "team": "Traip Academy",
+              "team": "Cape Elizabeth",
               "record": "10-4-0",
-              "index": 100.816,
+              "index": 90.867,
               "qualifying": true
             },
             {
               "rank": 5,
-              "team": "Erskine Academy",
+              "team": "York",
+              "record": "5-8-1",
+              "index": 63.673,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Greely",
+              "record": "5-7-2",
+              "index": 56.122,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "Lake Region",
+              "record": "6-7-1",
+              "index": 55.357,
+              "qualifying": true
+            },
+            {
+              "rank": 8,
+              "team": "Fryeburg Academy",
+              "record": "4-10-0",
+              "index": 42.398,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
+              "team": "Poland Regional",
+              "record": "5-9-0",
+              "index": 32.194,
+              "qualifying": false
+            },
+            {
+              "rank": 10,
+              "team": "Morse",
+              "record": "3-11-0",
+              "index": 9.184,
+              "qualifying": false
+            },
+            {
+              "rank": 11,
+              "team": "Lincoln Academy",
+              "record": "3-11-0",
+              "index": 8.367,
+              "qualifying": false
+            }
+          ]
+        },
+        {
+          "name": "2025-2026 Class South-C HS - Field Hockey",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Boothbay Region",
+              "record": "11-1-2",
+              "index": 115.51,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Lisbon",
+              "record": "11-1-2",
+              "index": 113.571,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Spruce Mountain",
+              "record": "10-3-1",
+              "index": 105.102,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Winthrop/Maranacook Coop",
               "record": "9-5-0",
-              "index": 80.748,
+              "index": 84.388,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Hall-Dale/Monmouth Coop",
+              "record": "8-5-1",
+              "index": 72.551,
               "qualifying": true
             },
             {
               "rank": 6,
               "team": "Waynflete",
-              "record": "4-10-0",
-              "index": 32.755,
+              "record": "8-5-1",
+              "index": 56.939,
               "qualifying": true
             },
             {
               "rank": 7,
-              "team": "Nok/MCI Coop",
-              "record": "6-8-0",
-              "index": 22.483,
+              "team": "Sacopee Valley",
+              "record": "4-8-2",
+              "index": 34.745,
               "qualifying": true
             },
             {
               "rank": 8,
-              "team": "Lincoln Academy",
-              "record": "4-10-0",
-              "index": 21.361,
+              "team": "Traip Academy",
+              "record": "6-8-0",
+              "index": 33.878,
               "qualifying": true
             },
             {
               "rank": 9,
-              "team": "Northern Maine Moose",
-              "record": "5-7-0",
-              "index": 19.405,
+              "team": "Wells",
+              "record": "1-12-1",
+              "index": 13.776,
               "qualifying": false
             },
             {
               "rank": 10,
-              "team": "Lake Region",
-              "record": "4-10-0",
-              "index": 12.041,
+              "team": "Oak Hill",
+              "record": "2-12-0",
+              "index": 1.429,
               "qualifying": false
             },
             {
               "rank": 11,
-              "team": "Leavitt Area",
-              "record": "1-13-0",
-              "index": 0.714,
+              "team": "Telstar Regional",
+              "record": "0-14-0",
+              "index": 0.0,
               "qualifying": false
             }
           ]
@@ -2479,9 +2276,624 @@
       ]
     },
     {
-      "sport": "Outdoor Track",
+      "sport": "Football",
       "gender": "Boys",
-      "tournament_id": 204,
+      "tournament_id": 3,
+      "divisions": [
+        {
+          "name": "2025-2026 Class C HS - Football",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Greely",
+              "record": "8-0 (1.000)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Leavitt Area",
+              "record": "6-2 (0.750)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Hermon",
+              "record": "7-1 (0.875)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Gardiner Area",
+              "record": "6-2 (0.750)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Wells",
+              "record": "5-3 (0.625)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Nokomis",
+              "record": "5-3 (0.625)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "Foxcroft Academy",
+              "record": "5-3 (0.625)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 8,
+              "team": "Medomak Valley",
+              "record": "4-4 (0.500)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
+              "team": "Old Town",
+              "record": "3-5 (0.375)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 10,
+              "team": "York",
+              "record": "1-7 (0.125)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 11,
+              "team": "Oceanside",
+              "record": "0-8 (0.000)",
+              "index": 0.0,
+              "qualifying": false
+            },
+            {
+              "rank": 12,
+              "team": "Brewer",
+              "record": "2-6 (0.250)",
+              "index": 0.0,
+              "qualifying": false
+            },
+            {
+              "rank": 13,
+              "team": "Hampden Academy",
+              "record": "0-8 (0.000)",
+              "index": 0.0,
+              "qualifying": false
+            }
+          ]
+        },
+        {
+          "name": "2025-2026 Class North-A HS - Football",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Portland",
+              "record": "7-2 (0.777)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Oxford Hills/Buckfield Coop",
+              "record": "5-4 (0.555)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Bangor",
+              "record": "5-4 (0.555)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Deering",
+              "record": "4-5 (0.444)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Windham",
+              "record": "3-6 (0.333)",
+              "index": 0.0,
+              "qualifying": false
+            },
+            {
+              "rank": 6,
+              "team": "Edward Little",
+              "record": "2-7 (0.222)",
+              "index": 0.0,
+              "qualifying": false
+            },
+            {
+              "rank": 7,
+              "team": "Lewiston",
+              "record": "0-9 (0.000)",
+              "index": 0.0,
+              "qualifying": false
+            }
+          ]
+        },
+        {
+          "name": "2025-2026 Class North-B HS - Football",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Cony HS",
+              "record": "8-0 (1.000)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Fryeburg Academy",
+              "record": "5-3 (0.625)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Lawrence",
+              "record": "4-4 (0.500)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Messalonskee",
+              "record": "3-5 (0.375)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Skowhegan Area",
+              "record": "3-5 (0.375)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Mt. Blue",
+              "record": "1-7 (0.125)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "Brunswick",
+              "record": "1-7 (0.125)",
+              "index": 0.0,
+              "qualifying": false
+            }
+          ]
+        },
+        {
+          "name": "2025-2026 Class North-D HS - Football",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "John Bapst/Bangor Christian/Central Coop",
+              "record": "8-0 (1.000)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Winslow",
+              "record": "7-1 (0.875)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Madison/Carrabec/Valley Coop",
+              "record": "6-2 (0.750)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Mattanawcook/Lee/PVHS Coop",
+              "record": "4-4 (0.500)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Maranacook Community",
+              "record": "2-6 (0.250)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Maine Central Institute",
+              "record": "2-6 (0.250)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "Belfast Area",
+              "record": "0-8 (0.000)",
+              "index": 0.0,
+              "qualifying": false
+            }
+          ]
+        },
+        {
+          "name": "2025-2026 Class South-A HS - Football",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Thornton Academy",
+              "record": "8-1 (0.888)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Bonny Eagle",
+              "record": "8-1 (0.888)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Noble",
+              "record": "7-2 (0.777)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "South Portland",
+              "record": "5-4 (0.555)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Massabesic",
+              "record": "3-6 (0.333)",
+              "index": 0.0,
+              "qualifying": false
+            },
+            {
+              "rank": 6,
+              "team": "Scarborough",
+              "record": "3-6 (0.333)",
+              "index": 0.0,
+              "qualifying": false
+            },
+            {
+              "rank": 7,
+              "team": "Sanford",
+              "record": "2-7 (0.222)",
+              "index": 0.0,
+              "qualifying": false
+            }
+          ]
+        },
+        {
+          "name": "2025-2026 Class South-B HS - Football",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Westbrook",
+              "record": "7-1 (0.875)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Kennebunk",
+              "record": "7-1 (0.875)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Falmouth",
+              "record": "5-3 (0.625)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Marshwood",
+              "record": "5-3 (0.625)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Cheverus/Waynflete Coop",
+              "record": "4-4 (0.500)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Gorham",
+              "record": "2-6 (0.250)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "Biddeford",
+              "record": "1-7 (0.125)",
+              "index": 0.0,
+              "qualifying": false
+            }
+          ]
+        },
+        {
+          "name": "2025-2026 Class South-D HS - Football",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Winthrop/Monmouth/HDMS Coop",
+              "record": "8-0 (1.000)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Dirigo",
+              "record": "5-3 (0.625)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Poland Regional",
+              "record": "5-3 (0.625)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Oak Hill",
+              "record": "5-3 (0.625)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Freeport",
+              "record": "5-3 (0.625)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Morse",
+              "record": "3-5 (0.375)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "Lisbon",
+              "record": "1-7 (0.125)",
+              "index": 0.0,
+              "qualifying": false
+            },
+            {
+              "rank": 8,
+              "team": "Mountain Valley",
+              "record": "0-8 (0.000)",
+              "index": 0.0,
+              "qualifying": false
+            }
+          ]
+        },
+        {
+          "name": "2025-2026 Class North-8 Man Large HS - Football",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Camden Hills Regional",
+              "record": "7-1 (0.875)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Mount Desert Island",
+              "record": "3-5 (0.375)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Houlton/Hodgdon/SA/GHCA Coop",
+              "record": "3-4 (0.428)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Waterville",
+              "record": "1-7 (0.125)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Ellsworth/Sumner/Narraguagus",
+              "record": "1-6 (0.142)",
+              "index": 0.0,
+              "qualifying": false
+            }
+          ]
+        },
+        {
+          "name": "2025-2026 Class South-8 Man Large HS - Football",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Spruce Mountain",
+              "record": "6-1 (0.857)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Mt. Ararat/Hyde Coop",
+              "record": "7-1 (0.875)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Yarmouth/NYA Coop",
+              "record": "7-1 (0.875)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Lake Region",
+              "record": "4-4 (0.500)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Gray-New Gloucester",
+              "record": "3-5 (0.375)",
+              "index": 0.0,
+              "qualifying": false
+            },
+            {
+              "rank": 6,
+              "team": "Cape Elizabeth",
+              "record": "1-7 (0.125)",
+              "index": 0.0,
+              "qualifying": false
+            }
+          ]
+        },
+        {
+          "name": "2025-2026 Class North-8 Man Small HS - Football",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Stearns/Schenck Coop",
+              "record": "6-2 (0.750)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Orono",
+              "record": "6-2 (0.750)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Dexter/PCHS Coop",
+              "record": "5-3 (0.625)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Bucksport",
+              "record": "3-5 (0.375)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Washington Academy",
+              "record": "3-4 (0.428)",
+              "index": 0.0,
+              "qualifying": false
+            },
+            {
+              "rank": 6,
+              "team": "Madawaska/Ft. Kent/Wisdom Coop",
+              "record": "1-6 (0.142)",
+              "index": 0.0,
+              "qualifying": false
+            }
+          ]
+        },
+        {
+          "name": "2025-2026 Class South-8 Man Small HS - Football",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Old Orchard Beach",
+              "record": "8-0 (1.000)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Telstar Regional",
+              "record": "5-2 (0.714)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Sacopee Valley",
+              "record": "4-4 (0.500)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Boothbay/Wiscasset Coop",
+              "record": "3-4 (0.428)",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Traip Academy",
+              "record": "1-7 (0.125)",
+              "index": 0.0,
+              "qualifying": false
+            },
+            {
+              "rank": 6,
+              "team": "Mount View",
+              "record": "0-7 (0.000)",
+              "index": 0.0,
+              "qualifying": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sport": "Golf",
+      "gender": "Coed",
+      "tournament_id": 4,
       "divisions": [
         {
           "name": "2025-2026 Class North-A HS - Baseball",
@@ -3345,444 +3757,217 @@
       ]
     },
     {
-      "sport": "Outdoor Track",
-      "gender": "Girls",
-      "tournament_id": 301,
+      "sport": "Soccer",
+      "gender": "Boys",
+      "tournament_id": 5,
       "divisions": [
         {
-          "name": "2025-2026 Class North-A HS - Baseball",
+          "name": "2025-2026 Class North-A HS - Soccer (Boys)",
           "teams": [
             {
               "rank": 1,
-              "team": "Oxford Hills",
-              "record": "15-1-0",
-              "index": 165.078,
+              "team": "Camden Hills Regional",
+              "record": "11-1-2",
+              "index": 156.939,
               "qualifying": true
             },
             {
               "rank": 2,
-              "team": "Mt. Ararat",
-              "record": "13-3-0",
-              "index": 137.031,
+              "team": "Lewiston",
+              "record": "9-1-4",
+              "index": 152.934,
               "qualifying": true
             },
             {
               "rank": 3,
-              "team": "Bangor",
-              "record": "13-3-0",
-              "index": 133.75,
+              "team": "Brunswick",
+              "record": "11-2-1",
+              "index": 143.929,
               "qualifying": true
             },
             {
               "rank": 4,
-              "team": "Hampden Academy",
-              "record": "11-5-0",
-              "index": 123.203,
+              "team": "Edward Little",
+              "record": "5-5-4",
+              "index": 80.689,
               "qualifying": true
             },
             {
               "rank": 5,
-              "team": "Messalonskee",
-              "record": "9-7-0",
-              "index": 81.797,
+              "team": "Bangor",
+              "record": "7-5-2",
+              "index": 76.531,
               "qualifying": true
             },
             {
               "rank": 6,
-              "team": "Mt. Blue",
-              "record": "10-6-0",
-              "index": 72.031,
+              "team": "Mt. Ararat",
+              "record": "6-7-1",
+              "index": 70.357,
               "qualifying": true
             },
             {
               "rank": 7,
-              "team": "Edward Little",
-              "record": "8-8-0",
-              "index": 56.016,
+              "team": "Messalonskee",
+              "record": "7-7-0",
+              "index": 69.694,
               "qualifying": true
             },
             {
               "rank": 8,
-              "team": "Brunswick",
-              "record": "6-10-0",
-              "index": 46.719,
+              "team": "Mt. Blue",
+              "record": "8-6-0",
+              "index": 66.939,
               "qualifying": true
             },
             {
               "rank": 9,
-              "team": "Camden Hills Regional",
-              "record": "5-11-0",
-              "index": 27.734,
+              "team": "Hampden Academy",
+              "record": "4-7-3",
+              "index": 57.883,
               "qualifying": false
             },
             {
               "rank": 10,
               "team": "Brewer",
-              "record": "2-14-0",
-              "index": 17.656,
+              "record": "2-11-1",
+              "index": 12.602,
               "qualifying": false
             },
             {
               "rank": 11,
-              "team": "Skowhegan Area",
-              "record": "4-12-0",
-              "index": 16.25,
-              "qualifying": false
-            },
-            {
-              "rank": 12,
-              "team": "Lewiston",
-              "record": "0-16-0",
-              "index": 0.0,
+              "team": "Oxford Hills",
+              "record": "0-13-1",
+              "index": 2.551,
               "qualifying": false
             }
           ]
         },
         {
-          "name": "2025-2026 Class North-B HS - Baseball",
+          "name": "2025-2026 Class North-B HS - Soccer (Boys)",
           "teams": [
             {
               "rank": 1,
-              "team": "Ellsworth",
-              "record": "15-1-0",
-              "index": 175.781,
-              "qualifying": true
-            },
-            {
-              "rank": 2,
-              "team": "Cony HS",
-              "record": "14-2-0",
-              "index": 145.547,
-              "qualifying": true
-            },
-            {
-              "rank": 3,
-              "team": "Mount Desert Island",
-              "record": "11-5-0",
-              "index": 122.422,
-              "qualifying": true
-            },
-            {
-              "rank": 4,
-              "team": "Hermon",
-              "record": "11-5-0",
-              "index": 120.313,
-              "qualifying": true
-            },
-            {
-              "rank": 5,
-              "team": "Old Town",
-              "record": "11-5-0",
-              "index": 97.266,
-              "qualifying": true
-            },
-            {
-              "rank": 6,
-              "team": "Nokomis",
-              "record": "12-4-0",
-              "index": 78.984,
-              "qualifying": true
-            },
-            {
-              "rank": 7,
-              "team": "Lawrence",
-              "record": "11-5-0",
-              "index": 78.516,
-              "qualifying": true
-            },
-            {
-              "rank": 8,
-              "team": "Belfast Area",
-              "record": "11-5-0",
-              "index": 68.359,
-              "qualifying": true
-            },
-            {
-              "rank": 9,
               "team": "John Bapst Memorial",
-              "record": "7-9-0",
-              "index": 45.938,
+              "record": "11-1-2",
+              "index": 172.781,
               "qualifying": true
             },
             {
-              "rank": 10,
-              "team": "Gardiner Area",
-              "record": "6-10-0",
-              "index": 44.844,
-              "qualifying": true
-            },
-            {
-              "rank": 11,
+              "rank": 2,
               "team": "Oceanside",
-              "record": "6-10-0",
-              "index": 38.203,
-              "qualifying": false
-            },
-            {
-              "rank": 12,
-              "team": "Presque Isle",
-              "record": "6-10-0",
-              "index": 31.172,
-              "qualifying": false
-            },
-            {
-              "rank": 13,
-              "team": "Foxcroft Academy",
-              "record": "3-13-0",
-              "index": 30.547,
-              "qualifying": false
-            },
-            {
-              "rank": 14,
-              "team": "Caribou",
-              "record": "6-10-0",
-              "index": 25.156,
-              "qualifying": false
-            },
-            {
-              "rank": 15,
-              "team": "Waterville",
-              "record": "4-12-0",
-              "index": 17.188,
-              "qualifying": false
-            }
-          ]
-        },
-        {
-          "name": "2025-2026 Class North-C HS - Baseball",
-          "teams": [
-            {
-              "rank": 1,
-              "team": "Washington Academy",
-              "record": "15-1-0",
-              "index": 158.125,
-              "qualifying": true
-            },
-            {
-              "rank": 2,
-              "team": "Mattanawcook Academy",
-              "record": "13-3-0",
-              "index": 155.469,
-              "qualifying": true
-            },
-            {
-              "rank": 3,
-              "team": "Dexter/PCHS",
-              "record": "13-3-0",
-              "index": 118.594,
-              "qualifying": true
-            },
-            {
-              "rank": 4,
-              "team": "George Stevens Academy",
-              "record": "11-5-0",
-              "index": 110.112,
-              "qualifying": true
-            },
-            {
-              "rank": 5,
-              "team": "Bucksport",
-              "record": "10-6-0",
-              "index": 96.518,
-              "qualifying": true
-            },
-            {
-              "rank": 6,
-              "team": "Sumner Memorial",
-              "record": "6-8-0",
-              "index": 61.781,
-              "qualifying": true
-            },
-            {
-              "rank": 7,
-              "team": "Calais",
-              "record": "12-4-0",
-              "index": 60.387,
-              "qualifying": true
-            },
-            {
-              "rank": 8,
-              "team": "Orono",
-              "record": "6-10-0",
-              "index": 55.156,
-              "qualifying": true
-            },
-            {
-              "rank": 9,
-              "team": "Narraguagus Sr",
-              "record": "6-10-0",
-              "index": 40.275,
-              "qualifying": true
-            },
-            {
-              "rank": 10,
-              "team": "Mount View",
-              "record": "5-11-0",
-              "index": 33.984,
-              "qualifying": true
-            },
-            {
-              "rank": 11,
-              "team": "Fort Kent Community",
-              "record": "4-12-0",
-              "index": 15.089,
-              "qualifying": false
-            },
-            {
-              "rank": 12,
-              "team": "Central",
-              "record": "3-13-0",
-              "index": 14.81,
-              "qualifying": false
-            },
-            {
-              "rank": 13,
-              "team": "Maine Central Institute",
-              "record": "4-12-0",
-              "index": 9.688,
-              "qualifying": false
-            },
-            {
-              "rank": 14,
-              "team": "Houlton/Greater Houlton",
-              "record": "0-13-0",
-              "index": 0.0,
-              "qualifying": false
-            },
-            {
-              "rank": 15,
-              "team": "Winslow",
-              "record": "0-16-0",
-              "index": 0.0,
-              "qualifying": false
-            }
-          ]
-        },
-        {
-          "name": "2025-2026 Class North-D HS - Baseball",
-          "teams": [
-            {
-              "rank": 1,
-              "team": "Fort Fairfield HS",
-              "record": "14-0-0",
-              "index": 148.367,
-              "qualifying": true
-            },
-            {
-              "rank": 2,
-              "team": "Bangor Christian",
-              "record": "13-3-0",
-              "index": 133.103,
-              "qualifying": true
-            },
-            {
-              "rank": 3,
-              "team": "Katahdin HS",
               "record": "12-2-0",
-              "index": 98.776,
+              "index": 130.051,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Caribou",
+              "record": "10-3-1",
+              "index": 121.684,
               "qualifying": true
             },
             {
               "rank": 4,
-              "team": "Stearns Sr.",
-              "record": "12-4-0",
-              "index": 92.098,
+              "team": "Gardiner Area",
+              "record": "8-6-0",
+              "index": 116.378,
               "qualifying": true
             },
             {
               "rank": 5,
-              "team": "Penobscot Valley",
-              "record": "9-5-0",
-              "index": 76.199,
+              "team": "Presque Isle",
+              "record": "9-3-2",
+              "index": 108.699,
               "qualifying": true
             },
             {
               "rank": 6,
-              "team": "Washburn/Easton/Central Aroostook",
-              "record": "7-7-0",
-              "index": 46.633,
+              "team": "Medomak Valley",
+              "record": "8-5-1",
+              "index": 89.541,
               "qualifying": true
             },
             {
               "rank": 7,
-              "team": "Hodgdon HS",
-              "record": "7-7-0",
-              "index": 45.0,
+              "team": "Erskine Academy",
+              "record": "6-5-3",
+              "index": 88.75,
               "qualifying": true
             },
             {
               "rank": 8,
-              "team": "Wisdom HS",
-              "record": "5-9-0",
-              "index": 40.714,
+              "team": "Waterville",
+              "record": "8-5-1",
+              "index": 83.393,
               "qualifying": true
             },
             {
               "rank": 9,
-              "team": "Schenck",
-              "record": "7-7-0",
-              "index": 36.977,
+              "team": "Cony HS",
+              "record": "7-6-1",
+              "index": 79.566,
               "qualifying": true
             },
             {
               "rank": 10,
-              "team": "Madawaska HS",
-              "record": "4-10-0",
-              "index": 35.74,
+              "team": "Ellsworth",
+              "record": "8-4-2",
+              "index": 78.367,
               "qualifying": true
             },
             {
               "rank": 11,
-              "team": "Machias Memorial",
-              "record": "7-7-0",
-              "index": 33.899,
+              "team": "Mount Desert Island",
+              "record": "9-5-0",
+              "index": 75.816,
               "qualifying": true
             },
             {
               "rank": 12,
-              "team": "Southern Aroostook",
+              "team": "Foxcroft Academy",
               "record": "5-9-0",
-              "index": 29.286,
+              "index": 50.51,
               "qualifying": true
             },
             {
               "rank": 13,
-              "team": "Lee Academy",
-              "record": "5-9-0",
-              "index": 25.026,
+              "team": "Nokomis",
+              "record": "6-7-1",
+              "index": 38.087,
               "qualifying": false
             },
             {
               "rank": 14,
-              "team": "Woodland Sr.",
-              "record": "5-11-0",
-              "index": 21.994,
+              "team": "Hermon",
+              "record": "3-9-2",
+              "index": 29.821,
               "qualifying": false
             },
             {
               "rank": 15,
-              "team": "Penquis Valley HS",
-              "record": "3-11-0",
-              "index": 10.204,
+              "team": "Belfast Area",
+              "record": "2-11-1",
+              "index": 22.474,
               "qualifying": false
             },
             {
               "rank": 16,
-              "team": "Jonesport-Beals",
-              "record": "2-10-0",
-              "index": 1.667,
+              "team": "Skowhegan Area",
+              "record": "4-10-0",
+              "index": 13.214,
               "qualifying": false
             },
             {
               "rank": 17,
-              "team": "Ashland District",
-              "record": "0-10-0",
-              "index": 0.0,
+              "team": "Lawrence",
+              "record": "2-12-0",
+              "index": 8.469,
               "qualifying": false
             },
             {
               "rank": 18,
-              "team": "Shead",
+              "team": "Old Town",
               "record": "0-14-0",
               "index": 0.0,
               "qualifying": false
@@ -3790,968 +3975,713 @@
           ]
         },
         {
-          "name": "2025-2026 Class South-A HS - Baseball",
+          "name": "2025-2026 Class North-C HS - Soccer (Boys)",
           "teams": [
             {
               "rank": 1,
-              "team": "Gorham",
-              "record": "15-1-0",
-              "index": 173.438,
-              "qualifying": true
-            },
-            {
-              "rank": 2,
-              "team": "South Portland",
-              "record": "15-1-0",
-              "index": 165.625,
-              "qualifying": true
-            },
-            {
-              "rank": 3,
-              "team": "Cheverus",
-              "record": "13-3-0",
-              "index": 129.688,
-              "qualifying": true
-            },
-            {
-              "rank": 4,
-              "team": "Thornton Academy",
-              "record": "12-4-0",
-              "index": 109.375,
-              "qualifying": true
-            },
-            {
-              "rank": 5,
-              "team": "Scarborough",
-              "record": "11-4-1",
-              "index": 102.734,
-              "qualifying": true
-            },
-            {
-              "rank": 6,
-              "team": "Sanford",
-              "record": "11-5-0",
-              "index": 98.438,
-              "qualifying": true
-            },
-            {
-              "rank": 7,
-              "team": "Massabesic",
-              "record": "10-6-0",
-              "index": 85.156,
-              "qualifying": true
-            },
-            {
-              "rank": 8,
-              "team": "Falmouth",
-              "record": "10-6-0",
-              "index": 80.469,
-              "qualifying": true
-            },
-            {
-              "rank": 9,
-              "team": "Bonny Eagle",
-              "record": "9-7-0",
-              "index": 61.719,
-              "qualifying": true
-            },
-            {
-              "rank": 10,
-              "team": "Noble",
-              "record": "7-8-1",
-              "index": 51.172,
-              "qualifying": true
-            },
-            {
-              "rank": 11,
-              "team": "Kennebunk",
-              "record": "6-10-0",
-              "index": 28.906,
-              "qualifying": true
-            },
-            {
-              "rank": 12,
-              "team": "Marshwood",
-              "record": "5-11-0",
-              "index": 25.0,
-              "qualifying": true
-            },
-            {
-              "rank": 13,
-              "team": "Biddeford",
-              "record": "4-12-0",
-              "index": 10.938,
-              "qualifying": false
-            },
-            {
-              "rank": 14,
-              "team": "Portland",
-              "record": "1-15-0",
-              "index": 7.813,
-              "qualifying": false
-            },
-            {
-              "rank": 15,
-              "team": "Deering",
-              "record": "3-13-0",
-              "index": 6.25,
-              "qualifying": false
-            },
-            {
-              "rank": 16,
-              "team": "Windham",
-              "record": "2-14-0",
-              "index": 3.125,
-              "qualifying": false
-            },
-            {
-              "rank": 17,
-              "team": "Westbrook",
-              "record": "1-15-0",
-              "index": 1.563,
-              "qualifying": false
-            }
-          ]
-        },
-        {
-          "name": "2025-2026 Class South-B HS - Baseball",
-          "teams": [
-            {
-              "rank": 1,
-              "team": "Fryeburg Academy",
-              "record": "13-3-0",
-              "index": 164.063,
-              "qualifying": true
-            },
-            {
-              "rank": 2,
-              "team": "Leavitt Area",
-              "record": "14-2-0",
-              "index": 139.297,
-              "qualifying": true
-            },
-            {
-              "rank": 3,
-              "team": "Greely",
-              "record": "11-5-0",
-              "index": 138.828,
-              "qualifying": true
-            },
-            {
-              "rank": 4,
-              "team": "Cape Elizabeth",
-              "record": "11-5-0",
-              "index": 135.781,
-              "qualifying": true
-            },
-            {
-              "rank": 5,
-              "team": "Lake Region",
-              "record": "11-5-0",
-              "index": 117.615,
-              "qualifying": true
-            },
-            {
-              "rank": 6,
-              "team": "Yarmouth",
-              "record": "9-7-0",
-              "index": 106.797,
-              "qualifying": true
-            },
-            {
-              "rank": 7,
-              "team": "Morse",
-              "record": "12-4-0",
-              "index": 103.281,
-              "qualifying": true
-            },
-            {
-              "rank": 8,
-              "team": "York",
-              "record": "9-7-0",
-              "index": 88.396,
-              "qualifying": true
-            },
-            {
-              "rank": 9,
-              "team": "Wells",
-              "record": "7-9-0",
-              "index": 72.068,
-              "qualifying": true
-            },
-            {
-              "rank": 10,
-              "team": "Freeport",
-              "record": "7-9-0",
-              "index": 62.578,
-              "qualifying": true
-            },
-            {
-              "rank": 11,
-              "team": "Poland Regional",
-              "record": "7-9-0",
-              "index": 61.953,
-              "qualifying": true
-            },
-            {
-              "rank": 12,
-              "team": "Mountain Valley",
-              "record": "7-9-0",
-              "index": 46.406,
-              "qualifying": true
-            },
-            {
-              "rank": 13,
-              "team": "Gray-New Gloucester",
-              "record": "3-13-0",
-              "index": 43.203,
-              "qualifying": false
-            },
-            {
-              "rank": 14,
-              "team": "Medomak Valley",
-              "record": "6-10-0",
-              "index": 38.906,
-              "qualifying": false
-            },
-            {
-              "rank": 15,
-              "team": "Lincoln Academy",
-              "record": "3-13-0",
-              "index": 22.266,
-              "qualifying": false
-            },
-            {
-              "rank": 16,
-              "team": "Erskine Academy",
-              "record": "4-12-0",
-              "index": 19.609,
-              "qualifying": false
-            },
-            {
-              "rank": 17,
-              "team": "Spruce Mountain",
-              "record": "3-13-0",
-              "index": 20.938,
-              "qualifying": false
-            }
-          ]
-        },
-        {
-          "name": "2025-2026 Class South-C HS - Baseball",
-          "teams": [
-            {
-              "rank": 1,
-              "team": "Monmouth Academy",
-              "record": "15-1-0",
-              "index": 144.531,
-              "qualifying": true
-            },
-            {
-              "rank": 2,
-              "team": "Maranacook Community",
-              "record": "14-2-0",
-              "index": 130.938,
-              "qualifying": true
-            },
-            {
-              "rank": 3,
-              "team": "Old Orchard Beach",
-              "record": "12-4-0",
-              "index": 111.714,
-              "qualifying": true
-            },
-            {
-              "rank": 4,
-              "team": "Sacopee Valley",
-              "record": "8-8-0",
-              "index": 97.661,
-              "qualifying": true
-            },
-            {
-              "rank": 5,
-              "team": "Waynflete/NYA Coop",
-              "record": "10-6-0",
-              "index": 79.682,
-              "qualifying": true
-            },
-            {
-              "rank": 6,
-              "team": "Dirigo",
-              "record": "8-8-0",
-              "index": 76.875,
-              "qualifying": true
-            },
-            {
-              "rank": 7,
-              "team": "Lisbon",
-              "record": "9-7-0",
-              "index": 69.141,
-              "qualifying": true
-            },
-            {
-              "rank": 8,
-              "team": "Mt. Abram",
-              "record": "8-8-0",
-              "index": 67.344,
-              "qualifying": true
-            },
-            {
-              "rank": 9,
-              "team": "Winthrop",
-              "record": "8-8-0",
-              "index": 59.063,
-              "qualifying": true
-            },
-            {
-              "rank": 10,
-              "team": "Hall-Dale HS",
-              "record": "8-8-0",
-              "index": 58.984,
-              "qualifying": false
-            },
-            {
-              "rank": 11,
-              "team": "Oak Hill",
-              "record": "7-9-0",
-              "index": 46.797,
-              "qualifying": false
-            },
-            {
-              "rank": 12,
-              "team": "Carrabec",
-              "record": "5-11-0",
-              "index": 30.708,
-              "qualifying": false
-            },
-            {
-              "rank": 13,
-              "team": "Traip Academy",
-              "record": "2-13-0",
-              "index": 11.5,
-              "qualifying": false
-            }
-          ]
-        },
-        {
-          "name": "2025-2026 Class South-D HS - Baseball",
-          "teams": [
-            {
-              "rank": 1,
-              "team": "Richmond HS",
-              "record": "14-1-0",
-              "index": 131.433,
-              "qualifying": true
-            },
-            {
-              "rank": 2,
-              "team": "Telstar Regional",
-              "record": "13-3-0",
-              "index": 98.25,
-              "qualifying": true
-            },
-            {
-              "rank": 3,
-              "team": "Buckfield HS",
-              "record": "10-6-0",
-              "index": 82.208,
-              "qualifying": true
-            },
-            {
-              "rank": 4,
-              "team": "Valley HS",
-              "record": "6-6-0",
-              "index": 48.417,
-              "qualifying": true
-            },
-            {
-              "rank": 5,
-              "team": "Forest Hills Consolidated",
-              "record": "6-9-0",
-              "index": 42.0,
-              "qualifying": true
-            },
-            {
-              "rank": 6,
-              "team": "Vinalhaven/North Haven",
-              "record": "4-8-0",
-              "index": 33.611,
-              "qualifying": true
-            },
-            {
-              "rank": 7,
-              "team": "Madison High School",
-              "record": "4-12-0",
-              "index": 27.031,
-              "qualifying": true
-            },
-            {
-              "rank": 8,
-              "team": "Temple Academy",
-              "record": "2-10-0",
-              "index": 20.778,
-              "qualifying": true
-            },
-            {
-              "rank": 9,
-              "team": "Greenville",
-              "record": "3-9-0",
-              "index": 18.403,
-              "qualifying": false
-            },
-            {
-              "rank": 10,
-              "team": "Boothbay Region",
-              "record": "2-14-0",
-              "index": 15.469,
-              "qualifying": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "sport": "Tennis",
-      "gender": "Boys",
-      "tournament_id": 206,
-      "divisions": [
-        {
-          "name": "2025-2026 Class North-A HS - Tennis (Boys)",
-          "teams": [
-            {
-              "rank": 1,
-              "team": "Camden Hills Regional",
-              "record": "11-1-0",
-              "index": 192.222,
-              "qualifying": true
-            },
-            {
-              "rank": 2,
-              "team": "Brunswick",
-              "record": "10-2-0",
-              "index": 166.111,
-              "qualifying": true
-            },
-            {
-              "rank": 3,
-              "team": "Bangor",
-              "record": "10-2-0",
-              "index": 98.333,
-              "qualifying": true
-            },
-            {
-              "rank": 4,
-              "team": "Mt. Ararat",
-              "record": "7-5-0",
-              "index": 88.472,
-              "qualifying": true
-            },
-            {
-              "rank": 5,
-              "team": "Hampden Academy",
-              "record": "7-5-0",
-              "index": 54.861,
-              "qualifying": true
-            },
-            {
-              "rank": 6,
-              "team": "Messalonskee",
-              "record": "5-7-0",
-              "index": 52.361,
-              "qualifying": true
-            },
-            {
-              "rank": 7,
-              "team": "Mt. Blue",
-              "record": "7-5-0",
-              "index": 52.222,
-              "qualifying": true
-            },
-            {
-              "rank": 8,
-              "team": "Edward Little",
-              "record": "5-7-0",
-              "index": 27.5,
-              "qualifying": true
-            },
-            {
-              "rank": 9,
-              "team": "Skowhegan Area",
-              "record": "2-10-0",
-              "index": 5.417,
-              "qualifying": false
-            },
-            {
-              "rank": 10,
-              "team": "Brewer",
-              "record": "1-11-0",
-              "index": 2.639,
-              "qualifying": false
-            },
-            {
-              "rank": 11,
-              "team": "Lewiston",
-              "record": "1-11-0",
-              "index": 0.833,
-              "qualifying": false
-            }
-          ]
-        },
-        {
-          "name": "2025-2026 Class North-B HS - Tennis (Boys)",
-          "teams": [
-            {
-              "rank": 1,
-              "team": "Caribou",
-              "record": "12-0-0",
-              "index": 205.833,
-              "qualifying": true
-            },
-            {
-              "rank": 2,
-              "team": "Hermon",
-              "record": "11-1-0",
-              "index": 107.5,
-              "qualifying": true
-            },
-            {
-              "rank": 3,
-              "team": "Presque Isle",
-              "record": "10-2-0",
-              "index": 101.111,
-              "qualifying": true
-            },
-            {
-              "rank": 4,
-              "team": "Foxcroft Academy",
-              "record": "8-4-0",
-              "index": 91.111,
-              "qualifying": true
-            },
-            {
-              "rank": 5,
-              "team": "Waterville",
-              "record": "7-5-0",
-              "index": 71.111,
-              "qualifying": true
-            },
-            {
-              "rank": 6,
-              "team": "Old Town",
-              "record": "6-6-0",
-              "index": 53.611,
-              "qualifying": true
-            },
-            {
-              "rank": 7,
-              "team": "John Bapst Memorial",
-              "record": "5-7-0",
-              "index": 22.917,
-              "qualifying": true
-            },
-            {
-              "rank": 8,
-              "team": "Oceanside",
-              "record": "2-10-0",
-              "index": 18.333,
-              "qualifying": true
-            },
-            {
-              "rank": 9,
-              "team": "Belfast Area",
-              "record": "3-9-0",
-              "index": 18.333,
-              "qualifying": false
-            },
-            {
-              "rank": 10,
-              "team": "Mount Desert Island",
-              "record": "2-10-0",
-              "index": 1.667,
-              "qualifying": false
-            },
-            {
-              "rank": 11,
-              "team": "Ellsworth",
-              "record": "0-12-0",
-              "index": 0.0,
-              "qualifying": false
-            }
-          ]
-        },
-        {
-          "name": "2025-2026 Class North-C HS - Tennis (Boys)",
-          "teams": [
-            {
-              "rank": 1,
-              "team": "Maine Central Institute",
-              "record": "12-0-0",
-              "index": 160.922,
-              "qualifying": true
-            },
-            {
-              "rank": 2,
-              "team": "Washington Academy",
-              "record": "9-2-0",
-              "index": 127.576,
-              "qualifying": true
-            },
-            {
-              "rank": 3,
               "team": "Orono",
-              "record": "11-1-0",
-              "index": 124.306,
+              "record": "13-0-1",
+              "index": 106.224,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Mount View",
+              "record": "11-2-1",
+              "index": 98.163,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Fort Kent Community",
+              "record": "8-6-0",
+              "index": 90.714,
               "qualifying": true
             },
             {
               "rank": 4,
-              "team": "Mattanawcook Academy",
-              "record": "9-3-0",
-              "index": 111.515,
+              "team": "GSA/Deer Isle-Ston. Coop",
+              "record": "3-9-2",
+              "index": 56.99,
               "qualifying": true
             },
             {
               "rank": 5,
-              "team": "Dexter Regional",
-              "record": "8-4-0",
-              "index": 69.167,
+              "team": "Washington Academy",
+              "record": "4-9-1",
+              "index": 42.755,
               "qualifying": true
             },
             {
               "rank": 6,
-              "team": "Calais",
-              "record": "7-5-0",
-              "index": 56.667,
+              "team": "Central",
+              "record": "6-8-0",
+              "index": 41.939,
               "qualifying": true
             },
             {
               "rank": 7,
-              "team": "Fort Kent Community",
-              "record": "8-4-0",
-              "index": 52.667,
+              "team": "Winslow",
+              "record": "3-11-0",
+              "index": 20.102,
+              "qualifying": true
+            },
+            {
+              "rank": 8,
+              "team": "Maine Central Institute",
+              "record": "3-11-0",
+              "index": 18.316,
+              "qualifying": true
+            }
+          ]
+        },
+        {
+          "name": "2025-2026 Class North-D HS - Soccer (Boys)",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Fort Fairfield HS",
+              "record": "14-0-0",
+              "index": 161.068,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Madawaska HS",
+              "record": "11-3-0",
+              "index": 100.966,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Penobscot Valley",
+              "record": "10-3-1",
+              "index": 96.709,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Hodgdon HS",
+              "record": "7-6-1",
+              "index": 64.328,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Easton Senior",
+              "record": "8-5-1",
+              "index": 52.59,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Washburn District",
+              "record": "4-8-0",
+              "index": 27.119,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "Central Aroostook Sr",
+              "record": "3-10-1",
+              "index": 22.927,
               "qualifying": true
             },
             {
               "rank": 8,
               "team": "Schenck/Stearns Coop",
-              "record": "6-6-0",
-              "index": 52.515,
+              "record": "3-11-0",
+              "index": 19.949,
               "qualifying": true
             },
             {
               "rank": 9,
-              "team": "Houlton/GHCA/S.Aroostook",
-              "record": "6-6-0",
-              "index": 51.0,
-              "qualifying": true
-            },
-            {
-              "rank": 10,
-              "team": "Madawaska HS",
-              "record": "2-6-0",
-              "index": 9.0,
-              "qualifying": true
-            },
-            {
-              "rank": 11,
-              "team": "Van Buren District",
-              "record": "1-9-0",
-              "index": 9.0,
-              "qualifying": false
-            },
-            {
-              "rank": 12,
-              "team": "George Stevens Academy",
-              "record": "3-9-0",
-              "index": 4.667,
-              "qualifying": false
-            },
-            {
-              "rank": 13,
-              "team": "Penobscot Valley",
-              "record": "4-8-0",
-              "index": 3.333,
-              "qualifying": false
-            },
-            {
-              "rank": 14,
-              "team": "Piscataquis Community",
-              "record": "0-12-0",
-              "index": 0.0,
-              "qualifying": false
-            },
-            {
-              "rank": 15,
-              "team": "Woodland Sr.",
-              "record": "0-8-0",
-              "index": 0.0,
+              "team": "Maine School of Science and Math",
+              "record": "0-9-1",
+              "index": 4.25,
               "qualifying": false
             }
           ]
         },
         {
-          "name": "2025-2026 Class South-A HS - Tennis (Boys)",
+          "name": "2025-2026 Class South-A HS - Soccer (Boys)",
           "teams": [
             {
               "rank": 1,
-              "team": "Falmouth",
-              "record": "12-0-0",
-              "index": 211.944,
+              "team": "Scarborough",
+              "record": "14-0-0",
+              "index": 208.163,
               "qualifying": true
             },
             {
               "rank": 2,
-              "team": "Thornton Academy",
-              "record": "11-1-0",
-              "index": 169.444,
+              "team": "Falmouth",
+              "record": "12-2-0",
+              "index": 163.265,
               "qualifying": true
             },
             {
               "rank": 3,
-              "team": "Cheverus",
-              "record": "10-2-0",
-              "index": 114.722,
+              "team": "Gorham",
+              "record": "11-2-1",
+              "index": 135.918,
               "qualifying": true
             },
             {
               "rank": 4,
-              "team": "Portland",
-              "record": "10-2-0",
-              "index": 111.944,
+              "team": "South Portland",
+              "record": "11-3-0",
+              "index": 122.143,
               "qualifying": true
             },
             {
               "rank": 5,
               "team": "Marshwood",
-              "record": "10-2-0",
-              "index": 98.056,
+              "record": "9-4-1",
+              "index": 88.98,
               "qualifying": true
             },
             {
               "rank": 6,
-              "team": "Gorham",
-              "record": "7-5-0",
-              "index": 88.889,
+              "team": "Kennebunk",
+              "record": "7-4-3",
+              "index": 79.796,
               "qualifying": true
             },
             {
               "rank": 7,
-              "team": "Scarborough",
-              "record": "8-4-0",
-              "index": 61.944,
+              "team": "Westbrook",
+              "record": "7-7-0",
+              "index": 72.143,
               "qualifying": true
             },
             {
               "rank": 8,
-              "team": "Deering",
-              "record": "6-6-0",
-              "index": 34.167,
+              "team": "Thornton Academy",
+              "record": "8-4-2",
+              "index": 69.592,
               "qualifying": true
             },
             {
               "rank": 9,
-              "team": "South Portland",
-              "record": "5-7-0",
-              "index": 28.611,
+              "team": "Deering",
+              "record": "7-7-0",
+              "index": 66.02,
               "qualifying": true
             },
             {
               "rank": 10,
               "team": "Windham",
-              "record": "5-7-0",
-              "index": 23.056,
+              "record": "5-8-1",
+              "index": 55.102,
               "qualifying": true
             },
             {
               "rank": 11,
-              "team": "Kennebunk",
-              "record": "2-10-0",
-              "index": 19.444,
+              "team": "Biddeford",
+              "record": "6-6-2",
+              "index": 54.796,
               "qualifying": true
             },
             {
               "rank": 12,
-              "team": "Westbrook",
-              "record": "4-8-0",
-              "index": 17.5,
-              "qualifying": false
+              "team": "Portland",
+              "record": "3-8-3",
+              "index": 36.429,
+              "qualifying": true
             },
             {
               "rank": 13,
-              "team": "Sanford",
-              "record": "2-10-0",
-              "index": 6.389,
+              "team": "Bonny Eagle",
+              "record": "4-8-2",
+              "index": 24.388,
               "qualifying": false
             },
             {
               "rank": 14,
-              "team": "Massabesic",
-              "record": "2-10-0",
-              "index": 6.389,
+              "team": "Noble",
+              "record": "3-11-0",
+              "index": 15.0,
               "qualifying": false
             },
             {
               "rank": 15,
-              "team": "Biddeford",
-              "record": "2-10-0",
-              "index": 6.389,
+              "team": "Sanford",
+              "record": "2-11-1",
+              "index": 11.429,
               "qualifying": false
             },
             {
               "rank": 16,
-              "team": "Bonny Eagle",
-              "record": "0-12-0",
+              "team": "Cheverus",
+              "record": "2-12-0",
+              "index": 5.816,
+              "qualifying": false
+            },
+            {
+              "rank": 17,
+              "team": "Massabesic",
+              "record": "0-14-0",
               "index": 0.0,
               "qualifying": false
             }
           ]
         },
         {
-          "name": "2025-2026 Class South-B HS - Tennis (Boys)",
+          "name": "2025-2026 Class South-B HS - Soccer (Boys)",
           "teams": [
             {
               "rank": 1,
               "team": "Yarmouth",
-              "record": "11-1-0",
-              "index": 174.722,
+              "record": "12-1-1",
+              "index": 162.704,
               "qualifying": true
             },
             {
               "rank": 2,
-              "team": "Lincoln Academy",
-              "record": "9-3-0",
-              "index": 112.917,
+              "team": "Greely",
+              "record": "12-2-0",
+              "index": 157.5,
               "qualifying": true
             },
             {
               "rank": 3,
-              "team": "Cape Elizabeth",
-              "record": "7-5-0",
-              "index": 94.861,
+              "team": "Leavitt Area",
+              "record": "10-4-0",
+              "index": 116.276,
               "qualifying": true
             },
             {
               "rank": 4,
-              "team": "Medomak Valley",
-              "record": "8-4-0",
-              "index": 76.528,
+              "team": "Cape Elizabeth",
+              "record": "6-5-3",
+              "index": 95.485,
               "qualifying": true
             },
             {
               "rank": 5,
-              "team": "Morse",
-              "record": "8-4-0",
-              "index": 60.556,
+              "team": "York",
+              "record": "8-6-0",
+              "index": 90.51,
               "qualifying": true
             },
             {
               "rank": 6,
-              "team": "York",
-              "record": "7-5-0",
-              "index": 59.167,
+              "team": "Morse",
+              "record": "6-7-1",
+              "index": 90.102,
               "qualifying": true
             },
             {
               "rank": 7,
-              "team": "Gardiner Area",
-              "record": "4-8-0",
-              "index": 40.139,
+              "team": "Freeport",
+              "record": "8-5-1",
+              "index": 88.52,
               "qualifying": true
             },
             {
               "rank": 8,
-              "team": "Greely",
-              "record": "6-6-0",
-              "index": 35.694,
+              "team": "Lincoln Academy",
+              "record": "3-7-4",
+              "index": 63.367,
               "qualifying": true
             },
             {
               "rank": 9,
-              "team": "Erskine Academy",
-              "record": "1-11-0",
-              "index": 5.278,
+              "team": "Lake Region",
+              "record": "4-4-6",
+              "index": 59.643,
               "qualifying": false
             },
             {
               "rank": 10,
-              "team": "Freeport",
-              "record": "2-10-0",
-              "index": 1.667,
+              "team": "Fryeburg Academy",
+              "record": "3-8-3",
+              "index": 48.189,
               "qualifying": false
             },
             {
               "rank": 11,
-              "team": "Lake Region",
-              "record": "0-12-0",
+              "team": "Gray-New Gloucester",
+              "record": "4-8-2",
+              "index": 45.638,
+              "qualifying": false
+            },
+            {
+              "rank": 12,
+              "team": "Poland Regional",
+              "record": "3-9-2",
+              "index": 39.974,
+              "qualifying": false
+            }
+          ]
+        },
+        {
+          "name": "2025-2026 Class South-C HS - Soccer (Boys)",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Hall-Dale HS",
+              "record": "11-1-2",
+              "index": 132.219,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Mt. Abram",
+              "record": "9-3-2",
+              "index": 119.439,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Traip Academy",
+              "record": "11-2-1",
+              "index": 114.082,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Maranacook Community",
+              "record": "7-4-3",
+              "index": 76.378,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Oak Hill",
+              "record": "9-5-0",
+              "index": 70.918,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Winthrop",
+              "record": "6-5-3",
+              "index": 70.306,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "North Yarmouth Academy",
+              "record": "4-6-4",
+              "index": 48.291,
+              "qualifying": true
+            },
+            {
+              "rank": 8,
+              "team": "Lisbon",
+              "record": "4-8-2",
+              "index": 35.51,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
+              "team": "Wells",
+              "record": "3-8-3",
+              "index": 31.046,
+              "qualifying": true
+            },
+            {
+              "rank": 10,
+              "team": "Waynflete",
+              "record": "3-10-1",
+              "index": 22.372,
+              "qualifying": false
+            },
+            {
+              "rank": 11,
+              "team": "Mountain Valley",
+              "record": "1-12-1",
+              "index": 14.235,
+              "qualifying": false
+            },
+            {
+              "rank": 12,
+              "team": "Sacopee Valley",
+              "record": "0-12-2",
+              "index": 8.214,
+              "qualifying": false
+            },
+            {
+              "rank": 13,
+              "team": "Spruce Mountain",
+              "record": "1-12-1",
+              "index": 3.597,
+              "qualifying": false
+            }
+          ]
+        },
+        {
+          "name": "2025-2026 Class South-D HS - Soccer (Boys)",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Monmouth Academy",
+              "record": "12-1-1",
+              "index": 142.832,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Narraguagus Sr",
+              "record": "9-4-1",
+              "index": 83.903,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Woodland Sr.",
+              "record": "7-6-1",
+              "index": 52.577,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Bangor Christian",
+              "record": "6-8-0",
+              "index": 46.276,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Buckfield HS",
+              "record": "7-6-1",
+              "index": 43.801,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Jonesport-Beals",
+              "record": "5-8-1",
+              "index": 36.862,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "Richmond HS",
+              "record": "5-8-1",
+              "index": 31.505,
+              "qualifying": true
+            },
+            {
+              "rank": 8,
+              "team": "Machias Memorial",
+              "record": "1-13-0",
+              "index": 9.541,
+              "qualifying": true
+            }
+          ]
+        },
+        {
+          "name": "2025-2026 Class North-8 Person HS - Soccer (Boys)",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Piscataquis Community",
+              "record": "14-0-0",
+              "index": 138.571,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Katahdin HS",
+              "record": "14-0-0",
+              "index": 135.306,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Penquis Valley HS",
+              "record": "9-3-0",
+              "index": 97.143,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Bucksport",
+              "record": "13-1-0",
+              "index": 96.599,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Wisdom HS",
+              "record": "11-2-1",
+              "index": 96.531,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Calais",
+              "record": "10-2-0",
+              "index": 59.048,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "Dexter Regional",
+              "record": "8-6-0",
+              "index": 57.959,
+              "qualifying": true
+            },
+            {
+              "rank": 8,
+              "team": "Mattanawcook Academy",
+              "record": "6-8-0",
+              "index": 51.701,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
+              "team": "Ashland District",
+              "record": "7-6-1",
+              "index": 47.551,
+              "qualifying": true
+            },
+            {
+              "rank": 10,
+              "team": "Southern Aroostook",
+              "record": "7-6-1",
+              "index": 45.102,
+              "qualifying": true
+            },
+            {
+              "rank": 11,
+              "team": "Van Buren District",
+              "record": "5-8-1",
+              "index": 27.143,
+              "qualifying": true
+            },
+            {
+              "rank": 12,
+              "team": "Houlton/GHCA Coop",
+              "record": "4-10-0",
+              "index": 22.041,
+              "qualifying": true
+            },
+            {
+              "rank": 13,
+              "team": "Sumner Memorial",
+              "record": "4-10-0",
+              "index": 16.327,
+              "qualifying": false
+            },
+            {
+              "rank": 14,
+              "team": "Lee Academy",
+              "record": "2-12-0",
+              "index": 14.694,
+              "qualifying": false
+            },
+            {
+              "rank": 15,
+              "team": "Shead",
+              "record": "5-9-0",
+              "index": 12.857,
+              "qualifying": false
+            },
+            {
+              "rank": 16,
+              "team": "Penobscot Christian",
+              "record": "3-11-0",
+              "index": 7.959,
+              "qualifying": false
+            },
+            {
+              "rank": 17,
+              "team": "East Grand",
+              "record": "0-14-0",
               "index": 0.0,
               "qualifying": false
             }
           ]
         },
         {
-          "name": "2025-2026 Class South-C HS - Tennis (Boys)",
+          "name": "2025-2026 Class South-8 Person HS - Soccer (Boys)",
           "teams": [
             {
               "rank": 1,
-              "team": "Boothbay Region",
-              "record": "11-1-0",
-              "index": 159.338,
+              "team": "Telstar Regional",
+              "record": "13-0-1",
+              "index": 127.388,
               "qualifying": true
             },
             {
               "rank": 2,
-              "team": "Waynflete",
-              "record": "10-2-0",
-              "index": 132.222,
+              "team": "Pine Tree Academy",
+              "record": "11-2-1",
+              "index": 102.082,
               "qualifying": true
             },
             {
               "rank": 3,
-              "team": "Winthrop",
-              "record": "8-2-0",
-              "index": 90.273,
+              "team": "Valley HS",
+              "record": "11-2-1",
+              "index": 84.939,
               "qualifying": true
             },
             {
               "rank": 4,
-              "team": "North Yarmouth Academy",
-              "record": "5-7-0",
-              "index": 39.861,
+              "team": "Islesboro Central",
+              "record": "11-3-0",
+              "index": 73.306,
               "qualifying": true
             },
             {
               "rank": 5,
-              "team": "Mountain Valley",
-              "record": "6-4-0",
-              "index": 38.945,
+              "team": "Carrabec/Madison Coop",
+              "record": "8-5-1",
+              "index": 51.469,
               "qualifying": true
             },
             {
               "rank": 6,
-              "team": "Hall-Dale HS",
-              "record": "5-6-1",
-              "index": 34.705,
+              "team": "Greenville",
+              "record": "4-10-0",
+              "index": 36.571,
               "qualifying": true
             },
             {
               "rank": 7,
-              "team": "Spruce Mountain",
-              "record": "3-6-1",
-              "index": 18.395,
+              "team": "Temple Academy",
+              "record": "4-9-1",
+              "index": 18.98,
               "qualifying": true
             },
             {
               "rank": 8,
-              "team": "Madison High School",
-              "record": "1-10-0",
-              "index": 3.273,
+              "team": "Wiscasset/Boothbay Coop",
+              "record": "5-8-1",
+              "index": 16.204,
               "qualifying": true
             },
             {
               "rank": 9,
-              "team": "Dirigo",
+              "team": "Rangeley Lakes Regional",
+              "record": "4-10-0",
+              "index": 11.061,
+              "qualifying": false
+            },
+            {
+              "rank": 10,
+              "team": "Vinalhaven/North Haven Coop",
               "record": "1-9-0",
-              "index": 3.273,
+              "index": 10.286,
+              "qualifying": false
+            },
+            {
+              "rank": 11,
+              "team": "Searsport HS",
+              "record": "1-13-0",
+              "index": 8.163,
+              "qualifying": false
+            },
+            {
+              "rank": 12,
+              "team": "Dirigo",
+              "record": "0-14-0",
+              "index": 0.0,
               "qualifying": false
             }
           ]
@@ -4759,588 +4689,1316 @@
       ]
     },
     {
-      "sport": "Tennis",
+      "sport": "Soccer",
       "gender": "Girls",
-      "tournament_id": 207,
+      "tournament_id": 6,
       "divisions": [
         {
-          "name": "2025-2026 Class North-A HS - Tennis (Girls)",
+          "name": "2025-2026 Class D HS - Soccer (Girls)",
           "teams": [
             {
               "rank": 1,
-              "team": "Brunswick",
-              "record": "12-0-0",
-              "index": 208.472,
+              "team": "Ashland District",
+              "record": "14-0-0",
+              "index": 148.776,
               "qualifying": true
             },
             {
               "rank": 2,
-              "team": "Brewer",
-              "record": "8-4-0",
-              "index": 150.758,
+              "team": "Penobscot Valley",
+              "record": "10-2-2",
+              "index": 131.122,
               "qualifying": true
             },
             {
               "rank": 3,
-              "team": "Camden Hills Regional",
-              "record": "8-4-0",
-              "index": 119.167,
+              "team": "Central Aroostook Sr",
+              "record": "10-3-1",
+              "index": 108.107,
               "qualifying": true
             },
             {
               "rank": 4,
-              "team": "Hampden Academy",
-              "record": "8-4-0",
-              "index": 112.778,
+              "team": "Madawaska HS",
+              "record": "6-7-1",
+              "index": 68.087,
               "qualifying": true
             },
             {
               "rank": 5,
-              "team": "Bangor",
-              "record": "6-6-0",
-              "index": 83.194,
+              "team": "Monmouth Academy",
+              "record": "7-5-2",
+              "index": 56.658,
               "qualifying": true
             },
             {
               "rank": 6,
-              "team": "Mt. Ararat",
-              "record": "6-6-0",
-              "index": 74.583,
+              "team": "Fort Fairfield HS",
+              "record": "10-4-0",
+              "index": 55.48,
               "qualifying": true
             },
             {
               "rank": 7,
-              "team": "Edward Little",
-              "record": "5-7-0",
-              "index": 55.0,
+              "team": "Washburn District",
+              "record": "6-8-0",
+              "index": 50.48,
               "qualifying": true
             },
             {
               "rank": 8,
-              "team": "Lewiston",
-              "record": "7-5-0",
-              "index": 41.944,
+              "team": "Van Buren District",
+              "record": "7-6-1",
+              "index": 40.128,
               "qualifying": true
             },
             {
               "rank": 9,
-              "team": "Messalonskee",
-              "record": "6-6-0",
-              "index": 38.333,
-              "qualifying": false
+              "team": "Southern Aroostook",
+              "record": "2-12-0",
+              "index": 16.388,
+              "qualifying": true
             },
             {
               "rank": 10,
-              "team": "Skowhegan Area",
-              "record": "3-9-0",
-              "index": 13.611,
-              "qualifying": false
+              "team": "Maine School of Science and Math",
+              "record": "2-8-0",
+              "index": 12.0,
+              "qualifying": true
             },
             {
               "rank": 11,
-              "team": "Mt. Blue",
-              "record": "2-10-0",
-              "index": 5.0,
-              "qualifying": false
+              "team": "Easton Senior",
+              "record": "3-11-0",
+              "index": 11.592,
+              "qualifying": true
             },
             {
               "rank": 12,
-              "team": "Oxford Hills",
-              "record": "1-11-0",
-              "index": 0.833,
-              "qualifying": false
+              "team": "Schenck/Stearns Coop",
+              "record": "2-12-0",
+              "index": 6.735,
+              "qualifying": true
+            },
+            {
+              "rank": 13,
+              "team": "Old Orchard Beach",
+              "record": "3-11-0",
+              "index": 4.388,
+              "qualifying": true
             }
           ]
         },
         {
-          "name": "2025-2026 Class North-B HS - Tennis (Girls)",
+          "name": "2025-2026 Class North-A HS - Soccer (Girls)",
           "teams": [
             {
               "rank": 1,
-              "team": "John Bapst Memorial",
-              "record": "9-3-0",
-              "index": 164.444,
+              "team": "Bangor",
+              "record": "12-1-1",
+              "index": 167.908,
               "qualifying": true
             },
             {
               "rank": 2,
-              "team": "Waterville",
-              "record": "11-1-0",
-              "index": 138.611,
+              "team": "Camden Hills Regional",
+              "record": "13-1-0",
+              "index": 144.133,
               "qualifying": true
             },
             {
               "rank": 3,
-              "team": "Ellsworth",
-              "record": "10-2-0",
-              "index": 127.639,
+              "team": "Mt. Ararat",
+              "record": "11-3-0",
+              "index": 100.561,
               "qualifying": true
             },
             {
               "rank": 4,
-              "team": "Presque Isle",
-              "record": "10-2-0",
-              "index": 109.444,
+              "team": "Brunswick",
+              "record": "9-5-0",
+              "index": 63.827,
               "qualifying": true
             },
             {
               "rank": 5,
-              "team": "Caribou",
-              "record": "8-4-0",
-              "index": 84.861,
+              "team": "Hampden Academy",
+              "record": "6-7-1",
+              "index": 52.092,
               "qualifying": true
             },
             {
               "rank": 6,
-              "team": "Hermon",
-              "record": "8-4-0",
-              "index": 73.056,
+              "team": "Brewer",
+              "record": "6-6-2",
+              "index": 45.689,
               "qualifying": true
             },
             {
               "rank": 7,
-              "team": "Mount Desert Island",
-              "record": "5-7-0",
-              "index": 55.417,
+              "team": "Messalonskee",
+              "record": "4-8-2",
+              "index": 35.816,
               "qualifying": true
             },
             {
               "rank": 8,
-              "team": "Foxcroft Academy",
-              "record": "4-8-0",
-              "index": 35.417,
+              "team": "Mt. Blue",
+              "record": "4-9-1",
+              "index": 25.561,
               "qualifying": true
             },
             {
               "rank": 9,
-              "team": "Oceanside",
-              "record": "2-10-0",
-              "index": 20.694,
+              "team": "Lewiston",
+              "record": "2-12-0",
+              "index": 4.796,
               "qualifying": false
             },
             {
               "rank": 10,
-              "team": "Belfast Area",
-              "record": "2-10-0",
-              "index": 18.472,
+              "team": "Edward Little",
+              "record": "2-12-0",
+              "index": 4.796,
               "qualifying": false
             },
             {
               "rank": 11,
-              "team": "Old Town",
-              "record": "0-12-0",
+              "team": "Oxford Hills",
+              "record": "0-14-0",
               "index": 0.0,
               "qualifying": false
             }
           ]
         },
         {
-          "name": "2025-2026 Class North-C HS - Tennis (Girls)",
+          "name": "2025-2026 Class North-B HS - Soccer (Girls)",
           "teams": [
             {
               "rank": 1,
-              "team": "Orono",
-              "record": "10-2-0",
-              "index": 131.667,
+              "team": "Medomak Valley",
+              "record": "12-0-2",
+              "index": 189.133,
               "qualifying": true
             },
             {
               "rank": 2,
-              "team": "Van Buren District",
-              "record": "9-1-0",
-              "index": 104.333,
+              "team": "Hermon",
+              "record": "14-0-0",
+              "index": 167.551,
               "qualifying": true
             },
             {
               "rank": 3,
-              "team": "Mattanawcook Academy",
-              "record": "6-6-0",
-              "index": 103.182,
+              "team": "Presque Isle",
+              "record": "10-4-0",
+              "index": 130.714,
               "qualifying": true
             },
             {
               "rank": 4,
-              "team": "George Stevens Academy",
-              "record": "6-6-0",
-              "index": 82.139,
+              "team": "Erskine Academy",
+              "record": "11-2-1",
+              "index": 130.612,
               "qualifying": true
             },
             {
               "rank": 5,
-              "team": "Houlton/GHCA/S.Aroostook",
-              "record": "6-6-0",
-              "index": 75.417,
+              "team": "Skowhegan Area",
+              "record": "12-1-1",
+              "index": 100.842,
               "qualifying": true
             },
             {
               "rank": 6,
-              "team": "Piscataquis Community",
-              "record": "8-4-0",
-              "index": 75.0,
+              "team": "Gardiner Area",
+              "record": "9-4-1",
+              "index": 90.485,
               "qualifying": true
             },
             {
               "rank": 7,
-              "team": "Washington Academy",
-              "record": "7-4-0",
-              "index": 56.364,
+              "team": "John Bapst Memorial",
+              "record": "10-4-0",
+              "index": 82.347,
               "qualifying": true
             },
             {
               "rank": 8,
-              "team": "Schenck",
-              "record": "6-6-0",
-              "index": 53.258,
+              "team": "Old Town",
+              "record": "8-6-0",
+              "index": 62.143,
               "qualifying": true
             },
             {
               "rank": 9,
-              "team": "Maine Central Institute",
-              "record": "7-5-0",
-              "index": 44.722,
+              "team": "Belfast Area",
+              "record": "8-5-1",
+              "index": 50.026,
               "qualifying": true
             },
             {
               "rank": 10,
-              "team": "Calais",
-              "record": "6-6-0",
-              "index": 36.667,
+              "team": "Ellsworth",
+              "record": "5-9-0",
+              "index": 41.224,
               "qualifying": true
             },
             {
               "rank": 11,
-              "team": "Penobscot Valley",
-              "record": "6-6-0",
-              "index": 36.667,
-              "qualifying": false
+              "team": "Foxcroft Academy",
+              "record": "7-7-0",
+              "index": 39.898,
+              "qualifying": true
             },
             {
               "rank": 12,
-              "team": "Dexter Regional",
-              "record": "1-11-0",
-              "index": 15.0,
-              "qualifying": false
+              "team": "Cony HS",
+              "record": "3-7-4",
+              "index": 37.194,
+              "qualifying": true
             },
             {
               "rank": 13,
-              "team": "Fort Kent Community",
-              "record": "2-10-0",
-              "index": 1.667,
+              "team": "Oceanside",
+              "record": "4-10-0",
+              "index": 35.306,
               "qualifying": false
             },
             {
               "rank": 14,
-              "team": "Madawaska HS",
-              "record": "0-8-0",
-              "index": 0.0,
+              "team": "Mount Desert Island",
+              "record": "3-11-0",
+              "index": 33.469,
               "qualifying": false
             },
             {
               "rank": 15,
-              "team": "Woodland Sr.",
-              "record": "0-8-0",
+              "team": "Waterville",
+              "record": "3-9-2",
+              "index": 31.48,
+              "qualifying": false
+            },
+            {
+              "rank": 16,
+              "team": "Nokomis",
+              "record": "1-11-2",
+              "index": 18.929,
+              "qualifying": false
+            },
+            {
+              "rank": 17,
+              "team": "Lawrence",
+              "record": "3-11-0",
+              "index": 18.622,
+              "qualifying": false
+            },
+            {
+              "rank": 18,
+              "team": "Caribou",
+              "record": "0-14-0",
               "index": 0.0,
               "qualifying": false
             }
           ]
         },
         {
-          "name": "2025-2026 Class South-A HS - Tennis (Girls)",
+          "name": "2025-2026 Class North-C HS - Soccer (Girls)",
           "teams": [
             {
               "rank": 1,
-              "team": "Falmouth",
-              "record": "12-0-0",
-              "index": 216.667,
+              "team": "Fort Kent Community",
+              "record": "10-3-1",
+              "index": 120.459,
               "qualifying": true
             },
             {
               "rank": 2,
-              "team": "Thornton Academy",
-              "record": "11-1-0",
-              "index": 139.722,
+              "team": "Bucksport",
+              "record": "10-3-1",
+              "index": 103.265,
               "qualifying": true
             },
             {
               "rank": 3,
-              "team": "Scarborough",
-              "record": "10-2-0",
-              "index": 134.167,
+              "team": "Winslow",
+              "record": "10-3-1",
+              "index": 78.138,
               "qualifying": true
             },
             {
               "rank": 4,
-              "team": "Windham",
-              "record": "8-4-0",
-              "index": 122.222,
+              "team": "Mattanawcook Academy",
+              "record": "6-4-4",
+              "index": 75.281,
               "qualifying": true
             },
             {
               "rank": 5,
-              "team": "Cheverus",
-              "record": "9-3-0",
-              "index": 92.5,
+              "team": "Houlton/GHCA  Coop",
+              "record": "7-6-1",
+              "index": 59.158,
               "qualifying": true
             },
             {
               "rank": 6,
-              "team": "Bonny Eagle",
-              "record": "8-4-0",
-              "index": 81.389,
+              "team": "Orono",
+              "record": "5-8-1",
+              "index": 50.179,
               "qualifying": true
             },
             {
               "rank": 7,
-              "team": "Marshwood",
-              "record": "8-4-0",
-              "index": 67.5,
+              "team": "Maine Central Institute",
+              "record": "5-8-1",
+              "index": 34.974,
               "qualifying": true
             },
             {
               "rank": 8,
-              "team": "Portland",
-              "record": "6-6-0",
-              "index": 56.389,
+              "team": "Central",
+              "record": "2-11-1",
+              "index": 14.26,
               "qualifying": true
             },
             {
               "rank": 9,
+              "team": "Mount View",
+              "record": "1-13-0",
+              "index": 3.827,
+              "qualifying": false
+            }
+          ]
+        },
+        {
+          "name": "2025-2026 Class South-A HS - Soccer (Girls)",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Scarborough",
+              "record": "13-1-0",
+              "index": 200.0,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Falmouth",
+              "record": "12-1-1",
+              "index": 164.49,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Windham",
+              "record": "10-3-1",
+              "index": 146.429,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Kennebunk",
+              "record": "11-2-1",
+              "index": 132.857,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Gorham",
+              "record": "10-4-0",
+              "index": 131.633,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
               "team": "Sanford",
-              "record": "7-5-0",
-              "index": 50.833,
+              "record": "9-5-0",
+              "index": 89.49,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "Thornton Academy",
+              "record": "8-6-0",
+              "index": 67.041,
+              "qualifying": true
+            },
+            {
+              "rank": 8,
+              "team": "Cheverus",
+              "record": "5-8-1",
+              "index": 59.388,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
+              "team": "Marshwood",
+              "record": "5-6-3",
+              "index": 56.327,
               "qualifying": true
             },
             {
               "rank": 10,
-              "team": "Kennebunk",
-              "record": "5-7-0",
-              "index": 25.833,
+              "team": "Westbrook",
+              "record": "6-7-1",
+              "index": 49.184,
               "qualifying": true
             },
             {
               "rank": 11,
-              "team": "Gorham",
-              "record": "4-8-0",
-              "index": 23.056,
+              "team": "Bonny Eagle",
+              "record": "5-8-1",
+              "index": 42.041,
               "qualifying": true
             },
             {
               "rank": 12,
-              "team": "Massabesic",
-              "record": "3-9-0",
-              "index": 13.889,
-              "qualifying": false
+              "team": "Deering",
+              "record": "5-8-1",
+              "index": 39.49,
+              "qualifying": true
             },
             {
               "rank": 13,
-              "team": "Biddeford",
-              "record": "3-9-0",
-              "index": 6.389,
+              "team": "Noble",
+              "record": "4-8-2",
+              "index": 38.469,
               "qualifying": false
             },
             {
               "rank": 14,
               "team": "South Portland",
-              "record": "1-11-0",
-              "index": 0.833,
+              "record": "3-9-2",
+              "index": 29.286,
               "qualifying": false
             },
             {
               "rank": 15,
-              "team": "Deering",
-              "record": "1-11-0",
-              "index": 0.833,
+              "team": "Portland",
+              "record": "3-10-1",
+              "index": 19.082,
               "qualifying": false
             },
             {
               "rank": 16,
-              "team": "Westbrook",
-              "record": "0-12-0",
+              "team": "Massabesic",
+              "record": "2-11-1",
+              "index": 7.041,
+              "qualifying": false
+            },
+            {
+              "rank": 17,
+              "team": "Biddeford",
+              "record": "0-14-0",
               "index": 0.0,
               "qualifying": false
             }
           ]
         },
         {
-          "name": "2025-2026 Class South-B HS - Tennis (Girls)",
+          "name": "2025-2026 Class South-B HS - Soccer (Girls)",
           "teams": [
             {
               "rank": 1,
-              "team": "Yarmouth",
-              "record": "10-2-0",
-              "index": 161.25,
+              "team": "Cape Elizabeth",
+              "record": "14-0-0",
+              "index": 201.99,
               "qualifying": true
             },
             {
               "rank": 2,
-              "team": "Lincoln Academy",
-              "record": "10-2-0",
-              "index": 128.056,
+              "team": "Yarmouth",
+              "record": "11-3-0",
+              "index": 143.98,
               "qualifying": true
             },
             {
               "rank": 3,
-              "team": "Cony HS",
-              "record": "10-2-0",
-              "index": 122.778,
+              "team": "Greely",
+              "record": "9-5-0",
+              "index": 104.235,
               "qualifying": true
             },
             {
               "rank": 4,
-              "team": "Cape Elizabeth",
-              "record": "9-3-0",
-              "index": 113.472,
+              "team": "Freeport",
+              "record": "7-6-1",
+              "index": 101.25,
               "qualifying": true
             },
             {
               "rank": 5,
               "team": "Morse",
-              "record": "9-3-0",
-              "index": 93.611,
+              "record": "8-4-2",
+              "index": 95.918,
               "qualifying": true
             },
             {
               "rank": 6,
-              "team": "York",
-              "record": "8-4-0",
-              "index": 72.5,
+              "team": "Lincoln Academy",
+              "record": "6-5-3",
+              "index": 92.73,
               "qualifying": true
             },
             {
               "rank": 7,
-              "team": "Medomak Valley",
-              "record": "6-6-0",
-              "index": 52.5,
+              "team": "Poland Regional",
+              "record": "11-3-0",
+              "index": 90.969,
               "qualifying": true
             },
             {
               "rank": 8,
-              "team": "Erskine Academy",
-              "record": "3-9-0",
-              "index": 15.833,
+              "team": "Leavitt Area",
+              "record": "4-9-1",
+              "index": 50.204,
               "qualifying": true
             },
             {
               "rank": 9,
-              "team": "Freeport",
-              "record": "4-8-0",
-              "index": 12.222,
+              "team": "York",
+              "record": "4-10-0",
+              "index": 48.061,
               "qualifying": false
             },
             {
               "rank": 10,
-              "team": "Gardiner Area",
-              "record": "2-10-0",
-              "index": 10.417,
+              "team": "Fryeburg Academy",
+              "record": "4-9-1",
+              "index": 40.638,
               "qualifying": false
             },
             {
               "rank": 11,
-              "team": "Greely",
-              "record": "2-10-0",
-              "index": 1.667,
+              "team": "Gray-New Gloucester",
+              "record": "3-9-2",
+              "index": 34.923,
               "qualifying": false
             },
             {
               "rank": 12,
               "team": "Lake Region",
-              "record": "0-12-0",
+              "record": "7-7-0",
+              "index": 32.143,
+              "qualifying": false
+            }
+          ]
+        },
+        {
+          "name": "2025-2026 Class South-C HS - Soccer (Girls)",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Maranacook Community",
+              "record": "12-1-1",
+              "index": 127.092,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "North Yarmouth Academy",
+              "record": "11-3-0",
+              "index": 121.939,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Mt. Abram",
+              "record": "11-2-1",
+              "index": 101.505,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Traip Academy",
+              "record": "9-4-1",
+              "index": 87.245,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Hall-Dale HS",
+              "record": "6-5-3",
+              "index": 72.908,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Wells",
+              "record": "7-7-0",
+              "index": 68.265,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "Waynflete",
+              "record": "6-8-0",
+              "index": 56.224,
+              "qualifying": true
+            },
+            {
+              "rank": 8,
+              "team": "Winthrop",
+              "record": "3-8-3",
+              "index": 26.939,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
+              "team": "Spruce Mountain",
+              "record": "4-8-2",
+              "index": 23.291,
+              "qualifying": false
+            },
+            {
+              "rank": 10,
+              "team": "Oak Hill",
+              "record": "2-10-2",
+              "index": 12.857,
+              "qualifying": false
+            },
+            {
+              "rank": 11,
+              "team": "Sacopee Valley",
+              "record": "1-13-0",
+              "index": 0.714,
+              "qualifying": false
+            },
+            {
+              "rank": 12,
+              "team": "Lisbon",
+              "record": "0-13-0",
               "index": 0.0,
               "qualifying": false
             }
           ]
         },
         {
-          "name": "2025-2026 Class South-C HS - Tennis (Girls)",
+          "name": "2025-2026 Class North-8 Person HS - Soccer (Girls)",
           "teams": [
             {
               "rank": 1,
-              "team": "Maranacook Community",
-              "record": "12-0-0",
-              "index": 179.169,
+              "team": "Dexter Regional",
+              "record": "12-2-0",
+              "index": 122.449,
               "qualifying": true
             },
             {
               "rank": 2,
-              "team": "Hall-Dale HS",
-              "record": "10-2-0",
-              "index": 131.53,
+              "team": "Wisdom HS",
+              "record": "12-2-0",
+              "index": 115.918,
               "qualifying": true
             },
             {
               "rank": 3,
-              "team": "Madison High School",
-              "record": "10-2-0",
-              "index": 111.51,
+              "team": "Sumner Memorial",
+              "record": "13-1-0",
+              "index": 86.327,
               "qualifying": true
             },
             {
               "rank": 4,
-              "team": "North Yarmouth Academy",
-              "record": "9-3-0",
-              "index": 100.694,
+              "team": "Lee Academy",
+              "record": "11-3-0",
+              "index": 77.347,
               "qualifying": true
             },
             {
               "rank": 5,
-              "team": "Winthrop",
-              "record": "7-4-0",
-              "index": 56.298,
+              "team": "George Stevens Academy",
+              "record": "9-5-0",
+              "index": 68.367,
               "qualifying": true
             },
             {
               "rank": 6,
-              "team": "Boothbay Region",
-              "record": "6-6-0",
-              "index": 41.773,
+              "team": "Shead",
+              "record": "10-3-1",
+              "index": 63.571,
               "qualifying": true
             },
             {
               "rank": 7,
-              "team": "Winslow",
-              "record": "4-8-0",
-              "index": 34.028,
+              "team": "Penobscot Christian",
+              "record": "8-6-0",
+              "index": 58.776,
               "qualifying": true
             },
             {
               "rank": 8,
-              "team": "Spruce Mountain",
-              "record": "4-6-0",
-              "index": 28.527,
+              "team": "Penquis Valley HS",
+              "record": "6-8-0",
+              "index": 48.776,
               "qualifying": true
             },
             {
               "rank": 9,
-              "team": "Waynflete",
-              "record": "4-8-0",
-              "index": 21.944,
+              "team": "Piscataquis Community",
+              "record": "7-7-0",
+              "index": 43.98,
               "qualifying": true
             },
             {
               "rank": 10,
-              "team": "Oak Hill",
-              "record": "5-6-0",
-              "index": 16.727,
-              "qualifying": false
+              "team": "Washington Academy",
+              "record": "7-7-0",
+              "index": 40.612,
+              "qualifying": true
             },
             {
               "rank": 11,
-              "team": "Dirigo",
-              "record": "2-8-0",
-              "index": 4.6,
-              "qualifying": false
+              "team": "Katahdin HS",
+              "record": "7-7-0",
+              "index": 36.633,
+              "qualifying": true
             },
             {
               "rank": 12,
+              "team": "Hodgdon HS",
+              "record": "7-7-0",
+              "index": 35.714,
+              "qualifying": true
+            },
+            {
+              "rank": 13,
+              "team": "Narraguagus/Machias Coop",
+              "record": "2-11-1",
+              "index": 21.224,
+              "qualifying": false
+            },
+            {
+              "rank": 14,
+              "team": "Woodland Sr.",
+              "record": "3-9-2",
+              "index": 13.673,
+              "qualifying": false
+            },
+            {
+              "rank": 15,
+              "team": "Deer Isle-Stonington",
+              "record": "4-10-0",
+              "index": 9.592,
+              "qualifying": false
+            },
+            {
+              "rank": 16,
+              "team": "Calais",
+              "record": "1-13-0",
+              "index": 6.531,
+              "qualifying": false
+            },
+            {
+              "rank": 17,
+              "team": "East Grand",
+              "record": "0-14-0",
+              "index": 0.0,
+              "qualifying": false
+            }
+          ]
+        },
+        {
+          "name": "2025-2026 Class South-8 Person HS - Soccer (Girls)",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Bangor Christian",
+              "record": "14-0-0",
+              "index": 161.429,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Richmond HS",
+              "record": "14-0-0",
+              "index": 120.49,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Dirigo",
+              "record": "11-2-0",
+              "index": 105.824,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
               "team": "Carrabec",
-              "record": "1-9-0",
-              "index": 1.0,
+              "record": "11-3-0",
+              "index": 85.388,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Buckfield HS",
+              "record": "10-4-0",
+              "index": 84.898,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Madison High School",
+              "record": "10-4-0",
+              "index": 79.749,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "Temple Academy",
+              "record": "9-5-0",
+              "index": 66.612,
+              "qualifying": true
+            },
+            {
+              "rank": 8,
+              "team": "Telstar Regional",
+              "record": "8-5-1",
+              "index": 65.443,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
+              "team": "Greenville",
+              "record": "5-8-1",
+              "index": 31.102,
+              "qualifying": true
+            },
+            {
+              "rank": 10,
+              "team": "Mountain Valley",
+              "record": "2-11-1",
+              "index": 20.0,
+              "qualifying": true
+            },
+            {
+              "rank": 11,
+              "team": "Pine Tree Academy",
+              "record": "3-11-0",
+              "index": 15.184,
+              "qualifying": true
+            },
+            {
+              "rank": 12,
+              "team": "Wiscasset/Boothbay Coop",
+              "record": "4-10-0",
+              "index": 12.735,
               "qualifying": false
             },
             {
               "rank": 13,
-              "team": "Mountain Valley",
-              "record": "0-11-0",
+              "team": "Rangeley Lakes Regional",
+              "record": "4-10-0",
+              "index": 11.102,
+              "qualifying": false
+            },
+            {
+              "rank": 14,
+              "team": "Vinalhaven/North Haven Coop",
+              "record": "2-8-0",
+              "index": 10.286,
+              "qualifying": false
+            },
+            {
+              "rank": 15,
+              "team": "Valley HS",
+              "record": "0-13-1",
+              "index": 4.49,
+              "qualifying": false
+            },
+            {
+              "rank": 16,
+              "team": "Searsport HS",
+              "record": "0-14-0",
+              "index": 0.0,
+              "qualifying": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sport": "Volleyball",
+      "gender": "Girls",
+      "tournament_id": 8,
+      "divisions": [
+        {
+          "name": "2025-2026 Class A HS - Volleyball (Girls)",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Scarborough",
+              "record": "13-1-0",
+              "index": 201.429,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Cheverus/Waynflete Coop",
+              "record": "12-2-0",
+              "index": 164.592,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Gorham",
+              "record": "11-3-0",
+              "index": 151.531,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Thornton Academy",
+              "record": "10-4-0",
+              "index": 151.02,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Kennebunk",
+              "record": "9-5-0",
+              "index": 109.388,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Bonny Eagle",
+              "record": "10-4-0",
+              "index": 97.143,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "Marshwood",
+              "record": "9-5-0",
+              "index": 96.939,
+              "qualifying": true
+            },
+            {
+              "rank": 8,
+              "team": "Edward Little",
+              "record": "10-4-0",
+              "index": 91.633,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
+              "team": "Falmouth",
+              "record": "7-7-0",
+              "index": 91.224,
+              "qualifying": true
+            },
+            {
+              "rank": 10,
+              "team": "South Portland",
+              "record": "9-5-0",
+              "index": 86.735,
+              "qualifying": true
+            },
+            {
+              "rank": 11,
+              "team": "Deering",
+              "record": "8-6-0",
+              "index": 78.061,
+              "qualifying": true
+            },
+            {
+              "rank": 12,
+              "team": "Portland",
+              "record": "6-8-0",
+              "index": 59.286,
+              "qualifying": true
+            },
+            {
+              "rank": 13,
+              "team": "Sanford",
+              "record": "6-8-0",
+              "index": 48.571,
+              "qualifying": false
+            },
+            {
+              "rank": 14,
+              "team": "Biddeford",
+              "record": "4-10-0",
+              "index": 45.408,
+              "qualifying": false
+            },
+            {
+              "rank": 15,
+              "team": "Massabesic/Sacopee Coop",
+              "record": "4-10-0",
+              "index": 40.204,
+              "qualifying": false
+            },
+            {
+              "rank": 16,
+              "team": "Lewiston/Lisbon Blue Devils Coop",
+              "record": "5-9-0",
+              "index": 30.714,
+              "qualifying": false
+            },
+            {
+              "rank": 17,
+              "team": "Noble",
+              "record": "3-11-0",
+              "index": 26.939,
+              "qualifying": false
+            },
+            {
+              "rank": 18,
+              "team": "Windham",
+              "record": "2-12-0",
+              "index": 20.102,
+              "qualifying": false
+            }
+          ]
+        },
+        {
+          "name": "2025-2026 Class B HS - Volleyball (Girls)",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "York",
+              "record": "13-1-0",
+              "index": 180.816,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Washington Academy",
+              "record": "13-1-0",
+              "index": 169.286,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Greely",
+              "record": "10-4-0",
+              "index": 94.694,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Brewer",
+              "record": "9-5-0",
+              "index": 91.122,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Messalonskee",
+              "record": "8-6-0",
+              "index": 83.98,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Hampden Academy",
+              "record": "7-7-0",
+              "index": 78.061,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "Camden Hills Regional",
+              "record": "8-6-0",
+              "index": 76.939,
+              "qualifying": true
+            },
+            {
+              "rank": 8,
+              "team": "Cony HS",
+              "record": "7-7-0",
+              "index": 74.592,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
+              "team": "Yarmouth",
+              "record": "5-9-0",
+              "index": 69.49,
+              "qualifying": true
+            },
+            {
+              "rank": 10,
+              "team": "Cape Elizabeth",
+              "record": "5-9-0",
+              "index": 46.837,
+              "qualifying": true
+            },
+            {
+              "rank": 11,
+              "team": "Mt. Ararat",
+              "record": "5-9-0",
+              "index": 32.143,
+              "qualifying": false
+            },
+            {
+              "rank": 12,
+              "team": "Westbrook",
+              "record": "4-10-0",
+              "index": 30.612,
+              "qualifying": false
+            },
+            {
+              "rank": 13,
+              "team": "Nokomis",
+              "record": "2-12-0",
+              "index": 3.673,
+              "qualifying": false
+            },
+            {
+              "rank": 14,
+              "team": "Brunswick",
+              "record": "1-13-0",
+              "index": 1.837,
+              "qualifying": false
+            }
+          ]
+        },
+        {
+          "name": "2025-2026 Class C HS - Volleyball (Girls)",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Gardiner Area",
+              "record": "11-3-0",
+              "index": 101.327,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Mount Desert Island",
+              "record": "7-7-0",
+              "index": 82.959,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Ellsworth",
+              "record": "7-7-0",
+              "index": 78.163,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Wiscasset/Morse Coop",
+              "record": "8-6-0",
+              "index": 57.551,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Wells",
+              "record": "5-9-0",
+              "index": 53.367,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Medomak Valley",
+              "record": "8-6-0",
+              "index": 47.857,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "Bucksport",
+              "record": "8-6-0",
+              "index": 39.388,
+              "qualifying": true
+            },
+            {
+              "rank": 8,
+              "team": "Gray-New Gloucester",
+              "record": "5-9-0",
+              "index": 22.755,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
+              "team": "Orono",
+              "record": "3-11-0",
+              "index": 6.735,
+              "qualifying": false
+            },
+            {
+              "rank": 10,
+              "team": "Maranacook Community",
+              "record": "1-13-0",
+              "index": 5.204,
+              "qualifying": false
+            },
+            {
+              "rank": 11,
+              "team": "Lake Region",
+              "record": "1-13-0",
+              "index": 1.837,
+              "qualifying": false
+            }
+          ]
+        },
+        {
+          "name": "2025-2026 Class D HS - Volleyball (Girls)",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Narraguagus Sr",
+              "record": "14-0-0",
+              "index": 193.98,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "George Stevens Academy",
+              "record": "10-4-0",
+              "index": 110.918,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Woodland Sr.",
+              "record": "11-3-0",
+              "index": 100.102,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "North Yarmouth/Freeport Coop",
+              "record": "8-6-0",
+              "index": 55.51,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Jonesport-Beals",
+              "record": "8-6-0",
+              "index": 50.714,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Machias Memorial",
+              "record": "5-9-0",
+              "index": 36.02,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "Calais",
+              "record": "6-8-0",
+              "index": 25.816,
+              "qualifying": true
+            },
+            {
+              "rank": 8,
+              "team": "Sumner Memorial",
+              "record": "3-11-0",
+              "index": 6.633,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
+              "team": "Lee/Mattanawcook Coop",
+              "record": "0-14-0",
               "index": 0.0,
               "qualifying": false
             }

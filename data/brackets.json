@@ -1,52 +1,50 @@
 {
-  "last_updated": "2026-06-30T12:33:32.140544+00:00",
-  "season": "spring",
+  "last_updated": "2026-07-01T03:19:21.377761+00:00",
+  "season": "fall",
   "sports": [
     {
-      "sport": "Baseball",
+      "sport": "Cross Country",
       "gender": "Boys",
-      "tournament_id": 200,
+      "tournament_id": 1,
+      "tournament_active": false,
+      "class_name": "",
+      "brackets": []
+    },
+    {
+      "sport": "Cross Country",
+      "gender": "Girls",
+      "tournament_id": 9,
+      "tournament_active": false,
+      "class_name": "",
+      "brackets": []
+    },
+    {
+      "sport": "Field Hockey",
+      "gender": "Girls",
+      "tournament_id": 2,
       "tournament_active": true,
-      "class_name": "2025-2026 Class A HS - Baseball",
+      "class_name": "2025-2026 Class A HS - Field Hockey",
       "brackets": [
         {
           "class_name": "Preliminary Round",
           "matchups": [
             {
-              "team1": "Falmouth",
-              "team2": "Bonny Eagle",
+              "team1": "Windham",
+              "team2": "South Portland/Westbrook",
               "seed1": "8",
               "seed2": "9",
-              "score1": "7",
-              "score2": "0",
-              "header": "TUE 6/9, 4:15 PM @Falmouth HS"
+              "score1": "1",
+              "score2": "3",
+              "header": "FRI 10/24, 3:30 PM @Field 2-Field Hockey Field"
             },
             {
-              "team1": "Massabesic",
+              "team1": "Thornton Academy",
               "team2": "Noble",
               "seed1": "7",
               "seed2": "10",
               "score1": "1",
-              "score2": "5",
-              "header": "TUE 6/9, 4:30 PM @Massabesic HS"
-            },
-            {
-              "team1": "Sanford",
-              "team2": "Kennebunk",
-              "seed1": "6",
-              "seed2": "11",
-              "score1": "11",
               "score2": "2",
-              "header": "TUE 6/9,  @High Seed"
-            },
-            {
-              "team1": "Scarborough",
-              "team2": "Marshwood",
-              "seed1": "5",
-              "seed2": "12",
-              "score1": "3",
-              "score2": "2",
-              "header": "TUE 6/9, 5:00 PM @University of Southern Maine"
+              "header": "SAT 10/25, 2:00 PM @Thornton Academy"
             }
           ]
         },
@@ -54,76 +52,76 @@
           "class_name": "Quarterfinal",
           "matchups": [
             {
-              "team1": "Oxford Hills",
+              "team1": "Skowhegan Area",
               "team2": "Brunswick",
               "seed1": "1",
               "seed2": "8",
-              "score1": "13",
-              "score2": "3",
-              "header": "THU 6/11, 4:00 PM @Gouin Field"
+              "score1": "6",
+              "score2": "0",
+              "header": "WED 10/29, 3:00 PM @Skowhegan Area HS"
             },
             {
-              "team1": "Hampden Academy",
-              "team2": "Messalonskee",
+              "team1": "Messalonskee",
+              "team2": "Lewiston",
               "seed1": "4",
               "seed2": "5",
-              "score1": "10",
-              "score2": "0",
-              "header": "THU 6/11,  @High Seed"
+              "score1": "1",
+              "score2": "2",
+              "header": "WED 10/29, 6:00 PM @Messalonskee HS"
             },
             {
-              "team1": "Bangor",
-              "team2": "Mt. Blue",
+              "team1": "Mt. Blue",
+              "team2": "Brewer",
               "seed1": "3",
               "seed2": "6",
-              "score1": "5",
+              "score1": "1",
               "score2": "0",
-              "header": "THU 6/11, 6:00 PM @High Seed"
+              "header": "TUE 10/28, 3:00 PM @Mt. Blue HS"
             },
             {
               "team1": "Mt. Ararat",
-              "team2": "Edward Little",
+              "team2": "Camden Hills Regional",
               "seed1": "2",
               "seed2": "7",
-              "score1": "4",
-              "score2": "1",
-              "header": "THU 6/11, 4:30 PM @Bowdoin College"
-            },
-            {
-              "team1": "Gorham",
-              "team2": "Falmouth",
-              "seed1": "1",
-              "seed2": "8",
-              "score1": "3",
+              "score1": "1",
               "score2": "0",
-              "header": "FRI 6/12, 4:30 PM @Gorham HS"
-            },
-            {
-              "team1": "Thornton Academy",
-              "team2": "Scarborough",
-              "seed1": "4",
-              "seed2": "5",
-              "score1": "12",
-              "score2": "2",
-              "header": "THU 6/11, 5:00 PM @Thornton Academy"
+              "header": "TUE 10/28, 5:00 PM @Mt. Ararat HS"
             },
             {
               "team1": "Cheverus",
-              "team2": "Sanford",
+              "team2": "South Portland/Westbrook",
+              "seed1": "1",
+              "seed2": "9",
+              "score1": "7",
+              "score2": "0",
+              "header": "WED 10/29, 3:30 PM @Cheverus HS"
+            },
+            {
+              "team1": "Scarborough",
+              "team2": "Gorham",
+              "seed1": "4",
+              "seed2": "5",
+              "score1": "1",
+              "score2": "2",
+              "header": "TUE 10/28, 4:30 PM @"
+            },
+            {
+              "team1": "Sanford",
+              "team2": "Falmouth",
               "seed1": "3",
               "seed2": "6",
               "score1": "3",
               "score2": "2",
-              "header": "THU 6/11,  @High Seed"
+              "header": "TUE 10/28, 6:00 PM @Alumni Stadium"
             },
             {
-              "team1": "South Portland",
+              "team1": "Biddeford",
               "team2": "Noble",
               "seed1": "2",
               "seed2": "10",
-              "score1": "0",
-              "score2": "1",
-              "header": "THU 6/11, 4:30 PM @Wainwright Sports Complex"
+              "score1": "6",
+              "score2": "0",
+              "header": "TUE 10/28, 5:30 PM @Waterhouse Field"
             }
           ]
         },
@@ -131,40 +129,40 @@
           "class_name": "Semifinal",
           "matchups": [
             {
-              "team1": "Oxford Hills",
-              "team2": "Hampden Academy",
+              "team1": "Skowhegan Area",
+              "team2": "Lewiston",
               "seed1": "1",
-              "seed2": "4",
+              "seed2": "5",
               "score1": "3",
-              "score2": "1",
-              "header": "SAT 6/13, 12:00 PM @Semifinal Playoff Game"
+              "score2": "0",
+              "header": "SAT 11/1, 11:00 AM @Skowhegan Area HS"
             },
             {
-              "team1": "Bangor",
+              "team1": "Mt. Blue",
               "team2": "Mt. Ararat",
               "seed1": "3",
               "seed2": "2",
-              "score1": "5",
+              "score1": "1",
               "score2": "2",
-              "header": "SAT 6/13, 11:30 AM @Mt. Ararat HS"
-            },
-            {
-              "team1": "Gorham",
-              "team2": "Thornton Academy",
-              "seed1": "1",
-              "seed2": "4",
-              "score1": "4",
-              "score2": "3",
-              "header": "SAT 6/13, 5:00 PM @High Seed - Gorham HS"
+              "header": "SAT 11/1, 11:00 AM @Mt. Ararat HS"
             },
             {
               "team1": "Cheverus",
-              "team2": "Noble",
+              "team2": "Gorham",
+              "seed1": "1",
+              "seed2": "5",
+              "score1": "6",
+              "score2": "1",
+              "header": "SAT 11/1, 11:00 AM @Fitzpatrick Stadium, Portland ME"
+            },
+            {
+              "team1": "Sanford",
+              "team2": "Biddeford",
               "seed1": "3",
-              "seed2": "10",
-              "score1": "8",
-              "score2": "11",
-              "header": "SAT 6/13,  @High Seed"
+              "seed2": "2",
+              "score1": "1",
+              "score2": "2",
+              "header": "SAT 11/1, 12:00 PM @Waterhouse Field"
             }
           ]
         },
@@ -172,218 +170,22 @@
           "class_name": "Regional Final",
           "matchups": [
             {
-              "team1": "Oxford Hills",
-              "team2": "Bangor",
-              "seed1": "1",
-              "seed2": "3",
-              "score1": "2",
-              "score2": "5",
-              "header": "TUE 6/16, 4:30 PM @Morton Field - Augusta"
-            },
-            {
-              "team1": "Gorham",
-              "team2": "Noble",
-              "seed1": "1",
-              "seed2": "10",
-              "score1": "7",
-              "score2": "2",
-              "header": "TUE 6/16, 3:00 PM @USM"
-            }
-          ]
-        },
-        {
-          "class_name": "State Final",
-          "matchups": [
-            {
-              "team1": "Bangor",
-              "team2": "Gorham",
-              "seed1": "3",
-              "seed2": "1",
-              "score1": "2",
-              "score2": "3",
-              "header": "SAT 6/20, 1:00 PM @Morton Field, Augusta"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "sport": "Softball",
-      "gender": "Girls",
-      "tournament_id": 205,
-      "tournament_active": true,
-      "class_name": "2025-2026 Class A HS - Softball",
-      "brackets": [
-        {
-          "class_name": "Preliminary Round",
-          "matchups": [
-            {
-              "team1": "Biddeford",
-              "team2": "Massabesic",
-              "seed1": "8",
-              "seed2": "9",
-              "score1": "14",
-              "score2": "7",
-              "header": "TUE 6/9, 4:30 PM @Doran Field, Biddeford ME"
-            },
-            {
-              "team1": "South Portland",
-              "team2": "MBAT",
-              "seed1": "7",
-              "seed2": "10",
-              "score1": "8",
-              "score2": "4",
-              "header": "TUE 6/9, 4:30 PM @Wainwright SB1"
-            },
-            {
-              "team1": "Scarborough",
-              "team2": "Thornton Academy",
-              "seed1": "6",
-              "seed2": "11",
-              "score1": "4",
-              "score2": "3",
-              "header": "TUE 6/9, 5:00 PM @University of Southern Maine"
-            }
-          ]
-        },
-        {
-          "class_name": "Quarterfinal",
-          "matchups": [
-            {
-              "team1": "Oxford Hills",
-              "team2": "Bangor",
-              "seed1": "1",
-              "seed2": "8",
-              "score1": "4",
-              "score2": "0",
-              "header": "THU 6/11, 4:00 PM @Gouin Field"
-            },
-            {
-              "team1": "Edward Little",
-              "team2": "Hampden Academy",
-              "seed1": "4",
-              "seed2": "5",
-              "score1": "3",
-              "score2": "5",
-              "header": "THU 6/11, 3:00 PM @Central Maine Community College"
-            },
-            {
               "team1": "Skowhegan Area",
-              "team2": "Brewer",
-              "seed1": "3",
-              "seed2": "6",
-              "score1": "4",
-              "score2": "3",
-              "header": "THU 6/11, 4:00 PM @Skowhegan Area HS"
-            },
-            {
-              "team1": "Lewiston",
-              "team2": "Mt. Blue",
-              "seed1": "2",
-              "seed2": "7",
-              "score1": "9",
-              "score2": "1",
-              "header": "THU 6/11, 4:30 PM @Joseph Deschenes Field"
+              "team2": "Mt. Ararat",
+              "seed1": "1",
+              "seed2": "2",
+              "score1": "3",
+              "score2": "0",
+              "header": "THU 11/6, 7:30 PM @TBA"
             },
             {
               "team1": "Cheverus",
               "team2": "Biddeford",
               "seed1": "1",
-              "seed2": "8",
-              "score1": "8",
-              "score2": "0",
-              "header": "THU 6/11, 4:30 PM @High Seed"
-            },
-            {
-              "team1": "Gorham",
-              "team2": "Windham",
-              "seed1": "4",
-              "seed2": "5",
-              "score1": "6",
-              "score2": "3",
-              "header": "FRI 6/12, 6:00 PM @High Seed - Gorham HS"
-            },
-            {
-              "team1": "Westbrook",
-              "team2": "Scarborough",
-              "seed1": "3",
-              "seed2": "6",
-              "score1": "8",
-              "score2": "5",
-              "header": "THU 6/11, 5:00 PM @Westbrook HS"
-            },
-            {
-              "team1": "Bonny Eagle",
-              "team2": "South Portland",
-              "seed1": "2",
-              "seed2": "7",
-              "score1": "8",
-              "score2": "5",
-              "header": "THU 6/11, 4:30 PM @Bonny Eagle HS"
-            }
-          ]
-        },
-        {
-          "class_name": "Semifinal",
-          "matchups": [
-            {
-              "team1": "Oxford Hills",
-              "team2": "Hampden Academy",
-              "seed1": "1",
-              "seed2": "5",
-              "score1": "8",
-              "score2": "10",
-              "header": "SAT 6/13, 12:00 PM @Semifinal Playoff Game"
-            },
-            {
-              "team1": "Skowhegan Area",
-              "team2": "Lewiston",
-              "seed1": "3",
-              "seed2": "2",
-              "score1": "1",
-              "score2": "3",
-              "header": "SAT 6/13, 12:00 PM @CMCC"
-            },
-            {
-              "team1": "Cheverus",
-              "team2": "Gorham",
-              "seed1": "1",
-              "seed2": "4",
-              "score1": "10",
-              "score2": "0",
-              "header": "SAT 6/13, 1:00 PM @High Seed - Cheverus HS"
-            },
-            {
-              "team1": "Westbrook",
-              "team2": "Bonny Eagle",
-              "seed1": "3",
               "seed2": "2",
               "score1": "3",
-              "score2": "7",
-              "header": "SAT 6/13, 11:00 AM @Bonny Eagle"
-            }
-          ]
-        },
-        {
-          "class_name": "Regional Final",
-          "matchups": [
-            {
-              "team1": "Hampden Academy",
-              "team2": "Lewiston",
-              "seed1": "5",
-              "seed2": "2",
-              "score1": "1",
-              "score2": "0",
-              "header": "TUE 6/16, 7:00 PM @Central Maine Community College"
-            },
-            {
-              "team1": "Cheverus",
-              "team2": "Bonny Eagle",
-              "seed1": "1",
-              "seed2": "2",
-              "score1": "5",
-              "score2": "0",
-              "header": "TUE 6/16, 7:00 PM @USM"
+              "score2": "2",
+              "header": "THU 11/6, 3:30 PM @@Yarmouth HS"
             }
           ]
         },
@@ -391,421 +193,63 @@
           "class_name": "State Final",
           "matchups": [
             {
-              "team1": "Hampden Academy",
+              "team1": "Skowhegan Area",
               "team2": "Cheverus",
-              "seed1": "5",
+              "seed1": "1",
               "seed2": "1",
               "score1": "2",
               "score2": "3",
-              "header": "SAT 6/20, 1:00 PM @CMCC, Auburn"
+              "header": "SAT 11/8, 1:05 PM @Lewiston HS"
             }
           ]
         }
       ]
     },
     {
-      "sport": "Lacrosse",
+      "sport": "Football",
       "gender": "Boys",
-      "tournament_id": 202,
+      "tournament_id": 3,
       "tournament_active": true,
-      "class_name": "2025-2026 Class A HS - Lacrosse (Boys)",
+      "class_name": "2025-2026 Class A HS - Football",
       "brackets": [
-        {
-          "class_name": "Qualifying Round",
-          "matchups": [
-            {
-              "team1": "Cape Elizabeth",
-              "team2": "Hampden/Bangor",
-              "seed1": "8",
-              "seed2": "9",
-              "score1": "11",
-              "score2": "2",
-              "header": "WED 6/10, 5:00 PM @Cape Elizabeth HS - Hannaford Field"
-            },
-            {
-              "team1": "Noble",
-              "team2": "Portland",
-              "seed1": "7",
-              "seed2": "10",
-              "score1": "7",
-              "score2": "6",
-              "header": "TUE 6/9, 6:00 PM @Noble HS"
-            },
-            {
-              "team1": "Scarborough",
-              "team2": "Windham",
-              "seed1": "6",
-              "seed2": "11",
-              "score1": "12",
-              "score2": "11",
-              "header": "WED 6/10, 7:00 PM @University of Southern Maine"
-            },
-            {
-              "team1": "Edward Little",
-              "team2": "Bonny Eagle",
-              "seed1": "5",
-              "seed2": "12",
-              "score1": "7",
-              "score2": "8",
-              "header": "TUE 6/9, 7:00 PM @ELHS Turf Field"
-            }
-          ]
-        },
         {
           "class_name": "Quarterfinal",
           "matchups": [
-            {
-              "team1": "Falmouth",
-              "team2": "Cape Elizabeth",
-              "seed1": "1",
-              "seed2": "8",
-              "score1": "17",
-              "score2": "3",
-              "header": "FRI 6/12, 6:00 PM @Falmouth HS"
-            },
-            {
-              "team1": "Deering",
-              "team2": "Bonny Eagle",
-              "seed1": "4",
-              "seed2": "12",
-              "score1": "18",
-              "score2": "6",
-              "header": "FRI 6/12, 5:30 PM @Memorial Field"
-            },
-            {
-              "team1": "Thornton Academy",
-              "team2": "Noble",
-              "seed1": "2",
-              "seed2": "7",
-              "score1": "25",
-              "score2": "5",
-              "header": "FRI 6/12, 8:15 PM @Thornton Academy"
-            },
-            {
-              "team1": "Yarmouth",
-              "team2": "Scarborough",
-              "seed1": "3",
-              "seed2": "6",
-              "score1": "7",
-              "score2": "3",
-              "header": "FRI 6/12, 5:00 PM @Yarmouth HS"
-            }
-          ]
-        },
-        {
-          "class_name": "Semifinal",
-          "matchups": [
-            {
-              "team1": "Falmouth",
-              "team2": "Deering",
-              "seed1": "1",
-              "seed2": "4",
-              "score1": "16",
-              "score2": "6",
-              "header": "WED 6/17, 7:30 PM @Cape Elizabeth HS"
-            },
-            {
-              "team1": "Thornton Academy",
-              "team2": "Yarmouth",
-              "seed1": "2",
-              "seed2": "3",
-              "score1": "12",
-              "score2": "13",
-              "header": "WED 6/17, 7:15 PM @Thornton Academy - Hill Stadium"
-            }
-          ]
-        },
-        {
-          "class_name": "Final",
-          "matchups": [
-            {
-              "team1": "Falmouth",
-              "team2": "Yarmouth",
-              "seed1": "1",
-              "seed2": "3",
-              "score1": "13",
-              "score2": "8",
-              "header": "SAT 6/20, 6:00 PM @Memorial Stadium, Portland"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "sport": "Lacrosse",
-      "gender": "Girls",
-      "tournament_id": 203,
-      "tournament_active": true,
-      "class_name": "2025-2026 Class A HS - Lacrosse (Girls)",
-      "brackets": [
-        {
-          "class_name": "Qualifying Round",
-          "matchups": [
-            {
-              "team1": "Bangor/John Bapst/Orono",
-              "team2": "Bonny Eagle",
-              "seed1": "8",
-              "seed2": "9",
-              "score1": "9",
-              "score2": "15",
-              "header": "WED 6/10,  @High Seed"
-            },
-            {
-              "team1": "Yarmouth",
-              "team2": "Lewiston-Oak Hill",
-              "seed1": "7",
-              "seed2": "10",
-              "score1": "16",
-              "score2": "0",
-              "header": "WED 6/10, 6:00 PM @Yarmouth HS"
-            },
-            {
-              "team1": "Scarborough",
-              "team2": "Cape Elizabeth",
-              "seed1": "6",
-              "seed2": "11",
-              "score1": "6",
-              "score2": "12",
-              "header": "WED 6/10, 4:45 PM @University of Southern Maine"
-            },
-            {
-              "team1": "Falmouth",
-              "team2": "Marshwood",
-              "seed1": "5",
-              "seed2": "12",
-              "score1": "16",
-              "score2": "12",
-              "header": "TUE 6/9, 6:00 PM @Falmouth HS"
-            },
-            {
-              "team1": "Cheverus",
-              "team2": "Gorham",
-              "seed1": "4",
-              "seed2": "13",
-              "score1": "16",
-              "score2": "6",
-              "header": "TUE 6/9, 5:30 PM @High Seed"
-            },
-            {
-              "team1": "Windham",
-              "team2": "South Portland",
-              "seed1": "3",
-              "seed2": "14",
-              "score1": "22",
-              "score2": "2",
-              "header": "TUE 6/9, 4:30 PM @High Seed"
-            }
-          ]
-        },
-        {
-          "class_name": "Quarterfinal",
-          "matchups": [
-            {
-              "team1": "Kennebunk",
-              "team2": "Bonny Eagle",
-              "seed1": "1",
-              "seed2": "9",
-              "score1": "15",
-              "score2": "5",
-              "header": "SAT 6/13, 10:00 AM @Kennebunk HS"
-            },
-            {
-              "team1": "Cheverus",
-              "team2": "Falmouth",
-              "seed1": "4",
-              "seed2": "5",
-              "score1": "12",
-              "score2": "8",
-              "header": "FRI 6/12, 4:00 PM @"
-            },
-            {
-              "team1": "Thornton Academy",
-              "team2": "Yarmouth",
-              "seed1": "2",
-              "seed2": "7",
-              "score1": "18",
-              "score2": "7",
-              "header": "FRI 6/12, 6:00 PM @Thornton Academy"
-            },
-            {
-              "team1": "Windham",
-              "team2": "Cape Elizabeth",
-              "seed1": "3",
-              "seed2": "11",
-              "score1": "16",
-              "score2": "4",
-              "header": "FRI 6/12, 4:30 PM @High Seed"
-            }
-          ]
-        },
-        {
-          "class_name": "Semifinal",
-          "matchups": [
-            {
-              "team1": "Kennebunk",
-              "team2": "Cheverus",
-              "seed1": "1",
-              "seed2": "4",
-              "score1": "13",
-              "score2": "12",
-              "header": "WED 6/17, 5:00 PM @Cape Elizabeth HS"
-            },
-            {
-              "team1": "Thornton Academy",
-              "team2": "Windham",
-              "seed1": "2",
-              "seed2": "3",
-              "score1": "11",
-              "score2": "8",
-              "header": "WED 6/17, 5:00 PM @Thornton Academy"
-            }
-          ]
-        },
-        {
-          "class_name": "Final",
-          "matchups": [
-            {
-              "team1": "Kennebunk",
-              "team2": "Thornton Academy",
-              "seed1": "1",
-              "seed2": "2",
-              "score1": "8",
-              "score2": "9",
-              "header": "SAT 6/20, 3:30 PM @Memorial Stadium, Portland"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "sport": "Outdoor Track",
-      "gender": "Boys",
-      "tournament_id": 204,
-      "tournament_active": false,
-      "class_name": "",
-      "brackets": []
-    },
-    {
-      "sport": "Outdoor Track",
-      "gender": "Girls",
-      "tournament_id": 301,
-      "tournament_active": false,
-      "class_name": "",
-      "brackets": []
-    },
-    {
-      "sport": "Tennis",
-      "gender": "Boys",
-      "tournament_id": 206,
-      "tournament_active": true,
-      "class_name": "2025-2026 Class A HS - Tennis (Boys)",
-      "brackets": [
-        {
-          "class_name": "Preliminary Round",
-          "matchups": [
-            {
-              "team1": "Deering",
-              "team2": "South Portland",
-              "seed1": "8",
-              "seed2": "9",
-              "score1": "4",
-              "score2": "1",
-              "header": "THU 5/28, 6:00 PM @Apex Tennis (Portland)"
-            },
-            {
-              "team1": "Scarborough",
-              "team2": "Windham",
-              "seed1": "7",
-              "seed2": "10",
-              "score1": "5",
-              "score2": "0",
-              "header": "THU 5/28, 8:00 PM @Apex Racket & Fitness"
-            },
-            {
-              "team1": "Gorham",
-              "team2": "Kennebunk",
-              "seed1": "6",
-              "seed2": "11",
-              "score1": "4",
-              "score2": "1",
-              "header": "THU 5/28, 4:00 PM @Gorham HS"
-            }
-          ]
-        },
-        {
-          "class_name": "Quarterfinal",
-          "matchups": [
-            {
-              "team1": "Camden Hills Regional",
-              "team2": "Edward Little",
-              "seed1": "1",
-              "seed2": "8",
-              "score1": "4",
-              "score2": "1",
-              "header": "FRI 5/29, 4:00 PM @Camden Hills Regional HS"
-            },
-            {
-              "team1": "Mt. Ararat",
-              "team2": "Hampden Academy",
-              "seed1": "4",
-              "seed2": "5",
-              "score1": "4",
-              "score2": "1",
-              "header": "SAT 5/30, 4:00 PM @Mt. Ararat HS"
-            },
-            {
-              "team1": "Bangor",
-              "team2": "Messalonskee",
-              "seed1": "3",
-              "seed2": "6",
-              "score1": "5",
-              "score2": "0",
-              "header": "SAT 5/30, 1:00 PM @Bangor HS"
-            },
-            {
-              "team1": "Brunswick",
-              "team2": "Mt. Blue",
-              "seed1": "2",
-              "seed2": "7",
-              "score1": "5",
-              "score2": "0",
-              "header": "THU 5/28, 3:30 PM @Brunswick HS"
-            },
-            {
-              "team1": "Falmouth",
-              "team2": "Deering",
-              "seed1": "1",
-              "seed2": "8",
-              "score1": "5",
-              "score2": "0",
-              "header": "FRI 5/29, 4:00 PM @Falmouth HS"
-            },
             {
               "team1": "Portland",
-              "team2": "Marshwood",
-              "seed1": "4",
-              "seed2": "5",
-              "score1": "2",
-              "score2": "3",
-              "header": "FRI 5/29, 4:00 PM @Deering Oaks"
+              "team2": "Deering",
+              "seed1": "1",
+              "seed2": "4",
+              "score1": "35",
+              "score2": "14",
+              "header": "FRI 11/7, 6:00 PM @Fitzpatrick Stadium"
             },
             {
-              "team1": "Cheverus",
-              "team2": "Gorham",
-              "seed1": "3",
-              "seed2": "6",
-              "score1": "3",
-              "score2": "2",
-              "header": "SAT 5/30,  @High Seed"
+              "team1": "Oxford Hills/Buckfield C",
+              "team2": "Bangor",
+              "seed1": "2",
+              "seed2": "3",
+              "score1": "6",
+              "score2": "35",
+              "header": "FRI 11/7, 7:00 PM @@  Gouin Athletic Complex"
             },
             {
               "team1": "Thornton Academy",
-              "team2": "Scarborough",
+              "team2": "South Portland",
+              "seed1": "1",
+              "seed2": "4",
+              "score1": "35",
+              "score2": "12",
+              "header": "FRI 11/7, 7:00 PM @Thornton Academy - Hill Stadium"
+            },
+            {
+              "team1": "Bonny Eagle",
+              "team2": "Noble",
               "seed1": "2",
-              "seed2": "7",
-              "score1": "5",
-              "score2": "0",
-              "header": "FRI 5/29, 3:15 PM @Thornton Academy"
+              "seed2": "3",
+              "score1": "27",
+              "score2": "12",
+              "header": "FRI 11/7,  @@High Seed"
             }
           ]
         },
@@ -813,118 +257,94 @@
           "class_name": "Semifinal",
           "matchups": [
             {
-              "team1": "Camden Hills Regional",
-              "team2": "Mt. Ararat",
-              "seed1": "1",
-              "seed2": "4",
-              "score1": "4",
-              "score2": "1",
-              "header": "TUE 6/2, 3:00 PM @Camden Hills Regional HS"
-            },
-            {
-              "team1": "Bangor",
-              "team2": "Brunswick",
-              "seed1": "3",
-              "seed2": "2",
-              "score1": "3",
-              "score2": "2",
-              "header": "WED 6/3, 5:00 PM @Brunswick HS"
-            },
-            {
-              "team1": "Falmouth",
-              "team2": "Marshwood",
-              "seed1": "1",
-              "seed2": "5",
-              "score1": "4",
-              "score2": "1",
-              "header": "WED 6/3, 3:30 PM @Falmouth HS"
-            },
-            {
-              "team1": "Cheverus",
-              "team2": "Thornton Academy",
-              "seed1": "3",
-              "seed2": "2",
-              "score1": "1",
-              "score2": "4",
-              "header": "WED 6/3, 4:00 PM @Thornton Academy"
-            }
-          ]
-        },
-        {
-          "class_name": "Regional Final",
-          "matchups": [
-            {
-              "team1": "Camden Hills Regional",
+              "team1": "Portland",
               "team2": "Bangor",
               "seed1": "1",
               "seed2": "3",
-              "score1": "4",
-              "score2": "1",
-              "header": "MON 6/8, 9:00 AM @Colby College"
+              "score1": "30",
+              "score2": "22",
+              "header": "FRI 11/14, 6:00 PM @Fitzpatrick Stadium"
             },
             {
-              "team1": "Falmouth",
-              "team2": "Thornton Academy",
+              "team1": "Thornton Academy",
+              "team2": "Bonny Eagle",
               "seed1": "1",
               "seed2": "2",
-              "score1": "4",
-              "score2": "1",
-              "header": "MON 6/8,  @Bates College"
+              "score1": "40",
+              "score2": "28",
+              "header": "SAT 11/15, 1:00 PM @Thornton Academy - Hill Stadium"
             }
           ]
         },
         {
-          "class_name": "State Final",
+          "class_name": "Final",
           "matchups": [
             {
-              "team1": "Camden Hills Regional",
-              "team2": "Falmouth",
+              "team1": "Portland",
+              "team2": "Thornton Academy",
               "seed1": "1",
               "seed2": "1",
               "score1": "0",
-              "score2": "5",
-              "header": "WED 6/10, 12:30 PM @Bates College"
+              "score2": "28",
+              "header": "SAT 11/22, 11:00 AM @Fitzpatrick Stadium - Portland"
             }
           ]
         }
       ]
     },
     {
-      "sport": "Tennis",
-      "gender": "Girls",
-      "tournament_id": 207,
+      "sport": "Golf",
+      "gender": "Coed",
+      "tournament_id": 4,
+      "tournament_active": false,
+      "class_name": "",
+      "brackets": []
+    },
+    {
+      "sport": "Soccer",
+      "gender": "Boys",
+      "tournament_id": 5,
       "tournament_active": true,
-      "class_name": "2025-2026 Class A HS - Tennis (Girls)",
+      "class_name": "2025-2026 Class A HS - Soccer (Boys)",
       "brackets": [
         {
           "class_name": "Preliminary Round",
           "matchups": [
             {
-              "team1": "Portland",
-              "team2": "Sanford",
+              "team1": "Thornton Academy",
+              "team2": "Deering",
               "seed1": "8",
               "seed2": "9",
-              "score1": "4",
+              "score1": "0",
               "score2": "1",
-              "header": "THU 5/28, 6:00 PM @Foreside Fitness"
+              "header": "SAT 10/25, 5:00 PM @Hill Stadium - Thornton Academy"
+            },
+            {
+              "team1": "Westbrook",
+              "team2": "Windham",
+              "seed1": "7",
+              "seed2": "10",
+              "score1": "0",
+              "score2": "1",
+              "header": "SAT 10/25, 12:00 PM @Westbrook HS"
+            },
+            {
+              "team1": "Kennebunk",
+              "team2": "Biddeford",
+              "seed1": "6",
+              "seed2": "11",
+              "score1": "1",
+              "score2": "0",
+              "header": "FRI 10/24, 6:00 PM @Kennebunk HS"
             },
             {
               "team1": "Marshwood",
-              "team2": "Kennebunk",
-              "seed1": "7",
-              "seed2": "10",
-              "score1": "3",
-              "score2": "2",
-              "header": "THU 5/28,  @High Seed"
-            },
-            {
-              "team1": "Bonny Eagle",
-              "team2": "Gorham",
-              "seed1": "6",
-              "seed2": "11",
-              "score1": "3",
-              "score2": "2",
-              "header": "THU 5/28,  @High Seed"
+              "team2": "Portland",
+              "seed1": "5",
+              "seed2": "12",
+              "score1": "2",
+              "score2": "1",
+              "header": "SAT 10/25, 12:00 PM @Marshwood Stadium Field"
             }
           ]
         },
@@ -932,76 +352,76 @@
           "class_name": "Quarterfinal",
           "matchups": [
             {
-              "team1": "Brunswick",
-              "team2": "Lewiston",
+              "team1": "Camden Hills Regional",
+              "team2": "Mt. Blue",
               "seed1": "1",
               "seed2": "8",
-              "score1": "5",
+              "score1": "4",
               "score2": "0",
-              "header": "FRI 5/29, 4:00 PM @Brunswick HS"
+              "header": "WED 10/29, 3:00 PM @Camden Hills Regional HS"
             },
             {
-              "team1": "Hampden Academy",
+              "team1": "Edward Little",
               "team2": "Bangor",
               "seed1": "4",
               "seed2": "5",
-              "score1": "4",
-              "score2": "1",
-              "header": "SAT 5/30, 1:00 PM @High Seed"
+              "score1": "5",
+              "score2": "0",
+              "header": "WED 10/29, 6:00 PM @ELHS Turf Field"
             },
             {
-              "team1": "Camden Hills Regional",
+              "team1": "Brunswick",
               "team2": "Mt. Ararat",
               "seed1": "3",
               "seed2": "6",
               "score1": "4",
-              "score2": "1",
-              "header": "THU 5/28, 6:00 PM @Camden Hills Regional HS"
-            },
-            {
-              "team1": "Brewer",
-              "team2": "Edward Little",
-              "seed1": "2",
-              "seed2": "7",
-              "score1": "4",
-              "score2": "1",
-              "header": "FRI 5/29, 4:00 PM @High Seed"
-            },
-            {
-              "team1": "Falmouth",
-              "team2": "Portland",
-              "seed1": "1",
-              "seed2": "8",
-              "score1": "5",
               "score2": "0",
-              "header": "FRI 5/29, 3:30 PM @Falmouth HS"
+              "header": "WED 10/29, 6:00 PM @Brunswick HS"
             },
             {
-              "team1": "Windham",
-              "team2": "Cheverus",
-              "seed1": "4",
-              "seed2": "5",
-              "score1": "1",
-              "score2": "4",
-              "header": "SAT 5/30,  @High Seed"
-            },
-            {
-              "team1": "Scarborough",
-              "team2": "Bonny Eagle",
-              "seed1": "3",
-              "seed2": "6",
-              "score1": "5",
-              "score2": "0",
-              "header": "SAT 5/30, 12:00 PM @Apex Racket & Fitness"
-            },
-            {
-              "team1": "Thornton Academy",
-              "team2": "Marshwood",
+              "team1": "Lewiston",
+              "team2": "Messalonskee",
               "seed1": "2",
               "seed2": "7",
               "score1": "2",
-              "score2": "3",
-              "header": "MON 6/1, 3:45 PM @Thornton Academy"
+              "score2": "0",
+              "header": "TUE 10/28, 6:00 PM @Lewiston HS (Don Roux Field)"
+            },
+            {
+              "team1": "Scarborough",
+              "team2": "Deering",
+              "seed1": "1",
+              "seed2": "9",
+              "score1": "4",
+              "score2": "0",
+              "header": "WED 10/29, 6:00 PM @Scarborough HS (Turf Field)"
+            },
+            {
+              "team1": "South Portland",
+              "team2": "Marshwood",
+              "seed1": "4",
+              "seed2": "5",
+              "score1": "3",
+              "score2": "1",
+              "header": "WED 10/29, 6:00 PM @George Martin Memorial Field (SPHS)"
+            },
+            {
+              "team1": "Gorham",
+              "team2": "Kennebunk",
+              "seed1": "3",
+              "seed2": "6",
+              "score1": "6",
+              "score2": "1",
+              "header": "WED 10/29, 6:00 PM @Gorham HS"
+            },
+            {
+              "team1": "Falmouth",
+              "team2": "Windham",
+              "seed1": "2",
+              "seed2": "10",
+              "score1": "3",
+              "score2": "0",
+              "header": "WED 10/29, 6:00 PM @Falmouth"
             }
           ]
         },
@@ -1009,40 +429,40 @@
           "class_name": "Semifinal",
           "matchups": [
             {
-              "team1": "Brunswick",
-              "team2": "Hampden Academy",
+              "team1": "Camden Hills Regional",
+              "team2": "Edward Little",
               "seed1": "1",
               "seed2": "4",
-              "score1": "5",
+              "score1": "1",
               "score2": "0",
-              "header": "WED 6/3, 3:00 PM @Brunswick HS"
+              "header": "SAT 11/1, 12:30 PM @Lincoln Academy"
             },
             {
-              "team1": "Camden Hills Regional",
-              "team2": "Brewer",
+              "team1": "Brunswick",
+              "team2": "Lewiston",
               "seed1": "3",
               "seed2": "2",
               "score1": "2",
-              "score2": "3",
-              "header": "TUE 6/2, 2:00 PM @Brewer HS Athletic Complex"
-            },
-            {
-              "team1": "Falmouth",
-              "team2": "Cheverus",
-              "seed1": "1",
-              "seed2": "5",
-              "score1": "4",
-              "score2": "1",
-              "header": "THU 6/4, 3:30 PM @Falmouth HS"
+              "score2": "0",
+              "header": "SAT 11/1, 7:00 PM @Lewiston HS (Don Roux Field)"
             },
             {
               "team1": "Scarborough",
-              "team2": "Marshwood",
-              "seed1": "3",
-              "seed2": "7",
-              "score1": "5",
+              "team2": "South Portland",
+              "seed1": "1",
+              "seed2": "4",
+              "score1": "1",
               "score2": "0",
-              "header": "WED 6/3, 3:30 PM @Scarborough HS"
+              "header": "SAT 11/1, 1:00 PM @Scarborough HS (Turf Field)"
+            },
+            {
+              "team1": "Gorham",
+              "team2": "Falmouth",
+              "seed1": "3",
+              "seed2": "2",
+              "score1": "0",
+              "score2": "2",
+              "header": "SAT 11/1, 3:30 PM @Falmouth HS"
             }
           ]
         },
@@ -1050,22 +470,22 @@
           "class_name": "Regional Final",
           "matchups": [
             {
-              "team1": "Brunswick",
-              "team2": "Brewer",
-              "seed1": "1",
-              "seed2": "2",
-              "score1": "4",
-              "score2": "1",
-              "header": "MON 6/8, 11:15 AM @Colby College"
-            },
-            {
-              "team1": "Falmouth",
-              "team2": "Scarborough",
+              "team1": "Camden Hills Regional",
+              "team2": "Brunswick",
               "seed1": "1",
               "seed2": "3",
-              "score1": "5",
-              "score2": "0",
-              "header": "MON 6/8, 11:45 AM @Bates College"
+              "score1": "1",
+              "score2": "2",
+              "header": "TUE 11/4, 7:00 PM @Cameron Stadium"
+            },
+            {
+              "team1": "Scarborough",
+              "team2": "Falmouth",
+              "seed1": "1",
+              "seed2": "2",
+              "score1": "2",
+              "score2": "1",
+              "header": "TUE 11/4, 6:30 PM @@Falmouth HS"
             }
           ]
         },
@@ -1074,12 +494,345 @@
           "matchups": [
             {
               "team1": "Brunswick",
+              "team2": "Scarborough",
+              "seed1": "3",
+              "seed2": "1",
+              "score1": "1",
+              "score2": "2",
+              "header": "SAT 11/8,  @"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sport": "Soccer",
+      "gender": "Girls",
+      "tournament_id": 6,
+      "tournament_active": true,
+      "class_name": "2025-2026 Class A HS - Soccer (Girls)",
+      "brackets": [
+        {
+          "class_name": "Preliminary Round",
+          "matchups": [
+            {
+              "team1": "Cheverus",
+              "team2": "Marshwood",
+              "seed1": "8",
+              "seed2": "9",
+              "score1": "0",
+              "score2": "2",
+              "header": "FRI 10/24, 3:00 PM @Cheverus HS"
+            },
+            {
+              "team1": "Thornton Academy",
+              "team2": "Westbrook",
+              "seed1": "7",
+              "seed2": "10",
+              "score1": "1",
+              "score2": "2",
+              "header": "FRI 10/24, 4:00 PM @Hill Stadium - Thornton Academy"
+            },
+            {
+              "team1": "Sanford",
+              "team2": "Bonny Eagle",
+              "seed1": "6",
+              "seed2": "11",
+              "score1": "1",
+              "score2": "0",
+              "header": "SAT 10/25, 10:00 AM @Alumni Stadium"
+            },
+            {
+              "team1": "Gorham",
+              "team2": "Deering",
+              "seed1": "5",
+              "seed2": "12",
+              "score1": "4",
+              "score2": "0",
+              "header": "FRI 10/24, 5:30 PM @Gorham HS"
+            }
+          ]
+        },
+        {
+          "class_name": "Quarterfinal",
+          "matchups": [
+            {
+              "team1": "Bangor",
+              "team2": "Mt. Blue",
+              "seed1": "1",
+              "seed2": "8",
+              "score1": "7",
+              "score2": "0",
+              "header": "TUE 10/28, 4:00 PM @CAMERON STADIUM"
+            },
+            {
+              "team1": "Brunswick",
+              "team2": "Hampden Academy",
+              "seed1": "4",
+              "seed2": "5",
+              "score1": "5",
+              "score2": "0",
+              "header": "TUE 10/28, 6:00 PM @Brunswick HS"
+            },
+            {
+              "team1": "Mt. Ararat",
+              "team2": "Brewer",
+              "seed1": "3",
+              "seed2": "6",
+              "score1": "2",
+              "score2": "1",
+              "header": "TUE 10/28, 7:00 PM @Mt. Ararat HS"
+            },
+            {
+              "team1": "Camden Hills Regional",
+              "team2": "Messalonskee",
+              "seed1": "2",
+              "seed2": "7",
+              "score1": "8",
+              "score2": "0",
+              "header": "TUE 10/28, 3:00 PM @Camden Hills Regional HS"
+            },
+            {
+              "team1": "Scarborough",
+              "team2": "Marshwood",
+              "seed1": "1",
+              "seed2": "9",
+              "score1": "3",
+              "score2": "2",
+              "header": "TUE 10/28, 6:30 PM @Scarborough HS (Turf Field)"
+            },
+            {
+              "team1": "Kennebunk",
+              "team2": "Gorham",
+              "seed1": "4",
+              "seed2": "5",
+              "score1": "2",
+              "score2": "1",
+              "header": "TUE 10/28, 6:00 PM @Kennebunk HS"
+            },
+            {
+              "team1": "Windham",
+              "team2": "Sanford",
+              "seed1": "3",
+              "seed2": "6",
+              "score1": "2",
+              "score2": "1",
+              "header": "TUE 10/28, 5:00 PM @WHS"
+            },
+            {
+              "team1": "Falmouth",
+              "team2": "Westbrook",
+              "seed1": "2",
+              "seed2": "10",
+              "score1": "6",
+              "score2": "0",
+              "header": "TUE 10/28, 6:00 PM @Falmouth HS"
+            }
+          ]
+        },
+        {
+          "class_name": "Semifinal",
+          "matchups": [
+            {
+              "team1": "Bangor",
+              "team2": "Brunswick",
+              "seed1": "1",
+              "seed2": "4",
+              "score1": "6",
+              "score2": "0",
+              "header": "FRI 10/31, 4:00 PM @Cameron Stadium"
+            },
+            {
+              "team1": "Mt. Ararat",
+              "team2": "Camden Hills Regional",
+              "seed1": "3",
+              "seed2": "2",
+              "score1": "0",
+              "score2": "6",
+              "header": "SAT 11/1, 10:00 AM @Lincoln Academy"
+            },
+            {
+              "team1": "Scarborough",
+              "team2": "Kennebunk",
+              "seed1": "1",
+              "seed2": "4",
+              "score1": "1",
+              "score2": "0",
+              "header": "SAT 11/1, 10:30 AM @Scarborough HS (Turf Field)"
+            },
+            {
+              "team1": "Windham",
               "team2": "Falmouth",
+              "seed1": "3",
+              "seed2": "2",
+              "score1": "3",
+              "score2": "2",
+              "header": "SAT 11/1, 6:00 PM @Falmouth HS"
+            }
+          ]
+        },
+        {
+          "class_name": "Regional Final",
+          "matchups": [
+            {
+              "team1": "Bangor",
+              "team2": "Camden Hills Regional",
+              "seed1": "1",
+              "seed2": "2",
+              "score1": "4",
+              "score2": "1",
+              "header": "TUE 11/4, 4:30 PM @@Cameron Stadium"
+            },
+            {
+              "team1": "Scarborough",
+              "team2": "Windham",
+              "seed1": "1",
+              "seed2": "3",
+              "score1": "2",
+              "score2": "1",
+              "header": "TUE 11/4, 4:00 PM @@Falmouth HS"
+            }
+          ]
+        },
+        {
+          "class_name": "State Final",
+          "matchups": [
+            {
+              "team1": "Bangor",
+              "team2": "Scarborough",
               "seed1": "1",
               "seed2": "1",
               "score1": "1",
-              "score2": "4",
-              "header": "WED 6/10, 12:30 PM @Bates College"
+              "score2": "0",
+              "header": "SAT 11/8,  @"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sport": "Volleyball",
+      "gender": "Girls",
+      "tournament_id": 8,
+      "tournament_active": true,
+      "class_name": "2025-2026 Class A HS - Volleyball (Girls)",
+      "brackets": [
+        {
+          "class_name": "Qualifying Round",
+          "matchups": [
+            {
+              "team1": "Edward Little",
+              "team2": "Falmouth",
+              "seed1": "8",
+              "seed2": "9",
+              "score1": "0",
+              "score2": "3",
+              "header": "THU 10/23, 6:00 PM @ELHS Main Gym"
+            },
+            {
+              "team1": "Marshwood",
+              "team2": "South Portland",
+              "seed1": "7",
+              "seed2": "10",
+              "score1": "3",
+              "score2": "0",
+              "header": "THU 10/23, 6:00 PM @MHS Gym"
+            },
+            {
+              "team1": "Bonny Eagle",
+              "team2": "Deering",
+              "seed1": "6",
+              "seed2": "11",
+              "score1": "3",
+              "score2": "2",
+              "header": "THU 10/23, 6:00 PM @Bonny Eagle HS"
+            },
+            {
+              "team1": "Kennebunk",
+              "team2": "Portland",
+              "seed1": "5",
+              "seed2": "12",
+              "score1": "3",
+              "score2": "0",
+              "header": "THU 10/23, 5:30 PM @Kennebunk HS"
+            }
+          ]
+        },
+        {
+          "class_name": "Quarterfinal",
+          "matchups": [
+            {
+              "team1": "Scarborough",
+              "team2": "Falmouth",
+              "seed1": "1",
+              "seed2": "9",
+              "score1": "3",
+              "score2": "0",
+              "header": "SAT 10/25, 11:00 AM @Scarborough HS (Alumni Gym)"
+            },
+            {
+              "team1": "Thornton Academy",
+              "team2": "Kennebunk",
+              "seed1": "4",
+              "seed2": "5",
+              "score1": "3",
+              "score2": "1",
+              "header": "SAT 10/25, 11:30 AM @Linnell Gym - Thornton Academy"
+            },
+            {
+              "team1": "Cheverus/Waynflete Coop",
+              "team2": "Marshwood",
+              "seed1": "2",
+              "seed2": "7",
+              "score1": "3",
+              "score2": "1",
+              "header": "SAT 10/25, 12:00 PM @Cheverus Keegan Gymnasium"
+            },
+            {
+              "team1": "Gorham",
+              "team2": "Bonny Eagle",
+              "seed1": "3",
+              "seed2": "6",
+              "score1": "3",
+              "score2": "2",
+              "header": "SAT 10/25, 11:00 AM @Gorham HS"
+            }
+          ]
+        },
+        {
+          "class_name": "Semifinal",
+          "matchups": [
+            {
+              "team1": "Scarborough",
+              "team2": "Thornton Academy",
+              "seed1": "1",
+              "seed2": "4",
+              "score1": "1",
+              "score2": "3",
+              "header": "WED 10/29, 6:00 PM @Scarborough HS (Alumni Gym)"
+            },
+            {
+              "team1": "Cheverus/Waynflete Coop",
+              "team2": "Gorham",
+              "seed1": "2",
+              "seed2": "3",
+              "score1": "1",
+              "score2": "3",
+              "header": "WED 10/29, 6:00 PM @Cheverus HS"
+            }
+          ]
+        },
+        {
+          "class_name": "Final",
+          "matchups": [
+            {
+              "team1": "Thornton Academy",
+              "team2": "Gorham",
+              "seed1": "4",
+              "seed2": "3",
+              "score1": "1",
+              "score2": "3",
+              "header": "SAT 11/1, 5:30 PM @USM"
             }
           ]
         }
