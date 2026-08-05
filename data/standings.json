@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-04T12:32:08.886155+00:00",
+  "last_updated": "2026-08-05T03:09:26.116916+00:00",
   "season": "fall",
   "sports": [
     {
@@ -1670,34 +1670,27 @@
             },
             {
               "rank": 9,
-              "team": "Old Town",
-              "record": "0-0 (0.000)",
-              "index": 0.0,
-              "qualifying": true
-            },
-            {
-              "rank": 10,
               "team": "York",
               "record": "0-0 (0.000)",
               "index": 0.0,
-              "qualifying": true
+              "qualifying": false
             },
             {
-              "rank": 11,
+              "rank": 10,
               "team": "Oceanside",
               "record": "0-0 (0.000)",
               "index": 0.0,
               "qualifying": false
             },
             {
-              "rank": 12,
+              "rank": 11,
               "team": "Foxcroft Academy",
               "record": "0-0 (0.000)",
               "index": 0.0,
               "qualifying": false
             },
             {
-              "rank": 13,
+              "rank": 12,
               "team": "Wells",
               "record": "0-0 (0.000)",
               "index": 0.0,
@@ -1810,6 +1803,13 @@
               "record": "0-0 (0.000)",
               "index": 0.0,
               "qualifying": false
+            },
+            {
+              "rank": 8,
+              "team": "Camden Hills Regional",
+              "record": "0-0 (0.000)",
+              "index": 0.0,
+              "qualifying": false
             }
           ]
         },
@@ -1832,7 +1832,7 @@
             },
             {
               "rank": 3,
-              "team": "Maranacook Community",
+              "team": "Oak Hill",
               "record": "0-0 (0.000)",
               "index": 0.0,
               "qualifying": true
@@ -2008,27 +2008,20 @@
             },
             {
               "rank": 5,
-              "team": "Oak Hill",
-              "record": "0-0 (0.000)",
-              "index": 0.0,
-              "qualifying": true
-            },
-            {
-              "rank": 6,
               "team": "Lisbon",
               "record": "0-0 (0.000)",
               "index": 0.0,
               "qualifying": true
             },
             {
-              "rank": 7,
+              "rank": 6,
               "team": "Dirigo",
               "record": "0-0 (0.000)",
               "index": 0.0,
-              "qualifying": false
+              "qualifying": true
             },
             {
-              "rank": 8,
+              "rank": 7,
               "team": "Winthrop",
               "record": "0-0 (0.000)",
               "index": 0.0,
@@ -2041,7 +2034,7 @@
           "teams": [
             {
               "rank": 1,
-              "team": "Camden Hills Regional",
+              "team": "Old Town",
               "record": "0-0 (0.000)",
               "index": 0.0,
               "qualifying": true
@@ -2175,41 +2168,48 @@
           "teams": [
             {
               "rank": 1,
-              "team": "Traip Academy",
+              "team": "Maranacook Community",
               "record": "0-0 (0.000)",
               "index": 0.0,
               "qualifying": true
             },
             {
               "rank": 2,
-              "team": "Mount View",
+              "team": "Traip Academy",
               "record": "0-0 (0.000)",
               "index": 0.0,
               "qualifying": true
             },
             {
               "rank": 3,
-              "team": "Sacopee Valley",
+              "team": "Mount View",
               "record": "0-0 (0.000)",
               "index": 0.0,
               "qualifying": true
             },
             {
               "rank": 4,
-              "team": "Old Orchard Beach",
+              "team": "Sacopee Valley",
               "record": "0-0 (0.000)",
               "index": 0.0,
               "qualifying": true
             },
             {
               "rank": 5,
-              "team": "Telstar Regional",
+              "team": "Old Orchard Beach",
               "record": "0-0 (0.000)",
               "index": 0.0,
               "qualifying": false
             },
             {
               "rank": 6,
+              "team": "Telstar Regional",
+              "record": "0-0 (0.000)",
+              "index": 0.0,
+              "qualifying": false
+            },
+            {
+              "rank": 7,
               "team": "Boothbay Region",
               "record": "0-0 (0.000)",
               "index": 0.0,
