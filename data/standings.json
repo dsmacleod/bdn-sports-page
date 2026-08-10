@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-09T12:21:23.972394+00:00",
+  "last_updated": "2026-08-10T12:37:28.330528+00:00",
   "season": "fall",
   "sports": [
     {
@@ -179,6 +179,191 @@
             {
               "rank": 12,
               "team": "Waterville",
+              "record": "0-0-0",
+              "index": 0.0,
+              "qualifying": false
+            }
+          ]
+        },
+        {
+          "name": "2026-2027 Class North-C HS - Field Hockey",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Foxcroft Academy",
+              "record": "0-0-0",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Mountain Valley",
+              "record": "0-0-0",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Winslow",
+              "record": "0-0-0",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Orono",
+              "record": "0-0-0",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Mattanawcook Academy",
+              "record": "0-0-0",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Dexter Regional",
+              "record": "0-0-0",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "Central",
+              "record": "0-0-0",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 8,
+              "team": "Maine Central Institute",
+              "record": "0-0-0",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
+              "team": "Dirigo",
+              "record": "0-0-0",
+              "index": 0.0,
+              "qualifying": false
+            },
+            {
+              "rank": 10,
+              "team": "Piscataquis Community",
+              "record": "0-0-0",
+              "index": 0.0,
+              "qualifying": false
+            },
+            {
+              "rank": 11,
+              "team": "Stearns/Schenck Coop",
+              "record": "0-0-0",
+              "index": 0.0,
+              "qualifying": false
+            }
+          ]
+        },
+        {
+          "name": "2026-2027 Class South-A HS - Field Hockey",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Gorham",
+              "record": "0-0-0",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Scarborough",
+              "record": "0-0-0",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Thornton Academy",
+              "record": "0-0-0",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Portland/Deering Coop",
+              "record": "0-0-0",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Sanford/Kennebunk",
+              "record": "0-0-0",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Bonny Eagle",
+              "record": "0-0-0",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "South Portland/Westbrook Coop",
+              "record": "0-0-0",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 8,
+              "team": "Noble",
+              "record": "0-0-0",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
+              "team": "Windham",
+              "record": "0-0-0",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 10,
+              "team": "Massabesic",
+              "record": "0-0-0",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 11,
+              "team": "Falmouth",
+              "record": "0-0-0",
+              "index": 0.0,
+              "qualifying": false
+            },
+            {
+              "rank": 12,
+              "team": "Biddeford",
+              "record": "0-0-0",
+              "index": 0.0,
+              "qualifying": false
+            },
+            {
+              "rank": 13,
+              "team": "Marshwood",
+              "record": "0-0-0",
+              "index": 0.0,
+              "qualifying": false
+            },
+            {
+              "rank": 14,
+              "team": "Cheverus",
               "record": "0-0-0",
               "index": 0.0,
               "qualifying": false
@@ -3598,6 +3783,88 @@
               "record": "0-0-0",
               "index": 0.0,
               "qualifying": true
+            }
+          ]
+        },
+        {
+          "name": "2026-2027 Class North-A HS - Soccer (Girls)",
+          "teams": [
+            {
+              "rank": 1,
+              "team": "Lewiston",
+              "record": "0-0-0",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 2,
+              "team": "Edward Little",
+              "record": "0-0-0",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 3,
+              "team": "Bangor",
+              "record": "0-0-0",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 4,
+              "team": "Oxford Hills",
+              "record": "0-0-0",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 5,
+              "team": "Hampden Academy",
+              "record": "0-0-0",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 6,
+              "team": "Mt. Ararat",
+              "record": "0-0-0",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 7,
+              "team": "Camden Hills Regional",
+              "record": "0-0-0",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 8,
+              "team": "Brunswick",
+              "record": "0-0-0",
+              "index": 0.0,
+              "qualifying": true
+            },
+            {
+              "rank": 9,
+              "team": "Messalonskee",
+              "record": "0-0-0",
+              "index": 0.0,
+              "qualifying": false
+            },
+            {
+              "rank": 10,
+              "team": "Mt. Blue",
+              "record": "0-0-0",
+              "index": 0.0,
+              "qualifying": false
+            },
+            {
+              "rank": 11,
+              "team": "Brewer",
+              "record": "0-0-0",
+              "index": 0.0,
+              "qualifying": false
             }
           ]
         },
