@@ -6,12 +6,13 @@ from datetime import datetime, timezone
 
 import requests
 
-from scraper.config import MPA_BASE, MILESPLIT_MEETS, SPORTS, current_season
+from scraper.config import MPA_BASE, MPA_GAMESYNC_URL, MILESPLIT_MEETS, SPORTS, current_season
 from scraper.schedules import fetch_schedules
 from scraper.standings import fetch_standings
 from scraper.brackets import fetch_brackets
 from scraper.featured import fetch_featured
 from scraper.athletes import fetch_athletes
+from scraper.mpa_feed import fetch_gamesync
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
 
@@ -109,6 +110,21 @@ def run():
             print("  ERROR fetching athletes: %s" % e)
     else:
         print("5. No MileSplit meet URLs configured, skipping athletes.")
+
+    # 6. MPA official game sync feed (separate source from the MPA.cc scrape
+    # above — statewide, includes final scores). Written to its own file for
+    # now rather than merged into schedules.json, since it covers every sport
+    # at once (not just the current season's) and uses a different shape
+    # (a team list per event, not a fixed home/away pair).
+    print("6. Fetching MPA game sync feed...")
+    try:
+        games = fetch_gamesync(session, MPA_GAMESYNC_URL)
+        _write_json("mpa_games.json", {
+            "last_updated": now.isoformat(),
+            "games": games,
+        })
+    except Exception as e:
+        print("  ERROR fetching MPA game sync feed: %s" % e)
 
     print("Done.")
 

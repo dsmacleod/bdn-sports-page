@@ -3,6 +3,11 @@
 MPA_BASE = "https://www.mpa.cc"
 MILESPLIT_BASE = "https://me.milesplit.com"
 
+# Official MPA game sync feed — separate from the MPA.cc scrape above. One
+# statewide XML dump, no server-side filtering (see scraper/mpa_feed.py), but
+# it's the only source here that carries final scores per team.
+MPA_GAMESYNC_URL = "https://mpa.fpsports.org/services/xmlgamesync.ashx"
+
 # MileSplit meet URLs to scrape for athlete results.
 # These are populated manually or discovered from the MileSplit results page.
 # Format: full URL to meet results page.

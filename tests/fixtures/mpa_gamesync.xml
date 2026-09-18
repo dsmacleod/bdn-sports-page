@@ -1,0 +1,106 @@
+<Events>
+  <Event GameID="35658">
+    <GameDate>2026-09-03</GameDate>
+    <Time>4:00 PM</Time>
+    <Sport>Cross Country (Boys)</Sport>
+    <TeamLevel>Varsity</TeamLevel>
+    <Type>League</Type>
+    <Status>Normal</Status>
+    <Site>Edward Little High School</Site>
+    <Team>
+      <School>Edward Little</School>
+      <HomeAway>Home</HomeAway>
+      <Result />
+      <Forfeit />
+    </Team>
+    <Team>
+      <School>Oxford Hills</School>
+      <HomeAway>Away</HomeAway>
+      <Result />
+      <Forfeit />
+    </Team>
+  </Event>
+  <Event GameID="59974">
+    <GameDate>2026-09-14</GameDate>
+    <Time>4:00 PM</Time>
+    <Sport>Field Hockey</Sport>
+    <TeamLevel>Varsity</TeamLevel>
+    <Type>League</Type>
+    <Status>Normal</Status>
+    <Overtimes>0</Overtimes>
+    <Site>Central HS</Site>
+    <Team>
+      <School>Central</School>
+      <HomeAway>Home</HomeAway>
+      <Result>Loss</Result>
+      <Forfeit />
+      <Score>1</Score>
+    </Team>
+    <Team>
+      <School>Stearns Sr.</School>
+      <HomeAway>Away</HomeAway>
+      <Result>Win</Result>
+      <Forfeit />
+      <Score>12</Score>
+    </Team>
+  </Event>
+  <Event GameID="40975">
+    <GameDate>2026-09-28</GameDate>
+    <Time>10:00 AM</Time>
+    <Sport>Golf (Coed)</Sport>
+    <TeamLevel>Varsity</TeamLevel>
+    <Type>Tournament</Type>
+    <Status>Normal</Status>
+    <Site>Natanis Country Club</Site>
+    <Team>
+      <School>Western Maine Conference League</School>
+      <HomeAway>Away</HomeAway>
+      <Result />
+      <Forfeit />
+    </Team>
+  </Event>
+  <Event GameID="40451">
+    <GameDate>2026-09-03</GameDate>
+    <Time>Postponed</Time>
+    <Sport>Soccer (Girls)</Sport>
+    <TeamLevel>Varsity</TeamLevel>
+    <Type>League</Type>
+    <Status>Postponed</Status>
+    <Site>Easton</Site>
+    <Team>
+      <School>Easton Senior</School>
+      <HomeAway>Home</HomeAway>
+      <Result />
+      <Forfeit />
+    </Team>
+    <Team>
+      <School>Van Buren District</School>
+      <HomeAway>Away</HomeAway>
+      <Result />
+      <Forfeit />
+    </Team>
+  </Event>
+  <Event GameID="50123">
+    <GameDate>2026-09-12</GameDate>
+    <Time>7:00 PM</Time>
+    <Sport>Football</Sport>
+    <TeamLevel>Varsity</TeamLevel>
+    <Type>League</Type>
+    <Status>Normal</Status>
+    <Site>Bangor High School</Site>
+    <Team>
+      <School>Bangor</School>
+      <HomeAway>Home</HomeAway>
+      <Result>Win</Result>
+      <Forfeit />
+      <Score>28</Score>
+    </Team>
+    <Team>
+      <School>Brewer</School>
+      <HomeAway>Away</HomeAway>
+      <Result>Loss</Result>
+      <Forfeit />
+      <Score>14</Score>
+    </Team>
+  </Event>
+</Events>
