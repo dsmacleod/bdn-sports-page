@@ -130,3 +130,71 @@ def fetch_gamesync(session, url: str) -> list[dict]:
     resp = session.get(url, timeout=30)
     resp.raise_for_status()
     return parse_gamesync(resp.text)
+
+
+# The feed only puts a gender in parens when a sport has separate boys'/girls'
+# competitions (e.g. "Soccer (Boys)"); single-gender sports come through with
+# no suffix at all ("Football", "Field Hockey" in the current fall feed). The
+# front end's sport filter labels a game "Sport (Gender)" whenever gender is
+# set and non-Coed, so a blank gender here would produce a second, unmatched
+# "Football" option alongside standings' "Football (Boys)" (standings still
+# comes from the MPA.cc scrape's config.SPORTS, which does say Boys). Fall
+# back to config.SPORTS for exactly the sports that are single-gender there
+# (i.e. unambiguous — Cross Country etc. have both a Boys and a Girls entry,
+# so they're excluded and left to the feed's own (Boys)/(Girls) suffix).
+def _build_gender_fallback() -> dict[str, str]:
+    from collections import defaultdict
+
+    from .config import SPORTS
+
+    genders_by_sport: dict[str, set[str]] = defaultdict(set)
+    for season_sports in SPORTS.values():
+        for cfg in season_sports:
+            genders_by_sport[cfg["sport"]].add(cfg["gender"])
+    return {sport: next(iter(genders)) for sport, genders in genders_by_sport.items() if len(genders) == 1}
+
+
+_GENDER_FALLBACK = _build_gender_fallback()
+
+
+def to_schedule_game(event: dict) -> dict:
+    """Flatten one parsed gamesync event into the flat schedule-list shape
+    the front end reads (schedules.json's "games" list): date/time/type/
+    home/away/site/sport/gender, plus status/level/game_id and, once final,
+    home_score/away_score — everything the old MPA.cc schedule scrape
+    produced, plus the score/status data it didn't have.
+
+    Events with more than two teams (a golf tournament fielding whole
+    conferences, an invitational) don't have a real home/away pair: whichever
+    team (if any) is marked Home becomes "home", and every other participant
+    is comma-joined into "away" — matching how the old MPA.cc scrape already
+    flattened these multi-team entries.
+    """
+    teams = event["teams"]
+    home_team = next((t for t in teams if t["home_away"] == "Home"), None)
+    others = [t for t in teams if t is not home_team]
+
+    gender = event["gender"] or _GENDER_FALLBACK.get(event["sport"], "")
+
+    game = {
+        "game_id": event["game_id"],
+        "date": event["date"],
+        "time": event["time"],
+        "type": event["type"],
+        "status": event["status"],
+        "level": event["level"],
+        "home": home_team["school"] if home_team else "",
+        "away": ", ".join(t["school"] for t in others),
+        "site": event["site"],
+        "sport": event["sport"],
+        "gender": gender,
+    }
+    if home_team is not None and home_team["score"] is not None:
+        game["home_score"] = home_team["score"]
+    if len(others) == 1 and others[0]["score"] is not None:
+        game["away_score"] = others[0]["score"]
+    return game
+
+
+def to_schedule_games(events: list[dict]) -> list[dict]:
+    return [to_schedule_game(e) for e in events]

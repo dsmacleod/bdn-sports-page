@@ -277,7 +277,18 @@ function TeamDetailModal({ game, standings, onClose }) {
         <p className="text-xs text-gray-500 mb-4">
           {formatDate(game.date)} &bull; {game.time} &bull; {game.site}
         </p>
-        <p className="text-xs text-gray-400 uppercase tracking-wide mb-4">{game.sport}</p>
+        <p className="text-xs text-gray-400 uppercase tracking-wide mb-1">{game.sport}</p>
+        {game.home_score !== undefined && (
+          <p className="font-heading text-2xl text-bdn-gray mb-4">
+            {game.home} {game.home_score} &ndash; {game.away_score} {game.away}
+          </p>
+        )}
+        {game.status === 'Postponed' && (
+          <p className="text-sm font-semibold text-red-500 mb-4">Postponed</p>
+        )}
+        {game.status === 'Canceled' && (
+          <p className="text-sm font-semibold text-red-500 mb-4">Canceled</p>
+        )}
 
         <TeamSection label="Home" teamName={game.home} entries={homeStandings} />
         <TeamSection label="Away" teamName={game.away} entries={awayStandings} />
@@ -313,17 +324,29 @@ function ScoresTab({ games, sportFilter, standings, onGameClick }) {
   const recent = filtered.filter(g => g.date < today).sort((a, b) => b.date.localeCompare(a.date)).slice(0, 50);
 
   function isPostponed(game) {
+    // The feed's own status is authoritative; fall back to the old
+    // string-match for anything upstream that didn't set status.
+    if (game.status) return game.status === 'Postponed';
     return game.time && game.time.toLowerCase().includes('postponed');
   }
 
+  function isCanceled(game) {
+    return game.status === 'Canceled';
+  }
+
   function isFinal(game) {
-    // Games in the past that aren't postponed are considered final
-    return game.date < today && !isPostponed(game);
+    // A real score is definitive regardless of date. Otherwise fall back to
+    // "past and not postponed/canceled" for anything without a score (e.g.
+    // multi-team meets, which don't carry a single home/away score).
+    if (game.home_score !== undefined) return true;
+    return game.date < today && !isPostponed(game) && !isCanceled(game);
   }
 
   function GameCard({ game }) {
     const final = isFinal(game);
     const postponed = isPostponed(game);
+    const canceled = isCanceled(game);
+    const hasScore = game.home_score !== undefined && game.away_score !== undefined;
     return (
       <div
         onClick={() => onGameClick && onGameClick(game)}
@@ -341,21 +364,26 @@ function ScoresTab({ games, sportFilter, standings, onGameClick }) {
                 PPD
               </span>
             )}
+            {canceled && (
+              <span className="text-xs font-bold text-white bg-gray-400 px-2 py-0.5 rounded uppercase">
+                CXL
+              </span>
+            )}
           </div>
         </div>
         <div className="space-y-1">
           <div className="flex justify-between items-center">
             <span className="font-semibold text-sm">{game.home}</span>
-            <span className="text-xs text-gray-500">HOME</span>
+            <span className="text-xs text-gray-500">{hasScore ? game.home_score : 'HOME'}</span>
           </div>
           <div className="flex justify-between items-center">
             <span className="text-sm text-gray-700">{game.away}</span>
-            <span className="text-xs text-gray-500">AWAY</span>
+            <span className="text-xs text-gray-500">{hasScore ? game.away_score : 'AWAY'}</span>
           </div>
         </div>
         <div className="mt-2 pt-2 border-t border-gray-100 flex justify-between items-center">
           <span className="text-xs text-gray-400">{game.site}</span>
-          {!postponed && (
+          {!postponed && !canceled && !hasScore && (
             <span className="text-xs font-semibold text-bdn-green">{game.time}</span>
           )}
         </div>

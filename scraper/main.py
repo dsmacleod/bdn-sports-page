@@ -7,12 +7,11 @@ from datetime import datetime, timezone
 import requests
 
 from scraper.config import MPA_BASE, MPA_GAMESYNC_URL, MILESPLIT_MEETS, SPORTS, current_season
-from scraper.schedules import fetch_schedules
 from scraper.standings import fetch_standings
 from scraper.brackets import fetch_brackets
 from scraper.featured import fetch_featured
 from scraper.athletes import fetch_athletes
-from scraper.mpa_feed import fetch_gamesync
+from scraper.mpa_feed import fetch_gamesync, to_schedule_games
 
 DATA_DIR = os.path.join(os.path.dirname(__file__), "..", "data")
 
@@ -29,17 +28,32 @@ def run():
     sport_list = SPORTS[season]
     tournament_ids = [s["tournament_id"] for s in sport_list]
 
-    # 1. Schedules
-    print("1. Fetching schedules...")
+    # Fetch the MPA official game sync feed once, up front -- both schedules
+    # (below) and the raw mpa_games.json dump (step 6) come from it, and it's
+    # a ~1.4MB statewide file, not worth pulling twice.
+    print("Fetching MPA game sync feed...")
+    gamesync_events = None
     try:
-        schedule_data = fetch_schedules(session, MPA_BASE, sport_configs=sport_list)
+        gamesync_events = fetch_gamesync(session, MPA_GAMESYNC_URL)
+    except Exception as e:
+        print("  ERROR fetching MPA game sync feed: %s" % e)
+
+    # 1. Schedules -- from the feed above, not the MPA.cc scrape anymore: the
+    # feed has everything the scrape did plus final scores and real status
+    # (Postponed/Canceled), which the scrape never exposed. It's a single
+    # statewide dump covering every sport at once, so it isn't filtered to
+    # sport_list here -- that would just drop data the front end can already
+    # filter by sport itself.
+    print("1. Building schedules from the game sync feed...")
+    if gamesync_events is not None:
+        schedule_data = to_schedule_games(gamesync_events)
         _write_json("schedules.json", {
             "last_updated": now.isoformat(),
             "season": season,
             "games": schedule_data,
         })
-    except Exception as e:
-        print("  ERROR fetching schedules: %s" % e)
+    else:
+        print("  Skipped -- game sync feed unavailable.")
 
     # 2. Standings
     print("2. Fetching standings...")
@@ -111,20 +125,18 @@ def run():
     else:
         print("5. No MileSplit meet URLs configured, skipping athletes.")
 
-    # 6. MPA official game sync feed (separate source from the MPA.cc scrape
-    # above — statewide, includes final scores). Written to its own file for
-    # now rather than merged into schedules.json, since it covers every sport
-    # at once (not just the current season's) and uses a different shape
-    # (a team list per event, not a fixed home/away pair).
-    print("6. Fetching MPA game sync feed...")
-    try:
-        games = fetch_gamesync(session, MPA_GAMESYNC_URL)
+    # 6. Raw MPA game sync feed, unflattened -- keeps the full team list per
+    # event (schedules.json's home/away flattening loses anything past two
+    # teams), for anything later that wants a real invitational/meet's full
+    # field rather than just a home/away pair.
+    print("6. Writing raw MPA game sync feed...")
+    if gamesync_events is not None:
         _write_json("mpa_games.json", {
             "last_updated": now.isoformat(),
-            "games": games,
+            "games": gamesync_events,
         })
-    except Exception as e:
-        print("  ERROR fetching MPA game sync feed: %s" % e)
+    else:
+        print("  Skipped -- game sync feed unavailable.")
 
     print("Done.")
 
