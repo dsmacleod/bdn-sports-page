@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-18T20:35:02.643332+00:00",
+  "last_updated": "2026-09-18T21:39:05.309700+00:00",
   "games": [
     {
       "game_id": "35658",
@@ -6655,18 +6655,20 @@
         {
           "school": "Oak Hill",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 1
         },
         {
           "school": "Dirigo",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Oak Hill",
-      "away": "Dirigo"
+      "away": "Dirigo",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "game_id": "43271",
@@ -11953,18 +11955,20 @@
         {
           "school": "Mountain Valley",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 2
         },
         {
           "school": "Boothbay Region",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         }
       ],
       "home": "Mountain Valley",
-      "away": "Boothbay Region"
+      "away": "Boothbay Region",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "game_id": "38390",
@@ -42023,18 +42027,20 @@
         {
           "school": "Calais",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         },
         {
           "school": "Katahdin HS",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         }
       ],
       "home": "Calais",
-      "away": "Katahdin HS"
+      "away": "Katahdin HS",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "game_id": "39796",
@@ -49400,18 +49406,20 @@
         {
           "school": "Lisbon",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Tied",
+          "score": 0
         },
         {
           "school": "Mt. Abram",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Tied",
+          "score": 0
         }
       ],
       "home": "Lisbon",
-      "away": "Mt. Abram"
+      "away": "Mt. Abram",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "game_id": "42142",
@@ -56141,18 +56149,20 @@
         {
           "school": "Madawaska HS",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 9
         },
         {
           "school": "Hodgdon HS",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Madawaska HS",
-      "away": "Hodgdon HS"
+      "away": "Hodgdon HS",
+      "home_score": 9,
+      "away_score": 0
     },
     {
       "game_id": "53614",
@@ -57653,18 +57663,20 @@
         {
           "school": "Mountain Valley",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         },
         {
           "school": "Buckfield HS",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 8
         }
       ],
       "home": "Mountain Valley",
-      "away": "Buckfield HS"
+      "away": "Buckfield HS",
+      "home_score": 1,
+      "away_score": 8
     },
     {
       "game_id": "56045",
@@ -63791,18 +63803,20 @@
         {
           "school": "Noble",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         },
         {
           "school": "Biddeford",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 2
         }
       ],
       "home": "Noble",
-      "away": "Biddeford"
+      "away": "Biddeford",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "game_id": "41304",

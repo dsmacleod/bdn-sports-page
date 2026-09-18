@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-18T20:35:02.643332+00:00",
+  "last_updated": "2026-09-18T21:39:05.309700+00:00",
   "season": "fall",
   "games": [
     {
@@ -2422,7 +2422,9 @@
       "away": "Dirigo",
       "site": "Oak Hill High School",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "game_id": "43271",
@@ -5060,7 +5062,9 @@
       "away": "Boothbay Region",
       "site": "Hosmer Field Complex",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "game_id": "38390",
@@ -19824,7 +19828,9 @@
       "away": "Katahdin HS",
       "site": "Calais High School",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "game_id": "39796",
@@ -23520,7 +23526,9 @@
       "away": "Mt. Abram",
       "site": "Lisbon HS",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "game_id": "42142",
@@ -26895,7 +26903,9 @@
       "away": "Hodgdon HS",
       "site": "Madawaska",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 9,
+      "away_score": 0
     },
     {
       "game_id": "53614",
@@ -27659,7 +27669,9 @@
       "away": "Buckfield HS",
       "site": "Hosmer Field",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 8
     },
     {
       "game_id": "56045",
@@ -30734,7 +30746,9 @@
       "away": "Biddeford",
       "site": "Noble High School",
       "sport": "Volleyball",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "game_id": "41304",

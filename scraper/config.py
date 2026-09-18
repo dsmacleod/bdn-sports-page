@@ -1,59 +1,63 @@
-"""MPA.cc sport configuration and ID mappings."""
+"""Sport/gender config and season calendar.
 
-MPA_BASE = "https://www.mpa.cc"
-MILESPLIT_BASE = "https://me.milesplit.com"
+This used to also hold MPA.cc TournamentID/ScheduleID mappings for scraping
+standings, brackets, and schedules directly off MPA.cc's site. That's gone:
+MPA.cc's own page structure and ID numbering keep shifting under us (e.g. one
+TournamentID we relied on quietly started serving a different sport's data
+entirely this season), and that data isn't something BDN adds value by
+re-hosting anyway -- MPA.cc already presents it. schedules/scores now come
+exclusively from the official game sync feed (see mpa_feed.py); standings/
+brackets are a plain link out to MPA.cc instead of a scrape.
 
-# Official MPA game sync feed — separate from the MPA.cc scrape above. One
-# statewide XML dump, no server-side filtering (see scraper/mpa_feed.py), but
-# it's the only source here that carries final scores per team.
-MPA_GAMESYNC_URL = "https://mpa.fpsports.org/services/xmlgamesync.ashx"
+What's left here is just the sport/gender list, used by mpa_feed.py to fill
+in the gender the feed itself leaves blank for single-gender sports (see
+mpa_feed._build_gender_fallback), and current_season() for the season tabs.
+"""
 
-# MileSplit meet URLs to scrape for athlete results.
-# These are populated manually or discovered from the MileSplit results page.
-# Format: full URL to meet results page.
-MILESPLIT_MEETS: list[str] = [
-    # Add meet URLs here as they become available, e.g.:
-    # "https://me.milesplit.com/meets/738421-8am-biddeford-freeport-cape-greely-2026/results",
-    # "https://me.milesplit.com/meets/727592-class-a-state-meet-2026/results",
-]
-
-# TournamentIDs for sport info pages
 SPORTS = {
     "winter": [
-        {"sport": "Basketball", "gender": "Boys", "tournament_id": 100, "schedule_id": 2},
-        {"sport": "Basketball", "gender": "Girls", "tournament_id": 101, "schedule_id": 3},
-        {"sport": "Ice Hockey", "gender": "Boys", "tournament_id": 103, "schedule_id": 4},
-        {"sport": "Ice Hockey", "gender": "Girls", "tournament_id": 108, "schedule_id": 5},
-        {"sport": "Indoor Track", "gender": "Boys", "tournament_id": 104, "schedule_id": 24},
-        {"sport": "Indoor Track", "gender": "Girls", "tournament_id": 300, "schedule_id": 17},
-        {"sport": "Swimming", "gender": "Boys", "tournament_id": 105, "schedule_id": 22},
-        {"sport": "Swimming", "gender": "Girls", "tournament_id": 7, "schedule_id": 23},
-        {"sport": "Wrestling", "gender": "Coed", "tournament_id": 106, "schedule_id": 29},
-        {"sport": "Nordic Ski", "gender": "Coed", "tournament_id": 402, "schedule_id": 47},
-        {"sport": "Alpine Ski", "gender": "Boys", "tournament_id": 403, "schedule_id": 34},
-        {"sport": "Alpine Ski", "gender": "Girls", "tournament_id": 404, "schedule_id": 35},
+        {"sport": "Basketball", "gender": "Boys"},
+        {"sport": "Basketball", "gender": "Girls"},
+        {"sport": "Ice Hockey", "gender": "Boys"},
+        {"sport": "Ice Hockey", "gender": "Girls"},
+        {"sport": "Indoor Track", "gender": "Boys"},
+        {"sport": "Indoor Track", "gender": "Girls"},
+        {"sport": "Swimming", "gender": "Boys"},
+        {"sport": "Swimming", "gender": "Girls"},
+        {"sport": "Wrestling", "gender": "Coed"},
+        {"sport": "Nordic Ski", "gender": "Coed"},
+        {"sport": "Alpine Ski", "gender": "Boys"},
+        {"sport": "Alpine Ski", "gender": "Girls"},
     ],
     "spring": [
-        {"sport": "Baseball", "gender": "Boys", "tournament_id": 200, "schedule_id": 7},
-        {"sport": "Softball", "gender": "Girls", "tournament_id": 205, "schedule_id": 12},
-        {"sport": "Lacrosse", "gender": "Boys", "tournament_id": 202, "schedule_id": 8},
-        {"sport": "Lacrosse", "gender": "Girls", "tournament_id": 203, "schedule_id": 9},
-        {"sport": "Outdoor Track", "gender": "Boys", "tournament_id": 204, "schedule_id": 10},
-        {"sport": "Outdoor Track", "gender": "Girls", "tournament_id": 301, "schedule_id": 11},
-        {"sport": "Tennis", "gender": "Boys", "tournament_id": 206, "schedule_id": 13},
-        {"sport": "Tennis", "gender": "Girls", "tournament_id": 207, "schedule_id": 14},
+        {"sport": "Baseball", "gender": "Boys"},
+        {"sport": "Softball", "gender": "Girls"},
+        {"sport": "Lacrosse", "gender": "Boys"},
+        {"sport": "Lacrosse", "gender": "Girls"},
+        {"sport": "Outdoor Track", "gender": "Boys"},
+        {"sport": "Outdoor Track", "gender": "Girls"},
+        {"sport": "Tennis", "gender": "Boys"},
+        {"sport": "Tennis", "gender": "Girls"},
     ],
     "fall": [
-        {"sport": "Cross Country", "gender": "Boys", "tournament_id": 1, "schedule_id": 18},
-        {"sport": "Cross Country", "gender": "Girls", "tournament_id": 9, "schedule_id": 19},
-        {"sport": "Field Hockey", "gender": "Girls", "tournament_id": 2, "schedule_id": 20},
-        {"sport": "Football", "gender": "Boys", "tournament_id": 3, "schedule_id": 15},
-        {"sport": "Golf", "gender": "Coed", "tournament_id": 4, "schedule_id": 28},
-        {"sport": "Soccer", "gender": "Boys", "tournament_id": 5, "schedule_id": 21},
-        {"sport": "Soccer", "gender": "Girls", "tournament_id": 6, "schedule_id": 16},
-        {"sport": "Volleyball", "gender": "Girls", "tournament_id": 8, "schedule_id": 30},
+        {"sport": "Cross Country", "gender": "Boys"},
+        {"sport": "Cross Country", "gender": "Girls"},
+        {"sport": "Field Hockey", "gender": "Girls"},
+        {"sport": "Football", "gender": "Boys"},
+        {"sport": "Golf", "gender": "Coed"},
+        {"sport": "Soccer", "gender": "Boys"},
+        {"sport": "Soccer", "gender": "Girls"},
+        {"sport": "Volleyball", "gender": "Girls"},
     ],
 }
+
+# Official MPA game sync feed -- statewide, no server-side filtering (see
+# mpa_feed.py), the only source used here now.
+MPA_GAMESYNC_URL = "https://mpa.fpsports.org/services/xmlgamesync.ashx"
+
+# Where to send readers for official standings/brackets instead of scraping
+# them ourselves.
+MPA_OFFICIAL_SITE_URL = "https://www.mpa.cc/"
 
 
 def current_season(month):

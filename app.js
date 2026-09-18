@@ -55,21 +55,106 @@ function daysAgoLabel(dateStr) {
   return '';
 }
 
-function sportLabel(sportEntry) {
-  if (sportEntry.gender && sportEntry.gender !== 'Coed') {
-    return `${sportEntry.sport} (${sportEntry.gender})`;
-  }
-  return sportEntry.sport;
+function isPostponed(game) {
+  // The feed's own status is authoritative; fall back to the old
+  // string-match for anything upstream that didn't set status.
+  if (game.status) return game.status === 'Postponed';
+  return game.time && game.time.toLowerCase().includes('postponed');
 }
 
-/** Determine the winner of a bracket matchup. Returns 1, 2, or 0 (no winner). */
-function matchupWinner(m) {
-  const s1 = parseInt(m.score1, 10);
-  const s2 = parseInt(m.score2, 10);
-  if (isNaN(s1) || isNaN(s2)) return 0;
-  if (s1 > s2) return 1;
-  if (s2 > s1) return 2;
-  return 0;
+function isCanceled(game) {
+  return game.status === 'Canceled';
+}
+
+function isFinalGame(game, today) {
+  // A real score is definitive regardless of date. Otherwise fall back to
+  // "past and not postponed/canceled" for anything without a score (e.g.
+  // multi-team meets, which don't carry a single home/away score).
+  if (game.home_score !== undefined) return true;
+  return game.date < today && !isPostponed(game) && !isCanceled(game);
+}
+
+/** One game/result card. Shared by the statewide feed and the Your Teams
+    section, so a followed team's games look identical to everything else. */
+function GameCard({ game, onClick, showFreshness }) {
+  const today = todayStr();
+  const final = isFinalGame(game, today);
+  const postponed = isPostponed(game);
+  const canceled = isCanceled(game);
+  const hasScore = game.home_score !== undefined && game.away_score !== undefined;
+  const freshness = showFreshness && final ? daysAgoLabel(game.date) : '';
+  // Today's/yesterday's results are what "recency" is about here -- call
+  // them out instead of leaving every result looking equally old.
+  const isFresh = freshness === 'Today' || freshness === 'Yesterday';
+  return (
+    <div
+      onClick={() => onClick && onClick(game)}
+      className={`bg-white border rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow cursor-pointer ${
+        isFresh ? 'border-bdn-green border-l-4' : 'border-gray-200'
+      }`}>
+      <div className="flex justify-between items-start mb-2">
+        <span className="text-xs text-gray-400 font-semibold">{formatDate(game.date)}</span>
+        <div className="flex gap-1.5">
+          {final && (
+            <span className="text-xs font-bold text-white bg-bdn-green px-2 py-0.5 rounded uppercase">
+              Final{freshness ? ` · ${freshness}` : ''}
+            </span>
+          )}
+          {postponed && (
+            <span className="text-xs font-bold text-white bg-red-500 px-2 py-0.5 rounded uppercase">
+              PPD
+            </span>
+          )}
+          {canceled && (
+            <span className="text-xs font-bold text-white bg-gray-400 px-2 py-0.5 rounded uppercase">
+              CXL
+            </span>
+          )}
+        </div>
+      </div>
+      <div className="space-y-1">
+        <div className="flex justify-between items-center">
+          <span className="font-semibold text-sm">{game.home}</span>
+          <span className="text-xs text-gray-500">{hasScore ? game.home_score : 'HOME'}</span>
+        </div>
+        <div className="flex justify-between items-center">
+          <span className="text-sm text-gray-700">{game.away}</span>
+          <span className="text-xs text-gray-500">{hasScore ? game.away_score : 'AWAY'}</span>
+        </div>
+      </div>
+      <div className="mt-2 pt-2 border-t border-gray-100 flex justify-between items-center">
+        <span className="text-xs text-gray-400">{game.site}</span>
+        {!postponed && !canceled && !hasScore && (
+          <span className="text-xs font-semibold text-bdn-green">{game.time}</span>
+        )}
+      </div>
+      <div className="mt-1">
+        <span className="text-[10px] text-gray-400 uppercase tracking-wide">{game.sport}</span>
+      </div>
+    </div>
+  );
+}
+
+/** All school names that appear anywhere in the schedule (home, or any
+    comma-joined away participant), for the Follow Your Team search. */
+function allSchoolNames(games) {
+  const set = new Set();
+  (games || []).forEach(g => {
+    if (g.home) set.add(g.home);
+    if (g.away) g.away.split(',').forEach(name => {
+      const trimmed = name.trim();
+      if (trimmed) set.add(trimmed);
+    });
+  });
+  return Array.from(set).sort();
+}
+
+/** Does this game involve the given school, as home or anywhere in the
+    (possibly multi-team) away list? */
+function gameInvolves(game, teamName) {
+  const needle = teamName.toLowerCase();
+  if ((game.home || '').toLowerCase() === needle) return true;
+  return (game.away || '').toLowerCase().split(',').some(n => n.trim() === needle);
 }
 
 // ---------------------------------------------------------------------------
@@ -140,15 +225,18 @@ function FeaturedStories({ articles }) {
   if (!articles || articles.length === 0) {
     return (
       <div className="max-w-6xl mx-auto px-4 mt-6">
-        <h2 className="font-heading text-lg uppercase tracking-wide text-bdn-green mb-2">Featured Stories</h2>
-        <p className="text-gray-500 text-sm italic">No featured stories at this time.</p>
+        <h2 className="font-heading text-lg uppercase tracking-wide text-bdn-green mb-2">Latest Stories</h2>
+        <p className="text-gray-500 text-sm italic">No stories at this time.</p>
       </div>
     );
   }
 
   return (
     <div className="max-w-6xl mx-auto px-4 mt-6">
-      <h2 className="font-heading text-lg uppercase tracking-wide text-bdn-green mb-3">Featured Stories</h2>
+      <h2 className="font-heading text-lg uppercase tracking-wide text-bdn-green mb-3 flex items-center gap-2">
+        <span className="h-2 w-2 rounded-full bg-bdn-green animate-pulse" />
+        Latest Stories
+      </h2>
       <div className="flex gap-4 overflow-x-auto pb-2 scrollbar-thin">
         {articles.map((a, i) => (
           <a
@@ -162,12 +250,13 @@ function FeaturedStories({ articles }) {
               <img src={a.image} alt="" className="w-full h-40 object-cover" />
             )}
             <div className="p-3">
+              <div className="flex items-center justify-between mb-1">
+                {a.byline && <span className="text-[11px] text-gray-400">{a.byline}</span>}
+                {a.pub_date && <span className="text-[11px] text-bdn-green font-semibold">{timeAgo(a.pub_date)}</span>}
+              </div>
               <h3 className="font-heading text-sm font-bold leading-tight group-hover:text-bdn-green transition-colors line-clamp-2">
                 {a.title || 'Untitled'}
               </h3>
-              {a.summary && (
-                <p className="text-xs text-gray-500 mt-1 line-clamp-2">{a.summary}</p>
-              )}
             </div>
           </a>
         ))}
@@ -180,35 +269,141 @@ function FeaturedStories({ articles }) {
 // Tab Bar (main content tabs)
 // ---------------------------------------------------------------------------
 
-function TabBar({ activeTab, setActiveTab, showBrackets }) {
-  const tabs = [
-    { id: 'scores', label: 'Scores & Schedule' },
-    { id: 'standings', label: 'Standings' },
-  ];
-  if (showBrackets) {
-    tabs.push({ id: 'brackets', label: 'Brackets' });
+// ---------------------------------------------------------------------------
+// Follow Your Team
+// ---------------------------------------------------------------------------
+
+const FOLLOWED_TEAMS_KEY = 'bdn-sports-followed-teams';
+
+function loadFollowedTeams() {
+  try {
+    const raw = localStorage.getItem(FOLLOWED_TEAMS_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch (e) {
+    return [];
   }
-  tabs.push({ id: 'athletes', label: 'Athletes' });
-  tabs.push({ id: 'compare', label: 'Team Compare' });
+}
+
+function saveFollowedTeams(teams) {
+  try {
+    localStorage.setItem(FOLLOWED_TEAMS_KEY, JSON.stringify(teams));
+  } catch (e) {
+    // localStorage unavailable (private browsing, etc.) -- following just
+    // won't persist across visits, not worth surfacing an error for.
+  }
+}
+
+function FollowTeams({ allSchools, followed, onFollow, onUnfollow }) {
+  const [query, setQuery] = useState('');
+
+  const matches = useMemo(() => {
+    if (!query.trim()) return [];
+    const q = query.toLowerCase();
+    return allSchools.filter(s => s.toLowerCase().includes(q) && !followed.includes(s)).slice(0, 8);
+  }, [query, allSchools, followed]);
 
   return (
     <div className="max-w-6xl mx-auto px-4 mt-6">
-      <div className="flex gap-1 overflow-x-auto">
-        {tabs.map(t => (
-          <button
-            key={t.id}
-            onClick={() => setActiveTab(t.id)}
-            className={`px-4 py-2 text-sm font-semibold whitespace-nowrap rounded-t border-b-2 transition-colors ${
-              activeTab === t.id
-                ? 'border-bdn-green text-bdn-green bg-white'
-                : 'border-transparent text-gray-500 hover:text-bdn-green hover:border-gray-300'
-            }`}
-          >
-            {t.label}
-          </button>
-        ))}
+      <h2 className="font-heading text-lg uppercase tracking-wide text-bdn-green mb-2">Follow Your Team</h2>
+      <div className="relative max-w-sm">
+        <input
+          type="text"
+          value={query}
+          onChange={e => setQuery(e.target.value)}
+          placeholder="Search for a school..."
+          className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-bdn-gold"
+        />
+        {matches.length > 0 && (
+          <div className="absolute z-10 mt-1 w-full bg-white border border-gray-200 rounded shadow-lg max-h-56 overflow-y-auto">
+            {matches.map(s => (
+              <button
+                key={s}
+                onClick={() => { onFollow(s); setQuery(''); }}
+                className="block w-full text-left px-3 py-2 text-sm hover:bg-gray-100"
+              >
+                {s}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
-      <div className="h-px bg-gray-200" />
+      {followed.length > 0 && (
+        <div className="flex flex-wrap gap-2 mt-3">
+          {followed.map(s => (
+            <span key={s} className="inline-flex items-center gap-1.5 bg-bdn-green text-white text-sm font-semibold px-3 py-1 rounded-full">
+              {s}
+              <button onClick={() => onUnfollow(s)} className="text-white hover:text-bdn-gold leading-none" aria-label={`Unfollow ${s}`}>
+                &times;
+              </button>
+            </span>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// Leads the page once at least one team is followed: that team's most recent
+// result plus their next game, for every followed team.
+function YourTeams({ followed, games, onGameClick }) {
+  if (!followed || followed.length === 0) return null;
+  const today = todayStr();
+
+  return (
+    <div className="max-w-6xl mx-auto px-4 mt-6">
+      <h2 className="font-heading text-lg uppercase tracking-wide text-bdn-green mb-3 flex items-center gap-2">
+        <span className="h-2 w-2 rounded-full bg-bdn-green animate-pulse" />
+        Your Teams
+      </h2>
+      {followed.map(team => {
+        // A game dated today isn't "last" until it actually has a score --
+        // otherwise a not-yet-played game happening tonight would wrongly
+        // show as the most recent result instead of as next up.
+        const teamGames = games.filter(g => gameInvolves(g, team));
+        const isDone = g => g.home_score !== undefined || g.date < today;
+        const past = teamGames.filter(isDone).sort((a, b) => b.date.localeCompare(a.date));
+        const next = teamGames.filter(g => !isDone(g)).sort((a, b) => a.date.localeCompare(b.date))[0];
+        const last = past[0];
+        return (
+          <div key={team} className="mb-6">
+            <h3 className="font-semibold text-sm text-gray-600 mb-2">{team}</h3>
+            {!last && !next ? (
+              <p className="text-gray-400 text-sm italic">No games found for this team yet.</p>
+            ) : (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                {last && <GameCard game={last} onClick={onGameClick} showFreshness />}
+                {next && <GameCard game={next} onClick={onGameClick} />}
+              </div>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+// ---------------------------------------------------------------------------
+// Standings & Brackets (link out to MPA.cc instead of re-scraping it -- see
+// scraper/config.py's docstring for why)
+// ---------------------------------------------------------------------------
+
+function StandingsLinkOut() {
+  return (
+    <div className="max-w-6xl mx-auto px-4 mt-6">
+      <div className="bg-white border border-gray-200 rounded-lg p-4 flex items-center justify-between flex-wrap gap-3">
+        <div>
+          <h2 className="font-heading text-sm uppercase tracking-wide text-bdn-green mb-1">Standings & Brackets</h2>
+          <p className="text-sm text-gray-500">Official rankings and tournament brackets from the Maine Principals' Association.</p>
+        </div>
+        <a
+          href="https://www.mpa.cc/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex-shrink-0 bg-bdn-green text-white text-sm font-semibold px-4 py-2 rounded hover:opacity-90 transition-opacity"
+        >
+          View on MPA.cc &rarr;
+        </a>
+      </div>
     </div>
   );
 }
@@ -236,66 +431,18 @@ function SportFilter({ sports, value, onChange, label }) {
 }
 
 // ---------------------------------------------------------------------------
-// Team Detail Modal (shown when clicking a game)
+// Game Detail Modal (shown when clicking a game)
 // ---------------------------------------------------------------------------
 
-function TeamDetailModal({ game, standings, onClose }) {
+// Used to show per-team standings context here (rank/record/qualifying
+// status) sourced from scraping MPA.cc's rankings pages. That scrape is gone
+// -- MPA.cc's own page structure/ID numbering keeps shifting under us, most
+// recently serving one sport's data under another sport's ID entirely -- so
+// this is just the game's own details now. Official standings/brackets are a
+// link out to MPA.cc instead (see the Standings & Brackets section on the
+// page) rather than something re-hosted here.
+function GameDetailModal({ game, onClose }) {
   if (!game) return null;
-
-  // Find standings entries for home and away teams
-  function findTeamStandings(teamName) {
-    if (!standings || !standings.sports || !teamName) return [];
-    const matches = [];
-    standings.sports.forEach(sportEntry => {
-      sportEntry.divisions.forEach(div => {
-        div.teams.forEach(t => {
-          if (t.team.toLowerCase().includes(teamName.toLowerCase()) ||
-              teamName.toLowerCase().includes(t.team.toLowerCase())) {
-            matches.push({
-              ...t,
-              sport: sportLabel(sportEntry),
-              division: div.name,
-            });
-          }
-        });
-      });
-    });
-    return matches;
-  }
-
-  const homeStandings = findTeamStandings(game.home);
-  const awayStandings = findTeamStandings(game.away);
-
-  function TeamSection({ label, teamName, entries }) {
-    return (
-      <div className="mb-4">
-        <h4 className="font-heading text-sm uppercase tracking-wide text-bdn-green mb-2">
-          {label}: {teamName}
-        </h4>
-        {entries.length === 0 ? (
-          <p className="text-sm text-gray-400 italic">No standings data found</p>
-        ) : (
-          <div className="space-y-2">
-            {entries.map((e, i) => (
-              <div key={i} className="bg-gray-50 rounded-lg p-3 text-sm">
-                <div className="flex justify-between items-center">
-                  <span className="font-semibold">{e.sport} — {e.division}</span>
-                  <span className={`text-xs px-2 py-0.5 rounded ${e.qualifying ? 'bg-bdn-green text-white' : 'bg-gray-200 text-gray-500'}`}>
-                    {e.qualifying ? 'Qualifying' : 'Not qualifying'}
-                  </span>
-                </div>
-                <div className="flex gap-6 mt-2 text-gray-600">
-                  <span>Rank: <strong>#{e.rank}</strong></span>
-                  <span>Record: <strong>{e.record}</strong></span>
-                  <span>Index: <strong>{e.index.toFixed(3)}</strong></span>
-                </div>
-              </div>
-            ))}
-          </div>
-        )}
-      </div>
-    );
-  }
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4" onClick={onClose}>
@@ -317,20 +464,22 @@ function TeamDetailModal({ game, standings, onClose }) {
           {formatDate(game.date)} &bull; {game.time} &bull; {game.site}
         </p>
         <p className="text-xs text-gray-400 uppercase tracking-wide mb-1">{game.sport}</p>
-        {game.home_score !== undefined && (
-          <p className="font-heading text-2xl text-bdn-gray mb-4">
+        {game.home_score !== undefined ? (
+          <p className="font-heading text-2xl text-bdn-gray mb-2">
             {game.home} {game.home_score} &ndash; {game.away_score} {game.away}
           </p>
+        ) : (
+          <div className="mb-2">
+            <p className="font-semibold">{game.home || 'TBD'}</p>
+            <p className="text-gray-500 text-sm">vs. {game.away || 'TBD'}</p>
+          </div>
         )}
         {game.status === 'Postponed' && (
-          <p className="text-sm font-semibold text-red-500 mb-4">Postponed</p>
+          <p className="text-sm font-semibold text-red-500">Postponed</p>
         )}
         {game.status === 'Canceled' && (
-          <p className="text-sm font-semibold text-red-500 mb-4">Canceled</p>
+          <p className="text-sm font-semibold text-red-500">Canceled</p>
         )}
-
-        <TeamSection label="Home" teamName={game.home} entries={homeStandings} />
-        <TeamSection label="Away" teamName={game.away} entries={awayStandings} />
       </div>
     </div>
   );
@@ -340,7 +489,7 @@ function TeamDetailModal({ game, standings, onClose }) {
 // Scores & Schedule Tab
 // ---------------------------------------------------------------------------
 
-function ScoresTab({ games, sportFilter, standings, onGameClick }) {
+function ScoresTab({ games, sportFilter, onGameClick }) {
   const today = todayStr();
 
   const filtered = useMemo(() => {
@@ -362,83 +511,6 @@ function ScoresTab({ games, sportFilter, standings, onGameClick }) {
   const upcoming = filtered.filter(g => g.date > today).slice(0, 50);
   const recent = filtered.filter(g => g.date < today).sort((a, b) => b.date.localeCompare(a.date)).slice(0, 50);
 
-  function isPostponed(game) {
-    // The feed's own status is authoritative; fall back to the old
-    // string-match for anything upstream that didn't set status.
-    if (game.status) return game.status === 'Postponed';
-    return game.time && game.time.toLowerCase().includes('postponed');
-  }
-
-  function isCanceled(game) {
-    return game.status === 'Canceled';
-  }
-
-  function isFinal(game) {
-    // A real score is definitive regardless of date. Otherwise fall back to
-    // "past and not postponed/canceled" for anything without a score (e.g.
-    // multi-team meets, which don't carry a single home/away score).
-    if (game.home_score !== undefined) return true;
-    return game.date < today && !isPostponed(game) && !isCanceled(game);
-  }
-
-  function GameCard({ game, showFreshness }) {
-    const final = isFinal(game);
-    const postponed = isPostponed(game);
-    const canceled = isCanceled(game);
-    const hasScore = game.home_score !== undefined && game.away_score !== undefined;
-    const freshness = showFreshness && final ? daysAgoLabel(game.date) : '';
-    // Today's/yesterday's results are what "recency" is about here -- call
-    // them out instead of leaving every result looking equally old.
-    const isFresh = freshness === 'Today' || freshness === 'Yesterday';
-    return (
-      <div
-        onClick={() => onGameClick && onGameClick(game)}
-        className={`bg-white border rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow cursor-pointer ${
-          isFresh ? 'border-bdn-green border-l-4' : 'border-gray-200'
-        }`}>
-        <div className="flex justify-between items-start mb-2">
-          <span className="text-xs text-gray-400 font-semibold">{formatDate(game.date)}</span>
-          <div className="flex gap-1.5">
-            {final && (
-              <span className="text-xs font-bold text-white bg-bdn-green px-2 py-0.5 rounded uppercase">
-                Final{freshness ? ` · ${freshness}` : ''}
-              </span>
-            )}
-            {postponed && (
-              <span className="text-xs font-bold text-white bg-red-500 px-2 py-0.5 rounded uppercase">
-                PPD
-              </span>
-            )}
-            {canceled && (
-              <span className="text-xs font-bold text-white bg-gray-400 px-2 py-0.5 rounded uppercase">
-                CXL
-              </span>
-            )}
-          </div>
-        </div>
-        <div className="space-y-1">
-          <div className="flex justify-between items-center">
-            <span className="font-semibold text-sm">{game.home}</span>
-            <span className="text-xs text-gray-500">{hasScore ? game.home_score : 'HOME'}</span>
-          </div>
-          <div className="flex justify-between items-center">
-            <span className="text-sm text-gray-700">{game.away}</span>
-            <span className="text-xs text-gray-500">{hasScore ? game.away_score : 'AWAY'}</span>
-          </div>
-        </div>
-        <div className="mt-2 pt-2 border-t border-gray-100 flex justify-between items-center">
-          <span className="text-xs text-gray-400">{game.site}</span>
-          {!postponed && !canceled && !hasScore && (
-            <span className="text-xs font-semibold text-bdn-green">{game.time}</span>
-          )}
-        </div>
-        <div className="mt-1">
-          <span className="text-[10px] text-gray-400 uppercase tracking-wide">{game.sport}</span>
-        </div>
-      </div>
-    );
-  }
-
   function Section({ title, items, emptyMsg, live, showFreshness }) {
     if (!items || items.length === 0) {
       return (
@@ -455,7 +527,7 @@ function ScoresTab({ games, sportFilter, standings, onGameClick }) {
           {title}
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-          {items.map((g, i) => <GameCard key={i} game={g} showFreshness={showFreshness} />)}
+          {items.map((g, i) => <GameCard key={i} game={g} onClick={onGameClick} showFreshness={showFreshness} />)}
         </div>
       </div>
     );
@@ -474,407 +546,6 @@ function ScoresTab({ games, sportFilter, standings, onGameClick }) {
 }
 
 // ---------------------------------------------------------------------------
-// Standings Tab
-// ---------------------------------------------------------------------------
-
-function StandingsTab({ standings, sportFilter }) {
-  const [sortCol, setSortCol] = useState('rank');
-  const [sortDir, setSortDir] = useState('asc');
-
-  const filtered = useMemo(() => {
-    if (!standings || !standings.sports) return [];
-    let list = standings.sports;
-    if (sportFilter) {
-      list = list.filter(s => {
-        const label = sportLabel(s);
-        return label === sportFilter;
-      });
-    }
-    return list;
-  }, [standings, sportFilter]);
-
-  function handleSort(col) {
-    if (sortCol === col) {
-      setSortDir(d => d === 'asc' ? 'desc' : 'asc');
-    } else {
-      setSortCol(col);
-      setSortDir(col === 'rank' ? 'asc' : 'desc');
-    }
-  }
-
-  function sortTeams(teams) {
-    const sorted = [...teams].sort((a, b) => {
-      let va = a[sortCol];
-      let vb = b[sortCol];
-      if (sortCol === 'team') {
-        va = (va || '').toLowerCase();
-        vb = (vb || '').toLowerCase();
-        return sortDir === 'asc' ? va.localeCompare(vb) : vb.localeCompare(va);
-      }
-      if (sortCol === 'record') {
-        // Sort by wins
-        const winsA = parseInt((va || '0').split('-')[0], 10);
-        const winsB = parseInt((vb || '0').split('-')[0], 10);
-        return sortDir === 'asc' ? winsA - winsB : winsB - winsA;
-      }
-      va = typeof va === 'number' ? va : 0;
-      vb = typeof vb === 'number' ? vb : 0;
-      return sortDir === 'asc' ? va - vb : vb - va;
-    });
-    return sorted;
-  }
-
-  const arrow = sortDir === 'asc' ? '\u25B2' : '\u25BC';
-
-  function ColHeader({ col, label }) {
-    const active = sortCol === col;
-    return (
-      <th
-        onClick={() => handleSort(col)}
-        className={`px-3 py-2 text-left text-xs font-semibold uppercase tracking-wider cursor-pointer select-none whitespace-nowrap ${
-          active ? 'text-bdn-green' : 'text-gray-500 hover:text-gray-700'
-        }`}
-      >
-        <span className={active ? 'border-b-2 border-bdn-gold pb-0.5' : ''}>
-          {label} {active ? arrow : ''}
-        </span>
-      </th>
-    );
-  }
-
-  if (filtered.length === 0) {
-    return (
-      <div className="max-w-6xl mx-auto px-4 mt-6">
-        <p className="text-gray-400 text-sm italic">No standings data available.</p>
-      </div>
-    );
-  }
-
-  return (
-    <div className="max-w-6xl mx-auto px-4 mt-6 space-y-8">
-      {filtered.map((sportEntry, si) => (
-        <div key={si}>
-          <h3 className="font-heading text-xl uppercase tracking-wide text-bdn-green mb-3">
-            {sportLabel(sportEntry)}
-          </h3>
-          {sportEntry.divisions.map((div, di) => (
-            <div key={di} className="mb-6">
-              <h4 className="font-heading text-sm uppercase text-gray-500 tracking-wide mb-2">
-                {div.name}
-              </h4>
-              <div className="overflow-x-auto">
-                <table className="w-full text-sm">
-                  <thead className="bg-gray-50">
-                    <tr>
-                      <ColHeader col="rank" label="Rank" />
-                      <ColHeader col="team" label="Team" />
-                      <ColHeader col="record" label="Record" />
-                      <ColHeader col="index" label="Tournament Index" />
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {sortTeams(div.teams).map((team, ti) => (
-                      <tr
-                        key={ti}
-                        className={`border-b border-gray-100 hover:bg-gray-50 transition-colors ${
-                          team.qualifying ? 'border-l-4 border-l-bdn-green' : 'border-l-4 border-l-transparent'
-                        }`}
-                      >
-                        <td className="px-3 py-2 font-semibold text-gray-600">{team.rank}</td>
-                        <td className="px-3 py-2 font-semibold">{team.team}</td>
-                        <td className="px-3 py-2 text-gray-600">{team.record}</td>
-                        <td className="px-3 py-2 text-gray-600">{team.index.toFixed(3)}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          ))}
-        </div>
-      ))}
-    </div>
-  );
-}
-
-// ---------------------------------------------------------------------------
-// Team Comparison Tab
-// ---------------------------------------------------------------------------
-
-function TeamCompare({ standings, sportFilter }) {
-  const [teamA, setTeamA] = useState('');
-  const [teamB, setTeamB] = useState('');
-
-  // Build flat list of all teams with their metadata
-  const allTeams = useMemo(() => {
-    if (!standings || !standings.sports) return [];
-    const map = new Map();
-    standings.sports.forEach(sportEntry => {
-      sportEntry.divisions.forEach(div => {
-        div.teams.forEach(t => {
-          const key = `${t.team}|||${sportLabel(sportEntry)}|||${div.name}`;
-          if (!map.has(key)) {
-            map.set(key, {
-              key,
-              team: t.team,
-              sport: sportLabel(sportEntry),
-              division: div.name,
-              rank: t.rank,
-              record: t.record,
-              index: t.index,
-              qualifying: t.qualifying,
-            });
-          }
-        });
-      });
-    });
-    return Array.from(map.values()).sort((a, b) => a.team.localeCompare(b.team));
-  }, [standings]);
-
-  // Filter teams by sport when sport filter is active
-  const filteredTeams = useMemo(() => {
-    if (!sportFilter) return allTeams;
-    return allTeams.filter(t => t.sport === sportFilter);
-  }, [allTeams, sportFilter]);
-
-  // Clear selections if they're no longer in filtered list
-  useEffect(() => {
-    if (teamA && !filteredTeams.find(t => t.key === teamA)) setTeamA('');
-    if (teamB && !filteredTeams.find(t => t.key === teamB)) setTeamB('');
-  }, [filteredTeams]);
-
-  const entryA = allTeams.find(t => t.key === teamA);
-  const entryB = allTeams.find(t => t.key === teamB);
-
-  const maxIndex = Math.max(entryA?.index || 0, entryB?.index || 0, 1);
-
-  function StatCard({ entry, color }) {
-    if (!entry) {
-      return (
-        <div className="flex-1 bg-gray-50 rounded-lg p-6 text-center">
-          <p className="text-gray-400 text-sm">Select a team</p>
-        </div>
-      );
-    }
-    return (
-      <div className="flex-1 bg-white border border-gray-200 rounded-lg p-6 text-center shadow-sm">
-        <h4 className="font-heading text-lg font-bold uppercase">{entry.team}</h4>
-        <p className="text-xs text-gray-500 mt-1">{entry.sport} &mdash; {entry.division}</p>
-        <p className="text-4xl font-heading font-bold mt-4" style={{ color }}>
-          {entry.record}
-        </p>
-        <p className="text-xs text-gray-500 mt-1 uppercase">Record</p>
-        <p className="text-2xl font-heading font-bold mt-3">
-          #{entry.rank}
-        </p>
-        <p className="text-xs text-gray-500 mt-1 uppercase">Division Rank</p>
-        <p className="text-sm mt-2">
-          {entry.qualifying
-            ? <span className="text-bdn-green font-semibold">Qualifying</span>
-            : <span className="text-gray-400">Not qualifying</span>
-          }
-        </p>
-      </div>
-    );
-  }
-
-  return (
-    <div className="max-w-6xl mx-auto px-4 mt-6">
-      <div className="flex flex-col md:flex-row gap-4 mb-6">
-        <div className="flex-1">
-          <label className="text-sm font-semibold text-gray-600 block mb-1">Team A</label>
-          <select
-            value={teamA}
-            onChange={e => setTeamA(e.target.value)}
-            className="w-full border border-gray-300 rounded px-3 py-2 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-bdn-green"
-          >
-            <option value="">-- Select team --</option>
-            {filteredTeams.map(t => (
-              <option key={t.key} value={t.key}>
-                {t.team} ({t.sport}, {t.division})
-              </option>
-            ))}
-          </select>
-        </div>
-        <div className="flex items-end justify-center">
-          <span className="font-heading text-2xl font-bold text-gray-300 pb-2">VS</span>
-        </div>
-        <div className="flex-1">
-          <label className="text-sm font-semibold text-gray-600 block mb-1">Team B</label>
-          <select
-            value={teamB}
-            onChange={e => setTeamB(e.target.value)}
-            className="w-full border border-gray-300 rounded px-3 py-2 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-bdn-gold"
-          >
-            <option value="">-- Select team --</option>
-            {filteredTeams.map(t => (
-              <option key={t.key} value={t.key}>
-                {t.team} ({t.sport}, {t.division})
-              </option>
-            ))}
-          </select>
-        </div>
-      </div>
-
-      {/* Side-by-side stat cards */}
-      <div className="flex flex-col md:flex-row gap-4 mb-8">
-        <StatCard entry={entryA} color="#00331b" />
-        <StatCard entry={entryB} color="#f1bc38" />
-      </div>
-
-      {/* Bar chart comparing tournament indices */}
-      {(entryA || entryB) && (
-        <div className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm">
-          <h4 className="font-heading text-sm uppercase tracking-wide text-gray-500 mb-4">Tournament Index Comparison</h4>
-          <p className="text-xs text-gray-400 -mt-3 mb-4">MPA ranking score based on strength of schedule and win percentage</p>
-          <div className="space-y-4">
-            {entryA && (
-              <div>
-                <div className="flex justify-between text-sm mb-1">
-                  <span className="font-semibold">{entryA.team}</span>
-                  <span className="text-gray-500">{entryA.index.toFixed(3)}</span>
-                </div>
-                <div className="w-full bg-gray-100 rounded-full h-6 overflow-hidden">
-                  <div
-                    className="h-6 rounded-full bg-bdn-green transition-all duration-500"
-                    style={{ width: `${Math.max((entryA.index / maxIndex) * 100, 2)}%` }}
-                  />
-                </div>
-              </div>
-            )}
-            {entryB && (
-              <div>
-                <div className="flex justify-between text-sm mb-1">
-                  <span className="font-semibold">{entryB.team}</span>
-                  <span className="text-gray-500">{entryB.index.toFixed(3)}</span>
-                </div>
-                <div className="w-full bg-gray-100 rounded-full h-6 overflow-hidden">
-                  <div
-                    className="h-6 rounded-full bg-bdn-gold transition-all duration-500"
-                    style={{ width: `${Math.max((entryB.index / maxIndex) * 100, 2)}%` }}
-                  />
-                </div>
-              </div>
-            )}
-          </div>
-        </div>
-      )}
-    </div>
-  );
-}
-
-// ---------------------------------------------------------------------------
-// Brackets Tab
-// ---------------------------------------------------------------------------
-
-function BracketsTab({ bracketsData, sportFilter }) {
-  const activeSports = useMemo(() => {
-    if (!bracketsData || !bracketsData.sports) return [];
-    return bracketsData.sports.filter(s => s.tournament_active && s.brackets && s.brackets.length > 0);
-  }, [bracketsData]);
-
-  const filtered = useMemo(() => {
-    if (!sportFilter) return activeSports;
-    return activeSports.filter(s => {
-      const label = sportLabel(s);
-      return label === sportFilter;
-    });
-  }, [activeSports, sportFilter]);
-
-  if (filtered.length === 0) {
-    return (
-      <div className="max-w-6xl mx-auto px-4 mt-6">
-        <p className="text-gray-400 text-sm italic">No active tournament brackets.</p>
-      </div>
-    );
-  }
-
-  function MatchupCard({ matchup }) {
-    const winner = matchupWinner(matchup);
-    const hasBye = matchup.score1 === 'BYE' || matchup.score2 === 'BYE';
-    const hasScores = matchup.score1 && matchup.score2 && !hasBye;
-    const isComplete = hasScores && winner !== 0;
-    const isTBD = matchup.team1 === 'TBD' && matchup.team2 === 'TBD';
-
-    return (
-      <div className="bg-white border border-gray-200 rounded-lg shadow-sm min-w-[220px] text-sm">
-        {matchup.header && (
-          <div className="px-3 py-1.5 bg-gray-50 border-b border-gray-200 text-[10px] text-gray-500 leading-tight">
-            {matchup.header}
-          </div>
-        )}
-        <div className={`px-3 py-2 flex justify-between items-center border-b border-gray-100 ${winner === 1 ? 'font-bold' : ''}`}>
-          <span className="flex items-center gap-1.5">
-            {matchup.seed1 && <span className="text-[10px] text-gray-400">({matchup.seed1})</span>}
-            <span className={winner === 1 ? 'text-bdn-green' : isTBD ? 'text-gray-400 italic' : ''}>
-              {matchup.team1 || '\u2014'}
-            </span>
-          </span>
-          <span className="ml-3 tabular-nums">
-            {hasBye && matchup.score1 === 'BYE' ? (
-              <span className="text-[10px] text-gray-400 uppercase">BYE</span>
-            ) : (
-              matchup.score1 || ''
-            )}
-          </span>
-        </div>
-        <div className={`px-3 py-2 flex justify-between items-center ${winner === 2 ? 'font-bold' : ''}`}>
-          <span className="flex items-center gap-1.5">
-            {matchup.seed2 && <span className="text-[10px] text-gray-400">({matchup.seed2})</span>}
-            <span className={winner === 2 ? 'text-bdn-green' : ''}>
-              {matchup.team2 || '\u2014'}
-            </span>
-          </span>
-          <span className="ml-3 tabular-nums">
-            {hasBye && matchup.score2 === 'BYE' ? (
-              <span className="text-[10px] text-gray-400 uppercase">BYE</span>
-            ) : (
-              matchup.score2 || ''
-            )}
-          </span>
-        </div>
-        {isComplete && (
-          <div className="px-3 py-1 bg-bdn-green text-white text-[10px] text-center uppercase font-bold tracking-wide rounded-b-lg">
-            Final
-          </div>
-        )}
-      </div>
-    );
-  }
-
-  return (
-    <div className="max-w-6xl mx-auto px-4 mt-6 space-y-10">
-      {filtered.map((sportEntry, si) => (
-        <div key={si}>
-          <h3 className="font-heading text-xl uppercase tracking-wide text-bdn-green mb-1">
-            {sportLabel(sportEntry)}
-          </h3>
-          <p className="text-xs text-gray-500 mb-4">{sportEntry.class_name}</p>
-
-          {/* Horizontal bracket flow */}
-          <div className="overflow-x-auto pb-4">
-            <div className="flex gap-6 items-start" style={{ minWidth: 'max-content' }}>
-              {sportEntry.brackets.map((round, ri) => (
-                <div key={ri} className="flex flex-col items-center">
-                  <h5 className="font-heading text-xs uppercase text-gray-500 tracking-wide mb-3 text-center whitespace-nowrap">
-                    {round.class_name}
-                  </h5>
-                  <div className="flex flex-col gap-3 justify-center">
-                    {round.matchups.map((m, mi) => (
-                      <MatchupCard key={mi} matchup={m} />
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      ))}
-    </div>
-  );
-}
-
-// ---------------------------------------------------------------------------
 // Footer
 // ---------------------------------------------------------------------------
 
@@ -888,200 +559,10 @@ function Footer({ lastUpdated }) {
 
   return (
     <footer className="mt-12 mb-8 text-center text-xs text-gray-400 space-y-1 px-4">
-      <p>Data via Maine Principals' Association & Maine MileSplit.</p>
+      <p>Scores &amp; schedules via the Maine Principals' Association. Standings &amp; brackets: <a href="https://www.mpa.cc/" target="_blank" rel="noopener noreferrer" className="underline">mpa.cc</a>.</p>
       <p>Last updated: {formatted}</p>
     </footer>
   );
-}
-
-// ---------------------------------------------------------------------------
-// Athletes Tab (search-based individual stats)
-// ---------------------------------------------------------------------------
-
-function AthletesTab({ athletes }) {
-  const [query, setQuery] = useState('');
-  const [selectedAthlete, setSelectedAthlete] = useState(null);
-
-  const filtered = useMemo(() => {
-    if (!athletes || !athletes.length) return [];
-    const q = query.toLowerCase().trim();
-    if (!q) return [];
-    return athletes.filter(a =>
-      a.name.toLowerCase().includes(q) ||
-      a.school.toLowerCase().includes(q)
-    ).slice(0, 50);
-  }, [athletes, query]);
-
-  // Get best mark per event for an athlete
-  function bestMarks(athlete) {
-    const bests = {};
-    for (const ev of athlete.events) {
-      if (!bests[ev.event] || _isBetterMark(ev.mark, bests[ev.event].mark, ev.event)) {
-        bests[ev.event] = ev;
-      }
-    }
-    return Object.values(bests);
-  }
-
-  if (selectedAthlete) {
-    return (
-      <div className="max-w-6xl mx-auto px-4 mt-6">
-        <button
-          onClick={() => setSelectedAthlete(null)}
-          className="text-sm text-bdn-green hover:underline mb-4 inline-flex items-center gap-1"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-          </svg>
-          Back to search
-        </button>
-        <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-6">
-          <div className="flex items-start justify-between flex-wrap gap-2">
-            <div>
-              <h2 className="font-heading text-2xl font-bold text-bdn-green">{selectedAthlete.name}</h2>
-              <p className="text-gray-600 mt-1">
-                {selectedAthlete.school}
-                {selectedAthlete.grade && <span className="ml-2 text-gray-400">({selectedAthlete.grade})</span>}
-              </p>
-            </div>
-            <span className="inline-block bg-bdn-gold text-bdn-green text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-              {selectedAthlete.sport || 'Track'}
-            </span>
-          </div>
-
-          {/* Season Bests */}
-          <h3 className="font-heading text-sm uppercase tracking-wider text-gray-500 mt-6 mb-3">Season Bests</h3>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-            {bestMarks(selectedAthlete).map((ev, i) => (
-              <div key={i} className="bg-gray-50 rounded-lg p-3 text-center">
-                <div className="text-xs text-gray-400 uppercase">{ev.event}</div>
-                <div className="text-lg font-bold text-bdn-green mt-1">{ev.mark}</div>
-                <div className="text-xs text-gray-400 mt-1">{ev.meet}</div>
-              </div>
-            ))}
-          </div>
-
-          {/* Full Results */}
-          <h3 className="font-heading text-sm uppercase tracking-wider text-gray-500 mt-6 mb-3">All Results</h3>
-          <div className="overflow-x-auto">
-            <table className="w-full text-sm">
-              <thead>
-                <tr className="border-b border-gray-200 text-left text-xs text-gray-400 uppercase">
-                  <th className="py-2 pr-4">Date</th>
-                  <th className="py-2 pr-4">Meet</th>
-                  <th className="py-2 pr-4">Event</th>
-                  <th className="py-2 pr-4">Mark</th>
-                  <th className="py-2">Place</th>
-                </tr>
-              </thead>
-              <tbody>
-                {selectedAthlete.events
-                  .slice()
-                  .sort((a, b) => (b.date || '').localeCompare(a.date || ''))
-                  .map((ev, i) => (
-                    <tr key={i} className="border-b border-gray-100">
-                      <td className="py-2 pr-4 text-gray-500">{ev.date ? formatDate(ev.date) : ''}</td>
-                      <td className="py-2 pr-4">{ev.meet}</td>
-                      <td className="py-2 pr-4 font-medium">{ev.event}</td>
-                      <td className="py-2 pr-4 font-bold text-bdn-green">{ev.mark}</td>
-                      <td className="py-2">{ev.place ? _ordinal(ev.place) : ''}</td>
-                    </tr>
-                  ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  return (
-    <div className="max-w-6xl mx-auto px-4 mt-6">
-      <div className="relative">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-        </svg>
-        <input
-          type="text"
-          value={query}
-          onChange={e => setQuery(e.target.value)}
-          placeholder="Search athletes or schools..."
-          className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-bdn-green focus:border-transparent"
-        />
-      </div>
-
-      {query && filtered.length === 0 && (
-        <p className="text-gray-500 text-sm mt-6 text-center italic">No athletes found for "{query}"</p>
-      )}
-
-      {!query && (
-        <div className="text-center mt-12 text-gray-400">
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 mx-auto mb-3 text-gray-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-          </svg>
-          <p className="text-sm">Search for an athlete by name or school</p>
-          <p className="text-xs mt-1">Track & Cross Country results</p>
-        </div>
-      )}
-
-      <div className="mt-4 space-y-2">
-        {filtered.map((a, i) => (
-          <button
-            key={i}
-            onClick={() => setSelectedAthlete(a)}
-            className="w-full text-left bg-white border border-gray-200 rounded-lg p-4 hover:border-bdn-green hover:shadow-sm transition-all group"
-          >
-            <div className="flex items-center justify-between">
-              <div>
-                <span className="font-semibold text-sm group-hover:text-bdn-green transition-colors">{a.name}</span>
-                <span className="text-gray-400 text-sm ml-2">{a.school}</span>
-                {a.grade && <span className="text-gray-300 text-xs ml-2">({a.grade})</span>}
-              </div>
-              <span className="text-xs text-gray-400 uppercase">{a.sport || 'Track'}</span>
-            </div>
-            <div className="flex gap-3 mt-2 flex-wrap">
-              {bestMarks(a).slice(0, 3).map((ev, j) => (
-                <span key={j} className="text-xs bg-gray-100 rounded px-2 py-0.5">
-                  <span className="text-gray-500">{ev.event}:</span>{' '}
-                  <span className="font-medium">{ev.mark}</span>
-                </span>
-              ))}
-              {a.events.length > 3 && (
-                <span className="text-xs text-gray-400">+{a.events.length - 3} more</span>
-              )}
-            </div>
-          </button>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-/** Compare marks — lower is better for times, higher for distances. */
-function _isBetterMark(a, b, event) {
-  // Distance events (contains feet/inches pattern)
-  if (/[-']/.test(a) && /\d/.test(a)) {
-    return _markToNumber(a) > _markToNumber(b);
-  }
-  // Time events — lower is better
-  return _markToNumber(a) < _markToNumber(b);
-}
-
-function _markToNumber(mark) {
-  // Time format: "M:SS.xx" or "SS.xx"
-  const timeParts = mark.match(/^(\d+):(\d+(?:\.\d+)?)$/);
-  if (timeParts) return parseFloat(timeParts[1]) * 60 + parseFloat(timeParts[2]);
-  // Distance format: "XX-YY.ZZ" (feet-inches)
-  const distParts = mark.match(/^(\d+)-(\d+(?:\.\d+)?)$/);
-  if (distParts) return parseFloat(distParts[1]) * 12 + parseFloat(distParts[2]);
-  // Plain number
-  return parseFloat(mark) || 0;
-}
-
-function _ordinal(n) {
-  const s = ['th', 'st', 'nd', 'rd'];
-  const v = n % 100;
-  return n + (s[(v - 20) % 10] || s[v] || s[0]);
 }
 
 // ---------------------------------------------------------------------------
@@ -1090,15 +571,12 @@ function _ordinal(n) {
 
 function App() {
   const [season, setSeason] = useState(getCurrentSeason());
-  const [activeTab, setActiveTab] = useState('scores');
   const [sportFilter, setSportFilter] = useState('');
+  const [followedTeams, setFollowedTeams] = useState(loadFollowedTeams);
 
   // Data state
   const [schedules, setSchedules] = useState(null);
-  const [standings, setStandings] = useState(null);
-  const [brackets, setBrackets] = useState(null);
   const [featured, setFeatured] = useState(null);
-  const [athletes, setAthletes] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [selectedGame, setSelectedGame] = useState(null);
@@ -1109,18 +587,12 @@ function App() {
       setLoading(true);
       setError(null);
       try {
-        const [schedRes, standRes, brackRes, featRes, athRes] = await Promise.allSettled([
+        const [schedRes, featRes] = await Promise.allSettled([
           fetch('data/schedules.json').then(r => r.ok ? r.json() : null),
-          fetch('data/standings.json').then(r => r.ok ? r.json() : null),
-          fetch('data/brackets.json').then(r => r.ok ? r.json() : null),
           fetch('data/featured.json').then(r => r.ok ? r.json() : null),
-          fetch('data/athletes.json').then(r => r.ok ? r.json() : null),
         ]);
         setSchedules(schedRes.status === 'fulfilled' ? schedRes.value : null);
-        setStandings(standRes.status === 'fulfilled' ? standRes.value : null);
-        setBrackets(brackRes.status === 'fulfilled' ? brackRes.value : null);
         setFeatured(featRes.status === 'fulfilled' ? featRes.value : null);
-        setAthletes(athRes.status === 'fulfilled' ? athRes.value : null);
       } catch (err) {
         setError('Failed to load data. Please try again.');
       }
@@ -1129,12 +601,28 @@ function App() {
     loadData();
   }, []);
 
-  // Build sport options from schedules + standings using consistent labels
+  function followTeam(name) {
+    setFollowedTeams(prev => {
+      if (prev.includes(name)) return prev;
+      const next = [...prev, name];
+      saveFollowedTeams(next);
+      return next;
+    });
+  }
+
+  function unfollowTeam(name) {
+    setFollowedTeams(prev => {
+      const next = prev.filter(t => t !== name);
+      saveFollowedTeams(next);
+      return next;
+    });
+  }
+
+  // Build sport options from schedules
   const sportOptions = useMemo(() => {
     const set = new Set();
     if (schedules && schedules.games) {
       schedules.games.forEach(g => {
-        // Build label matching standings format: "Sport (Gender)" or just "Sport" for Coed
         if (g.gender && g.gender !== 'Coed') {
           set.add(`${g.sport} (${g.gender})`);
         } else {
@@ -1142,20 +630,12 @@ function App() {
         }
       });
     }
-    if (standings && standings.sports) {
-      standings.sports.forEach(s => set.add(sportLabel(s)));
-    }
     return Array.from(set).sort();
-  }, [schedules, standings]);
+  }, [schedules]);
 
-  // Check if any brackets are active
-  const showBrackets = useMemo(() => {
-    if (!brackets || !brackets.sports) return false;
-    return brackets.sports.some(s => s.tournament_active && s.brackets && s.brackets.length > 0);
-  }, [brackets]);
+  const allSchools = useMemo(() => allSchoolNames(schedules?.games), [schedules]);
 
-  // Determine last_updated from any available data
-  const lastUpdated = schedules?.last_updated || standings?.last_updated || brackets?.last_updated || featured?.last_updated;
+  const lastUpdated = schedules?.last_updated || featured?.last_updated;
 
   // Loading state
   if (loading) {
@@ -1175,13 +655,6 @@ function App() {
       <Header lastUpdated={lastUpdated} />
       <SeasonTabs season={season} setSeason={setSeason} />
       <FeaturedStories articles={featured?.articles || []} />
-      <TabBar activeTab={activeTab} setActiveTab={setActiveTab} showBrackets={showBrackets} />
-      <SportFilter
-        sports={sportOptions}
-        value={sportFilter}
-        onChange={setSportFilter}
-        label="Filter by sport:"
-      />
 
       {error && (
         <div className="max-w-6xl mx-auto px-4 mt-4">
@@ -1191,27 +664,22 @@ function App() {
         </div>
       )}
 
-      {/* Tab Content */}
-      {activeTab === 'scores' && (
-        <ScoresTab games={schedules?.games || []} sportFilter={sportFilter} standings={standings} onGameClick={setSelectedGame} />
-      )}
-      {activeTab === 'standings' && (
-        <StandingsTab standings={standings} sportFilter={sportFilter} />
-      )}
-      {activeTab === 'brackets' && (
-        <BracketsTab bracketsData={brackets} sportFilter={sportFilter} />
-      )}
-      {activeTab === 'athletes' && (
-        <AthletesTab athletes={athletes?.athletes || []} />
-      )}
-      {activeTab === 'compare' && (
-        <TeamCompare standings={standings} sportFilter={sportFilter} />
-      )}
+      <FollowTeams allSchools={allSchools} followed={followedTeams} onFollow={followTeam} onUnfollow={unfollowTeam} />
+      <YourTeams followed={followedTeams} games={schedules?.games || []} onGameClick={setSelectedGame} />
 
+      <SportFilter
+        sports={sportOptions}
+        value={sportFilter}
+        onChange={setSportFilter}
+        label="Filter by sport:"
+      />
+      <ScoresTab games={schedules?.games || []} sportFilter={sportFilter} onGameClick={setSelectedGame} />
+
+      <StandingsLinkOut />
       <Footer lastUpdated={lastUpdated} />
 
       {selectedGame && (
-        <TeamDetailModal game={selectedGame} standings={standings} onClose={() => setSelectedGame(null)} />
+        <GameDetailModal game={selectedGame} onClose={() => setSelectedGame(null)} />
       )}
     </div>
   );
