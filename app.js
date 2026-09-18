@@ -29,6 +29,32 @@ function todayStr() {
   return `${yyyy}-${mm}-${dd}`;
 }
 
+/** "2h ago", "Yesterday", "3 days ago" -- day-level granularity, since the
+    feed only carries a game's calendar date, not a result-posted timestamp,
+    and the scraper itself only runs twice a day. Anything under a day old
+    (i.e. from the same refresh cycle as "now") shows hours instead. */
+function timeAgo(iso) {
+  const then = new Date(iso).getTime();
+  const diffMs = Date.now() - then;
+  const hours = Math.floor(diffMs / 3600000);
+  if (hours < 1) return 'Just in';
+  if (hours < 24) return `${hours}h ago`;
+  const days = Math.floor(hours / 24);
+  if (days === 1) return 'Yesterday';
+  return `${days} days ago`;
+}
+
+/** Calendar-day-based freshness label for a game's own date (not a precise
+    timestamp -- the feed only carries a date, e.g. "2026-09-17"). */
+function daysAgoLabel(dateStr) {
+  const today = todayStr();
+  if (dateStr === today) return 'Today';
+  const diffDays = Math.round((new Date(today) - new Date(dateStr)) / 86400000);
+  if (diffDays === 1) return 'Yesterday';
+  if (diffDays > 1) return `${diffDays} days ago`;
+  return '';
+}
+
 function sportLabel(sportEntry) {
   if (sportEntry.gender && sportEntry.gender !== 'Coed') {
     return `${sportEntry.sport} (${sportEntry.gender})`;
@@ -50,16 +76,29 @@ function matchupWinner(m) {
 // Header
 // ---------------------------------------------------------------------------
 
-function Header() {
+function Header({ lastUpdated }) {
+  // Re-render every 30s so "Updated Xh ago" stays accurate without a reload.
+  const [, setTick] = useState(0);
+  useEffect(() => {
+    const id = setInterval(() => setTick(t => t + 1), 30000);
+    return () => clearInterval(id);
+  }, []);
+
   return (
     <header className="bg-bdn-green text-white py-4 px-4 shadow-lg">
-      <div className="max-w-6xl mx-auto flex items-center gap-3">
+      <div className="max-w-6xl mx-auto flex items-center gap-3 flex-wrap">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-bdn-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
         </svg>
         <h1 className="font-heading text-2xl md:text-3xl font-bold tracking-wide uppercase">
           Maine High School Sports
         </h1>
+        {lastUpdated && (
+          <span className="ml-auto flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide bg-white bg-opacity-10 px-2.5 py-1 rounded-full">
+            <span className="h-1.5 w-1.5 rounded-full bg-bdn-gold animate-pulse" />
+            Updated {timeAgo(lastUpdated)}
+          </span>
+        )}
       </div>
     </header>
   );
@@ -342,21 +381,27 @@ function ScoresTab({ games, sportFilter, standings, onGameClick }) {
     return game.date < today && !isPostponed(game) && !isCanceled(game);
   }
 
-  function GameCard({ game }) {
+  function GameCard({ game, showFreshness }) {
     const final = isFinal(game);
     const postponed = isPostponed(game);
     const canceled = isCanceled(game);
     const hasScore = game.home_score !== undefined && game.away_score !== undefined;
+    const freshness = showFreshness && final ? daysAgoLabel(game.date) : '';
+    // Today's/yesterday's results are what "recency" is about here -- call
+    // them out instead of leaving every result looking equally old.
+    const isFresh = freshness === 'Today' || freshness === 'Yesterday';
     return (
       <div
         onClick={() => onGameClick && onGameClick(game)}
-        className="bg-white border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+        className={`bg-white border rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow cursor-pointer ${
+          isFresh ? 'border-bdn-green border-l-4' : 'border-gray-200'
+        }`}>
         <div className="flex justify-between items-start mb-2">
           <span className="text-xs text-gray-400 font-semibold">{formatDate(game.date)}</span>
           <div className="flex gap-1.5">
             {final && (
               <span className="text-xs font-bold text-white bg-bdn-green px-2 py-0.5 rounded uppercase">
-                Final
+                Final{freshness ? ` · ${freshness}` : ''}
               </span>
             )}
             {postponed && (
@@ -394,7 +439,7 @@ function ScoresTab({ games, sportFilter, standings, onGameClick }) {
     );
   }
 
-  function Section({ title, items, emptyMsg }) {
+  function Section({ title, items, emptyMsg, live, showFreshness }) {
     if (!items || items.length === 0) {
       return (
         <div className="mb-8">
@@ -405,9 +450,12 @@ function ScoresTab({ games, sportFilter, standings, onGameClick }) {
     }
     return (
       <div className="mb-8">
-        <h3 className="font-heading text-lg uppercase tracking-wide text-bdn-green mb-3">{title}</h3>
+        <h3 className="font-heading text-lg uppercase tracking-wide text-bdn-green mb-3 flex items-center gap-2">
+          {live && <span className="h-2 w-2 rounded-full bg-bdn-green animate-pulse" />}
+          {title}
+        </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-          {items.map((g, i) => <GameCard key={i} game={g} />)}
+          {items.map((g, i) => <GameCard key={i} game={g} showFreshness={showFreshness} />)}
         </div>
       </div>
     );
@@ -415,9 +463,12 @@ function ScoresTab({ games, sportFilter, standings, onGameClick }) {
 
   return (
     <div className="max-w-6xl mx-auto px-4 mt-6">
+      {/* Results lead the page -- this is a scores site, and yesterday's/last
+          night's results are the most newsworthy thing on it, not something
+          to bury under two other sections. */}
+      <Section title="Latest Results" items={recent} emptyMsg="No recent results." live showFreshness />
       <Section title="Today" items={todayGames} emptyMsg="No games scheduled today." />
       <Section title="Upcoming" items={upcoming} emptyMsg="No upcoming games." />
-      <Section title="Recent Results" items={recent} emptyMsg="No recent results." />
     </div>
   );
 }
@@ -1110,7 +1161,7 @@ function App() {
   if (loading) {
     return (
       <div>
-        <Header />
+        <Header lastUpdated={lastUpdated} />
         <div className="max-w-6xl mx-auto px-4 mt-12 text-center">
           <div className="inline-block animate-spin rounded-full h-10 w-10 border-4 border-bdn-green border-t-transparent" />
           <p className="mt-4 text-gray-500 text-sm">Loading sports data...</p>
@@ -1121,7 +1172,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header />
+      <Header lastUpdated={lastUpdated} />
       <SeasonTabs season={season} setSeason={setSeason} />
       <FeaturedStories articles={featured?.articles || []} />
       <TabBar activeTab={activeTab} setActiveTab={setActiveTab} showBrackets={showBrackets} />
