@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-19T07:13:06.861413+00:00",
+  "last_updated": "2026-09-19T14:54:01.901861+00:00",
   "games": [
     {
       "game_id": "35680",
@@ -8230,18 +8230,20 @@
         {
           "school": "Brewer",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 4
         },
         {
           "school": "Bangor",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         }
       ],
       "home": "Brewer",
-      "away": "Bangor"
+      "away": "Bangor",
+      "home_score": 4,
+      "away_score": 1
     },
     {
       "game_id": "42292",
@@ -15050,18 +15052,20 @@
         {
           "school": "Old Town",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 46
         },
         {
           "school": "Mt. Ararat",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 8
         }
       ],
       "home": "Old Town",
-      "away": "Mt. Ararat"
+      "away": "Mt. Ararat",
+      "home_score": 46,
+      "away_score": 8
     },
     {
       "game_id": "35344",
@@ -16786,18 +16790,20 @@
         {
           "school": "Hampden Academy",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Hermon",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 56
         }
       ],
       "home": "Hampden Academy",
-      "away": "Hermon"
+      "away": "Hermon",
+      "home_score": 0,
+      "away_score": 56
     },
     {
       "game_id": "39241",
@@ -17064,18 +17070,20 @@
         {
           "school": "Oxford Hills",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 28
         },
         {
           "school": "Edward Little",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 7
         }
       ],
       "home": "Oxford Hills",
-      "away": "Edward Little"
+      "away": "Edward Little",
+      "home_score": 28,
+      "away_score": 7
     },
     {
       "game_id": "39437",
@@ -17400,18 +17408,20 @@
         {
           "school": "Houlton HS",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 14
         },
         {
           "school": "Ellsworth",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 50
         }
       ],
       "home": "Houlton HS",
-      "away": "Ellsworth"
+      "away": "Ellsworth",
+      "home_score": 14,
+      "away_score": 50
     },
     {
       "game_id": "39689",
@@ -25147,17 +25157,19 @@
           "school": "Oak Hill",
           "home_away": "Home",
           "result": "",
-          "score": null
+          "score": 2
         },
         {
           "school": "Madison High School",
           "home_away": "Away",
           "result": "",
-          "score": null
+          "score": 7
         }
       ],
       "home": "Oak Hill",
-      "away": "Madison High School"
+      "away": "Madison High School",
+      "home_score": 2,
+      "away_score": 7
     },
     {
       "game_id": "43262",
@@ -27821,17 +27833,19 @@
           "school": "Madison High School",
           "home_away": "Home",
           "result": "",
-          "score": null
+          "score": 8
         },
         {
           "school": "Mountain Valley",
           "home_away": "Away",
           "result": "",
-          "score": null
+          "score": 1
         }
       ],
       "home": "Madison High School",
-      "away": "Mountain Valley"
+      "away": "Mountain Valley",
+      "home_score": 8,
+      "away_score": 1
     },
     {
       "game_id": "40499",
@@ -29449,17 +29463,19 @@
           "school": "Bangor",
           "home_away": "Home",
           "result": "",
-          "score": null
+          "score": 168
         },
         {
           "school": "John Bapst Memorial",
           "home_away": "Away",
           "result": "",
-          "score": null
+          "score": 186
         }
       ],
       "home": "Bangor",
-      "away": "John Bapst Memorial"
+      "away": "John Bapst Memorial",
+      "home_score": 168,
+      "away_score": 186
     },
     {
       "game_id": "39002",
@@ -29476,19 +29492,19 @@
           "school": "Old Town",
           "home_away": "Home",
           "result": "",
-          "score": null
+          "score": 191
         },
         {
           "school": "Bangor",
           "home_away": "Away",
           "result": "",
-          "score": null
+          "score": 166
         },
         {
           "school": "Caribou",
           "home_away": "Away",
           "result": "",
-          "score": null
+          "score": 211
         }
       ]
     },
@@ -29507,17 +29523,19 @@
           "school": "Bangor",
           "home_away": "Home",
           "result": "",
-          "score": null
+          "score": 166
         },
         {
           "school": "Hermon",
           "home_away": "Away",
           "result": "",
-          "score": null
+          "score": 177
         }
       ],
       "home": "Bangor",
-      "away": "Hermon"
+      "away": "Hermon",
+      "home_score": 166,
+      "away_score": 177
     },
     {
       "game_id": "39006",
@@ -40448,18 +40466,20 @@
         {
           "school": "Yarmouth",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         },
         {
           "school": "Fryeburg Academy",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Yarmouth",
-      "away": "Fryeburg Academy"
+      "away": "Fryeburg Academy",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "game_id": "39030",
@@ -65598,18 +65618,20 @@
         {
           "school": "Machias Memorial",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         },
         {
           "school": "Sumner Memorial",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Machias Memorial",
-      "away": "Sumner Memorial"
+      "away": "Sumner Memorial",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "game_id": "54115",
@@ -68684,18 +68706,20 @@
         {
           "school": "Hampden Academy",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         },
         {
           "school": "Brunswick",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Hampden Academy",
-      "away": "Brunswick"
+      "away": "Brunswick",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "game_id": "37758",
