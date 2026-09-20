@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-20T07:37:46.863588+00:00",
+  "last_updated": "2026-09-20T14:58:04.547780+00:00",
   "games": [
     {
       "game_id": "35680",
@@ -67861,18 +67861,20 @@
         {
           "school": "Mount Desert Island",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         },
         {
           "school": "Yarmouth",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         }
       ],
       "home": "Mount Desert Island",
-      "away": "Yarmouth"
+      "away": "Yarmouth",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "game_id": "40399",
