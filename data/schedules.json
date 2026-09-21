@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-21T07:50:00.428811+00:00",
+  "last_updated": "2026-09-21T17:15:20.813563+00:00",
   "season": "fall",
   "games": [
     {
@@ -4764,7 +4764,9 @@
       "away": "Spruce Mountain",
       "site": "Winthrop (Charlie's Field)",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "game_id": "37415",
@@ -4865,7 +4867,9 @@
       "away": "Mattanawcook Academy",
       "site": "Central",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 8
     },
     {
       "game_id": "37159",
@@ -5992,7 +5996,7 @@
     {
       "game_id": "36894",
       "date": "2026-09-22",
-      "time": "5:00 PM",
+      "time": "4:45 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
@@ -7466,7 +7470,9 @@
       "away": "Kennebunk",
       "site": "Cheverus High School",
       "sport": "Football",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 17,
+      "away_score": 21
     },
     {
       "game_id": "37668",
@@ -9329,8 +9335,8 @@
       "site": "Belfast Area High School",
       "sport": "Football",
       "gender": "Boys",
-      "home_score": 44,
-      "away_score": 6
+      "home_score": 6,
+      "away_score": 44
     },
     {
       "game_id": "54787",
@@ -9472,7 +9478,9 @@
       "away": "Dirigo",
       "site": "John Bapst",
       "sport": "Football",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 18,
+      "away_score": 6
     },
     {
       "game_id": "60539",
@@ -10007,7 +10015,9 @@
       "away": "Cheverus",
       "site": "Sunset Ridge",
       "sport": "Golf",
-      "gender": "Coed"
+      "gender": "Coed",
+      "home_score": 2,
+      "away_score": 10
     },
     {
       "game_id": "57514",
@@ -15740,7 +15750,7 @@
     {
       "game_id": "35464",
       "date": "2026-09-22",
-      "time": "4:00 PM",
+      "time": "3:30 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
@@ -15778,7 +15788,7 @@
     },
     {
       "game_id": "35470",
-      "date": "2026-10-02",
+      "date": "2026-10-05",
       "time": "7:00 PM",
       "type": "League",
       "status": "Normal",
@@ -17335,7 +17345,9 @@
       "away": "Morse",
       "site": "Leavitt Area High School",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "game_id": "37860",
@@ -17940,7 +17952,9 @@
       "away": "Mattanawcook Academy",
       "site": "Central",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "game_id": "37090",
@@ -19600,14 +19614,14 @@
     },
     {
       "game_id": "39151",
-      "date": "2026-09-23",
+      "date": "2026-09-22",
       "time": "6:00 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
       "home": "Hermon",
       "away": "John Bapst Memorial",
-      "site": "Hermon High School",
+      "site": "New Balance Soccer Facility, University of Maine",
       "sport": "Soccer",
       "gender": "Girls"
     },
@@ -19640,13 +19654,13 @@
     {
       "game_id": "39157",
       "date": "2026-10-03",
-      "time": "4:00 PM",
+      "time": "2:00 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
-      "home": "John Bapst Memorial",
-      "away": "Hermon",
-      "site": "TBA",
+      "home": "Hermon",
+      "away": "John Bapst Memorial",
+      "site": "Pottle FIeld, Hermon High School, Hermon",
       "sport": "Soccer",
       "gender": "Girls"
     },
@@ -19747,9 +19761,9 @@
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
-      "home": "Hermon",
-      "away": "John Bapst Memorial",
-      "site": "Hermon High School",
+      "home": "John Bapst Memorial",
+      "away": "Hermon",
+      "site": "New Balance Soccer Facility, University of Maine",
       "sport": "Soccer",
       "gender": "Boys"
     },
@@ -19786,9 +19800,9 @@
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
-      "home": "John Bapst Memorial",
-      "away": "Hermon",
-      "site": "TBA",
+      "home": "Hermon",
+      "away": "John Bapst Memorial",
+      "site": "Hermon High School",
       "sport": "Soccer",
       "gender": "Boys"
     },
@@ -19984,13 +19998,13 @@
     {
       "game_id": "39878",
       "date": "2026-09-24",
-      "time": "",
+      "time": "6:00 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
       "home": "John Bapst Memorial",
       "away": "Mount Desert Island",
-      "site": "John Bapst",
+      "site": "New Balance Soccer Facility, University of Maine",
       "sport": "Soccer",
       "gender": "Boys"
     },
@@ -21255,7 +21269,7 @@
     {
       "game_id": "40161",
       "date": "2026-09-24",
-      "time": "4:00 PM",
+      "time": "5:30 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
@@ -21534,13 +21548,13 @@
     {
       "game_id": "40282",
       "date": "2026-10-01",
-      "time": "",
+      "time": "6:00 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
       "home": "John Bapst Memorial",
       "away": "Mount Desert Island",
-      "site": "John Bapst",
+      "site": "New Balance Soccer Facility, University of Maine",
       "sport": "Soccer",
       "gender": "Girls"
     },
@@ -25679,19 +25693,6 @@
       "away_score": 1
     },
     {
-      "game_id": "42957",
-      "date": "2026-09-24",
-      "time": "3:30 PM",
-      "type": "League",
-      "status": "Normal",
-      "level": "Varsity",
-      "home": "Oak Hill",
-      "away": "Mountain Valley",
-      "site": "Oak Hill High School",
-      "sport": "Soccer",
-      "gender": "Boys"
-    },
-    {
       "game_id": "42568",
       "date": "2026-10-03",
       "time": "12:30 PM",
@@ -27535,7 +27536,9 @@
       "away": "Erskine Academy",
       "site": "David Martin Athletic Complex-Lawrence High School",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 1,
+      "away_score": 4
     },
     {
       "game_id": "43538",
@@ -29407,7 +29410,9 @@
       "away": "Messalonskee",
       "site": "Hampden Academy",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "game_id": "54523",
@@ -30310,32 +30315,6 @@
       "gender": "Boys"
     },
     {
-      "game_id": "57663",
-      "date": "2026-09-08",
-      "time": "5:30 PM",
-      "type": "League",
-      "status": "Normal",
-      "level": "Varsity",
-      "home": "John Bapst Memorial",
-      "away": "",
-      "site": "UMaine - Orono",
-      "sport": "Soccer",
-      "gender": "Girls"
-    },
-    {
-      "game_id": "57670",
-      "date": "2026-09-08",
-      "time": "5:30 PM",
-      "type": "League",
-      "status": "Normal",
-      "level": "Varsity",
-      "home": "John Bapst Memorial",
-      "away": "",
-      "site": "UMaine - Orono",
-      "sport": "Soccer",
-      "gender": "Girls"
-    },
-    {
       "game_id": "57679",
       "date": "2026-09-26",
       "time": "11:00 AM",
@@ -30357,7 +30336,7 @@
       "level": "Varsity",
       "home": "John Bapst Memorial",
       "away": "Ellsworth",
-      "site": "UMaine - Orono",
+      "site": "New Balance Soccer Facility, University of Maine",
       "sport": "Soccer",
       "gender": "Girls",
       "home_score": 7,
@@ -30721,7 +30700,9 @@
       "away": "Lee Academy",
       "site": "Washington Academy",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "game_id": "58237",
@@ -31118,7 +31099,9 @@
       "away": "Washington Academy",
       "site": "Central HS",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "game_id": "59374",
@@ -31562,7 +31545,7 @@
       "level": "Varsity",
       "home": "John Bapst Memorial",
       "away": "Caribou",
-      "site": "UMaine Orono",
+      "site": "New Balance Soccer Facility, University of Maine",
       "sport": "Soccer",
       "gender": "Girls",
       "home_score": 8,
@@ -33864,7 +33847,9 @@
       "away": "Biddeford",
       "site": "Cheverus High School",
       "sport": "Volleyball",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "game_id": "37656",

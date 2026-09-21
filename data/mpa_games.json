@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-21T07:50:00.428811+00:00",
+  "last_updated": "2026-09-21T17:15:20.813563+00:00",
   "games": [
     {
       "game_id": "35680",
@@ -11319,18 +11319,20 @@
         {
           "school": "Winthrop",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         },
         {
           "school": "Spruce Mountain",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 2
         }
       ],
       "home": "Winthrop",
-      "away": "Spruce Mountain"
+      "away": "Spruce Mountain",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "game_id": "37415",
@@ -11518,18 +11520,20 @@
         {
           "school": "Central",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         },
         {
           "school": "Mattanawcook Academy",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 8
         }
       ],
       "home": "Central",
-      "away": "Mattanawcook Academy"
+      "away": "Mattanawcook Academy",
+      "home_score": 1,
+      "away_score": 8
     },
     {
       "game_id": "37159",
@@ -13776,7 +13780,7 @@
     {
       "game_id": "36894",
       "date": "2026-09-22",
-      "time": "5:00 PM",
+      "time": "4:45 PM",
       "sport": "Field Hockey",
       "gender": "",
       "level": "Varsity",
@@ -16709,18 +16713,20 @@
         {
           "school": "Cheverus",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 17
         },
         {
           "school": "Kennebunk",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 21
         }
       ],
       "home": "Cheverus",
-      "away": "Kennebunk"
+      "away": "Kennebunk",
+      "home_score": 17,
+      "away_score": 21
     },
     {
       "game_id": "37668",
@@ -20419,20 +20425,20 @@
         {
           "school": "Belfast Area",
           "home_away": "Home",
-          "result": "Win",
-          "score": 44
+          "result": "Loss",
+          "score": 6
         },
         {
           "school": "Oceanside",
           "home_away": "Away",
-          "result": "Loss",
-          "score": 6
+          "result": "Win",
+          "score": 44
         }
       ],
       "home": "Belfast Area",
       "away": "Oceanside",
-      "home_score": 44,
-      "away_score": 6
+      "home_score": 6,
+      "away_score": 44
     },
     {
       "game_id": "54787",
@@ -20703,18 +20709,20 @@
         {
           "school": "John Bapst Memorial",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 18
         },
         {
           "school": "Dirigo",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 6
         }
       ],
       "home": "John Bapst Memorial",
-      "away": "Dirigo"
+      "away": "Dirigo",
+      "home_score": 18,
+      "away_score": 6
     },
     {
       "game_id": "60539",
@@ -21801,17 +21809,19 @@
           "school": "Gorham",
           "home_away": "Home",
           "result": "",
-          "score": null
+          "score": 2
         },
         {
           "school": "Cheverus",
           "home_away": "Away",
           "result": "",
-          "score": null
+          "score": 10
         }
       ],
       "home": "Gorham",
-      "away": "Cheverus"
+      "away": "Cheverus",
+      "home_score": 2,
+      "away_score": 10
     },
     {
       "game_id": "57514",
@@ -33732,7 +33742,7 @@
     {
       "game_id": "35464",
       "date": "2026-09-22",
-      "time": "4:00 PM",
+      "time": "3:30 PM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
@@ -33812,7 +33822,7 @@
     },
     {
       "game_id": "35470",
-      "date": "2026-10-02",
+      "date": "2026-10-05",
       "time": "7:00 PM",
       "sport": "Soccer",
       "gender": "Girls",
@@ -36912,18 +36922,20 @@
         {
           "school": "Leavitt Area",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         },
         {
           "school": "Morse",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 2
         }
       ],
       "home": "Leavitt Area",
-      "away": "Morse"
+      "away": "Morse",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "game_id": "37860",
@@ -38119,18 +38131,20 @@
         {
           "school": "Central",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 2
         },
         {
           "school": "Mattanawcook Academy",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         }
       ],
       "home": "Central",
-      "away": "Mattanawcook Academy"
+      "away": "Mattanawcook Academy",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "game_id": "37090",
@@ -41442,14 +41456,14 @@
     },
     {
       "game_id": "39151",
-      "date": "2026-09-23",
+      "date": "2026-09-22",
       "time": "6:00 PM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
       "type": "League",
       "status": "Normal",
-      "site": "Hermon High School",
+      "site": "New Balance Soccer Facility, University of Maine",
       "teams": [
         {
           "school": "Hermon",
@@ -41524,29 +41538,29 @@
     {
       "game_id": "39157",
       "date": "2026-10-03",
-      "time": "4:00 PM",
+      "time": "2:00 PM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
       "type": "League",
       "status": "Normal",
-      "site": "TBA",
+      "site": "Pottle FIeld, Hermon High School, Hermon",
       "teams": [
         {
           "school": "John Bapst Memorial",
-          "home_away": "Home",
+          "home_away": "Away",
           "result": "",
           "score": null
         },
         {
           "school": "Hermon",
-          "home_away": "Away",
+          "home_away": "Home",
           "result": "",
           "score": null
         }
       ],
-      "home": "John Bapst Memorial",
-      "away": "Hermon"
+      "home": "Hermon",
+      "away": "John Bapst Memorial"
     },
     {
       "game_id": "39163",
@@ -41731,23 +41745,23 @@
       "level": "Varsity",
       "type": "League",
       "status": "Normal",
-      "site": "Hermon High School",
+      "site": "New Balance Soccer Facility, University of Maine",
       "teams": [
         {
           "school": "Hermon",
-          "home_away": "Home",
+          "home_away": "Away",
           "result": "",
           "score": null
         },
         {
           "school": "John Bapst Memorial",
-          "home_away": "Away",
+          "home_away": "Home",
           "result": "",
           "score": null
         }
       ],
-      "home": "Hermon",
-      "away": "John Bapst Memorial"
+      "home": "John Bapst Memorial",
+      "away": "Hermon"
     },
     {
       "game_id": "39207",
@@ -41812,23 +41826,23 @@
       "level": "Varsity",
       "type": "League",
       "status": "Normal",
-      "site": "TBA",
+      "site": "Hermon High School",
       "teams": [
         {
           "school": "John Bapst Memorial",
-          "home_away": "Home",
+          "home_away": "Away",
           "result": "",
           "score": null
         },
         {
           "school": "Hermon",
-          "home_away": "Away",
+          "home_away": "Home",
           "result": "",
           "score": null
         }
       ],
-      "home": "John Bapst Memorial",
-      "away": "Hermon"
+      "home": "Hermon",
+      "away": "John Bapst Memorial"
     },
     {
       "game_id": "39105",
@@ -42204,13 +42218,13 @@
     {
       "game_id": "39878",
       "date": "2026-09-24",
-      "time": "",
+      "time": "6:00 PM",
       "sport": "Soccer",
       "gender": "Boys",
       "level": "Varsity",
       "type": "League",
       "status": "Normal",
-      "site": "John Bapst",
+      "site": "New Balance Soccer Facility, University of Maine",
       "teams": [
         {
           "school": "John Bapst Memorial",
@@ -44749,7 +44763,7 @@
     {
       "game_id": "40161",
       "date": "2026-09-24",
-      "time": "4:00 PM",
+      "time": "5:30 PM",
       "sport": "Soccer",
       "gender": "Boys",
       "level": "Varsity",
@@ -45307,13 +45321,13 @@
     {
       "game_id": "40282",
       "date": "2026-10-01",
-      "time": "",
+      "time": "6:00 PM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
       "type": "League",
       "status": "Normal",
-      "site": "John Bapst",
+      "site": "New Balance Soccer Facility, University of Maine",
       "teams": [
         {
           "school": "John Bapst Memorial",
@@ -53582,33 +53596,6 @@
       "away_score": 1
     },
     {
-      "game_id": "42957",
-      "date": "2026-09-24",
-      "time": "3:30 PM",
-      "sport": "Soccer",
-      "gender": "Boys",
-      "level": "Varsity",
-      "type": "League",
-      "status": "Normal",
-      "site": "Oak Hill High School",
-      "teams": [
-        {
-          "school": "Oak Hill",
-          "home_away": "Home",
-          "result": "",
-          "score": null
-        },
-        {
-          "school": "Mountain Valley",
-          "home_away": "Away",
-          "result": "",
-          "score": null
-        }
-      ],
-      "home": "Oak Hill",
-      "away": "Mountain Valley"
-    },
-    {
       "game_id": "42568",
       "date": "2026-10-03",
       "time": "12:30 PM",
@@ -57261,18 +57248,20 @@
         {
           "school": "Lawrence",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         },
         {
           "school": "Erskine Academy",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 4
         }
       ],
       "home": "Lawrence",
-      "away": "Erskine Academy"
+      "away": "Erskine Academy",
+      "home_score": 1,
+      "away_score": 4
     },
     {
       "game_id": "43538",
@@ -61001,18 +60990,20 @@
         {
           "school": "Hampden Academy",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         },
         {
           "school": "Messalonskee",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         }
       ],
       "home": "Hampden Academy",
-      "away": "Messalonskee"
+      "away": "Messalonskee",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "game_id": "54523",
@@ -62803,44 +62794,6 @@
       "away": "Mountain Valley"
     },
     {
-      "game_id": "57663",
-      "date": "2026-09-08",
-      "time": "5:30 PM",
-      "sport": "Soccer",
-      "gender": "Girls",
-      "level": "Varsity",
-      "type": "League",
-      "status": "Normal",
-      "site": "UMaine - Orono",
-      "teams": [
-        {
-          "school": "John Bapst Memorial",
-          "home_away": "Home",
-          "result": "",
-          "score": null
-        }
-      ]
-    },
-    {
-      "game_id": "57670",
-      "date": "2026-09-08",
-      "time": "5:30 PM",
-      "sport": "Soccer",
-      "gender": "Girls",
-      "level": "Varsity",
-      "type": "League",
-      "status": "Normal",
-      "site": "UMaine - Orono",
-      "teams": [
-        {
-          "school": "John Bapst Memorial",
-          "home_away": "Home",
-          "result": "",
-          "score": null
-        }
-      ]
-    },
-    {
       "game_id": "57679",
       "date": "2026-09-26",
       "time": "11:00 AM",
@@ -62876,7 +62829,7 @@
       "level": "Varsity",
       "type": "League",
       "status": "Normal",
-      "site": "UMaine - Orono",
+      "site": "New Balance Soccer Facility, University of Maine",
       "teams": [
         {
           "school": "John Bapst Memorial",
@@ -63607,18 +63560,20 @@
         {
           "school": "Washington Academy",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         },
         {
           "school": "Lee Academy",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         }
       ],
       "home": "Washington Academy",
-      "away": "Lee Academy"
+      "away": "Lee Academy",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "game_id": "58237",
@@ -64410,18 +64365,20 @@
         {
           "school": "Central",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Tied",
+          "score": 0
         },
         {
           "school": "Washington Academy",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Tied",
+          "score": 0
         }
       ],
       "home": "Central",
-      "away": "Washington Academy"
+      "away": "Washington Academy",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "game_id": "59374",
@@ -65299,7 +65256,7 @@
       "level": "Varsity",
       "type": "League",
       "status": "Normal",
-      "site": "UMaine Orono",
+      "site": "New Balance Soccer Facility, University of Maine",
       "teams": [
         {
           "school": "John Bapst Memorial",
@@ -69885,18 +69842,20 @@
         {
           "school": "Cheverus",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         },
         {
           "school": "Biddeford",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Cheverus",
-      "away": "Biddeford"
+      "away": "Biddeford",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "game_id": "37656",
