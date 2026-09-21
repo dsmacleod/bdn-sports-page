@@ -1,0 +1,112 @@
+# Maine High School Sports — Bangor Daily News
+
+> Scores, schedules, and the latest sports stories for Maine high school
+> athletics. The rendered page (index.html) is a client-side React app with
+> no server-rendered HTML — an agent that only reads HTML will see an empty
+> `<div id="root">`. Everything the page shows is built from the plain JSON
+> files linked below; fetch those directly instead of trying to scrape the
+> rendered page.
+
+All paths are relative to this page's own directory (this file lives at
+`bangordailynews.com/maine-sports/llms.txt`; the JSON files are siblings of
+it, e.g. `bangordailynews.com/maine-sports/data/schedules.json`).
+
+Data refreshes twice daily (~7 a.m. and ~9 p.m. US/Eastern). Every file
+carries its own `last_updated` (ISO 8601, UTC) — check that before assuming
+freshness rather than caching indefinitely.
+
+## Data
+
+- [data/schedules.json](data/schedules.json): The primary schedule/results
+  file — every Maine high school game this season, one entry per event.
+  `{last_updated, season, games: [...]}`. `season` is one of "fall" /
+  "winter" / "spring". Each game:
+  ```json
+  {
+    "game_id": "59974",
+    "date": "2026-09-14",
+    "time": "4:00 PM",
+    "type": "League",
+    "status": "Normal",
+    "level": "Varsity",
+    "home": "Central",
+    "away": "Stearns Sr.",
+    "site": "Central HS",
+    "sport": "Field Hockey",
+    "gender": "Girls",
+    "home_score": 1,
+    "away_score": 12
+  }
+  ```
+  Notes:
+  - `status` is one of "Normal" / "Postponed" / "Canceled". `time` is a
+    display string ("4:00 PM") and is literally "Postponed" when
+    `status == "Postponed"` — don't parse it as a clock time without
+    checking `status` first.
+  - `home_score`/`away_score` are only present once the game is final. A
+    game with a past `date` but no score fields is not necessarily
+    unplayed — it may be a multi-team event (see below) that doesn't
+    resolve to a single winner/loser pair.
+  - A "game" isn't always a two-team dual match. Cross country meets, golf
+    invitationals, and similar events can field many schools at once; for
+    those, `home` is whichever school (if any) hosted, and `away` is every
+    other participant as one comma-separated string — not a real list. If
+    you need the actual per-school breakdown for a multi-team event, use
+    `data/mpa_games.json` instead (same events, `teams` kept as a real
+    array rather than flattened into home/away).
+  - `gender` is "Boys" / "Girls" / "Coed", or "" if genuinely unknown (rare
+    — most sports have a resolved gender even when the source feed's own
+    label omits it for a single-gender sport).
+
+- [data/mpa_games.json](data/mpa_games.json): The same underlying events as
+  schedules.json, unflattened. `{last_updated, games: [...]}`. Each game has
+  the same top-level fields as above (minus `home`/`away`/`home_score`/
+  `away_score`) plus:
+  ```json
+  {
+    "teams": [
+      {"school": "Edward Little", "home_away": "Home", "result": "", "score": null},
+      {"school": "Oxford Hills", "home_away": "Away", "result": "", "score": null}
+    ]
+  }
+  ```
+  `result` is "Win" / "Loss" / "Tied" once final, else "". `score` is an
+  integer once final, else `null`. Use this file, not schedules.json, when
+  you need every participant in a multi-school event rather than a
+  home/away pair.
+
+- [data/featured.json](data/featured.json): Latest articles published in
+  BDN's Sports section (not just Maine high school sports — the whole
+  section). `{last_updated, articles: [...]}`. Each article:
+  ```json
+  {
+    "title": "Boston Bruins, UMaine hockey alums to square off in Robbins Lumber benefit Saturday",
+    "url": "https://www.bangordailynews.com/2026/09/18/sports/college-ice-hockey/boston-bruins-umaine-hockey-alums-charity-game-robbins-lumber/",
+    "byline": "Larry Mahoney",
+    "image": "https://i0.wp.com/bdn-data.s3.amazonaws.com/uploads/2026/09/UMaine-Hockey-Student-Fans-LCO.jpg?fit=1024%2C595&ssl=1",
+    "pub_date": "Fri, 18 Sep 2026 20:36:10 +0000"
+  }
+  ```
+  `pub_date` is RFC 2822 (as delivered by the source RSS feed), newest
+  article first. `image` may be an empty string if the story has no lead
+  image; `byline` may be empty for wire/unbylined content.
+
+## Not available here
+
+- **Standings, classification/division groupings, and tournament
+  brackets/seeding** are not in this dataset — this page links out to
+  <https://www.mpa.cc/> (the Maine Principals' Association's own site) for
+  that rather than re-hosting it. If you need a team's official rank,
+  record-with-index, or bracket position, fetch it from mpa.cc directly;
+  it isn't derivable from the files above.
+- **Individual athlete results** (times, marks, places) aren't tracked here.
+- There is no query/filter API — every file above is the *complete* current
+  dataset for its scope, unfiltered. Filter client-side after fetching.
+
+## Source
+
+Repository: <https://github.com/dsmacleod/bdn-sports-page> — `scraper/`
+holds the two feed parsers (`mpa_feed.py` for the official MPA game sync
+feed, `featured.py` for BDN's Sports RSS feed) that produce the JSON above;
+read those for the authoritative field-by-field parsing logic if this
+document and the actual data ever disagree.

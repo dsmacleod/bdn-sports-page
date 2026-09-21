@@ -7,7 +7,10 @@ JSON files a scraper writes.
 
 **Live page:** `index.html` (a single-page React app, loaded straight from
 CDN scripts — no build step) reads the JSON files in `data/` and renders
-everything client-side.
+everything client-side. Because it's client-rendered, an agent/crawler that
+only reads the served HTML sees an empty `<div id="root">` — **[llms.txt](llms.txt)**
+documents the underlying `data/*.json` files directly (schema, examples, what's
+deliberately not included) for anything that wants the data without a browser.
 
 ## Design: two official feeds, no site-scraping
 
