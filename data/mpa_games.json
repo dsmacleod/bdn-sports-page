@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-24T07:28:27.124191+00:00",
+  "last_updated": "2026-09-24T15:58:57.833063+00:00",
   "games": [
     {
       "game_id": "35680",
@@ -7237,18 +7237,20 @@
         {
           "school": "Biddeford",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 1
         },
         {
           "school": "Thornton Academy",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Biddeford",
-      "away": "Thornton Academy"
+      "away": "Thornton Academy",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "game_id": "53383",
@@ -10621,7 +10623,7 @@
     {
       "game_id": "39933",
       "date": "2026-09-30",
-      "time": "4:00 PM",
+      "time": "3:30 PM",
       "sport": "Field Hockey",
       "gender": "",
       "level": "Varsity",
@@ -34411,18 +34413,20 @@
         {
           "school": "Windham",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 2
         },
         {
           "school": "Portland",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         }
       ],
       "home": "Windham",
-      "away": "Portland"
+      "away": "Portland",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "game_id": "35892",
@@ -38040,7 +38044,7 @@
     {
       "game_id": "37344",
       "date": "2026-10-03",
-      "time": "11:00 AM",
+      "time": "1:00 PM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
@@ -38291,7 +38295,7 @@
     {
       "game_id": "37371",
       "date": "2026-10-03",
-      "time": "11:00 AM",
+      "time": "12:00 PM",
       "sport": "Soccer",
       "gender": "Boys",
       "level": "Varsity",
@@ -38825,14 +38829,14 @@
     },
     {
       "game_id": "37261",
-      "date": "2026-09-26",
-      "time": "1:00 PM",
+      "date": "2026-09-25",
+      "time": "3:30 PM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
       "type": "League",
       "status": "Normal",
-      "site": "TBA",
+      "site": "Shuman Field",
       "teams": [
         {
           "school": "Winthrop",
@@ -40523,18 +40527,20 @@
         {
           "school": "Cheverus",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         },
         {
           "school": "Thornton Academy",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         }
       ],
       "home": "Cheverus",
-      "away": "Thornton Academy"
+      "away": "Thornton Academy",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "game_id": "37632",
@@ -40620,33 +40626,6 @@
       "away": "Deering",
       "home_score": 1,
       "away_score": 0
-    },
-    {
-      "game_id": "37640",
-      "date": "2026-09-22",
-      "time": "4:00 PM",
-      "sport": "Soccer",
-      "gender": "Girls",
-      "level": "Varsity",
-      "type": "League",
-      "status": "Normal",
-      "site": "Cheverus High School",
-      "teams": [
-        {
-          "school": "Cheverus",
-          "home_away": "Home",
-          "result": "",
-          "score": null
-        },
-        {
-          "school": "Marshwood",
-          "home_away": "Away",
-          "result": "",
-          "score": null
-        }
-      ],
-      "home": "Cheverus",
-      "away": "Marshwood"
     },
     {
       "game_id": "37642",
@@ -43882,7 +43861,7 @@
     {
       "game_id": "38561",
       "date": "2026-09-29",
-      "time": "6:00 PM",
+      "time": "4:30 PM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
@@ -55149,7 +55128,7 @@
     {
       "game_id": "40703",
       "date": "2026-09-26",
-      "time": "1:30 PM",
+      "time": "1:00 PM",
       "sport": "Soccer",
       "gender": "Boys",
       "level": "Varsity",
@@ -60402,7 +60381,7 @@
     {
       "game_id": "43113",
       "date": "2026-10-06",
-      "time": "6:15 PM",
+      "time": "4:30 PM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
@@ -62698,18 +62677,20 @@
         {
           "school": "Houlton HS",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         },
         {
           "school": "Ashland District",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Houlton HS",
-      "away": "Ashland District"
+      "away": "Ashland District",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "game_id": "52684",
@@ -68986,7 +68967,7 @@
     {
       "game_id": "57679",
       "date": "2026-09-26",
-      "time": "11:00 AM",
+      "time": "10:00 AM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
@@ -69377,8 +69358,8 @@
     },
     {
       "game_id": "58241",
-      "date": "2026-09-24",
-      "time": "4:00 PM",
+      "date": "2026-09-23",
+      "time": "6:00 PM",
       "sport": "Soccer",
       "gender": "Boys",
       "level": "Varsity",
@@ -69389,18 +69370,20 @@
         {
           "school": "Houlton HS",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Tied",
+          "score": 1
         },
         {
           "school": "Lee Academy",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Tied",
+          "score": 1
         }
       ],
       "home": "Houlton HS",
-      "away": "Lee Academy"
+      "away": "Lee Academy",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "game_id": "58249",
@@ -70654,18 +70637,20 @@
         {
           "school": "Washington Academy",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "George Stevens Academy",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 1
         }
       ],
       "home": "Washington Academy",
-      "away": "George Stevens Academy"
+      "away": "George Stevens Academy",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "game_id": "61431",
@@ -70774,6 +70759,33 @@
       ],
       "home": "East Grand",
       "away": "Lee Academy"
+    },
+    {
+      "game_id": "61787",
+      "date": "2026-10-01",
+      "time": "3:30 PM",
+      "sport": "Soccer",
+      "gender": "Girls",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "CARA FIELDS",
+      "teams": [
+        {
+          "school": "Temple Academy",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Madison High School",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Temple Academy",
+      "away": "Madison High School"
     },
     {
       "game_id": "59238",
@@ -71509,18 +71521,20 @@
         {
           "school": "Old Town",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Tied",
+          "score": 2
         },
         {
           "school": "Washington Academy",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Tied",
+          "score": 2
         }
       ],
       "home": "Old Town",
-      "away": "Washington Academy"
+      "away": "Washington Academy",
+      "home_score": 2,
+      "away_score": 2
     },
     {
       "game_id": "58620",
@@ -77093,7 +77107,7 @@
     {
       "game_id": "38109",
       "date": "2026-09-24",
-      "time": "5:30 PM",
+      "time": "5:00 PM",
       "sport": "Volleyball",
       "gender": "Girls",
       "level": "Varsity",
