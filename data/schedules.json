@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-25T07:28:50.580753+00:00",
+  "last_updated": "2026-09-25T15:59:33.429781+00:00",
   "season": "fall",
   "games": [
     {
@@ -2508,7 +2508,9 @@
       "away": "Erskine Academy",
       "site": "Taglienti Field - Spruce Mountain High School",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 5,
+      "away_score": 1
     },
     {
       "game_id": "57849",
@@ -4019,7 +4021,7 @@
     {
       "game_id": "40782",
       "date": "2026-09-29",
-      "time": "4:45 PM",
+      "time": "4:00 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
@@ -4658,7 +4660,7 @@
       "level": "Varsity",
       "home": "Leavitt Area",
       "away": "Skowhegan Area",
-      "site": "Leavitt Area High School",
+      "site": "Lewiston HS Field - Leavitt Area High School",
       "sport": "Field Hockey",
       "gender": "Girls"
     },
@@ -4921,7 +4923,9 @@
       "away": "Waynflete",
       "site": "Emery Field",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 5
     },
     {
       "game_id": "39087",
@@ -7483,7 +7487,7 @@
     {
       "game_id": "36057",
       "date": "2026-09-25",
-      "time": "4:00 PM",
+      "time": "4:30 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
@@ -7663,7 +7667,9 @@
       "away": "Windham",
       "site": "Marshwood High School Field Hockey Field",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "game_id": "36012",
@@ -8135,13 +8141,13 @@
     {
       "game_id": "36276",
       "date": "2026-09-26",
-      "time": "7:00 PM",
+      "time": "12:00 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
       "home": "Leavitt Area",
       "away": "Wells",
-      "site": "Leavitt",
+      "site": "Lewiston HS - Leavitt",
       "sport": "Football",
       "gender": "Boys"
     },
@@ -11052,6 +11058,45 @@
       "home": "Mattanawcook Academy",
       "away": "",
       "site": "JATO, Lincoln",
+      "sport": "Golf",
+      "gender": "Coed"
+    },
+    {
+      "game_id": "61843",
+      "date": "2026-09-28",
+      "time": "3:00 PM",
+      "type": "League",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Leavitt Area",
+      "away": "",
+      "site": "Turner Highlands",
+      "sport": "Golf",
+      "gender": "Coed"
+    },
+    {
+      "game_id": "61844",
+      "date": "2026-09-28",
+      "time": "3:00 PM",
+      "type": "League",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Leavitt Area",
+      "away": "",
+      "site": "Turner Highlands",
+      "sport": "Golf",
+      "gender": "Coed"
+    },
+    {
+      "game_id": "61861",
+      "date": "2026-09-29",
+      "time": "3:30 PM",
+      "type": "League",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Edward Little",
+      "away": "Mt. Ararat",
+      "site": "Fox Ridge Golf Course, Auburn",
       "sport": "Golf",
       "gender": "Coed"
     },
@@ -15517,7 +15562,9 @@
       "away": "Brewer",
       "site": "Bangor Municipal Golf Course",
       "sport": "Golf",
-      "gender": "Coed"
+      "gender": "Coed",
+      "home_score": 165,
+      "away_score": 176
     },
     {
       "game_id": "38903",
@@ -15830,7 +15877,7 @@
     },
     {
       "game_id": "37453",
-      "date": "2026-09-03",
+      "date": "2026-09-02",
       "time": "3:30 PM",
       "type": "League",
       "status": "Normal",
@@ -25335,7 +25382,9 @@
       "away": "Wisdom HS",
       "site": "Woodland High School",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 5
     },
     {
       "game_id": "40673",
@@ -25363,7 +25412,9 @@
       "away": "Wisdom HS",
       "site": "Penobscot Christian",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 8
     },
     {
       "game_id": "40677",
@@ -31763,7 +31814,9 @@
       "away": "Edward Little",
       "site": "Cameron Stadium, Bangor",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 0,
+      "away_score": 7
     },
     {
       "game_id": "53272",
@@ -32472,7 +32525,7 @@
     {
       "game_id": "53576",
       "date": "2026-10-03",
-      "time": "11:00 AM",
+      "time": "1:00 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
@@ -32794,7 +32847,9 @@
       "away": "Noble",
       "site": "Marshwood High School",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "game_id": "53882",
@@ -34893,19 +34948,6 @@
       "away_score": 0
     },
     {
-      "game_id": "58302",
-      "date": "2026-09-24",
-      "time": "",
-      "type": "League",
-      "status": "Normal",
-      "level": "Varsity",
-      "home": "Islesboro Central",
-      "away": "Rangeley Lakes Regional",
-      "site": "TBA",
-      "sport": "Soccer",
-      "gender": "Boys"
-    },
-    {
       "game_id": "58304",
       "date": "2026-09-29",
       "time": "3:30 PM",
@@ -36542,7 +36584,9 @@
       "away": "Bonny Eagle",
       "site": "Marshwood High School Gym",
       "sport": "Volleyball",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "game_id": "54476",
@@ -39915,7 +39959,9 @@
       "away": "Mt. Ararat",
       "site": "Lake Region High School",
       "sport": "Volleyball",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "game_id": "35552",
