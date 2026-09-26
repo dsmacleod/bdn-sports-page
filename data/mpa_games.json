@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-26T07:23:00.683700+00:00",
+  "last_updated": "2026-09-26T15:11:39.720085+00:00",
   "games": [
     {
       "game_id": "35680",
@@ -18253,18 +18253,20 @@
         {
           "school": "South Portland",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 27
         },
         {
           "school": "Cheverus",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 20
         }
       ],
       "home": "South Portland",
-      "away": "Cheverus"
+      "away": "Cheverus",
+      "home_score": 27,
+      "away_score": 20
     },
     {
       "game_id": "35207",
@@ -23252,18 +23254,20 @@
         {
           "school": "Falmouth",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 38
         },
         {
           "school": "Biddeford",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 14
         }
       ],
       "home": "Falmouth",
-      "away": "Biddeford"
+      "away": "Biddeford",
+      "home_score": 38,
+      "away_score": 14
     },
     {
       "game_id": "43158",
@@ -23335,18 +23339,20 @@
         {
           "school": "Marshwood",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 52
         },
         {
           "school": "Noble",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 51
         }
       ],
       "home": "Marshwood",
-      "away": "Noble"
+      "away": "Noble",
+      "home_score": 52,
+      "away_score": 51
     },
     {
       "game_id": "42951",
@@ -24225,18 +24231,20 @@
         {
           "school": "Hampden Academy",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 13
         },
         {
           "school": "Maine Central Institute",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 28
         }
       ],
       "home": "Hampden Academy",
-      "away": "Maine Central Institute"
+      "away": "Maine Central Institute",
+      "home_score": 13,
+      "away_score": 28
     },
     {
       "game_id": "54206",
@@ -24422,18 +24430,20 @@
         {
           "school": "Greely",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 35
         },
         {
           "school": "Nokomis",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 7
         }
       ],
       "home": "Greely",
-      "away": "Nokomis"
+      "away": "Nokomis",
+      "home_score": 35,
+      "away_score": 7
     },
     {
       "game_id": "56022",
@@ -41333,7 +41343,7 @@
     {
       "game_id": "37339",
       "date": "2026-09-26",
-      "time": "5:00 PM",
+      "time": "1:00 PM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
@@ -41586,7 +41596,7 @@
     {
       "game_id": "37367",
       "date": "2026-09-26",
-      "time": "7:00 PM",
+      "time": "3:00 PM",
       "sport": "Soccer",
       "gender": "Boys",
       "level": "Varsity",
@@ -42248,18 +42258,20 @@
         {
           "school": "Winthrop",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 4
         },
         {
           "school": "Mt. Abram",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 3
         }
       ],
       "home": "Winthrop",
-      "away": "Mt. Abram"
+      "away": "Mt. Abram",
+      "home_score": 4,
+      "away_score": 3
     },
     {
       "game_id": "37223",
@@ -42555,18 +42567,20 @@
         {
           "school": "Winthrop",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 4
         },
         {
           "school": "Telstar Regional",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Winthrop",
-      "away": "Telstar Regional"
+      "away": "Telstar Regional",
+      "home_score": 4,
+      "away_score": 0
     },
     {
       "game_id": "37264",
@@ -50659,18 +50673,20 @@
         {
           "school": "Leavitt Area",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 5
         },
         {
           "school": "Waterville",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         }
       ],
       "home": "Leavitt Area",
-      "away": "Waterville"
+      "away": "Waterville",
+      "home_score": 5,
+      "away_score": 1
     },
     {
       "game_id": "39902",
@@ -60768,18 +60784,20 @@
         {
           "school": "Shead",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Tied",
+          "score": 0
         },
         {
           "school": "Searsport HS",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Tied",
+          "score": 0
         }
       ],
       "home": "Shead",
-      "away": "Searsport HS"
+      "away": "Searsport HS",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "game_id": "42319",
@@ -60849,18 +60867,20 @@
         {
           "school": "Shead",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Tied",
+          "score": 1
         },
         {
           "school": "East Grand",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Tied",
+          "score": 1
         }
       ],
       "home": "Shead",
-      "away": "East Grand"
+      "away": "East Grand",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "game_id": "42329",
