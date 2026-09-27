@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-27T07:54:40.053920+00:00",
+  "last_updated": "2026-09-27T15:53:04.520563+00:00",
   "games": [
     {
       "game_id": "35680",
@@ -46116,7 +46116,7 @@
     {
       "game_id": "38414",
       "date": "2026-09-29",
-      "time": "4:00 PM",
+      "time": "6:00 PM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
@@ -66984,18 +66984,20 @@
         {
           "school": "Biddeford",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Gorham",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         }
       ],
       "home": "Biddeford",
-      "away": "Gorham"
+      "away": "Gorham",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "game_id": "53068",
@@ -68212,18 +68214,20 @@
         {
           "school": "Biddeford",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Thornton Academy",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 7
         }
       ],
       "home": "Biddeford",
-      "away": "Thornton Academy"
+      "away": "Thornton Academy",
+      "home_score": 0,
+      "away_score": 7
     },
     {
       "game_id": "53290",

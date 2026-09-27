@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-27T07:54:40.053920+00:00",
+  "last_updated": "2026-09-27T15:53:04.520563+00:00",
   "season": "fall",
   "games": [
     {
@@ -21816,7 +21816,7 @@
     {
       "game_id": "38414",
       "date": "2026-09-29",
-      "time": "4:00 PM",
+      "time": "6:00 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
@@ -32336,7 +32336,9 @@
       "away": "Gorham",
       "site": "Waterhouse Field",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "game_id": "53068",
@@ -32948,7 +32950,9 @@
       "away": "Thornton Academy",
       "site": "Waterhouse Field",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 7
     },
     {
       "game_id": "53290",
