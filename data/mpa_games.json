@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-29T08:13:27.783253+00:00",
+  "last_updated": "2026-09-29T17:05:59.879606+00:00",
   "games": [
     {
       "game_id": "35680",
@@ -227,31 +227,31 @@
           "school": "South Portland",
           "home_away": "Home",
           "result": "",
-          "score": null
+          "score": 51
         },
         {
           "school": "Windham",
           "home_away": "Away",
           "result": "",
-          "score": null
+          "score": 91
         },
         {
           "school": "Cheverus",
           "home_away": "Away",
           "result": "",
-          "score": null
+          "score": 88
         },
         {
           "school": "Bonny Eagle",
           "home_away": "Away",
           "result": "",
-          "score": null
+          "score": 39
         },
         {
           "school": "Marshwood",
           "home_away": "Away",
           "result": "",
-          "score": null
+          "score": 84
         }
       ]
     },
@@ -387,31 +387,31 @@
           "school": "South Portland",
           "home_away": "Home",
           "result": "",
-          "score": null
+          "score": 53
         },
         {
           "school": "Windham",
           "home_away": "Away",
           "result": "",
-          "score": null
+          "score": 104
         },
         {
           "school": "Cheverus",
           "home_away": "Away",
           "result": "",
-          "score": null
+          "score": 35
         },
         {
           "school": "Bonny Eagle",
           "home_away": "Away",
           "result": "",
-          "score": null
+          "score": 100
         },
         {
           "school": "Marshwood",
           "home_away": "Away",
           "result": "",
-          "score": null
+          "score": 47
         }
       ]
     },
@@ -10371,7 +10371,7 @@
     {
       "game_id": "41322",
       "date": "2026-10-07",
-      "time": "4:00 PM",
+      "time": "6:00 PM",
       "sport": "Field Hockey",
       "gender": "",
       "level": "Varsity",
@@ -17773,7 +17773,7 @@
       "level": "Varsity",
       "type": "League",
       "status": "Normal",
-      "site": "Wainwright Sports Complex",
+      "site": "Westbrook High School",
       "teams": [
         {
           "school": "South Portland",
@@ -37395,12 +37395,12 @@
     {
       "game_id": "36139",
       "date": "2026-09-29",
-      "time": "6:00 PM",
+      "time": "Postponed",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
       "type": "League",
-      "status": "Normal",
+      "status": "Postponed",
       "site": "Gorham High School",
       "teams": [
         {
@@ -39311,12 +39311,12 @@
     {
       "game_id": "35265",
       "date": "2026-09-29",
-      "time": "6:15 PM",
+      "time": "Postponed",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
       "type": "League",
-      "status": "Normal",
+      "status": "Postponed",
       "site": "George Martin Memorial Field (South Portland HS)",
       "teams": [
         {
@@ -40097,12 +40097,12 @@
     {
       "game_id": "35894",
       "date": "2026-09-28",
-      "time": "6:00 PM",
+      "time": "Postponed",
       "sport": "Soccer",
       "gender": "Boys",
       "level": "Varsity",
       "type": "League",
-      "status": "Normal",
+      "status": "Postponed",
       "site": "Windham High School",
       "teams": [
         {
@@ -41281,6 +41281,33 @@
       "away_score": 0
     },
     {
+      "game_id": "36827",
+      "date": "2026-10-08",
+      "time": "5:45 PM",
+      "sport": "Soccer",
+      "gender": "Boys",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "Gray/New Gloucester",
+      "teams": [
+        {
+          "school": "Gray-New Gloucester",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Oxford Hills",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Gray-New Gloucester",
+      "away": "Oxford Hills"
+    },
+    {
       "game_id": "36829",
       "date": "2026-09-22",
       "time": "4:00 PM",
@@ -42263,7 +42290,7 @@
     },
     {
       "game_id": "37096",
-      "date": "2026-09-28",
+      "date": "2026-10-05",
       "time": "6:00 PM",
       "sport": "Soccer",
       "gender": "Boys",
@@ -47557,7 +47584,7 @@
     },
     {
       "game_id": "38882",
-      "date": "2026-09-29",
+      "date": "2026-10-09",
       "time": "3:30 PM",
       "sport": "Soccer",
       "gender": "Girls",
@@ -68674,18 +68701,20 @@
         {
           "school": "Biddeford",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 1
         },
         {
           "school": "Sanford",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Biddeford",
-      "away": "Sanford"
+      "away": "Sanford",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "game_id": "52605",
@@ -70200,33 +70229,6 @@
       "away": "Calais",
       "home_score": 1,
       "away_score": 7
-    },
-    {
-      "game_id": "53637",
-      "date": "2026-09-28",
-      "time": "4:00 PM",
-      "sport": "Soccer",
-      "gender": "Boys",
-      "level": "Varsity",
-      "type": "League",
-      "status": "Normal",
-      "site": "Mattanawcook Academy",
-      "teams": [
-        {
-          "school": "Mattanawcook Academy",
-          "home_away": "Home",
-          "result": "",
-          "score": null
-        },
-        {
-          "school": "Calais",
-          "home_away": "Away",
-          "result": "",
-          "score": null
-        }
-      ],
-      "home": "Mattanawcook Academy",
-      "away": "Calais"
     },
     {
       "game_id": "53641",
@@ -74623,7 +74625,7 @@
     {
       "game_id": "55164",
       "date": "2026-09-29",
-      "time": "3:30 PM",
+      "time": "7:30 PM",
       "sport": "Soccer",
       "gender": "Boys",
       "level": "Varsity",

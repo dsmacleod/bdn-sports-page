@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-29T08:13:27.783253+00:00",
+  "last_updated": "2026-09-29T17:05:59.879606+00:00",
   "season": "fall",
   "games": [
     {
@@ -78,7 +78,8 @@
       "away": "Windham, Cheverus, Bonny Eagle, Marshwood",
       "site": "Wainwright Flds",
       "sport": "Cross Country",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 51
     },
     {
       "game_id": "36031",
@@ -130,7 +131,8 @@
       "away": "Windham, Cheverus, Bonny Eagle, Marshwood",
       "site": "Wainwright Flds",
       "sport": "Cross Country",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 53
     },
     {
       "game_id": "36041",
@@ -4061,7 +4063,7 @@
     {
       "game_id": "41322",
       "date": "2026-10-07",
-      "time": "4:00 PM",
+      "time": "6:00 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
@@ -7795,7 +7797,7 @@
       "level": "Varsity",
       "home": "South Portland",
       "away": "Bonny Eagle",
-      "site": "Wainwright Sports Complex",
+      "site": "Westbrook High School",
       "sport": "Field Hockey",
       "gender": "Girls"
     },
@@ -17405,9 +17407,9 @@
     {
       "game_id": "36139",
       "date": "2026-09-29",
-      "time": "6:00 PM",
+      "time": "Postponed",
       "type": "League",
-      "status": "Normal",
+      "status": "Postponed",
       "level": "Varsity",
       "home": "Gorham",
       "away": "Scarborough",
@@ -18369,9 +18371,9 @@
     {
       "game_id": "35265",
       "date": "2026-09-29",
-      "time": "6:15 PM",
+      "time": "Postponed",
       "type": "League",
-      "status": "Normal",
+      "status": "Postponed",
       "level": "Varsity",
       "home": "South Portland",
       "away": "Biddeford",
@@ -18763,9 +18765,9 @@
     {
       "game_id": "35894",
       "date": "2026-09-28",
-      "time": "6:00 PM",
+      "time": "Postponed",
       "type": "League",
-      "status": "Normal",
+      "status": "Postponed",
       "level": "Varsity",
       "home": "Windham",
       "away": "Gorham",
@@ -19359,6 +19361,19 @@
       "away_score": 0
     },
     {
+      "game_id": "36827",
+      "date": "2026-10-08",
+      "time": "5:45 PM",
+      "type": "League",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Gray-New Gloucester",
+      "away": "Oxford Hills",
+      "site": "Gray/New Gloucester",
+      "sport": "Soccer",
+      "gender": "Boys"
+    },
+    {
       "game_id": "36829",
       "date": "2026-09-22",
       "time": "4:00 PM",
@@ -19851,7 +19866,7 @@
     },
     {
       "game_id": "37096",
-      "date": "2026-09-28",
+      "date": "2026-10-05",
       "time": "6:00 PM",
       "type": "League",
       "status": "Normal",
@@ -22513,7 +22528,7 @@
     },
     {
       "game_id": "38882",
-      "date": "2026-09-29",
+      "date": "2026-10-09",
       "time": "3:30 PM",
       "type": "League",
       "status": "Normal",
@@ -33142,7 +33157,9 @@
       "away": "Sanford",
       "site": "Waterhouse Field",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "game_id": "52605",
@@ -33901,19 +33918,6 @@
       "gender": "Boys",
       "home_score": 1,
       "away_score": 7
-    },
-    {
-      "game_id": "53637",
-      "date": "2026-09-28",
-      "time": "4:00 PM",
-      "type": "League",
-      "status": "Normal",
-      "level": "Varsity",
-      "home": "Mattanawcook Academy",
-      "away": "Calais",
-      "site": "Mattanawcook Academy",
-      "sport": "Soccer",
-      "gender": "Boys"
     },
     {
       "game_id": "53641",
@@ -36134,7 +36138,7 @@
     {
       "game_id": "55164",
       "date": "2026-09-29",
-      "time": "3:30 PM",
+      "time": "7:30 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
