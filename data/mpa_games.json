@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-30T08:15:10.554938+00:00",
+  "last_updated": "2026-09-30T17:04:07.468988+00:00",
   "games": [
     {
       "game_id": "35680",
@@ -15195,7 +15195,7 @@
     },
     {
       "game_id": "38325",
-      "date": "2026-09-28",
+      "date": "2026-10-08",
       "time": "Rainout",
       "sport": "Field Hockey",
       "gender": "",
@@ -18180,18 +18180,20 @@
         {
           "school": "South Portland",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Bonny Eagle",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         }
       ],
       "home": "South Portland",
-      "away": "Bonny Eagle"
+      "away": "Bonny Eagle",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "game_id": "36216",
@@ -18688,18 +18690,20 @@
         {
           "school": "Biddeford",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 4
         },
         {
           "school": "Windham",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         }
       ],
       "home": "Biddeford",
-      "away": "Windham"
+      "away": "Windham",
+      "home_score": 4,
+      "away_score": 1
     },
     {
       "game_id": "36014",
@@ -19038,7 +19042,7 @@
     {
       "game_id": "35788",
       "date": "2026-10-14",
-      "time": "5:00 PM",
+      "time": "6:00 PM",
       "sport": "Field Hockey",
       "gender": "",
       "level": "Varsity",
@@ -25931,6 +25935,33 @@
           "score": null
         }
       ]
+    },
+    {
+      "game_id": "62327",
+      "date": "2026-10-01",
+      "time": "3:00 PM",
+      "sport": "Golf",
+      "gender": "Coed",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "Camden Hills",
+      "teams": [
+        {
+          "school": "Camden Hills Regional",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Mt. Ararat",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Camden Hills Regional",
+      "away": "Mt. Ararat"
     },
     {
       "game_id": "61843",
@@ -35766,17 +35797,19 @@
           "school": "Cheverus",
           "home_away": "Home",
           "result": "",
-          "score": null
+          "score": 13
         },
         {
           "school": "Westbrook",
           "home_away": "Away",
           "result": "",
-          "score": null
+          "score": 0
         }
       ],
       "home": "Cheverus",
-      "away": "Westbrook"
+      "away": "Westbrook",
+      "home_score": 13,
+      "away_score": 0
     },
     {
       "game_id": "37451",
@@ -41933,12 +41966,12 @@
     {
       "game_id": "36836",
       "date": "2026-10-01",
-      "time": "4:00 PM",
+      "time": "Postponed",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
       "type": "League",
-      "status": "Normal",
+      "status": "Postponed",
       "site": "Wells HS - Forbes Field",
       "teams": [
         {
@@ -48260,18 +48293,20 @@
         {
           "school": "Bangor",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Tied",
+          "score": 1
         },
         {
           "school": "Hampden Academy",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Tied",
+          "score": 1
         }
       ],
       "home": "Bangor",
-      "away": "Hampden Academy"
+      "away": "Hampden Academy",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "game_id": "38928",
@@ -48542,18 +48577,20 @@
         {
           "school": "Hampden Academy",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         },
         {
           "school": "Bangor",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         }
       ],
       "home": "Hampden Academy",
-      "away": "Bangor"
+      "away": "Bangor",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "game_id": "38951",
@@ -61867,7 +61904,7 @@
     },
     {
       "game_id": "42061",
-      "date": "2026-09-29",
+      "date": "2026-10-12",
       "time": "3:30 PM",
       "sport": "Soccer",
       "gender": "Boys",
@@ -62116,8 +62153,8 @@
     },
     {
       "game_id": "42079",
-      "date": "2026-09-28",
-      "time": "6:30 PM",
+      "date": "2026-10-05",
+      "time": "3:30 PM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
@@ -66690,18 +66727,20 @@
         {
           "school": "York",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         },
         {
           "school": "Cape Elizabeth",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "York",
-      "away": "Cape Elizabeth"
+      "away": "Cape Elizabeth",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "game_id": "42953",
@@ -73105,33 +73144,6 @@
       "away_score": 3
     },
     {
-      "game_id": "53600",
-      "date": "2026-09-24",
-      "time": "4:30 PM",
-      "sport": "Soccer",
-      "gender": "Boys",
-      "level": "Varsity",
-      "type": "League",
-      "status": "Normal",
-      "site": "Penobscot Christian",
-      "teams": [
-        {
-          "school": "Penobscot Christian",
-          "home_away": "Home",
-          "result": "",
-          "score": null
-        },
-        {
-          "school": "Hodgdon HS",
-          "home_away": "Away",
-          "result": "",
-          "score": null
-        }
-      ],
-      "home": "Penobscot Christian",
-      "away": "Hodgdon HS"
-    },
-    {
       "game_id": "53602",
       "date": "2026-10-08",
       "time": "3:30 PM",
@@ -74872,18 +74884,20 @@
         {
           "school": "Marshwood",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         },
         {
           "school": "Bonny Eagle",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         }
       ],
       "home": "Marshwood",
-      "away": "Bonny Eagle"
+      "away": "Bonny Eagle",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "game_id": "54501",
@@ -75490,18 +75504,20 @@
         {
           "school": "Monmouth Academy",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 5
         },
         {
           "school": "Maranacook Community",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Monmouth Academy",
-      "away": "Maranacook Community"
+      "away": "Maranacook Community",
+      "home_score": 5,
+      "away_score": 0
     },
     {
       "game_id": "55168",
@@ -80448,6 +80464,33 @@
       "away": "Sumner Memorial"
     },
     {
+      "game_id": "62333",
+      "date": "2026-10-06",
+      "time": "5:30 PM",
+      "sport": "Volleyball",
+      "gender": "Girls",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "Biddeford High School",
+      "teams": [
+        {
+          "school": "Biddeford",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Bonny Eagle",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Biddeford",
+      "away": "Bonny Eagle"
+    },
+    {
       "game_id": "58736",
       "date": "2026-09-10",
       "time": "5:30 PM",
@@ -82949,18 +82992,20 @@
         {
           "school": "Biddeford",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         },
         {
           "school": "Edward Little",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         }
       ],
       "home": "Biddeford",
-      "away": "Edward Little"
+      "away": "Edward Little",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "game_id": "53235",
@@ -83878,18 +83923,20 @@
         {
           "school": "York",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 2
         },
         {
           "school": "Thornton Academy",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         }
       ],
       "home": "York",
-      "away": "Thornton Academy"
+      "away": "Thornton Academy",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "game_id": "42858",
@@ -86069,18 +86116,20 @@
         {
           "school": "Cape Elizabeth",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Falmouth",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         }
       ],
       "home": "Cape Elizabeth",
-      "away": "Falmouth"
+      "away": "Falmouth",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "game_id": "38656",

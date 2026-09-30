@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-30T08:15:10.554938+00:00",
+  "last_updated": "2026-09-30T17:04:07.468988+00:00",
   "season": "fall",
   "games": [
     {
@@ -6497,7 +6497,7 @@
     },
     {
       "game_id": "38325",
-      "date": "2026-09-28",
+      "date": "2026-10-08",
       "time": "Rainout",
       "type": "League",
       "status": "Rainout",
@@ -8009,7 +8009,9 @@
       "away": "Bonny Eagle",
       "site": "Westbrook High School",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "game_id": "36216",
@@ -8265,7 +8267,9 @@
       "away": "Windham",
       "site": "Waterhouse Field",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 4,
+      "away_score": 1
     },
     {
       "game_id": "36014",
@@ -8436,7 +8440,7 @@
     {
       "game_id": "35788",
       "date": "2026-10-14",
-      "time": "5:00 PM",
+      "time": "6:00 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
@@ -11949,6 +11953,19 @@
       "home": "KVAC",
       "away": "",
       "site": "TBA",
+      "sport": "Golf",
+      "gender": "Coed"
+    },
+    {
+      "game_id": "62327",
+      "date": "2026-10-01",
+      "time": "3:00 PM",
+      "type": "League",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Camden Hills Regional",
+      "away": "Mt. Ararat",
+      "site": "Camden Hills",
       "sport": "Golf",
       "gender": "Coed"
     },
@@ -16612,7 +16629,9 @@
       "away": "Westbrook",
       "site": "Portland Country Club",
       "sport": "Golf",
-      "gender": "Coed"
+      "gender": "Coed",
+      "home_score": 13,
+      "away_score": 0
     },
     {
       "game_id": "37451",
@@ -19709,9 +19728,9 @@
     {
       "game_id": "36836",
       "date": "2026-10-01",
-      "time": "4:00 PM",
+      "time": "Postponed",
       "type": "League",
-      "status": "Normal",
+      "status": "Postponed",
       "level": "Varsity",
       "home": "Wells",
       "away": "Monmouth Academy",
@@ -22897,7 +22916,9 @@
       "away": "Hampden Academy",
       "site": "CAMERON STADIUM",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "game_id": "38928",
@@ -23039,7 +23060,9 @@
       "away": "Bangor",
       "site": "Hampden Academy",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "game_id": "38951",
@@ -29746,7 +29769,7 @@
     },
     {
       "game_id": "42061",
-      "date": "2026-09-29",
+      "date": "2026-10-12",
       "time": "3:30 PM",
       "type": "League",
       "status": "Normal",
@@ -29869,8 +29892,8 @@
     },
     {
       "game_id": "42079",
-      "date": "2026-09-28",
-      "time": "6:30 PM",
+      "date": "2026-10-05",
+      "time": "3:30 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
@@ -32172,7 +32195,9 @@
       "away": "Cape Elizabeth",
       "site": "York High School",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "game_id": "42953",
@@ -35398,19 +35423,6 @@
       "away_score": 3
     },
     {
-      "game_id": "53600",
-      "date": "2026-09-24",
-      "time": "4:30 PM",
-      "type": "League",
-      "status": "Normal",
-      "level": "Varsity",
-      "home": "Penobscot Christian",
-      "away": "Hodgdon HS",
-      "site": "Penobscot Christian",
-      "sport": "Soccer",
-      "gender": "Boys"
-    },
-    {
       "game_id": "53602",
       "date": "2026-10-08",
       "time": "3:30 PM",
@@ -36294,7 +36306,9 @@
       "away": "Bonny Eagle",
       "site": "Marshwood High School Stadium Field",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "game_id": "54501",
@@ -36612,7 +36626,9 @@
       "away": "Maranacook Community",
       "site": "Monmouth Academy",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 5,
+      "away_score": 0
     },
     {
       "game_id": "55168",
@@ -39111,6 +39127,19 @@
       "gender": "Girls"
     },
     {
+      "game_id": "62333",
+      "date": "2026-10-06",
+      "time": "5:30 PM",
+      "type": "League",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Biddeford",
+      "away": "Bonny Eagle",
+      "site": "Biddeford High School",
+      "sport": "Volleyball",
+      "gender": "Girls"
+    },
+    {
       "game_id": "58736",
       "date": "2026-09-10",
       "time": "5:30 PM",
@@ -40377,7 +40406,9 @@
       "away": "Edward Little",
       "site": "Tiger Gym - Biddeford High School",
       "sport": "Volleyball",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "game_id": "53235",
@@ -40844,7 +40875,9 @@
       "away": "Thornton Academy",
       "site": "York High School",
       "sport": "Volleyball",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "game_id": "42858",
@@ -41957,7 +41990,9 @@
       "away": "Falmouth",
       "site": "CEHS Gym",
       "sport": "Volleyball",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "game_id": "38656",
