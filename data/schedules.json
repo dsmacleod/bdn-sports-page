@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-01T08:38:16.940924+00:00",
+  "last_updated": "2026-10-01T17:34:23.557409+00:00",
   "season": "fall",
   "games": [
     {
@@ -5153,7 +5153,9 @@
       "away": "Nokomis",
       "site": "Camden Hills Regional High School",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "game_id": "39593",
@@ -6209,14 +6211,14 @@
       "level": "Varsity",
       "home": "Waterville",
       "away": "Morse",
-      "site": "Waterville High School",
+      "site": "Colby College",
       "sport": "Field Hockey",
       "gender": "Girls"
     },
     {
       "game_id": "38637",
       "date": "2026-10-09",
-      "time": "3:30 PM",
+      "time": "4:00 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
@@ -6483,7 +6485,7 @@
     {
       "game_id": "38292",
       "date": "2026-10-09",
-      "time": "4:00 PM",
+      "time": "3:30 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
@@ -6620,7 +6622,9 @@
       "away": "Hall-Dale HS",
       "site": "Spruce",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "game_id": "38330",
@@ -6831,7 +6835,9 @@
       "away": "York",
       "site": "Gray New Gloucester High School",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "game_id": "38525",
@@ -12352,6 +12358,32 @@
       "home": "Camden Hills Regional",
       "away": "Mt. Ararat",
       "site": "Camden Hills",
+      "sport": "Golf",
+      "gender": "Coed"
+    },
+    {
+      "game_id": "62386",
+      "date": "2026-10-01",
+      "time": "3:30 PM",
+      "type": "League",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Messalonskee",
+      "away": "Oxford Hills",
+      "site": "@ Waterville CC",
+      "sport": "Golf",
+      "gender": "Coed"
+    },
+    {
+      "game_id": "62395",
+      "date": "2026-10-05",
+      "time": "3:00 PM",
+      "type": "League",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "KVAC",
+      "away": "Oxford Hills",
+      "site": "@ Samoset GC",
       "sport": "Golf",
       "gender": "Coed"
     },
@@ -25578,7 +25610,9 @@
       "away": "Skowhegan Area",
       "site": "Messalonskee",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "game_id": "39634",
@@ -27150,7 +27184,9 @@
       "away": "Scarborough",
       "site": "Marshwood High School",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "game_id": "40585",
@@ -28034,8 +28070,8 @@
     },
     {
       "game_id": "41126",
-      "date": "2026-09-29",
-      "time": "4:00 PM",
+      "date": "2026-10-12",
+      "time": "2:30 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
@@ -31507,7 +31543,7 @@
     },
     {
       "game_id": "42345",
-      "date": "2026-10-12",
+      "date": "2026-10-13",
       "time": "4:00 PM",
       "type": "League",
       "status": "Normal",
@@ -32328,8 +32364,8 @@
     },
     {
       "game_id": "42909",
-      "date": "2026-10-08",
-      "time": "3:30 PM",
+      "date": "2026-10-09",
+      "time": "2:00 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
@@ -41613,7 +41649,7 @@
     },
     {
       "game_id": "43142",
-      "date": "2026-10-02",
+      "date": "2026-10-01",
       "time": "7:00 PM",
       "type": "League",
       "status": "Normal",
@@ -43009,9 +43045,9 @@
     {
       "game_id": "38707",
       "date": "2026-10-01",
-      "time": "5:30 PM",
+      "time": "Postponed",
       "type": "League",
-      "status": "Normal",
+      "status": "Postponed",
       "level": "Varsity",
       "home": "Orono",
       "away": "Gray-New Gloucester",

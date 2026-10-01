@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-01T08:38:16.940924+00:00",
+  "last_updated": "2026-10-01T17:34:23.557409+00:00",
   "games": [
     {
       "game_id": "35680",
@@ -12532,18 +12532,20 @@
         {
           "school": "Camden Hills Regional",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         },
         {
           "school": "Nokomis",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         }
       ],
       "home": "Camden Hills Regional",
-      "away": "Nokomis"
+      "away": "Nokomis",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "game_id": "39593",
@@ -14621,7 +14623,7 @@
       "level": "Varsity",
       "type": "League",
       "status": "Normal",
-      "site": "Waterville High School",
+      "site": "Colby College",
       "teams": [
         {
           "school": "Waterville",
@@ -14642,7 +14644,7 @@
     {
       "game_id": "38637",
       "date": "2026-10-09",
-      "time": "3:30 PM",
+      "time": "4:00 PM",
       "sport": "Field Hockey",
       "gender": "",
       "level": "Varsity",
@@ -15175,7 +15177,7 @@
     {
       "game_id": "38292",
       "date": "2026-10-09",
-      "time": "4:00 PM",
+      "time": "3:30 PM",
       "sport": "Field Hockey",
       "gender": "",
       "level": "Varsity",
@@ -15441,18 +15443,20 @@
         {
           "school": "Spruce Mountain",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         },
         {
           "school": "Hall-Dale HS",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Spruce Mountain",
-      "away": "Hall-Dale HS"
+      "away": "Hall-Dale HS",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "game_id": "38330",
@@ -15862,18 +15866,20 @@
         {
           "school": "Gray-New Gloucester",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         },
         {
           "school": "York",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         }
       ],
       "home": "Gray-New Gloucester",
-      "away": "York"
+      "away": "York",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "game_id": "38525",
@@ -26736,6 +26742,60 @@
       ],
       "home": "Camden Hills Regional",
       "away": "Mt. Ararat"
+    },
+    {
+      "game_id": "62386",
+      "date": "2026-10-01",
+      "time": "3:30 PM",
+      "sport": "Golf",
+      "gender": "Coed",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "@ Waterville CC",
+      "teams": [
+        {
+          "school": "Messalonskee",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Oxford Hills",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Messalonskee",
+      "away": "Oxford Hills"
+    },
+    {
+      "game_id": "62395",
+      "date": "2026-10-05",
+      "time": "3:00 PM",
+      "sport": "Golf",
+      "gender": "Coed",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "@ Samoset GC",
+      "teams": [
+        {
+          "school": "KVAC",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Oxford Hills",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "KVAC",
+      "away": "Oxford Hills"
     },
     {
       "game_id": "58345",
@@ -53567,18 +53627,20 @@
         {
           "school": "Messalonskee",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         },
         {
           "school": "Skowhegan Area",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         }
       ],
       "home": "Messalonskee",
-      "away": "Skowhegan Area"
+      "away": "Skowhegan Area",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "game_id": "39634",
@@ -56692,18 +56754,20 @@
         {
           "school": "Marshwood",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Tied",
+          "score": 0
         },
         {
           "school": "Scarborough",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Tied",
+          "score": 0
         }
       ],
       "home": "Marshwood",
-      "away": "Scarborough"
+      "away": "Scarborough",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "game_id": "40585",
@@ -58455,8 +58519,8 @@
     },
     {
       "game_id": "41126",
-      "date": "2026-09-29",
-      "time": "4:00 PM",
+      "date": "2026-10-12",
+      "time": "2:30 PM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
@@ -65358,7 +65422,7 @@
     },
     {
       "game_id": "42345",
-      "date": "2026-10-12",
+      "date": "2026-10-13",
       "time": "4:00 PM",
       "sport": "Soccer",
       "gender": "Girls",
@@ -67005,8 +67069,8 @@
     },
     {
       "game_id": "42909",
-      "date": "2026-10-08",
-      "time": "3:30 PM",
+      "date": "2026-10-09",
+      "time": "2:00 PM",
       "sport": "Soccer",
       "gender": "Boys",
       "level": "Varsity",
@@ -85408,7 +85472,7 @@
     },
     {
       "game_id": "43142",
-      "date": "2026-10-02",
+      "date": "2026-10-01",
       "time": "7:00 PM",
       "sport": "Volleyball",
       "gender": "Girls",
@@ -88162,12 +88226,12 @@
     {
       "game_id": "38707",
       "date": "2026-10-01",
-      "time": "5:30 PM",
+      "time": "Postponed",
       "sport": "Volleyball",
       "gender": "Girls",
       "level": "Varsity",
       "type": "League",
-      "status": "Normal",
+      "status": "Postponed",
       "site": "Orono High School",
       "teams": [
         {
