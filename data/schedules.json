@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-02T08:15:34.762418+00:00",
+  "last_updated": "2026-10-02T16:53:27.954952+00:00",
   "season": "fall",
   "games": [
     {
@@ -3025,21 +3025,6 @@
       "away_score": 0
     },
     {
-      "game_id": "61352",
-      "date": "2026-09-22",
-      "time": "4:00 PM",
-      "type": "League",
-      "status": "Normal",
-      "level": "Varsity",
-      "home": "Lawrence",
-      "away": "Belfast Area",
-      "site": "Lawrence High School",
-      "sport": "Field Hockey",
-      "gender": "Girls",
-      "home_score": 0,
-      "away_score": 5
-    },
-    {
       "game_id": "60635",
       "date": "2026-09-14",
       "time": "4:00 PM",
@@ -3055,6 +3040,21 @@
       "away_score": 7
     },
     {
+      "game_id": "61352",
+      "date": "2026-09-22",
+      "time": "4:00 PM",
+      "type": "League",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Lawrence",
+      "away": "Belfast Area",
+      "site": "Lawrence High School",
+      "sport": "Field Hockey",
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 5
+    },
+    {
       "game_id": "60372",
       "date": "2026-10-10",
       "time": "10:00 AM",
@@ -3066,6 +3066,21 @@
       "site": "Point Lookout",
       "sport": "Field Hockey",
       "gender": "Girls"
+    },
+    {
+      "game_id": "62505",
+      "date": "2026-09-03",
+      "time": "6:30 PM",
+      "type": "League",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Windham",
+      "away": "Gorham",
+      "site": "Windham High School",
+      "sport": "Field Hockey",
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "game_id": "53150",
@@ -5693,7 +5708,9 @@
       "away": "Brewer",
       "site": "At Gouin Field",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 6
     },
     {
       "game_id": "38976",
@@ -8666,7 +8683,9 @@
       "away": "Massabesic",
       "site": "Windham High School",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 8,
+      "away_score": 0
     },
     {
       "game_id": "36016",
@@ -10192,7 +10211,9 @@
       "away": "Sacopee Valley",
       "site": "Shapleigh Field",
       "sport": "Football",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 34,
+      "away_score": 44
     },
     {
       "game_id": "38895",
@@ -14004,32 +14025,6 @@
       "gender": "Coed"
     },
     {
-      "game_id": "62386",
-      "date": "2026-10-01",
-      "time": "3:30 PM",
-      "type": "League",
-      "status": "Normal",
-      "level": "Varsity",
-      "home": "Messalonskee",
-      "away": "Oxford Hills",
-      "site": "@ Waterville CC",
-      "sport": "Golf",
-      "gender": "Coed"
-    },
-    {
-      "game_id": "62395",
-      "date": "2026-10-05",
-      "time": "3:00 PM",
-      "type": "League",
-      "status": "Normal",
-      "level": "Varsity",
-      "home": "KVAC",
-      "away": "Oxford Hills",
-      "site": "@ Samoset GC",
-      "sport": "Golf",
-      "gender": "Coed"
-    },
-    {
       "game_id": "61843",
       "date": "2026-09-28",
       "time": "3:00 PM",
@@ -14052,6 +14047,32 @@
       "home": "Edward Little",
       "away": "Mt. Ararat",
       "site": "Fox Ridge Golf Course, Auburn",
+      "sport": "Golf",
+      "gender": "Coed"
+    },
+    {
+      "game_id": "62386",
+      "date": "2026-10-01",
+      "time": "3:30 PM",
+      "type": "League",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Messalonskee",
+      "away": "Oxford Hills",
+      "site": "@ Waterville CC",
+      "sport": "Golf",
+      "gender": "Coed"
+    },
+    {
+      "game_id": "62395",
+      "date": "2026-10-05",
+      "time": "3:00 PM",
+      "type": "League",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "KVAC",
+      "away": "Oxford Hills",
+      "site": "@ Samoset GC",
       "sport": "Golf",
       "gender": "Coed"
     },
@@ -18649,7 +18670,9 @@
       "away": "Kennebunk",
       "site": "Marshwood High School",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "game_id": "35694",
@@ -19357,7 +19380,9 @@
       "away": "South Portland",
       "site": "Windham High School",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "game_id": "35269",
@@ -19626,7 +19651,9 @@
       "away": "Windham",
       "site": "Massabesic HS",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "game_id": "35898",
@@ -21033,8 +21060,8 @@
       "site": "Winslow HS",
       "sport": "Soccer",
       "gender": "Girls",
-      "home_score": 6,
-      "away_score": 1
+      "home_score": 5,
+      "away_score": 0
     },
     {
       "game_id": "37036",
@@ -23627,7 +23654,7 @@
     {
       "game_id": "38324",
       "date": "2026-10-10",
-      "time": "12:00 PM",
+      "time": "6:00 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
@@ -24252,7 +24279,9 @@
       "away": "Mt. Blue",
       "site": "CAMERON STADIUM",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "game_id": "38953",
@@ -24439,7 +24468,9 @@
       "away": "Yarmouth",
       "site": "Haley Field",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 4
     },
     {
       "game_id": "39032",
@@ -26778,7 +26809,9 @@
       "away": "Mount Desert Island",
       "site": "New Balance Soccer Facility, University of Maine",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 7,
+      "away_score": 0
     },
     {
       "game_id": "40285",
@@ -27892,7 +27925,9 @@
       "away": "Poland Regional",
       "site": "Sacopee Valley",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "game_id": "41034",
@@ -30769,7 +30804,9 @@
       "away": "Cony HS",
       "site": "Hall-Dale HS",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 6,
+      "away_score": 1
     },
     {
       "game_id": "42068",
@@ -36262,21 +36299,6 @@
       "away_score": 1
     },
     {
-      "game_id": "61431",
-      "date": "2026-09-23",
-      "time": "4:00 PM",
-      "type": "League",
-      "status": "Normal",
-      "level": "Varsity",
-      "home": "Washington Academy",
-      "away": "George Stevens Academy",
-      "site": "Washington Academy",
-      "sport": "Soccer",
-      "gender": "Girls",
-      "home_score": 0,
-      "away_score": 1
-    },
-    {
       "game_id": "61569",
       "date": "2026-10-06",
       "time": "3:00 PM",
@@ -36348,21 +36370,6 @@
       "away_score": 2
     },
     {
-      "game_id": "60457",
-      "date": "2026-09-10",
-      "time": "4:00 PM",
-      "type": "League",
-      "status": "Normal",
-      "level": "Varsity",
-      "home": "Dexter Regional",
-      "away": "Bucksport",
-      "site": "Dexter Regional High School",
-      "sport": "Soccer",
-      "gender": "Boys",
-      "home_score": 2,
-      "away_score": 3
-    },
-    {
       "game_id": "60688",
       "date": "2026-09-15",
       "time": "5:30 PM",
@@ -36432,6 +36439,21 @@
       "site": "Fryeburg Academy",
       "sport": "Soccer",
       "gender": "Boys"
+    },
+    {
+      "game_id": "60457",
+      "date": "2026-09-10",
+      "time": "4:00 PM",
+      "type": "League",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Dexter Regional",
+      "away": "Bucksport",
+      "site": "Dexter Regional High School",
+      "sport": "Soccer",
+      "gender": "Boys",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "game_id": "62307",
@@ -41792,7 +41814,9 @@
       "away": "Thornton Academy",
       "site": "Marshwood High School Gym",
       "sport": "Volleyball",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "game_id": "54321",

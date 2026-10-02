@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-02T08:15:34.762418+00:00",
+  "last_updated": "2026-10-02T16:53:27.954952+00:00",
   "games": [
     {
       "game_id": "35680",
@@ -8301,35 +8301,6 @@
       "away_score": 0
     },
     {
-      "game_id": "61352",
-      "date": "2026-09-22",
-      "time": "4:00 PM",
-      "sport": "Field Hockey",
-      "gender": "",
-      "level": "Varsity",
-      "type": "League",
-      "status": "Normal",
-      "site": "Lawrence High School",
-      "teams": [
-        {
-          "school": "Lawrence",
-          "home_away": "Home",
-          "result": "Loss",
-          "score": 0
-        },
-        {
-          "school": "Belfast Area",
-          "home_away": "Away",
-          "result": "Win",
-          "score": 5
-        }
-      ],
-      "home": "Lawrence",
-      "away": "Belfast Area",
-      "home_score": 0,
-      "away_score": 5
-    },
-    {
       "game_id": "60635",
       "date": "2026-09-14",
       "time": "4:00 PM",
@@ -8359,6 +8330,35 @@
       "away_score": 7
     },
     {
+      "game_id": "61352",
+      "date": "2026-09-22",
+      "time": "4:00 PM",
+      "sport": "Field Hockey",
+      "gender": "",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "Lawrence High School",
+      "teams": [
+        {
+          "school": "Lawrence",
+          "home_away": "Home",
+          "result": "Loss",
+          "score": 0
+        },
+        {
+          "school": "Belfast Area",
+          "home_away": "Away",
+          "result": "Win",
+          "score": 5
+        }
+      ],
+      "home": "Lawrence",
+      "away": "Belfast Area",
+      "home_score": 0,
+      "away_score": 5
+    },
+    {
       "game_id": "60372",
       "date": "2026-10-10",
       "time": "10:00 AM",
@@ -8384,6 +8384,35 @@
       ],
       "home": "Belfast Area",
       "away": "Nokomis"
+    },
+    {
+      "game_id": "62505",
+      "date": "2026-09-03",
+      "time": "6:30 PM",
+      "sport": "Field Hockey",
+      "gender": "",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "Windham High School",
+      "teams": [
+        {
+          "school": "Windham",
+          "home_away": "Home",
+          "result": "Loss",
+          "score": 1
+        },
+        {
+          "school": "Gorham",
+          "home_away": "Away",
+          "result": "Win",
+          "score": 2
+        }
+      ],
+      "home": "Windham",
+      "away": "Gorham",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "game_id": "53150",
@@ -13604,18 +13633,20 @@
         {
           "school": "Oxford Hills",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         },
         {
           "school": "Brewer",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 6
         }
       ],
       "home": "Oxford Hills",
-      "away": "Brewer"
+      "away": "Brewer",
+      "home_score": 1,
+      "away_score": 6
     },
     {
       "game_id": "38976",
@@ -19475,18 +19506,20 @@
         {
           "school": "Windham",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 8
         },
         {
           "school": "Massabesic",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Windham",
-      "away": "Massabesic"
+      "away": "Massabesic",
+      "home_score": 8,
+      "away_score": 0
     },
     {
       "game_id": "36016",
@@ -22513,18 +22546,20 @@
         {
           "school": "Traip Academy",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 34
         },
         {
           "school": "Sacopee Valley",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 44
         }
       ],
       "home": "Traip Academy",
-      "away": "Sacopee Valley"
+      "away": "Sacopee Valley",
+      "home_score": 34,
+      "away_score": 44
     },
     {
       "game_id": "38895",
@@ -30456,6 +30491,52 @@
       "away": "Mt. Ararat"
     },
     {
+      "game_id": "61843",
+      "date": "2026-09-28",
+      "time": "3:00 PM",
+      "sport": "Golf",
+      "gender": "Coed",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "Turner Highlands",
+      "teams": [
+        {
+          "school": "Leavitt Area",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        }
+      ]
+    },
+    {
+      "game_id": "61861",
+      "date": "2026-09-29",
+      "time": "3:30 PM",
+      "sport": "Golf",
+      "gender": "Coed",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "Fox Ridge Golf Course, Auburn",
+      "teams": [
+        {
+          "school": "Edward Little",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Mt. Ararat",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Edward Little",
+      "away": "Mt. Ararat"
+    },
+    {
       "game_id": "62386",
       "date": "2026-10-01",
       "time": "3:30 PM",
@@ -30508,52 +30589,6 @@
       ],
       "home": "KVAC",
       "away": "Oxford Hills"
-    },
-    {
-      "game_id": "61843",
-      "date": "2026-09-28",
-      "time": "3:00 PM",
-      "sport": "Golf",
-      "gender": "Coed",
-      "level": "Varsity",
-      "type": "League",
-      "status": "Normal",
-      "site": "Turner Highlands",
-      "teams": [
-        {
-          "school": "Leavitt Area",
-          "home_away": "Home",
-          "result": "",
-          "score": null
-        }
-      ]
-    },
-    {
-      "game_id": "61861",
-      "date": "2026-09-29",
-      "time": "3:30 PM",
-      "sport": "Golf",
-      "gender": "Coed",
-      "level": "Varsity",
-      "type": "League",
-      "status": "Normal",
-      "site": "Fox Ridge Golf Course, Auburn",
-      "teams": [
-        {
-          "school": "Edward Little",
-          "home_away": "Home",
-          "result": "",
-          "score": null
-        },
-        {
-          "school": "Mt. Ararat",
-          "home_away": "Away",
-          "result": "",
-          "score": null
-        }
-      ],
-      "home": "Edward Little",
-      "away": "Mt. Ararat"
     },
     {
       "game_id": "60895",
@@ -39848,18 +39883,20 @@
         {
           "school": "Marshwood",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         },
         {
           "school": "Kennebunk",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         }
       ],
       "home": "Marshwood",
-      "away": "Kennebunk"
+      "away": "Kennebunk",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "game_id": "35694",
@@ -41256,18 +41293,20 @@
         {
           "school": "Windham",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Tied",
+          "score": 1
         },
         {
           "school": "South Portland",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Tied",
+          "score": 1
         }
       ],
       "home": "Windham",
-      "away": "South Portland"
+      "away": "South Portland",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "game_id": "35269",
@@ -41791,18 +41830,20 @@
         {
           "school": "Massabesic",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Windham",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         }
       ],
       "home": "Massabesic",
-      "away": "Windham"
+      "away": "Windham",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "game_id": "35898",
@@ -44570,19 +44611,19 @@
           "school": "Winslow",
           "home_away": "Home",
           "result": "Win",
-          "score": 6
+          "score": 5
         },
         {
           "school": "Central",
           "home_away": "Away",
           "result": "Loss",
-          "score": 1
+          "score": 0
         }
       ],
       "home": "Winslow",
       "away": "Central",
-      "home_score": 6,
-      "away_score": 1
+      "home_score": 5,
+      "away_score": 0
     },
     {
       "game_id": "37036",
@@ -49723,7 +49764,7 @@
     {
       "game_id": "38324",
       "date": "2026-10-10",
-      "time": "12:00 PM",
+      "time": "6:00 PM",
       "sport": "Soccer",
       "gender": "Boys",
       "level": "Varsity",
@@ -50953,18 +50994,20 @@
         {
           "school": "Mt. Blue",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Tied",
+          "score": 0
         },
         {
           "school": "Bangor",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Tied",
+          "score": 0
         }
       ],
       "home": "Bangor",
-      "away": "Mt. Blue"
+      "away": "Mt. Blue",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "game_id": "38953",
@@ -51322,18 +51365,20 @@
         {
           "school": "Traip Academy",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Yarmouth",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 4
         }
       ],
       "home": "Traip Academy",
-      "away": "Yarmouth"
+      "away": "Yarmouth",
+      "home_score": 0,
+      "away_score": 4
     },
     {
       "game_id": "39032",
@@ -55956,18 +56001,20 @@
         {
           "school": "John Bapst Memorial",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 7
         },
         {
           "school": "Mount Desert Island",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "John Bapst Memorial",
-      "away": "Mount Desert Island"
+      "away": "Mount Desert Island",
+      "home_score": 7,
+      "away_score": 0
     },
     {
       "game_id": "40285",
@@ -58162,18 +58209,20 @@
         {
           "school": "Sacopee Valley",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Poland Regional",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         }
       ],
       "home": "Sacopee Valley",
-      "away": "Poland Regional"
+      "away": "Poland Regional",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "game_id": "41034",
@@ -63853,18 +63902,20 @@
         {
           "school": "Hall-Dale HS",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 6
         },
         {
           "school": "Cony HS",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         }
       ],
       "home": "Hall-Dale HS",
-      "away": "Cony HS"
+      "away": "Cony HS",
+      "home_score": 6,
+      "away_score": 1
     },
     {
       "game_id": "42068",
@@ -74761,35 +74812,6 @@
       "away_score": 1
     },
     {
-      "game_id": "61431",
-      "date": "2026-09-23",
-      "time": "4:00 PM",
-      "sport": "Soccer",
-      "gender": "Girls",
-      "level": "Varsity",
-      "type": "League",
-      "status": "Normal",
-      "site": "Washington Academy",
-      "teams": [
-        {
-          "school": "Washington Academy",
-          "home_away": "Home",
-          "result": "Loss",
-          "score": 0
-        },
-        {
-          "school": "George Stevens Academy",
-          "home_away": "Away",
-          "result": "Win",
-          "score": 1
-        }
-      ],
-      "home": "Washington Academy",
-      "away": "George Stevens Academy",
-      "home_score": 0,
-      "away_score": 1
-    },
-    {
       "game_id": "61569",
       "date": "2026-10-06",
       "time": "3:00 PM",
@@ -74931,35 +74953,6 @@
       "away_score": 2
     },
     {
-      "game_id": "60457",
-      "date": "2026-09-10",
-      "time": "4:00 PM",
-      "sport": "Soccer",
-      "gender": "Boys",
-      "level": "Varsity",
-      "type": "League",
-      "status": "Normal",
-      "site": "Dexter Regional High School",
-      "teams": [
-        {
-          "school": "Dexter Regional",
-          "home_away": "Home",
-          "result": "Loss",
-          "score": 2
-        },
-        {
-          "school": "Bucksport",
-          "home_away": "Away",
-          "result": "Win",
-          "score": 3
-        }
-      ],
-      "home": "Dexter Regional",
-      "away": "Bucksport",
-      "home_score": 2,
-      "away_score": 3
-    },
-    {
       "game_id": "60688",
       "date": "2026-09-15",
       "time": "5:30 PM",
@@ -75099,6 +75092,35 @@
       ],
       "home": "Fryeburg Academy",
       "away": "Gray-New Gloucester"
+    },
+    {
+      "game_id": "60457",
+      "date": "2026-09-10",
+      "time": "4:00 PM",
+      "sport": "Soccer",
+      "gender": "Boys",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "Dexter Regional High School",
+      "teams": [
+        {
+          "school": "Dexter Regional",
+          "home_away": "Home",
+          "result": "Loss",
+          "score": 2
+        },
+        {
+          "school": "Bucksport",
+          "home_away": "Away",
+          "result": "Win",
+          "score": 3
+        }
+      ],
+      "home": "Dexter Regional",
+      "away": "Bucksport",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "game_id": "62307",
@@ -85702,18 +85724,20 @@
         {
           "school": "Marshwood",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Thornton Academy",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         }
       ],
       "home": "Marshwood",
-      "away": "Thornton Academy"
+      "away": "Thornton Academy",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "game_id": "54321",
