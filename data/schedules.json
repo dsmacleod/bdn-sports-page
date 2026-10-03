@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-03T07:51:46.979012+00:00",
+  "last_updated": "2026-10-03T15:17:23.906819+00:00",
   "season": "fall",
   "games": [
     {
@@ -3110,7 +3110,9 @@
       "away": "Mt. Blue",
       "site": "Hampden Academy",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 4
     },
     {
       "game_id": "54623",
@@ -4337,7 +4339,9 @@
       "away": "Winslow",
       "site": "Erskine Academy",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "game_id": "42965",
@@ -9364,7 +9368,9 @@
       "away": "South Portland",
       "site": "Alumni Stadium",
       "sport": "Football",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 0,
+      "away_score": 40
     },
     {
       "game_id": "35209",
@@ -12342,7 +12348,9 @@
       "away": "Marshwood",
       "site": "Falmouth High School",
       "sport": "Football",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 16,
+      "away_score": 42
     },
     {
       "game_id": "43169",
@@ -12701,7 +12709,9 @@
       "away": "Leavitt Area",
       "site": "Dirigo HS",
       "sport": "Football",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 0,
+      "away_score": 42
     },
     {
       "game_id": "53016",
@@ -26966,22 +26976,9 @@
       "away_score": 1
     },
     {
-      "game_id": "39796",
-      "date": "2026-09-29",
-      "time": "4:00 PM",
-      "type": "League",
-      "status": "Normal",
-      "level": "Varsity",
-      "home": "Woodland Sr.",
-      "away": "Calais",
-      "site": "Woodland Jr/Sr High school",
-      "sport": "Soccer",
-      "gender": "Girls"
-    },
-    {
       "game_id": "39798",
-      "date": "2026-10-02",
-      "time": "4:00 PM",
+      "date": "2026-10-12",
+      "time": "1:00 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
@@ -26993,7 +26990,7 @@
     },
     {
       "game_id": "39800",
-      "date": "2026-10-07",
+      "date": "2026-10-08",
       "time": "4:00 PM",
       "type": "League",
       "status": "Normal",
@@ -27806,7 +27803,7 @@
     },
     {
       "game_id": "40163",
-      "date": "2026-09-28",
+      "date": "2026-10-05",
       "time": "5:30 PM",
       "type": "League",
       "status": "Normal",
@@ -29472,7 +29469,9 @@
       "away": "Southern Aroostook",
       "site": "MSSM",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "game_id": "42018",
@@ -36169,7 +36168,9 @@
       "away": "Biddeford",
       "site": "Fitzpzatrick Stadium",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 4,
+      "away_score": 1
     },
     {
       "game_id": "43567",
@@ -40050,8 +40051,8 @@
     },
     {
       "game_id": "57585",
-      "date": "2026-09-29",
-      "time": "4:00 PM",
+      "date": "2026-10-17",
+      "time": "3:00 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",

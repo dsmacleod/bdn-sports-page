@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-03T07:51:46.979012+00:00",
+  "last_updated": "2026-10-03T15:17:23.906819+00:00",
   "games": [
     {
       "game_id": "35680",
@@ -8391,18 +8391,20 @@
         {
           "school": "Hampden Academy",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Mt. Blue",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 4
         }
       ],
       "home": "Hampden Academy",
-      "away": "Mt. Blue"
+      "away": "Mt. Blue",
+      "home_score": 0,
+      "away_score": 4
     },
     {
       "game_id": "54623",
@@ -10836,18 +10838,20 @@
         {
           "school": "Erskine Academy",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 2
         },
         {
           "school": "Winslow",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         }
       ],
       "home": "Erskine Academy",
-      "away": "Winslow"
+      "away": "Winslow",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "game_id": "42965",
@@ -20777,18 +20781,20 @@
         {
           "school": "Sanford",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "South Portland",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 40
         }
       ],
       "home": "Sanford",
-      "away": "South Portland"
+      "away": "South Portland",
+      "home_score": 0,
+      "away_score": 40
     },
     {
       "game_id": "35209",
@@ -26667,18 +26673,20 @@
         {
           "school": "Falmouth",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 16
         },
         {
           "school": "Marshwood",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 42
         }
       ],
       "home": "Falmouth",
-      "away": "Marshwood"
+      "away": "Marshwood",
+      "home_score": 16,
+      "away_score": 42
     },
     {
       "game_id": "43169",
@@ -27376,18 +27384,20 @@
         {
           "school": "Dirigo",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Leavitt Area",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 42
         }
       ],
       "home": "Dirigo",
-      "away": "Leavitt Area"
+      "away": "Leavitt Area",
+      "home_score": 0,
+      "away_score": 42
     },
     {
       "game_id": "53016",
@@ -56200,36 +56210,9 @@
       "away_score": 1
     },
     {
-      "game_id": "39796",
-      "date": "2026-09-29",
-      "time": "4:00 PM",
-      "sport": "Soccer",
-      "gender": "Girls",
-      "level": "Varsity",
-      "type": "League",
-      "status": "Normal",
-      "site": "Woodland Jr/Sr High school",
-      "teams": [
-        {
-          "school": "Woodland Sr.",
-          "home_away": "Home",
-          "result": "",
-          "score": null
-        },
-        {
-          "school": "Calais",
-          "home_away": "Away",
-          "result": "",
-          "score": null
-        }
-      ],
-      "home": "Woodland Sr.",
-      "away": "Calais"
-    },
-    {
       "game_id": "39798",
-      "date": "2026-10-02",
-      "time": "4:00 PM",
+      "date": "2026-10-12",
+      "time": "1:00 PM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
@@ -56255,7 +56238,7 @@
     },
     {
       "game_id": "39800",
-      "date": "2026-10-07",
+      "date": "2026-10-08",
       "time": "4:00 PM",
       "sport": "Soccer",
       "gender": "Girls",
@@ -57866,7 +57849,7 @@
     },
     {
       "game_id": "40163",
-      "date": "2026-09-28",
+      "date": "2026-10-05",
       "time": "5:30 PM",
       "sport": "Soccer",
       "gender": "Boys",
@@ -61158,18 +61141,20 @@
         {
           "school": "Maine School of Science and Math",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         },
         {
           "school": "Southern Aroostook",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         }
       ],
       "home": "Maine School of Science and Math",
-      "away": "Southern Aroostook"
+      "away": "Southern Aroostook",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "game_id": "42018",
@@ -74449,18 +74434,20 @@
         {
           "school": "Portland",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 4
         },
         {
           "school": "Biddeford",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         }
       ],
       "home": "Portland",
-      "away": "Biddeford"
+      "away": "Biddeford",
+      "home_score": 4,
+      "away_score": 1
     },
     {
       "game_id": "43567",
@@ -82155,8 +82142,8 @@
     },
     {
       "game_id": "57585",
-      "date": "2026-09-29",
-      "time": "4:00 PM",
+      "date": "2026-10-17",
+      "time": "3:00 PM",
       "sport": "Soccer",
       "gender": "Boys",
       "level": "Varsity",
