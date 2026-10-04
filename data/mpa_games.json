@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-04T08:14:54.590247+00:00",
+  "last_updated": "2026-10-04T16:02:05.409828+00:00",
   "games": [
     {
       "game_id": "35680",
@@ -25364,18 +25364,20 @@
         {
           "school": "Poland Regional",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 16
         },
         {
           "school": "Lisbon",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 35
         }
       ],
       "home": "Poland Regional",
-      "away": "Lisbon"
+      "away": "Lisbon",
+      "home_score": 16,
+      "away_score": 35
     },
     {
       "game_id": "40687",
@@ -47049,18 +47051,20 @@
         {
           "school": "York",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 1
         },
         {
           "school": "Lincoln Academy",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "York",
-      "away": "Lincoln Academy"
+      "away": "Lincoln Academy",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "game_id": "37346",
@@ -65751,18 +65755,20 @@
         {
           "school": "Sumner Memorial",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         },
         {
           "school": "Narraguagus Sr",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Sumner Memorial",
-      "away": "Narraguagus Sr"
+      "away": "Narraguagus Sr",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "game_id": "41440",
@@ -65890,18 +65896,20 @@
         {
           "school": "Sumner Memorial",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         },
         {
           "school": "Penquis Valley HS",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         }
       ],
       "home": "Sumner Memorial",
-      "away": "Penquis Valley HS"
+      "away": "Penquis Valley HS",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "game_id": "41022",
