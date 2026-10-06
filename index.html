@@ -7,7 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     // Matches bangordailynews.com's own computed styles (checked live:
-    // Sep 2026) since this page lives at bangordailynews.com/maine-sports —
+    // Sep 2026) since this page is embedded on bangordailynews.com —
     // green #0f5e34 (nav bar / category eyebrow labels), Open Sans for
     // everything including headlines (no separate display face), body text
     // #111111 on white. No more Oswald/approximated green.
@@ -26,7 +26,13 @@
     }
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    /* Sideways-scrolling strips (ticker, day picker, sport chips): keep
+       them swipeable but without a scrollbar chunk under each one. */
+    .ticker-scroll { scrollbar-width: none; }
+    .ticker-scroll::-webkit-scrollbar { display: none; }
+  </style>
   <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>

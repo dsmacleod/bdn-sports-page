@@ -1,7 +1,7 @@
 # bdn-sports-page
 
 A static Maine high school sports page for the Bangor Daily News: scores,
-schedules, "follow your team," and latest sports stories, updated
+schedules, "pin your school," and latest sports stories, updated
 automatically twice a day with no server to run — just a static site fed by
 JSON files a scraper writes.
 
@@ -60,15 +60,65 @@ Football, Field Hockey — and for the season tabs' `current_season()`).
 - `data/featured.json` — latest Sports-section articles, from BDN's RSS feed
   (title, url, byline, image, pub_date).
 
-## Follow Your Team
+## Pin Your School
 
-The front end lets a reader search for a school and follow it (stored in
-`localStorage`, per-browser — nothing server-side). Followed teams get a
-"Your Teams" section leading the page: each team's most recent *completed*
+The front end lets a reader search for a school and pin it (stored in
+`localStorage`, per-browser — nothing server-side, and no alerts of any kind).
+The reader-facing wording is deliberately "pin," not "follow": "follow"
+promises notifications this static page can't send. (The code still calls it
+"followed teams," and the storage key is unchanged so existing pins survive.)
+Pinned schools get a "Your Schools" section leading the page: each team's most recent *completed*
 result plus their actual next game (a game dated today that hasn't been
 played yet counts as "next," not "last" — see `YourTeams` in `app.js`).
 Standings/brackets are a link out to MPA.cc rather than pulled in here (see
 above).
+
+## Embedding it on another page
+
+It runs on BDN's scores page,
+<https://www.bangordailynews.com/maine-sports/maine-high-school-sports-scores/>,
+from GitHub Pages (`dsmacleod.github.io/bdn-sports-page/`). The files can't
+live under `bangordailynews.com/maine-sports/` itself: WordPress owns that
+path. To put it on that page (or any other), use a WordPress **Custom HTML** block:
+
+```html
+<div data-bdn-sports-embed></div>
+<script src="https://dsmacleod.github.io/bdn-sports-page/embed.js" async></script>
+```
+
+`embed.js` puts in an iframe of `index.html?embed=1` from its own directory
+and keeps the iframe as tall as its content, so the host page scrolls
+normally and there's no inner scrollbar. It's an iframe, not inlined markup,
+on purpose: the Tailwind CDN script injects global CSS that would restyle the
+whole host page. Add `data-stories="1"` to the div to keep Latest Stories,
+which embed mode drops by default because the Sports section is already the
+story list.
+
+Embed mode (`?embed=1`, and only when actually framed) also:
+- reports its height to the host via `postMessage`, and asks the host to
+  scroll for the ticker's "All N →" jump (the iframe itself never scrolls);
+- opens the game popup next to the click instead of centered in the
+  iframe, which on a tall iframe can be off-screen;
+- opens BDN story links in the same tab (`target="_top"`), not a new one.
+
+Nothing in the page may use viewport height (`100vh`, `min-h-screen`) in embed
+mode: the viewport *is* the iframe, so an auto-sized iframe would only grow.
+
+If WordPress strips the `<script>` (only roles with `unfiltered_html` can
+save one), a bare iframe works, just at a fixed height with its own
+scrollbar:
+
+```html
+<iframe src="https://dsmacleod.github.io/bdn-sports-page/index.html?embed=1"
+        style="width:100%;height:1200px;border:0" title="Maine high school sports scores"></iframe>
+```
+
+Pinned schools and the cross-site iframe: github.io is a different site from
+bangordailynews.com, so browsers treat the iframe's `localStorage` as
+third-party. Chrome and Firefox keep it (partitioned per host site, so pins
+made on the scores page stay on the scores page); Safari may clear it. Pointing
+a bangordailynews.com subdomain at GitHub Pages (a CNAME plus the repo's
+Pages custom-domain setting) would make it same-site and fix that.
 
 ## Running it
 
@@ -87,10 +137,21 @@ from writing its file.
 
 ## Automation
 
-`.github/workflows/scrape.yml` runs `python -m scraper.main` on a schedule
-(7 a.m. and 9 p.m. Eastern) and commits any changed `data/*.json` straight to
-`main`. No separate deploy step — GitHub Pages (or wherever `index.html` is
-served from) just picks up the new data on the next request.
+GitHub Actions (`.github/workflows/scrape.yml`) runs `python -m scraper.main`
+on a schedule (cron 7 a.m. and 9 p.m. Eastern; GitHub often starts scheduled
+runs hours late) and commits any changed `data/*.json` straight to `main`.
+GitHub Pages serves `main` as-is, so each data commit redeploys the page; no
+separate deploy step. "Run workflow" on the Actions tab runs it by hand.
+
+**Scores are not live.** They're only as fresh as the last run, and the page
+itself loads the data once per visit. The front end says so: it shows
+"Scores as of <time>" from the data's own `last_updated`, and a game with no
+score shows its scheduled time (or "No score reported" once its date has
+passed), never an in-progress label it can't back up.
+
+`scripts/update-data.sh` does the same refresh (scrape, commit if changed,
+push) from any machine with a clone and push access, e.g. from cron; the
+crontab line is in its header comment.
 
 ## Testing
 
@@ -103,7 +164,7 @@ the parser blind.
 ## Known gaps / next
 
 - No division/classification data at all now that standings isn't scraped —
-  "Your Teams" and the main feed are purely game-level (who played whom, what
+  "Your Schools" and the main feed are purely game-level (who played whom, what
   happened), with a link out to MPA.cc for anything classification/seeding-
   related.
 - No individual athlete results (the old MileSplit scrape depended on

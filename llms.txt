@@ -8,10 +8,11 @@
 > rendered page.
 
 All paths are relative to this page's own directory (this file lives at
-`bangordailynews.com/maine-sports/llms.txt`; the JSON files are siblings of
-it, e.g. `bangordailynews.com/maine-sports/data/schedules.json`).
+`dsmacleod.github.io/bdn-sports-page/llms.txt`; the JSON files are siblings
+of it, e.g. `dsmacleod.github.io/bdn-sports-page/data/schedules.json`).
 
-Data refreshes twice daily (~7 a.m. and ~9 p.m. US/Eastern). Every file
+Data is not live: it's refreshed on a schedule (twice daily, ~7 a.m. and
+~9 p.m. US/Eastern, when the scheduled job is running normally). Every file
 carries its own `last_updated` (ISO 8601, UTC) — check that before assuming
 freshness rather than caching indefinitely.
 

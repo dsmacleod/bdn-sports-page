@@ -3,148 +3,201 @@
    Complete React SPA
    =================================================================== */
 
-const { useState, useEffect, useMemo } = React;
+const { useState, useEffect, useMemo, useRef } = React;
+
+// ---------------------------------------------------------------------------
+// Embed mode (?embed=1): the page running inside an iframe that embed.js put
+// on another page (the BDN Sports section). The iframe is sized to fit its
+// content, so nothing here may depend on the viewport height (that *is* the
+// iframe height); this page reports its height and asks for scrolls through
+// postMessage instead. ?stories=1 keeps Latest Stories, which is otherwise
+// dropped in embed mode because the host page is already the story list.
+// ---------------------------------------------------------------------------
+
+const PARAMS = new URLSearchParams(window.location.search);
+const EMBED = PARAMS.get('embed') === '1' && window.parent !== window;
+const EMBED_STORIES = PARAMS.get('stories') === '1';
+
+function postToHost(msg) {
+  if (EMBED) window.parent.postMessage({ source: 'bdn-sports', ...msg }, '*');
+}
+
+// Scroll an element into view: in embed mode the host page has to do it,
+// since the iframe itself never scrolls.
+function scrollToElement(el) {
+  if (!el) return;
+  if (EMBED) postToHost({ type: 'scroll', top: el.getBoundingClientRect().top + window.scrollY });
+  else el.scrollIntoView({ behavior: 'smooth' });
+}
+
+// Where the reader last clicked, in document coordinates: embed mode puts
+// the game popup there, since the middle of a tall iframe may be off-screen.
+let lastPointerY = 0;
+document.addEventListener('pointerdown', e => { lastPointerY = e.pageY; }, true);
+
+// Links to bangordailynews.com stories: same tab on the embed's host page
+// (it's the same site), new tab when this page stands alone.
+const STORY_LINK_TARGET = EMBED ? { target: '_top' } : { target: '_blank', rel: 'noopener noreferrer' };
+
+function useReportHeight() {
+  useEffect(() => {
+    if (!EMBED) return;
+    let last = 0;
+    const report = () => {
+      const h = document.documentElement.scrollHeight;
+      if (h !== last) { last = h; postToHost({ type: 'height', height: h }); }
+    };
+    const ro = new ResizeObserver(report);
+    ro.observe(document.body);
+    report();
+    return () => ro.disconnect();
+  }, []);
+}
 
 // ---------------------------------------------------------------------------
 // Helpers
 // ---------------------------------------------------------------------------
 
-function getCurrentSeason() {
-  const m = new Date().getMonth() + 1; // 1-12
-  if ([12, 1, 2, 3].includes(m)) return 'winter';
-  if ([4, 5, 6].includes(m)) return 'spring';
-  return 'fall';
-}
+// AP-style month abbreviations, matching the rest of bangordailynews.com.
+const AP_MONTHS = ['Jan.', 'Feb.', 'March', 'April', 'May', 'June', 'July', 'Aug.', 'Sept.', 'Oct.', 'Nov.', 'Dec.'];
+const WEEKDAYS = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-function formatDate(dateStr) {
-  const d = new Date(dateStr + 'T00:00:00');
-  return d.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+function parseDate(dateStr) {
+  return new Date(dateStr + 'T00:00:00');
 }
 
 function todayStr() {
-  const d = new Date();
+  return toDateStr(new Date());
+}
+
+function toDateStr(d) {
   const yyyy = d.getFullYear();
   const mm = String(d.getMonth() + 1).padStart(2, '0');
   const dd = String(d.getDate()).padStart(2, '0');
   return `${yyyy}-${mm}-${dd}`;
 }
 
-/** "2h ago", "Yesterday", "3 days ago" -- day-level granularity, since the
-    feed only carries a game's calendar date, not a result-posted timestamp,
-    and the scraper itself only runs twice a day. Anything under a day old
-    (i.e. from the same refresh cycle as "now") shows hours instead. */
+function addDays(dateStr, n) {
+  const d = parseDate(dateStr);
+  d.setDate(d.getDate() + n);
+  return toDateStr(d);
+}
+
+function daysBetween(a, b) {
+  return Math.round((parseDate(b) - parseDate(a)) / 86400000);
+}
+
+/** "Sept. 19" */
+function apDate(dateStr) {
+  const d = parseDate(dateStr);
+  return `${AP_MONTHS[d.getMonth()]} ${d.getDate()}`;
+}
+
+/** "Today" / "Yesterday" / "Tomorrow" / "Saturday" (within a week) / "Sept. 3". */
+function relativeDay(dateStr, today = todayStr()) {
+  const diff = daysBetween(today, dateStr);
+  if (diff === 0) return 'Today';
+  if (diff === -1) return 'Yesterday';
+  if (diff === 1) return 'Tomorrow';
+  if (Math.abs(diff) < 7) return WEEKDAYS[parseDate(dateStr).getDay()];
+  return apDate(dateStr);
+}
+
+/** "Saturday, Sept. 19" */
+function longDate(dateStr) {
+  return `${WEEKDAYS[parseDate(dateStr).getDay()]}, ${apDate(dateStr)}`;
+}
+
+/** "5h ago", "Yesterday", "3 days ago". Takes a full timestamp. */
 function timeAgo(iso) {
-  const then = new Date(iso).getTime();
-  const diffMs = Date.now() - then;
-  const hours = Math.floor(diffMs / 3600000);
+  const hours = hoursSince(iso);
   if (hours < 1) return 'Just in';
-  if (hours < 24) return `${hours}h ago`;
+  if (hours < 24) return `${Math.floor(hours)}h ago`;
   const days = Math.floor(hours / 24);
   if (days === 1) return 'Yesterday';
   return `${days} days ago`;
 }
 
-/** Calendar-day-based freshness label for a game's own date (not a precise
-    timestamp -- the feed only carries a date, e.g. "2026-09-17"). */
-function daysAgoLabel(dateStr) {
-  const today = todayStr();
-  if (dateStr === today) return 'Today';
-  const diffDays = Math.round((new Date(today) - new Date(dateStr)) / 86400000);
-  if (diffDays === 1) return 'Yesterday';
-  if (diffDays > 1) return `${diffDays} days ago`;
-  return '';
+function hoursSince(iso) {
+  return (Date.now() - new Date(iso).getTime()) / 3600000;
 }
 
-function isPostponed(game) {
-  // The feed's own status is authoritative; fall back to the old
-  // string-match for anything upstream that didn't set status.
-  if (game.status) return game.status === 'Postponed';
-  return game.time && game.time.toLowerCase().includes('postponed');
+/** "4:00 PM" -> minutes since midnight, or null for blank/unparseable. */
+function parseTime(t) {
+  const m = /^(\d{1,2}):(\d{2})\s*(AM|PM)$/i.exec((t || '').trim());
+  if (!m) return null;
+  let h = parseInt(m[1], 10) % 12;
+  if (m[3].toUpperCase() === 'PM') h += 12;
+  return h * 60 + parseInt(m[2], 10);
 }
 
-function isCanceled(game) {
-  return game.status === 'Canceled';
+// Football and field hockey are single-gender in Maine, so "Boys Football"
+// would just be noise. Everything else reads "Girls Soccer", "Boys Soccer".
+const SINGLE_GENDER_SPORTS = ['Football', 'Field Hockey'];
+
+function sportLabel(game) {
+  if (!game.gender || game.gender === 'Coed' || SINGLE_GENDER_SPORTS.includes(game.sport)) return game.sport;
+  return `${game.gender} ${game.sport}`;
 }
 
-function isFinalGame(game, today) {
-  // A real score is definitive regardless of date. Otherwise fall back to
-  // "past and not postponed/canceled" for anything without a score (e.g.
-  // multi-team meets, which don't carry a single home/away score).
-  if (game.home_score !== undefined) return true;
-  return game.date < today && !isPostponed(game) && !isCanceled(game);
+// Short tags for the scores ticker, where space is tight.
+const SPORT_ABBREV = {
+  'Soccer': 'SOC', 'Field Hockey': 'FH', 'Football': 'FB', 'Volleyball': 'VB',
+  'Golf': 'GOLF', 'Cross Country': 'XC', 'Basketball': 'BKB', 'Ice Hockey': 'HOC',
+  'Baseball': 'BSB', 'Softball': 'SB', 'Lacrosse': 'LAX', 'Tennis': 'TEN',
+};
+
+function sportAbbrev(game) {
+  const base = SPORT_ABBREV[game.sport] || game.sport.slice(0, 4).toUpperCase();
+  if (!game.gender || game.gender === 'Coed' || SINGLE_GENDER_SPORTS.includes(game.sport)) return base;
+  return `${game.gender[0]} ${base}`;
 }
 
-/** One game/result card. Shared by the statewide feed and the Your Teams
-    section, so a followed team's games look identical to everything else. */
-function GameCard({ game, onClick, showFreshness }) {
-  const today = todayStr();
-  const final = isFinalGame(game, today);
-  const postponed = isPostponed(game);
-  const canceled = isCanceled(game);
-  const hasScore = game.home_score !== undefined && game.away_score !== undefined;
-  const freshness = showFreshness && final ? daysAgoLabel(game.date) : '';
-  // Today's/yesterday's results are what "recency" is about here -- call
-  // them out instead of leaving every result looking equally old.
-  const isFresh = freshness === 'Today' || freshness === 'Yesterday';
-  return (
-    <div
-      onClick={() => onClick && onClick(game)}
-      className={`bg-white border rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow cursor-pointer ${
-        isFresh ? 'border-bdn-green border-l-4' : 'border-gray-200'
-      }`}>
-      <div className="flex justify-between items-start mb-2">
-        <span className="text-xs text-gray-400 font-semibold">{formatDate(game.date)}</span>
-        <div className="flex gap-1.5">
-          {final && (
-            <span className="text-xs font-bold text-white bg-bdn-green px-2 py-0.5 rounded uppercase">
-              Final{freshness ? ` · ${freshness}` : ''}
-            </span>
-          )}
-          {postponed && (
-            <span className="text-xs font-bold text-white bg-red-500 px-2 py-0.5 rounded uppercase">
-              PPD
-            </span>
-          )}
-          {canceled && (
-            <span className="text-xs font-bold text-white bg-gray-400 px-2 py-0.5 rounded uppercase">
-              CXL
-            </span>
-          )}
-        </div>
-      </div>
-      <div className="space-y-1">
-        <div className="flex justify-between items-center">
-          <span className="font-semibold text-sm">{game.home}</span>
-          <span className="text-xs text-gray-500">{hasScore ? game.home_score : 'HOME'}</span>
-        </div>
-        <div className="flex justify-between items-center">
-          <span className="text-sm text-gray-700">{game.away}</span>
-          <span className="text-xs text-gray-500">{hasScore ? game.away_score : 'AWAY'}</span>
-        </div>
-      </div>
-      <div className="mt-2 pt-2 border-t border-gray-100 flex justify-between items-center">
-        <span className="text-xs text-gray-400">{game.site}</span>
-        {!postponed && !canceled && !hasScore && (
-          <span className="text-xs font-semibold text-bdn-green">{game.time}</span>
-        )}
-      </div>
-      <div className="mt-1">
-        <span className="text-[10px] text-gray-400 uppercase tracking-wide">{game.sport}</span>
-      </div>
-    </div>
-  );
+function isMultiTeam(game) {
+  return (game.away || '').includes(',');
+}
+
+function awayTeams(game) {
+  return (game.away || '').split(',').map(s => s.trim()).filter(Boolean);
+}
+
+/** The state that decides how a game is drawn. Only claims what the data
+    actually says -- the scores are a twice-daily snapshot, not a live feed,
+    so there's no "in progress" state: a start time passing tells us nothing
+    about whether a game is being played, over, or delayed.
+    final     -- has a score
+    ppd / cxl -- postponed / canceled per the feed
+    noscore   -- its date has passed and the feed has no score for it. Must
+                 NOT read as "Final".
+    scheduled -- today or later, no score in the feed (yet) */
+function gameState(game, today = todayStr()) {
+  if (game.status === 'Postponed' || (!game.status && (game.time || '').toLowerCase().includes('postponed'))) return 'ppd';
+  if (game.status === 'Canceled') return 'cxl';
+  if (game.home_score !== undefined) return 'final';
+  if (game.date < today) return 'noscore';
+  return 'scheduled';
+}
+
+// Golf mixes stroke totals (low wins) with match points (high wins) in the
+// same feed, and cross country is low-score-wins across whole fields, so we
+// only call a winner where higher score unambiguously wins.
+const NO_WINNER_SPORTS = ['Golf', 'Cross Country'];
+
+function winner(game) {
+  if (game.home_score === undefined || game.away_score === undefined || game.away_score === null) return null;
+  if (NO_WINNER_SPORTS.includes(game.sport) || isMultiTeam(game)) return null;
+  if (game.home_score > game.away_score) return 'home';
+  if (game.away_score > game.home_score) return 'away';
+  return 'tie';
 }
 
 /** All school names that appear anywhere in the schedule (home, or any
-    comma-joined away participant), for the Follow Your Team search. */
+    comma-joined away participant), for the pin-a-school search. */
 function allSchoolNames(games) {
   const set = new Set();
   (games || []).forEach(g => {
     if (g.home) set.add(g.home);
-    if (g.away) g.away.split(',').forEach(name => {
-      const trimmed = name.trim();
-      if (trimmed) set.add(trimmed);
-    });
+    awayTeams(g).forEach(name => set.add(name));
   });
   return Array.from(set).sort();
 }
@@ -154,34 +207,46 @@ function allSchoolNames(games) {
 function gameInvolves(game, teamName) {
   const needle = teamName.toLowerCase();
   if ((game.home || '').toLowerCase() === needle) return true;
-  return (game.away || '').toLowerCase().split(',').some(n => n.trim() === needle);
+  return awayTeams(game).some(n => n.toLowerCase() === needle);
+}
+
+// Re-render on an interval so relative times ("2h ago") stay accurate on a page left open, without a reload.
+function useTick(ms) {
+  const [, setTick] = useState(0);
+  useEffect(() => {
+    const id = setInterval(() => setTick(t => t + 1), ms);
+    return () => clearInterval(id);
+  }, [ms]);
 }
 
 // ---------------------------------------------------------------------------
 // Header
 // ---------------------------------------------------------------------------
 
+// The data is refreshed twice a day (7 a.m./9 p.m.), so the longest normal
+// gap is 14h. Past that a run was missed, and the "as of" badge turns amber.
+const STALE_AFTER_HOURS = 15;
+
 function Header({ lastUpdated }) {
-  // Re-render every 30s so "Updated Xh ago" stays accurate without a reload.
-  const [, setTick] = useState(0);
-  useEffect(() => {
-    const id = setInterval(() => setTick(t => t + 1), 30000);
-    return () => clearInterval(id);
-  }, []);
+  useTick(30000);
+  const stale = lastUpdated && hoursSince(lastUpdated) > STALE_AFTER_HOURS;
+  const asOf = lastUpdated && new Date(lastUpdated).toLocaleString('en-US', {
+    weekday: 'short', hour: 'numeric', minute: '2-digit',
+  });
 
   return (
-    <header className="bg-bdn-green text-white py-4 px-4 shadow-lg">
+    <header className="bg-bdn-green text-white py-3 px-4">
       <div className="max-w-6xl mx-auto flex items-center gap-3 flex-wrap">
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-bdn-gold flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-        </svg>
-        <h1 className="font-heading text-2xl md:text-3xl font-bold tracking-wide uppercase">
+        <h1 className="font-heading text-xl md:text-2xl font-extrabold tracking-tight uppercase">
           Maine High School Sports
         </h1>
         {lastUpdated && (
-          <span className="ml-auto flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide bg-white bg-opacity-10 px-2.5 py-1 rounded-full">
-            <span className="h-1.5 w-1.5 rounded-full bg-bdn-gold animate-pulse" />
-            Updated {timeAgo(lastUpdated)}
+          // An absolute time, not "Updated 2h ago" with a pulsing dot --
+          // that reads as live, and these scores aren't.
+          <span className={`ml-auto text-xs font-semibold uppercase tracking-wide px-2.5 py-1 rounded-full ${
+            stale ? 'bg-bdn-gold text-bdn-gray' : 'bg-white bg-opacity-10'
+          }`}>
+            Scores as of {asOf}
           </span>
         )}
       </div>
@@ -190,87 +255,153 @@ function Header({ lastUpdated }) {
 }
 
 // ---------------------------------------------------------------------------
-// Season Tabs
+// Scores ticker: the most recent night of finals, right under the masthead
 // ---------------------------------------------------------------------------
 
-function SeasonTabs({ season, setSeason }) {
-  const seasons = ['fall', 'winter', 'spring'];
+function latestFinalsDate(games, today) {
+  let latest = null;
+  games.forEach(g => {
+    if (g.home_score !== undefined && g.date <= today && (!latest || g.date > latest)) latest = g.date;
+  });
+  return latest;
+}
+
+function ScoresTicker({ games, onGameClick, onSeeAll }) {
+  const today = todayStr();
+  const date = useMemo(() => latestFinalsDate(games, today), [games, today]);
+  const finals = useMemo(() => {
+    if (!date) return [];
+    // Decided head-to-head games first -- they're the ones a score line
+    // actually communicates; multi-team meets are a name list.
+    return games
+      .filter(g => g.date === date && g.home_score !== undefined)
+      .sort((a, b) => (winner(b) ? 1 : 0) - (winner(a) ? 1 : 0) || sportLabel(a).localeCompare(sportLabel(b)));
+  }, [games, date]);
+
+  if (!finals.length) return null;
+
   return (
-    <div className="max-w-6xl mx-auto px-4 mt-4">
-      <div className="flex gap-1">
-        {seasons.map(s => (
-          <button
-            key={s}
-            onClick={() => setSeason(s)}
-            className={`px-5 py-2 font-heading text-sm uppercase tracking-wider rounded-t transition-colors ${
-              season === s
-                ? 'bg-bdn-gold text-bdn-green font-bold'
-                : 'bg-gray-200 text-gray-600 hover:bg-gray-300'
-            }`}
-          >
-            {s}
-          </button>
-        ))}
+    <div className="bg-bdn-gray text-white">
+      <div className="max-w-6xl mx-auto flex items-stretch">
+        <button
+          onClick={() => onSeeAll(date)}
+          className="flex-shrink-0 flex flex-col justify-center px-4 py-2 border-r border-white border-opacity-20 text-left hover:bg-white hover:bg-opacity-10"
+        >
+          <span className="text-[10px] font-bold uppercase tracking-widest text-bdn-gold">Finals</span>
+          <span className="text-sm font-bold leading-tight">{relativeDay(date, today)}</span>
+          <span className="text-[10px] text-gray-400 whitespace-nowrap">All {finals.length} &rarr;</span>
+        </button>
+        <div className="flex min-w-0 overflow-x-auto ticker-scroll">
+          {finals.map(g => <TickerItem key={g.game_id} game={g} onClick={onGameClick} />)}
+        </div>
       </div>
-      <div className="h-0.5 bg-bdn-gold" />
     </div>
   );
 }
 
+function TickerItem({ game, onClick }) {
+  const w = winner(game);
+  const multi = isMultiTeam(game) || game.away_score === undefined || game.away_score === null;
+  const row = (name, score, side) => (
+    <div className={`flex justify-between gap-3 ${w && w !== side && w !== 'tie' ? 'text-gray-400' : 'text-white font-semibold'}`}>
+      <span className="truncate">{name}</span>
+      {score !== null && <span className="tabular-nums">{score}</span>}
+    </div>
+  );
+  return (
+    <button
+      onClick={() => onClick(game)}
+      className="flex-shrink-0 w-44 px-3 py-2 border-r border-white border-opacity-10 text-left text-xs hover:bg-white hover:bg-opacity-10"
+    >
+      <div className="text-[10px] text-gray-400 font-bold tracking-wide mb-0.5">{sportAbbrev(game)}</div>
+      {multi ? (
+        <>
+          {row(game.home, null, 'home')}
+          <div className="text-gray-400 truncate">+ {awayTeams(game).length} other{awayTeams(game).length === 1 ? '' : 's'}</div>
+        </>
+      ) : (
+        <>
+          {row(game.away, game.away_score, 'away')}
+          {row(game.home, game.home_score, 'home')}
+        </>
+      )}
+    </button>
+  );
+}
+
 // ---------------------------------------------------------------------------
-// Featured Stories Strip
+// Top stories: one lead, a short headline list, then out to the section
 // ---------------------------------------------------------------------------
 
-function FeaturedStories({ articles }) {
-  if (!articles || articles.length === 0) {
-    return (
-      <div className="max-w-6xl mx-auto px-4 mt-6">
-        <h2 className="font-heading text-lg uppercase tracking-wide text-bdn-green mb-2">Latest Stories</h2>
-        <p className="text-gray-500 text-sm italic">No stories at this time.</p>
-      </div>
-    );
-  }
+const NEW_STORY_HOURS = 12;
+const SPORTS_SECTION_URL = 'https://www.bangordailynews.com/category/sports/';
+
+function TopStories({ articles }) {
+  if (!articles || articles.length === 0) return null;
+  const [lead, ...rest] = articles;
+  const list = rest.slice(0, 5);
 
   return (
-    <div className="max-w-6xl mx-auto px-4 mt-6">
-      <h2 className="font-heading text-lg uppercase tracking-wide text-bdn-green mb-3 flex items-center gap-2">
-        <span className="h-2 w-2 rounded-full bg-bdn-green animate-pulse" />
-        Latest Stories
-      </h2>
-      <div className="flex gap-4 overflow-x-auto pb-2 scrollbar-thin">
-        {articles.map((a, i) => (
-          <a
-            key={i}
-            href={a.url || '#'}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-shrink-0 w-72 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow overflow-hidden group"
-          >
-            {a.image && (
-              <img src={a.image} alt="" className="w-full h-40 object-cover" />
-            )}
-            <div className="p-3">
-              <div className="flex items-center justify-between mb-1">
-                {a.byline && <span className="text-[11px] text-gray-400">{a.byline}</span>}
-                {a.pub_date && <span className="text-[11px] text-bdn-green font-semibold">{timeAgo(a.pub_date)}</span>}
-              </div>
-              <h3 className="font-heading text-sm font-bold leading-tight group-hover:text-bdn-green transition-colors line-clamp-2">
-                {a.title || 'Untitled'}
-              </h3>
-            </div>
+    <section className="max-w-6xl mx-auto px-4 mt-6">
+      <SectionHeading>Latest Stories</SectionHeading>
+      <div className="grid md:grid-cols-5 gap-5">
+        <a href={lead.url || '#'} {...STORY_LINK_TARGET} className="md:col-span-3 group block">
+          {lead.image && (
+            <img src={lead.image.replace(/&amp;/g, '&')} alt="" className="w-full aspect-[16/9] object-cover rounded" />
+          )}
+          <div className="mt-2 flex items-center gap-2 text-xs">
+            <StoryAge pubDate={lead.pub_date} />
+            {lead.byline && <span className="text-gray-500">{lead.byline}</span>}
+          </div>
+          <h3 className="font-heading text-xl md:text-2xl font-extrabold leading-tight mt-1 group-hover:text-bdn-green">
+            {lead.title || 'Untitled'}
+          </h3>
+        </a>
+        <div className="md:col-span-2">
+          <ul className="divide-y divide-gray-200 border-t border-b border-gray-200">
+            {list.map((a, i) => (
+              <li key={i}>
+                <a href={a.url || '#'} {...STORY_LINK_TARGET} className="flex gap-3 py-2.5 group">
+                  {a.image && <img src={a.image.replace(/&amp;/g, '&')} alt="" className="w-20 h-14 object-cover rounded flex-shrink-0" />}
+                  <div className="min-w-0">
+                    <StoryAge pubDate={a.pub_date} />
+                    <h4 className="text-sm font-bold leading-snug group-hover:text-bdn-green line-clamp-2">{a.title || 'Untitled'}</h4>
+                  </div>
+                </a>
+              </li>
+            ))}
+          </ul>
+          <a href={SPORTS_SECTION_URL} {...STORY_LINK_TARGET} className="inline-block mt-3 text-sm font-bold text-bdn-green hover:underline">
+            More sports stories &rarr;
           </a>
-        ))}
+        </div>
       </div>
+    </section>
+  );
+}
+
+function StoryAge({ pubDate }) {
+  if (!pubDate) return null;
+  const isNew = hoursSince(pubDate) < NEW_STORY_HOURS;
+  return isNew ? (
+    <span className="text-[11px] font-bold uppercase tracking-wide text-red-700">New &middot; {timeAgo(pubDate)}</span>
+  ) : (
+    <span className="text-[11px] font-semibold text-gray-500">{timeAgo(pubDate)}</span>
+  );
+}
+
+function SectionHeading({ children, right }) {
+  return (
+    <div className="flex items-end justify-between border-b-2 border-bdn-gray mb-3 pb-1">
+      <h2 className="font-heading text-base font-extrabold uppercase tracking-wide">{children}</h2>
+      {right}
     </div>
   );
 }
 
 // ---------------------------------------------------------------------------
-// Tab Bar (main content tabs)
-// ---------------------------------------------------------------------------
-
-// ---------------------------------------------------------------------------
-// Follow Your Team
+// Pinned schools ("Your Schools"). Called "following" in the code and the
+// storage key, but readers see "pin": it's per-browser and sends no alerts.
 // ---------------------------------------------------------------------------
 
 const FOLLOWED_TEAMS_KEY = 'bdn-sports-followed-teams';
@@ -293,7 +424,7 @@ function saveFollowedTeams(teams) {
   }
 }
 
-function FollowTeams({ allSchools, followed, onFollow, onUnfollow }) {
+function TeamSearch({ allSchools, followed, onFollow, placeholder }) {
   const [query, setQuery] = useState('');
 
   const matches = useMemo(() => {
@@ -303,39 +434,25 @@ function FollowTeams({ allSchools, followed, onFollow, onUnfollow }) {
   }, [query, allSchools, followed]);
 
   return (
-    <div className="max-w-6xl mx-auto px-4 mt-6">
-      <h2 className="font-heading text-lg uppercase tracking-wide text-bdn-green mb-2">Follow Your Team</h2>
-      <div className="relative max-w-sm">
-        <input
-          type="text"
-          value={query}
-          onChange={e => setQuery(e.target.value)}
-          placeholder="Search for a school..."
-          className="w-full border border-gray-300 rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-bdn-gold"
-        />
-        {matches.length > 0 && (
-          <div className="absolute z-10 mt-1 w-full bg-white border border-gray-200 rounded shadow-lg max-h-56 overflow-y-auto">
-            {matches.map(s => (
-              <button
-                key={s}
-                onClick={() => { onFollow(s); setQuery(''); }}
-                className="block w-full text-left px-3 py-2 text-sm hover:bg-gray-100"
-              >
-                {s}
-              </button>
-            ))}
-          </div>
-        )}
-      </div>
-      {followed.length > 0 && (
-        <div className="flex flex-wrap gap-2 mt-3">
-          {followed.map(s => (
-            <span key={s} className="inline-flex items-center gap-1.5 bg-bdn-green text-white text-sm font-semibold px-3 py-1 rounded-full">
+    <div className="relative w-full sm:w-64">
+      <input
+        type="text"
+        value={query}
+        onChange={e => setQuery(e.target.value)}
+        placeholder={placeholder || 'Search for a school...'}
+        aria-label="Pin a school to the top of this page"
+        className="w-full border border-gray-300 rounded px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-bdn-gold"
+      />
+      {matches.length > 0 && (
+        <div className="absolute z-30 mt-1 w-full bg-white border border-gray-200 rounded shadow-lg max-h-56 overflow-y-auto">
+          {matches.map(s => (
+            <button
+              key={s}
+              onClick={() => { onFollow(s); setQuery(''); }}
+              className="block w-full text-left px-3 py-2 text-sm hover:bg-gray-100"
+            >
               {s}
-              <button onClick={() => onUnfollow(s)} className="text-white hover:text-bdn-gold leading-none" aria-label={`Unfollow ${s}`}>
-                &times;
-              </button>
-            </span>
+            </button>
           ))}
         </div>
       )}
@@ -343,41 +460,331 @@ function FollowTeams({ allSchools, followed, onFollow, onUnfollow }) {
   );
 }
 
-// Leads the page once at least one team is followed: that team's most recent
-// result plus their next game, for every followed team.
-function YourTeams({ followed, games, onGameClick }) {
-  if (!followed || followed.length === 0) return null;
+// Leads the page once at least one team is followed: each team's most
+// recent result plus their next game. With nothing followed it's a slim
+// prompt, not a full section.
+function YourTeams({ followed, games, allSchools, onFollow, onUnfollow, onGameClick }) {
   const today = todayStr();
 
+  if (followed.length === 0) {
+    return (
+      <section className="max-w-6xl mx-auto px-4 mt-4">
+        <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 bg-white border border-gray-200 rounded px-4 py-3">
+          <p className="text-sm">
+            <span className="font-bold">Pin your school to the top.</span>{' '}
+            <span className="text-gray-600">Their latest score and next game will show up here whenever you visit on this device.</span>
+          </p>
+          <div className="sm:ml-auto"><TeamSearch allSchools={allSchools} followed={followed} onFollow={onFollow} /></div>
+        </div>
+      </section>
+    );
+  }
+
   return (
-    <div className="max-w-6xl mx-auto px-4 mt-6">
-      <h2 className="font-heading text-lg uppercase tracking-wide text-bdn-green mb-3 flex items-center gap-2">
-        <span className="h-2 w-2 rounded-full bg-bdn-green animate-pulse" />
-        Your Teams
-      </h2>
-      {followed.map(team => {
-        // A game dated today isn't "last" until it actually has a score --
-        // otherwise a not-yet-played game happening tonight would wrongly
-        // show as the most recent result instead of as next up.
-        const teamGames = games.filter(g => gameInvolves(g, team));
-        const isDone = g => g.home_score !== undefined || g.date < today;
-        const past = teamGames.filter(isDone).sort((a, b) => b.date.localeCompare(a.date));
-        const next = teamGames.filter(g => !isDone(g)).sort((a, b) => a.date.localeCompare(b.date))[0];
-        const last = past[0];
-        return (
-          <div key={team} className="mb-6">
-            <h3 className="font-semibold text-sm text-gray-600 mb-2">{team}</h3>
-            {!last && !next ? (
-              <p className="text-gray-400 text-sm italic">No games found for this team yet.</p>
-            ) : (
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                {last && <GameCard game={last} onClick={onGameClick} showFreshness />}
-                {next && <GameCard game={next} onClick={onGameClick} />}
+    <section className="max-w-6xl mx-auto px-4 mt-6">
+      <SectionHeading right={<TeamSearch allSchools={allSchools} followed={followed} onFollow={onFollow} placeholder="Pin another school..." />}>
+        Your Schools
+      </SectionHeading>
+      <div className="space-y-4">
+        {followed.map(team => {
+          // A game dated today isn't "last" until it actually has a score --
+          // otherwise a not-yet-played game happening tonight would wrongly
+          // show as the most recent result instead of as next up.
+          const teamGames = games.filter(g => gameInvolves(g, team));
+          const isDone = g => g.home_score !== undefined || g.date < today;
+          const last = teamGames.filter(isDone).sort((a, b) => b.date.localeCompare(a.date))[0];
+          const next = teamGames.filter(g => !isDone(g))
+            .sort((a, b) => a.date.localeCompare(b.date) || (parseTime(a.time) ?? 0) - (parseTime(b.time) ?? 0))[0];
+          return (
+            <div key={team}>
+              <div className="flex items-center gap-2 mb-1.5">
+                <h3 className="font-bold text-sm">{team}</h3>
+                <button onClick={() => onUnfollow(team)} className="text-xs text-gray-400 hover:text-red-700" aria-label={`Remove ${team}`}>
+                  Remove
+                </button>
               </div>
-            )}
+              {!last && !next ? (
+                <p className="text-gray-400 text-sm italic">No games found for this team yet.</p>
+              ) : (
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                  {last && <GameCard game={last} onClick={onGameClick} kicker={`Last · ${relativeDay(last.date, today)}`} highlight={team} />}
+                  {next && <GameCard game={next} onClick={onGameClick} kicker={`Next · ${relativeDay(next.date, today)}`} highlight={team} />}
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  );
+}
+
+// ---------------------------------------------------------------------------
+// Game card: compact scoreboard box, shared by the scoreboard and Your Schools
+// ---------------------------------------------------------------------------
+
+function StateBadge({ state, game }) {
+  switch (state) {
+    case 'final':
+      return <span className="text-[11px] font-extrabold uppercase text-bdn-green">Final</span>;
+    case 'ppd':
+      return <span className="text-[11px] font-extrabold uppercase text-red-700">Postponed</span>;
+    case 'cxl':
+      return <span className="text-[11px] font-extrabold uppercase text-gray-500">Canceled</span>;
+    case 'noscore':
+      return <span className="text-[11px] font-bold uppercase text-gray-500">No score reported</span>;
+    default:
+      return <span className="text-[11px] font-bold text-bdn-gray">{game.time || 'Time TBA'}</span>;
+  }
+}
+
+function GameCard({ game, onClick, kicker, showSport, highlight }) {
+  const state = gameState(game);
+  const w = winner(game);
+  const multi = isMultiTeam(game);
+  const dim = state === 'ppd' || state === 'cxl';
+
+  const teamRow = (name, score, side) => {
+    const lost = w && w !== 'tie' && w !== side;
+    const won = w === side;
+    const mine = highlight && name.toLowerCase() === highlight.toLowerCase();
+    return (
+      <div className={`flex justify-between items-baseline gap-2 ${lost ? 'text-gray-500' : ''}`}>
+        <span className={`truncate text-sm ${won ? 'font-extrabold' : 'font-semibold'} ${mine ? 'underline decoration-bdn-gold decoration-2 underline-offset-2' : ''}`}>
+          {name}
+        </span>
+        {score !== undefined && score !== null && (
+          <span className={`tabular-nums text-base ${won ? 'font-extrabold' : 'font-semibold'}`}>{score}</span>
+        )}
+      </div>
+    );
+  };
+
+  return (
+    <button
+      onClick={() => onClick && onClick(game)}
+      className={`w-full text-left bg-white border border-gray-200 rounded px-3 py-2 hover:border-bdn-green transition-colors ${dim ? 'opacity-60' : ''}`}
+    >
+      <div className="flex justify-between items-center mb-1 gap-2">
+        <StateBadge state={state} game={game} />
+        <span className="text-[10px] uppercase tracking-wide text-gray-500 truncate">
+          {kicker || (showSport ? sportLabel(game) : '')}
+        </span>
+      </div>
+      {multi ? (
+        <>
+          {teamRow(game.home, undefined, 'home')}
+          <div className="text-xs text-gray-500 truncate" title={game.away}>
+            + {awayTeams(game).join(', ')}
           </div>
+        </>
+      ) : (
+        <>
+          {/* Away over home, the way every scoreboard lists it. */}
+          {teamRow(game.away || 'TBD', game.away_score, 'away')}
+          {teamRow(game.home || 'TBD', game.home_score, 'home')}
+        </>
+      )}
+      {(kicker || state === 'scheduled') && game.site && (
+        <div className="text-[11px] text-gray-400 truncate mt-1">{kicker && state !== 'final' ? `${game.time ? game.time + ' · ' : ''}${game.site}` : game.site}</div>
+      )}
+    </button>
+  );
+}
+
+// ---------------------------------------------------------------------------
+// Scoreboard: pick a day, pick a sport, games grouped by sport
+// ---------------------------------------------------------------------------
+
+const DAYS_BACK = 7;
+const DAYS_AHEAD = 7;
+const GROUP_PREVIEW = 9;
+
+function DayStrip({ games, day, setDay }) {
+  const today = todayStr();
+  const ref = useRef(null);
+
+  const days = useMemo(() => {
+    const counts = {};
+    games.forEach(g => {
+      const c = counts[g.date] || (counts[g.date] = { total: 0, finals: 0 });
+      c.total++;
+      if (g.home_score !== undefined) c.finals++;
+    });
+    const out = [];
+    for (let i = -DAYS_BACK; i <= DAYS_AHEAD; i++) {
+      const d = addDays(today, i);
+      // Always keep today in the strip, even with no games, so readers can
+      // orient; other empty days (Sundays, mostly) just drop out.
+      if (counts[d] || i === 0) out.push({ date: d, ...(counts[d] || { total: 0, finals: 0 }) });
+    }
+    return out;
+  }, [games, today]);
+
+  // Keep the selected day centered (the strip scrolls sideways on phones).
+  // Set scrollLeft directly -- scrollIntoView would also scroll the page
+  // itself down to the strip on load. Re-run shortly after, too: the
+  // Tailwind CDN script generates styles asynchronously, so on first render
+  // the strip may not be a scroll container yet.
+  useEffect(() => {
+    function center() {
+      const strip = ref.current;
+      const el = strip && strip.querySelector('[data-selected="true"]');
+      if (!el) return;
+      const offset = el.getBoundingClientRect().left - strip.getBoundingClientRect().left;
+      strip.scrollLeft += offset - (strip.clientWidth - el.offsetWidth) / 2;
+    }
+    center();
+    const id = setTimeout(center, 300);
+    return () => clearTimeout(id);
+  }, [day]);
+
+  return (
+    <div ref={ref} className="flex overflow-x-auto ticker-scroll -mx-1">
+      {days.map(d => {
+        const selected = d.date === day;
+        const isToday = d.date === today;
+        const past = d.date < today;
+        return (
+          <button
+            key={d.date}
+            data-selected={selected}
+            onClick={() => setDay(d.date)}
+            className={`flex-shrink-0 mx-1 my-2 px-3 py-1.5 rounded text-center min-w-[5.5rem] border transition-colors ${
+              selected
+                ? 'bg-bdn-green border-bdn-green text-white'
+                : isToday
+                  ? 'bg-white border-bdn-gold border-2 text-bdn-gray hover:bg-gray-50'
+                  : 'bg-white border-gray-200 text-bdn-gray hover:border-bdn-green'
+            }`}
+          >
+            <div className="text-xs font-extrabold uppercase tracking-wide">{relativeDay(d.date, today)}</div>
+            <div className={`text-[11px] ${selected ? 'text-white text-opacity-80' : 'text-gray-500'}`}>
+              {past && d.finals ? `${d.finals} final${d.finals === 1 ? '' : 's'}` : `${d.total} game${d.total === 1 ? '' : 's'}`}
+            </div>
+          </button>
         );
       })}
+    </div>
+  );
+}
+
+function SportChips({ games, value, onChange }) {
+  const counts = useMemo(() => {
+    const c = {};
+    games.forEach(g => { c[g.sport] = (c[g.sport] || 0) + 1; });
+    return Object.entries(c).sort((a, b) => b[1] - a[1]);
+  }, [games]);
+
+  const chip = (key, label, n) => (
+    <button
+      key={key}
+      onClick={() => onChange(key)}
+      className={`flex-shrink-0 px-3 py-1 rounded-full text-xs font-bold border transition-colors ${
+        value === key ? 'bg-bdn-gray border-bdn-gray text-white' : 'bg-white border-gray-300 text-gray-700 hover:border-bdn-gray'
+      }`}
+    >
+      {label}{n !== undefined && <span className={`ml-1 font-semibold ${value === key ? 'text-gray-300' : 'text-gray-400'}`}>{n}</span>}
+    </button>
+  );
+
+  return (
+    <div className="flex gap-2 overflow-x-auto ticker-scroll pb-2">
+      {chip('', 'All sports', games.length)}
+      {counts.map(([sport, n]) => chip(sport, sport, n))}
+    </div>
+  );
+}
+
+// Within a group: finals first (the news), then by start time, with
+// postponed/canceled sunk to the bottom.
+const STATE_ORDER = { final: 0, noscore: 1, scheduled: 2, ppd: 3, cxl: 4 };
+
+function Scoreboard({ games, day, setDay, sport, setSport, onGameClick, lastUpdated }) {
+  const today = todayStr();
+
+  const dayGames = useMemo(() => games.filter(g => g.date === day), [games, day]);
+  const shown = useMemo(() => (sport ? dayGames.filter(g => g.sport === sport) : dayGames), [dayGames, sport]);
+
+  const groups = useMemo(() => {
+    const byLabel = {};
+    shown.forEach(g => { (byLabel[sportLabel(g)] = byLabel[sportLabel(g)] || []).push(g); });
+    return Object.entries(byLabel)
+      .map(([label, items]) => [label, items.sort((a, b) =>
+        STATE_ORDER[gameState(a, today)] - STATE_ORDER[gameState(b, today)] ||
+        (parseTime(a.time) ?? 9999) - (parseTime(b.time) ?? 9999) ||
+        (a.home || '').localeCompare(b.home || ''))])
+      .sort((a, b) => b[1].length - a[1].length);
+  }, [shown, today]);
+
+  const tally = useMemo(() => {
+    const t = { final: 0, noscore: 0, scheduled: 0, ppd: 0, cxl: 0 };
+    shown.forEach(g => { t[gameState(g, today)]++; });
+    return t;
+  }, [shown, today]);
+
+  const summary = [
+    tally.final && `${tally.final} final${tally.final === 1 ? '' : 's'}`,
+    tally.noscore && `${tally.noscore} with no score reported`,
+    tally.scheduled && `${tally.scheduled} scheduled`,
+    tally.ppd && `${tally.ppd} postponed`,
+    tally.cxl && `${tally.cxl} canceled`,
+  ].filter(Boolean).join(' · ');
+
+  return (
+    <section id="scoreboard" className="mt-8 scroll-mt-2">
+      {/* Day + sport pickers stay pinned while scrolling a long slate. */}
+      <div className="sticky top-0 z-20 bg-gray-50 bg-opacity-95 backdrop-blur border-b border-gray-200">
+        <div className="max-w-6xl mx-auto px-4">
+          <DayStrip games={games} day={day} setDay={setDay} />
+          <SportChips games={dayGames} value={sport} onChange={setSport} />
+        </div>
+      </div>
+
+      <div className="max-w-6xl mx-auto px-4 mt-4">
+        <div className="mb-4">
+          <h2 className="font-heading text-2xl font-extrabold leading-tight">
+            {relativeDay(day, today) === apDate(day) ? longDate(day) : `${relativeDay(day, today)}`}
+            {relativeDay(day, today) !== apDate(day) && (
+              <span className="text-gray-500 font-semibold text-lg"> &middot; {longDate(day)}</span>
+            )}
+          </h2>
+          {summary && <p className="text-sm text-gray-600 mt-0.5">{summary}</p>}
+          <p className="text-xs text-gray-500 mt-1">
+            Scores aren't live. They're a snapshot of the Maine Principals' Association's results feed
+            {lastUpdated && <>, last updated {new Date(lastUpdated).toLocaleString('en-US', { weekday: 'short', hour: 'numeric', minute: '2-digit' })}</>}.
+          </p>
+        </div>
+
+        {groups.length === 0 ? (
+          <p className="text-gray-500 text-sm italic py-6">No games on this day{sport ? ` for ${sport.toLowerCase()}` : ''}.</p>
+        ) : (
+          groups.map(([label, items]) => (
+            <SportGroup key={`${day}-${label}`} label={label} items={items} onGameClick={onGameClick} />
+          ))
+        )}
+      </div>
+    </section>
+  );
+}
+
+function SportGroup({ label, items, onGameClick }) {
+  const [expanded, setExpanded] = useState(false);
+  const visible = expanded ? items : items.slice(0, GROUP_PREVIEW);
+  return (
+    <div className="mb-6">
+      <h3 className="flex items-baseline gap-2 mb-2">
+        <span className="font-heading font-extrabold uppercase tracking-wide text-sm text-bdn-green">{label}</span>
+        <span className="text-xs text-gray-400">{items.length}</span>
+      </h3>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+        {visible.map(g => <GameCard key={g.game_id} game={g} onClick={onGameClick} />)}
+      </div>
+      {items.length > GROUP_PREVIEW && (
+        <button onClick={() => setExpanded(e => !e)} className="mt-2 text-sm font-bold text-bdn-green hover:underline">
+          {expanded ? 'Show fewer' : `Show all ${items.length} ${label.toLowerCase()} games`}
+        </button>
+      )}
     </div>
   );
 }
@@ -390,9 +797,9 @@ function YourTeams({ followed, games, onGameClick }) {
 function StandingsLinkOut() {
   return (
     <div className="max-w-6xl mx-auto px-4 mt-6">
-      <div className="bg-white border border-gray-200 rounded-lg p-4 flex items-center justify-between flex-wrap gap-3">
+      <div className="bg-white border border-gray-200 rounded p-4 flex items-center justify-between flex-wrap gap-3">
         <div>
-          <h2 className="font-heading text-sm uppercase tracking-wide text-bdn-green mb-1">Standings & Brackets</h2>
+          <h2 className="font-heading text-sm font-extrabold uppercase tracking-wide mb-1">Standings & Brackets</h2>
           <p className="text-sm text-gray-500">Official rankings and tournament brackets from the Maine Principals' Association.</p>
         </div>
         <a
@@ -409,28 +816,6 @@ function StandingsLinkOut() {
 }
 
 // ---------------------------------------------------------------------------
-// Sport Filter
-// ---------------------------------------------------------------------------
-
-function SportFilter({ sports, value, onChange, label }) {
-  return (
-    <div className="max-w-6xl mx-auto px-4 mt-4 flex items-center gap-2">
-      <label className="text-sm font-semibold text-gray-600">{label || 'Sport:'}</label>
-      <select
-        value={value}
-        onChange={e => onChange(e.target.value)}
-        className="border border-gray-300 rounded px-3 py-1.5 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-bdn-gold"
-      >
-        <option value="">All Sports</option>
-        {sports.map(s => (
-          <option key={s} value={s}>{s}</option>
-        ))}
-      </select>
-    </div>
-  );
-}
-
-// ---------------------------------------------------------------------------
 // Game Detail Modal (shown when clicking a game)
 // ---------------------------------------------------------------------------
 
@@ -442,105 +827,52 @@ function SportFilter({ sports, value, onChange, label }) {
 // link out to MPA.cc instead (see the Standings & Brackets section on the
 // page) rather than something re-hosted here.
 function GameDetailModal({ game, onClose }) {
+  useEffect(() => {
+    const onKey = e => { if (e.key === 'Escape') onClose(); };
+    document.addEventListener('keydown', onKey);
+    return () => document.removeEventListener('keydown', onKey);
+  }, [onClose]);
   if (!game) return null;
+  const state = gameState(game);
+
+  // Embedded, the iframe is the whole page height: cover all of it, and
+  // open the card near the click rather than centered in the iframe.
+  const overlayClass = EMBED
+    ? 'absolute inset-0 z-50 flex justify-center items-start p-4'
+    : 'fixed inset-0 z-50 flex items-center justify-center p-4';
+  const cardStyle = EMBED ? { marginTop: Math.max(0, lastPointerY - 160) } : undefined;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4" onClick={onClose}>
+    <div className={overlayClass} onClick={onClose}>
       <div className="absolute inset-0 bg-black bg-opacity-50" />
       <div
-        className="relative bg-white rounded-xl shadow-2xl max-w-lg w-full max-h-[80vh] overflow-y-auto p-6"
+        className={`relative bg-white rounded-lg shadow-2xl max-w-lg w-full overflow-y-auto p-6 ${EMBED ? '' : 'max-h-[80vh]'}`}
+        style={cardStyle}
         onClick={e => e.stopPropagation()}
       >
         <button
           onClick={onClose}
           className="absolute top-3 right-3 text-gray-400 hover:text-gray-700 text-xl leading-none"
+          aria-label="Close"
         >
           &times;
         </button>
-        <h3 className="font-heading text-lg uppercase tracking-wide text-bdn-green mb-1">
-          Game Details
-        </h3>
+        <p className="text-xs font-bold uppercase tracking-wide text-bdn-green mb-1">{sportLabel(game)}</p>
         <p className="text-xs text-gray-500 mb-4">
-          {formatDate(game.date)} &bull; {game.time} &bull; {game.site}
+          {longDate(game.date)}{game.time && <> &bull; {game.time}</>}{game.site && <> &bull; {game.site}</>}
         </p>
-        <p className="text-xs text-gray-400 uppercase tracking-wide mb-1">{game.sport}</p>
-        {game.home_score !== undefined ? (
-          <p className="font-heading text-2xl text-bdn-gray mb-2">
-            {game.home} {game.home_score} &ndash; {game.away_score} {game.away}
+        {game.home_score !== undefined && game.away_score !== undefined && game.away_score !== null ? (
+          <p className="font-heading text-2xl font-bold text-bdn-gray mb-2">
+            {game.away} {game.away_score} &ndash; {game.home_score} {game.home}
           </p>
         ) : (
           <div className="mb-2">
-            <p className="font-semibold">{game.home || 'TBD'}</p>
+            <p className="font-semibold">{game.home || 'TBD'}{game.home_score !== undefined && ` (${game.home_score})`}</p>
             <p className="text-gray-500 text-sm">vs. {game.away || 'TBD'}</p>
           </div>
         )}
-        {game.status === 'Postponed' && (
-          <p className="text-sm font-semibold text-red-500">Postponed</p>
-        )}
-        {game.status === 'Canceled' && (
-          <p className="text-sm font-semibold text-red-500">Canceled</p>
-        )}
+        <StateBadge state={state} game={game} />
       </div>
-    </div>
-  );
-}
-
-// ---------------------------------------------------------------------------
-// Scores & Schedule Tab
-// ---------------------------------------------------------------------------
-
-function ScoresTab({ games, sportFilter, onGameClick }) {
-  const today = todayStr();
-
-  const filtered = useMemo(() => {
-    if (!games) return [];
-    let g = [...games];
-    if (sportFilter) {
-      g = g.filter(x => {
-        // Build label matching filter format: "Sport (Gender)" or just "Sport" for Coed
-        const label = (x.gender && x.gender !== 'Coed')
-          ? `${x.sport} (${x.gender})`
-          : x.sport;
-        return label === sportFilter;
-      });
-    }
-    return g;
-  }, [games, sportFilter]);
-
-  const todayGames = filtered.filter(g => g.date === today);
-  const upcoming = filtered.filter(g => g.date > today).slice(0, 50);
-  const recent = filtered.filter(g => g.date < today).sort((a, b) => b.date.localeCompare(a.date)).slice(0, 50);
-
-  function Section({ title, items, emptyMsg, live, showFreshness }) {
-    if (!items || items.length === 0) {
-      return (
-        <div className="mb-8">
-          <h3 className="font-heading text-lg uppercase tracking-wide text-bdn-green mb-3">{title}</h3>
-          <p className="text-gray-400 text-sm italic">{emptyMsg}</p>
-        </div>
-      );
-    }
-    return (
-      <div className="mb-8">
-        <h3 className="font-heading text-lg uppercase tracking-wide text-bdn-green mb-3 flex items-center gap-2">
-          {live && <span className="h-2 w-2 rounded-full bg-bdn-green animate-pulse" />}
-          {title}
-        </h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-          {items.map((g, i) => <GameCard key={i} game={g} onClick={onGameClick} showFreshness={showFreshness} />)}
-        </div>
-      </div>
-    );
-  }
-
-  return (
-    <div className="max-w-6xl mx-auto px-4 mt-6">
-      {/* Results lead the page -- this is a scores site, and yesterday's/last
-          night's results are the most newsworthy thing on it, not something
-          to bury under two other sections. */}
-      <Section title="Latest Results" items={recent} emptyMsg="No recent results." live showFreshness />
-      <Section title="Today" items={todayGames} emptyMsg="No games scheduled today." />
-      <Section title="Upcoming" items={upcoming} emptyMsg="No upcoming games." />
     </div>
   );
 }
@@ -569,9 +901,17 @@ function Footer({ lastUpdated }) {
 // App (root component)
 // ---------------------------------------------------------------------------
 
+/** Open on today if anything is scheduled; otherwise (a Sunday, the
+    off-season) on the most recent day that has results. */
+function defaultDay(games) {
+  const today = todayStr();
+  if (games.some(g => g.date === today)) return today;
+  return latestFinalsDate(games, today) || today;
+}
+
 function App() {
-  const [season, setSeason] = useState(getCurrentSeason());
-  const [sportFilter, setSportFilter] = useState('');
+  const [sport, setSport] = useState('');
+  const [day, setDay] = useState(null);
   const [followedTeams, setFollowedTeams] = useState(loadFollowedTeams);
 
   // Data state
@@ -580,6 +920,7 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [selectedGame, setSelectedGame] = useState(null);
+  useReportHeight();
 
   // Fetch all data on mount
   useEffect(() => {
@@ -601,6 +942,9 @@ function App() {
     loadData();
   }, []);
 
+  const games = schedules?.games || [];
+  const selectedDay = day || defaultDay(games);
+
   function followTeam(name) {
     setFollowedTeams(prev => {
       if (prev.includes(name)) return prev;
@@ -618,22 +962,13 @@ function App() {
     });
   }
 
-  // Build sport options from schedules
-  const sportOptions = useMemo(() => {
-    const set = new Set();
-    if (schedules && schedules.games) {
-      schedules.games.forEach(g => {
-        if (g.gender && g.gender !== 'Coed') {
-          set.add(`${g.sport} (${g.gender})`);
-        } else {
-          set.add(g.sport);
-        }
-      });
-    }
-    return Array.from(set).sort();
-  }, [schedules]);
+  function jumpToDay(d) {
+    setDay(d);
+    setSport('');
+    scrollToElement(document.getElementById('scoreboard'));
+  }
 
-  const allSchools = useMemo(() => allSchoolNames(schedules?.games), [schedules]);
+  const allSchools = useMemo(() => allSchoolNames(games), [schedules]);
 
   const lastUpdated = schedules?.last_updated || featured?.last_updated;
 
@@ -651,10 +986,11 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    // No min-h-screen when embedded: 100vh is the iframe's own height, so the
+    // auto-sized iframe could grow but never shrink.
+    <div className={EMBED ? 'bg-gray-50 relative' : 'min-h-screen bg-gray-50'}>
       <Header lastUpdated={lastUpdated} />
-      <SeasonTabs season={season} setSeason={setSeason} />
-      <FeaturedStories articles={featured?.articles || []} />
+      <ScoresTicker games={games} onGameClick={setSelectedGame} onSeeAll={jumpToDay} />
 
       {error && (
         <div className="max-w-6xl mx-auto px-4 mt-4">
@@ -664,16 +1000,25 @@ function App() {
         </div>
       )}
 
-      <FollowTeams allSchools={allSchools} followed={followedTeams} onFollow={followTeam} onUnfollow={unfollowTeam} />
-      <YourTeams followed={followedTeams} games={schedules?.games || []} onGameClick={setSelectedGame} />
-
-      <SportFilter
-        sports={sportOptions}
-        value={sportFilter}
-        onChange={setSportFilter}
-        label="Filter by sport:"
+      <YourTeams
+        followed={followedTeams}
+        games={games}
+        allSchools={allSchools}
+        onFollow={followTeam}
+        onUnfollow={unfollowTeam}
+        onGameClick={setSelectedGame}
       />
-      <ScoresTab games={schedules?.games || []} sportFilter={sportFilter} onGameClick={setSelectedGame} />
+      {(!EMBED || EMBED_STORIES) && <TopStories articles={featured?.articles || []} />}
+
+      <Scoreboard
+        games={games}
+        day={selectedDay}
+        setDay={setDay}
+        sport={sport}
+        setSport={setSport}
+        onGameClick={setSelectedGame}
+        lastUpdated={schedules?.last_updated}
+      />
 
       <StandingsLinkOut />
       <Footer lastUpdated={lastUpdated} />

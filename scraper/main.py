@@ -1,4 +1,4 @@
-"""Main scraper orchestrator -- run by GitHub Action.
+"""Main scraper orchestrator -- run by the GitHub Action (or scripts/update-data.sh).
 
 Two sources, both official feeds -- no site-scraping anymore (see
 config.py's docstring for why standings/brackets/athletes were dropped):
