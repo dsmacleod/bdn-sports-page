@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-06T08:47:51.734714+00:00",
+  "last_updated": "2026-10-06T17:28:18.192073+00:00",
   "season": "fall",
   "games": [
     {
@@ -4694,7 +4694,9 @@
       "away": "Spruce Mountain",
       "site": "Lisbon HS",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "game_id": "42157",
@@ -7975,7 +7977,7 @@
     {
       "game_id": "38292",
       "date": "2026-10-09",
-      "time": "3:30 PM",
+      "time": "3:15 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
@@ -8069,7 +8071,9 @@
       "away": "Winthrop",
       "site": "Hall-Dale HS",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "game_id": "37443",
@@ -20502,7 +20506,9 @@
       "away": "South Portland",
       "site": "Alumni Stadium",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "game_id": "35235",
@@ -23353,7 +23359,9 @@
       "away": "Winthrop",
       "site": "Lisbon HS",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "game_id": "37231",
@@ -23577,7 +23585,7 @@
     {
       "game_id": "37862",
       "date": "2026-10-06",
-      "time": "6:00 PM",
+      "time": "5:00 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
@@ -33248,7 +33256,9 @@
       "away": "Monmouth Academy",
       "site": "Hall-Dale HS",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "game_id": "42081",

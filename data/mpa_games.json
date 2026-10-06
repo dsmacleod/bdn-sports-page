@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-06T08:47:51.734714+00:00",
+  "last_updated": "2026-10-06T17:28:18.192073+00:00",
   "games": [
     {
       "game_id": "35680",
@@ -11575,18 +11575,20 @@
         {
           "school": "Lisbon",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Spruce Mountain",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 1
         }
       ],
       "home": "Lisbon",
-      "away": "Spruce Mountain"
+      "away": "Spruce Mountain",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "game_id": "42157",
@@ -18059,7 +18061,7 @@
     {
       "game_id": "38292",
       "date": "2026-10-09",
-      "time": "3:30 PM",
+      "time": "3:15 PM",
       "sport": "Field Hockey",
       "gender": "",
       "level": "Varsity",
@@ -18240,18 +18242,20 @@
         {
           "school": "Hall-Dale HS",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Winthrop",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         }
       ],
       "home": "Hall-Dale HS",
-      "away": "Winthrop"
+      "away": "Winthrop",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "game_id": "37443",
@@ -43387,18 +43391,20 @@
         {
           "school": "Sanford",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "South Portland",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         }
       ],
       "home": "Sanford",
-      "away": "South Portland"
+      "away": "South Portland",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "game_id": "35235",
@@ -49024,18 +49030,20 @@
         {
           "school": "Lisbon",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Tied",
+          "score": 1
         },
         {
           "school": "Winthrop",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Tied",
+          "score": 1
         }
       ],
       "home": "Lisbon",
-      "away": "Winthrop"
+      "away": "Winthrop",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "game_id": "37231",
@@ -49469,7 +49477,7 @@
     {
       "game_id": "37862",
       "date": "2026-10-06",
-      "time": "6:00 PM",
+      "time": "5:00 PM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
@@ -68578,18 +68586,20 @@
         {
           "school": "Hall-Dale HS",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         },
         {
           "school": "Monmouth Academy",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Hall-Dale HS",
-      "away": "Monmouth Academy"
+      "away": "Monmouth Academy",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "game_id": "42081",
