@@ -17,6 +17,10 @@ const { useState, useEffect, useMemo, useRef } = React;
 const PARAMS = new URLSearchParams(window.location.search);
 const EMBED = PARAMS.get('embed') === '1' && window.parent !== window;
 const EMBED_STORIES = PARAMS.get('stories') === '1';
+// Embed mode also takes on the host page's look (index.html's html.embed
+// styles): no title bar, white background, BDN's own heading and section-label
+// styles, so it reads as part of the page rather than a box dropped into it.
+if (EMBED) document.documentElement.classList.add('embed');
 
 function postToHost(msg) {
   if (EMBED) window.parent.postMessage({ source: 'bdn-sports', ...msg }, '*');
@@ -229,6 +233,9 @@ const STALE_AFTER_HOURS = 15;
 
 function Header({ lastUpdated }) {
   useTick(30000);
+  // Embedded, the host page's own headline is the title; the "as of" time
+  // moves to the scoreboard's note.
+  if (EMBED) return null;
   const stale = lastUpdated && hoursSince(lastUpdated) > STALE_AFTER_HOURS;
   const asOf = lastUpdated && new Date(lastUpdated).toLocaleString('en-US', {
     weekday: 'short', hour: 'numeric', minute: '2-digit',
@@ -281,7 +288,7 @@ function ScoresTicker({ games, onGameClick, onSeeAll }) {
   if (!finals.length) return null;
 
   return (
-    <div className="bg-bdn-gray text-white">
+    <div className="ticker bg-bdn-gray text-white">
       <div className="max-w-6xl mx-auto flex items-stretch">
         <button
           onClick={() => onSeeAll(date)}
@@ -391,6 +398,16 @@ function StoryAge({ pubDate }) {
 }
 
 function SectionHeading({ children, right }) {
+  if (EMBED) {
+    // BDN's own section label (.article-section-title): small, uppercase,
+    // centered between two rules.
+    return (
+      <div className="mb-3">
+        <h2 className="section-label">{children}</h2>
+        {right && <div className="flex justify-end mt-2">{right}</div>}
+      </div>
+    );
+  }
   return (
     <div className="flex items-end justify-between border-b-2 border-bdn-gray mb-3 pb-1">
       <h2 className="font-heading text-base font-extrabold uppercase tracking-wide">{children}</h2>
@@ -734,7 +751,8 @@ function Scoreboard({ games, day, setDay, sport, setSport, onGameClick, lastUpda
   return (
     <section id="scoreboard" className="mt-8 scroll-mt-2">
       {/* Day + sport pickers stay pinned while scrolling a long slate. */}
-      <div className="sticky top-0 z-20 bg-gray-50 bg-opacity-95 backdrop-blur border-b border-gray-200">
+      {/* Not sticky when embedded: the iframe never scrolls, so it couldn't stick. */}
+      <div className={EMBED ? 'border-b border-gray-300' : 'sticky top-0 z-20 bg-gray-50 bg-opacity-95 backdrop-blur border-b border-gray-200'}>
         <div className="max-w-6xl mx-auto px-4">
           <DayStrip games={games} day={day} setDay={setDay} />
           <SportChips games={dayGames} value={sport} onChange={setSport} />
@@ -750,7 +768,7 @@ function Scoreboard({ games, day, setDay, sport, setSport, onGameClick, lastUpda
             )}
           </h2>
           {summary && <p className="text-sm text-gray-600 mt-0.5">{summary}</p>}
-          <p className="text-xs text-gray-500 mt-1">
+          <p className={`text-xs mt-1 ${EMBED && lastUpdated && hoursSince(lastUpdated) > STALE_AFTER_HOURS ? 'inline-block bg-bdn-gold text-bdn-gray px-1.5 py-0.5' : 'text-gray-500'}`}>
             Scores aren't live. They're a snapshot of the Maine Principals' Association's results feed
             {lastUpdated && <>, last updated {new Date(lastUpdated).toLocaleString('en-US', { weekday: 'short', hour: 'numeric', minute: '2-digit' })}</>}.
           </p>
@@ -844,9 +862,11 @@ function GameDetailModal({ game, onClose }) {
 
   return (
     <div className={overlayClass} onClick={onClose}>
-      <div className="absolute inset-0 bg-black bg-opacity-50" />
+      {/* Embedded, no dimming: it would stop at the iframe's edges and show
+          the frame as a box on the page. */}
+      {!EMBED && <div className="absolute inset-0 bg-black bg-opacity-50" />}
       <div
-        className={`relative bg-white rounded-lg shadow-2xl max-w-lg w-full overflow-y-auto p-6 ${EMBED ? '' : 'max-h-[80vh]'}`}
+        className={`relative bg-white rounded-lg shadow-2xl ${EMBED ? 'border border-gray-300' : ''} max-w-lg w-full overflow-y-auto p-6 ${EMBED ? '' : 'max-h-[80vh]'}`}
         style={cardStyle}
         onClick={e => e.stopPropagation()}
       >

@@ -100,6 +100,16 @@ Embed mode (`?embed=1`, and only when actually framed) also:
 - opens the game popup next to the click instead of centered in the
   iframe, which on a tall iframe can be off-screen;
 - opens BDN story links in the same tab (`target="_top"`), not a new one.
+- takes on the host page's look instead of its own (`html.embed` styles in
+  `index.html`): no green title bar (the page's headline is the title), a
+  light scores strip instead of the black one, white background flush with
+  the text column, Helvetica bold headings, and BDN's dark-green uppercase
+  section labels between rules. The popup doesn't dim, since a dimmed
+  rectangle would show the iframe's edges.
+
+For more room, set the WordPress Columns block holding the embed to **Wide
+width** (the scores page's theme supports it; about 1,030px on a 1280px
+screen instead of the 780px text column).
 
 Nothing in the page may use viewport height (`100vh`, `min-h-screen`) in embed
 mode: the viewport *is* the iframe, so an auto-sized iframe would only grow.

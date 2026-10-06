@@ -32,6 +32,33 @@
        them swipeable but without a scrollbar chunk under each one. */
     .ticker-scroll { scrollbar-width: none; }
     .ticker-scroll::-webkit-scrollbar { display: none; }
+
+    /* Embed mode (app.js adds html.embed): take on the host page's look --
+       checked against bangordailynews.com's scores page (Newspack Sacha
+       theme, Oct 2026): white, flush with the text column, Helvetica bold
+       headings, dark-green uppercase section labels between rules, square
+       corners. Body text stays Open Sans, which is the site's body face. */
+    html.embed body { background: #fff; }
+    html.embed .bg-gray-50 { background: #fff; }
+    html.embed .max-w-6xl { max-width: none; padding-left: 0; padding-right: 0; }
+    html.embed .font-heading { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-weight: 700; }
+    html.embed .text-bdn-green { color: #00331b; }
+    html.embed .rounded, html.embed .rounded-lg { border-radius: 0; }
+    html.embed .section-label {
+      display: flex; align-items: center; gap: .5rem;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 14px; font-weight: 700; text-transform: uppercase; color: #00331b;
+    }
+    html.embed .section-label::before, html.embed .section-label::after {
+      content: ""; flex: 1 0 .5rem; border-top: 1px solid #ccc;
+    }
+    html.embed .ticker { background: #fff; color: #111; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; }
+    html.embed .ticker .text-white { color: #111; }
+    html.embed .ticker .text-gray-400 { color: #6b7280; }
+    html.embed .ticker .text-bdn-gold { color: #00331b; }
+    html.embed .ticker .border-white { border-color: #e5e5e5; }
+    html.embed .ticker button:hover { background: #f5f5f5; }
+    html.embed footer { margin: 1.5rem 0 0; padding: 0; text-align: left; }
   </style>
   <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
