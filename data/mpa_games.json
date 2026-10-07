@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-07T08:25:49.553894+00:00",
+  "last_updated": "2026-10-07T18:00:38.771774+00:00",
   "games": [
     {
       "game_id": "35680",
@@ -7806,8 +7806,8 @@
     },
     {
       "game_id": "60372",
-      "date": "2026-10-10",
-      "time": "10:00 AM",
+      "date": "2026-10-17",
+      "time": "1:00 PM",
       "sport": "Field Hockey",
       "gender": "",
       "level": "Varsity",
@@ -10107,18 +10107,20 @@
         {
           "school": "Biddeford",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         },
         {
           "school": "Sanford",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         }
       ],
       "home": "Biddeford",
-      "away": "Sanford"
+      "away": "Sanford",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "game_id": "43700",
@@ -12547,18 +12549,20 @@
         {
           "school": "Greely",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 7
         },
         {
           "school": "Fryeburg Academy",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Greely",
-      "away": "Fryeburg Academy"
+      "away": "Fryeburg Academy",
+      "home_score": 7,
+      "away_score": 0
     },
     {
       "game_id": "40917",
@@ -51337,7 +51341,7 @@
     {
       "game_id": "38339",
       "date": "2026-10-08",
-      "time": "5:30 PM",
+      "time": "4:00 PM",
       "sport": "Soccer",
       "gender": "Boys",
       "level": "Varsity",
@@ -53060,18 +53064,20 @@
         {
           "school": "Bangor",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         },
         {
           "school": "Hampden Academy",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Bangor",
-      "away": "Hampden Academy"
+      "away": "Hampden Academy",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "game_id": "38955",
@@ -53763,18 +53769,20 @@
         {
           "school": "Traip Academy",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "York",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 1
         }
       ],
       "home": "Traip Academy",
-      "away": "York"
+      "away": "York",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "game_id": "39144",
@@ -60589,18 +60597,20 @@
         {
           "school": "Mount View",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         },
         {
           "school": "Mattanawcook Academy",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 5
         }
       ],
       "home": "Mount View",
-      "away": "Mattanawcook Academy"
+      "away": "Mattanawcook Academy",
+      "home_score": 1,
+      "away_score": 5
     },
     {
       "game_id": "40316",
@@ -68502,18 +68512,20 @@
         {
           "school": "Lisbon",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Monmouth Academy",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 5
         }
       ],
       "home": "Lisbon",
-      "away": "Monmouth Academy"
+      "away": "Monmouth Academy",
+      "home_score": 0,
+      "away_score": 5
     },
     {
       "game_id": "42134",
@@ -82046,18 +82058,20 @@
         {
           "school": "Marshwood",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 4
         },
         {
           "school": "Biddeford",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Marshwood",
-      "away": "Biddeford"
+      "away": "Biddeford",
+      "home_score": 4,
+      "away_score": 0
     },
     {
       "game_id": "54503",
@@ -83695,19 +83709,19 @@
           "school": "Belfast Area",
           "home_away": "Home",
           "result": "Win",
-          "score": 2
+          "score": 1
         },
         {
           "school": "Mt. Blue",
           "home_away": "Away",
           "result": "Loss",
-          "score": 1
+          "score": 0
         }
       ],
       "home": "Belfast Area",
       "away": "Mt. Blue",
-      "home_score": 2,
-      "away_score": 1
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "game_id": "54954",
@@ -85792,18 +85806,20 @@
         {
           "school": "Vinalhaven",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Buckfield HS",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         }
       ],
       "home": "Vinalhaven",
-      "away": "Buckfield HS"
+      "away": "Buckfield HS",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "game_id": "58069",
@@ -89218,18 +89234,20 @@
         {
           "school": "Islesboro Central",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 2
         },
         {
           "school": "Searsport HS",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         }
       ],
       "home": "Islesboro Central",
-      "away": "Searsport HS"
+      "away": "Searsport HS",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "game_id": "61592",
@@ -89529,18 +89547,20 @@
         {
           "school": "Biddeford",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         },
         {
           "school": "Bonny Eagle",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         }
       ],
       "home": "Biddeford",
-      "away": "Bonny Eagle"
+      "away": "Bonny Eagle",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "game_id": "62373",
@@ -92657,18 +92677,20 @@
         {
           "school": "Marshwood",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "York",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         }
       ],
       "home": "Marshwood",
-      "away": "York"
+      "away": "York",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "game_id": "43419",
@@ -94068,7 +94090,7 @@
     {
       "game_id": "41816",
       "date": "2026-10-15",
-      "time": "5:30 PM",
+      "time": "6:00 PM",
       "sport": "Volleyball",
       "gender": "Girls",
       "level": "Varsity",
@@ -95333,18 +95355,20 @@
         {
           "school": "Edward Little",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Greely",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         }
       ],
       "home": "Edward Little",
-      "away": "Greely"
+      "away": "Greely",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "game_id": "40069",
