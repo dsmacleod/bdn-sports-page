@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-08T08:41:33.906642+00:00",
+  "last_updated": "2026-10-08T18:02:31.319263+00:00",
   "games": [
     {
       "game_id": "35680",
@@ -7662,6 +7662,82 @@
       "away": "Cheverus"
     },
     {
+      "game_id": "63432",
+      "date": "2026-09-19",
+      "time": "10:00 AM",
+      "sport": "Cross Country",
+      "gender": "Boys",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "TBA",
+      "teams": [
+        {
+          "school": "Brunswick",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        }
+      ]
+    },
+    {
+      "game_id": "63434",
+      "date": "2026-10-03",
+      "time": "12:30 PM",
+      "sport": "Cross Country",
+      "gender": "Boys",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "TBA",
+      "teams": [
+        {
+          "school": "Belfast Area",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        }
+      ]
+    },
+    {
+      "game_id": "63435",
+      "date": "2026-10-03",
+      "time": "12:30 PM",
+      "sport": "Cross Country",
+      "gender": "Boys",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "TBA",
+      "teams": [
+        {
+          "school": "Belfast Area",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        }
+      ]
+    },
+    {
+      "game_id": "63437",
+      "date": "2026-10-13",
+      "time": "",
+      "sport": "Cross Country",
+      "gender": "Boys",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "University of Maine Augusta",
+      "teams": [
+        {
+          "school": "Richmond HS",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        }
+      ]
+    },
+    {
       "game_id": "62861",
       "date": "2026-09-26",
       "time": "",
@@ -7932,18 +8008,20 @@
         {
           "school": "Marshwood",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Bonny Eagle",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         }
       ],
       "home": "Marshwood",
-      "away": "Bonny Eagle"
+      "away": "Bonny Eagle",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "game_id": "58263",
@@ -19218,7 +19296,7 @@
           "school": "Thornton Academy",
           "home_away": "Home",
           "result": "Win",
-          "score": 10
+          "score": 13
         },
         {
           "school": "Deering",
@@ -19229,7 +19307,7 @@
       ],
       "home": "Thornton Academy",
       "away": "Deering",
-      "home_score": 10,
+      "home_score": 13,
       "away_score": 0
     },
     {
@@ -19829,8 +19907,8 @@
     },
     {
       "game_id": "35778",
-      "date": "2026-10-02",
-      "time": "3:30 PM",
+      "date": "2026-10-16",
+      "time": "4:00 PM",
       "sport": "Field Hockey",
       "gender": "",
       "level": "Varsity",
@@ -40812,18 +40890,20 @@
         {
           "school": "Windham",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Sanford",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         }
       ],
       "home": "Windham",
-      "away": "Sanford"
+      "away": "Sanford",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "game_id": "35902",
@@ -49081,18 +49161,20 @@
         {
           "school": "Gray-New Gloucester",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Cape Elizabeth",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 8
         }
       ],
       "home": "Gray-New Gloucester",
-      "away": "Cape Elizabeth"
+      "away": "Cape Elizabeth",
+      "home_score": 0,
+      "away_score": 8
     },
     {
       "game_id": "38095",
@@ -49785,7 +49867,7 @@
     {
       "game_id": "38269",
       "date": "2026-10-15",
-      "time": "4:00 PM",
+      "time": "5:45 PM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
@@ -53594,7 +53676,7 @@
     },
     {
       "game_id": "39213",
-      "date": "2026-10-06",
+      "date": "2026-10-14",
       "time": "4:00 PM",
       "sport": "Soccer",
       "gender": "Boys",
@@ -59405,6 +59487,33 @@
       "away": "Mattanawcook Academy"
     },
     {
+      "game_id": "40254",
+      "date": "2026-10-17",
+      "time": "10:30 AM",
+      "sport": "Soccer",
+      "gender": "Girls",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "Old Orchard Beach",
+      "teams": [
+        {
+          "school": "Old Orchard Beach",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Sacopee Valley",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Old Orchard Beach",
+      "away": "Sacopee Valley"
+    },
+    {
       "game_id": "40256",
       "date": "2026-10-08",
       "time": "5:30 PM",
@@ -59903,18 +60012,20 @@
         {
           "school": "Bucksport",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Mount Desert Island",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 1
         }
       ],
       "home": "Bucksport",
-      "away": "Mount Desert Island"
+      "away": "Mount Desert Island",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "game_id": "40300",
@@ -62548,18 +62659,20 @@
         {
           "school": "Maine School of Science and Math",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Madawaska HS",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 7
         }
       ],
       "home": "Maine School of Science and Math",
-      "away": "Madawaska HS"
+      "away": "Madawaska HS",
+      "home_score": 0,
+      "away_score": 7
     },
     {
       "game_id": "41271",
@@ -79657,18 +79770,20 @@
         {
           "school": "Marshwood",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Tied",
+          "score": 0
         },
         {
           "school": "Deering",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Tied",
+          "score": 0
         }
       ],
       "home": "Marshwood",
-      "away": "Deering"
+      "away": "Deering",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "game_id": "54105",
@@ -80053,18 +80168,20 @@
         {
           "school": "Maine School of Science and Math",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Madawaska HS",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 7
         }
       ],
       "home": "Maine School of Science and Math",
-      "away": "Madawaska HS"
+      "away": "Madawaska HS",
+      "home_score": 0,
+      "away_score": 7
     },
     {
       "game_id": "53664",
@@ -88347,33 +88464,6 @@
       "away": "Lisbon"
     },
     {
-      "game_id": "62047",
-      "date": "2026-10-17",
-      "time": "10:30 AM",
-      "sport": "Soccer",
-      "gender": "Girls",
-      "level": "Varsity",
-      "type": "League",
-      "status": "Normal",
-      "site": "OOBHS",
-      "teams": [
-        {
-          "school": "Old Orchard Beach",
-          "home_away": "Home",
-          "result": "",
-          "score": null
-        },
-        {
-          "school": "Sacopee Valley",
-          "home_away": "Away",
-          "result": "",
-          "score": null
-        }
-      ],
-      "home": "Old Orchard Beach",
-      "away": "Sacopee Valley"
-    },
-    {
       "game_id": "60457",
       "date": "2026-09-10",
       "time": "4:00 PM",
@@ -90040,8 +90130,8 @@
     },
     {
       "game_id": "58114",
-      "date": "2026-10-08",
-      "time": "6:00 PM",
+      "date": "2026-10-09",
+      "time": "5:30 PM",
       "sport": "Volleyball",
       "gender": "Girls",
       "level": "Varsity",

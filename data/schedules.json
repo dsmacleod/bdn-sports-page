@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-08T08:41:33.906642+00:00",
+  "last_updated": "2026-10-08T18:02:31.319263+00:00",
   "season": "fall",
   "games": [
     {
@@ -2716,6 +2716,58 @@
       "gender": "Girls"
     },
     {
+      "game_id": "63432",
+      "date": "2026-09-19",
+      "time": "10:00 AM",
+      "type": "League",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Brunswick",
+      "away": "",
+      "site": "TBA",
+      "sport": "Cross Country",
+      "gender": "Boys"
+    },
+    {
+      "game_id": "63434",
+      "date": "2026-10-03",
+      "time": "12:30 PM",
+      "type": "League",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Belfast Area",
+      "away": "",
+      "site": "TBA",
+      "sport": "Cross Country",
+      "gender": "Boys"
+    },
+    {
+      "game_id": "63435",
+      "date": "2026-10-03",
+      "time": "12:30 PM",
+      "type": "League",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Belfast Area",
+      "away": "",
+      "site": "TBA",
+      "sport": "Cross Country",
+      "gender": "Boys"
+    },
+    {
+      "game_id": "63437",
+      "date": "2026-10-13",
+      "time": "",
+      "type": "League",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Richmond HS",
+      "away": "",
+      "site": "University of Maine Augusta",
+      "sport": "Cross Country",
+      "gender": "Boys"
+    },
+    {
       "game_id": "62861",
       "date": "2026-09-26",
       "time": "",
@@ -2857,7 +2909,9 @@
       "away": "Bonny Eagle",
       "site": "Marshwood FH Field Hockey Field",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "game_id": "58263",
@@ -8585,7 +8639,7 @@
       "site": "Thornton Academy Hill Stadium",
       "sport": "Field Hockey",
       "gender": "Girls",
-      "home_score": 10,
+      "home_score": 13,
       "away_score": 0
     },
     {
@@ -8891,8 +8945,8 @@
     },
     {
       "game_id": "35778",
-      "date": "2026-10-02",
-      "time": "3:30 PM",
+      "date": "2026-10-16",
+      "time": "4:00 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
@@ -19271,7 +19325,9 @@
       "away": "Sanford",
       "site": "Windham High School",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "game_id": "35902",
@@ -23466,7 +23522,9 @@
       "away": "Cape Elizabeth",
       "site": "Gray/New Gloucester",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 0,
+      "away_score": 8
     },
     {
       "game_id": "38095",
@@ -23823,7 +23881,7 @@
     {
       "game_id": "38269",
       "date": "2026-10-15",
-      "time": "4:00 PM",
+      "time": "5:45 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
@@ -25756,7 +25814,7 @@
     },
     {
       "game_id": "39213",
-      "date": "2026-10-06",
+      "date": "2026-10-14",
       "time": "4:00 PM",
       "type": "League",
       "status": "Normal",
@@ -28711,6 +28769,19 @@
       "gender": "Boys"
     },
     {
+      "game_id": "40254",
+      "date": "2026-10-17",
+      "time": "10:30 AM",
+      "type": "League",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Old Orchard Beach",
+      "away": "Sacopee Valley",
+      "site": "Old Orchard Beach",
+      "sport": "Soccer",
+      "gender": "Girls"
+    },
+    {
       "game_id": "40256",
       "date": "2026-10-08",
       "time": "5:30 PM",
@@ -28969,7 +29040,9 @@
       "away": "Mount Desert Island",
       "site": "Bucksport",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "game_id": "40300",
@@ -30312,7 +30385,9 @@
       "away": "Madawaska HS",
       "site": "MSSM",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 0,
+      "away_score": 7
     },
     {
       "game_id": "41271",
@@ -38979,7 +39054,9 @@
       "away": "Deering",
       "site": "Marshwood HS",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "game_id": "54105",
@@ -39179,7 +39256,9 @@
       "away": "Madawaska HS",
       "site": "MSSM",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 7
     },
     {
       "game_id": "53664",
@@ -43374,19 +43453,6 @@
       "gender": "Girls"
     },
     {
-      "game_id": "62047",
-      "date": "2026-10-17",
-      "time": "10:30 AM",
-      "type": "League",
-      "status": "Normal",
-      "level": "Varsity",
-      "home": "Old Orchard Beach",
-      "away": "Sacopee Valley",
-      "site": "OOBHS",
-      "sport": "Soccer",
-      "gender": "Girls"
-    },
-    {
       "game_id": "60457",
       "date": "2026-09-10",
       "time": "4:00 PM",
@@ -44243,8 +44309,8 @@
     },
     {
       "game_id": "58114",
-      "date": "2026-10-08",
-      "time": "6:00 PM",
+      "date": "2026-10-09",
+      "time": "5:30 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
