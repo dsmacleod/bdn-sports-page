@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-09T08:46:38.929004+00:00",
+  "last_updated": "2026-10-09T17:35:59.628518+00:00",
   "games": [
     {
       "game_id": "35680",
@@ -13242,18 +13242,20 @@
         {
           "school": "Dexter Regional",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 6
         },
         {
           "school": "Mattanawcook Academy",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Dexter Regional",
-      "away": "Mattanawcook Academy"
+      "away": "Mattanawcook Academy",
+      "home_score": 6,
+      "away_score": 0
     },
     {
       "game_id": "40390",
@@ -15967,12 +15969,12 @@
     {
       "game_id": "38515",
       "date": "2026-10-17",
-      "time": "Postponed",
+      "time": "11:00 AM",
       "sport": "Field Hockey",
       "gender": "",
       "level": "Varsity",
       "type": "League",
-      "status": "Postponed",
+      "status": "Normal",
       "site": "Fryeburg Academy",
       "teams": [
         {
@@ -16451,7 +16453,7 @@
     },
     {
       "game_id": "38334",
-      "date": "2026-10-07",
+      "date": "2026-10-15",
       "time": "3:30 PM",
       "sport": "Field Hockey",
       "gender": "",
@@ -18115,18 +18117,20 @@
         {
           "school": "Traip Academy",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Sacopee Valley",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 5
         }
       ],
       "home": "Traip Academy",
-      "away": "Sacopee Valley"
+      "away": "Sacopee Valley",
+      "home_score": 0,
+      "away_score": 5
     },
     {
       "game_id": "38292",
@@ -45023,18 +45027,20 @@
         {
           "school": "Spruce Mountain",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         },
         {
           "school": "Wells",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 5
         }
       ],
       "home": "Spruce Mountain",
-      "away": "Wells"
+      "away": "Wells",
+      "home_score": 1,
+      "away_score": 5
     },
     {
       "game_id": "36804",
@@ -52294,7 +52300,7 @@
     },
     {
       "game_id": "38324",
-      "date": "2026-10-10",
+      "date": "2026-10-13",
       "time": "6:00 PM",
       "sport": "Soccer",
       "gender": "Boys",
@@ -60118,18 +60124,20 @@
         {
           "school": "Sacopee Valley",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Fryeburg Academy",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 8
         }
       ],
       "home": "Sacopee Valley",
-      "away": "Fryeburg Academy"
+      "away": "Fryeburg Academy",
+      "home_score": 0,
+      "away_score": 8
     },
     {
       "game_id": "40262",
@@ -68239,18 +68247,20 @@
         {
           "school": "Hall-Dale HS",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 12
         },
         {
           "school": "Spruce Mountain",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Hall-Dale HS",
-      "away": "Spruce Mountain"
+      "away": "Spruce Mountain",
+      "home_score": 12,
+      "away_score": 0
     },
     {
       "game_id": "42069",
@@ -68465,18 +68475,20 @@
         {
           "school": "Hall-Dale HS",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 8
         },
         {
           "school": "Telstar Regional",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Hall-Dale HS",
-      "away": "Telstar Regional"
+      "away": "Telstar Regional",
+      "home_score": 8,
+      "away_score": 0
     },
     {
       "game_id": "42088",
@@ -72698,18 +72710,20 @@
         {
           "school": "Monmouth Academy",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Waynflete",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         }
       ],
       "home": "Monmouth Academy",
-      "away": "Waynflete"
+      "away": "Waynflete",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "game_id": "42923",
@@ -83228,18 +83242,20 @@
         {
           "school": "Hampden Academy",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Tied",
+          "score": 1
         },
         {
           "school": "John Bapst Memorial",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Tied",
+          "score": 1
         }
       ],
       "home": "Hampden Academy",
-      "away": "John Bapst Memorial"
+      "away": "John Bapst Memorial",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "game_id": "54530",
@@ -84308,18 +84324,20 @@
         {
           "school": "Belfast Area",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         },
         {
           "school": "Waterville",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Belfast Area",
-      "away": "Waterville"
+      "away": "Waterville",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "game_id": "55977",
