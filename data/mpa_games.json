@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-10T08:18:07.438803+00:00",
+  "last_updated": "2026-10-10T16:26:36.014198+00:00",
   "games": [
     {
       "game_id": "35680",
@@ -10191,18 +10191,20 @@
         {
           "school": "Deering",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Bonny Eagle",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 6
         }
       ],
       "home": "Deering",
-      "away": "Bonny Eagle"
+      "away": "Bonny Eagle",
+      "home_score": 0,
+      "away_score": 6
     },
     {
       "game_id": "43687",
@@ -12585,18 +12587,20 @@
         {
           "school": "Noble",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Thornton Academy",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 4
         }
       ],
       "home": "Noble",
-      "away": "Thornton Academy"
+      "away": "Thornton Academy",
+      "home_score": 0,
+      "away_score": 4
     },
     {
       "game_id": "41326",
@@ -13868,18 +13872,20 @@
         {
           "school": "Waterville",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         },
         {
           "school": "Nokomis",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 14
         }
       ],
       "home": "Waterville",
-      "away": "Nokomis"
+      "away": "Nokomis",
+      "home_score": 1,
+      "away_score": 14
     },
     {
       "game_id": "39937",
@@ -16558,18 +16564,20 @@
         {
           "school": "Lisbon",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 6
         },
         {
           "school": "Sacopee Valley",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Lisbon",
-      "away": "Sacopee Valley"
+      "away": "Sacopee Valley",
+      "home_score": 6,
+      "away_score": 0
     },
     {
       "game_id": "38294",
@@ -16949,7 +16957,7 @@
     {
       "game_id": "38392",
       "date": "2026-10-10",
-      "time": "11:00 AM",
+      "time": "10:00 AM",
       "sport": "Field Hockey",
       "gender": "",
       "level": "Varsity",
@@ -16960,18 +16968,20 @@
         {
           "school": "Mountain Valley",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 4
         },
         {
           "school": "Poland Regional",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Mountain Valley",
-      "away": "Poland Regional"
+      "away": "Poland Regional",
+      "home_score": 4,
+      "away_score": 0
     },
     {
       "game_id": "38394",
@@ -22185,18 +22195,20 @@
         {
           "school": "Mt. Ararat",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Yarmouth",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 60
         }
       ],
       "home": "Mt. Ararat",
-      "away": "Yarmouth"
+      "away": "Yarmouth",
+      "home_score": 0,
+      "away_score": 60
     },
     {
       "game_id": "35350",
@@ -26874,18 +26886,20 @@
         {
           "school": "Lisbon",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 27
         },
         {
           "school": "Mattanawcook Academy",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 6
         }
       ],
       "home": "Lisbon",
-      "away": "Mattanawcook Academy"
+      "away": "Mattanawcook Academy",
+      "home_score": 27,
+      "away_score": 6
     },
     {
       "game_id": "40366",
@@ -28721,18 +28735,20 @@
         {
           "school": "York",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 40
         },
         {
           "school": "Oak Hill",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 28
         }
       ],
       "home": "York",
-      "away": "Oak Hill"
+      "away": "Oak Hill",
+      "home_score": 40,
+      "away_score": 28
     },
     {
       "game_id": "43152",
@@ -30166,18 +30182,20 @@
         {
           "school": "Belfast Area",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 16
         },
         {
           "school": "Madison High School",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 14
         }
       ],
       "home": "Belfast Area",
-      "away": "Madison High School"
+      "away": "Madison High School",
+      "home_score": 16,
+      "away_score": 14
     },
     {
       "game_id": "54791",
@@ -30419,18 +30437,20 @@
         {
           "school": "Maranacook Community",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 20
         },
         {
           "school": "Boothbay Region",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 30
         }
       ],
       "home": "Maranacook Community",
-      "away": "Boothbay Region"
+      "away": "Boothbay Region",
+      "home_score": 20,
+      "away_score": 30
     },
     {
       "game_id": "57532",
@@ -44675,18 +44695,20 @@
         {
           "school": "Medomak Valley",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Gardiner Area",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 1
         }
       ],
       "home": "Gardiner Area",
-      "away": "Medomak Valley"
+      "away": "Medomak Valley",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "game_id": "36486",
@@ -52588,18 +52610,20 @@
         {
           "school": "Mountain Valley",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         },
         {
           "school": "Valley HS",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         }
       ],
       "home": "Mountain Valley",
-      "away": "Valley HS"
+      "away": "Valley HS",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "game_id": "38332",
@@ -55467,18 +55491,20 @@
         {
           "school": "Traip Academy",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 6
         },
         {
           "school": "Oak Hill",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 3
         }
       ],
       "home": "Traip Academy",
-      "away": "Oak Hill"
+      "away": "Oak Hill",
+      "home_score": 6,
+      "away_score": 3
     },
     {
       "game_id": "39259",
@@ -64392,8 +64418,8 @@
     },
     {
       "game_id": "41126",
-      "date": "2026-10-12",
-      "time": "2:30 PM",
+      "date": "2026-10-16",
+      "time": "4:00 PM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
@@ -65005,18 +65031,20 @@
         {
           "school": "Deering",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 1
         },
         {
           "school": "Cheverus",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Deering",
-      "away": "Cheverus"
+      "away": "Cheverus",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "game_id": "41792",
@@ -72618,18 +72646,20 @@
         {
           "school": "Richmond HS",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 8
         },
         {
           "school": "Dirigo",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Richmond HS",
-      "away": "Dirigo"
+      "away": "Dirigo",
+      "home_score": 8,
+      "away_score": 0
     },
     {
       "game_id": "42482",
@@ -75487,18 +75517,20 @@
         {
           "school": "Medomak Valley",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 2
         },
         {
           "school": "Gardiner Area",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 6
         }
       ],
       "home": "Medomak Valley",
-      "away": "Gardiner Area"
+      "away": "Gardiner Area",
+      "home_score": 2,
+      "away_score": 6
     },
     {
       "game_id": "43356",
@@ -88980,29 +89012,31 @@
     {
       "game_id": "60722",
       "date": "2026-10-10",
-      "time": "10:00 AM",
+      "time": "Forfeit",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
       "type": "League",
-      "status": "Normal",
+      "status": "Forfeit",
       "site": "Fuller Field - Cony",
       "teams": [
         {
           "school": "Cony HS",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 1
         },
         {
           "school": "Oceanside",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Cony HS",
-      "away": "Oceanside"
+      "away": "Oceanside",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "game_id": "60757",
@@ -97715,18 +97749,20 @@
         {
           "school": "Brunswick",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         },
         {
           "school": "Wiscasset HS",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         }
       ],
       "home": "Brunswick",
-      "away": "Wiscasset HS"
+      "away": "Wiscasset HS",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "game_id": "37440",

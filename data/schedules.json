@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-10T08:18:07.438803+00:00",
+  "last_updated": "2026-10-10T16:26:36.014198+00:00",
   "season": "fall",
   "games": [
     {
@@ -4014,7 +4014,9 @@
       "away": "Bonny Eagle",
       "site": "Memorial Field (DHS)",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 6
     },
     {
       "game_id": "43687",
@@ -5232,7 +5234,9 @@
       "away": "Thornton Academy",
       "site": "Noble High School",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 4
     },
     {
       "game_id": "41326",
@@ -5885,7 +5889,9 @@
       "away": "Nokomis",
       "site": "Waterville High School",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 14
     },
     {
       "game_id": "39937",
@@ -7259,7 +7265,9 @@
       "away": "Sacopee Valley",
       "site": "Lisbon High School",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 6,
+      "away_score": 0
     },
     {
       "game_id": "38294",
@@ -7457,7 +7465,7 @@
     {
       "game_id": "38392",
       "date": "2026-10-10",
-      "time": "11:00 AM",
+      "time": "10:00 AM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
@@ -7465,7 +7473,9 @@
       "away": "Poland Regional",
       "site": "Hosmer Field Complex",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 4,
+      "away_score": 0
     },
     {
       "game_id": "38394",
@@ -10128,7 +10138,9 @@
       "away": "Yarmouth",
       "site": "Mt. Ararat High School",
       "sport": "Football",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 0,
+      "away_score": 60
     },
     {
       "game_id": "35350",
@@ -12507,7 +12519,9 @@
       "away": "Mattanawcook Academy",
       "site": "Lisbon",
       "sport": "Football",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 27,
+      "away_score": 6
     },
     {
       "game_id": "40366",
@@ -13444,7 +13458,9 @@
       "away": "Oak Hill",
       "site": "York High School",
       "sport": "Football",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 40,
+      "away_score": 28
     },
     {
       "game_id": "43152",
@@ -14175,7 +14191,9 @@
       "away": "Madison High School",
       "site": "Belfast Area High School",
       "sport": "Football",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 16,
+      "away_score": 14
     },
     {
       "game_id": "54791",
@@ -14302,7 +14320,9 @@
       "away": "Boothbay Region",
       "site": "Maranacook Community High School - Field 3",
       "sport": "Football",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 20,
+      "away_score": 30
     },
     {
       "game_id": "57532",
@@ -21272,7 +21292,9 @@
       "away": "Medomak Valley",
       "site": "Hoch Field - Gardiner Area High School",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "game_id": "36486",
@@ -25307,7 +25329,9 @@
       "away": "Valley HS",
       "site": "Hosmer Field Complex",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "game_id": "38332",
@@ -26772,7 +26796,9 @@
       "away": "Oak Hill",
       "site": "Shapleigh Field",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 6,
+      "away_score": 3
     },
     {
       "game_id": "39259",
@@ -31319,8 +31345,8 @@
     },
     {
       "game_id": "41126",
-      "date": "2026-10-12",
-      "time": "2:30 PM",
+      "date": "2026-10-16",
+      "time": "4:00 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
@@ -31635,7 +31661,9 @@
       "away": "Cheverus",
       "site": "Memorial Field",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "game_id": "41792",
@@ -35510,7 +35538,9 @@
       "away": "Dirigo",
       "site": "Richmond High School",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 8,
+      "away_score": 0
     },
     {
       "game_id": "42482",
@@ -36965,7 +36995,9 @@
       "away": "Gardiner Area",
       "site": "Medomak Valley High School",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 2,
+      "away_score": 6
     },
     {
       "game_id": "43356",
@@ -43825,15 +43857,17 @@
     {
       "game_id": "60722",
       "date": "2026-10-10",
-      "time": "10:00 AM",
+      "time": "Forfeit",
       "type": "League",
-      "status": "Normal",
+      "status": "Forfeit",
       "level": "Varsity",
       "home": "Cony HS",
       "away": "Oceanside",
       "site": "Fuller Field - Cony",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "game_id": "60757",
@@ -48289,7 +48323,9 @@
       "away": "Wiscasset HS",
       "site": "Brunswick High School",
       "sport": "Volleyball",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "game_id": "37440",
