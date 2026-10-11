@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-10T16:26:36.014198+00:00",
+  "last_updated": "2026-10-11T08:35:11.970757+00:00",
   "season": "fall",
   "games": [
     {
@@ -3064,7 +3064,9 @@
       "away": "York",
       "site": "Lake Region High School",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "game_id": "58090",
@@ -4283,9 +4285,9 @@
     {
       "game_id": "43273",
       "date": "2026-10-08",
-      "time": "4:00 PM",
+      "time": "Forfeit",
       "type": "League",
-      "status": "Normal",
+      "status": "Forfeit",
       "level": "Varsity",
       "home": "Oceanside",
       "away": "Oak Hill",
@@ -4592,7 +4594,9 @@
       "away": "Traip Academy",
       "site": "Telstar",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "game_id": "42409",
@@ -5352,7 +5356,9 @@
       "away": "Fryeburg Academy",
       "site": "Mt. Blue High School",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 4,
+      "away_score": 0
     },
     {
       "game_id": "40921",
@@ -9777,7 +9783,9 @@
       "away": "Freeport",
       "site": "Mt. Ararat High School",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "game_id": "35786",
@@ -11107,7 +11115,9 @@
       "away": "Marshwood",
       "site": "Cheverus High School",
       "sport": "Football",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 6,
+      "away_score": 45
     },
     {
       "game_id": "37826",
@@ -12478,7 +12488,9 @@
       "away": "Sanford",
       "site": "Scarborough High School",
       "sport": "Football",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 36,
+      "away_score": 44
     },
     {
       "game_id": "40318",
@@ -12957,7 +12969,9 @@
       "away": "Stearns Sr.",
       "site": "Bucksport High School",
       "sport": "Football",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 12,
+      "away_score": 42
     },
     {
       "game_id": "41737",
@@ -13890,7 +13904,9 @@
       "away": "Foxcroft Academy",
       "site": "Nokomis Regional HS",
       "sport": "Football",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 7,
+      "away_score": 23
     },
     {
       "game_id": "52757",
@@ -20014,7 +20030,9 @@
       "away": "Mt. Ararat",
       "site": "Lewiston High School",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 6,
+      "away_score": 0
     },
     {
       "game_id": "35408",
@@ -20736,7 +20754,9 @@
       "away": "Scarborough",
       "site": "Gorham High School",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 5
     },
     {
       "game_id": "36141",
@@ -22370,7 +22390,9 @@
       "away": "Hall-Dale HS",
       "site": "TBA",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "game_id": "37038",
@@ -22705,7 +22727,9 @@
       "away": "Brunswick",
       "site": "Edward Little High School",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 2,
+      "away_score": 7
     },
     {
       "game_id": "37543",
@@ -22965,7 +22989,9 @@
       "away": "Winthrop",
       "site": "Telstar",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 6
     },
     {
       "game_id": "37307",
@@ -23551,14 +23577,14 @@
     },
     {
       "game_id": "37235",
-      "date": "2026-10-16",
-      "time": "3:30 PM",
+      "date": "2026-10-17",
+      "time": "4:00 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
       "home": "Winthrop",
       "away": "Mountain Valley",
-      "site": "",
+      "site": "Winthrop Turf",
       "sport": "Soccer",
       "gender": "Boys"
     },
@@ -24515,7 +24541,9 @@
       "away": "Lisbon",
       "site": "Sacopee Valley High School",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "game_id": "38286",
@@ -24792,7 +24820,9 @@
       "away": "Maine Central Institute",
       "site": "Maranacook Community High School - Field 3",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "game_id": "38645",
@@ -26074,7 +26104,9 @@
       "away": "Hermon",
       "site": "Caribou High School",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "game_id": "39218",
@@ -26304,7 +26336,9 @@
       "away": "Hermon",
       "site": "Caribou High School",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 2,
+      "away_score": 10
     },
     {
       "game_id": "39163",
@@ -28103,7 +28137,7 @@
     },
     {
       "game_id": "39718",
-      "date": "2026-10-20",
+      "date": "2026-10-19",
       "time": "3:30 PM",
       "type": "League",
       "status": "Normal",
@@ -28518,7 +28552,9 @@
       "away": "Foxcroft Academy",
       "site": "MDI",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "game_id": "39888",
@@ -33600,7 +33636,9 @@
       "away": "Winslow",
       "site": "Hall-Dale HS",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 5,
+      "away_score": 0
     },
     {
       "game_id": "42075",
@@ -34283,7 +34321,9 @@
       "away": "Katahdin HS",
       "site": "Shead HS",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 0,
+      "away_score": 8
     },
     {
       "game_id": "42323",
@@ -34442,7 +34482,9 @@
       "away": "Katahdin HS",
       "site": "Shead HS",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "game_id": "42345",
@@ -34584,7 +34626,9 @@
       "away": "Lake Region",
       "site": "Freeport High School",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 6,
+      "away_score": 1
     },
     {
       "game_id": "42792",
@@ -34945,7 +34989,9 @@
       "away": "Mt. Blue",
       "site": "Camden Hills Regional High School",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 4,
+      "away_score": 0
     },
     {
       "game_id": "42680",
@@ -35740,7 +35786,9 @@
       "away": "Monmouth Academy",
       "site": "Waynflete Sports Complex",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "game_id": "42911",
@@ -35753,7 +35801,9 @@
       "away": "York",
       "site": "Waynflete Sports Complex",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "game_id": "42913",
@@ -35841,7 +35891,9 @@
       "away": "Waynflete",
       "site": "York High School",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 2,
+      "away_score": 2
     },
     {
       "game_id": "42953",
@@ -35884,7 +35936,9 @@
       "away": "Mountain Valley",
       "site": "Oak Hill High School",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "game_id": "42959",
@@ -36073,7 +36127,9 @@
       "away": "Sumner Memorial",
       "site": "Searsport District High School",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 5
     },
     {
       "game_id": "42998",
@@ -36393,7 +36449,9 @@
       "away": "Penobscot Valley",
       "site": "Fort Kent",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 4,
+      "away_score": 1
     },
     {
       "game_id": "43048",
@@ -36477,7 +36535,9 @@
       "away": "George Stevens Academy",
       "site": "Community High School",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "game_id": "43215",
@@ -37944,7 +38004,9 @@
       "away": "Ashland District",
       "site": "Schenck",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 5,
+      "away_score": 0
     },
     {
       "game_id": "52690",
@@ -38058,7 +38120,9 @@
       "away": "Ashland District",
       "site": "Schenck",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 6
     },
     {
       "game_id": "52667",
@@ -38539,7 +38603,9 @@
       "away": "Oceanside",
       "site": "Fuller Field - Cony",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 0,
+      "away_score": 7
     },
     {
       "game_id": "53080",
@@ -39093,7 +39159,9 @@
       "away": "Mount Desert Island",
       "site": "Old Town High School",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "game_id": "53570",
@@ -39993,7 +40061,9 @@
       "away": "Mt. Abram",
       "site": "Mount View High School",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "game_id": "53990",
@@ -40079,7 +40149,9 @@
       "away": "Mt. Abram",
       "site": "Mount View High School",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 5
     },
     {
       "game_id": "53635",
@@ -40464,7 +40536,9 @@
       "away": "Woodland Sr.",
       "site": "Lee Academy",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 5,
+      "away_score": 0
     },
     {
       "game_id": "54105",
@@ -40759,19 +40833,6 @@
       "gender": "Girls",
       "home_score": 10,
       "away_score": 1
-    },
-    {
-      "game_id": "54386",
-      "date": "2026-09-22",
-      "time": "Postponed",
-      "type": "League",
-      "status": "Postponed",
-      "level": "Varsity",
-      "home": "East Grand",
-      "away": "Lee Academy",
-      "site": "East Grand",
-      "sport": "Soccer",
-      "gender": "Girls"
     },
     {
       "game_id": "54388",
@@ -41353,7 +41414,9 @@
       "away": "Sumner Memorial",
       "site": "Searsport District High School",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 5,
+      "away_score": 1
     },
     {
       "game_id": "55922",
@@ -41568,7 +41631,9 @@
       "away": "Spruce Mountain",
       "site": "Monmouth Academy",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 5,
+      "away_score": 0
     },
     {
       "game_id": "57122",
@@ -42030,7 +42095,9 @@
       "away": "Presque Isle",
       "site": "Ellsworth High School - Football Field",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "game_id": "57692",
@@ -42479,7 +42546,9 @@
       "away": "Piscataquis Community",
       "site": "Greenville",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 4,
+      "away_score": 0
     },
     {
       "game_id": "57930",
@@ -42593,7 +42662,9 @@
       "away": "Piscataquis Community",
       "site": "Greenville",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 3,
+      "away_score": 5
     },
     {
       "game_id": "57988",
@@ -42709,7 +42780,9 @@
       "away": "Houlton HS",
       "site": "LEE ACADEMY",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "game_id": "58245",
@@ -43210,7 +43283,9 @@
       "away": "Presque Isle",
       "site": "Ellsworth High School - Football Field",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 2,
+      "away_score": 2
     },
     {
       "game_id": "58576",
@@ -46228,7 +46303,9 @@
       "away": "York",
       "site": "Messalonskee High School",
       "sport": "Volleyball",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "game_id": "43122",
