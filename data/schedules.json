@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-11T08:35:11.970757+00:00",
+  "last_updated": "2026-10-11T16:51:01.417650+00:00",
   "season": "fall",
   "games": [
     {
@@ -11655,19 +11655,6 @@
       "gender": "Boys",
       "home_score": 36,
       "away_score": 14
-    },
-    {
-      "game_id": "39313",
-      "date": "2026-10-09",
-      "time": "7:00 PM",
-      "type": "League",
-      "status": "Normal",
-      "level": "Varsity",
-      "home": "Washington Academy",
-      "away": "Fort Kent Community",
-      "site": "Washington Academy MSB Field",
-      "sport": "Football",
-      "gender": "Boys"
     },
     {
       "game_id": "39315",
@@ -28921,7 +28908,9 @@
       "away": "Scarborough",
       "site": "Westbrook High School",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "game_id": "40167",
@@ -28934,7 +28923,9 @@
       "away": "Bonny Eagle",
       "site": "Westbrook High School",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "game_id": "40316",
@@ -35334,7 +35325,7 @@
     },
     {
       "game_id": "42236",
-      "date": "2026-10-13",
+      "date": "2026-10-14",
       "time": "4:00 PM",
       "type": "League",
       "status": "Normal",
@@ -36522,7 +36513,9 @@
       "away": "Traip Academy",
       "site": "York High School",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "game_id": "43213",
@@ -43298,7 +43291,9 @@
       "away": "Old Town",
       "site": "Washington Academy",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 9,
+      "away_score": 1
     },
     {
       "game_id": "58578",
@@ -44229,8 +44224,8 @@
     },
     {
       "game_id": "59368",
-      "date": "2026-09-29",
-      "time": "4:00 PM",
+      "date": "2026-10-17",
+      "time": "11:00 AM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",

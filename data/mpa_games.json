@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-11T08:35:11.970757+00:00",
+  "last_updated": "2026-10-11T16:51:01.417650+00:00",
   "games": [
     {
       "game_id": "35680",
@@ -25179,33 +25179,6 @@
       "away": "Houlton HS",
       "home_score": 36,
       "away_score": 14
-    },
-    {
-      "game_id": "39313",
-      "date": "2026-10-09",
-      "time": "7:00 PM",
-      "sport": "Football",
-      "gender": "",
-      "level": "Varsity",
-      "type": "League",
-      "status": "Normal",
-      "site": "Washington Academy MSB Field",
-      "teams": [
-        {
-          "school": "Washington Academy",
-          "home_away": "Home",
-          "result": "",
-          "score": null
-        },
-        {
-          "school": "Fort Kent Community",
-          "home_away": "Away",
-          "result": "",
-          "score": null
-        }
-      ],
-      "home": "Washington Academy",
-      "away": "Fort Kent Community"
     },
     {
       "game_id": "39315",
@@ -59618,18 +59591,20 @@
         {
           "school": "Westbrook",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Scarborough",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         }
       ],
       "home": "Westbrook",
-      "away": "Scarborough"
+      "away": "Scarborough",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "game_id": "40167",
@@ -59645,18 +59620,20 @@
         {
           "school": "Westbrook",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Bonny Eagle",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         }
       ],
       "home": "Westbrook",
-      "away": "Bonny Eagle"
+      "away": "Bonny Eagle",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "game_id": "40316",
@@ -72201,7 +72178,7 @@
     },
     {
       "game_id": "42236",
-      "date": "2026-10-13",
+      "date": "2026-10-14",
       "time": "4:00 PM",
       "sport": "Soccer",
       "gender": "Girls",
@@ -74526,18 +74503,20 @@
         {
           "school": "York",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Traip Academy",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 1
         }
       ],
       "home": "York",
-      "away": "Traip Academy"
+      "away": "Traip Academy",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "game_id": "43213",
@@ -87826,18 +87805,20 @@
         {
           "school": "Washington Academy",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 9
         },
         {
           "school": "Old Town",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         }
       ],
       "home": "Washington Academy",
-      "away": "Old Town"
+      "away": "Old Town",
+      "home_score": 9,
+      "away_score": 1
     },
     {
       "game_id": "58578",
@@ -89650,8 +89631,8 @@
     },
     {
       "game_id": "59368",
-      "date": "2026-09-29",
-      "time": "4:00 PM",
+      "date": "2026-10-17",
+      "time": "11:00 AM",
       "sport": "Soccer",
       "gender": "Boys",
       "level": "Varsity",
