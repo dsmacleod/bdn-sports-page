@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-12T08:55:56.260667+00:00",
+  "last_updated": "2026-10-12T20:28:32.697724+00:00",
   "games": [
     {
       "game_id": "35680",
@@ -9403,18 +9403,20 @@
         {
           "school": "Oceanside",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Erskine Academy",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 10
         }
       ],
       "home": "Oceanside",
-      "away": "Erskine Academy"
+      "away": "Erskine Academy",
+      "home_score": 0,
+      "away_score": 10
     },
     {
       "game_id": "53152",
@@ -11018,18 +11020,20 @@
         {
           "school": "Lake Region",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         },
         {
           "school": "Waynflete",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Lake Region",
-      "away": "Waynflete"
+      "away": "Waynflete",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "game_id": "42937",
@@ -16599,18 +16603,20 @@
         {
           "school": "Fryeburg Academy",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         },
         {
           "school": "Sacopee Valley",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Fryeburg Academy",
-      "away": "Sacopee Valley"
+      "away": "Sacopee Valley",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "game_id": "38302",
@@ -21519,18 +21525,20 @@
         {
           "school": "Skowhegan Area",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         },
         {
           "school": "Mt. Ararat",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 4
         }
       ],
       "home": "Skowhegan Area",
-      "away": "Mt. Ararat"
+      "away": "Mt. Ararat",
+      "home_score": 1,
+      "away_score": 4
     },
     {
       "game_id": "35788",
@@ -53369,7 +53377,7 @@
     },
     {
       "game_id": "38955",
-      "date": "2026-10-13",
+      "date": "2026-10-14",
       "time": "3:30 PM",
       "sport": "Soccer",
       "gender": "Girls",
@@ -60154,18 +60162,20 @@
         {
           "school": "Mattanawcook Academy",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         },
         {
           "school": "Mount View",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         }
       ],
       "home": "Mattanawcook Academy",
-      "away": "Mount View"
+      "away": "Mount View",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "game_id": "40288",
@@ -69949,18 +69959,20 @@
         {
           "school": "Shead",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Dexter Regional",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 5
         }
       ],
       "home": "Shead",
-      "away": "Dexter Regional"
+      "away": "Dexter Regional",
+      "home_score": 0,
+      "away_score": 5
     },
     {
       "game_id": "42325",
@@ -81750,18 +81762,20 @@
         {
           "school": "Narraguagus Sr",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 4
         },
         {
           "school": "Woodland Sr.",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         }
       ],
       "home": "Narraguagus Sr",
-      "away": "Woodland Sr."
+      "away": "Woodland Sr.",
+      "home_score": 4,
+      "away_score": 1
     },
     {
       "game_id": "53718",
@@ -84336,7 +84350,7 @@
     {
       "game_id": "57196",
       "date": "2026-10-15",
-      "time": "3:30 PM",
+      "time": "6:00 PM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
@@ -84519,18 +84533,20 @@
         {
           "school": "Caribou",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         },
         {
           "school": "Ellsworth",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         }
       ],
       "home": "Caribou",
-      "away": "Ellsworth"
+      "away": "Ellsworth",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "game_id": "56278",
@@ -85203,18 +85219,20 @@
         {
           "school": "Caribou",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 6
         },
         {
           "school": "Ellsworth",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 2
         }
       ],
       "home": "Caribou",
-      "away": "Ellsworth"
+      "away": "Ellsworth",
+      "home_score": 6,
+      "away_score": 2
     },
     {
       "game_id": "57729",
@@ -86546,18 +86564,20 @@
         {
           "school": "Lee Academy",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         },
         {
           "school": "Bucksport",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         }
       ],
       "home": "Lee Academy",
-      "away": "Bucksport"
+      "away": "Bucksport",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "game_id": "58247",
@@ -87315,18 +87335,20 @@
         {
           "school": "Vinalhaven",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         },
         {
           "school": "Rangeley Lakes Regional",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         }
       ],
       "home": "Vinalhaven",
-      "away": "Rangeley Lakes Regional"
+      "away": "Rangeley Lakes Regional",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "game_id": "58318",
@@ -87342,18 +87364,20 @@
         {
           "school": "Vinalhaven",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         },
         {
           "school": "Rangeley Lakes Regional",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         }
       ],
       "home": "Vinalhaven",
-      "away": "Rangeley Lakes Regional"
+      "away": "Rangeley Lakes Regional",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "game_id": "58324",
@@ -88204,18 +88228,20 @@
         {
           "school": "Penquis Valley HS",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         },
         {
           "school": "Searsport HS",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Penquis Valley HS",
-      "away": "Searsport HS"
+      "away": "Searsport HS",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "game_id": "58835",
@@ -88586,8 +88612,8 @@
     },
     {
       "game_id": "59426",
-      "date": "2026-10-10",
-      "time": "11:30 AM",
+      "date": "2026-10-15",
+      "time": "11:00 AM",
       "sport": "Soccer",
       "gender": "Boys",
       "level": "Varsity",
@@ -88597,19 +88623,19 @@
       "teams": [
         {
           "school": "Islesboro Central",
-          "home_away": "Home",
+          "home_away": "Away",
           "result": "",
           "score": null
         },
         {
           "school": "Vinalhaven",
-          "home_away": "Away",
+          "home_away": "Home",
           "result": "",
           "score": null
         }
       ],
-      "home": "Islesboro Central",
-      "away": "Vinalhaven"
+      "home": "Vinalhaven",
+      "away": "Islesboro Central"
     },
     {
       "game_id": "59966",
@@ -90572,18 +90598,20 @@
         {
           "school": "Lee Academy",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Sumner Memorial",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         }
       ],
       "home": "Lee Academy",
-      "away": "Sumner Memorial"
+      "away": "Sumner Memorial",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "game_id": "58231",

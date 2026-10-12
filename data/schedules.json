@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-12T08:55:56.260667+00:00",
+  "last_updated": "2026-10-12T20:28:32.697724+00:00",
   "season": "fall",
   "games": [
     {
@@ -3618,7 +3618,9 @@
       "away": "Erskine Academy",
       "site": "Oceanside High School",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 10
     },
     {
       "game_id": "53152",
@@ -4435,7 +4437,9 @@
       "away": "Waynflete",
       "site": "Lake Region",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "game_id": "42937",
@@ -7286,7 +7290,9 @@
       "away": "Sacopee Valley",
       "site": "Fryeburg Academy",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "game_id": "38302",
@@ -9798,7 +9804,9 @@
       "away": "Mt. Ararat",
       "site": "Skowhegan Area High School",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 4
     },
     {
       "game_id": "35788",
@@ -25737,7 +25745,7 @@
     },
     {
       "game_id": "38955",
-      "date": "2026-10-13",
+      "date": "2026-10-14",
       "time": "3:30 PM",
       "type": "League",
       "status": "Normal",
@@ -29202,7 +29210,9 @@
       "away": "Mount View",
       "site": "MA",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "game_id": "40288",
@@ -34195,7 +34205,9 @@
       "away": "Dexter Regional",
       "site": "Shead HS",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 0,
+      "away_score": 5
     },
     {
       "game_id": "42325",
@@ -40214,7 +40226,9 @@
       "away": "Woodland Sr.",
       "site": "Narraguagus",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 4,
+      "away_score": 1
     },
     {
       "game_id": "53718",
@@ -41529,7 +41543,7 @@
     {
       "game_id": "57196",
       "date": "2026-10-15",
-      "time": "3:30 PM",
+      "time": "6:00 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
@@ -41625,7 +41639,9 @@
       "away": "Ellsworth",
       "site": "Caribou High School",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "game_id": "56278",
@@ -41973,7 +41989,9 @@
       "away": "Ellsworth",
       "site": "Caribou HS",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 6,
+      "away_score": 2
     },
     {
       "game_id": "57729",
@@ -42658,7 +42676,9 @@
       "away": "Bucksport",
       "site": "LEE ACADEMY",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "game_id": "58247",
@@ -43049,7 +43069,9 @@
       "away": "Rangeley Lakes Regional",
       "site": "Vinalhaven",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "game_id": "58318",
@@ -43062,7 +43084,9 @@
       "away": "Rangeley Lakes Regional",
       "site": "Vinalhaven",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "game_id": "58324",
@@ -43504,7 +43528,9 @@
       "away": "Searsport HS",
       "site": "Penquis Valley High School",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "game_id": "58835",
@@ -43693,13 +43719,13 @@
     },
     {
       "game_id": "59426",
-      "date": "2026-10-10",
-      "time": "11:30 AM",
+      "date": "2026-10-15",
+      "time": "11:00 AM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
-      "home": "Islesboro Central",
-      "away": "Vinalhaven",
+      "home": "Vinalhaven",
+      "away": "Islesboro Central",
       "site": "Islesboro",
       "sport": "Soccer",
       "gender": "Boys"
@@ -44712,7 +44738,9 @@
       "away": "Sumner Memorial",
       "site": "LEE ACADEMY",
       "sport": "Volleyball",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "game_id": "58231",
