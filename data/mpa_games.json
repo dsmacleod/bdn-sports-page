@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-11T16:51:01.417650+00:00",
+  "last_updated": "2026-10-12T08:55:56.260667+00:00",
   "games": [
     {
       "game_id": "35680",
@@ -30443,14 +30443,14 @@
     },
     {
       "game_id": "57532",
-      "date": "2026-10-23",
+      "date": "2026-10-24",
       "time": "6:00 PM",
       "sport": "Football",
       "gender": "",
       "level": "Varsity",
       "type": "League",
       "status": "Normal",
-      "site": "TBA",
+      "site": "Maranacook Community High School",
       "teams": [
         {
           "school": "Maranacook Community",
@@ -30623,18 +30623,20 @@
         {
           "school": "John Bapst Memorial",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 36
         },
         {
           "school": "Mountain Valley",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 14
         }
       ],
       "home": "John Bapst Memorial",
-      "away": "Mountain Valley"
+      "away": "Mountain Valley",
+      "home_score": 36,
+      "away_score": 14
     },
     {
       "game_id": "60539",
@@ -31269,37 +31271,6 @@
       ]
     },
     {
-      "game_id": "58683",
-      "date": "2026-08-31",
-      "time": "4:00 PM",
-      "sport": "Golf",
-      "gender": "Coed",
-      "level": "Varsity",
-      "type": "League",
-      "status": "Normal",
-      "site": "St. Croix Country Club",
-      "teams": [
-        {
-          "school": "Woodland Sr.",
-          "home_away": "Away",
-          "result": "",
-          "score": null
-        },
-        {
-          "school": "Narraguagus Sr",
-          "home_away": "Away",
-          "result": "",
-          "score": null
-        },
-        {
-          "school": "Machias Memorial",
-          "home_away": "Away",
-          "result": "",
-          "score": null
-        }
-      ]
-    },
-    {
       "game_id": "58631",
       "date": "2026-09-03",
       "time": "4:00 PM",
@@ -31496,33 +31467,6 @@
       ],
       "home": "Erskine Academy",
       "away": "Nokomis"
-    },
-    {
-      "game_id": "58552",
-      "date": "2026-08-31",
-      "time": "4:00 PM",
-      "sport": "Golf",
-      "gender": "Coed",
-      "level": "Varsity",
-      "type": "League",
-      "status": "Normal",
-      "site": "Lucerne GC",
-      "teams": [
-        {
-          "school": "Ellsworth",
-          "home_away": "Home",
-          "result": "",
-          "score": null
-        },
-        {
-          "school": "Bucksport",
-          "home_away": "Away",
-          "result": "",
-          "score": null
-        }
-      ],
-      "home": "Ellsworth",
-      "away": "Bucksport"
     },
     {
       "game_id": "58554",
@@ -32660,37 +32604,6 @@
       "away": "Madison High School"
     },
     {
-      "game_id": "56796",
-      "date": "2026-08-31",
-      "time": "3:30 PM",
-      "sport": "Golf",
-      "gender": "Coed",
-      "level": "Varsity",
-      "type": "League",
-      "status": "Normal",
-      "site": "Portage Hills",
-      "teams": [
-        {
-          "school": "Ashland District",
-          "home_away": "Home",
-          "result": "",
-          "score": null
-        },
-        {
-          "school": "Central Aroostook Sr",
-          "home_away": "Away",
-          "result": "",
-          "score": null
-        },
-        {
-          "school": "Fort Kent Community",
-          "home_away": "Away",
-          "result": "",
-          "score": null
-        }
-      ]
-    },
-    {
       "game_id": "56810",
       "date": "2026-09-09",
       "time": "3:30 PM",
@@ -32936,33 +32849,6 @@
       ],
       "home": "Monmouth Academy",
       "away": "Dirigo"
-    },
-    {
-      "game_id": "54694",
-      "date": "2026-08-31",
-      "time": "3:30 PM",
-      "sport": "Golf",
-      "gender": "Coed",
-      "level": "Varsity",
-      "type": "League",
-      "status": "Normal",
-      "site": "Northport Golf Club",
-      "teams": [
-        {
-          "school": "Belfast Area",
-          "home_away": "Home",
-          "result": "",
-          "score": null
-        },
-        {
-          "school": "Cony HS",
-          "home_away": "Away",
-          "result": "",
-          "score": null
-        }
-      ],
-      "home": "Belfast Area",
-      "away": "Cony HS"
     },
     {
       "game_id": "54702",
@@ -33720,52 +33606,6 @@
       "away": "Bangor Christian"
     },
     {
-      "game_id": "53024",
-      "date": "2026-08-31",
-      "time": "2:30 PM",
-      "sport": "Golf",
-      "gender": "Coed",
-      "level": "Varsity",
-      "type": "League",
-      "status": "Normal",
-      "site": "Turner Highlands",
-      "teams": [
-        {
-          "school": "Maine Central Institute",
-          "home_away": "Home",
-          "result": "",
-          "score": null
-        }
-      ]
-    },
-    {
-      "game_id": "53026",
-      "date": "2026-08-31",
-      "time": "2:30 PM",
-      "sport": "Golf",
-      "gender": "Coed",
-      "level": "Varsity",
-      "type": "League",
-      "status": "Normal",
-      "site": "Turner Highlands",
-      "teams": [
-        {
-          "school": "Leavitt Area",
-          "home_away": "Home",
-          "result": "",
-          "score": null
-        },
-        {
-          "school": "Maine Central Institute",
-          "home_away": "Away",
-          "result": "",
-          "score": null
-        }
-      ],
-      "home": "Leavitt Area",
-      "away": "Maine Central Institute"
-    },
-    {
       "game_id": "53028",
       "date": "2026-09-10",
       "time": "3:30 PM",
@@ -34187,35 +34027,6 @@
           "score": null
         }
       ]
-    },
-    {
-      "game_id": "52624",
-      "date": "2026-08-31",
-      "time": "3:30 PM",
-      "sport": "Golf",
-      "gender": "Coed",
-      "level": "Varsity",
-      "type": "League",
-      "status": "Normal",
-      "site": "Sanford Country Club",
-      "teams": [
-        {
-          "school": "Sanford",
-          "home_away": "Home",
-          "result": "",
-          "score": 9
-        },
-        {
-          "school": "Westbrook",
-          "home_away": "Away",
-          "result": "",
-          "score": 4
-        }
-      ],
-      "home": "Sanford",
-      "away": "Westbrook",
-      "home_score": 9,
-      "away_score": 4
     },
     {
       "game_id": "52626",
@@ -36606,25 +36417,6 @@
       "away": "Mt. Ararat"
     },
     {
-      "game_id": "41695",
-      "date": "2026-08-31",
-      "time": "",
-      "sport": "Golf",
-      "gender": "Coed",
-      "level": "Varsity",
-      "type": "League",
-      "status": "Normal",
-      "site": "St. Croix Country Club",
-      "teams": [
-        {
-          "school": "Calais",
-          "home_away": "Home",
-          "result": "",
-          "score": null
-        }
-      ]
-    },
-    {
       "game_id": "41697",
       "date": "2026-09-03",
       "time": "",
@@ -37108,37 +36900,6 @@
         },
         {
           "school": "York",
-          "home_away": "Away",
-          "result": "",
-          "score": null
-        }
-      ]
-    },
-    {
-      "game_id": "40963",
-      "date": "2026-08-31",
-      "time": "3:30 PM",
-      "sport": "Golf",
-      "gender": "Coed",
-      "level": "Varsity",
-      "type": "League",
-      "status": "Normal",
-      "site": "Poland Spring Golf",
-      "teams": [
-        {
-          "school": "Poland Regional",
-          "home_away": "Home",
-          "result": "",
-          "score": null
-        },
-        {
-          "school": "York",
-          "home_away": "Away",
-          "result": "",
-          "score": null
-        },
-        {
-          "school": "Wells",
           "home_away": "Away",
           "result": "",
           "score": null
@@ -38680,35 +38441,6 @@
       ],
       "home": "Bangor Christian",
       "away": "Orono"
-    },
-    {
-      "game_id": "38994",
-      "date": "2026-08-31",
-      "time": "3:30 PM",
-      "sport": "Golf",
-      "gender": "Coed",
-      "level": "Varsity",
-      "type": "League",
-      "status": "Normal",
-      "site": "Bangor Municipal Golf Course",
-      "teams": [
-        {
-          "school": "Bangor",
-          "home_away": "Home",
-          "result": "",
-          "score": 162
-        },
-        {
-          "school": "Hampden Academy",
-          "home_away": "Away",
-          "result": "",
-          "score": 159
-        }
-      ],
-      "home": "Bangor",
-      "away": "Hampden Academy",
-      "home_score": 162,
-      "away_score": 159
     },
     {
       "game_id": "38996",
@@ -84899,18 +84631,20 @@
         {
           "school": "Maranacook Community",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 6
         },
         {
           "school": "Maine Central Institute",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Maranacook Community",
-      "away": "Maine Central Institute"
+      "away": "Maine Central Institute",
+      "home_score": 6,
+      "away_score": 0
     },
     {
       "game_id": "55977",
@@ -88684,8 +88418,8 @@
     },
     {
       "game_id": "60012",
-      "date": "2026-10-08",
-      "time": "6:00 PM",
+      "date": "2026-10-17",
+      "time": "1:00 PM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",

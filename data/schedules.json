@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-11T16:51:01.417650+00:00",
+  "last_updated": "2026-10-12T08:55:56.260667+00:00",
   "season": "fall",
   "games": [
     {
@@ -14329,14 +14329,14 @@
     },
     {
       "game_id": "57532",
-      "date": "2026-10-23",
+      "date": "2026-10-24",
       "time": "6:00 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
       "home": "Maranacook Community",
       "away": "Spruce Mountain",
-      "site": "TBA",
+      "site": "Maranacook Community High School",
       "sport": "Football",
       "gender": "Boys"
     },
@@ -14422,7 +14422,9 @@
       "away": "Mountain Valley",
       "site": "Cameron Stadium",
       "sport": "Football",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 36,
+      "away_score": 14
     },
     {
       "game_id": "60539",
@@ -14769,19 +14771,6 @@
       "gender": "Coed"
     },
     {
-      "game_id": "58683",
-      "date": "2026-08-31",
-      "time": "4:00 PM",
-      "type": "League",
-      "status": "Normal",
-      "level": "Varsity",
-      "home": "",
-      "away": "Woodland Sr., Narraguagus Sr, Machias Memorial",
-      "site": "St. Croix Country Club",
-      "sport": "Golf",
-      "gender": "Coed"
-    },
-    {
       "game_id": "58631",
       "date": "2026-09-03",
       "time": "4:00 PM",
@@ -14856,19 +14845,6 @@
       "home": "Erskine Academy",
       "away": "Nokomis",
       "site": "Natanis GC",
-      "sport": "Golf",
-      "gender": "Coed"
-    },
-    {
-      "game_id": "58552",
-      "date": "2026-08-31",
-      "time": "4:00 PM",
-      "type": "League",
-      "status": "Normal",
-      "level": "Varsity",
-      "home": "Ellsworth",
-      "away": "Bucksport",
-      "site": "Lucerne GC",
       "sport": "Golf",
       "gender": "Coed"
     },
@@ -15360,19 +15336,6 @@
       "gender": "Coed"
     },
     {
-      "game_id": "56796",
-      "date": "2026-08-31",
-      "time": "3:30 PM",
-      "type": "League",
-      "status": "Normal",
-      "level": "Varsity",
-      "home": "Ashland District",
-      "away": "Central Aroostook Sr, Fort Kent Community",
-      "site": "Portage Hills",
-      "sport": "Golf",
-      "gender": "Coed"
-    },
-    {
       "game_id": "56810",
       "date": "2026-09-09",
       "time": "3:30 PM",
@@ -15486,19 +15449,6 @@
       "home": "Monmouth Academy",
       "away": "Dirigo",
       "site": "Spring Brook",
-      "sport": "Golf",
-      "gender": "Coed"
-    },
-    {
-      "game_id": "54694",
-      "date": "2026-08-31",
-      "time": "3:30 PM",
-      "type": "League",
-      "status": "Normal",
-      "level": "Varsity",
-      "home": "Belfast Area",
-      "away": "Cony HS",
-      "site": "Northport Golf Club",
       "sport": "Golf",
       "gender": "Coed"
     },
@@ -15858,32 +15808,6 @@
       "gender": "Coed"
     },
     {
-      "game_id": "53024",
-      "date": "2026-08-31",
-      "time": "2:30 PM",
-      "type": "League",
-      "status": "Normal",
-      "level": "Varsity",
-      "home": "Maine Central Institute",
-      "away": "",
-      "site": "Turner Highlands",
-      "sport": "Golf",
-      "gender": "Coed"
-    },
-    {
-      "game_id": "53026",
-      "date": "2026-08-31",
-      "time": "2:30 PM",
-      "type": "League",
-      "status": "Normal",
-      "level": "Varsity",
-      "home": "Leavitt Area",
-      "away": "Maine Central Institute",
-      "site": "Turner Highlands",
-      "sport": "Golf",
-      "gender": "Coed"
-    },
-    {
       "game_id": "53028",
       "date": "2026-09-10",
       "time": "3:30 PM",
@@ -16080,21 +16004,6 @@
       "site": "Fort Kent Golf Course",
       "sport": "Golf",
       "gender": "Coed"
-    },
-    {
-      "game_id": "52624",
-      "date": "2026-08-31",
-      "time": "3:30 PM",
-      "type": "League",
-      "status": "Normal",
-      "level": "Varsity",
-      "home": "Sanford",
-      "away": "Westbrook",
-      "site": "Sanford Country Club",
-      "sport": "Golf",
-      "gender": "Coed",
-      "home_score": 9,
-      "away_score": 4
     },
     {
       "game_id": "52626",
@@ -17220,19 +17129,6 @@
       "gender": "Coed"
     },
     {
-      "game_id": "41695",
-      "date": "2026-08-31",
-      "time": "",
-      "type": "League",
-      "status": "Normal",
-      "level": "Varsity",
-      "home": "Calais",
-      "away": "",
-      "site": "St. Croix Country Club",
-      "sport": "Golf",
-      "gender": "Coed"
-    },
-    {
       "game_id": "41697",
       "date": "2026-09-03",
       "time": "",
@@ -17491,19 +17387,6 @@
       "home": "Poland Regional",
       "away": "Fryeburg Academy, York",
       "site": "Poland Springs GC",
-      "sport": "Golf",
-      "gender": "Coed"
-    },
-    {
-      "game_id": "40963",
-      "date": "2026-08-31",
-      "time": "3:30 PM",
-      "type": "League",
-      "status": "Normal",
-      "level": "Varsity",
-      "home": "Poland Regional",
-      "away": "York, Wells",
-      "site": "Poland Spring Golf",
       "sport": "Golf",
       "gender": "Coed"
     },
@@ -18262,21 +18145,6 @@
       "site": "Hidden Meadows",
       "sport": "Golf",
       "gender": "Coed"
-    },
-    {
-      "game_id": "38994",
-      "date": "2026-08-31",
-      "time": "3:30 PM",
-      "type": "League",
-      "status": "Normal",
-      "level": "Varsity",
-      "home": "Bangor",
-      "away": "Hampden Academy",
-      "site": "Bangor Municipal Golf Course",
-      "sport": "Golf",
-      "gender": "Coed",
-      "home_score": 162,
-      "away_score": 159
     },
     {
       "game_id": "38996",
@@ -41813,7 +41681,9 @@
       "away": "Maine Central Institute",
       "site": "Maranacook Community High School - Field 3",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 6,
+      "away_score": 0
     },
     {
       "game_id": "55977",
@@ -43739,8 +43609,8 @@
     },
     {
       "game_id": "60012",
-      "date": "2026-10-08",
-      "time": "6:00 PM",
+      "date": "2026-10-17",
+      "time": "1:00 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
