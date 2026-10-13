@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-13T09:10:58.598236+00:00",
+  "last_updated": "2026-10-13T18:33:49.372582+00:00",
   "games": [
     {
       "game_id": "35680",
@@ -9081,24 +9081,24 @@
     {
       "game_id": "53152",
       "date": "2026-10-13",
-      "time": "3:30 PM",
+      "time": "Forfeit",
       "sport": "Field Hockey",
       "gender": "",
       "level": "Varsity",
       "type": "League",
-      "status": "Normal",
+      "status": "Forfeit",
       "site": "Oceanside High School",
       "teams": [
         {
           "school": "Oceanside",
           "home_away": "Home",
-          "result": "",
+          "result": "Loss",
           "score": null
         },
         {
           "school": "Cony HS",
           "home_away": "Away",
-          "result": "",
+          "result": "Win",
           "score": null
         }
       ],
@@ -9279,7 +9279,7 @@
     },
     {
       "game_id": "53007",
-      "date": "2026-10-13",
+      "date": "2026-10-20",
       "time": "3:30 PM",
       "sport": "Field Hockey",
       "gender": "",
@@ -9447,7 +9447,7 @@
     },
     {
       "game_id": "53323",
-      "date": "2026-10-13",
+      "date": "2026-10-14",
       "time": "4:00 PM",
       "sport": "Field Hockey",
       "gender": "",
@@ -10044,8 +10044,8 @@
     },
     {
       "game_id": "52797",
-      "date": "2026-10-16",
-      "time": "3:30 PM",
+      "date": "2026-10-15",
+      "time": "6:15 PM",
       "sport": "Field Hockey",
       "gender": "",
       "level": "Varsity",
@@ -16576,18 +16576,20 @@
         {
           "school": "Hall-Dale HS",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Spruce Mountain",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         }
       ],
       "home": "Hall-Dale HS",
-      "away": "Spruce Mountain"
+      "away": "Spruce Mountain",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "game_id": "38340",
@@ -17455,14 +17457,14 @@
     },
     {
       "game_id": "37789",
-      "date": "2026-10-13",
-      "time": "7:00 PM",
+      "date": "2026-10-14",
+      "time": "4:00 PM",
       "sport": "Field Hockey",
       "gender": "",
       "level": "Varsity",
       "type": "League",
       "status": "Normal",
-      "site": "Bowdoin College Field Hockey Field",
+      "site": "Brunswick High School",
       "teams": [
         {
           "school": "Brunswick",
@@ -20897,7 +20899,7 @@
     },
     {
       "game_id": "36220",
-      "date": "2026-10-13",
+      "date": "2026-10-20",
       "time": "4:00 PM",
       "sport": "Field Hockey",
       "gender": "",
@@ -29414,8 +29416,8 @@
     },
     {
       "game_id": "52757",
-      "date": "2026-10-17",
-      "time": "1:00 PM",
+      "date": "2026-10-15",
+      "time": "7:00 PM",
       "sport": "Football",
       "gender": "",
       "level": "Varsity",
@@ -29613,7 +29615,7 @@
     },
     {
       "game_id": "53016",
-      "date": "2026-10-16",
+      "date": "2026-10-15",
       "time": "7:00 PM",
       "sport": "Football",
       "gender": "",
@@ -29698,8 +29700,8 @@
     },
     {
       "game_id": "53040",
-      "date": "2026-10-16",
-      "time": "7:00 PM",
+      "date": "2026-10-15",
+      "time": "6:00 PM",
       "sport": "Football",
       "gender": "",
       "level": "Varsity",
@@ -41838,18 +41840,20 @@
         {
           "school": "Massabesic",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "South Portland",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 4
         }
       ],
       "home": "Massabesic",
-      "away": "South Portland"
+      "away": "South Portland",
+      "home_score": 0,
+      "away_score": 4
     },
     {
       "game_id": "35239",
@@ -42224,8 +42228,8 @@
     },
     {
       "game_id": "35271",
-      "date": "2026-10-13",
-      "time": "6:15 PM",
+      "date": "2026-10-17",
+      "time": "3:00 PM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
@@ -42571,7 +42575,7 @@
       "level": "Varsity",
       "type": "League",
       "status": "Normal",
-      "site": "Gorham High School",
+      "site": "USM",
       "teams": [
         {
           "school": "Gorham",
@@ -43998,7 +44002,7 @@
     },
     {
       "game_id": "36545",
-      "date": "2026-10-13",
+      "date": "2026-10-14",
       "time": "6:00 PM",
       "sport": "Soccer",
       "gender": "Boys",
@@ -46861,13 +46865,13 @@
     {
       "game_id": "37307",
       "date": "2026-10-13",
-      "time": "3:30 PM",
+      "time": "6:00 PM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
       "type": "League",
       "status": "Normal",
-      "site": "TBA",
+      "site": "Game now at Charlie's Field in Winthrop",
       "teams": [
         {
           "school": "Monmouth Academy",
@@ -47204,14 +47208,14 @@
     },
     {
       "game_id": "37348",
-      "date": "2026-10-13",
-      "time": "5:30 PM",
+      "date": "2026-10-14",
+      "time": "3:30 PM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
       "type": "League",
       "status": "Normal",
-      "site": "TBA",
+      "site": "Fuller Field - Cony",
       "teams": [
         {
           "school": "Cony HS",
@@ -47546,8 +47550,8 @@
     },
     {
       "game_id": "37375",
-      "date": "2026-10-13",
-      "time": "3:30 PM",
+      "date": "2026-10-17",
+      "time": "2:00 PM",
       "sport": "Soccer",
       "gender": "Boys",
       "level": "Varsity",
@@ -48230,7 +48234,7 @@
     },
     {
       "game_id": "37555",
-      "date": "2026-10-13",
+      "date": "2026-10-14",
       "time": "6:00 PM",
       "sport": "Soccer",
       "gender": "Boys",
@@ -48574,7 +48578,7 @@
     },
     {
       "game_id": "37614",
-      "date": "2026-10-13",
+      "date": "2026-10-14",
       "time": "6:00 PM",
       "sport": "Soccer",
       "gender": "Girls",
@@ -48889,7 +48893,7 @@
     },
     {
       "game_id": "38095",
-      "date": "2026-10-13",
+      "date": "2026-10-14",
       "time": "6:00 PM",
       "sport": "Soccer",
       "gender": "Boys",
@@ -49120,7 +49124,7 @@
     {
       "game_id": "37864",
       "date": "2026-10-13",
-      "time": "6:00 PM",
+      "time": "4:15 PM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
@@ -50613,7 +50617,7 @@
     },
     {
       "game_id": "38720",
-      "date": "2026-10-13",
+      "date": "2026-10-19",
       "time": "3:30 PM",
       "sport": "Soccer",
       "gender": "Girls",
@@ -51218,7 +51222,7 @@
     },
     {
       "game_id": "38483",
-      "date": "2026-10-13",
+      "date": "2026-10-14",
       "time": "3:30 PM",
       "sport": "Soccer",
       "gender": "Boys",
@@ -51968,18 +51972,20 @@
         {
           "school": "Sacopee Valley",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Traip Academy",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 4
         }
       ],
       "home": "Sacopee Valley",
-      "away": "Traip Academy"
+      "away": "Traip Academy",
+      "home_score": 0,
+      "away_score": 4
     },
     {
       "game_id": "39020",
@@ -53125,7 +53131,7 @@
     },
     {
       "game_id": "38874",
-      "date": "2026-10-13",
+      "date": "2026-10-14",
       "time": "3:30 PM",
       "sport": "Soccer",
       "gender": "Boys",
@@ -53268,7 +53274,7 @@
     },
     {
       "game_id": "38890",
-      "date": "2026-10-13",
+      "date": "2026-10-14",
       "time": "6:00 PM",
       "sport": "Soccer",
       "gender": "Girls",
@@ -54855,18 +54861,20 @@
         {
           "school": "Oxford Hills",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Tied",
+          "score": 1
         },
         {
           "school": "Mt. Blue",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Tied",
+          "score": 1
         }
       ],
       "home": "Oxford Hills",
-      "away": "Mt. Blue"
+      "away": "Mt. Blue",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "game_id": "39261",
@@ -54927,7 +54935,7 @@
     {
       "game_id": "39269",
       "date": "2026-10-20",
-      "time": "4:00 PM",
+      "time": "6:00 PM",
       "sport": "Soccer",
       "gender": "Boys",
       "level": "Varsity",
@@ -57485,18 +57493,20 @@
         {
           "school": "Calais",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Bangor Christian",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 10
         }
       ],
       "home": "Calais",
-      "away": "Bangor Christian"
+      "away": "Bangor Christian",
+      "home_score": 0,
+      "away_score": 10
     },
     {
       "game_id": "39802",
@@ -58649,7 +58659,7 @@
     {
       "game_id": "40304",
       "date": "2026-10-17",
-      "time": "1:00 PM",
+      "time": "11:00 AM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
@@ -63815,7 +63825,7 @@
     },
     {
       "game_id": "41442",
-      "date": "2026-10-13",
+      "date": "2026-10-15",
       "time": "4:00 PM",
       "sport": "Soccer",
       "gender": "Girls",
@@ -65622,14 +65632,14 @@
     },
     {
       "game_id": "41560",
-      "date": "2026-10-13",
-      "time": "5:30 PM",
+      "date": "2026-10-15",
+      "time": "2:00 PM",
       "sport": "Soccer",
       "gender": "Boys",
       "level": "Varsity",
       "type": "League",
       "status": "Normal",
-      "site": "TBA",
+      "site": "CARA Sports Complex Augusta",
       "teams": [
         {
           "school": "Temple Academy",
@@ -65649,8 +65659,8 @@
     },
     {
       "game_id": "41562",
-      "date": "2026-10-15",
-      "time": "5:30 PM",
+      "date": "2026-10-14",
+      "time": "5:00 PM",
       "sport": "Soccer",
       "gender": "Boys",
       "level": "Varsity",
@@ -65848,14 +65858,14 @@
     },
     {
       "game_id": "41580",
-      "date": "2026-10-13",
-      "time": "4:00 PM",
+      "date": "2026-10-15",
+      "time": "12:30 PM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
       "type": "League",
       "status": "Normal",
-      "site": "TBA",
+      "site": "CARA Sports Complex Augusta",
       "teams": [
         {
           "school": "Temple Academy",
@@ -65875,8 +65885,8 @@
     },
     {
       "game_id": "41582",
-      "date": "2026-10-15",
-      "time": "4:00 PM",
+      "date": "2026-10-14",
+      "time": "3:30 PM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
@@ -66990,7 +67000,7 @@
     },
     {
       "game_id": "41689",
-      "date": "2026-10-15",
+      "date": "2026-10-16",
       "time": "3:30 PM",
       "sport": "Soccer",
       "gender": "Girls",
@@ -77010,7 +77020,7 @@
     },
     {
       "game_id": "52690",
-      "date": "2026-10-13",
+      "date": "2026-10-14",
       "time": "4:00 PM",
       "sport": "Soccer",
       "gender": "Boys",
@@ -77662,7 +77672,7 @@
     {
       "game_id": "53292",
       "date": "2026-10-14",
-      "time": "6:00 PM",
+      "time": "6:30 PM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
@@ -79640,18 +79650,20 @@
         {
           "school": "Calais",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 10
         },
         {
           "school": "Shead",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Calais",
-      "away": "Shead"
+      "away": "Shead",
+      "home_score": 10,
+      "away_score": 0
     },
     {
       "game_id": "53482",
@@ -81930,8 +81942,8 @@
     },
     {
       "game_id": "54487",
-      "date": "2026-10-13",
-      "time": "6:00 PM",
+      "date": "2026-10-14",
+      "time": "4:30 PM",
       "sport": "Soccer",
       "gender": "Boys",
       "level": "Varsity",
@@ -82873,7 +82885,7 @@
     },
     {
       "game_id": "54954",
-      "date": "2026-10-13",
+      "date": "2026-10-14",
       "time": "6:00 PM",
       "sport": "Soccer",
       "gender": "Girls",
@@ -87821,7 +87833,7 @@
     {
       "game_id": "61208",
       "date": "2026-10-15",
-      "time": "6:00 PM",
+      "time": "7:30 PM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
@@ -87875,7 +87887,7 @@
     {
       "game_id": "61212",
       "date": "2026-10-15",
-      "time": "4:00 PM",
+      "time": "5:30 PM",
       "sport": "Soccer",
       "gender": "Boys",
       "level": "Varsity",
