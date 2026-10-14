@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-14T07:21:45.215355+00:00",
+  "last_updated": "2026-10-14T16:01:30.223128+00:00",
   "games": [
     {
       "game_id": "35680",
@@ -7873,6 +7873,33 @@
       "away": "Mattanawcook Academy",
       "home_score": 0,
       "away_score": 8
+    },
+    {
+      "game_id": "64278",
+      "date": "2026-10-17",
+      "time": "6:30 PM",
+      "sport": "Field Hockey",
+      "gender": "",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "Winthrop (Charlie's Field)",
+      "teams": [
+        {
+          "school": "Winthrop",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Lisbon",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Winthrop",
+      "away": "Lisbon"
     },
     {
       "game_id": "60891",
@@ -20036,12 +20063,12 @@
     {
       "game_id": "36789",
       "date": "2026-10-13",
-      "time": "6:30 PM",
+      "time": "Postponed",
       "sport": "Field Hockey",
       "gender": "",
       "level": "Varsity",
       "type": "League",
-      "status": "Normal",
+      "status": "Postponed",
       "site": "Thornton Academy Hill Stadium",
       "teams": [
         {
@@ -25564,18 +25591,20 @@
         {
           "school": "Houlton HS",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 30
         },
         {
           "school": "Waterville",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 16
         }
       ],
       "home": "Houlton HS",
-      "away": "Waterville"
+      "away": "Waterville",
+      "home_score": 30,
+      "away_score": 16
     },
     {
       "game_id": "39535",
@@ -47401,7 +47430,7 @@
     },
     {
       "game_id": "37377",
-      "date": "2026-10-16",
+      "date": "2026-10-15",
       "time": "3:30 PM",
       "sport": "Soccer",
       "gender": "Boys",
@@ -47697,18 +47726,20 @@
         {
           "school": "Cheverus",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Marshwood",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 1
         }
       ],
       "home": "Cheverus",
-      "away": "Marshwood"
+      "away": "Marshwood",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "game_id": "37642",
@@ -50099,7 +50130,7 @@
     },
     {
       "game_id": "38645",
-      "date": "2026-10-16",
+      "date": "2026-10-15",
       "time": "3:30 PM",
       "sport": "Soccer",
       "gender": "Boys",
@@ -52590,7 +52621,7 @@
     },
     {
       "game_id": "38932",
-      "date": "2026-10-13",
+      "date": "2026-10-14",
       "time": "6:00 PM",
       "sport": "Soccer",
       "gender": "Boys",
@@ -66164,8 +66195,8 @@
     },
     {
       "game_id": "41415",
-      "date": "2026-10-13",
-      "time": "4:00 PM",
+      "date": "2026-10-14",
+      "time": "2:30 PM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
@@ -70321,18 +70352,20 @@
         {
           "school": "Sanford",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Falmouth",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 1
         }
       ],
       "home": "Sanford",
-      "away": "Falmouth"
+      "away": "Falmouth",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "game_id": "42658",
@@ -73229,13 +73262,13 @@
     },
     {
       "game_id": "42383",
-      "date": "2026-10-13",
-      "time": "Rainout",
+      "date": "2026-10-17",
+      "time": "2:00 PM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
       "type": "League",
-      "status": "Rainout",
+      "status": "Normal",
       "site": "Telstar",
       "teams": [
         {
@@ -82351,18 +82384,20 @@
         {
           "school": "Houlton HS",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 5
         },
         {
           "school": "Schenck",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Houlton HS",
-      "away": "Schenck"
+      "away": "Schenck",
+      "home_score": 5,
+      "away_score": 0
     },
     {
       "game_id": "54243",
@@ -88919,6 +88954,33 @@
       "away_score": 0
     },
     {
+      "game_id": "884457",
+      "date": "2026-10-15",
+      "time": "5:30 PM",
+      "sport": "Soccer",
+      "gender": "Boys",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "Fryeburg Academy",
+      "teams": [
+        {
+          "school": "Gray-New Gloucester",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Fryeburg Academy",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Fryeburg Academy",
+      "away": "Gray-New Gloucester"
+    },
+    {
       "game_id": "63986",
       "date": "2026-10-12",
       "time": "5:00 PM",
@@ -88946,33 +89008,6 @@
       "away": "Houlton HS",
       "home_score": 1,
       "away_score": 1
-    },
-    {
-      "game_id": "884457",
-      "date": "2026-10-15",
-      "time": "5:30 PM",
-      "sport": "Soccer",
-      "gender": "Boys",
-      "level": "Varsity",
-      "type": "League",
-      "status": "Normal",
-      "site": "Fryeburg Academy",
-      "teams": [
-        {
-          "school": "Gray-New Gloucester",
-          "home_away": "Away",
-          "result": "",
-          "score": null
-        },
-        {
-          "school": "Fryeburg Academy",
-          "home_away": "Home",
-          "result": "",
-          "score": null
-        }
-      ],
-      "home": "Fryeburg Academy",
-      "away": "Gray-New Gloucester"
     },
     {
       "game_id": "62333",
@@ -91062,18 +91097,20 @@
         {
           "school": "Marshwood",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         },
         {
           "school": "Noble",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Marshwood",
-      "away": "Noble"
+      "away": "Noble",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "game_id": "53877",
@@ -91984,18 +92021,20 @@
         {
           "school": "Biddeford",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         },
         {
           "school": "Sanford",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         }
       ],
       "home": "Biddeford",
-      "away": "Sanford"
+      "away": "Sanford",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "game_id": "43634",
@@ -94102,18 +94141,20 @@
         {
           "school": "York",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 2
         },
         {
           "school": "Scarborough",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         }
       ],
       "home": "York",
-      "away": "Scarborough"
+      "away": "Scarborough",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "game_id": "40619",

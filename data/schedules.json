@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-14T07:21:45.215355+00:00",
+  "last_updated": "2026-10-14T16:01:30.223128+00:00",
   "season": "fall",
   "games": [
     {
@@ -2833,6 +2833,19 @@
       "gender": "Girls",
       "home_score": 0,
       "away_score": 8
+    },
+    {
+      "game_id": "64278",
+      "date": "2026-10-17",
+      "time": "6:30 PM",
+      "type": "League",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Winthrop",
+      "away": "Lisbon",
+      "site": "Winthrop (Charlie's Field)",
+      "sport": "Field Hockey",
+      "gender": "Girls"
     },
     {
       "game_id": "60891",
@@ -9046,9 +9059,9 @@
     {
       "game_id": "36789",
       "date": "2026-10-13",
-      "time": "6:30 PM",
+      "time": "Postponed",
       "type": "League",
-      "status": "Normal",
+      "status": "Postponed",
       "level": "Varsity",
       "home": "Thornton Academy",
       "away": "Sanford",
@@ -11869,7 +11882,9 @@
       "away": "Waterville",
       "site": "Maliseet Athletic Field",
       "sport": "Football",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 30,
+      "away_score": 16
     },
     {
       "game_id": "39535",
@@ -22739,7 +22754,7 @@
     },
     {
       "game_id": "37377",
-      "date": "2026-10-16",
+      "date": "2026-10-15",
       "time": "3:30 PM",
       "type": "League",
       "status": "Normal",
@@ -22892,7 +22907,9 @@
       "away": "Marshwood",
       "site": "Cheverus High School",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "game_id": "37642",
@@ -24121,7 +24138,7 @@
     },
     {
       "game_id": "38645",
-      "date": "2026-10-16",
+      "date": "2026-10-15",
       "time": "3:30 PM",
       "type": "League",
       "status": "Normal",
@@ -25394,7 +25411,7 @@
     },
     {
       "game_id": "38932",
-      "date": "2026-10-13",
+      "date": "2026-10-14",
       "time": "6:00 PM",
       "type": "League",
       "status": "Normal",
@@ -32333,8 +32350,8 @@
     },
     {
       "game_id": "41415",
-      "date": "2026-10-13",
-      "time": "4:00 PM",
+      "date": "2026-10-14",
+      "time": "2:30 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
@@ -34457,7 +34474,9 @@
       "away": "Falmouth",
       "site": "Alumni Stadium",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "game_id": "42658",
@@ -35940,10 +35959,10 @@
     },
     {
       "game_id": "42383",
-      "date": "2026-10-13",
-      "time": "Rainout",
+      "date": "2026-10-17",
+      "time": "2:00 PM",
       "type": "League",
-      "status": "Rainout",
+      "status": "Normal",
       "level": "Varsity",
       "home": "Telstar Regional",
       "away": "Mt. Abram",
@@ -40607,7 +40626,9 @@
       "away": "Schenck",
       "site": "Houlton HS",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 5,
+      "away_score": 0
     },
     {
       "game_id": "54243",
@@ -43960,6 +43981,19 @@
       "away_score": 0
     },
     {
+      "game_id": "884457",
+      "date": "2026-10-15",
+      "time": "5:30 PM",
+      "type": "League",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Fryeburg Academy",
+      "away": "Gray-New Gloucester",
+      "site": "Fryeburg Academy",
+      "sport": "Soccer",
+      "gender": "Boys"
+    },
+    {
       "game_id": "63986",
       "date": "2026-10-12",
       "time": "5:00 PM",
@@ -43973,19 +44007,6 @@
       "gender": "Boys",
       "home_score": 1,
       "away_score": 1
-    },
-    {
-      "game_id": "884457",
-      "date": "2026-10-15",
-      "time": "5:30 PM",
-      "type": "League",
-      "status": "Normal",
-      "level": "Varsity",
-      "home": "Fryeburg Academy",
-      "away": "Gray-New Gloucester",
-      "site": "Fryeburg Academy",
-      "sport": "Soccer",
-      "gender": "Boys"
     },
     {
       "game_id": "62333",
@@ -45064,7 +45085,9 @@
       "away": "Noble",
       "site": "Marshwood High School Gym",
       "sport": "Volleyball",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "game_id": "53877",
@@ -45538,7 +45561,9 @@
       "away": "Sanford",
       "site": "Tiger Gym - Biddeford High School",
       "sport": "Volleyball",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "game_id": "43634",
@@ -46620,7 +46645,9 @@
       "away": "Scarborough",
       "site": "York High School",
       "sport": "Volleyball",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "game_id": "40619",
