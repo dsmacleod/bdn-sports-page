@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-15T07:12:51.311365+00:00",
+  "last_updated": "2026-10-15T15:49:52.503713+00:00",
   "season": "fall",
   "games": [
     {
@@ -4238,7 +4238,9 @@
       "away": "Freeport",
       "site": "York High School",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 6
     },
     {
       "game_id": "42560",
@@ -6637,7 +6639,9 @@
       "away": "Spruce Mountain",
       "site": "Gray New Gloucester High School",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 5
     },
     {
       "game_id": "38536",
@@ -18159,7 +18163,9 @@
       "away": "Kennebunk",
       "site": "Cheverus High School",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "game_id": "35649",
@@ -24165,7 +24171,9 @@
       "away": "Camden Hills Regional",
       "site": "At Gouin Field",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 6
     },
     {
       "game_id": "39022",
@@ -24558,7 +24566,9 @@
       "away": "Fryeburg Academy",
       "site": "Shapleigh Field",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 1,
+      "away_score": 7
     },
     {
       "game_id": "39110",
@@ -33620,7 +33630,9 @@
       "away": "Penobscot Valley",
       "site": "Machias Memorial High School",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "game_id": "43026",
@@ -34060,7 +34072,9 @@
       "away": "Freeport",
       "site": "York High School",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "game_id": "42794",
@@ -35112,7 +35126,9 @@
       "away": "Caribou",
       "site": "Presque Isle - Johnson Athl. Compl.",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "game_id": "43194",
@@ -36726,7 +36742,9 @@
       "away": "Massabesic",
       "site": "Waterhouse Field",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "game_id": "53294",
@@ -36842,7 +36860,9 @@
       "away": "Washburn District",
       "site": "Maine School of Science and Math",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "game_id": "53368",
@@ -38375,9 +38395,9 @@
     {
       "game_id": "53498",
       "date": "2026-10-13",
-      "time": "3:45 PM",
+      "time": "Postponed",
       "type": "League",
-      "status": "Normal",
+      "status": "Postponed",
       "level": "Varsity",
       "home": "Greenville",
       "away": "Pine Tree Academy",
@@ -38737,7 +38757,9 @@
       "away": "Biddeford",
       "site": "Marshwood High School Stadium Field",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 2,
+      "away_score": 2
     },
     {
       "game_id": "54499",
@@ -40892,7 +40914,9 @@
       "away": "Bangor Christian",
       "site": "Washington Academy",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 9,
+      "away_score": 3
     },
     {
       "game_id": "59381",

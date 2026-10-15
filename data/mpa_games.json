@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-15T07:12:51.311365+00:00",
+  "last_updated": "2026-10-15T15:49:52.503713+00:00",
   "games": [
     {
       "game_id": "35661",
@@ -10274,18 +10274,20 @@
         {
           "school": "York",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Freeport",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 6
         }
       ],
       "home": "York",
-      "away": "Freeport"
+      "away": "Freeport",
+      "home_score": 0,
+      "away_score": 6
     },
     {
       "game_id": "42560",
@@ -14955,18 +14957,20 @@
         {
           "school": "Gray-New Gloucester",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         },
         {
           "school": "Spruce Mountain",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 5
         }
       ],
       "home": "Gray-New Gloucester",
-      "away": "Spruce Mountain"
+      "away": "Spruce Mountain",
+      "home_score": 1,
+      "away_score": 5
     },
     {
       "game_id": "38536",
@@ -37987,18 +37991,20 @@
         {
           "school": "Cheverus",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         },
         {
           "school": "Kennebunk",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         }
       ],
       "home": "Cheverus",
-      "away": "Kennebunk"
+      "away": "Kennebunk",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "game_id": "35649",
@@ -49705,18 +49711,20 @@
         {
           "school": "Oxford Hills",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Camden Hills Regional",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 6
         }
       ],
       "home": "Oxford Hills",
-      "away": "Camden Hills Regional"
+      "away": "Camden Hills Regional",
+      "home_score": 0,
+      "away_score": 6
     },
     {
       "game_id": "39022",
@@ -50476,18 +50484,20 @@
         {
           "school": "Traip Academy",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         },
         {
           "school": "Fryeburg Academy",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 7
         }
       ],
       "home": "Traip Academy",
-      "away": "Fryeburg Academy"
+      "away": "Fryeburg Academy",
+      "home_score": 1,
+      "away_score": 7
     },
     {
       "game_id": "39110",
@@ -68175,18 +68185,20 @@
         {
           "school": "Penobscot Valley",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         },
         {
           "school": "Machias Memorial",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Machias Memorial",
-      "away": "Penobscot Valley"
+      "away": "Penobscot Valley",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "game_id": "43026",
@@ -69035,18 +69047,20 @@
         {
           "school": "York",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 2
         },
         {
           "school": "Freeport",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         }
       ],
       "home": "York",
-      "away": "Freeport"
+      "away": "Freeport",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "game_id": "42794",
@@ -71095,18 +71109,20 @@
         {
           "school": "Presque Isle",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         },
         {
           "school": "Caribou",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Presque Isle",
-      "away": "Caribou"
+      "away": "Caribou",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "game_id": "43194",
@@ -74249,18 +74265,20 @@
         {
           "school": "Biddeford",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Massabesic",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         }
       ],
       "home": "Biddeford",
-      "away": "Massabesic"
+      "away": "Massabesic",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "game_id": "53294",
@@ -74477,18 +74495,20 @@
         {
           "school": "Maine School of Science and Math",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Tied",
+          "score": 1
         },
         {
           "school": "Washburn District",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Tied",
+          "score": 1
         }
       ],
       "home": "Maine School of Science and Math",
-      "away": "Washburn District"
+      "away": "Washburn District",
+      "home_score": 1,
+      "away_score": 1
     },
     {
       "game_id": "53368",
@@ -77477,12 +77497,12 @@
     {
       "game_id": "53498",
       "date": "2026-10-13",
-      "time": "3:45 PM",
+      "time": "Postponed",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
       "type": "League",
-      "status": "Normal",
+      "status": "Postponed",
       "site": "Greenville",
       "teams": [
         {
@@ -78178,18 +78198,20 @@
         {
           "school": "Marshwood",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Tied",
+          "score": 2
         },
         {
           "school": "Biddeford",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Tied",
+          "score": 2
         }
       ],
       "home": "Marshwood",
-      "away": "Biddeford"
+      "away": "Biddeford",
+      "home_score": 2,
+      "away_score": 2
     },
     {
       "game_id": "54499",
@@ -82391,18 +82413,20 @@
         {
           "school": "Washington Academy",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 9
         },
         {
           "school": "Bangor Christian",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 3
         }
       ],
       "home": "Washington Academy",
-      "away": "Bangor Christian"
+      "away": "Bangor Christian",
+      "home_score": 9,
+      "away_score": 3
     },
     {
       "game_id": "59381",
