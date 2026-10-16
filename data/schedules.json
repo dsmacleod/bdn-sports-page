@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-16T06:55:44.979133+00:00",
+  "last_updated": "2026-10-16T15:38:28.944655+00:00",
   "season": "fall",
   "games": [
     {
@@ -5073,7 +5073,9 @@
       "away": "Scarborough",
       "site": "Alumni Stadium",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 9,
+      "away_score": 1
     },
     {
       "game_id": "39732",
@@ -6661,7 +6663,7 @@
     {
       "game_id": "38642",
       "date": "2026-10-19",
-      "time": "4:30 PM",
+      "time": "5:00 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
@@ -7209,7 +7211,7 @@
     },
     {
       "game_id": "38184",
-      "date": "2026-10-16",
+      "date": "2026-10-20",
       "time": "4:00 PM",
       "type": "League",
       "status": "Normal",
@@ -7252,7 +7254,7 @@
     },
     {
       "game_id": "37972",
-      "date": "2026-10-19",
+      "date": "2026-10-21",
       "time": "6:00 PM",
       "type": "League",
       "status": "Normal",
@@ -18084,7 +18086,9 @@
       "away": "Cheverus",
       "site": "Windham High School",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "game_id": "35370",
@@ -24142,7 +24146,9 @@
       "away": "Freeport",
       "site": "Shapleigh School",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "game_id": "39148",
@@ -24520,7 +24526,9 @@
       "away": "Skowhegan Area",
       "site": "At Gouin Field",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "game_id": "39189",
@@ -28430,7 +28438,9 @@
       "away": "Wisdom HS",
       "site": "Katahdin",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "game_id": "41254",
@@ -29571,8 +29581,8 @@
     },
     {
       "game_id": "41604",
-      "date": "2026-10-16",
-      "time": "4:45 PM",
+      "date": "2026-10-20",
+      "time": "4:00 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
@@ -31418,7 +31428,9 @@
       "away": "Oak Hill",
       "site": "Lisbon",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 5
     },
     {
       "game_id": "42138",
@@ -33759,7 +33771,9 @@
       "away": "Camden Hills Regional",
       "site": "Cameron Stadium",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 0,
+      "away_score": 8
     },
     {
       "game_id": "43221",
@@ -33918,7 +33932,9 @@
       "away": "Caribou",
       "site": "Presque Isle - Johnson Athl. Compl.",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "game_id": "43182",
@@ -37890,7 +37906,9 @@
       "away": "Nokomis",
       "site": "Mount View High School",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "game_id": "54005",
@@ -38587,7 +38605,9 @@
       "away": "Winthrop",
       "site": "Hall Dale HS",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 8,
+      "away_score": 0
     },
     {
       "game_id": "57495",
@@ -39595,8 +39615,8 @@
     },
     {
       "game_id": "58073",
-      "date": "2026-10-16",
-      "time": "3:00 PM",
+      "date": "2026-10-20",
+      "time": "2:30 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
@@ -42810,7 +42830,9 @@
       "away": "Portland",
       "site": "Tiger Gym - Biddeford High School",
       "sport": "Volleyball",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "game_id": "53231",
@@ -43874,7 +43896,9 @@
       "away": "Falmouth",
       "site": "Deering HS Gym",
       "sport": "Volleyball",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "game_id": "41822",
@@ -45272,7 +45296,9 @@
       "away": "Cheverus",
       "site": "Bonny Eagle High School",
       "sport": "Volleyball",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "game_id": "37425",

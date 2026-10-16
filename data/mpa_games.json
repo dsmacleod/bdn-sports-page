@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-16T06:55:44.979133+00:00",
+  "last_updated": "2026-10-16T15:38:28.944655+00:00",
   "games": [
     {
       "game_id": "35661",
@@ -11755,18 +11755,20 @@
         {
           "school": "Sanford",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 9
         },
         {
           "school": "Scarborough",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         }
       ],
       "home": "Sanford",
-      "away": "Scarborough"
+      "away": "Scarborough",
+      "home_score": 9,
+      "away_score": 1
     },
     {
       "game_id": "39732",
@@ -14852,7 +14854,7 @@
     {
       "game_id": "38642",
       "date": "2026-10-19",
-      "time": "4:30 PM",
+      "time": "5:00 PM",
       "sport": "Field Hockey",
       "gender": "",
       "level": "Varsity",
@@ -15918,7 +15920,7 @@
     },
     {
       "game_id": "38184",
-      "date": "2026-10-16",
+      "date": "2026-10-20",
       "time": "4:00 PM",
       "sport": "Field Hockey",
       "gender": "",
@@ -16003,7 +16005,7 @@
     },
     {
       "game_id": "37972",
-      "date": "2026-10-19",
+      "date": "2026-10-21",
       "time": "6:00 PM",
       "sport": "Field Hockey",
       "gender": "",
@@ -37690,18 +37692,20 @@
         {
           "school": "Windham",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Cheverus",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 1
         }
       ],
       "home": "Windham",
-      "away": "Cheverus"
+      "away": "Cheverus",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "game_id": "35370",
@@ -49488,18 +49492,20 @@
         {
           "school": "Traip Academy",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         },
         {
           "school": "Freeport",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         }
       ],
       "home": "Traip Academy",
-      "away": "Freeport"
+      "away": "Freeport",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "game_id": "39148",
@@ -50230,18 +50236,20 @@
         {
           "school": "Oxford Hills",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         },
         {
           "school": "Skowhegan Area",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         }
       ],
       "home": "Oxford Hills",
-      "away": "Skowhegan Area"
+      "away": "Skowhegan Area",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "game_id": "39189",
@@ -57849,18 +57857,20 @@
         {
           "school": "Katahdin HS",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         },
         {
           "school": "Wisdom HS",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         }
       ],
       "home": "Katahdin HS",
-      "away": "Wisdom HS"
+      "away": "Wisdom HS",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "game_id": "41254",
@@ -60079,8 +60089,8 @@
     },
     {
       "game_id": "41604",
-      "date": "2026-10-16",
-      "time": "4:45 PM",
+      "date": "2026-10-20",
+      "time": "4:00 PM",
       "sport": "Soccer",
       "gender": "Boys",
       "level": "Varsity",
@@ -63665,18 +63675,20 @@
         {
           "school": "Oak Hill",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 5
         },
         {
           "school": "Lisbon",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         }
       ],
       "home": "Lisbon",
-      "away": "Oak Hill"
+      "away": "Oak Hill",
+      "home_score": 1,
+      "away_score": 5
     },
     {
       "game_id": "42138",
@@ -68232,18 +68244,20 @@
         {
           "school": "Bangor",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Camden Hills Regional",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 8
         }
       ],
       "home": "Bangor",
-      "away": "Camden Hills Regional"
+      "away": "Camden Hills Regional",
+      "home_score": 0,
+      "away_score": 8
     },
     {
       "game_id": "43221",
@@ -68545,18 +68559,20 @@
         {
           "school": "Presque Isle",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         },
         {
           "school": "Caribou",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         }
       ],
       "home": "Presque Isle",
-      "away": "Caribou"
+      "away": "Caribou",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "game_id": "43182",
@@ -76297,18 +76313,20 @@
         {
           "school": "Mount View",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         },
         {
           "school": "Nokomis",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Mount View",
-      "away": "Nokomis"
+      "away": "Nokomis",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "game_id": "54005",
@@ -77652,18 +77670,20 @@
         {
           "school": "Winthrop",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Hall-Dale HS",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 8
         }
       ],
       "home": "Hall-Dale HS",
-      "away": "Winthrop"
+      "away": "Winthrop",
+      "home_score": 8,
+      "away_score": 0
     },
     {
       "game_id": "57495",
@@ -79623,8 +79643,8 @@
     },
     {
       "game_id": "58073",
-      "date": "2026-10-16",
-      "time": "3:00 PM",
+      "date": "2026-10-20",
+      "time": "2:30 PM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
@@ -85877,18 +85897,20 @@
         {
           "school": "Biddeford",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Portland",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         }
       ],
       "home": "Biddeford",
-      "away": "Portland"
+      "away": "Portland",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "game_id": "53231",
@@ -87949,18 +87971,20 @@
         {
           "school": "Deering",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         },
         {
           "school": "Falmouth",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Deering",
-      "away": "Falmouth"
+      "away": "Falmouth",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "game_id": "41822",
@@ -90663,18 +90687,20 @@
         {
           "school": "Bonny Eagle",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         },
         {
           "school": "Cheverus",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         }
       ],
       "home": "Bonny Eagle",
-      "away": "Cheverus"
+      "away": "Cheverus",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "game_id": "37425",
