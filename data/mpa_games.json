@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-17T06:47:01.839945+00:00",
+  "last_updated": "2026-10-17T14:30:21.556785+00:00",
   "games": [
     {
       "game_id": "35661",
@@ -22172,18 +22172,20 @@
         {
           "school": "Bangor",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 35
         },
         {
           "school": "Edward Little",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 14
         }
       ],
       "home": "Bangor",
-      "away": "Edward Little"
+      "away": "Edward Little",
+      "home_score": 35,
+      "away_score": 14
     },
     {
       "game_id": "38907",
@@ -38155,18 +38157,20 @@
         {
           "school": "Mt. Ararat",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         },
         {
           "school": "Hampden Academy",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         }
       ],
       "home": "Mt. Ararat",
-      "away": "Hampden Academy"
+      "away": "Hampden Academy",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "game_id": "35480",
@@ -43441,18 +43445,20 @@
         {
           "school": "Cheverus",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 4
         },
         {
           "school": "Massabesic",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         }
       ],
       "home": "Cheverus",
-      "away": "Massabesic"
+      "away": "Massabesic",
+      "home_score": 4,
+      "away_score": 1
     },
     {
       "game_id": "37638",
@@ -44179,8 +44185,8 @@
     },
     {
       "game_id": "37614",
-      "date": "2026-10-17",
-      "time": "6:15 PM",
+      "date": "2026-10-21",
+      "time": "",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-17T06:47:01.839945+00:00",
+  "last_updated": "2026-10-17T14:30:21.556785+00:00",
   "season": "fall",
   "games": [
     {
@@ -10428,7 +10428,9 @@
       "away": "Edward Little",
       "site": "Cameron Stadium",
       "sport": "Football",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 35,
+      "away_score": 14
     },
     {
       "game_id": "38907",
@@ -18359,7 +18361,9 @@
       "away": "Hampden Academy",
       "site": "Mt. Ararat High School",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "game_id": "35480",
@@ -21069,7 +21073,9 @@
       "away": "Massabesic",
       "site": "Cheverus High School",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 4,
+      "away_score": 1
     },
     {
       "game_id": "37638",
@@ -21446,8 +21452,8 @@
     },
     {
       "game_id": "37614",
-      "date": "2026-10-17",
-      "time": "6:15 PM",
+      "date": "2026-10-21",
+      "time": "",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
