@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-18T07:06:55.166656+00:00",
+  "last_updated": "2026-10-18T14:57:02.731521+00:00",
   "games": [
     {
       "game_id": "35661",
@@ -57602,8 +57602,8 @@
     },
     {
       "game_id": "41126",
-      "date": "2026-10-16",
-      "time": "4:00 PM",
+      "date": "2026-10-21",
+      "time": "3:30 PM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
@@ -63157,7 +63157,7 @@
     },
     {
       "game_id": "42303",
-      "date": "2026-10-16",
+      "date": "2026-10-20",
       "time": "4:00 PM",
       "sport": "Soccer",
       "gender": "Boys",
@@ -69770,18 +69770,20 @@
         {
           "school": "Sanford",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         },
         {
           "school": "Noble",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Sanford",
-      "away": "Noble"
+      "away": "Noble",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "game_id": "52611",
