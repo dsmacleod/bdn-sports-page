@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-19T07:33:08.917773+00:00",
+  "last_updated": "2026-10-19T17:49:47.892719+00:00",
   "season": "fall",
   "games": [
     {
@@ -2871,7 +2871,7 @@
       "level": "Varsity",
       "home": "Belfast Area",
       "away": "Oceanside",
-      "site": "Point Lookout",
+      "site": "Belfast Area High School",
       "sport": "Field Hockey",
       "gender": "Girls"
     },
@@ -3350,7 +3350,7 @@
     {
       "game_id": "53007",
       "date": "2026-10-20",
-      "time": "3:30 PM",
+      "time": "4:00 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
@@ -8170,10 +8170,10 @@
     },
     {
       "game_id": "35778",
-      "date": "2026-10-16",
-      "time": "Canceled",
+      "date": "2026-10-20",
+      "time": "3:30 PM",
       "type": "League",
-      "status": "Canceled",
+      "status": "Normal",
       "level": "Varsity",
       "home": "Camden Hills Regional",
       "away": "Mt. Ararat",
@@ -21437,19 +21437,6 @@
       "away_score": 2
     },
     {
-      "game_id": "37614",
-      "date": "2026-10-21",
-      "time": "",
-      "type": "League",
-      "status": "Normal",
-      "level": "Varsity",
-      "home": "Mt. Blue",
-      "away": "Brunswick",
-      "site": "Mt. Blue High School Competition Field",
-      "sport": "Soccer",
-      "gender": "Girls"
-    },
-    {
       "game_id": "37618",
       "date": "2026-10-16",
       "time": "7:00 PM",
@@ -21715,7 +21702,9 @@
       "away": "Camden Hills Regional",
       "site": "CAMERON STADIUM",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 8
     },
     {
       "game_id": "38777",
@@ -25789,8 +25778,8 @@
     },
     {
       "game_id": "40327",
-      "date": "2026-10-16",
-      "time": "3:30 PM",
+      "date": "2026-10-19",
+      "time": "4:00 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
@@ -26797,8 +26786,8 @@
     },
     {
       "game_id": "40264",
-      "date": "2026-10-13",
-      "time": "6:00 PM",
+      "date": "2026-10-19",
+      "time": "6:30 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
@@ -28712,7 +28701,7 @@
     {
       "game_id": "41428",
       "date": "2026-10-19",
-      "time": "3:30 PM",
+      "time": "4:00 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
@@ -33091,7 +33080,7 @@
     },
     {
       "game_id": "43026",
-      "date": "2026-10-16",
+      "date": "2026-10-21",
       "time": "4:00 PM",
       "type": "League",
       "status": "Normal",
@@ -37795,8 +37784,8 @@
     },
     {
       "game_id": "55738",
-      "date": "2026-10-19",
-      "time": "3:30 PM",
+      "date": "2026-10-20",
+      "time": "6:00 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
@@ -40934,6 +40923,21 @@
       "away_score": 1
     },
     {
+      "game_id": "66276",
+      "date": "2026-10-14",
+      "time": "4:00 PM",
+      "type": "League",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Calais",
+      "away": "Lee Academy",
+      "site": "Calais High School",
+      "sport": "Volleyball",
+      "gender": "Girls",
+      "home_score": 3,
+      "away_score": 1
+    },
+    {
       "game_id": "62333",
       "date": "2026-10-06",
       "time": "5:30 PM",
@@ -41064,7 +41068,9 @@
       "away": "Lee Academy",
       "site": "Calais Middle/High School",
       "sport": "Volleyball",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "game_id": "58110",
@@ -42828,7 +42834,9 @@
       "away": "Yarmouth",
       "site": "NYA",
       "sport": "Volleyball",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "game_id": "42887",

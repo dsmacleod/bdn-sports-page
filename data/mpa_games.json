@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-19T07:33:08.917773+00:00",
+  "last_updated": "2026-10-19T17:49:47.892719+00:00",
   "games": [
     {
       "game_id": "35661",
@@ -7430,7 +7430,7 @@
       "level": "Varsity",
       "type": "League",
       "status": "Normal",
-      "site": "Point Lookout",
+      "site": "Belfast Area High School",
       "teams": [
         {
           "school": "Belfast Area",
@@ -8371,7 +8371,7 @@
     {
       "game_id": "53007",
       "date": "2026-10-20",
-      "time": "3:30 PM",
+      "time": "4:00 PM",
       "sport": "Field Hockey",
       "gender": "",
       "level": "Varsity",
@@ -17741,13 +17741,13 @@
     },
     {
       "game_id": "35778",
-      "date": "2026-10-16",
-      "time": "Canceled",
+      "date": "2026-10-20",
+      "time": "3:30 PM",
       "sport": "Field Hockey",
       "gender": "",
       "level": "Varsity",
       "type": "League",
-      "status": "Canceled",
+      "status": "Normal",
       "site": "Camden Hills Regional High School",
       "teams": [
         {
@@ -44082,33 +44082,6 @@
       "away_score": 2
     },
     {
-      "game_id": "37614",
-      "date": "2026-10-21",
-      "time": "",
-      "sport": "Soccer",
-      "gender": "Girls",
-      "level": "Varsity",
-      "type": "League",
-      "status": "Normal",
-      "site": "Mt. Blue High School Competition Field",
-      "teams": [
-        {
-          "school": "Mt. Blue",
-          "home_away": "Home",
-          "result": "",
-          "score": null
-        },
-        {
-          "school": "Brunswick",
-          "home_away": "Away",
-          "result": "",
-          "score": null
-        }
-      ],
-      "home": "Mt. Blue",
-      "away": "Brunswick"
-    },
-    {
       "game_id": "37618",
       "date": "2026-10-16",
       "time": "7:00 PM",
@@ -44615,18 +44588,20 @@
         {
           "school": "Bangor",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Camden Hills Regional",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 8
         }
       ],
       "home": "Bangor",
-      "away": "Camden Hills Regional"
+      "away": "Camden Hills Regional",
+      "home_score": 0,
+      "away_score": 8
     },
     {
       "game_id": "38777",
@@ -52536,8 +52511,8 @@
     },
     {
       "game_id": "40327",
-      "date": "2026-10-16",
-      "time": "3:30 PM",
+      "date": "2026-10-19",
+      "time": "4:00 PM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
@@ -54496,8 +54471,8 @@
     },
     {
       "game_id": "40264",
-      "date": "2026-10-13",
-      "time": "6:00 PM",
+      "date": "2026-10-19",
+      "time": "6:30 PM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
@@ -58216,7 +58191,7 @@
     {
       "game_id": "41428",
       "date": "2026-10-19",
-      "time": "3:30 PM",
+      "time": "4:00 PM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
@@ -66739,7 +66714,7 @@
     },
     {
       "game_id": "43026",
-      "date": "2026-10-16",
+      "date": "2026-10-21",
       "time": "4:00 PM",
       "sport": "Soccer",
       "gender": "Boys",
@@ -75895,8 +75870,8 @@
     },
     {
       "game_id": "55738",
-      "date": "2026-10-19",
-      "time": "3:30 PM",
+      "date": "2026-10-20",
+      "time": "6:00 PM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
@@ -81986,6 +81961,35 @@
       "away_score": 1
     },
     {
+      "game_id": "66276",
+      "date": "2026-10-14",
+      "time": "4:00 PM",
+      "sport": "Volleyball",
+      "gender": "Girls",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "Calais High School",
+      "teams": [
+        {
+          "school": "Calais",
+          "home_away": "Home",
+          "result": "Win",
+          "score": 3
+        },
+        {
+          "school": "Lee Academy",
+          "home_away": "Away",
+          "result": "Loss",
+          "score": 1
+        }
+      ],
+      "home": "Calais",
+      "away": "Lee Academy",
+      "home_score": 3,
+      "away_score": 1
+    },
+    {
       "game_id": "62333",
       "date": "2026-10-06",
       "time": "5:30 PM",
@@ -82231,18 +82235,20 @@
         {
           "school": "Lee Academy",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Calais",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         }
       ],
       "home": "Calais",
-      "away": "Lee Academy"
+      "away": "Lee Academy",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "game_id": "58110",
@@ -85647,18 +85653,20 @@
         {
           "school": "North Yarmouth Academy",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 2
         },
         {
           "school": "Yarmouth",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         }
       ],
       "home": "North Yarmouth Academy",
-      "away": "Yarmouth"
+      "away": "Yarmouth",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "game_id": "42887",
