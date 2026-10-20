@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-20T07:21:24.396108+00:00",
+  "last_updated": "2026-10-20T15:53:40.152863+00:00",
   "games": [
     {
       "game_id": "35680",
@@ -10025,18 +10025,20 @@
         {
           "school": "Boothbay Region",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 10
         },
         {
           "school": "Telstar Regional",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Boothbay Region",
-      "away": "Telstar Regional"
+      "away": "Telstar Regional",
+      "home_score": 10,
+      "away_score": 0
     },
     {
       "game_id": "42153",
@@ -36898,18 +36900,20 @@
         {
           "school": "Brunswick",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         },
         {
           "school": "Mt. Ararat",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         }
       ],
       "home": "Brunswick",
-      "away": "Mt. Ararat"
+      "away": "Mt. Ararat",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "game_id": "35219",
@@ -39964,18 +39968,20 @@
         {
           "school": "Cheverus",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Tied",
+          "score": 0
         },
         {
           "school": "Westbrook",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Tied",
+          "score": 0
         }
       ],
       "home": "Cheverus",
-      "away": "Westbrook"
+      "away": "Westbrook",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "game_id": "38065",
@@ -40502,7 +40508,7 @@
     {
       "game_id": "38226",
       "date": "2026-10-20",
-      "time": "4:00 PM",
+      "time": "6:00 PM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
@@ -50850,19 +50856,19 @@
           "school": "Houlton HS",
           "home_away": "Home",
           "result": "Loss",
-          "score": 2
+          "score": 4
         },
         {
           "school": "Mattanawcook Academy",
           "home_away": "Away",
           "result": "Win",
-          "score": 6
+          "score": 7
         }
       ],
       "home": "Houlton HS",
       "away": "Mattanawcook Academy",
-      "home_score": 2,
-      "away_score": 6
+      "home_score": 4,
+      "away_score": 7
     },
     {
       "game_id": "40345",
@@ -71001,18 +71007,20 @@
         {
           "school": "Penobscot Christian",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Hodgdon HS",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         }
       ],
       "home": "Penobscot Christian",
-      "away": "Hodgdon HS"
+      "away": "Hodgdon HS",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "game_id": "53602",
@@ -81559,18 +81567,20 @@
         {
           "school": "Sanford",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 2
         },
         {
           "school": "Noble",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         }
       ],
       "home": "Sanford",
-      "away": "Noble"
+      "away": "Noble",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "game_id": "43297",

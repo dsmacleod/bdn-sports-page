@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-20T07:21:24.396108+00:00",
+  "last_updated": "2026-10-20T15:53:40.152863+00:00",
   "season": "fall",
   "games": [
     {
@@ -4243,7 +4243,9 @@
       "away": "Telstar Regional",
       "site": "Boothbay",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 10,
+      "away_score": 0
     },
     {
       "game_id": "42153",
@@ -17816,7 +17818,9 @@
       "away": "Mt. Ararat",
       "site": "Brunswick High School",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "game_id": "35219",
@@ -19398,7 +19402,9 @@
       "away": "Westbrook",
       "site": "Cheverus High School",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 0
     },
     {
       "game_id": "38065",
@@ -19673,7 +19679,7 @@
     {
       "game_id": "38226",
       "date": "2026-10-20",
-      "time": "4:00 PM",
+      "time": "6:00 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
@@ -25006,8 +25012,8 @@
       "site": "Houlton",
       "sport": "Soccer",
       "gender": "Boys",
-      "home_score": 2,
-      "away_score": 6
+      "home_score": 4,
+      "away_score": 7
     },
     {
       "game_id": "40345",
@@ -35386,7 +35392,9 @@
       "away": "Hodgdon HS",
       "site": "Penobscot Christian",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "game_id": "53602",
@@ -40836,7 +40844,9 @@
       "away": "Noble",
       "site": "Partners Bank Gym",
       "sport": "Volleyball",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "game_id": "43297",
