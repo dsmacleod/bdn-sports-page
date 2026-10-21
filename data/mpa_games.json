@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-21T07:21:35.374697+00:00",
+  "last_updated": "2026-10-21T16:10:36.318189+00:00",
   "games": [
     {
       "game_id": "35680",
@@ -7217,6 +7217,87 @@
       "away_score": 0
     },
     {
+      "game_id": "66890",
+      "date": "2026-10-23",
+      "time": "6:00 PM",
+      "sport": "Field Hockey",
+      "gender": "",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Noble High School",
+      "teams": [
+        {
+          "school": "Noble",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Bonny Eagle",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Noble",
+      "away": "Bonny Eagle"
+    },
+    {
+      "game_id": "66916",
+      "date": "2026-10-28",
+      "time": "6:00 PM",
+      "sport": "Field Hockey",
+      "gender": "",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Fuller Field - Cony HS",
+      "teams": [
+        {
+          "school": "Cony HS",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Gardiner Area",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Cony HS",
+      "away": "Gardiner Area"
+    },
+    {
+      "game_id": "66942",
+      "date": "2026-10-28",
+      "time": "3:00 PM",
+      "sport": "Field Hockey",
+      "gender": "",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Skowhegan High School--61 Academy Circle",
+      "teams": [
+        {
+          "school": "Skowhegan Area",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Lewiston",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Skowhegan Area",
+      "away": "Lewiston"
+    },
+    {
       "game_id": "55999",
       "date": "2026-09-30",
       "time": "6:00 PM",
@@ -7451,31 +7532,29 @@
     {
       "game_id": "54736",
       "date": "2026-10-19",
-      "time": "3:30 PM",
+      "time": "Forfeit",
       "sport": "Field Hockey",
       "gender": "",
       "level": "Varsity",
       "type": "League",
-      "status": "Normal",
+      "status": "Forfeit",
       "site": "Belfast Area High School",
       "teams": [
         {
           "school": "Belfast Area",
           "home_away": "Home",
           "result": "Win",
-          "score": 12
+          "score": null
         },
         {
           "school": "Oceanside",
           "home_away": "Away",
           "result": "Loss",
-          "score": 0
+          "score": null
         }
       ],
       "home": "Belfast Area",
-      "away": "Oceanside",
-      "home_score": 12,
-      "away_score": 0
+      "away": "Oceanside"
     },
     {
       "game_id": "54742",
@@ -12993,18 +13072,20 @@
         {
           "school": "Traip Academy",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Greely",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 7
         }
       ],
       "home": "Traip Academy",
-      "away": "Greely"
+      "away": "Greely",
+      "home_score": 0,
+      "away_score": 7
     },
     {
       "game_id": "39092",
@@ -17267,8 +17348,8 @@
     },
     {
       "game_id": "36910",
-      "date": "2026-10-16",
-      "time": "5:00 PM",
+      "date": "2026-10-21",
+      "time": "3:30 PM",
       "sport": "Field Hockey",
       "gender": "",
       "level": "Varsity",
@@ -26666,35 +26747,6 @@
       "away_score": 8
     },
     {
-      "game_id": "66068",
-      "date": "2026-10-17",
-      "time": "11:00 AM",
-      "sport": "Football",
-      "gender": "",
-      "level": "Varsity",
-      "type": "League",
-      "status": "Normal",
-      "site": "Gorham High School",
-      "teams": [
-        {
-          "school": "Gorham",
-          "home_away": "Home",
-          "result": "Win",
-          "score": 28
-        },
-        {
-          "school": "Scarborough",
-          "home_away": "Away",
-          "result": "Loss",
-          "score": 21
-        }
-      ],
-      "home": "Gorham",
-      "away": "Scarborough",
-      "home_score": 28,
-      "away_score": 21
-    },
-    {
       "game_id": "58654",
       "date": "2026-09-17",
       "time": "7:00 PM",
@@ -26722,6 +26774,35 @@
       "away": "Dirigo",
       "home_score": 18,
       "away_score": 6
+    },
+    {
+      "game_id": "66068",
+      "date": "2026-10-17",
+      "time": "11:00 AM",
+      "sport": "Football",
+      "gender": "",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "Gorham High School",
+      "teams": [
+        {
+          "school": "Gorham",
+          "home_away": "Home",
+          "result": "Win",
+          "score": 28
+        },
+        {
+          "school": "Scarborough",
+          "home_away": "Away",
+          "result": "Loss",
+          "score": 21
+        }
+      ],
+      "home": "Gorham",
+      "away": "Scarborough",
+      "home_score": 28,
+      "away_score": 21
     },
     {
       "game_id": "57524",
@@ -51880,18 +51961,20 @@
         {
           "school": "Scarborough",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 4
         },
         {
           "school": "Sanford",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         }
       ],
       "home": "Scarborough",
-      "away": "Sanford"
+      "away": "Sanford",
+      "home_score": 4,
+      "away_score": 1
     },
     {
       "game_id": "40699",
@@ -76892,33 +76975,112 @@
       "away": "Biddeford"
     },
     {
-      "game_id": "884457",
-      "date": "2026-10-15",
-      "time": "5:30 PM",
+      "game_id": "66881",
+      "date": "2026-10-24",
+      "time": "12:00 PM",
+      "sport": "Soccer",
+      "gender": "Girls",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Marshwood High School Stadium Field",
+      "teams": [
+        {
+          "school": "Marshwood",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Westbrook",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Marshwood",
+      "away": "Westbrook"
+    },
+    {
+      "game_id": "66918",
+      "date": "2026-10-23",
+      "time": "6:00 PM",
       "sport": "Soccer",
       "gender": "Boys",
       "level": "Varsity",
-      "type": "League",
+      "type": "Tournament",
       "status": "Normal",
-      "site": "Fryeburg Academy",
+      "site": "Kennebunk High School",
       "teams": [
         {
-          "school": "Gray-New Gloucester",
-          "home_away": "Away",
-          "result": "Loss",
-          "score": 0
+          "school": "Kennebunk",
+          "home_away": "Home",
+          "result": "",
+          "score": null
         },
         {
-          "school": "Fryeburg Academy",
-          "home_away": "Home",
-          "result": "Win",
-          "score": 5
+          "school": "Marshwood",
+          "home_away": "Away",
+          "result": "",
+          "score": null
         }
       ],
-      "home": "Fryeburg Academy",
-      "away": "Gray-New Gloucester",
-      "home_score": 5,
-      "away_score": 0
+      "home": "Kennebunk",
+      "away": "Marshwood"
+    },
+    {
+      "game_id": "66934",
+      "date": "2026-10-24",
+      "time": "11:00 AM",
+      "sport": "Soccer",
+      "gender": "Girls",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Skowhegan High School--61 Academy Circle",
+      "teams": [
+        {
+          "school": "Skowhegan Area",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Lawrence",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Skowhegan Area",
+      "away": "Lawrence"
+    },
+    {
+      "game_id": "66913",
+      "date": "2026-10-24",
+      "time": "3:00 PM",
+      "sport": "Soccer",
+      "gender": "Girls",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Fuller Field - Cony HS",
+      "teams": [
+        {
+          "school": "Cony HS",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Ellsworth",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Cony HS",
+      "away": "Ellsworth"
     },
     {
       "game_id": "64628",
@@ -77091,6 +77253,108 @@
       ],
       "home": "Mt. Blue",
       "away": "Brunswick"
+    },
+    {
+      "game_id": "66969",
+      "date": "2026-10-23",
+      "time": "6:00 PM",
+      "sport": "Soccer",
+      "gender": "Girls",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Bonny Eagle High School",
+      "teams": [
+        {
+          "school": "Bonny Eagle",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Portland",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Bonny Eagle",
+      "away": "Portland"
+    },
+    {
+      "game_id": "66971",
+      "date": "2026-10-24",
+      "time": "9:00 AM",
+      "sport": "Soccer",
+      "gender": "Boys",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Fitzpatrick",
+      "teams": [
+        {
+          "school": "Portland",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Falmouth",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Portland",
+      "away": "Falmouth"
+    },
+    {
+      "game_id": "884457",
+      "date": "2026-10-15",
+      "time": "5:30 PM",
+      "sport": "Soccer",
+      "gender": "Boys",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "Fryeburg Academy",
+      "teams": [
+        {
+          "school": "Gray-New Gloucester",
+          "home_away": "Away",
+          "result": "Loss",
+          "score": 0
+        },
+        {
+          "school": "Fryeburg Academy",
+          "home_away": "Home",
+          "result": "Win",
+          "score": 5
+        }
+      ],
+      "home": "Fryeburg Academy",
+      "away": "Gray-New Gloucester",
+      "home_score": 5,
+      "away_score": 0
+    },
+    {
+      "game_id": "66968",
+      "date": "2026-10-24",
+      "time": "11:00 AM",
+      "sport": "Volleyball",
+      "gender": "Girls",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Scarborough High School",
+      "teams": [
+        {
+          "school": "Scarborough",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        }
+      ]
     },
     {
       "game_id": "66741",
