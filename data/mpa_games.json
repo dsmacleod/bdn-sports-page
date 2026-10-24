@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-24T07:04:24.407190+00:00",
+  "last_updated": "2026-10-24T14:56:33.231488+00:00",
   "games": [
     {
       "game_id": "35680",
@@ -22398,18 +22398,20 @@
         {
           "school": "Brewer",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 8
         },
         {
           "school": "Foxcroft Academy",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 51
         }
       ],
       "home": "Brewer",
-      "away": "Foxcroft Academy"
+      "away": "Foxcroft Academy",
+      "home_score": 8,
+      "away_score": 51
     },
     {
       "game_id": "43169",
@@ -70165,6 +70167,89 @@
         {
           "school": "Penobscot Christian",
           "home_away": "Home",
+          "result": "Loss",
+          "score": 2
+        },
+        {
+          "school": "George Stevens Academy",
+          "home_away": "Away",
+          "result": "Win",
+          "score": 3
+        }
+      ],
+      "home": "Penobscot Christian",
+      "away": "George Stevens Academy",
+      "home_score": 2,
+      "away_score": 3
+    },
+    {
+      "game_id": "68633",
+      "date": "2026-10-27",
+      "time": "4:00 PM",
+      "sport": "Soccer",
+      "gender": "Boys",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Carrabec High School",
+      "teams": [
+        {
+          "school": "Carrabec",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Wiscasset HS",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Carrabec",
+      "away": "Wiscasset HS"
+    },
+    {
+      "game_id": "68635",
+      "date": "2026-10-27",
+      "time": "2:30 PM",
+      "sport": "Soccer",
+      "gender": "Boys",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "George Stevens Academy",
+      "teams": [
+        {
+          "school": "George Stevens Academy",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Central",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "George Stevens Academy",
+      "away": "Central"
+    },
+    {
+      "game_id": "68637",
+      "date": "2026-10-27",
+      "time": "1:00 PM",
+      "sport": "Soccer",
+      "gender": "Girls",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Upper Fields",
+      "teams": [
+        {
+          "school": "Wisdom HS",
+          "home_away": "Home",
           "result": "",
           "score": null
         },
@@ -70175,8 +70260,116 @@
           "score": null
         }
       ],
-      "home": "Penobscot Christian",
+      "home": "Wisdom HS",
       "away": "George Stevens Academy"
+    },
+    {
+      "game_id": "68640",
+      "date": "2026-10-27",
+      "time": "3:00 PM",
+      "sport": "Soccer",
+      "gender": "Boys",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Upper Field",
+      "teams": [
+        {
+          "school": "Wisdom HS",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Lee Academy",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Wisdom HS",
+      "away": "Lee Academy"
+    },
+    {
+      "game_id": "68645",
+      "date": "2026-10-28",
+      "time": "5:00 PM",
+      "sport": "Soccer",
+      "gender": "Girls",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Penobscot Valley",
+      "teams": [
+        {
+          "school": "Penobscot Valley",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Schenck",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Penobscot Valley",
+      "away": "Schenck"
+    },
+    {
+      "game_id": "68648",
+      "date": "2026-10-28",
+      "time": "4:00 PM",
+      "sport": "Soccer",
+      "gender": "Boys",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Mars HILL (Central Aroostook",
+      "teams": [
+        {
+          "school": "Central Aroostook Sr",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Penobscot Valley",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Central Aroostook Sr",
+      "away": "Penobscot Valley"
+    },
+    {
+      "game_id": "68658",
+      "date": "2026-10-28",
+      "time": "6:00 PM",
+      "sport": "Soccer",
+      "gender": "Girls",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Heddericg Field - Behind Brewer HS",
+      "teams": [
+        {
+          "school": "Brewer",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Bangor",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Brewer",
+      "away": "Bangor"
     },
     {
       "game_id": "884457",

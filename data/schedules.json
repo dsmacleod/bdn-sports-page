@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-24T07:04:24.407190+00:00",
+  "last_updated": "2026-10-24T14:56:33.231488+00:00",
   "season": "fall",
   "games": [
     {
@@ -10806,7 +10806,9 @@
       "away": "Foxcroft Academy",
       "site": "Historic Doyle Field",
       "sport": "Football",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 8,
+      "away_score": 51
     },
     {
       "game_id": "43169",
@@ -35312,6 +35314,99 @@
       "home": "Penobscot Christian",
       "away": "George Stevens Academy",
       "site": "Penobscot Christian",
+      "sport": "Soccer",
+      "gender": "Girls",
+      "home_score": 2,
+      "away_score": 3
+    },
+    {
+      "game_id": "68633",
+      "date": "2026-10-27",
+      "time": "4:00 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Carrabec",
+      "away": "Wiscasset HS",
+      "site": "Carrabec High School",
+      "sport": "Soccer",
+      "gender": "Boys"
+    },
+    {
+      "game_id": "68635",
+      "date": "2026-10-27",
+      "time": "2:30 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "George Stevens Academy",
+      "away": "Central",
+      "site": "George Stevens Academy",
+      "sport": "Soccer",
+      "gender": "Boys"
+    },
+    {
+      "game_id": "68637",
+      "date": "2026-10-27",
+      "time": "1:00 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Wisdom HS",
+      "away": "George Stevens Academy",
+      "site": "Upper Fields",
+      "sport": "Soccer",
+      "gender": "Girls"
+    },
+    {
+      "game_id": "68640",
+      "date": "2026-10-27",
+      "time": "3:00 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Wisdom HS",
+      "away": "Lee Academy",
+      "site": "Upper Field",
+      "sport": "Soccer",
+      "gender": "Boys"
+    },
+    {
+      "game_id": "68645",
+      "date": "2026-10-28",
+      "time": "5:00 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Penobscot Valley",
+      "away": "Schenck",
+      "site": "Penobscot Valley",
+      "sport": "Soccer",
+      "gender": "Girls"
+    },
+    {
+      "game_id": "68648",
+      "date": "2026-10-28",
+      "time": "4:00 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Central Aroostook Sr",
+      "away": "Penobscot Valley",
+      "site": "Mars HILL (Central Aroostook",
+      "sport": "Soccer",
+      "gender": "Boys"
+    },
+    {
+      "game_id": "68658",
+      "date": "2026-10-28",
+      "time": "6:00 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Brewer",
+      "away": "Bangor",
+      "site": "Heddericg Field - Behind Brewer HS",
       "sport": "Soccer",
       "gender": "Girls"
     },
