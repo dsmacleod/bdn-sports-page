@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-25T07:28:03.692352+00:00",
+  "last_updated": "2026-10-25T15:06:45.702612+00:00",
   "games": [
     {
       "game_id": "35680",
@@ -19180,18 +19180,20 @@
         {
           "school": "Traip Academy",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 20
         },
         {
           "school": "Lake Region",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 58
         }
       ],
       "home": "Traip Academy",
-      "away": "Lake Region"
+      "away": "Lake Region",
+      "home_score": 20,
+      "away_score": 58
     },
     {
       "game_id": "38835",
@@ -69825,18 +69827,20 @@
         {
           "school": "Cheverus",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 1
         },
         {
           "school": "Deering",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Cheverus",
-      "away": "Deering"
+      "away": "Deering",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "game_id": "66969",
@@ -69980,6 +69984,35 @@
       ],
       "home": "Lisbon",
       "away": "North Yarmouth Academy"
+    },
+    {
+      "game_id": "68798",
+      "date": "2026-10-23",
+      "time": "3:00 PM",
+      "sport": "Soccer",
+      "gender": "Boys",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Van Buren",
+      "teams": [
+        {
+          "school": "Van Buren District",
+          "home_away": "Home",
+          "result": "Win",
+          "score": 3
+        },
+        {
+          "school": "Schenck",
+          "home_away": "Away",
+          "result": "Loss",
+          "score": 0
+        }
+      ],
+      "home": "Van Buren District",
+      "away": "Schenck",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "game_id": "884457",

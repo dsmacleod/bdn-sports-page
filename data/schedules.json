@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-25T07:28:03.692352+00:00",
+  "last_updated": "2026-10-25T15:06:45.702612+00:00",
   "season": "fall",
   "games": [
     {
@@ -9156,7 +9156,9 @@
       "away": "Lake Region",
       "site": "Shapleigh Field",
       "sport": "Football",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 20,
+      "away_score": 58
     },
     {
       "game_id": "38835",
@@ -35153,7 +35155,9 @@
       "away": "Deering",
       "site": "Cheverus High School",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "game_id": "66969",
@@ -35227,6 +35231,21 @@
       "site": "Lisbon High School",
       "sport": "Soccer",
       "gender": "Boys"
+    },
+    {
+      "game_id": "68798",
+      "date": "2026-10-23",
+      "time": "3:00 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Van Buren District",
+      "away": "Schenck",
+      "site": "Van Buren",
+      "sport": "Soccer",
+      "gender": "Boys",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "game_id": "884457",
