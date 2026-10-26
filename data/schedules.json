@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-26T07:37:51.850221+00:00",
+  "last_updated": "2026-10-26T17:43:20.321858+00:00",
   "season": "fall",
   "games": [
     {
@@ -10078,7 +10078,9 @@
       "away": "Massabesic",
       "site": "Scarborough High School",
       "sport": "Football",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 30,
+      "away_score": 47
     },
     {
       "game_id": "40519",
@@ -11531,6 +11533,45 @@
       "gender": "Boys",
       "home_score": 28,
       "away_score": 21
+    },
+    {
+      "game_id": "68942",
+      "date": "2026-10-30",
+      "time": "6:00 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Biddeford",
+      "away": "Cheverus",
+      "site": "Waterhouse Field",
+      "sport": "Football",
+      "gender": "Boys"
+    },
+    {
+      "game_id": "69014",
+      "date": "2026-10-30",
+      "time": "7:00 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Skowhegan Area",
+      "away": "Brunswick",
+      "site": "Skowhegan High School--61 Academy Circle",
+      "sport": "Football",
+      "gender": "Boys"
+    },
+    {
+      "game_id": "69058",
+      "date": "2026-10-30",
+      "time": "7:00 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Old Town",
+      "away": "Houlton HS",
+      "site": "Victory Field- OTHS",
+      "sport": "Football",
+      "gender": "Boys"
     },
     {
       "game_id": "58654",
@@ -32612,7 +32653,7 @@
       "site": "BUCKFIELD",
       "sport": "Soccer",
       "gender": "Girls",
-      "home_score": 3,
+      "home_score": 4,
       "away_score": 0
     },
     {
@@ -34302,7 +34343,9 @@
       "away": "Westbrook",
       "site": "Marshwood High School Stadium Field",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "game_id": "66969",
@@ -34393,7 +34436,7 @@
     {
       "game_id": "68342",
       "date": "2026-10-27",
-      "time": "4:00 PM",
+      "time": "5:00 PM",
       "type": "Tournament",
       "status": "Normal",
       "level": "Varsity",
@@ -34441,21 +34484,6 @@
       "site": "Hall-Dale HS",
       "sport": "Soccer",
       "gender": "Girls"
-    },
-    {
-      "game_id": "884457",
-      "date": "2026-10-15",
-      "time": "5:30 PM",
-      "type": "League",
-      "status": "Normal",
-      "level": "Varsity",
-      "home": "Fryeburg Academy",
-      "away": "Gray-New Gloucester",
-      "site": "Fryeburg Academy",
-      "sport": "Soccer",
-      "gender": "Boys",
-      "home_score": 5,
-      "away_score": 0
     },
     {
       "game_id": "68798",
@@ -34605,7 +34633,7 @@
     {
       "game_id": "67957",
       "date": "2026-10-27",
-      "time": "3:30 PM",
+      "time": "4:00 PM",
       "type": "Tournament",
       "status": "Normal",
       "level": "Varsity",
@@ -35180,6 +35208,86 @@
       "site": "OOBHS",
       "sport": "Soccer",
       "gender": "Girls"
+    },
+    {
+      "game_id": "68962",
+      "date": "2026-10-27",
+      "time": "4:00 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Poland Regional",
+      "away": "Greely",
+      "site": "Poland Regional High School",
+      "sport": "Soccer",
+      "gender": "Girls"
+    },
+    {
+      "game_id": "69005",
+      "date": "2026-10-27",
+      "time": "5:00 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Windham",
+      "away": "Westbrook",
+      "site": "Windham High School",
+      "sport": "Soccer",
+      "gender": "Girls"
+    },
+    {
+      "game_id": "69080",
+      "date": "2026-10-27",
+      "time": "4:30 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Scarborough",
+      "away": "Thornton Academy",
+      "site": "Scarborough High School | Turf Field",
+      "sport": "Soccer",
+      "gender": "Girls"
+    },
+    {
+      "game_id": "69084",
+      "date": "2026-10-27",
+      "time": "7:00 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Scarborough",
+      "away": "Biddeford",
+      "site": "Scarborough High School | Turf Field",
+      "sport": "Soccer",
+      "gender": "Boys"
+    },
+    {
+      "game_id": "69087",
+      "date": "2026-10-27",
+      "time": "6:00 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Kennebunk",
+      "away": "Cheverus",
+      "site": "Kennebunk High School",
+      "sport": "Soccer",
+      "gender": "Girls"
+    },
+    {
+      "game_id": "884457",
+      "date": "2026-10-15",
+      "time": "5:30 PM",
+      "type": "League",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Fryeburg Academy",
+      "away": "Gray-New Gloucester",
+      "site": "Fryeburg Academy",
+      "sport": "Soccer",
+      "gender": "Boys",
+      "home_score": 5,
+      "away_score": 0
     },
     {
       "game_id": "21471",
@@ -37460,6 +37568,21 @@
       "away_score": 1
     },
     {
+      "game_id": "68940",
+      "date": "2026-10-24",
+      "time": "",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Messalonskee",
+      "away": "Yarmouth",
+      "site": "",
+      "sport": "Volleyball",
+      "gender": "Girls",
+      "home_score": 3,
+      "away_score": 2
+    },
+    {
       "game_id": "68414",
       "date": "2026-10-24",
       "time": "5:00 PM",
@@ -39543,6 +39666,140 @@
       "gender": "Girls",
       "home_score": 2,
       "away_score": 3
+    },
+    {
+      "game_id": "69027",
+      "date": "2026-10-28",
+      "time": "4:00 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Cheverus",
+      "away": "Scarborough",
+      "site": "Sanford High School",
+      "sport": "Volleyball",
+      "gender": "Girls"
+    },
+    {
+      "game_id": "69035",
+      "date": "2026-10-28",
+      "time": "6:30 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Gorham",
+      "away": "Thornton Academy",
+      "site": "Sanford High School",
+      "sport": "Volleyball",
+      "gender": "Girls"
+    },
+    {
+      "game_id": "69042",
+      "date": "2026-10-28",
+      "time": "6:30 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Gardiner Area",
+      "away": "Ellsworth",
+      "site": "Cony Middle High School",
+      "sport": "Volleyball",
+      "gender": "Girls"
+    },
+    {
+      "game_id": "69046",
+      "date": "2026-10-28",
+      "time": "4:00 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Mount Desert Island",
+      "away": "Wells",
+      "site": "Cony Middle/High School",
+      "sport": "Volleyball",
+      "gender": "Girls"
+    },
+    {
+      "game_id": "69051",
+      "date": "2026-10-27",
+      "time": "4:00 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "George Stevens Academy",
+      "away": "North Yarmouth Academy",
+      "site": "Brewer High School",
+      "sport": "Volleyball",
+      "gender": "Girls"
+    },
+    {
+      "game_id": "69056",
+      "date": "2026-10-27",
+      "time": "6:30 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Narraguagus Sr",
+      "away": "Woodland Sr.",
+      "site": "Brewer High School",
+      "sport": "Volleyball",
+      "gender": "Girls"
+    },
+    {
+      "game_id": "68945",
+      "date": "2026-10-24",
+      "time": "1:00 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Washington Academy",
+      "away": "Westbrook",
+      "site": "Washington Academy",
+      "sport": "Volleyball",
+      "gender": "Girls",
+      "home_score": 3,
+      "away_score": 0
+    },
+    {
+      "game_id": "68947",
+      "date": "2026-10-28",
+      "time": "4:00 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Washington Academy",
+      "away": "York",
+      "site": "Lewiston High School",
+      "sport": "Volleyball",
+      "gender": "Girls"
+    },
+    {
+      "game_id": "68949",
+      "date": "2026-10-28",
+      "time": "6:30 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Greely",
+      "away": "Messalonskee",
+      "site": "Lewiston High School",
+      "sport": "Volleyball",
+      "gender": "Girls"
+    },
+    {
+      "game_id": "68951",
+      "date": "2026-10-24",
+      "time": "",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Mount Desert Island",
+      "away": "Wiscasset HS",
+      "site": "",
+      "sport": "Volleyball",
+      "gender": "Girls",
+      "home_score": 3,
+      "away_score": 0
     }
   ]
 }
