@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-28T08:08:27.110324+00:00",
+  "last_updated": "2026-10-28T17:28:53.802398+00:00",
   "season": "fall",
   "games": [
     {
@@ -2101,7 +2101,9 @@
       "away": "Noble",
       "site": "Cheverus High School",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 6,
+      "away_score": 0
     },
     {
       "game_id": "66890",
@@ -2372,7 +2374,9 @@
       "away": "Erskine Academy",
       "site": "",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 6,
+      "away_score": 0
     },
     {
       "game_id": "69362",
@@ -2455,6 +2459,45 @@
       "home": "Mt. Ararat",
       "away": "Messalonskee",
       "site": "Mt. Ararat High School",
+      "sport": "Field Hockey",
+      "gender": "Girls"
+    },
+    {
+      "game_id": "70336",
+      "date": "2026-10-31",
+      "time": "",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Cheverus",
+      "away": "Sanford",
+      "site": "Cheverus High School",
+      "sport": "Field Hockey",
+      "gender": "Girls"
+    },
+    {
+      "game_id": "70473",
+      "date": "2026-10-31",
+      "time": "",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Yarmouth",
+      "away": "Lake Region",
+      "site": "",
+      "sport": "Field Hockey",
+      "gender": "Girls"
+    },
+    {
+      "game_id": "70475",
+      "date": "2026-10-31",
+      "time": "",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Winthrop",
+      "away": "Boothbay Region",
+      "site": "",
       "sport": "Field Hockey",
       "gender": "Girls"
     },
@@ -11207,15 +11250,28 @@
       "away_score": 14
     },
     {
-      "game_id": "69058",
-      "date": "2026-10-30",
-      "time": "7:00 PM",
+      "game_id": "70470",
+      "date": "2026-11-06",
+      "time": "6:00 PM",
       "type": "Tournament",
       "status": "Normal",
       "level": "Varsity",
-      "home": "Old Town",
-      "away": "Houlton HS",
-      "site": "Victory Field- OTHS",
+      "home": "Marshwood",
+      "away": "Falmouth, Westbrook",
+      "site": "Marshwood High School",
+      "sport": "Football",
+      "gender": "Boys"
+    },
+    {
+      "game_id": "70471",
+      "date": "2026-11-06",
+      "time": "6:00 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Marshwood",
+      "away": "Falmouth, Westbrook",
+      "site": "Marshwood High School",
       "sport": "Football",
       "gender": "Boys"
     },
@@ -11229,6 +11285,32 @@
       "home": "Old Orchard Beach",
       "away": "Maranacook Community",
       "site": "OOBHS",
+      "sport": "Football",
+      "gender": "Boys"
+    },
+    {
+      "game_id": "69058",
+      "date": "2026-10-30",
+      "time": "7:00 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Old Town",
+      "away": "Houlton HS",
+      "site": "Victory Field- OTHS",
+      "sport": "Football",
+      "gender": "Boys"
+    },
+    {
+      "game_id": "70489",
+      "date": "2026-10-30",
+      "time": "7:00 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Boothbay Region",
+      "away": "Telstar Regional",
+      "site": "Boothbay",
       "sport": "Football",
       "gender": "Boys"
     },
@@ -32142,7 +32224,9 @@
       "away": "North Yarmouth Academy",
       "site": "Lisbon High School",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "game_id": "67128",
@@ -32599,7 +32683,9 @@
       "away": "Oak Hill",
       "site": "Hall-Dale HS",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "game_id": "68892",
@@ -32612,7 +32698,9 @@
       "away": "North Yarmouth Academy",
       "site": "Hall-Dale HS",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "game_id": "68798",
@@ -32766,7 +32854,7 @@
       "site": "Madawaska High School Soccer Fields",
       "sport": "Soccer",
       "gender": "Boys",
-      "home_score": 6,
+      "home_score": 5,
       "away_score": 0
     },
     {
@@ -33025,7 +33113,9 @@
       "away": "Woodland Sr.",
       "site": "",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "game_id": "69409",
@@ -33109,7 +33199,9 @@
       "away": "Erskine Academy",
       "site": "",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 5,
+      "away_score": 1
     },
     {
       "game_id": "69421",
@@ -33301,7 +33393,9 @@
       "away": "Caribou",
       "site": "",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "game_id": "69391",
@@ -33360,17 +33454,45 @@
       "gender": "Boys"
     },
     {
-      "game_id": "69256",
-      "date": "2026-10-28",
+      "game_id": "884457",
+      "date": "2026-10-15",
       "time": "5:30 PM",
+      "type": "League",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Fryeburg Academy",
+      "away": "Gray-New Gloucester",
+      "site": "Fryeburg Academy",
+      "sport": "Soccer",
+      "gender": "Boys",
+      "home_score": 5,
+      "away_score": 0
+    },
+    {
+      "game_id": "70479",
+      "date": "2026-10-30",
+      "time": "5:00 PM",
       "type": "Tournament",
       "status": "Normal",
       "level": "Varsity",
-      "home": "Cape Elizabeth",
-      "away": "Morse",
-      "site": "CEHS Hannaford Field",
+      "home": "Windham",
+      "away": "Kennebunk",
+      "site": "Windham High School",
       "sport": "Soccer",
       "gender": "Girls"
+    },
+    {
+      "game_id": "70481",
+      "date": "2026-10-27",
+      "time": "6:00 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Bangor Christian",
+      "away": "Woodland Sr.",
+      "site": "TBA",
+      "sport": "Soccer",
+      "gender": "Boys"
     },
     {
       "game_id": "69005",
@@ -33383,7 +33505,9 @@
       "away": "Westbrook",
       "site": "Windham High School",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "game_id": "69080",
@@ -33431,15 +33555,15 @@
       "away_score": 1
     },
     {
-      "game_id": "70304",
+      "game_id": "69256",
       "date": "2026-10-28",
-      "time": "1:30 PM",
+      "time": "5:30 PM",
       "type": "Tournament",
       "status": "Normal",
       "level": "Varsity",
-      "home": "Mt. Ararat",
-      "away": "Brunswick",
-      "site": "Mt. Ararat High School",
+      "home": "Cape Elizabeth",
+      "away": "Morse",
+      "site": "CEHS Hannaford Field",
       "sport": "Soccer",
       "gender": "Girls"
     },
@@ -33457,19 +33581,82 @@
       "gender": "Boys"
     },
     {
-      "game_id": "884457",
-      "date": "2026-10-15",
-      "time": "5:30 PM",
-      "type": "League",
+      "game_id": "70318",
+      "date": "2026-10-31",
+      "time": "1:30 PM",
+      "type": "Tournament",
       "status": "Normal",
       "level": "Varsity",
-      "home": "Fryeburg Academy",
-      "away": "Gray-New Gloucester",
-      "site": "Fryeburg Academy",
+      "home": "Mt. Ararat",
+      "away": "Brunswick",
+      "site": "Mt. Ararat High School",
       "sport": "Soccer",
-      "gender": "Boys",
-      "home_score": 5,
-      "away_score": 0
+      "gender": "Girls"
+    },
+    {
+      "game_id": "70356",
+      "date": "2026-10-30",
+      "time": "3:30 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Hall-Dale HS",
+      "away": "North Yarmouth Academy",
+      "site": "Hall-Dale HS",
+      "sport": "Soccer",
+      "gender": "Boys"
+    },
+    {
+      "game_id": "70363",
+      "date": "2026-10-30",
+      "time": "4:00 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Mt. Abram",
+      "away": "Traip Academy",
+      "site": "Mount Abram",
+      "sport": "Soccer",
+      "gender": "Girls"
+    },
+    {
+      "game_id": "70367",
+      "date": "2026-10-30",
+      "time": "6:00 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Mt. Abram",
+      "away": "Waynflete",
+      "site": "Mount Abram",
+      "sport": "Soccer",
+      "gender": "Boys"
+    },
+    {
+      "game_id": "70395",
+      "date": "2026-10-30",
+      "time": "4:30 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Fort Kent Community",
+      "away": "Houlton HS",
+      "site": "Community High School",
+      "sport": "Soccer",
+      "gender": "Girls"
+    },
+    {
+      "game_id": "70457",
+      "date": "2026-10-30",
+      "time": "3:00 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Wisdom HS",
+      "away": "Sumner Memorial",
+      "site": "Wisdom Upper Field",
+      "sport": "Soccer",
+      "gender": "Girls"
     },
     {
       "game_id": "21471",
@@ -35495,6 +35682,19 @@
       "away_score": 3
     },
     {
+      "game_id": "70477",
+      "date": "2026-10-30",
+      "time": "7:00 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "George Stevens Academy",
+      "away": "Woodland Sr.",
+      "site": "Husson University",
+      "sport": "Volleyball",
+      "gender": "Girls"
+    },
+    {
       "game_id": "69027",
       "date": "2026-10-28",
       "time": "4:00 PM",
@@ -35557,7 +35757,9 @@
       "away": "North Yarmouth Academy",
       "site": "Brewer High School",
       "sport": "Volleyball",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "game_id": "69056",
@@ -35570,7 +35772,9 @@
       "away": "Woodland Sr.",
       "site": "Brewer High School",
       "sport": "Volleyball",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 3
     },
     {
       "game_id": "68945",
