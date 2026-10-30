@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-30T08:23:54.890706+00:00",
+  "last_updated": "2026-10-30T17:18:16.276342+00:00",
   "games": [
     {
       "game_id": "35680",
@@ -5686,33 +5686,6 @@
       "away": "Camden Hills Regional"
     },
     {
-      "game_id": "70672",
-      "date": "2026-10-31",
-      "time": "1:00 PM",
-      "sport": "Field Hockey",
-      "gender": "",
-      "level": "Varsity",
-      "type": "Tournament",
-      "status": "Normal",
-      "site": "Dexter Regional High School",
-      "teams": [
-        {
-          "school": "Dexter Regional",
-          "home_away": "Home",
-          "result": "",
-          "score": null
-        },
-        {
-          "school": "Mountain Valley",
-          "home_away": "Away",
-          "result": "",
-          "score": null
-        }
-      ],
-      "home": "Dexter Regional",
-      "away": "Mountain Valley"
-    },
-    {
       "game_id": "70691",
       "date": "2026-10-31",
       "time": "12:00 PM",
@@ -5796,13 +5769,13 @@
     {
       "game_id": "70697",
       "date": "2026-10-31",
-      "time": "",
+      "time": "11:00 AM",
       "sport": "Field Hockey",
       "gender": "",
       "level": "Varsity",
       "type": "Tournament",
       "status": "Normal",
-      "site": "",
+      "site": "Nokomis",
       "teams": [
         {
           "school": "Nokomis",
@@ -21062,6 +21035,25 @@
       "away": "Deering",
       "home_score": 34,
       "away_score": 6
+    },
+    {
+      "game_id": "71488",
+      "date": "2026-11-06",
+      "time": "6:00 PM",
+      "sport": "Football",
+      "gender": "",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Freeport High School",
+      "teams": [
+        {
+          "school": "Freeport",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        }
+      ]
     },
     {
       "game_id": "70489",
@@ -56251,33 +56243,6 @@
       "away_score": 2
     },
     {
-      "game_id": "70192",
-      "date": "2026-10-30",
-      "time": "3:30 PM",
-      "sport": "Soccer",
-      "gender": "Girls",
-      "level": "Varsity",
-      "type": "Tournament",
-      "status": "Normal",
-      "site": "Dexter Regional High School",
-      "teams": [
-        {
-          "school": "Dexter Regional",
-          "home_away": "Home",
-          "result": "",
-          "score": null
-        },
-        {
-          "school": "Shead",
-          "home_away": "Away",
-          "result": "",
-          "score": null
-        }
-      ],
-      "home": "Dexter Regional",
-      "away": "Shead"
-    },
-    {
       "game_id": "70279",
       "date": "2026-10-30",
       "time": "5:00 PM",
@@ -56850,33 +56815,23 @@
       "away_score": 2
     },
     {
-      "game_id": "884457",
-      "date": "2026-10-15",
-      "time": "5:30 PM",
+      "game_id": "71481",
+      "date": "2026-11-03",
+      "time": "",
       "sport": "Soccer",
       "gender": "Boys",
       "level": "Varsity",
-      "type": "League",
+      "type": "Tournament",
       "status": "Normal",
-      "site": "Fryeburg Academy",
+      "site": "Hermon High School",
       "teams": [
         {
-          "school": "Gray-New Gloucester",
-          "home_away": "Away",
-          "result": "Loss",
-          "score": 0
-        },
-        {
-          "school": "Fryeburg Academy",
+          "school": "Orono",
           "home_away": "Home",
-          "result": "Win",
-          "score": 5
+          "result": "",
+          "score": null
         }
-      ],
-      "home": "Fryeburg Academy",
-      "away": "Gray-New Gloucester",
-      "home_score": 5,
-      "away_score": 0
+      ]
     },
     {
       "game_id": "70490",
@@ -57288,7 +57243,7 @@
     {
       "game_id": "70732",
       "date": "2026-10-31",
-      "time": "",
+      "time": "2:00 PM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
@@ -57342,13 +57297,13 @@
     {
       "game_id": "70736",
       "date": "2026-10-31",
-      "time": "",
+      "time": "1:00 PM",
       "sport": "Soccer",
       "gender": "Girls",
       "level": "Varsity",
       "type": "Tournament",
       "status": "Normal",
-      "site": "",
+      "site": "Hannaford Field, CEHS",
       "teams": [
         {
           "school": "Cape Elizabeth",
@@ -57392,33 +57347,6 @@
       ],
       "home": "Yarmouth",
       "away": "Greely"
-    },
-    {
-      "game_id": "70740",
-      "date": "2026-10-30",
-      "time": "",
-      "sport": "Soccer",
-      "gender": "Girls",
-      "level": "Varsity",
-      "type": "Tournament",
-      "status": "Normal",
-      "site": "",
-      "teams": [
-        {
-          "school": "Orono",
-          "home_away": "Home",
-          "result": "",
-          "score": null
-        },
-        {
-          "school": "Winslow",
-          "home_away": "Away",
-          "result": "",
-          "score": null
-        }
-      ],
-      "home": "Orono",
-      "away": "Winslow"
     },
     {
       "game_id": "70742",
@@ -57500,6 +57428,35 @@
       ],
       "home": "Bangor Christian",
       "away": "Temple Academy"
+    },
+    {
+      "game_id": "884457",
+      "date": "2026-10-15",
+      "time": "5:30 PM",
+      "sport": "Soccer",
+      "gender": "Boys",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "Fryeburg Academy",
+      "teams": [
+        {
+          "school": "Gray-New Gloucester",
+          "home_away": "Away",
+          "result": "Loss",
+          "score": 0
+        },
+        {
+          "school": "Fryeburg Academy",
+          "home_away": "Home",
+          "result": "Win",
+          "score": 5
+        }
+      ],
+      "home": "Fryeburg Academy",
+      "away": "Gray-New Gloucester",
+      "home_score": 5,
+      "away_score": 0
     },
     {
       "game_id": "58576",

@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-30T08:23:54.890706+00:00",
+  "last_updated": "2026-10-30T17:18:16.276342+00:00",
   "season": "fall",
   "games": [
     {
@@ -2361,19 +2361,6 @@
       "gender": "Girls"
     },
     {
-      "game_id": "70672",
-      "date": "2026-10-31",
-      "time": "1:00 PM",
-      "type": "Tournament",
-      "status": "Normal",
-      "level": "Varsity",
-      "home": "Dexter Regional",
-      "away": "Mountain Valley",
-      "site": "Dexter Regional High School",
-      "sport": "Field Hockey",
-      "gender": "Girls"
-    },
-    {
       "game_id": "70691",
       "date": "2026-10-31",
       "time": "12:00 PM",
@@ -2415,13 +2402,13 @@
     {
       "game_id": "70697",
       "date": "2026-10-31",
-      "time": "",
+      "time": "11:00 AM",
       "type": "Tournament",
       "status": "Normal",
       "level": "Varsity",
       "home": "Nokomis",
       "away": "Old Town",
-      "site": "",
+      "site": "Nokomis",
       "sport": "Field Hockey",
       "gender": "Girls"
     },
@@ -10289,6 +10276,19 @@
       "gender": "Boys",
       "home_score": 34,
       "away_score": 6
+    },
+    {
+      "game_id": "71488",
+      "date": "2026-11-06",
+      "time": "6:00 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Freeport",
+      "away": "",
+      "site": "Freeport High School",
+      "sport": "Football",
+      "gender": "Boys"
     },
     {
       "game_id": "70489",
@@ -28398,19 +28398,6 @@
       "away_score": 2
     },
     {
-      "game_id": "70192",
-      "date": "2026-10-30",
-      "time": "3:30 PM",
-      "type": "Tournament",
-      "status": "Normal",
-      "level": "Varsity",
-      "home": "Dexter Regional",
-      "away": "Shead",
-      "site": "Dexter Regional High School",
-      "sport": "Soccer",
-      "gender": "Girls"
-    },
-    {
       "game_id": "70279",
       "date": "2026-10-30",
       "time": "5:00 PM",
@@ -28703,19 +28690,17 @@
       "away_score": 2
     },
     {
-      "game_id": "884457",
-      "date": "2026-10-15",
-      "time": "5:30 PM",
-      "type": "League",
+      "game_id": "71481",
+      "date": "2026-11-03",
+      "time": "",
+      "type": "Tournament",
       "status": "Normal",
       "level": "Varsity",
-      "home": "Fryeburg Academy",
-      "away": "Gray-New Gloucester",
-      "site": "Fryeburg Academy",
+      "home": "Orono",
+      "away": "",
+      "site": "Hermon High School",
       "sport": "Soccer",
-      "gender": "Boys",
-      "home_score": 5,
-      "away_score": 0
+      "gender": "Boys"
     },
     {
       "game_id": "70490",
@@ -28917,7 +28902,7 @@
     {
       "game_id": "70732",
       "date": "2026-10-31",
-      "time": "",
+      "time": "2:00 PM",
       "type": "Tournament",
       "status": "Normal",
       "level": "Varsity",
@@ -28943,13 +28928,13 @@
     {
       "game_id": "70736",
       "date": "2026-10-31",
-      "time": "",
+      "time": "1:00 PM",
       "type": "Tournament",
       "status": "Normal",
       "level": "Varsity",
       "home": "Cape Elizabeth",
       "away": "Freeport",
-      "site": "",
+      "site": "Hannaford Field, CEHS",
       "sport": "Soccer",
       "gender": "Girls"
     },
@@ -28963,19 +28948,6 @@
       "home": "Yarmouth",
       "away": "Greely",
       "site": "Yarmouth High School",
-      "sport": "Soccer",
-      "gender": "Girls"
-    },
-    {
-      "game_id": "70740",
-      "date": "2026-10-30",
-      "time": "",
-      "type": "Tournament",
-      "status": "Normal",
-      "level": "Varsity",
-      "home": "Orono",
-      "away": "Winslow",
-      "site": "",
       "sport": "Soccer",
       "gender": "Girls"
     },
@@ -29017,6 +28989,21 @@
       "site": "",
       "sport": "Soccer",
       "gender": "Girls"
+    },
+    {
+      "game_id": "884457",
+      "date": "2026-10-15",
+      "time": "5:30 PM",
+      "type": "League",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Fryeburg Academy",
+      "away": "Gray-New Gloucester",
+      "site": "Fryeburg Academy",
+      "sport": "Soccer",
+      "gender": "Boys",
+      "home_score": 5,
+      "away_score": 0
     },
     {
       "game_id": "58576",
