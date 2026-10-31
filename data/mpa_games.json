@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-31T08:13:37.437769+00:00",
+  "last_updated": "2026-10-31T16:23:15.096095+00:00",
   "games": [
     {
       "game_id": "35680",
@@ -15899,18 +15899,20 @@
         {
           "school": "Bangor",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Oxford Hills",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 28
         }
       ],
       "home": "Bangor",
-      "away": "Oxford Hills"
+      "away": "Oxford Hills",
+      "home_score": 0,
+      "away_score": 28
     },
     {
       "game_id": "38837",
@@ -20714,18 +20716,20 @@
         {
           "school": "Spruce Mountain",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 44
         },
         {
           "school": "Cape Elizabeth",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 16
         }
       ],
       "home": "Spruce Mountain",
-      "away": "Cape Elizabeth"
+      "away": "Cape Elizabeth",
+      "home_score": 44,
+      "away_score": 16
     },
     {
       "game_id": "66068",
@@ -59663,18 +59667,20 @@
         {
           "school": "Hall-Dale HS",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         },
         {
           "school": "North Yarmouth Academy",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         }
       ],
       "home": "Hall-Dale HS",
-      "away": "North Yarmouth Academy"
+      "away": "North Yarmouth Academy",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "game_id": "70363",
@@ -60065,18 +60071,20 @@
         {
           "school": "Windham",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         },
         {
           "school": "Kennebunk",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         }
       ],
       "home": "Windham",
-      "away": "Kennebunk"
+      "away": "Kennebunk",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "game_id": "70481",
@@ -60119,18 +60127,20 @@
         {
           "school": "Camden Hills Regional",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 8
         },
         {
           "school": "Brewer",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Camden Hills Regional",
-      "away": "Brewer"
+      "away": "Brewer",
+      "home_score": 8,
+      "away_score": 0
     },
     {
       "game_id": "70684",

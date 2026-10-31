@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-10-31T08:13:37.437769+00:00",
+  "last_updated": "2026-10-31T16:23:15.096095+00:00",
   "season": "fall",
   "games": [
     {
@@ -7737,7 +7737,9 @@
       "away": "Oxford Hills",
       "site": "Cameron Stadium",
       "sport": "Football",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 0,
+      "away_score": 28
     },
     {
       "game_id": "38837",
@@ -10222,7 +10224,9 @@
       "away": "Cape Elizabeth",
       "site": "Griffin Field",
       "sport": "Football",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 44,
+      "away_score": 16
     },
     {
       "game_id": "66068",
@@ -30295,7 +30299,9 @@
       "away": "North Yarmouth Academy",
       "site": "Hall-Dale HS",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "game_id": "70363",
@@ -30501,7 +30507,9 @@
       "away": "Kennebunk",
       "site": "Windham High School",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "game_id": "70481",
@@ -30527,7 +30535,9 @@
       "away": "Brewer",
       "site": "Camden Hills Regional High School",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 8,
+      "away_score": 0
     },
     {
       "game_id": "70684",
