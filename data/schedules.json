@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-01T08:57:52.657565+00:00",
+  "last_updated": "2026-11-01T17:17:15.638367+00:00",
   "season": "fall",
   "games": [
     {
@@ -2144,7 +2144,9 @@
       "away": "Boothbay Region",
       "site": "",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 4,
+      "away_score": 1
     },
     {
       "game_id": "70666",
@@ -30287,7 +30289,9 @@
       "away": "Cape Elizabeth",
       "site": "York High School",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 2,
+      "away_score": 3
     },
     {
       "game_id": "71481",
@@ -30534,7 +30538,9 @@
       "away": "Cony HS",
       "site": "",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 4,
+      "away_score": 0
     },
     {
       "game_id": "70736",
@@ -30562,7 +30568,9 @@
       "away": "Greely",
       "site": "Yarmouth High School",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 7,
+      "away_score": 0
     },
     {
       "game_id": "70742",
