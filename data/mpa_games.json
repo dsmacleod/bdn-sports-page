@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-03T09:16:49.899786+00:00",
+  "last_updated": "2026-11-03T18:42:50.628862+00:00",
   "games": [
     {
       "game_id": "35680",
@@ -18485,42 +18485,15 @@
       "away": "Mount Desert Island"
     },
     {
-      "game_id": "72200",
-      "date": "2026-11-06",
-      "time": "",
-      "sport": "Football",
-      "gender": "",
-      "level": "Varsity",
-      "type": "Tournament",
-      "status": "Normal",
-      "site": "",
-      "teams": [
-        {
-          "school": "Lawrence",
-          "home_away": "Home",
-          "result": "",
-          "score": null
-        },
-        {
-          "school": "Fryeburg Academy",
-          "home_away": "Away",
-          "result": "",
-          "score": null
-        }
-      ],
-      "home": "Lawrence",
-      "away": "Fryeburg Academy"
-    },
-    {
       "game_id": "72202",
       "date": "2026-11-06",
-      "time": "",
+      "time": "6:00 PM",
       "sport": "Football",
       "gender": "",
       "level": "Varsity",
       "type": "Tournament",
       "status": "Normal",
-      "site": "",
+      "site": "Kennebunk High School Memorial Field",
       "teams": [
         {
           "school": "Kennebunk",
@@ -18672,6 +18645,168 @@
       ],
       "home": "Stearns Sr.",
       "away": "Orono"
+    },
+    {
+      "game_id": "72359",
+      "date": "2026-11-06",
+      "time": "",
+      "sport": "Football",
+      "gender": "",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "",
+      "teams": [
+        {
+          "school": "Portland",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Windham",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Portland",
+      "away": "Windham"
+    },
+    {
+      "game_id": "72370",
+      "date": "2026-11-06",
+      "time": "",
+      "sport": "Football",
+      "gender": "",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "",
+      "teams": [
+        {
+          "school": "Bonny Eagle",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Massabesic",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Bonny Eagle",
+      "away": "Massabesic"
+    },
+    {
+      "game_id": "72372",
+      "date": "2026-11-06",
+      "time": "",
+      "sport": "Football",
+      "gender": "",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "",
+      "teams": [
+        {
+          "school": "Foxcroft Academy",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Wells",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Foxcroft Academy",
+      "away": "Wells"
+    },
+    {
+      "game_id": "72374",
+      "date": "2026-11-06",
+      "time": "7:00 PM",
+      "sport": "Football",
+      "gender": "",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "",
+      "teams": [
+        {
+          "school": "Greely",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Oceanside",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Greely",
+      "away": "Oceanside"
+    },
+    {
+      "game_id": "72376",
+      "date": "2026-11-06",
+      "time": "",
+      "sport": "Football",
+      "gender": "",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "",
+      "teams": [
+        {
+          "school": "Hermon",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Nokomis",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Hermon",
+      "away": "Nokomis"
+    },
+    {
+      "game_id": "72716",
+      "date": "2026-11-06",
+      "time": "7:00 PM",
+      "sport": "Football",
+      "gender": "",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Pete Cooper Stadium",
+      "teams": [
+        {
+          "school": "Lawrence",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Fryeburg Academy",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Lawrence",
+      "away": "Fryeburg Academy"
     },
     {
       "game_id": "70843",
@@ -18921,8 +19056,16 @@
           "home_away": "Home",
           "result": "",
           "score": null
+        },
+        {
+          "school": "South Portland",
+          "home_away": "Away",
+          "result": "",
+          "score": null
         }
-      ]
+      ],
+      "home": "Thornton Academy",
+      "away": "South Portland"
     },
     {
       "game_id": "70489",
