@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-04T08:51:32.119522+00:00",
+  "last_updated": "2026-11-04T18:55:42.064136+00:00",
   "season": "fall",
   "games": [
     {
@@ -22533,6 +22533,84 @@
       "gender": "Girls"
     },
     {
+      "game_id": "72811",
+      "date": "2026-11-07",
+      "time": "11:00 AM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Thornton Academy",
+      "away": "Brunswick",
+      "site": "Kennebunk HS",
+      "sport": "Soccer",
+      "gender": "Boys"
+    },
+    {
+      "game_id": "72813",
+      "date": "2026-11-07",
+      "time": "11:00 AM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Hall-Dale HS",
+      "away": "Fort Kent Community",
+      "site": "Lewiston HS",
+      "sport": "Soccer",
+      "gender": "Boys"
+    },
+    {
+      "game_id": "72817",
+      "date": "2026-11-07",
+      "time": "11:00 AM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Wisdom HS",
+      "away": "Telstar Regional",
+      "site": "Skyway Elem. School, Presque Isle",
+      "sport": "Soccer",
+      "gender": "Boys"
+    },
+    {
+      "game_id": "72819",
+      "date": "2026-11-07",
+      "time": "1:30 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Scarborough",
+      "away": "Camden Hills Regional",
+      "site": "Kennebunk HS",
+      "sport": "Soccer",
+      "gender": "Girls"
+    },
+    {
+      "game_id": "72821",
+      "date": "2026-11-07",
+      "time": "1:30 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Maranacook Community",
+      "away": "Fort Kent Community",
+      "site": "Lewiston HS",
+      "sport": "Soccer",
+      "gender": "Girls"
+    },
+    {
+      "game_id": "72823",
+      "date": "2026-11-07",
+      "time": "1:00 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Wisdom HS",
+      "away": "Bangor Christian",
+      "site": "Skyway Elem. School, Presque Isle",
+      "sport": "Soccer",
+      "gender": "Girls"
+    },
+    {
       "game_id": "884457",
       "date": "2026-10-15",
       "time": "5:30 PM",
@@ -22558,7 +22636,9 @@
       "away": "Camden Hills Regional",
       "site": "Mt. Ararat High School",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "game_id": "72087",
@@ -22597,7 +22677,9 @@
       "away": "Mt. Abram",
       "site": "Edward Little High School",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "game_id": "72110",
@@ -22636,7 +22718,9 @@
       "away": "Piscataquis Community",
       "site": "Brewer High School",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 5,
+      "away_score": 4
     },
     {
       "game_id": "72135",
@@ -22649,7 +22733,9 @@
       "away": "Kennebunk",
       "site": "Scarborough HS",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "game_id": "72138",
@@ -22688,7 +22774,9 @@
       "away": "Orono",
       "site": "Hampden Academy",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "game_id": "72146",
@@ -22757,7 +22845,9 @@
       "away": "Richmond HS",
       "site": "Gardiner HS",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "game_id": "71481",
@@ -22770,7 +22860,9 @@
       "away": "Fort Kent Community",
       "site": "Hampden Academy",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "game_id": "72066",
@@ -22783,7 +22875,9 @@
       "away": "Telstar Regional",
       "site": "Gardiner High School",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 2,
+      "away_score": 5
     },
     {
       "game_id": "71782",

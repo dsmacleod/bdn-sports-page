@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-04T08:51:32.119522+00:00",
+  "last_updated": "2026-11-04T18:55:42.064136+00:00",
   "games": [
     {
       "game_id": "35680",
@@ -44512,6 +44512,168 @@
       "away": "Temple Academy"
     },
     {
+      "game_id": "72811",
+      "date": "2026-11-07",
+      "time": "11:00 AM",
+      "sport": "Soccer",
+      "gender": "Boys",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Kennebunk HS",
+      "teams": [
+        {
+          "school": "Thornton Academy",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Brunswick",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Thornton Academy",
+      "away": "Brunswick"
+    },
+    {
+      "game_id": "72813",
+      "date": "2026-11-07",
+      "time": "11:00 AM",
+      "sport": "Soccer",
+      "gender": "Boys",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Lewiston HS",
+      "teams": [
+        {
+          "school": "Hall-Dale HS",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Fort Kent Community",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Hall-Dale HS",
+      "away": "Fort Kent Community"
+    },
+    {
+      "game_id": "72817",
+      "date": "2026-11-07",
+      "time": "11:00 AM",
+      "sport": "Soccer",
+      "gender": "Boys",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Skyway Elem. School, Presque Isle",
+      "teams": [
+        {
+          "school": "Wisdom HS",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Telstar Regional",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Wisdom HS",
+      "away": "Telstar Regional"
+    },
+    {
+      "game_id": "72819",
+      "date": "2026-11-07",
+      "time": "1:30 PM",
+      "sport": "Soccer",
+      "gender": "Girls",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Kennebunk HS",
+      "teams": [
+        {
+          "school": "Scarborough",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Camden Hills Regional",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Scarborough",
+      "away": "Camden Hills Regional"
+    },
+    {
+      "game_id": "72821",
+      "date": "2026-11-07",
+      "time": "1:30 PM",
+      "sport": "Soccer",
+      "gender": "Girls",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Lewiston HS",
+      "teams": [
+        {
+          "school": "Maranacook Community",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Fort Kent Community",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Maranacook Community",
+      "away": "Fort Kent Community"
+    },
+    {
+      "game_id": "72823",
+      "date": "2026-11-07",
+      "time": "1:00 PM",
+      "sport": "Soccer",
+      "gender": "Girls",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Skyway Elem. School, Presque Isle",
+      "teams": [
+        {
+          "school": "Wisdom HS",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Bangor Christian",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Wisdom HS",
+      "away": "Bangor Christian"
+    },
+    {
       "game_id": "884457",
       "date": "2026-10-15",
       "time": "5:30 PM",
@@ -44554,18 +44716,20 @@
         {
           "school": "Brunswick",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         },
         {
           "school": "Camden Hills Regional",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 2
         }
       ],
       "home": "Brunswick",
-      "away": "Camden Hills Regional"
+      "away": "Camden Hills Regional",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "game_id": "72087",
@@ -44635,18 +44799,20 @@
         {
           "school": "Hall-Dale HS",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         },
         {
           "school": "Mt. Abram",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         }
       ],
       "home": "Hall-Dale HS",
-      "away": "Mt. Abram"
+      "away": "Mt. Abram",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "game_id": "72110",
@@ -44716,18 +44882,20 @@
         {
           "school": "Wisdom HS",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 5
         },
         {
           "school": "Piscataquis Community",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 4
         }
       ],
       "home": "Wisdom HS",
-      "away": "Piscataquis Community"
+      "away": "Piscataquis Community",
+      "home_score": 5,
+      "away_score": 4
     },
     {
       "game_id": "72135",
@@ -44743,18 +44911,20 @@
         {
           "school": "Scarborough",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         },
         {
           "school": "Kennebunk",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         }
       ],
       "home": "Scarborough",
-      "away": "Kennebunk"
+      "away": "Kennebunk",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "game_id": "72138",
@@ -44824,18 +44994,20 @@
         {
           "school": "Fort Kent Community",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         },
         {
           "school": "Orono",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Fort Kent Community",
-      "away": "Orono"
+      "away": "Orono",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "game_id": "72146",
@@ -44963,18 +45135,20 @@
         {
           "school": "Bangor Christian",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 1
         },
         {
           "school": "Richmond HS",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Bangor Christian",
-      "away": "Richmond HS"
+      "away": "Richmond HS",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "game_id": "71481",
@@ -44990,18 +45164,20 @@
         {
           "school": "Orono",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         },
         {
           "school": "Fort Kent Community",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         }
       ],
       "home": "Orono",
-      "away": "Fort Kent Community"
+      "away": "Fort Kent Community",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "game_id": "72066",
@@ -45017,18 +45193,20 @@
         {
           "school": "Pine Tree Academy",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 2
         },
         {
           "school": "Telstar Regional",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 5
         }
       ],
       "home": "Pine Tree Academy",
-      "away": "Telstar Regional"
+      "away": "Telstar Regional",
+      "home_score": 2,
+      "away_score": 5
     },
     {
       "game_id": "71782",
