@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-05T09:14:45.815720+00:00",
+  "last_updated": "2026-11-05T19:07:22.514726+00:00",
   "season": "fall",
   "games": [
     {
@@ -2619,7 +2619,9 @@
       "away": "Thornton Academy",
       "site": "Scarborough High School",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "game_id": "72073",
@@ -2632,7 +2634,9 @@
       "away": "Leavitt Area",
       "site": "Messalonskee High School",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 4,
+      "away_score": 2
     },
     {
       "game_id": "72075",
@@ -2645,7 +2649,9 @@
       "away": "Dexter Regional",
       "site": "Messalonskee High School",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "game_id": "72077",
@@ -2658,7 +2664,9 @@
       "away": "Spruce Mountain",
       "site": "Scarborough High School",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "game_id": "72079",
@@ -2670,6 +2678,47 @@
       "home": "Yarmouth",
       "away": "Freeport",
       "site": "Scarborough High School",
+      "sport": "Field Hockey",
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 2
+    },
+    {
+      "game_id": "73092",
+      "date": "2026-11-07",
+      "time": "11:05 AM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Mt. Ararat",
+      "away": "Cheverus",
+      "site": "Edward Little HS",
+      "sport": "Field Hockey",
+      "gender": "Girls"
+    },
+    {
+      "game_id": "73094",
+      "date": "2026-11-07",
+      "time": "1:05 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Nokomis",
+      "away": "Freeport",
+      "site": "Edward Little HS",
+      "sport": "Field Hockey",
+      "gender": "Girls"
+    },
+    {
+      "game_id": "73096",
+      "date": "2026-11-07",
+      "time": "3:05 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Foxcroft Academy",
+      "away": "Winthrop",
+      "site": "Edward Little HS",
       "sport": "Field Hockey",
       "gender": "Girls"
     },
@@ -2684,7 +2733,9 @@
       "away": "Skowhegan Area",
       "site": "Messalonskee High School",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "game_id": "53002",
@@ -8862,7 +8913,7 @@
     {
       "game_id": "72208",
       "date": "2026-11-06",
-      "time": "",
+      "time": "7:00 PM",
       "type": "Tournament",
       "status": "Normal",
       "level": "Varsity",
@@ -8875,7 +8926,7 @@
     {
       "game_id": "72210",
       "date": "2026-11-06",
-      "time": "",
+      "time": "7:00 PM",
       "type": "Tournament",
       "status": "Normal",
       "level": "Varsity",
@@ -8888,7 +8939,7 @@
     {
       "game_id": "72212",
       "date": "2026-11-06",
-      "time": "",
+      "time": "7:00 PM",
       "type": "Tournament",
       "status": "Normal",
       "level": "Varsity",
@@ -8901,7 +8952,7 @@
     {
       "game_id": "72359",
       "date": "2026-11-06",
-      "time": "",
+      "time": "6:00 PM",
       "type": "Tournament",
       "status": "Normal",
       "level": "Varsity",
@@ -8914,7 +8965,7 @@
     {
       "game_id": "72370",
       "date": "2026-11-06",
-      "time": "",
+      "time": "7:00 PM",
       "type": "Tournament",
       "status": "Normal",
       "level": "Varsity",
@@ -8927,7 +8978,7 @@
     {
       "game_id": "72372",
       "date": "2026-11-06",
-      "time": "",
+      "time": "7:00 PM",
       "type": "Tournament",
       "status": "Normal",
       "level": "Varsity",
@@ -8953,7 +9004,7 @@
     {
       "game_id": "72376",
       "date": "2026-11-06",
-      "time": "",
+      "time": "7:00 PM",
       "type": "Tournament",
       "status": "Normal",
       "level": "Varsity",
@@ -26496,7 +26547,9 @@
       "away": "Oceanside",
       "site": "Hampden Academy",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "game_id": "72092",
@@ -26509,7 +26562,9 @@
       "away": "Cape Elizabeth",
       "site": "Falmouth High School",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "game_id": "72099",
@@ -26552,7 +26607,9 @@
       "away": "Narraguagus Sr",
       "site": "Cony Middle High School",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 8,
+      "away_score": 0
     },
     {
       "game_id": "72116",
@@ -26595,7 +26652,9 @@
       "away": "Presque Isle",
       "site": "Hampden Academy",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "game_id": "72140",
@@ -26608,7 +26667,9 @@
       "away": "Yarmouth",
       "site": "Falmouth High School",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "game_id": "72144",
@@ -26651,7 +26712,9 @@
       "away": "Fort Fairfield HS",
       "site": "Skyway Elem. School, Presque Isle",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "game_id": "72151",
@@ -26664,7 +26727,9 @@
       "away": "Old Orchard Beach",
       "site": "Cony HS",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "game_id": "72154",
@@ -26775,21 +26840,6 @@
       "gender": "Girls"
     },
     {
-      "game_id": "884457",
-      "date": "2026-10-15",
-      "time": "5:30 PM",
-      "type": "League",
-      "status": "Normal",
-      "level": "Varsity",
-      "home": "Fryeburg Academy",
-      "away": "Gray-New Gloucester",
-      "site": "Fryeburg Academy",
-      "sport": "Soccer",
-      "gender": "Boys",
-      "home_score": 5,
-      "away_score": 0
-    },
-    {
       "game_id": "72066",
       "date": "2026-11-03",
       "time": "4:00 PM",
@@ -26848,6 +26898,73 @@
       "gender": "Girls",
       "home_score": 5,
       "away_score": 1
+    },
+    {
+      "game_id": "73105",
+      "date": "2026-11-07",
+      "time": "11:00 AM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "John Bapst Memorial",
+      "away": "Yarmouth",
+      "site": "Cameron Stadium, Bangor",
+      "sport": "Soccer",
+      "gender": "Boys"
+    },
+    {
+      "game_id": "73109",
+      "date": "2026-11-07",
+      "time": "11:00 AM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Madawaska HS",
+      "away": "Monmouth Academy",
+      "site": "Messalonskee HS",
+      "sport": "Soccer",
+      "gender": "Boys"
+    },
+    {
+      "game_id": "73111",
+      "date": "2026-11-07",
+      "time": "1:30 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "John Bapst Memorial",
+      "away": "Cape Elizabeth",
+      "site": "Cameron Stadium, Bangor",
+      "sport": "Soccer",
+      "gender": "Girls"
+    },
+    {
+      "game_id": "73115",
+      "date": "2026-11-07",
+      "time": "1:30 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Penobscot Valley",
+      "away": "Monmouth Academy",
+      "site": "Messalonskee HS",
+      "sport": "Soccer",
+      "gender": "Girls"
+    },
+    {
+      "game_id": "884457",
+      "date": "2026-10-15",
+      "time": "5:30 PM",
+      "type": "League",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Fryeburg Academy",
+      "away": "Gray-New Gloucester",
+      "site": "Fryeburg Academy",
+      "sport": "Soccer",
+      "gender": "Boys",
+      "home_score": 5,
+      "away_score": 0
     },
     {
       "game_id": "70699",

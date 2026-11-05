@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-05T09:14:45.815720+00:00",
+  "last_updated": "2026-11-05T19:07:22.514726+00:00",
   "games": [
     {
       "game_id": "35705",
@@ -5913,18 +5913,20 @@
         {
           "school": "Cheverus",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         },
         {
           "school": "Thornton Academy",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         }
       ],
       "home": "Cheverus",
-      "away": "Thornton Academy"
+      "away": "Thornton Academy",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "game_id": "72073",
@@ -5940,18 +5942,20 @@
         {
           "school": "Nokomis",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 4
         },
         {
           "school": "Leavitt Area",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 2
         }
       ],
       "home": "Nokomis",
-      "away": "Leavitt Area"
+      "away": "Leavitt Area",
+      "home_score": 4,
+      "away_score": 2
     },
     {
       "game_id": "72075",
@@ -5967,18 +5971,20 @@
         {
           "school": "Foxcroft Academy",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 1
         },
         {
           "school": "Dexter Regional",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Foxcroft Academy",
-      "away": "Dexter Regional"
+      "away": "Dexter Regional",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "game_id": "72077",
@@ -5994,18 +6000,20 @@
         {
           "school": "Winthrop",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         },
         {
           "school": "Spruce Mountain",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         }
       ],
       "home": "Winthrop",
-      "away": "Spruce Mountain"
+      "away": "Spruce Mountain",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "game_id": "72079",
@@ -6021,6 +6029,62 @@
         {
           "school": "Yarmouth",
           "home_away": "Home",
+          "result": "Loss",
+          "score": 1
+        },
+        {
+          "school": "Freeport",
+          "home_away": "Away",
+          "result": "Win",
+          "score": 2
+        }
+      ],
+      "home": "Yarmouth",
+      "away": "Freeport",
+      "home_score": 1,
+      "away_score": 2
+    },
+    {
+      "game_id": "73092",
+      "date": "2026-11-07",
+      "time": "11:05 AM",
+      "sport": "Field Hockey",
+      "gender": "",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Edward Little HS",
+      "teams": [
+        {
+          "school": "Mt. Ararat",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Cheverus",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Mt. Ararat",
+      "away": "Cheverus"
+    },
+    {
+      "game_id": "73094",
+      "date": "2026-11-07",
+      "time": "1:05 PM",
+      "sport": "Field Hockey",
+      "gender": "",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Edward Little HS",
+      "teams": [
+        {
+          "school": "Nokomis",
+          "home_away": "Home",
           "result": "",
           "score": null
         },
@@ -6031,8 +6095,35 @@
           "score": null
         }
       ],
-      "home": "Yarmouth",
+      "home": "Nokomis",
       "away": "Freeport"
+    },
+    {
+      "game_id": "73096",
+      "date": "2026-11-07",
+      "time": "3:05 PM",
+      "sport": "Field Hockey",
+      "gender": "",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Edward Little HS",
+      "teams": [
+        {
+          "school": "Foxcroft Academy",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Winthrop",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Foxcroft Academy",
+      "away": "Winthrop"
     },
     {
       "game_id": "71827",
@@ -6048,18 +6139,20 @@
         {
           "school": "Mt. Ararat",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         },
         {
           "school": "Skowhegan Area",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 2
         }
       ],
       "home": "Mt. Ararat",
-      "away": "Skowhegan Area"
+      "away": "Skowhegan Area",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "game_id": "53002",
@@ -18019,7 +18112,7 @@
     {
       "game_id": "72208",
       "date": "2026-11-06",
-      "time": "",
+      "time": "7:00 PM",
       "sport": "Football",
       "gender": "",
       "level": "Varsity",
@@ -18046,7 +18139,7 @@
     {
       "game_id": "72210",
       "date": "2026-11-06",
-      "time": "",
+      "time": "7:00 PM",
       "sport": "Football",
       "gender": "",
       "level": "Varsity",
@@ -18073,7 +18166,7 @@
     {
       "game_id": "72212",
       "date": "2026-11-06",
-      "time": "",
+      "time": "7:00 PM",
       "sport": "Football",
       "gender": "",
       "level": "Varsity",
@@ -18100,7 +18193,7 @@
     {
       "game_id": "72359",
       "date": "2026-11-06",
-      "time": "",
+      "time": "6:00 PM",
       "sport": "Football",
       "gender": "",
       "level": "Varsity",
@@ -18127,7 +18220,7 @@
     {
       "game_id": "72370",
       "date": "2026-11-06",
-      "time": "",
+      "time": "7:00 PM",
       "sport": "Football",
       "gender": "",
       "level": "Varsity",
@@ -18154,7 +18247,7 @@
     {
       "game_id": "72372",
       "date": "2026-11-06",
-      "time": "",
+      "time": "7:00 PM",
       "sport": "Football",
       "gender": "",
       "level": "Varsity",
@@ -18208,7 +18301,7 @@
     {
       "game_id": "72376",
       "date": "2026-11-06",
-      "time": "",
+      "time": "7:00 PM",
       "sport": "Football",
       "gender": "",
       "level": "Varsity",
@@ -52046,18 +52139,20 @@
         {
           "school": "John Bapst Memorial",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         },
         {
           "school": "Oceanside",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "John Bapst Memorial",
-      "away": "Oceanside"
+      "away": "Oceanside",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "game_id": "72092",
@@ -52073,18 +52168,20 @@
         {
           "school": "Yarmouth",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         },
         {
           "school": "Cape Elizabeth",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         }
       ],
       "home": "Yarmouth",
-      "away": "Cape Elizabeth"
+      "away": "Cape Elizabeth",
+      "home_score": 2,
+      "away_score": 1
     },
     {
       "game_id": "72099",
@@ -52158,18 +52255,20 @@
         {
           "school": "Monmouth Academy",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 8
         },
         {
           "school": "Narraguagus Sr",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Monmouth Academy",
-      "away": "Narraguagus Sr"
+      "away": "Narraguagus Sr",
+      "home_score": 8,
+      "away_score": 0
     },
     {
       "game_id": "72116",
@@ -52243,18 +52342,20 @@
         {
           "school": "John Bapst Memorial",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         },
         {
           "school": "Presque Isle",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "John Bapst Memorial",
-      "away": "Presque Isle"
+      "away": "Presque Isle",
+      "home_score": 3,
+      "away_score": 0
     },
     {
       "game_id": "72140",
@@ -52270,18 +52371,20 @@
         {
           "school": "Cape Elizabeth",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         },
         {
           "school": "Yarmouth",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         }
       ],
       "home": "Cape Elizabeth",
-      "away": "Yarmouth"
+      "away": "Yarmouth",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "game_id": "72144",
@@ -52355,18 +52458,20 @@
         {
           "school": "Penobscot Valley",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         },
         {
           "school": "Fort Fairfield HS",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Penobscot Valley",
-      "away": "Fort Fairfield HS"
+      "away": "Fort Fairfield HS",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "game_id": "72151",
@@ -52382,18 +52487,20 @@
         {
           "school": "Monmouth Academy",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 1
         },
         {
           "school": "Old Orchard Beach",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Monmouth Academy",
-      "away": "Old Orchard Beach"
+      "away": "Old Orchard Beach",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "game_id": "72154",
@@ -52616,35 +52723,6 @@
       "away": "Bangor Christian"
     },
     {
-      "game_id": "884457",
-      "date": "2026-10-15",
-      "time": "5:30 PM",
-      "sport": "Soccer",
-      "gender": "Boys",
-      "level": "Varsity",
-      "type": "League",
-      "status": "Normal",
-      "site": "Fryeburg Academy",
-      "teams": [
-        {
-          "school": "Gray-New Gloucester",
-          "home_away": "Away",
-          "result": "Loss",
-          "score": 0
-        },
-        {
-          "school": "Fryeburg Academy",
-          "home_away": "Home",
-          "result": "Win",
-          "score": 5
-        }
-      ],
-      "home": "Fryeburg Academy",
-      "away": "Gray-New Gloucester",
-      "home_score": 5,
-      "away_score": 0
-    },
-    {
       "game_id": "72066",
       "date": "2026-11-03",
       "time": "4:00 PM",
@@ -52759,6 +52837,143 @@
       "away": "Mt. Ararat",
       "home_score": 5,
       "away_score": 1
+    },
+    {
+      "game_id": "73105",
+      "date": "2026-11-07",
+      "time": "11:00 AM",
+      "sport": "Soccer",
+      "gender": "Boys",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Cameron Stadium, Bangor",
+      "teams": [
+        {
+          "school": "John Bapst Memorial",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Yarmouth",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "John Bapst Memorial",
+      "away": "Yarmouth"
+    },
+    {
+      "game_id": "73109",
+      "date": "2026-11-07",
+      "time": "11:00 AM",
+      "sport": "Soccer",
+      "gender": "Boys",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Messalonskee HS",
+      "teams": [
+        {
+          "school": "Madawaska HS",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Monmouth Academy",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Madawaska HS",
+      "away": "Monmouth Academy"
+    },
+    {
+      "game_id": "73111",
+      "date": "2026-11-07",
+      "time": "1:30 PM",
+      "sport": "Soccer",
+      "gender": "Girls",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Cameron Stadium, Bangor",
+      "teams": [
+        {
+          "school": "John Bapst Memorial",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Cape Elizabeth",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "John Bapst Memorial",
+      "away": "Cape Elizabeth"
+    },
+    {
+      "game_id": "73115",
+      "date": "2026-11-07",
+      "time": "1:30 PM",
+      "sport": "Soccer",
+      "gender": "Girls",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Messalonskee HS",
+      "teams": [
+        {
+          "school": "Penobscot Valley",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Monmouth Academy",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Penobscot Valley",
+      "away": "Monmouth Academy"
+    },
+    {
+      "game_id": "884457",
+      "date": "2026-10-15",
+      "time": "5:30 PM",
+      "sport": "Soccer",
+      "gender": "Boys",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "Fryeburg Academy",
+      "teams": [
+        {
+          "school": "Gray-New Gloucester",
+          "home_away": "Away",
+          "result": "Loss",
+          "score": 0
+        },
+        {
+          "school": "Fryeburg Academy",
+          "home_away": "Home",
+          "result": "Win",
+          "score": 5
+        }
+      ],
+      "home": "Fryeburg Academy",
+      "away": "Gray-New Gloucester",
+      "home_score": 5,
+      "away_score": 0
     },
     {
       "game_id": "70699",
