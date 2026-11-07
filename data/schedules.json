@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-07T08:34:48.568655+00:00",
+  "last_updated": "2026-11-07T17:02:38.859711+00:00",
   "season": "fall",
   "games": [
     {
@@ -7913,7 +7913,9 @@
       "away": "Gardiner Area",
       "site": "Lewiston HS Field",
       "sport": "Football",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 21,
+      "away_score": 0
     },
     {
       "game_id": "72182",
@@ -8049,7 +8051,7 @@
       "level": "Varsity",
       "home": "Foxcroft Academy",
       "away": "Wells",
-      "site": "",
+      "site": "Foxcroft Academy",
       "sport": "Football",
       "gender": "Boys",
       "home_score": 22,

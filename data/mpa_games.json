@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-07T08:34:48.568655+00:00",
+  "last_updated": "2026-11-07T17:02:38.859711+00:00",
   "games": [
     {
       "game_id": "35705",
@@ -15951,18 +15951,20 @@
         {
           "school": "Leavitt Area",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 21
         },
         {
           "school": "Gardiner Area",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Leavitt Area",
-      "away": "Gardiner Area"
+      "away": "Gardiner Area",
+      "home_score": 21,
+      "away_score": 0
     },
     {
       "game_id": "72182",
@@ -16224,7 +16226,7 @@
       "level": "Varsity",
       "type": "Tournament",
       "status": "Normal",
-      "site": "",
+      "site": "Foxcroft Academy",
       "teams": [
         {
           "school": "Foxcroft Academy",
