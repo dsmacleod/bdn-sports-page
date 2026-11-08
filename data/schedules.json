@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-07T17:02:38.859711+00:00",
+  "last_updated": "2026-11-08T08:47:41.561971+00:00",
   "season": "fall",
   "games": [
     {
@@ -7857,7 +7857,9 @@
       "away": "Boothbay Region",
       "site": "OOBHS",
       "sport": "Football",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 46,
+      "away_score": 8
     },
     {
       "game_id": "73698",
@@ -7869,6 +7871,19 @@
       "home": "Thornton Academy",
       "away": "Bonny Eagle",
       "site": "Thornton Academy Hill Stadium",
+      "sport": "Football",
+      "gender": "Boys"
+    },
+    {
+      "game_id": "73714",
+      "date": "2026-11-13",
+      "time": "7:00 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Greely",
+      "away": "Hermon",
+      "site": "Greely",
       "sport": "Football",
       "gender": "Boys"
     },
@@ -7928,7 +7943,9 @@
       "away": "Mount Desert Island",
       "site": "Victory Field- OTHS",
       "sport": "Football",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 56,
+      "away_score": 6
     },
     {
       "game_id": "72202",
@@ -7956,7 +7973,9 @@
       "away": "Madison High School",
       "site": "Winslow HS",
       "sport": "Football",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 44,
+      "away_score": 6
     },
     {
       "game_id": "72206",
@@ -7999,7 +8018,9 @@
       "away": "Spruce Mountain",
       "site": "",
       "sport": "Football",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 68,
+      "away_score": 34
     },
     {
       "game_id": "72212",
@@ -8040,7 +8061,9 @@
       "away": "Massabesic",
       "site": "",
       "sport": "Football",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 35,
+      "away_score": 20
     },
     {
       "game_id": "72372",

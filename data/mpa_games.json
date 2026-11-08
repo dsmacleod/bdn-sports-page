@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-07T17:02:38.859711+00:00",
+  "last_updated": "2026-11-08T08:47:41.561971+00:00",
   "games": [
     {
       "game_id": "35705",
@@ -15839,18 +15839,20 @@
         {
           "school": "Old Orchard Beach",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 46
         },
         {
           "school": "Boothbay Region",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 8
         }
       ],
       "home": "Old Orchard Beach",
-      "away": "Boothbay Region"
+      "away": "Boothbay Region",
+      "home_score": 46,
+      "away_score": 8
     },
     {
       "game_id": "73698",
@@ -15878,6 +15880,33 @@
       ],
       "home": "Thornton Academy",
       "away": "Bonny Eagle"
+    },
+    {
+      "game_id": "73714",
+      "date": "2026-11-13",
+      "time": "7:00 PM",
+      "sport": "Football",
+      "gender": "",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Greely",
+      "teams": [
+        {
+          "school": "Greely",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Hermon",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Greely",
+      "away": "Hermon"
     },
     {
       "game_id": "71488",
@@ -15980,18 +16009,20 @@
         {
           "school": "Old Town",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 56
         },
         {
           "school": "Mount Desert Island",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 6
         }
       ],
       "home": "Old Town",
-      "away": "Mount Desert Island"
+      "away": "Mount Desert Island",
+      "home_score": 56,
+      "away_score": 6
     },
     {
       "game_id": "72202",
@@ -16036,18 +16067,20 @@
         {
           "school": "Winslow",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 44
         },
         {
           "school": "Madison High School",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 6
         }
       ],
       "home": "Winslow",
-      "away": "Madison High School"
+      "away": "Madison High School",
+      "home_score": 44,
+      "away_score": 6
     },
     {
       "game_id": "72206",
@@ -16121,18 +16154,20 @@
         {
           "school": "Yarmouth",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 68
         },
         {
           "school": "Spruce Mountain",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 34
         }
       ],
       "home": "Yarmouth",
-      "away": "Spruce Mountain"
+      "away": "Spruce Mountain",
+      "home_score": 68,
+      "away_score": 34
     },
     {
       "game_id": "72212",
@@ -16204,18 +16239,20 @@
         {
           "school": "Bonny Eagle",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 35
         },
         {
           "school": "Massabesic",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 20
         }
       ],
       "home": "Bonny Eagle",
-      "away": "Massabesic"
+      "away": "Massabesic",
+      "home_score": 35,
+      "away_score": 20
     },
     {
       "game_id": "72372",
