@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-09T09:30:33.818739+00:00",
+  "last_updated": "2026-11-09T21:40:09.754806+00:00",
   "season": "fall",
   "games": [
     {
@@ -2218,7 +2218,9 @@
       "away": "Cheverus",
       "site": "Edward Little HS",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "game_id": "73094",
@@ -2231,7 +2233,9 @@
       "away": "Freeport",
       "site": "Edward Little HS",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "game_id": "73096",
@@ -2244,7 +2248,9 @@
       "away": "Winthrop",
       "site": "Edward Little HS",
       "sport": "Field Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "game_id": "53588",
@@ -7862,6 +7868,21 @@
       "away_score": 8
     },
     {
+      "game_id": "70470",
+      "date": "2026-11-06",
+      "time": "6:00 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Marshwood",
+      "away": "Falmouth",
+      "site": "Marshwood High School",
+      "sport": "Football",
+      "gender": "Boys",
+      "home_score": 30,
+      "away_score": 22
+    },
+    {
       "game_id": "71488",
       "date": "2026-11-06",
       "time": "6:00 PM",
@@ -7912,6 +7933,84 @@
       "home": "Cony HS",
       "away": "Fryeburg Academy",
       "site": "Lewiston HS",
+      "sport": "Football",
+      "gender": "Boys"
+    },
+    {
+      "game_id": "73762",
+      "date": "2026-11-13",
+      "time": "",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Oxford Hills",
+      "away": "Windham",
+      "site": "",
+      "sport": "Football",
+      "gender": "Boys"
+    },
+    {
+      "game_id": "73764",
+      "date": "2026-11-14",
+      "time": "2:00 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Marshwood",
+      "away": "Kennebunk",
+      "site": "",
+      "sport": "Football",
+      "gender": "Boys"
+    },
+    {
+      "game_id": "73766",
+      "date": "2026-11-13",
+      "time": "",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Leavitt Area",
+      "away": "Foxcroft Academy",
+      "site": "",
+      "sport": "Football",
+      "gender": "Boys"
+    },
+    {
+      "game_id": "73783",
+      "date": "2026-11-13",
+      "time": "6:00 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Freeport",
+      "away": "Winthrop",
+      "site": "Freeport High School",
+      "sport": "Football",
+      "gender": "Boys"
+    },
+    {
+      "game_id": "74114",
+      "date": "2026-11-14",
+      "time": "11:00 AM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Yarmouth",
+      "away": "Old Town",
+      "site": "Edward Little High School",
+      "sport": "Football",
+      "gender": "Boys"
+    },
+    {
+      "game_id": "74116",
+      "date": "2026-11-14",
+      "time": "2:30 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Old Orchard Beach",
+      "away": "Orono",
+      "site": "Edward LIttle High School",
       "sport": "Football",
       "gender": "Boys"
     },
@@ -8046,7 +8145,9 @@
       "away": "Orono",
       "site": "",
       "sport": "Football",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 52,
+      "away_score": 55
     },
     {
       "game_id": "72359",
@@ -8119,7 +8220,9 @@
       "away": "Nokomis",
       "site": "",
       "sport": "Football",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 34,
+      "away_score": 7
     },
     {
       "game_id": "72716",
@@ -8285,32 +8388,6 @@
       "gender": "Boys",
       "home_score": 42,
       "away_score": 0
-    },
-    {
-      "game_id": "70470",
-      "date": "2026-11-06",
-      "time": "6:00 PM",
-      "type": "Tournament",
-      "status": "Normal",
-      "level": "Varsity",
-      "home": "Marshwood",
-      "away": "Falmouth, Westbrook",
-      "site": "Marshwood High School",
-      "sport": "Football",
-      "gender": "Boys"
-    },
-    {
-      "game_id": "70471",
-      "date": "2026-11-06",
-      "time": "6:00 PM",
-      "type": "Tournament",
-      "status": "Normal",
-      "level": "Varsity",
-      "home": "Marshwood",
-      "away": "Falmouth, Westbrook",
-      "site": "Marshwood High School",
-      "sport": "Football",
-      "gender": "Boys"
     },
     {
       "game_id": "69236",
@@ -21083,6 +21160,34 @@
       "away_score": 0
     },
     {
+      "game_id": "70479",
+      "date": "2026-10-30",
+      "time": "5:00 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Windham",
+      "away": "Kennebunk",
+      "site": "Windham High School",
+      "sport": "Soccer",
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 2
+    },
+    {
+      "game_id": "70481",
+      "date": "2026-10-27",
+      "time": "6:00 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Bangor Christian",
+      "away": "Woodland Sr.",
+      "site": "TBA",
+      "sport": "Soccer",
+      "gender": "Boys"
+    },
+    {
       "game_id": "70356",
       "date": "2026-10-30",
       "time": "3:30 PM",
@@ -21511,7 +21616,9 @@
       "away": "Brunswick",
       "site": "Kennebunk HS",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "game_id": "72813",
@@ -21524,7 +21631,9 @@
       "away": "Fort Kent Community",
       "site": "Lewiston HS",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "game_id": "72817",
@@ -21537,7 +21646,9 @@
       "away": "Telstar Regional",
       "site": "Skyway Elem. School, Presque Isle",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 1,
+      "away_score": 4
     },
     {
       "game_id": "72819",
@@ -21550,7 +21661,9 @@
       "away": "Camden Hills Regional",
       "site": "Kennebunk HS",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 0,
+      "away_score": 1
     },
     {
       "game_id": "72821",
@@ -21563,7 +21676,9 @@
       "away": "Fort Kent Community",
       "site": "Lewiston HS",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "game_id": "72823",
@@ -21576,7 +21691,9 @@
       "away": "Bangor Christian",
       "site": "Skyway Elem. School, Presque Isle",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 3,
+      "away_score": 1
     },
     {
       "game_id": "72085",
@@ -21864,32 +21981,19 @@
       "away_score": 1
     },
     {
-      "game_id": "70479",
-      "date": "2026-10-30",
-      "time": "5:00 PM",
+      "game_id": "71849",
+      "date": "2026-11-03",
+      "time": "7:00 PM",
       "type": "Tournament",
       "status": "Normal",
       "level": "Varsity",
-      "home": "Windham",
-      "away": "Kennebunk",
-      "site": "Windham High School",
+      "home": "Camden Hills Regional",
+      "away": "Mt. Ararat",
+      "site": "Mt. Ararat High School",
       "sport": "Soccer",
       "gender": "Girls",
-      "home_score": 1,
-      "away_score": 2
-    },
-    {
-      "game_id": "70481",
-      "date": "2026-10-27",
-      "time": "6:00 PM",
-      "type": "Tournament",
-      "status": "Normal",
-      "level": "Varsity",
-      "home": "Bangor Christian",
-      "away": "Woodland Sr.",
-      "site": "TBA",
-      "sport": "Soccer",
-      "gender": "Boys"
+      "home_score": 5,
+      "away_score": 1
     },
     {
       "game_id": "72066",
@@ -21907,21 +22011,6 @@
       "away_score": 5
     },
     {
-      "game_id": "71849",
-      "date": "2026-11-03",
-      "time": "7:00 PM",
-      "type": "Tournament",
-      "status": "Normal",
-      "level": "Varsity",
-      "home": "Camden Hills Regional",
-      "away": "Mt. Ararat",
-      "site": "Mt. Ararat High School",
-      "sport": "Soccer",
-      "gender": "Girls",
-      "home_score": 5,
-      "away_score": 1
-    },
-    {
       "game_id": "73105",
       "date": "2026-11-07",
       "time": "11:00 AM",
@@ -21932,7 +22021,9 @@
       "away": "Yarmouth",
       "site": "Cameron Stadium, Bangor",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 0,
+      "away_score": 3
     },
     {
       "game_id": "73109",
@@ -21945,7 +22036,9 @@
       "away": "Monmouth Academy",
       "site": "Messalonskee HS",
       "sport": "Soccer",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 0,
+      "away_score": 8
     },
     {
       "game_id": "73111",
@@ -21958,7 +22051,9 @@
       "away": "Cape Elizabeth",
       "site": "Cameron Stadium, Bangor",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 2
     },
     {
       "game_id": "73115",
@@ -21971,7 +22066,9 @@
       "away": "Monmouth Academy",
       "site": "Messalonskee HS",
       "sport": "Soccer",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 0
     },
     {
       "game_id": "54487",
