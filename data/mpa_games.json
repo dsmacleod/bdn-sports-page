@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-12T09:33:55.286104+00:00",
+  "last_updated": "2026-11-12T19:14:17.055041+00:00",
   "games": [
     {
       "game_id": "35680",
@@ -42625,33 +42625,6 @@
       "away": "Cheverus"
     },
     {
-      "game_id": "62652",
-      "date": "2026-11-25",
-      "time": "6:10 PM",
-      "sport": "Ice Hockey",
-      "gender": "Girls",
-      "level": "Varsity",
-      "type": "League",
-      "status": "Normal",
-      "site": "Thomas College Ice Vault",
-      "teams": [
-        {
-          "school": "Winslow",
-          "home_away": "Home",
-          "result": "",
-          "score": null
-        },
-        {
-          "school": "Brewer",
-          "home_away": "Away",
-          "result": "",
-          "score": null
-        }
-      ],
-      "home": "Winslow",
-      "away": "Brewer"
-    },
-    {
       "game_id": "62808",
       "date": "2026-11-21",
       "time": "12:00 PM",
@@ -42758,6 +42731,60 @@
       ],
       "home": "Cheverus",
       "away": "Portland"
+    },
+    {
+      "game_id": "74731",
+      "date": "2026-11-21",
+      "time": "6:30 PM",
+      "sport": "Ice Hockey",
+      "gender": "Girls",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "Penobscot Ice Arena, Brewer",
+      "teams": [
+        {
+          "school": "Brewer",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Lewiston",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Brewer",
+      "away": "Lewiston"
+    },
+    {
+      "game_id": "74735",
+      "date": "2026-11-25",
+      "time": "6:10 PM",
+      "sport": "Ice Hockey",
+      "gender": "Girls",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "Penobscot Ice Arena, Brewer",
+      "teams": [
+        {
+          "school": "Brewer",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Winslow",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Brewer",
+      "away": "Winslow"
     },
     {
       "game_id": "53519",
