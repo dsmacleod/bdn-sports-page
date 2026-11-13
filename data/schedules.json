@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-13T09:19:42.713820+00:00",
+  "last_updated": "2026-11-13T18:50:18.984922+00:00",
   "season": "fall",
   "games": [
     {
@@ -4225,6 +4225,19 @@
       "away_score": 8
     },
     {
+      "game_id": "74823",
+      "date": "2026-11-14",
+      "time": "1:00 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Winslow",
+      "away": "John Bapst Memorial",
+      "site": "",
+      "sport": "Football",
+      "gender": "Boys"
+    },
+    {
       "game_id": "71488",
       "date": "2026-11-06",
       "time": "6:00 PM",
@@ -4279,19 +4292,6 @@
       "gender": "Boys"
     },
     {
-      "game_id": "73762",
-      "date": "2026-11-13",
-      "time": "",
-      "type": "Tournament",
-      "status": "Normal",
-      "level": "Varsity",
-      "home": "Oxford Hills",
-      "away": "Windham",
-      "site": "",
-      "sport": "Football",
-      "gender": "Boys"
-    },
-    {
       "game_id": "73764",
       "date": "2026-11-14",
       "time": "2:00 PM",
@@ -4307,13 +4307,26 @@
     {
       "game_id": "73766",
       "date": "2026-11-13",
-      "time": "",
+      "time": "7:00 PM",
       "type": "Tournament",
       "status": "Normal",
       "level": "Varsity",
       "home": "Leavitt Area",
       "away": "Foxcroft Academy",
       "site": "",
+      "sport": "Football",
+      "gender": "Boys"
+    },
+    {
+      "game_id": "73772",
+      "date": "2026-11-14",
+      "time": "12:00 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Oxford Hills",
+      "away": "Windham",
+      "site": "At the Gouin Field",
       "sport": "Football",
       "gender": "Boys"
     },
@@ -6948,21 +6961,6 @@
       "away_score": 5
     },
     {
-      "game_id": "884457",
-      "date": "2026-10-15",
-      "time": "5:30 PM",
-      "type": "League",
-      "status": "Normal",
-      "level": "Varsity",
-      "home": "Fryeburg Academy",
-      "away": "Gray-New Gloucester",
-      "site": "Fryeburg Academy",
-      "sport": "Soccer",
-      "gender": "Boys",
-      "home_score": 5,
-      "away_score": 0
-    },
-    {
       "game_id": "73105",
       "date": "2026-11-07",
       "time": "11:00 AM",
@@ -7020,6 +7018,21 @@
       "sport": "Soccer",
       "gender": "Girls",
       "home_score": 1,
+      "away_score": 0
+    },
+    {
+      "game_id": "884457",
+      "date": "2026-10-15",
+      "time": "5:30 PM",
+      "type": "League",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Fryeburg Academy",
+      "away": "Gray-New Gloucester",
+      "site": "Fryeburg Academy",
+      "sport": "Soccer",
+      "gender": "Boys",
+      "home_score": 5,
       "away_score": 0
     },
     {
@@ -18594,8 +18607,8 @@
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
-      "home": "Cheverus",
-      "away": "Portland",
+      "home": "Portland",
+      "away": "Cheverus",
       "site": "Troubh Ice Arena",
       "sport": "Ice Hockey",
       "gender": "Girls"
@@ -18694,7 +18707,7 @@
     {
       "game_id": "62650",
       "date": "2026-11-21",
-      "time": "5:00 PM",
+      "time": "5:20 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
