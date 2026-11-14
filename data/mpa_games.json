@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-14T08:48:32.359010+00:00",
+  "last_updated": "2026-11-14T17:22:38.015296+00:00",
   "games": [
     {
       "game_id": "35705",
@@ -7830,18 +7830,20 @@
         {
           "school": "Leavitt Area",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 26
         },
         {
           "school": "Foxcroft Academy",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Leavitt Area",
-      "away": "Foxcroft Academy"
+      "away": "Foxcroft Academy",
+      "home_score": 26,
+      "away_score": 0
     },
     {
       "game_id": "73772",
