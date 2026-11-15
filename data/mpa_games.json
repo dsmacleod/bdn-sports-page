@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-14T17:22:38.015296+00:00",
+  "last_updated": "2026-11-15T09:01:26.553835+00:00",
   "games": [
     {
       "game_id": "35705",
@@ -7718,18 +7718,20 @@
         {
           "school": "Thornton Academy",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 28
         },
         {
           "school": "Bonny Eagle",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 35
         }
       ],
       "home": "Thornton Academy",
-      "away": "Bonny Eagle"
+      "away": "Bonny Eagle",
+      "home_score": 28,
+      "away_score": 35
     },
     {
       "game_id": "73714",
@@ -7859,18 +7861,20 @@
         {
           "school": "Oxford Hills",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 42
         },
         {
           "school": "Windham",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 33
         }
       ],
       "home": "Oxford Hills",
-      "away": "Windham"
+      "away": "Windham",
+      "home_score": 42,
+      "away_score": 33
     },
     {
       "game_id": "73783",
@@ -7998,18 +8002,20 @@
         {
           "school": "Winslow",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 36
         },
         {
           "school": "John Bapst Memorial",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 20
         }
       ],
       "home": "Winslow",
-      "away": "John Bapst Memorial"
+      "away": "John Bapst Memorial",
+      "home_score": 36,
+      "away_score": 20
     },
     {
       "game_id": "72169",
