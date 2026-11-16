@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-16T09:19:06.549335+00:00",
+  "last_updated": "2026-11-16T21:18:50.999143+00:00",
   "season": "fall",
   "games": [
     {
@@ -2898,7 +2898,9 @@
       "away": "Kennebunk",
       "site": "",
       "sport": "Football",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 14,
+      "away_score": 8
     },
     {
       "game_id": "73766",
@@ -2956,7 +2958,9 @@
       "away": "Old Town",
       "site": "Edward Little High School",
       "sport": "Football",
-      "gender": "Boys"
+      "gender": "Boys",
+      "home_score": 72,
+      "away_score": 26
     },
     {
       "game_id": "74116",
@@ -2968,6 +2972,60 @@
       "home": "Old Orchard Beach",
       "away": "Orono",
       "site": "Edward LIttle High School",
+      "sport": "Football",
+      "gender": "Boys",
+      "home_score": 22,
+      "away_score": 14
+    },
+    {
+      "game_id": "75159",
+      "date": "2026-11-21",
+      "time": "11:00 AM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Oxford Hills",
+      "away": "Bonny Eagle",
+      "site": "Fitzpatrick Stadiu, Portland",
+      "sport": "Football",
+      "gender": "Boys"
+    },
+    {
+      "game_id": "75161",
+      "date": "2026-11-21",
+      "time": "2:30 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Cony HS",
+      "away": "Marshwood",
+      "site": "Fitzpatrick Stadium, Portland",
+      "sport": "Football",
+      "gender": "Boys"
+    },
+    {
+      "game_id": "75163",
+      "date": "2026-11-21",
+      "time": "2:30 PM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Leavitt Area",
+      "away": "Hermon",
+      "site": "Lewiston High School",
+      "sport": "Football",
+      "gender": "Boys"
+    },
+    {
+      "game_id": "75165",
+      "date": "2026-11-21",
+      "time": "11:00 AM",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Winslow",
+      "away": "Winthrop",
+      "site": "Lewiston High School",
       "sport": "Football",
       "gender": "Boys"
     },

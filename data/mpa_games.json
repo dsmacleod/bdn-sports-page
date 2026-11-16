@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-16T09:19:06.549335+00:00",
+  "last_updated": "2026-11-16T21:18:50.999143+00:00",
   "games": [
     {
       "game_id": "35705",
@@ -6094,18 +6094,20 @@
         {
           "school": "Marshwood",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 14
         },
         {
           "school": "Kennebunk",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 8
         }
       ],
       "home": "Marshwood",
-      "away": "Kennebunk"
+      "away": "Kennebunk",
+      "home_score": 14,
+      "away_score": 8
     },
     {
       "game_id": "73766",
@@ -6208,18 +6210,20 @@
         {
           "school": "Yarmouth",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 72
         },
         {
           "school": "Old Town",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 26
         }
       ],
       "home": "Yarmouth",
-      "away": "Old Town"
+      "away": "Old Town",
+      "home_score": 72,
+      "away_score": 26
     },
     {
       "game_id": "74116",
@@ -6235,18 +6239,128 @@
         {
           "school": "Old Orchard Beach",
           "home_away": "Home",
+          "result": "Win",
+          "score": 22
+        },
+        {
+          "school": "Orono",
+          "home_away": "Away",
+          "result": "Loss",
+          "score": 14
+        }
+      ],
+      "home": "Old Orchard Beach",
+      "away": "Orono",
+      "home_score": 22,
+      "away_score": 14
+    },
+    {
+      "game_id": "75159",
+      "date": "2026-11-21",
+      "time": "11:00 AM",
+      "sport": "Football",
+      "gender": "",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Fitzpatrick Stadiu, Portland",
+      "teams": [
+        {
+          "school": "Oxford Hills",
+          "home_away": "Home",
           "result": "",
           "score": null
         },
         {
-          "school": "Orono",
+          "school": "Bonny Eagle",
           "home_away": "Away",
           "result": "",
           "score": null
         }
       ],
-      "home": "Old Orchard Beach",
-      "away": "Orono"
+      "home": "Oxford Hills",
+      "away": "Bonny Eagle"
+    },
+    {
+      "game_id": "75161",
+      "date": "2026-11-21",
+      "time": "2:30 PM",
+      "sport": "Football",
+      "gender": "",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Fitzpatrick Stadium, Portland",
+      "teams": [
+        {
+          "school": "Cony HS",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Marshwood",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Cony HS",
+      "away": "Marshwood"
+    },
+    {
+      "game_id": "75163",
+      "date": "2026-11-21",
+      "time": "2:30 PM",
+      "sport": "Football",
+      "gender": "",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Lewiston High School",
+      "teams": [
+        {
+          "school": "Leavitt Area",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Hermon",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Leavitt Area",
+      "away": "Hermon"
+    },
+    {
+      "game_id": "75165",
+      "date": "2026-11-21",
+      "time": "11:00 AM",
+      "sport": "Football",
+      "gender": "",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Lewiston High School",
+      "teams": [
+        {
+          "school": "Winslow",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Winthrop",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Winslow",
+      "away": "Winthrop"
     },
     {
       "game_id": "74823",
