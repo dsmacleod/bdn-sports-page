@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-18T09:56:55.316314+00:00",
+  "last_updated": "2026-11-18T19:39:51.540480+00:00",
   "games": [
     {
       "game_id": "35705",
@@ -7028,64 +7028,6 @@
       "away_score": 14
     },
     {
-      "game_id": "71988",
-      "date": "2026-11-07",
-      "time": "6:00 PM",
-      "sport": "Football",
-      "gender": "",
-      "level": "Varsity",
-      "type": "Tournament",
-      "status": "Normal",
-      "site": "OOBHS",
-      "teams": [
-        {
-          "school": "Old Orchard Beach",
-          "home_away": "Home",
-          "result": "Win",
-          "score": 46
-        },
-        {
-          "school": "Boothbay Region",
-          "home_away": "Away",
-          "result": "Loss",
-          "score": 8
-        }
-      ],
-      "home": "Old Orchard Beach",
-      "away": "Boothbay Region",
-      "home_score": 46,
-      "away_score": 8
-    },
-    {
-      "game_id": "74823",
-      "date": "2026-11-14",
-      "time": "1:00 PM",
-      "sport": "Football",
-      "gender": "",
-      "level": "Varsity",
-      "type": "Tournament",
-      "status": "Normal",
-      "site": "",
-      "teams": [
-        {
-          "school": "Winslow",
-          "home_away": "Home",
-          "result": "Win",
-          "score": 36
-        },
-        {
-          "school": "John Bapst Memorial",
-          "home_away": "Away",
-          "result": "Loss",
-          "score": 20
-        }
-      ],
-      "home": "Winslow",
-      "away": "John Bapst Memorial",
-      "home_score": 36,
-      "away_score": 20
-    },
-    {
       "game_id": "75159",
       "date": "2026-11-21",
       "time": "11:00 AM",
@@ -7626,6 +7568,64 @@
       "home": "Lawrence",
       "away": "Fryeburg Academy",
       "home_score": 13,
+      "away_score": 20
+    },
+    {
+      "game_id": "71988",
+      "date": "2026-11-07",
+      "time": "6:00 PM",
+      "sport": "Football",
+      "gender": "",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "OOBHS",
+      "teams": [
+        {
+          "school": "Old Orchard Beach",
+          "home_away": "Home",
+          "result": "Win",
+          "score": 46
+        },
+        {
+          "school": "Boothbay Region",
+          "home_away": "Away",
+          "result": "Loss",
+          "score": 8
+        }
+      ],
+      "home": "Old Orchard Beach",
+      "away": "Boothbay Region",
+      "home_score": 46,
+      "away_score": 8
+    },
+    {
+      "game_id": "74823",
+      "date": "2026-11-14",
+      "time": "1:00 PM",
+      "sport": "Football",
+      "gender": "",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "",
+      "teams": [
+        {
+          "school": "Winslow",
+          "home_away": "Home",
+          "result": "Win",
+          "score": 36
+        },
+        {
+          "school": "John Bapst Memorial",
+          "home_away": "Away",
+          "result": "Loss",
+          "score": 20
+        }
+      ],
+      "home": "Winslow",
+      "away": "John Bapst Memorial",
+      "home_score": 36,
       "away_score": 20
     },
     {
@@ -24095,6 +24095,64 @@
       "away": "Temple Academy"
     },
     {
+      "game_id": "72066",
+      "date": "2026-11-03",
+      "time": "4:00 PM",
+      "sport": "Soccer",
+      "gender": "Boys",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Gardiner High School",
+      "teams": [
+        {
+          "school": "Pine Tree Academy",
+          "home_away": "Home",
+          "result": "Loss",
+          "score": 2
+        },
+        {
+          "school": "Telstar Regional",
+          "home_away": "Away",
+          "result": "Win",
+          "score": 5
+        }
+      ],
+      "home": "Pine Tree Academy",
+      "away": "Telstar Regional",
+      "home_score": 2,
+      "away_score": 5
+    },
+    {
+      "game_id": "884457",
+      "date": "2026-10-15",
+      "time": "5:30 PM",
+      "sport": "Soccer",
+      "gender": "Boys",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "Fryeburg Academy",
+      "teams": [
+        {
+          "school": "Gray-New Gloucester",
+          "home_away": "Away",
+          "result": "Loss",
+          "score": 0
+        },
+        {
+          "school": "Fryeburg Academy",
+          "home_away": "Home",
+          "result": "Win",
+          "score": 5
+        }
+      ],
+      "home": "Fryeburg Academy",
+      "away": "Gray-New Gloucester",
+      "home_score": 5,
+      "away_score": 0
+    },
+    {
       "game_id": "72811",
       "date": "2026-11-07",
       "time": "11:00 AM",
@@ -24617,35 +24675,6 @@
       "away_score": 1
     },
     {
-      "game_id": "72066",
-      "date": "2026-11-03",
-      "time": "4:00 PM",
-      "sport": "Soccer",
-      "gender": "Boys",
-      "level": "Varsity",
-      "type": "Tournament",
-      "status": "Normal",
-      "site": "Gardiner High School",
-      "teams": [
-        {
-          "school": "Pine Tree Academy",
-          "home_away": "Home",
-          "result": "Loss",
-          "score": 2
-        },
-        {
-          "school": "Telstar Regional",
-          "home_away": "Away",
-          "result": "Win",
-          "score": 5
-        }
-      ],
-      "home": "Pine Tree Academy",
-      "away": "Telstar Regional",
-      "home_score": 2,
-      "away_score": 5
-    },
-    {
       "game_id": "71782",
       "date": "2026-10-30",
       "time": "6:00 PM",
@@ -24962,35 +24991,6 @@
       "home": "Penobscot Valley",
       "away": "Monmouth Academy",
       "home_score": 1,
-      "away_score": 0
-    },
-    {
-      "game_id": "884457",
-      "date": "2026-10-15",
-      "time": "5:30 PM",
-      "sport": "Soccer",
-      "gender": "Boys",
-      "level": "Varsity",
-      "type": "League",
-      "status": "Normal",
-      "site": "Fryeburg Academy",
-      "teams": [
-        {
-          "school": "Gray-New Gloucester",
-          "home_away": "Away",
-          "result": "Loss",
-          "score": 0
-        },
-        {
-          "school": "Fryeburg Academy",
-          "home_away": "Home",
-          "result": "Win",
-          "score": 5
-        }
-      ],
-      "home": "Fryeburg Academy",
-      "away": "Gray-New Gloucester",
-      "home_score": 5,
       "away_score": 0
     },
     {
@@ -29002,6 +29002,87 @@
       ],
       "home": "Winslow",
       "away": "Brewer"
+    },
+    {
+      "game_id": "75750",
+      "date": "2026-11-19",
+      "time": "7:10 PM",
+      "sport": "Ice Hockey",
+      "gender": "Girls",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "Family Ice",
+      "teams": [
+        {
+          "school": "Greely",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Falmouth",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Greely",
+      "away": "Falmouth"
+    },
+    {
+      "game_id": "75752",
+      "date": "2026-11-25",
+      "time": "1:40 PM",
+      "sport": "Ice Hockey",
+      "gender": "Girls",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "Family Ice",
+      "teams": [
+        {
+          "school": "Falmouth",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Lewiston",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Falmouth",
+      "away": "Lewiston"
+    },
+    {
+      "game_id": "75783",
+      "date": "2026-11-27",
+      "time": "3:50 PM",
+      "sport": "Ice Hockey",
+      "gender": "Girls",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "Falmouth Family Ice",
+      "teams": [
+        {
+          "school": "Greely",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "John Bapst Memorial",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Greely",
+      "away": "John Bapst Memorial"
     },
     {
       "game_id": "74731",
