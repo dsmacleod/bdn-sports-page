@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-19T10:04:19.950561+00:00",
+  "last_updated": "2026-11-19T19:39:50.045754+00:00",
   "games": [
     {
       "game_id": "35705",
@@ -21813,8 +21813,8 @@
     },
     {
       "game_id": "70447",
-      "date": "2026-11-25",
-      "time": "3:10 PM",
+      "date": "2026-11-30",
+      "time": "4:00 PM",
       "sport": "Ice Hockey",
       "gender": "Girls",
       "level": "Varsity",
@@ -21922,7 +21922,7 @@
     {
       "game_id": "63552",
       "date": "2026-11-21",
-      "time": "",
+      "time": "4:20 PM",
       "sport": "Ice Hockey",
       "gender": "Girls",
       "level": "Varsity",
@@ -22404,6 +22404,60 @@
       ],
       "home": "Greely",
       "away": "John Bapst Memorial"
+    },
+    {
+      "game_id": "75861",
+      "date": "2026-11-19",
+      "time": "5:40 PM",
+      "sport": "Ice Hockey",
+      "gender": "Girls",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "Troubh Ice Arena",
+      "teams": [
+        {
+          "school": "Portland",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "York",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Portland",
+      "away": "York"
+    },
+    {
+      "game_id": "75863",
+      "date": "2026-11-28",
+      "time": "4:20 PM",
+      "sport": "Ice Hockey",
+      "gender": "Girls",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "Troubh Ice Arena",
+      "teams": [
+        {
+          "school": "Portland",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Gorham",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Portland",
+      "away": "Gorham"
     },
     {
       "game_id": "53072",
