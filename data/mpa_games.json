@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-20T09:52:38.961691+00:00",
+  "last_updated": "2026-11-20T19:18:11.287939+00:00",
   "games": [
     {
       "game_id": "35705",
@@ -16150,6 +16150,33 @@
       "away_score": 1
     },
     {
+      "game_id": "76210",
+      "date": "2026-12-04",
+      "time": "",
+      "sport": "Wrestling",
+      "gender": "",
+      "level": "Varsity",
+      "type": "Tournament",
+      "status": "Normal",
+      "site": "Belfast Area High School",
+      "teams": [
+        {
+          "school": "Belfast Area",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Scarborough",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Belfast Area",
+      "away": "Scarborough"
+    },
+    {
       "game_id": "73098",
       "date": "2026-11-28",
       "time": "9:00 AM",
@@ -21936,18 +21963,20 @@
         {
           "school": "Greely",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         },
         {
           "school": "Falmouth",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 10
         }
       ],
       "home": "Greely",
-      "away": "Falmouth"
+      "away": "Falmouth",
+      "home_score": 1,
+      "away_score": 10
     },
     {
       "game_id": "75752",

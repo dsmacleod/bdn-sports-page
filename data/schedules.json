@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-20T09:52:38.961691+00:00",
+  "last_updated": "2026-11-20T19:18:11.287939+00:00",
   "season": "fall",
   "games": [
     {
@@ -8347,6 +8347,19 @@
       "away_score": 1
     },
     {
+      "game_id": "76210",
+      "date": "2026-12-04",
+      "time": "",
+      "type": "Tournament",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Belfast Area",
+      "away": "Scarborough",
+      "site": "Belfast Area High School",
+      "sport": "Wrestling",
+      "gender": "Coed"
+    },
+    {
       "game_id": "73098",
       "date": "2026-11-28",
       "time": "9:00 AM",
@@ -11162,7 +11175,9 @@
       "away": "Falmouth",
       "site": "Family Ice",
       "sport": "Ice Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 1,
+      "away_score": 10
     },
     {
       "game_id": "75752",
