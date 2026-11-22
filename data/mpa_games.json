@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-21T18:19:59.029555+00:00",
+  "last_updated": "2026-11-22T09:34:16.364743+00:00",
   "games": [
     {
       "game_id": "39443",
@@ -23403,18 +23403,20 @@
         {
           "school": "Brewer",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 4
         },
         {
           "school": "Lewiston",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 3
         }
       ],
       "home": "Brewer",
-      "away": "Lewiston"
+      "away": "Lewiston",
+      "home_score": 4,
+      "away_score": 3
     },
     {
       "game_id": "74735",
@@ -23758,18 +23760,20 @@
         {
           "school": "Brunswick",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         },
         {
           "school": "Greely",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         }
       ],
       "home": "Brunswick",
-      "away": "Greely"
+      "away": "Greely",
+      "home_score": 2,
+      "away_score": 0
     },
     {
       "game_id": "62810",
@@ -23839,18 +23843,20 @@
         {
           "school": "Winslow",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 3
         },
         {
           "school": "Cheverus",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 2
         }
       ],
       "home": "Winslow",
-      "away": "Cheverus"
+      "away": "Cheverus",
+      "home_score": 3,
+      "away_score": 2
     },
     {
       "game_id": "62670",
@@ -24001,18 +24007,20 @@
         {
           "school": "Portland",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Yarmouth",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 2
         }
       ],
       "home": "Portland",
-      "away": "Yarmouth"
+      "away": "Yarmouth",
+      "home_score": 0,
+      "away_score": 2
     },
     {
       "game_id": "63554",
