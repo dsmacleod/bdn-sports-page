@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-24T12:14:38.621130+00:00",
+  "last_updated": "2026-11-24T21:36:38.164436+00:00",
   "games": [
     {
       "game_id": "41560",
@@ -15258,6 +15258,60 @@
       "away": "Oceanside"
     },
     {
+      "game_id": "76881",
+      "date": "2026-12-04",
+      "time": "7:00 PM",
+      "sport": "Girls Basketball",
+      "gender": "",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "Falmouth High School",
+      "teams": [
+        {
+          "school": "Falmouth",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Bonny Eagle",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Falmouth",
+      "away": "Bonny Eagle"
+    },
+    {
+      "game_id": "76886",
+      "date": "2026-12-08",
+      "time": "7:00 PM",
+      "sport": "Girls Basketball",
+      "gender": "",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "Westbrook",
+      "teams": [
+        {
+          "school": "Westbrook",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Falmouth",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Westbrook",
+      "away": "Falmouth"
+    },
+    {
       "game_id": "76069",
       "date": "2026-12-05",
       "time": "1:30 PM",
@@ -16515,18 +16569,20 @@
         {
           "school": "Gorham",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 6
         },
         {
           "school": "Biddeford",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 5
         }
       ],
       "home": "Gorham",
-      "away": "Biddeford"
+      "away": "Biddeford",
+      "home_score": 6,
+      "away_score": 5
     },
     {
       "game_id": "64228",
@@ -16542,18 +16598,20 @@
         {
           "school": "Gorham",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 10
         },
         {
           "school": "Greely",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         }
       ],
       "home": "Gorham",
-      "away": "Greely"
+      "away": "Greely",
+      "home_score": 10,
+      "away_score": 1
     },
     {
       "game_id": "62739",
@@ -17160,9 +17218,36 @@
       "away": "Lewiston"
     },
     {
+      "game_id": "76702",
+      "date": "2026-12-02",
+      "time": "6:10 PM",
+      "sport": "Ice Hockey",
+      "gender": "Girls",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "Colisee",
+      "teams": [
+        {
+          "school": "Lewiston",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Gorham",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Lewiston",
+      "away": "Gorham"
+    },
+    {
       "game_id": "69426",
       "date": "2026-12-05",
-      "time": "7:10 PM",
+      "time": "6:30 PM",
       "sport": "Ice Hockey",
       "gender": "Boys",
       "level": "Varsity",
@@ -17351,7 +17436,7 @@
     {
       "game_id": "69387",
       "date": "2026-12-05",
-      "time": "7:00 PM",
+      "time": "7:10 PM",
       "sport": "Ice Hockey",
       "gender": "Girls",
       "level": "Varsity",

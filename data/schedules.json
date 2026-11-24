@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-24T12:14:38.621130+00:00",
+  "last_updated": "2026-11-24T21:36:38.164436+00:00",
   "season": "fall",
   "games": [
     {
@@ -7595,6 +7595,32 @@
       "gender": ""
     },
     {
+      "game_id": "76881",
+      "date": "2026-12-04",
+      "time": "7:00 PM",
+      "type": "League",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Falmouth",
+      "away": "Bonny Eagle",
+      "site": "Falmouth High School",
+      "sport": "Girls Basketball",
+      "gender": ""
+    },
+    {
+      "game_id": "76886",
+      "date": "2026-12-08",
+      "time": "7:00 PM",
+      "type": "League",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Westbrook",
+      "away": "Falmouth",
+      "site": "Westbrook",
+      "sport": "Girls Basketball",
+      "gender": ""
+    },
+    {
       "game_id": "76069",
       "date": "2026-12-05",
       "time": "1:30 PM",
@@ -8205,7 +8231,9 @@
       "away": "Biddeford",
       "site": "USM",
       "sport": "Ice Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 6,
+      "away_score": 5
     },
     {
       "game_id": "64228",
@@ -8218,7 +8246,9 @@
       "away": "Greely",
       "site": "USM",
       "sport": "Ice Hockey",
-      "gender": "Girls"
+      "gender": "Girls",
+      "home_score": 10,
+      "away_score": 1
     },
     {
       "game_id": "62739",
@@ -8517,9 +8547,22 @@
       "gender": "Boys"
     },
     {
+      "game_id": "76702",
+      "date": "2026-12-02",
+      "time": "6:10 PM",
+      "type": "League",
+      "status": "Normal",
+      "level": "Varsity",
+      "home": "Lewiston",
+      "away": "Gorham",
+      "site": "Colisee",
+      "sport": "Ice Hockey",
+      "gender": "Girls"
+    },
+    {
       "game_id": "69426",
       "date": "2026-12-05",
-      "time": "7:10 PM",
+      "time": "6:30 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
@@ -8610,7 +8653,7 @@
     {
       "game_id": "69387",
       "date": "2026-12-05",
-      "time": "7:00 PM",
+      "time": "7:10 PM",
       "type": "League",
       "status": "Normal",
       "level": "Varsity",
