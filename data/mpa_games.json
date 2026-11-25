@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-25T11:01:30.397673+00:00",
+  "last_updated": "2026-11-25T20:44:41.672427+00:00",
   "games": [
     {
       "game_id": "41560",
@@ -17078,18 +17078,20 @@
         {
           "school": "Falmouth",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 4
         },
         {
           "school": "Lewiston",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 1
         }
       ],
       "home": "Falmouth",
-      "away": "Lewiston"
+      "away": "Lewiston",
+      "home_score": 4,
+      "away_score": 1
     },
     {
       "game_id": "75754",
