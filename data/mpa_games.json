@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-26T10:39:59.188492+00:00",
+  "last_updated": "2026-11-26T20:36:29.416483+00:00",
   "games": [
     {
       "game_id": "41564",
@@ -16868,18 +16868,20 @@
         {
           "school": "Brewer",
           "home_away": "Home",
-          "result": "",
-          "score": null
+          "result": "Loss",
+          "score": 0
         },
         {
           "school": "Winslow",
           "home_away": "Away",
-          "result": "",
-          "score": null
+          "result": "Win",
+          "score": 6
         }
       ],
       "home": "Brewer",
-      "away": "Winslow"
+      "away": "Winslow",
+      "home_score": 0,
+      "away_score": 6
     },
     {
       "game_id": "74737",
