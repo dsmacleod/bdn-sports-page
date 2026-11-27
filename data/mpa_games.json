@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-27T10:42:00.646917+00:00",
+  "last_updated": "2026-11-27T20:22:35.304806+00:00",
   "games": [
     {
       "game_id": "39443",
@@ -18888,8 +18888,8 @@
     },
     {
       "game_id": "74245",
-      "date": "2026-12-04",
-      "time": "6:30 PM",
+      "date": "2026-12-05",
+      "time": "3:00 PM",
       "sport": "Boys Basketball",
       "gender": "",
       "level": "Varsity",
@@ -21911,6 +21911,222 @@
       "away": "Madawaska HS"
     },
     {
+      "game_id": "76881",
+      "date": "2026-12-04",
+      "time": "7:00 PM",
+      "sport": "Girls Basketball",
+      "gender": "",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "Falmouth High School",
+      "teams": [
+        {
+          "school": "Falmouth",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Bonny Eagle",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Falmouth",
+      "away": "Bonny Eagle"
+    },
+    {
+      "game_id": "76886",
+      "date": "2026-12-08",
+      "time": "7:00 PM",
+      "sport": "Girls Basketball",
+      "gender": "",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "Westbrook",
+      "teams": [
+        {
+          "school": "Westbrook",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Falmouth",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Westbrook",
+      "away": "Falmouth"
+    },
+    {
+      "game_id": "77017",
+      "date": "2026-12-10",
+      "time": "5:00 PM",
+      "sport": "Girls Basketball",
+      "gender": "",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "Ellsworth HS",
+      "teams": [
+        {
+          "school": "Ellsworth",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Old Town",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Ellsworth",
+      "away": "Old Town"
+    },
+    {
+      "game_id": "77064",
+      "date": "2026-12-09",
+      "time": "7:00 PM",
+      "sport": "Boys Basketball",
+      "gender": "",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "Penquis Valley High School",
+      "teams": [
+        {
+          "school": "Penquis Valley HS",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Bangor Christian",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Penquis Valley HS",
+      "away": "Bangor Christian"
+    },
+    {
+      "game_id": "77076",
+      "date": "2026-12-05",
+      "time": "1:30 PM",
+      "sport": "Girls Basketball",
+      "gender": "",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "Penquis Valley High School",
+      "teams": [
+        {
+          "school": "Penquis Valley HS",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Narraguagus Sr",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Penquis Valley HS",
+      "away": "Narraguagus Sr"
+    },
+    {
+      "game_id": "77078",
+      "date": "2026-12-09",
+      "time": "5:30 PM",
+      "sport": "Girls Basketball",
+      "gender": "",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "Penquis Valley High School",
+      "teams": [
+        {
+          "school": "Penquis Valley HS",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Bangor Christian",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Penquis Valley HS",
+      "away": "Bangor Christian"
+    },
+    {
+      "game_id": "77080",
+      "date": "2026-12-10",
+      "time": "6:00 PM",
+      "sport": "Girls Basketball",
+      "gender": "",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "Lee Academy",
+      "teams": [
+        {
+          "school": "Lee Academy",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Penquis Valley HS",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Lee Academy",
+      "away": "Penquis Valley HS"
+    },
+    {
+      "game_id": "77101",
+      "date": "2026-12-04",
+      "time": "6:00 PM",
+      "sport": "Girls Basketball",
+      "gender": "",
+      "level": "Varsity",
+      "type": "League",
+      "status": "Normal",
+      "site": "DHS Gym",
+      "teams": [
+        {
+          "school": "Deering",
+          "home_away": "Home",
+          "result": "",
+          "score": null
+        },
+        {
+          "school": "Portland",
+          "home_away": "Away",
+          "result": "",
+          "score": null
+        }
+      ],
+      "home": "Deering",
+      "away": "Portland"
+    },
+    {
       "game_id": "76023",
       "date": "2026-12-09",
       "time": "4:00 PM",
@@ -22017,87 +22233,6 @@
       ],
       "home": "Dexter Regional",
       "away": "Foxcroft Academy"
-    },
-    {
-      "game_id": "76881",
-      "date": "2026-12-04",
-      "time": "7:00 PM",
-      "sport": "Girls Basketball",
-      "gender": "",
-      "level": "Varsity",
-      "type": "League",
-      "status": "Normal",
-      "site": "Falmouth High School",
-      "teams": [
-        {
-          "school": "Falmouth",
-          "home_away": "Home",
-          "result": "",
-          "score": null
-        },
-        {
-          "school": "Bonny Eagle",
-          "home_away": "Away",
-          "result": "",
-          "score": null
-        }
-      ],
-      "home": "Falmouth",
-      "away": "Bonny Eagle"
-    },
-    {
-      "game_id": "76886",
-      "date": "2026-12-08",
-      "time": "7:00 PM",
-      "sport": "Girls Basketball",
-      "gender": "",
-      "level": "Varsity",
-      "type": "League",
-      "status": "Normal",
-      "site": "Westbrook",
-      "teams": [
-        {
-          "school": "Westbrook",
-          "home_away": "Home",
-          "result": "",
-          "score": null
-        },
-        {
-          "school": "Falmouth",
-          "home_away": "Away",
-          "result": "",
-          "score": null
-        }
-      ],
-      "home": "Westbrook",
-      "away": "Falmouth"
-    },
-    {
-      "game_id": "77017",
-      "date": "2026-12-10",
-      "time": "5:00 PM",
-      "sport": "Girls Basketball",
-      "gender": "",
-      "level": "Varsity",
-      "type": "League",
-      "status": "Normal",
-      "site": "Ellsworth HS",
-      "teams": [
-        {
-          "school": "Ellsworth",
-          "home_away": "Home",
-          "result": "",
-          "score": null
-        },
-        {
-          "school": "Old Town",
-          "home_away": "Away",
-          "result": "",
-          "score": null
-        }
-      ],
-      "home": "Ellsworth",
-      "away": "Old Town"
     },
     {
       "game_id": "75783",
